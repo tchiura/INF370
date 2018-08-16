@@ -1,0 +1,554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="InsightModelStoreContainer" CdmEntityContainer="InsightEntities">
+    <EntitySetMapping Name="AccessLevels">
+      <EntityTypeMapping TypeName="InsightModel.AccessLevel">
+        <MappingFragment StoreEntitySet="AccessLevel">
+          <ScalarProperty Name="AccessLevelID" ColumnName="AccessLevelID" />
+          <ScalarProperty Name="AccessLevelDescription" ColumnName="AccessLevelDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Addresses">
+      <EntityTypeMapping TypeName="InsightModel.Address">
+        <MappingFragment StoreEntitySet="Address">
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+          <ScalarProperty Name="AddressDescription" ColumnName="AddressDescription" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="InsightModel.City">
+        <MappingFragment StoreEntitySet="City">
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="InsightModel.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+          <ScalarProperty Name="ClientNumber" ColumnName="ClientNumber" />
+          <ScalarProperty Name="ClientName" ColumnName="ClientName" />
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+          <ScalarProperty Name="ClientTypeID" ColumnName="ClientTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientLogins">
+      <EntityTypeMapping TypeName="InsightModel.ClientLogin">
+        <MappingFragment StoreEntitySet="ClientLogin">
+          <ScalarProperty Name="ClientLoginID" ColumnName="ClientLoginID" />
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+          <ScalarProperty Name="ClientUsername" ColumnName="ClientUsername" />
+          <ScalarProperty Name="ClientPassword" ColumnName="ClientPassword" />
+          <ScalarProperty Name="ClientLastLogin" ColumnName="ClientLastLogin" />
+          <ScalarProperty Name="AccessLevelID" ColumnName="AccessLevelID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientQuotations">
+      <EntityTypeMapping TypeName="InsightModel.ClientQuotation">
+        <MappingFragment StoreEntitySet="ClientQuotation">
+          <ScalarProperty Name="ClientQuotationID" ColumnName="ClientQuotationID" />
+          <ScalarProperty Name="ClientQuotationDate" ColumnName="ClientQuotationDate" />
+          <ScalarProperty Name="ProjectRequestID" ColumnName="ProjectRequestID" />
+          <ScalarProperty Name="ClientQuotationStatusID" ColumnName="ClientQuotationStatusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientQuotationStatus">
+      <EntityTypeMapping TypeName="InsightModel.ClientQuotationStatu">
+        <MappingFragment StoreEntitySet="ClientQuotationStatus">
+          <ScalarProperty Name="ClientQuotationStatusID" ColumnName="ClientQuotationStatusID" />
+          <ScalarProperty Name="ClientQuotationStatusDescription" ColumnName="ClientQuotationStatusDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientTypes">
+      <EntityTypeMapping TypeName="InsightModel.ClientType">
+        <MappingFragment StoreEntitySet="ClientType">
+          <ScalarProperty Name="ClientTypeID" ColumnName="ClientTypeID" />
+          <ScalarProperty Name="ClientTypeDescription" ColumnName="ClientTypeDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactPersons">
+      <EntityTypeMapping TypeName="InsightModel.ContactPerson">
+        <MappingFragment StoreEntitySet="ContactPerson">
+          <ScalarProperty Name="ContactPersonID" ColumnName="ContactPersonID" />
+          <ScalarProperty Name="ContactPersonName" ColumnName="ContactPersonName" />
+          <ScalarProperty Name="ContactPersonJobDescription" ColumnName="ContactPersonJobDescription" />
+          <ScalarProperty Name="ContactPersonPhoneNumber" ColumnName="ContactPersonPhoneNumber" />
+          <ScalarProperty Name="ContactPersonEmailAddress" ColumnName="ContactPersonEmailAddress" />
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="InsightModel.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="InsightModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="EmployeeSurname" ColumnName="EmployeeSurname" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="EmployeeEmailAddress" ColumnName="EmployeeEmailAddress" />
+          <ScalarProperty Name="EmployeeDateOfBirth" ColumnName="EmployeeDateOfBirth" />
+          <ScalarProperty Name="EmployeeGender" ColumnName="EmployeeGender" />
+          <ScalarProperty Name="EmployeeLoginID" ColumnName="EmployeeLoginID" />
+          <ScalarProperty Name="EmployeeTypeID" ColumnName="EmployeeTypeID" />
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeeLogins">
+      <EntityTypeMapping TypeName="InsightModel.EmployeeLogin">
+        <MappingFragment StoreEntitySet="EmployeeLogin">
+          <ScalarProperty Name="EmployeeLoginID" ColumnName="EmployeeLoginID" />
+          <ScalarProperty Name="EmployeeUsername" ColumnName="EmployeeUsername" />
+          <ScalarProperty Name="EmployeePassword" ColumnName="EmployeePassword" />
+          <ScalarProperty Name="EmployeeLastLogin" ColumnName="EmployeeLastLogin" />
+          <ScalarProperty Name="AccessLevelID" ColumnName="AccessLevelID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeeTypes">
+      <EntityTypeMapping TypeName="InsightModel.EmployeeType">
+        <MappingFragment StoreEntitySet="EmployeeType">
+          <ScalarProperty Name="EmployeeTypeID" ColumnName="EmployeeTypeID" />
+          <ScalarProperty Name="EmployeeTypeDescription" ColumnName="EmployeeTypeDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Equipments">
+      <EntityTypeMapping TypeName="InsightModel.Equipment">
+        <MappingFragment StoreEntitySet="Equipment">
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+          <ScalarProperty Name="EquipmentDescription" ColumnName="EquipmentDescription" />
+          <ScalarProperty Name="EquipmentQuantity" ColumnName="EquipmentQuantity" />
+          <ScalarProperty Name="EquipmentTypeID" ColumnName="EquipmentTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EquipmentTypes">
+      <EntityTypeMapping TypeName="InsightModel.EquipmentType">
+        <MappingFragment StoreEntitySet="EquipmentType">
+          <ScalarProperty Name="EquipmentTypeID" ColumnName="EquipmentTypeID" />
+          <ScalarProperty Name="EquipmentTypeDescription" ColumnName="EquipmentTypeDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Jobs">
+      <EntityTypeMapping TypeName="InsightModel.Job">
+        <MappingFragment StoreEntitySet="Job">
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="JobDescription" ColumnName="JobDescription" />
+          <ScalarProperty Name="JobStartDate" ColumnName="JobStartDate" />
+          <ScalarProperty Name="JobEndDate" ColumnName="JobEndDate" />
+          <ScalarProperty Name="JobTypeID" ColumnName="JobTypeID" />
+          <ScalarProperty Name="JobStatusID" ColumnName="JobStatusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobStatus">
+      <EntityTypeMapping TypeName="InsightModel.JobStatu">
+        <MappingFragment StoreEntitySet="JobStatus">
+          <ScalarProperty Name="JobStatusID" ColumnName="JobStatusID" />
+          <ScalarProperty Name="JobStatusDescription" ColumnName="JobStatusDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobTypes">
+      <EntityTypeMapping TypeName="InsightModel.JobType">
+        <MappingFragment StoreEntitySet="JobType">
+          <ScalarProperty Name="JobTypeID" ColumnName="JobTypeID" />
+          <ScalarProperty Name="JobTypeDescription" ColumnName="JobTypeDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobTypePrices">
+      <EntityTypeMapping TypeName="InsightModel.JobTypePrice">
+        <MappingFragment StoreEntitySet="JobTypePrice">
+          <ScalarProperty Name="JobTypePriceID" ColumnName="JobTypePriceID" />
+          <ScalarProperty Name="JobTypePriceAmount" ColumnName="JobTypePriceAmount" />
+          <ScalarProperty Name="JobTypePriceDate" ColumnName="JobTypePriceDate" />
+          <ScalarProperty Name="JobTypeID" ColumnName="JobTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoginLogs">
+      <EntityTypeMapping TypeName="InsightModel.LoginLog">
+        <MappingFragment StoreEntitySet="LoginLog">
+          <ScalarProperty Name="LoginLogID" ColumnName="LoginLogID" />
+          <ScalarProperty Name="LoginDate" ColumnName="LoginDate" />
+          <ScalarProperty Name="ClientLoginID" ColumnName="ClientLoginID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Notifcations">
+      <EntityTypeMapping TypeName="InsightModel.Notifcation">
+        <MappingFragment StoreEntitySet="Notifcation">
+          <ScalarProperty Name="NotificationID" ColumnName="NotificationID" />
+          <ScalarProperty Name="NotificationMessage" ColumnName="NotificationMessage" />
+          <ScalarProperty Name="NotificationStatusID" ColumnName="NotificationStatusID" />
+          <ScalarProperty Name="EmployeeLoginID" ColumnName="EmployeeLoginID" />
+          <ScalarProperty Name="ClientLoginID" ColumnName="ClientLoginID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NotificationStatus">
+      <EntityTypeMapping TypeName="InsightModel.NotificationStatu">
+        <MappingFragment StoreEntitySet="NotificationStatus">
+          <ScalarProperty Name="NotificationStatusID" ColumnName="NotificationStatusID" />
+          <ScalarProperty Name="NotificationStatusDescription" ColumnName="NotificationStatusDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrganisationTypes">
+      <EntityTypeMapping TypeName="InsightModel.OrganisationType">
+        <MappingFragment StoreEntitySet="OrganisationType">
+          <ScalarProperty Name="OrganisationTypeID" ColumnName="OrganisationTypeID" />
+          <ScalarProperty Name="OrganisationTypeDescription" ColumnName="OrganisationTypeDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="InsightModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
+          <ScalarProperty Name="ProductQuantity" ColumnName="ProductQuantity" />
+          <ScalarProperty Name="ProductTypeID" ColumnName="ProductTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductPrices">
+      <EntityTypeMapping TypeName="InsightModel.ProductPrice">
+        <MappingFragment StoreEntitySet="ProductPrice">
+          <ScalarProperty Name="ProductPriceID" ColumnName="ProductPriceID" />
+          <ScalarProperty Name="ProductPriceAmount" ColumnName="ProductPriceAmount" />
+          <ScalarProperty Name="ProductPriceDate" ColumnName="ProductPriceDate" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductTypes">
+      <EntityTypeMapping TypeName="InsightModel.ProductType">
+        <MappingFragment StoreEntitySet="ProductType">
+          <ScalarProperty Name="ProductTypeID" ColumnName="ProductTypeID" />
+          <ScalarProperty Name="ProductTypeDescription" ColumnName="ProductTypeDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Projects">
+      <EntityTypeMapping TypeName="InsightModel.Project">
+        <MappingFragment StoreEntitySet="Project">
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="ProjectDescription" ColumnName="ProjectDescription" />
+          <ScalarProperty Name="ProjectStartDate" ColumnName="ProjectStartDate" />
+          <ScalarProperty Name="ProjectEndDate" ColumnName="ProjectEndDate" />
+          <ScalarProperty Name="ProjectActualFinishDate" ColumnName="ProjectActualFinishDate" />
+          <ScalarProperty Name="ProjectStatusID" ColumnName="ProjectStatusID" />
+          <ScalarProperty Name="ProjectRequestID" ColumnName="ProjectRequestID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjectPhases">
+      <EntityTypeMapping TypeName="InsightModel.ProjectPhase">
+        <MappingFragment StoreEntitySet="ProjectPhase">
+          <ScalarProperty Name="ProjectPhaseID" ColumnName="ProjectPhaseID" />
+          <ScalarProperty Name="ProjectPhaseDescription" ColumnName="ProjectPhaseDescription" />
+          <ScalarProperty Name="ProjectPhaseStatusID" ColumnName="ProjectPhaseStatusID" />
+          <ScalarProperty Name="ProjectPhaseStartDate" ColumnName="ProjectPhaseStartDate" />
+          <ScalarProperty Name="ProjectPhaseEndDate" ColumnName="ProjectPhaseEndDate" />
+          <ScalarProperty Name="ProjectPhaseTypeID" ColumnName="ProjectPhaseTypeID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjectPhaseStatus">
+      <EntityTypeMapping TypeName="InsightModel.ProjectPhaseStatu">
+        <MappingFragment StoreEntitySet="ProjectPhaseStatus">
+          <ScalarProperty Name="ProjectPhaseStatusID" ColumnName="ProjectPhaseStatusID" />
+          <ScalarProperty Name="ProjectPhaseStatusDescription" ColumnName="ProjectPhaseStatusDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjectPhaseTypes">
+      <EntityTypeMapping TypeName="InsightModel.ProjectPhaseType">
+        <MappingFragment StoreEntitySet="ProjectPhaseType">
+          <ScalarProperty Name="ProjectPhaseTypeID" ColumnName="ProjectPhaseTypeID" />
+          <ScalarProperty Name="ProjectPhaseTypeDescription" ColumnName="ProjectPhaseTypeDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjectRequests">
+      <EntityTypeMapping TypeName="InsightModel.ProjectRequest">
+        <MappingFragment StoreEntitySet="ProjectRequest">
+          <ScalarProperty Name="ProjectRequestID" ColumnName="ProjectRequestID" />
+          <ScalarProperty Name="ProjectRequestDescription" ColumnName="ProjectRequestDescription" />
+          <ScalarProperty Name="ProjectRequestDate" ColumnName="ProjectRequestDate" />
+          <ScalarProperty Name="ProjectRequestTypeID" ColumnName="ProjectRequestTypeID" />
+          <ScalarProperty Name="ProjectRequestStatusID" ColumnName="ProjectRequestStatusID" />
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjectRequestStatus">
+      <EntityTypeMapping TypeName="InsightModel.ProjectRequestStatu">
+        <MappingFragment StoreEntitySet="ProjectRequestStatus">
+          <ScalarProperty Name="ProjectRequestStatusID" ColumnName="ProjectRequestStatusID" />
+          <ScalarProperty Name="ProjectRequestStatusDescription" ColumnName="ProjectRequestStatusDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjectRequestTypes">
+      <EntityTypeMapping TypeName="InsightModel.ProjectRequestType">
+        <MappingFragment StoreEntitySet="ProjectRequestType">
+          <ScalarProperty Name="ProjectRequestTypeID" ColumnName="ProjectRequestTypeID" />
+          <ScalarProperty Name="ProjectRequestDescription" ColumnName="ProjectRequestDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjectStatus">
+      <EntityTypeMapping TypeName="InsightModel.ProjectStatu">
+        <MappingFragment StoreEntitySet="ProjectStatus">
+          <ScalarProperty Name="ProjectStatusID" ColumnName="ProjectStatusID" />
+          <ScalarProperty Name="ProjectStatusDescription" ColumnName="ProjectStatusDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Provinces">
+      <EntityTypeMapping TypeName="InsightModel.Province">
+        <MappingFragment StoreEntitySet="Province">
+          <ScalarProperty Name="ProvinceID" ColumnName="ProvinceID" />
+          <ScalarProperty Name="ProvinceDescription" ColumnName="ProvinceDescription" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseOrders">
+      <EntityTypeMapping TypeName="InsightModel.PurchaseOrder">
+        <MappingFragment StoreEntitySet="PurchaseOrder">
+          <ScalarProperty Name="PurchaseOrderID" ColumnName="PurchaseOrderID" />
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="PurchaseOrderDate" ColumnName="PurchaseOrderDate" />
+          <ScalarProperty Name="PurchaseOrderStatusID" ColumnName="PurchaseOrderStatusID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseOrderStatus">
+      <EntityTypeMapping TypeName="InsightModel.PurchaseOrderStatu">
+        <MappingFragment StoreEntitySet="PurchaseOrderStatus">
+          <ScalarProperty Name="PurchaseOrderStatusID" ColumnName="PurchaseOrderStatusID" />
+          <ScalarProperty Name="PurchaseOrderStatusDescription" ColumnName="PurchaseOrderStatusDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RemovedEquipments">
+      <EntityTypeMapping TypeName="InsightModel.RemovedEquipment">
+        <MappingFragment StoreEntitySet="RemovedEquipment">
+          <ScalarProperty Name="RemovedEquipmentID" ColumnName="RemovedEquipmentID" />
+          <ScalarProperty Name="RemovedEquipmenedDescription" ColumnName="RemovedEquipmenedDescription" />
+          <ScalarProperty Name="RemovedEquipmentCondition" ColumnName="RemovedEquipmentCondition" />
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Returns">
+      <EntityTypeMapping TypeName="InsightModel.Return">
+        <MappingFragment StoreEntitySet="Return">
+          <ScalarProperty Name="ReturnID" ColumnName="ReturnID" />
+          <ScalarProperty Name="ReturnDescription" ColumnName="ReturnDescription" />
+          <ScalarProperty Name="ClientQuotationID" ColumnName="ClientQuotationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Skills">
+      <EntityTypeMapping TypeName="InsightModel.Skill">
+        <MappingFragment StoreEntitySet="Skill">
+          <ScalarProperty Name="SkillID" ColumnName="SkillID" />
+          <ScalarProperty Name="SkillDescription" ColumnName="SkillDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="InsightModel.Supplier">
+        <MappingFragment StoreEntitySet="Supplier">
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="InsightModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vehicles">
+      <EntityTypeMapping TypeName="InsightModel.Vehicle">
+        <MappingFragment StoreEntitySet="Vehicle">
+          <ScalarProperty Name="VehicleID" ColumnName="VehicleID" />
+          <ScalarProperty Name="VehicleModel" ColumnName="VehicleModel" />
+          <ScalarProperty Name="VehicleMake" ColumnName="VehicleMake" />
+          <ScalarProperty Name="VehicleYear" ColumnName="VehicleYear" />
+          <ScalarProperty Name="PurchaseDate" ColumnName="PurchaseDate" />
+          <ScalarProperty Name="VehicleRegistration" ColumnName="VehicleRegistration" />
+          <ScalarProperty Name="VehicleStatusID" ColumnName="VehicleStatusID" />
+          <ScalarProperty Name="VehicleTypeID" ColumnName="VehicleTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VehicleStatus">
+      <EntityTypeMapping TypeName="InsightModel.VehicleStatu">
+        <MappingFragment StoreEntitySet="VehicleStatus">
+          <ScalarProperty Name="VehicleStatusID" ColumnName="VehicleStatusID" />
+          <ScalarProperty Name="VehicleStatusDescription" ColumnName="VehicleStatusDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VehicleTypes">
+      <EntityTypeMapping TypeName="InsightModel.VehicleType">
+        <MappingFragment StoreEntitySet="VehicleType">
+          <ScalarProperty Name="VehicleTypeID" ColumnName="VehicleTypeID" />
+          <ScalarProperty Name="VehicleTypeDescription" ColumnName="VehicleTypeDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Individuals">
+      <EntityTypeMapping TypeName="InsightModel.Individual">
+        <MappingFragment StoreEntitySet="Individual">
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+          <ScalarProperty Name="IndividualEmailAddress" ColumnName="IndividualEmailAddress" />
+          <ScalarProperty Name="IndividualDateOfBirth" ColumnName="IndividualDateOfBirth" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Onsites">
+      <EntityTypeMapping TypeName="InsightModel.Onsite">
+        <MappingFragment StoreEntitySet="Onsite">
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="ProductMarkUp" ColumnName="ProductMarkUp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductClientQuotationLines">
+      <EntityTypeMapping TypeName="InsightModel.ProductClientQuotationLine">
+        <MappingFragment StoreEntitySet="ProductClientQuotationLine">
+          <ScalarProperty Name="ClientQuotationID" ColumnName="ClientQuotationID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="EmployeeSkill" TypeName="InsightModel.EmployeeSkill" StoreEntitySet="EmployeeSkill">
+      <EndProperty Name="Employee">
+        <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+      </EndProperty>
+      <EndProperty Name="Skill">
+        <ScalarProperty Name="SkillID" ColumnName="SkillID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="JobEmployee" TypeName="InsightModel.JobEmployee" StoreEntitySet="JobEmployee">
+      <EndProperty Name="Employee">
+        <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+      </EndProperty>
+      <EndProperty Name="Job">
+        <ScalarProperty Name="JobID" ColumnName="JobID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="JobEquipment" TypeName="InsightModel.JobEquipment" StoreEntitySet="JobEquipment">
+      <EndProperty Name="Equipment">
+        <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+      </EndProperty>
+      <EndProperty Name="Job">
+        <ScalarProperty Name="JobID" ColumnName="JobID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="JobProduct" TypeName="InsightModel.JobProduct" StoreEntitySet="JobProduct">
+      <EndProperty Name="Job">
+        <ScalarProperty Name="JobID" ColumnName="JobID" />
+      </EndProperty>
+      <EndProperty Name="Product">
+        <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="JobTypeQuotationLine" TypeName="InsightModel.JobTypeQuotationLine" StoreEntitySet="JobTypeQuotationLine">
+      <EndProperty Name="ClientQuotation">
+        <ScalarProperty Name="ClientQuotationID" ColumnName="ClientQuotationID" />
+      </EndProperty>
+      <EndProperty Name="JobType">
+        <ScalarProperty Name="JobTypeID" ColumnName="JobTypeID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="JobVehicle" TypeName="InsightModel.JobVehicle" StoreEntitySet="JobVehicle">
+      <EndProperty Name="Job">
+        <ScalarProperty Name="JobID" ColumnName="JobID" />
+      </EndProperty>
+      <EndProperty Name="Vehicle">
+        <ScalarProperty Name="VehicleID" ColumnName="VehicleID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="OrderLine" TypeName="InsightModel.OrderLine" StoreEntitySet="OrderLine">
+      <EndProperty Name="Product">
+        <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+      </EndProperty>
+      <EndProperty Name="PurchaseOrder">
+        <ScalarProperty Name="PurchaseOrderID" ColumnName="PurchaseOrderID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Organisation" TypeName="InsightModel.Organisation" StoreEntitySet="Organisation">
+      <EndProperty Name="Client">
+        <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+      </EndProperty>
+      <EndProperty Name="OrganisationType">
+        <ScalarProperty Name="OrganisationTypeID" ColumnName="OrganisationTypeID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="InsightModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="InsightModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="InsightModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="InsightModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="InsightModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="InsightModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="InsightModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="InsightModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="InsightModel.Store.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>

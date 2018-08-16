@@ -1,0 +1,1613 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="InsightModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AccessLevel">
+    <Key>
+      <PropertyRef Name="AccessLevelID" />
+    </Key>
+    <Property Name="AccessLevelID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccessLevelDescription" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Address">
+    <Key>
+      <PropertyRef Name="AddressID" />
+    </Key>
+    <Property Name="AddressID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AddressDescription" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CityID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="CityID" />
+    </Key>
+    <Property Name="CityID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="CountryID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="ClientID" />
+    </Key>
+    <Property Name="ClientID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClientNumber" Type="int" Nullable="false" />
+    <Property Name="ClientName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AddressID" Type="int" Nullable="false" />
+    <Property Name="ClientTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ClientLogin">
+    <Key>
+      <PropertyRef Name="ClientLoginID" />
+    </Key>
+    <Property Name="ClientLoginID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClientID" Type="int" Nullable="false" />
+    <Property Name="ClientUsername" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ClientPassword" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="ClientLastLogin" Type="date" Nullable="false" />
+    <Property Name="AccessLevelID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ClientQuotation">
+    <Key>
+      <PropertyRef Name="ClientQuotationID" />
+    </Key>
+    <Property Name="ClientQuotationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClientQuotationDate" Type="date" Nullable="false" />
+    <Property Name="ProjectRequestID" Type="int" Nullable="false" />
+    <Property Name="ClientQuotationStatusID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ClientQuotationStatus">
+    <Key>
+      <PropertyRef Name="ClientQuotationStatusID" />
+    </Key>
+    <Property Name="ClientQuotationStatusID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClientQuotationStatusDescription" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ClientType">
+    <Key>
+      <PropertyRef Name="ClientTypeID" />
+    </Key>
+    <Property Name="ClientTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClientTypeDescription" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ContactPerson">
+    <Key>
+      <PropertyRef Name="ContactPersonID" />
+    </Key>
+    <Property Name="ContactPersonID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ContactPersonName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ContactPersonJobDescription" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ContactPersonPhoneNumber" Type="int" Nullable="false" />
+    <Property Name="ContactPersonEmailAddress" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="ClientID" Type="int" />
+    <Property Name="SupplierID" Type="int" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="CountryID" />
+    </Key>
+    <Property Name="CountryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CountryName" Type="varchar" MaxLength="52" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeName" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="EmployeeSurname" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="int" Nullable="false" />
+    <Property Name="EmployeeEmailAddress" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="EmployeeDateOfBirth" Type="date" Nullable="false" />
+    <Property Name="EmployeeGender" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="EmployeeLoginID" Type="int" Nullable="false" />
+    <Property Name="EmployeeTypeID" Type="int" Nullable="false" />
+    <Property Name="AddressID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EmployeeLogin">
+    <Key>
+      <PropertyRef Name="EmployeeLoginID" />
+    </Key>
+    <Property Name="EmployeeLoginID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeUsername" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="EmployeePassword" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="EmployeeLastLogin" Type="date" Nullable="false" />
+    <Property Name="AccessLevelID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Insight.dbo.EmployeeSkill' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="EmployeeSkill">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+      <PropertyRef Name="SkillID" />
+    </Key>
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="SkillID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EmployeeType">
+    <Key>
+      <PropertyRef Name="EmployeeTypeID" />
+    </Key>
+    <Property Name="EmployeeTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeTypeDescription" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Equipment">
+    <Key>
+      <PropertyRef Name="EquipmentID" />
+    </Key>
+    <Property Name="EquipmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EquipmentDescription" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EquipmentQuantity" Type="int" Nullable="false" />
+    <Property Name="EquipmentTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EquipmentType">
+    <Key>
+      <PropertyRef Name="EquipmentTypeID" />
+    </Key>
+    <Property Name="EquipmentTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EquipmentTypeDescription" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Insight.dbo.Individual' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Individual">
+    <Key>
+      <PropertyRef Name="ClientID" />
+      <PropertyRef Name="IndividualEmailAddress" />
+      <PropertyRef Name="IndividualDateOfBirth" />
+    </Key>
+    <Property Name="ClientID" Type="int" Nullable="false" />
+    <Property Name="IndividualEmailAddress" Type="varbinary" MaxLength="30" Nullable="false" />
+    <Property Name="IndividualDateOfBirth" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Job">
+    <Key>
+      <PropertyRef Name="JobID" />
+    </Key>
+    <Property Name="JobID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="JobDescription" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="JobStartDate" Type="date" Nullable="false" />
+    <Property Name="JobEndDate" Type="date" Nullable="false" />
+    <Property Name="JobTypeID" Type="int" Nullable="false" />
+    <Property Name="JobStatusID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Insight.dbo.JobEmployee' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="JobEmployee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+      <PropertyRef Name="JobID" />
+    </Key>
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="JobID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Insight.dbo.JobEquipment' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="JobEquipment">
+    <Key>
+      <PropertyRef Name="EquipmentID" />
+      <PropertyRef Name="JobID" />
+    </Key>
+    <Property Name="EquipmentID" Type="int" Nullable="false" />
+    <Property Name="JobID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Insight.dbo.JobProduct' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="JobProduct">
+    <Key>
+      <PropertyRef Name="JobID" />
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="JobID" Type="int" Nullable="false" />
+    <Property Name="ProductID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="JobStatus">
+    <Key>
+      <PropertyRef Name="JobStatusID" />
+    </Key>
+    <Property Name="JobStatusID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="JobStatusDescription" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="JobType">
+    <Key>
+      <PropertyRef Name="JobTypeID" />
+    </Key>
+    <Property Name="JobTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="JobTypeDescription" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="JobTypePrice">
+    <Key>
+      <PropertyRef Name="JobTypePriceID" />
+    </Key>
+    <Property Name="JobTypePriceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="JobTypePriceAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="JobTypePriceDate" Type="date" Nullable="false" />
+    <Property Name="JobTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Insight.dbo.JobTypeQuotationLine' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="JobTypeQuotationLine">
+    <Key>
+      <PropertyRef Name="ClientQuotationID" />
+      <PropertyRef Name="JobTypeID" />
+    </Key>
+    <Property Name="ClientQuotationID" Type="int" Nullable="false" />
+    <Property Name="JobTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Insight.dbo.JobVehicle' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="JobVehicle">
+    <Key>
+      <PropertyRef Name="JobID" />
+      <PropertyRef Name="VehicleID" />
+    </Key>
+    <Property Name="JobID" Type="int" Nullable="false" />
+    <Property Name="VehicleID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LoginLog">
+    <Key>
+      <PropertyRef Name="LoginLogID" />
+    </Key>
+    <Property Name="LoginLogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LoginDate" Type="date" Nullable="false" />
+    <Property Name="ClientLoginID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Notifcation">
+    <Key>
+      <PropertyRef Name="NotificationID" />
+    </Key>
+    <Property Name="NotificationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NotificationMessage" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="NotificationStatusID" Type="int" Nullable="false" />
+    <Property Name="EmployeeLoginID" Type="int" />
+    <Property Name="ClientLoginID" Type="int" />
+  </EntityType>
+  <EntityType Name="NotificationStatus">
+    <Key>
+      <PropertyRef Name="NotificationStatusID" />
+    </Key>
+    <Property Name="NotificationStatusID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NotificationStatusDescription" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Insight.dbo.Onsite' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Onsite">
+    <Key>
+      <PropertyRef Name="VAT" />
+      <PropertyRef Name="ProductMarkUp" />
+    </Key>
+    <Property Name="VAT" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ProductMarkUp" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Insight.dbo.OrderLine' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="OrderLine">
+    <Key>
+      <PropertyRef Name="PurchaseOrderID" />
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="PurchaseOrderID" Type="int" Nullable="false" />
+    <Property Name="ProductID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Insight.dbo.Organisation' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Organisation">
+    <Key>
+      <PropertyRef Name="ClientID" />
+      <PropertyRef Name="OrganisationTypeID" />
+    </Key>
+    <Property Name="ClientID" Type="int" Nullable="false" />
+    <Property Name="OrganisationTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OrganisationType">
+    <Key>
+      <PropertyRef Name="OrganisationTypeID" />
+    </Key>
+    <Property Name="OrganisationTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrganisationTypeDescription" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductDescription" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ProductQuantity" Type="int" Nullable="false" />
+    <Property Name="ProductTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Insight.dbo.ProductClientQuotationLine' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ProductClientQuotationLine">
+    <Key>
+      <PropertyRef Name="ClientQuotationID" />
+      <PropertyRef Name="ProductID" />
+      <PropertyRef Name="Quantity" />
+    </Key>
+    <Property Name="ClientQuotationID" Type="int" Nullable="false" />
+    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductPrice">
+    <Key>
+      <PropertyRef Name="ProductPriceID" />
+    </Key>
+    <Property Name="ProductPriceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductPriceAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ProductPriceDate" Type="date" Nullable="false" />
+    <Property Name="ProductID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductType">
+    <Key>
+      <PropertyRef Name="ProductTypeID" />
+    </Key>
+    <Property Name="ProductTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductTypeDescription" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Project">
+    <Key>
+      <PropertyRef Name="ProjectID" />
+    </Key>
+    <Property Name="ProjectID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjectDescription" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="ProjectStartDate" Type="date" Nullable="false" />
+    <Property Name="ProjectEndDate" Type="date" Nullable="false" />
+    <Property Name="ProjectActualFinishDate" Type="date" Nullable="false" />
+    <Property Name="ProjectStatusID" Type="int" Nullable="false" />
+    <Property Name="ProjectRequestID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProjectPhase">
+    <Key>
+      <PropertyRef Name="ProjectPhaseID" />
+    </Key>
+    <Property Name="ProjectPhaseID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjectPhaseDescription" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="ProjectPhaseStatusID" Type="int" Nullable="false" />
+    <Property Name="ProjectPhaseStartDate" Type="date" Nullable="false" />
+    <Property Name="ProjectPhaseEndDate" Type="date" Nullable="false" />
+    <Property Name="ProjectPhaseTypeID" Type="int" Nullable="false" />
+    <Property Name="ProjectID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProjectPhaseStatus">
+    <Key>
+      <PropertyRef Name="ProjectPhaseStatusID" />
+    </Key>
+    <Property Name="ProjectPhaseStatusID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjectPhaseStatusDescription" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProjectPhaseType">
+    <Key>
+      <PropertyRef Name="ProjectPhaseTypeID" />
+    </Key>
+    <Property Name="ProjectPhaseTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjectPhaseTypeDescription" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProjectRequest">
+    <Key>
+      <PropertyRef Name="ProjectRequestID" />
+    </Key>
+    <Property Name="ProjectRequestID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjectRequestDescription" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="ProjectRequestDate" Type="date" Nullable="false" />
+    <Property Name="ProjectRequestTypeID" Type="int" Nullable="false" />
+    <Property Name="ProjectRequestStatusID" Type="int" Nullable="false" />
+    <Property Name="AddressID" Type="int" Nullable="false" />
+    <Property Name="ClientID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProjectRequestStatus">
+    <Key>
+      <PropertyRef Name="ProjectRequestStatusID" />
+    </Key>
+    <Property Name="ProjectRequestStatusID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjectRequestStatusDescription" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProjectRequestType">
+    <Key>
+      <PropertyRef Name="ProjectRequestTypeID" />
+    </Key>
+    <Property Name="ProjectRequestTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjectRequestDescription" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProjectStatus">
+    <Key>
+      <PropertyRef Name="ProjectStatusID" />
+    </Key>
+    <Property Name="ProjectStatusID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjectStatusDescription" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Province">
+    <Key>
+      <PropertyRef Name="ProvinceID" />
+    </Key>
+    <Property Name="ProvinceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProvinceDescription" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="CityID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PurchaseOrder">
+    <Key>
+      <PropertyRef Name="PurchaseOrderID" />
+    </Key>
+    <Property Name="PurchaseOrderID" Type="int" Nullable="false" />
+    <Property Name="SupplierID" Type="int" Nullable="false" />
+    <Property Name="PurchaseOrderDate" Type="date" Nullable="false" />
+    <Property Name="PurchaseOrderStatusID" Type="int" Nullable="false" />
+    <Property Name="ProjectID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PurchaseOrderStatus">
+    <Key>
+      <PropertyRef Name="PurchaseOrderStatusID" />
+    </Key>
+    <Property Name="PurchaseOrderStatusID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PurchaseOrderStatusDescription" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RemovedEquipment">
+    <Key>
+      <PropertyRef Name="RemovedEquipmentID" />
+    </Key>
+    <Property Name="RemovedEquipmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RemovedEquipmenedDescription" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RemovedEquipmentCondition" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="EquipmentID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Return">
+    <Key>
+      <PropertyRef Name="ReturnID" />
+    </Key>
+    <Property Name="ReturnID" Type="int" Nullable="false" />
+    <Property Name="ReturnDescription" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ClientQuotationID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Skill">
+    <Key>
+      <PropertyRef Name="SkillID" />
+    </Key>
+    <Property Name="SkillID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SkillDescription" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="SupplierID" />
+    </Key>
+    <Property Name="SupplierID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SupplierName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AddressID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Vehicle">
+    <Key>
+      <PropertyRef Name="VehicleID" />
+    </Key>
+    <Property Name="VehicleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VehicleModel" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="VehicleMake" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="VehicleYear" Type="date" Nullable="false" />
+    <Property Name="PurchaseDate" Type="date" Nullable="false" />
+    <Property Name="VehicleRegistration" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="VehicleStatusID" Type="int" Nullable="false" />
+    <Property Name="VehicleTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VehicleStatus">
+    <Key>
+      <PropertyRef Name="VehicleStatusID" />
+    </Key>
+    <Property Name="VehicleStatusID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VehicleStatusDescription" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VehicleType">
+    <Key>
+      <PropertyRef Name="VehicleTypeID" />
+    </Key>
+    <Property Name="VehicleTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VehicleTypeDescription" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Address_City">
+    <End Role="City" Type="Self.City" Multiplicity="1" />
+    <End Role="Address" Type="Self.Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="CityID" />
+      </Principal>
+      <Dependent Role="Address">
+        <PropertyRef Name="CityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_City_Country">
+    <End Role="Country" Type="Self.Country" Multiplicity="1" />
+    <End Role="City" Type="Self.City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="CountryID" />
+      </Principal>
+      <Dependent Role="City">
+        <PropertyRef Name="CountryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Client_Address">
+    <End Role="Address" Type="Self.Address" Multiplicity="1" />
+    <End Role="Client" Type="Self.Client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="AddressID" />
+      </Principal>
+      <Dependent Role="Client">
+        <PropertyRef Name="AddressID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Client_ClientType">
+    <End Role="ClientType" Type="Self.ClientType" Multiplicity="1" />
+    <End Role="Client" Type="Self.Client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClientType">
+        <PropertyRef Name="ClientTypeID" />
+      </Principal>
+      <Dependent Role="Client">
+        <PropertyRef Name="ClientTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClientLogin_AccessLevel">
+    <End Role="AccessLevel" Type="Self.AccessLevel" Multiplicity="1" />
+    <End Role="ClientLogin" Type="Self.ClientLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AccessLevel">
+        <PropertyRef Name="AccessLevelID" />
+      </Principal>
+      <Dependent Role="ClientLogin">
+        <PropertyRef Name="AccessLevelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClientLogin_Client">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="ClientLogin" Type="Self.ClientLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ClientID" />
+      </Principal>
+      <Dependent Role="ClientLogin">
+        <PropertyRef Name="ClientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClientQuotation_ClientQuotationStatus">
+    <End Role="ClientQuotationStatus" Type="Self.ClientQuotationStatus" Multiplicity="1" />
+    <End Role="ClientQuotation" Type="Self.ClientQuotation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClientQuotationStatus">
+        <PropertyRef Name="ClientQuotationStatusID" />
+      </Principal>
+      <Dependent Role="ClientQuotation">
+        <PropertyRef Name="ClientQuotationStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClientQuotation_ProjectRequest">
+    <End Role="ProjectRequest" Type="Self.ProjectRequest" Multiplicity="1" />
+    <End Role="ClientQuotation" Type="Self.ClientQuotation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProjectRequest">
+        <PropertyRef Name="ProjectRequestID" />
+      </Principal>
+      <Dependent Role="ClientQuotation">
+        <PropertyRef Name="ProjectRequestID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContactPerson_Client">
+    <End Role="Client" Type="Self.Client" Multiplicity="0..1" />
+    <End Role="ContactPerson" Type="Self.ContactPerson" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ClientID" />
+      </Principal>
+      <Dependent Role="ContactPerson">
+        <PropertyRef Name="ClientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContactPerson_Supplier">
+    <End Role="Supplier" Type="Self.Supplier" Multiplicity="0..1" />
+    <End Role="ContactPerson" Type="Self.ContactPerson" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="SupplierID" />
+      </Principal>
+      <Dependent Role="ContactPerson">
+        <PropertyRef Name="SupplierID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Address">
+    <End Role="Address" Type="Self.Address" Multiplicity="1" />
+    <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="AddressID" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="AddressID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_EmployeeLogin">
+    <End Role="EmployeeLogin" Type="Self.EmployeeLogin" Multiplicity="1" />
+    <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmployeeLogin">
+        <PropertyRef Name="EmployeeLoginID" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="EmployeeLoginID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_EmployeeType">
+    <End Role="EmployeeType" Type="Self.EmployeeType" Multiplicity="1" />
+    <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmployeeType">
+        <PropertyRef Name="EmployeeTypeID" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="EmployeeTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeeLogin_AccessLevel">
+    <End Role="AccessLevel" Type="Self.AccessLevel" Multiplicity="1" />
+    <End Role="EmployeeLogin" Type="Self.EmployeeLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AccessLevel">
+        <PropertyRef Name="AccessLevelID" />
+      </Principal>
+      <Dependent Role="EmployeeLogin">
+        <PropertyRef Name="AccessLevelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeeSkill_Employee">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+    <End Role="EmployeeSkill" Type="Self.EmployeeSkill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="EmployeeSkill">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeeSkill_Skill">
+    <End Role="Skill" Type="Self.Skill" Multiplicity="1" />
+    <End Role="EmployeeSkill" Type="Self.EmployeeSkill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Skill">
+        <PropertyRef Name="SkillID" />
+      </Principal>
+      <Dependent Role="EmployeeSkill">
+        <PropertyRef Name="SkillID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Equipment_EquipmentType">
+    <End Role="EquipmentType" Type="Self.EquipmentType" Multiplicity="1" />
+    <End Role="Equipment" Type="Self.Equipment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EquipmentType">
+        <PropertyRef Name="EquipmentTypeID" />
+      </Principal>
+      <Dependent Role="Equipment">
+        <PropertyRef Name="EquipmentTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Individual_Client">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Individual" Type="Self.Individual" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ClientID" />
+      </Principal>
+      <Dependent Role="Individual">
+        <PropertyRef Name="ClientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Job_JobStatus">
+    <End Role="JobStatus" Type="Self.JobStatus" Multiplicity="1" />
+    <End Role="Job" Type="Self.Job" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobStatus">
+        <PropertyRef Name="JobStatusID" />
+      </Principal>
+      <Dependent Role="Job">
+        <PropertyRef Name="JobStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Job_JobType">
+    <End Role="JobType" Type="Self.JobType" Multiplicity="1" />
+    <End Role="Job" Type="Self.Job" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobType">
+        <PropertyRef Name="JobTypeID" />
+      </Principal>
+      <Dependent Role="Job">
+        <PropertyRef Name="JobTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobEmployee_Employee">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+    <End Role="JobEmployee" Type="Self.JobEmployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="JobEmployee">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobEmployee_Job">
+    <End Role="Job" Type="Self.Job" Multiplicity="1" />
+    <End Role="JobEmployee" Type="Self.JobEmployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Job">
+        <PropertyRef Name="JobID" />
+      </Principal>
+      <Dependent Role="JobEmployee">
+        <PropertyRef Name="JobID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobEquipment_Equipment">
+    <End Role="Equipment" Type="Self.Equipment" Multiplicity="1" />
+    <End Role="JobEquipment" Type="Self.JobEquipment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Equipment">
+        <PropertyRef Name="EquipmentID" />
+      </Principal>
+      <Dependent Role="JobEquipment">
+        <PropertyRef Name="EquipmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobEquipment_Job">
+    <End Role="Job" Type="Self.Job" Multiplicity="1" />
+    <End Role="JobEquipment" Type="Self.JobEquipment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Job">
+        <PropertyRef Name="JobID" />
+      </Principal>
+      <Dependent Role="JobEquipment">
+        <PropertyRef Name="JobID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobProduct_Job">
+    <End Role="Job" Type="Self.Job" Multiplicity="1" />
+    <End Role="JobProduct" Type="Self.JobProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Job">
+        <PropertyRef Name="JobID" />
+      </Principal>
+      <Dependent Role="JobProduct">
+        <PropertyRef Name="JobID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobProduct_Product">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="JobProduct" Type="Self.JobProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="JobProduct">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobTypePrice_JobType">
+    <End Role="JobType" Type="Self.JobType" Multiplicity="1" />
+    <End Role="JobTypePrice" Type="Self.JobTypePrice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobType">
+        <PropertyRef Name="JobTypeID" />
+      </Principal>
+      <Dependent Role="JobTypePrice">
+        <PropertyRef Name="JobTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobTypeQuotationLine_ClientQuotation">
+    <End Role="ClientQuotation" Type="Self.ClientQuotation" Multiplicity="1" />
+    <End Role="JobTypeQuotationLine" Type="Self.JobTypeQuotationLine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClientQuotation">
+        <PropertyRef Name="ClientQuotationID" />
+      </Principal>
+      <Dependent Role="JobTypeQuotationLine">
+        <PropertyRef Name="ClientQuotationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobTypeQuotationLine_JobType">
+    <End Role="JobType" Type="Self.JobType" Multiplicity="1" />
+    <End Role="JobTypeQuotationLine" Type="Self.JobTypeQuotationLine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobType">
+        <PropertyRef Name="JobTypeID" />
+      </Principal>
+      <Dependent Role="JobTypeQuotationLine">
+        <PropertyRef Name="JobTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobVehicle_Job">
+    <End Role="Job" Type="Self.Job" Multiplicity="1" />
+    <End Role="JobVehicle" Type="Self.JobVehicle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Job">
+        <PropertyRef Name="JobID" />
+      </Principal>
+      <Dependent Role="JobVehicle">
+        <PropertyRef Name="JobID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobVehicle_Vehicle">
+    <End Role="Vehicle" Type="Self.Vehicle" Multiplicity="1" />
+    <End Role="JobVehicle" Type="Self.JobVehicle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicle">
+        <PropertyRef Name="VehicleID" />
+      </Principal>
+      <Dependent Role="JobVehicle">
+        <PropertyRef Name="VehicleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LoginLog_ClientLogin">
+    <End Role="ClientLogin" Type="Self.ClientLogin" Multiplicity="1" />
+    <End Role="LoginLog" Type="Self.LoginLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClientLogin">
+        <PropertyRef Name="ClientLoginID" />
+      </Principal>
+      <Dependent Role="LoginLog">
+        <PropertyRef Name="ClientLoginID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Notifcation_ClientLogin">
+    <End Role="ClientLogin" Type="Self.ClientLogin" Multiplicity="0..1" />
+    <End Role="Notifcation" Type="Self.Notifcation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClientLogin">
+        <PropertyRef Name="ClientLoginID" />
+      </Principal>
+      <Dependent Role="Notifcation">
+        <PropertyRef Name="ClientLoginID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Notifcation_EmployeeLogin">
+    <End Role="EmployeeLogin" Type="Self.EmployeeLogin" Multiplicity="0..1" />
+    <End Role="Notifcation" Type="Self.Notifcation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmployeeLogin">
+        <PropertyRef Name="EmployeeLoginID" />
+      </Principal>
+      <Dependent Role="Notifcation">
+        <PropertyRef Name="EmployeeLoginID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Notifcation_NotificationStatus">
+    <End Role="NotificationStatus" Type="Self.NotificationStatus" Multiplicity="1" />
+    <End Role="Notifcation" Type="Self.Notifcation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NotificationStatus">
+        <PropertyRef Name="NotificationStatusID" />
+      </Principal>
+      <Dependent Role="Notifcation">
+        <PropertyRef Name="NotificationStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderLine_Product">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="OrderLine" Type="Self.OrderLine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="OrderLine">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderLine_PurchaseOrder">
+    <End Role="PurchaseOrder" Type="Self.PurchaseOrder" Multiplicity="1" />
+    <End Role="OrderLine" Type="Self.OrderLine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PurchaseOrder">
+        <PropertyRef Name="PurchaseOrderID" />
+      </Principal>
+      <Dependent Role="OrderLine">
+        <PropertyRef Name="PurchaseOrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Organisation_Client">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Organisation" Type="Self.Organisation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ClientID" />
+      </Principal>
+      <Dependent Role="Organisation">
+        <PropertyRef Name="ClientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Organisation_OrganisationType">
+    <End Role="OrganisationType" Type="Self.OrganisationType" Multiplicity="1" />
+    <End Role="Organisation" Type="Self.Organisation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganisationType">
+        <PropertyRef Name="OrganisationTypeID" />
+      </Principal>
+      <Dependent Role="Organisation">
+        <PropertyRef Name="OrganisationTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_ProductType">
+    <End Role="ProductType" Type="Self.ProductType" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductType">
+        <PropertyRef Name="ProductTypeID" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="ProductTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductClientQuotationLine_ClientQuotation">
+    <End Role="ClientQuotation" Type="Self.ClientQuotation" Multiplicity="1" />
+    <End Role="ProductClientQuotationLine" Type="Self.ProductClientQuotationLine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClientQuotation">
+        <PropertyRef Name="ClientQuotationID" />
+      </Principal>
+      <Dependent Role="ProductClientQuotationLine">
+        <PropertyRef Name="ClientQuotationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductClientQuotationLine_Product">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="ProductClientQuotationLine" Type="Self.ProductClientQuotationLine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="ProductClientQuotationLine">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductPrice_Product">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="ProductPrice" Type="Self.ProductPrice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="ProductPrice">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Project_ProjectRequest">
+    <End Role="ProjectRequest" Type="Self.ProjectRequest" Multiplicity="1" />
+    <End Role="Project" Type="Self.Project" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProjectRequest">
+        <PropertyRef Name="ProjectRequestID" />
+      </Principal>
+      <Dependent Role="Project">
+        <PropertyRef Name="ProjectRequestID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Project_ProjectStatus">
+    <End Role="ProjectStatus" Type="Self.ProjectStatus" Multiplicity="1" />
+    <End Role="Project" Type="Self.Project" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProjectStatus">
+        <PropertyRef Name="ProjectStatusID" />
+      </Principal>
+      <Dependent Role="Project">
+        <PropertyRef Name="ProjectStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectPhase_Project">
+    <End Role="Project" Type="Self.Project" Multiplicity="1" />
+    <End Role="ProjectPhase" Type="Self.ProjectPhase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project">
+        <PropertyRef Name="ProjectID" />
+      </Principal>
+      <Dependent Role="ProjectPhase">
+        <PropertyRef Name="ProjectID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectPhase_ProjectPhaseStatus">
+    <End Role="ProjectPhaseStatus" Type="Self.ProjectPhaseStatus" Multiplicity="1" />
+    <End Role="ProjectPhase" Type="Self.ProjectPhase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProjectPhaseStatus">
+        <PropertyRef Name="ProjectPhaseStatusID" />
+      </Principal>
+      <Dependent Role="ProjectPhase">
+        <PropertyRef Name="ProjectPhaseStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectPhase_ProjectPhaseType">
+    <End Role="ProjectPhaseType" Type="Self.ProjectPhaseType" Multiplicity="1" />
+    <End Role="ProjectPhase" Type="Self.ProjectPhase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProjectPhaseType">
+        <PropertyRef Name="ProjectPhaseTypeID" />
+      </Principal>
+      <Dependent Role="ProjectPhase">
+        <PropertyRef Name="ProjectPhaseTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectRequest_Address">
+    <End Role="Address" Type="Self.Address" Multiplicity="1" />
+    <End Role="ProjectRequest" Type="Self.ProjectRequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="AddressID" />
+      </Principal>
+      <Dependent Role="ProjectRequest">
+        <PropertyRef Name="AddressID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectRequest_Client">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="ProjectRequest" Type="Self.ProjectRequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ClientID" />
+      </Principal>
+      <Dependent Role="ProjectRequest">
+        <PropertyRef Name="ClientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectRequest_ProjectRequestStatus">
+    <End Role="ProjectRequestStatus" Type="Self.ProjectRequestStatus" Multiplicity="1" />
+    <End Role="ProjectRequest" Type="Self.ProjectRequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProjectRequestStatus">
+        <PropertyRef Name="ProjectRequestStatusID" />
+      </Principal>
+      <Dependent Role="ProjectRequest">
+        <PropertyRef Name="ProjectRequestStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectRequest_ProjectRequestType">
+    <End Role="ProjectRequestType" Type="Self.ProjectRequestType" Multiplicity="1" />
+    <End Role="ProjectRequest" Type="Self.ProjectRequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProjectRequestType">
+        <PropertyRef Name="ProjectRequestTypeID" />
+      </Principal>
+      <Dependent Role="ProjectRequest">
+        <PropertyRef Name="ProjectRequestTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseOrder_Project">
+    <End Role="Project" Type="Self.Project" Multiplicity="1" />
+    <End Role="PurchaseOrder" Type="Self.PurchaseOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project">
+        <PropertyRef Name="ProjectID" />
+      </Principal>
+      <Dependent Role="PurchaseOrder">
+        <PropertyRef Name="ProjectID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseOrder_PurchaseOrderStatus">
+    <End Role="PurchaseOrderStatus" Type="Self.PurchaseOrderStatus" Multiplicity="1" />
+    <End Role="PurchaseOrder" Type="Self.PurchaseOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PurchaseOrderStatus">
+        <PropertyRef Name="PurchaseOrderStatusID" />
+      </Principal>
+      <Dependent Role="PurchaseOrder">
+        <PropertyRef Name="PurchaseOrderStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseOrder_Supplier">
+    <End Role="Supplier" Type="Self.Supplier" Multiplicity="1" />
+    <End Role="PurchaseOrder" Type="Self.PurchaseOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="SupplierID" />
+      </Principal>
+      <Dependent Role="PurchaseOrder">
+        <PropertyRef Name="SupplierID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RemovedEquipment_Equipment">
+    <End Role="Equipment" Type="Self.Equipment" Multiplicity="1" />
+    <End Role="RemovedEquipment" Type="Self.RemovedEquipment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Equipment">
+        <PropertyRef Name="EquipmentID" />
+      </Principal>
+      <Dependent Role="RemovedEquipment">
+        <PropertyRef Name="EquipmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Return_ClientQuotation">
+    <End Role="ClientQuotation" Type="Self.ClientQuotation" Multiplicity="1" />
+    <End Role="Return" Type="Self.Return" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClientQuotation">
+        <PropertyRef Name="ClientQuotationID" />
+      </Principal>
+      <Dependent Role="Return">
+        <PropertyRef Name="ClientQuotationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supplier_Address">
+    <End Role="Address" Type="Self.Address" Multiplicity="1" />
+    <End Role="Supplier" Type="Self.Supplier" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="AddressID" />
+      </Principal>
+      <Dependent Role="Supplier">
+        <PropertyRef Name="AddressID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_1_VehicleStatus">
+    <End Role="VehicleStatus" Type="Self.VehicleStatus" Multiplicity="1" />
+    <End Role="Vehicle" Type="Self.Vehicle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehicleStatus">
+        <PropertyRef Name="VehicleStatusID" />
+      </Principal>
+      <Dependent Role="Vehicle">
+        <PropertyRef Name="VehicleStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_1_VehicleType">
+    <End Role="VehicleType" Type="Self.VehicleType" Multiplicity="1" />
+    <End Role="Vehicle" Type="Self.Vehicle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehicleType">
+        <PropertyRef Name="VehicleTypeID" />
+      </Principal>
+      <Dependent Role="Vehicle">
+        <PropertyRef Name="VehicleTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="InsightModelStoreContainer">
+    <EntitySet Name="AccessLevel" EntityType="Self.AccessLevel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Address" EntityType="Self.Address" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="City" EntityType="Self.City" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Client" EntityType="Self.Client" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ClientLogin" EntityType="Self.ClientLogin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ClientQuotation" EntityType="Self.ClientQuotation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ClientQuotationStatus" EntityType="Self.ClientQuotationStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ClientType" EntityType="Self.ClientType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ContactPerson" EntityType="Self.ContactPerson" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Country" EntityType="Self.Country" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EmployeeLogin" EntityType="Self.EmployeeLogin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EmployeeType" EntityType="Self.EmployeeType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Equipment" EntityType="Self.Equipment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EquipmentType" EntityType="Self.EquipmentType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Job" EntityType="Self.Job" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JobStatus" EntityType="Self.JobStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JobType" EntityType="Self.JobType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JobTypePrice" EntityType="Self.JobTypePrice" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LoginLog" EntityType="Self.LoginLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Notifcation" EntityType="Self.Notifcation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NotificationStatus" EntityType="Self.NotificationStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrganisationType" EntityType="Self.OrganisationType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductPrice" EntityType="Self.ProductPrice" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductType" EntityType="Self.ProductType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Project" EntityType="Self.Project" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProjectPhase" EntityType="Self.ProjectPhase" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProjectPhaseStatus" EntityType="Self.ProjectPhaseStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProjectPhaseType" EntityType="Self.ProjectPhaseType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProjectRequest" EntityType="Self.ProjectRequest" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProjectRequestStatus" EntityType="Self.ProjectRequestStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProjectRequestType" EntityType="Self.ProjectRequestType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProjectStatus" EntityType="Self.ProjectStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Province" EntityType="Self.Province" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PurchaseOrder" EntityType="Self.PurchaseOrder" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PurchaseOrderStatus" EntityType="Self.PurchaseOrderStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RemovedEquipment" EntityType="Self.RemovedEquipment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Return" EntityType="Self.Return" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Skill" EntityType="Self.Skill" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Supplier" EntityType="Self.Supplier" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Vehicle" EntityType="Self.Vehicle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VehicleStatus" EntityType="Self.VehicleStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VehicleType" EntityType="Self.VehicleType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EmployeeSkill" EntityType="Self.EmployeeSkill" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [EmployeeSkill].[EmployeeID] AS [EmployeeID], 
+    [EmployeeSkill].[SkillID] AS [SkillID]
+    FROM [dbo].[EmployeeSkill] AS [EmployeeSkill]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Individual" EntityType="Self.Individual" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Individual].[ClientID] AS [ClientID], 
+    [Individual].[IndividualEmailAddress] AS [IndividualEmailAddress], 
+    [Individual].[IndividualDateOfBirth] AS [IndividualDateOfBirth]
+    FROM [dbo].[Individual] AS [Individual]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="JobEmployee" EntityType="Self.JobEmployee" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [JobEmployee].[EmployeeID] AS [EmployeeID], 
+    [JobEmployee].[JobID] AS [JobID]
+    FROM [dbo].[JobEmployee] AS [JobEmployee]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="JobEquipment" EntityType="Self.JobEquipment" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [JobEquipment].[EquipmentID] AS [EquipmentID], 
+    [JobEquipment].[JobID] AS [JobID]
+    FROM [dbo].[JobEquipment] AS [JobEquipment]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="JobProduct" EntityType="Self.JobProduct" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [JobProduct].[JobID] AS [JobID], 
+    [JobProduct].[ProductID] AS [ProductID]
+    FROM [dbo].[JobProduct] AS [JobProduct]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="JobTypeQuotationLine" EntityType="Self.JobTypeQuotationLine" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [JobTypeQuotationLine].[ClientQuotationID] AS [ClientQuotationID], 
+    [JobTypeQuotationLine].[JobTypeID] AS [JobTypeID]
+    FROM [dbo].[JobTypeQuotationLine] AS [JobTypeQuotationLine]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="JobVehicle" EntityType="Self.JobVehicle" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [JobVehicle].[JobID] AS [JobID], 
+    [JobVehicle].[VehicleID] AS [VehicleID]
+    FROM [dbo].[JobVehicle] AS [JobVehicle]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Onsite" EntityType="Self.Onsite" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Onsite].[VAT] AS [VAT], 
+    [Onsite].[ProductMarkUp] AS [ProductMarkUp]
+    FROM [dbo].[Onsite] AS [Onsite]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="OrderLine" EntityType="Self.OrderLine" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [OrderLine].[PurchaseOrderID] AS [PurchaseOrderID], 
+    [OrderLine].[ProductID] AS [ProductID]
+    FROM [dbo].[OrderLine] AS [OrderLine]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Organisation" EntityType="Self.Organisation" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Organisation].[ClientID] AS [ClientID], 
+    [Organisation].[OrganisationTypeID] AS [OrganisationTypeID]
+    FROM [dbo].[Organisation] AS [Organisation]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ProductClientQuotationLine" EntityType="Self.ProductClientQuotationLine" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ProductClientQuotationLine].[ClientQuotationID] AS [ClientQuotationID], 
+    [ProductClientQuotationLine].[ProductID] AS [ProductID], 
+    [ProductClientQuotationLine].[Quantity] AS [Quantity]
+    FROM [dbo].[ProductClientQuotationLine] AS [ProductClientQuotationLine]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Address_City" Association="Self.FK_Address_City">
+      <End Role="City" EntitySet="City" />
+      <End Role="Address" EntitySet="Address" />
+    </AssociationSet>
+    <AssociationSet Name="FK_City_Country" Association="Self.FK_City_Country">
+      <End Role="Country" EntitySet="Country" />
+      <End Role="City" EntitySet="City" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Client_Address" Association="Self.FK_Client_Address">
+      <End Role="Address" EntitySet="Address" />
+      <End Role="Client" EntitySet="Client" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Client_ClientType" Association="Self.FK_Client_ClientType">
+      <End Role="ClientType" EntitySet="ClientType" />
+      <End Role="Client" EntitySet="Client" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClientLogin_AccessLevel" Association="Self.FK_ClientLogin_AccessLevel">
+      <End Role="AccessLevel" EntitySet="AccessLevel" />
+      <End Role="ClientLogin" EntitySet="ClientLogin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClientLogin_Client" Association="Self.FK_ClientLogin_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="ClientLogin" EntitySet="ClientLogin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClientQuotation_ClientQuotationStatus" Association="Self.FK_ClientQuotation_ClientQuotationStatus">
+      <End Role="ClientQuotationStatus" EntitySet="ClientQuotationStatus" />
+      <End Role="ClientQuotation" EntitySet="ClientQuotation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClientQuotation_ProjectRequest" Association="Self.FK_ClientQuotation_ProjectRequest">
+      <End Role="ProjectRequest" EntitySet="ProjectRequest" />
+      <End Role="ClientQuotation" EntitySet="ClientQuotation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContactPerson_Client" Association="Self.FK_ContactPerson_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="ContactPerson" EntitySet="ContactPerson" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContactPerson_Supplier" Association="Self.FK_ContactPerson_Supplier">
+      <End Role="Supplier" EntitySet="Supplier" />
+      <End Role="ContactPerson" EntitySet="ContactPerson" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Address" Association="Self.FK_Employee_Address">
+      <End Role="Address" EntitySet="Address" />
+      <End Role="Employee" EntitySet="Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_EmployeeLogin" Association="Self.FK_Employee_EmployeeLogin">
+      <End Role="EmployeeLogin" EntitySet="EmployeeLogin" />
+      <End Role="Employee" EntitySet="Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_EmployeeType" Association="Self.FK_Employee_EmployeeType">
+      <End Role="EmployeeType" EntitySet="EmployeeType" />
+      <End Role="Employee" EntitySet="Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeeLogin_AccessLevel" Association="Self.FK_EmployeeLogin_AccessLevel">
+      <End Role="AccessLevel" EntitySet="AccessLevel" />
+      <End Role="EmployeeLogin" EntitySet="EmployeeLogin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeeSkill_Employee" Association="Self.FK_EmployeeSkill_Employee">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="EmployeeSkill" EntitySet="EmployeeSkill" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeeSkill_Skill" Association="Self.FK_EmployeeSkill_Skill">
+      <End Role="Skill" EntitySet="Skill" />
+      <End Role="EmployeeSkill" EntitySet="EmployeeSkill" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Equipment_EquipmentType" Association="Self.FK_Equipment_EquipmentType">
+      <End Role="EquipmentType" EntitySet="EquipmentType" />
+      <End Role="Equipment" EntitySet="Equipment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Individual_Client" Association="Self.FK_Individual_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Individual" EntitySet="Individual" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Job_JobStatus" Association="Self.FK_Job_JobStatus">
+      <End Role="JobStatus" EntitySet="JobStatus" />
+      <End Role="Job" EntitySet="Job" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Job_JobType" Association="Self.FK_Job_JobType">
+      <End Role="JobType" EntitySet="JobType" />
+      <End Role="Job" EntitySet="Job" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobEmployee_Employee" Association="Self.FK_JobEmployee_Employee">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="JobEmployee" EntitySet="JobEmployee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobEmployee_Job" Association="Self.FK_JobEmployee_Job">
+      <End Role="Job" EntitySet="Job" />
+      <End Role="JobEmployee" EntitySet="JobEmployee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobEquipment_Equipment" Association="Self.FK_JobEquipment_Equipment">
+      <End Role="Equipment" EntitySet="Equipment" />
+      <End Role="JobEquipment" EntitySet="JobEquipment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobEquipment_Job" Association="Self.FK_JobEquipment_Job">
+      <End Role="Job" EntitySet="Job" />
+      <End Role="JobEquipment" EntitySet="JobEquipment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobProduct_Job" Association="Self.FK_JobProduct_Job">
+      <End Role="Job" EntitySet="Job" />
+      <End Role="JobProduct" EntitySet="JobProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobProduct_Product" Association="Self.FK_JobProduct_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="JobProduct" EntitySet="JobProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobTypePrice_JobType" Association="Self.FK_JobTypePrice_JobType">
+      <End Role="JobType" EntitySet="JobType" />
+      <End Role="JobTypePrice" EntitySet="JobTypePrice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobTypeQuotationLine_ClientQuotation" Association="Self.FK_JobTypeQuotationLine_ClientQuotation">
+      <End Role="ClientQuotation" EntitySet="ClientQuotation" />
+      <End Role="JobTypeQuotationLine" EntitySet="JobTypeQuotationLine" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobTypeQuotationLine_JobType" Association="Self.FK_JobTypeQuotationLine_JobType">
+      <End Role="JobType" EntitySet="JobType" />
+      <End Role="JobTypeQuotationLine" EntitySet="JobTypeQuotationLine" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobVehicle_Job" Association="Self.FK_JobVehicle_Job">
+      <End Role="Job" EntitySet="Job" />
+      <End Role="JobVehicle" EntitySet="JobVehicle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobVehicle_Vehicle" Association="Self.FK_JobVehicle_Vehicle">
+      <End Role="Vehicle" EntitySet="Vehicle" />
+      <End Role="JobVehicle" EntitySet="JobVehicle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LoginLog_ClientLogin" Association="Self.FK_LoginLog_ClientLogin">
+      <End Role="ClientLogin" EntitySet="ClientLogin" />
+      <End Role="LoginLog" EntitySet="LoginLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Notifcation_ClientLogin" Association="Self.FK_Notifcation_ClientLogin">
+      <End Role="ClientLogin" EntitySet="ClientLogin" />
+      <End Role="Notifcation" EntitySet="Notifcation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Notifcation_EmployeeLogin" Association="Self.FK_Notifcation_EmployeeLogin">
+      <End Role="EmployeeLogin" EntitySet="EmployeeLogin" />
+      <End Role="Notifcation" EntitySet="Notifcation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Notifcation_NotificationStatus" Association="Self.FK_Notifcation_NotificationStatus">
+      <End Role="NotificationStatus" EntitySet="NotificationStatus" />
+      <End Role="Notifcation" EntitySet="Notifcation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderLine_Product" Association="Self.FK_OrderLine_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="OrderLine" EntitySet="OrderLine" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderLine_PurchaseOrder" Association="Self.FK_OrderLine_PurchaseOrder">
+      <End Role="PurchaseOrder" EntitySet="PurchaseOrder" />
+      <End Role="OrderLine" EntitySet="OrderLine" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Organisation_Client" Association="Self.FK_Organisation_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Organisation" EntitySet="Organisation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Organisation_OrganisationType" Association="Self.FK_Organisation_OrganisationType">
+      <End Role="OrganisationType" EntitySet="OrganisationType" />
+      <End Role="Organisation" EntitySet="Organisation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_ProductType" Association="Self.FK_Product_ProductType">
+      <End Role="ProductType" EntitySet="ProductType" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductClientQuotationLine_ClientQuotation" Association="Self.FK_ProductClientQuotationLine_ClientQuotation">
+      <End Role="ClientQuotation" EntitySet="ClientQuotation" />
+      <End Role="ProductClientQuotationLine" EntitySet="ProductClientQuotationLine" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductClientQuotationLine_Product" Association="Self.FK_ProductClientQuotationLine_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="ProductClientQuotationLine" EntitySet="ProductClientQuotationLine" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductPrice_Product" Association="Self.FK_ProductPrice_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="ProductPrice" EntitySet="ProductPrice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Project_ProjectRequest" Association="Self.FK_Project_ProjectRequest">
+      <End Role="ProjectRequest" EntitySet="ProjectRequest" />
+      <End Role="Project" EntitySet="Project" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Project_ProjectStatus" Association="Self.FK_Project_ProjectStatus">
+      <End Role="ProjectStatus" EntitySet="ProjectStatus" />
+      <End Role="Project" EntitySet="Project" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectPhase_Project" Association="Self.FK_ProjectPhase_Project">
+      <End Role="Project" EntitySet="Project" />
+      <End Role="ProjectPhase" EntitySet="ProjectPhase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectPhase_ProjectPhaseStatus" Association="Self.FK_ProjectPhase_ProjectPhaseStatus">
+      <End Role="ProjectPhaseStatus" EntitySet="ProjectPhaseStatus" />
+      <End Role="ProjectPhase" EntitySet="ProjectPhase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectPhase_ProjectPhaseType" Association="Self.FK_ProjectPhase_ProjectPhaseType">
+      <End Role="ProjectPhaseType" EntitySet="ProjectPhaseType" />
+      <End Role="ProjectPhase" EntitySet="ProjectPhase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectRequest_Address" Association="Self.FK_ProjectRequest_Address">
+      <End Role="Address" EntitySet="Address" />
+      <End Role="ProjectRequest" EntitySet="ProjectRequest" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectRequest_Client" Association="Self.FK_ProjectRequest_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="ProjectRequest" EntitySet="ProjectRequest" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectRequest_ProjectRequestStatus" Association="Self.FK_ProjectRequest_ProjectRequestStatus">
+      <End Role="ProjectRequestStatus" EntitySet="ProjectRequestStatus" />
+      <End Role="ProjectRequest" EntitySet="ProjectRequest" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectRequest_ProjectRequestType" Association="Self.FK_ProjectRequest_ProjectRequestType">
+      <End Role="ProjectRequestType" EntitySet="ProjectRequestType" />
+      <End Role="ProjectRequest" EntitySet="ProjectRequest" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseOrder_Project" Association="Self.FK_PurchaseOrder_Project">
+      <End Role="Project" EntitySet="Project" />
+      <End Role="PurchaseOrder" EntitySet="PurchaseOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseOrder_PurchaseOrderStatus" Association="Self.FK_PurchaseOrder_PurchaseOrderStatus">
+      <End Role="PurchaseOrderStatus" EntitySet="PurchaseOrderStatus" />
+      <End Role="PurchaseOrder" EntitySet="PurchaseOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseOrder_Supplier" Association="Self.FK_PurchaseOrder_Supplier">
+      <End Role="Supplier" EntitySet="Supplier" />
+      <End Role="PurchaseOrder" EntitySet="PurchaseOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RemovedEquipment_Equipment" Association="Self.FK_RemovedEquipment_Equipment">
+      <End Role="Equipment" EntitySet="Equipment" />
+      <End Role="RemovedEquipment" EntitySet="RemovedEquipment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Return_ClientQuotation" Association="Self.FK_Return_ClientQuotation">
+      <End Role="ClientQuotation" EntitySet="ClientQuotation" />
+      <End Role="Return" EntitySet="Return" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supplier_Address" Association="Self.FK_Supplier_Address">
+      <End Role="Address" EntitySet="Address" />
+      <End Role="Supplier" EntitySet="Supplier" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_1_VehicleStatus" Association="Self.FK_Table_1_VehicleStatus">
+      <End Role="VehicleStatus" EntitySet="VehicleStatus" />
+      <End Role="Vehicle" EntitySet="Vehicle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_1_VehicleType" Association="Self.FK_Table_1_VehicleType">
+      <End Role="VehicleType" EntitySet="VehicleType" />
+      <End Role="Vehicle" EntitySet="Vehicle" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
