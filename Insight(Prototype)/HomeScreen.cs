@@ -12,12 +12,20 @@ namespace Insight_Prototype_
 {
     public partial class HomeScreen : Form
     {
+
         public HomeScreen()
         {
             InitializeComponent();
 
             AddClientDetailsTab.Appearance = TabAppearance.FlatButtons;
             //AddClientDetailsTab.c
+
+            //addemployeedetailstab.enabled = false;
+            //((control)edetails).enabled = false;
+            //((control)econfirmation).enabled = false;
+
+            //edetails.canselect.equals(false);
+            //econfirmation.canselect.equals(false);
 
         }
 
@@ -2149,7 +2157,7 @@ namespace Insight_Prototype_
 
         private void button15_Click(object sender, EventArgs e)
         {
-
+            AddEmployeeDetailsTab.SelectedTab = EConfirmation;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -4061,6 +4069,20 @@ namespace Insight_Prototype_
         private void button144_Click_1(object sender, EventArgs e)
         {
             ProjectActionPanel.BringToFront();
+        }
+
+        private void AddEmployeeDetailsTab_Deselecting(object sender, TabControlCancelEventArgs e)
+        {
+            ////if(e.TabPage == AddEmployeeDetailsTab.TabPages[0])
+            ////{
+            ////    e.Cancel = true;
+            ////}
+
+        }
+
+        private void AddEmployeeDetailsTab_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
