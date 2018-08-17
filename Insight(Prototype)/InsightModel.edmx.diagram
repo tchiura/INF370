@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2d4b60a8e89e446cbcaa7a642c455c8c" Name="Diagram1">
+        <EntityTypeShape EntityType="InsightModel.AccessLevel" Width="1.5" PointX="6" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.Address" Width="1.5" PointX="5.25" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.City" Width="1.5" PointX="3" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.Client" Width="1.5" PointX="7.5" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.ClientLogin" Width="1.5" PointX="12.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.ClientQuotation" Width="1.5" PointX="12" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.ClientQuotationStatu" Width="1.5" PointX="9.75" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.ClientType" Width="1.5" PointX="5.25" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.ContactPerson" Width="1.5" PointX="12.75" PointY="26.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.Country" Width="1.5" PointX="0.75" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.Employee" Width="1.5" PointX="10.5" PointY="21.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.EmployeeLogin" Width="1.5" PointX="8.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.EmployeeType" Width="1.5" PointX="8.25" PointY="38.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.Equipment" Width="1.5" PointX="15.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.EquipmentType" Width="1.5" PointX="13" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.Job" Width="1.5" PointX="17.5" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.JobStatu" Width="1.5" PointX="15.25" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.JobType" Width="1.5" PointX="14.25" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.JobTypePrice" Width="1.5" PointX="16.5" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.LoginLog" Width="1.5" PointX="15" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.Notifcation" Width="1.5" PointX="15" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.NotificationStatu" Width="1.5" PointX="12.75" PointY="30.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.OrganisationType" Width="1.5" PointX="9.75" PointY="28.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.Product" Width="1.5" PointX="22.75" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.ProductPrice" Width="1.5" PointX="25" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.ProductType" Width="1.5" PointX="20.5" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.Project" Width="1.5" PointX="15" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.ProjectPhase" Width="1.5" PointX="20.25" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.ProjectPhaseStatu" Width="1.5" PointX="18" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.ProjectPhaseType" Width="1.5" PointX="18" PointY="26.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.ProjectRequest" Width="1.5" PointX="9.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.ProjectRequestStatu" Width="1.5" PointX="7.5" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.ProjectRequestType" Width="1.5" PointX="7.5" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.ProjectStatu" Width="1.5" PointX="12.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.Province" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.PurchaseOrder" Width="1.5" PointX="25" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.PurchaseOrderStatu" Width="1.5" PointX="22.75" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.RemovedEquipment" Width="1.5" PointX="17.5" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.Skill" Width="1.5" PointX="12.75" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.Supplier" Width="1.5" PointX="7.5" PointY="31.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.SupplierReturn" Width="1.5" PointX="27.25" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.sysdiagram" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.Vehicle" Width="1.5" PointX="19.75" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.VehicleStatu" Width="1.5" PointX="17.5" PointY="21.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.VehicleType" Width="1.5" PointX="17.5" PointY="23.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.Individual" Width="1.5" PointX="9.75" PointY="35" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.Onsite" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsightModel.ProductClientQuotationLine" Width="1.5" PointX="19.25" PointY="13.25" IsExpanded="true" />
+        <AssociationConnector Association="InsightModel.FK_ClientLogin_AccessLevel" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_EmployeeLogin_AccessLevel" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_Address_City" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_Client_Address" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_Employee_Address" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_ProjectRequest_Address" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_Supplier_Address" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_City_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_Client_ClientType" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_ClientLogin_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_ContactPerson_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_Individual_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_ProjectRequest_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_LoginLog_ClientLogin" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_Notifcation_ClientLogin" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_ClientQuotation_ClientQuotationStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_ClientQuotation_ProjectRequest" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_ProductClientQuotationLine_ClientQuotation" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_ContactPerson_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_Employee_EmployeeLogin" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_Employee_EmployeeType" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_Notifcation_EmployeeLogin" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_Equipment_EquipmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_RemovedEquipment_Equipment" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_Job_JobStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_Job_JobType" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_JobTypePrice_JobType" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_Notifcation_NotificationStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_Product_ProductType" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_ProductClientQuotationLine_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_ProductPrice_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_Project_ProjectRequest" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_Project_ProjectStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_ProjectPhase_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_PurchaseOrder_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_ProjectPhase_ProjectPhaseStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_ProjectPhase_ProjectPhaseType" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_ProjectRequest_ProjectRequestStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_ProjectRequest_ProjectRequestType" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_PurchaseOrder_PurchaseOrderStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_PurchaseOrder_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_SupplierReturn_PurchaseOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_Table_1_VehicleStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.FK_Table_1_VehicleType" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.EmployeeSkill" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.JobEmployee" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.JobEquipment" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.JobProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.JobTypeQuotationLine" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.JobVehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.OrderLine" ManuallyRouted="false" />
+        <AssociationConnector Association="InsightModel.Organisation" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

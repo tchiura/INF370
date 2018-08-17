@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Insight_Prototype_
 {
     public partial class HomeScreen : Form
     {
+        Globals globalClass = new Globals();
         public HomeScreen()
         {
             InitializeComponent();
@@ -23,7 +25,18 @@ namespace Insight_Prototype_
 
         private void Form4_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'insightDataSet.Country' table. You can move, or remove it, as needed.
+            this.countryTableAdapter.Fill(this.insightDataSet.Country);
+            // TODO: This line of code loads data into the 'insightDataSet.City' table. You can move, or remove it, as needed.
+            this.cityTableAdapter.Fill(this.insightDataSet.City);
+            // TODO: This line of code loads data into the 'insightDataSet.EmployeeType' table. You can move, or remove it, as needed.
+            this.employeeTypeTableAdapter.Fill(this.insightDataSet.EmployeeType);
+            List<string> skills = GetTagList().ToList();
 
+            foreach (string x in skills)
+            {
+                SkillList.Items.Add(x);
+            }
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -2149,7 +2162,17 @@ namespace Insight_Prototype_
 
         private void button15_Click(object sender, EventArgs e)
         {
-
+            EmployeeTypelbl.Text = EmployeeTypeCbx.Text;
+            EmployeeNamelbl.Text = EmployeeName.Text;
+            EmployeeSurnamelbl.Text = EmployeeSurname.Text;
+            EmployeeNumberlbl.Text = EmployeeNum.Text;
+            EmployeeEmaillbl.Text = EmployeeEmail.Text;
+            EmployeeDOBlbl.Text = EmployeeDOB.Value.Date.ToString("dd/MM/yyyy");
+            EmployeeAd1lbl.Text = EmployeeAd1.Text;
+            EmployeeAd2lbl.Text = EmployeeAd2.Text;
+            EmployeeAd3lbl.Text = EmployeeAd3.Text;
+            EmployeeCitylbl.Text = EmployeeCity.Text;
+            EmployeeCountrylbl.Text = EmployeeCountry.Text;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -2412,9 +2435,142 @@ namespace Insight_Prototype_
 
         }
 
+        public IEnumerable<string> GetTagList()
+        {
+            using (var connection = new SqlConnection(globalClass.myConn))
+            using (var cmd = connection.CreateCommand())
+            {
+                connection.Open();
+                cmd.CommandText = "SELECT SkillDescription from Skill"; // update select command accordingly
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        yield return reader.GetString(reader.GetOrdinal("SkillDescription"));
+                    }
+                }
+            }
+        }
+
+        List<string> addedskill = new List<string>();
+
         private void button19_Click(object sender, EventArgs e)
         {
+            string employeeAddress = EmployeeAd1lbl.Text + ", " + EmployeeAd2lbl.Text + ", " + EmployeeAd3lbl.Text;
 
+            Employee InsightEmployee = new Employee();
+            Address InsightAddress = new Address();
+            EmployeeLogin InsightEmployeeLogin = new EmployeeLogin();
+            //dataGridView1.DataSource= InsightEmployee.Skills.ToList();
+
+            //Using Employee Table
+            InsightEmployee.EmployeeName = EmployeeNamelbl.Text;
+            InsightEmployee.EmployeeSurname = EmployeeSurnamelbl.Text;
+            InsightEmployee.EmployeeDateOfBirth = EmployeeDOB.Value.Date;
+            InsightEmployee.EmployeeEmailAddress = EmployeeEmaillbl.Text;
+            InsightEmployee.EmployeeNumber = Convert.ToInt32(EmployeeNumberlbl.Text);
+            InsightEmployee.EmployeeGender = EmployeeGenderCbx.Text;
+            InsightEmployee.EmployeeTypeID = Convert.ToInt32(EmployeeTypeCbx.SelectedValue);
+
+            //Using Address Table
+            InsightAddress.AddressDescription = employeeAddress;
+            InsightAddress.CityID = Convert.ToInt32(EmployeeCity.SelectedValue);
+
+            //using EmployeeLogin Table
+            InsightEmployeeLogin.EmployeeUsername = "tempUsername";
+            InsightEmployeeLogin.EmployeePassword = "tempPassword";
+            InsightEmployeeLogin.AccessLevelID = 3;
+
+            using (InsightEntities db = new InsightEntities())
+            {
+                db.Addresses.Add(InsightAddress);
+                db.SaveChanges();
+            }
+
+            using (InsightEntities db = new InsightEntities())
+            {
+                db.EmployeeLogins.Add(InsightEmployeeLogin);
+                db.SaveChanges();
+            }
+
+            //new primary keys
+            int addressID = InsightAddress.AddressID;
+            int employeeLoginID = InsightEmployeeLogin.EmployeeLoginID;
+            int employeeID = InsightEmployee.EmployeeID;
+
+            //Table carrying all foreign keys at the bottom
+            using (InsightEntities db = new InsightEntities())
+            {
+                InsightEmployee.AddressID = addressID;
+                InsightEmployee.EmployeeLoginID = employeeLoginID;
+                db.Employees.Add(InsightEmployee);
+                db.SaveChanges();
+            }
+
+            //Entity Framework not putting assossiatives as classes
+
+            var addedskill = AddedSkillList.Items.Cast<String>().ToList();
+
+            SqlConnection conn = new SqlConnection(globalClass.myConn);
+            conn.Open();
+
+            foreach (string x in addedskill)
+            {
+                //  DataSet ds = new DataSet();
+                SqlCommand insertEmployeeSkill = new SqlCommand("Insert into EmployeeSkill(EmployeeID, SkillID) Values(@EmployeeID, @SkillID)", conn);
+                insertEmployeeSkill.Parameters.AddWithValue("@EmployeeID", employeeID);
+                SqlCommand readSkills = new SqlCommand("Select SkillDescription from Skill");
+                SqlDataReader myReader;
+
+                myReader = readSkills.ExecuteReader();
+
+                //use reader 
+                //Parameters.AddWithValue(@SkillID
+                //insertEmployeeSkill.ExecuteNonQuery();
+                /*
+                 SqlCommand myCmd = new SqlCommand(cmdTxt, myConn);
+                SqlCommand updateComm = new SqlCommand(updateUserTable, myConn);
+                myReader = myCmd.ExecuteReader();
+                bool validCredentials = false;
+                bool brk = false;
+
+
+               try
+               {
+                    while (myReader.Read())
+                    {
+                        //Check if account exists
+                        if (Convert.ToString(myReader["Email"]) == txtUsername.Text)
+                        {
+                            if (Convert.ToString(myReader["Password"]) == txtPassword.Text)
+                            {
+                                //Correct password
+                                validCredentials = true;
+
+                                //Stop searching
+                                brk = true;
+                                UserID = Convert.ToInt32(myReader["UserID"]);
+                                /*command.CommandText = "UPDATE Student 
+                                SET Address = @add, City = @cit Where FirstName = @fn and LastName = @add";
+                                 
+
+                                myConn.Close();
+                                myConn.Open();
+                  */
+            }
+        }
+
+        private void MoveListBoxItems(ListBox source, ListBox destination)
+        {
+            ListBox.SelectedObjectCollection sourceItems = source.SelectedItems;
+            foreach (var item in sourceItems)
+            {
+                destination.Items.Add(item);
+            }
+            while (source.SelectedItems.Count > 0)
+            {
+                source.Items.Remove(source.SelectedItems[0]);
+            }
         }
 
         private void EComplete_Click(object sender, EventArgs e)
@@ -4061,6 +4217,16 @@ namespace Insight_Prototype_
         private void button144_Click_1(object sender, EventArgs e)
         {
             ProjectActionPanel.BringToFront();
+        }
+
+        private void button20_Click_1(object sender, EventArgs e)
+        {
+            MoveListBoxItems(SkillList, AddedSkillList);
+        }
+
+        private void button21_Click_2(object sender, EventArgs e)
+        {
+            MoveListBoxItems(AddedSkillList, SkillList);
         }
     }
 }
