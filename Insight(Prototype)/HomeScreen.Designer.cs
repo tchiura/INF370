@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.TopBarPanel = new System.Windows.Forms.Panel();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.Userlbl = new System.Windows.Forms.Label();
@@ -730,67 +731,14 @@
             this.label232 = new System.Windows.Forms.Label();
             this.AddEmployeeDetailsTab = new System.Windows.Forms.TabControl();
             this.EDetails = new System.Windows.Forms.TabPage();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.textBox63 = new System.Windows.Forms.TextBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.label63 = new System.Windows.Forms.Label();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.EConfirmation = new System.Windows.Forms.TabPage();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label81 = new System.Windows.Forms.Label();
-            this.label91 = new System.Windows.Forms.Label();
-            this.label99 = new System.Windows.Forms.Label();
-            this.label272 = new System.Windows.Forms.Label();
-            this.label273 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
-            this.label72 = new System.Windows.Forms.Label();
-            this.label73 = new System.Windows.Forms.Label();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
             this.ESkills = new System.Windows.Forms.TabPage();
-            this.button20 = new System.Windows.Forms.Button();
             this.label55 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.EComplete = new System.Windows.Forms.TabPage();
@@ -927,6 +875,67 @@
             this.ViewClientAPBtn = new System.Windows.Forms.Button();
             this.ViewClientTypeAPBtn = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.EmployeeAd2 = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.EmployeeAd1 = new System.Windows.Forms.TextBox();
+            this.EmployeeAd3 = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.EmployeeCountry = new System.Windows.Forms.ComboBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.EmployeeCity = new System.Windows.Forms.ComboBox();
+            this.label63 = new System.Windows.Forms.Label();
+            this.EmployeeEmail = new System.Windows.Forms.TextBox();
+            this.EmployeeNum = new System.Windows.Forms.TextBox();
+            this.EmployeeSurname = new System.Windows.Forms.TextBox();
+            this.EmployeeName = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.EmployeeTypeCbx = new System.Windows.Forms.ComboBox();
+            this.EmployeeGenderCbx = new System.Windows.Forms.ComboBox();
+            this.EmployeeDOB = new System.Windows.Forms.DateTimePicker();
+            this.EmployeeDOBlbl = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.EmployeeAd2lbl = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
+            this.label91 = new System.Windows.Forms.Label();
+            this.label99 = new System.Windows.Forms.Label();
+            this.label272 = new System.Windows.Forms.Label();
+            this.label273 = new System.Windows.Forms.Label();
+            this.EmployeeAd1lbl = new System.Windows.Forms.Label();
+            this.EmployeeCitylbl = new System.Windows.Forms.Label();
+            this.EmployeeCountrylbl = new System.Windows.Forms.Label();
+            this.EmployeeAd3lbl = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
+            this.EmployeeEmaillbl = new System.Windows.Forms.Label();
+            this.EmployeeTypelbl = new System.Windows.Forms.Label();
+            this.EmployeeGenderlbl = new System.Windows.Forms.Label();
+            this.EmployeeNamelbl = new System.Windows.Forms.Label();
+            this.EmployeeSurnamelbl = new System.Windows.Forms.Label();
+            this.EmployeeNumberlbl = new System.Windows.Forms.Label();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.SkillList = new System.Windows.Forms.ListBox();
+            this.AddedSkillList = new System.Windows.Forms.ListBox();
+            this.insightDataSet = new Insight_Prototype_.InsightDataSet();
+            this.employeeTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.employeeTypeTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.EmployeeTypeTableAdapter();
+            this.cityBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cityTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.CityTableAdapter();
+            this.countryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.countryTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.CountryTableAdapter();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
@@ -1067,9 +1076,7 @@
             this.tabPage31.SuspendLayout();
             this.AddEmployeeDetailsTab.SuspendLayout();
             this.EDetails.SuspendLayout();
-            this.groupBox5.SuspendLayout();
             this.EConfirmation.SuspendLayout();
-            this.groupBox6.SuspendLayout();
             this.ESkills.SuspendLayout();
             this.EComplete.SuspendLayout();
             this.AddSkillTab.SuspendLayout();
@@ -1119,6 +1126,12 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.ClientActionPanel.SuspendLayout();
             this.ClientTLAPanel.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeTypeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cityBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.countryBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // TopBarPanel
@@ -8643,30 +8656,27 @@
             this.AddEmployeeDetailsTab.Size = new System.Drawing.Size(1050, 671);
             this.AddEmployeeDetailsTab.TabIndex = 26;
             this.AddEmployeeDetailsTab.SelectedIndexChanged += new System.EventHandler(this.AddEmployeeDetailsTab_SelectedIndexChanged);
-            this.AddEmployeeDetailsTab.Deselecting += new System.Windows.Forms.TabControlCancelEventHandler(this.AddEmployeeDetailsTab_Deselecting);
-            this.AddEmployeeDetailsTab.Click += new System.EventHandler(this.AddEmployeeDetailsTab_Click);
             // 
             // EDetails
             // 
-            this.EDetails.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.EDetails.BackColor = System.Drawing.Color.White;
             this.EDetails.Controls.Add(this.groupBox5);
             this.EDetails.Controls.Add(this.label63);
-            this.EDetails.Controls.Add(this.button14);
-            this.EDetails.Controls.Add(this.button15);
-            this.EDetails.Controls.Add(this.textBox1);
-            this.EDetails.Controls.Add(this.textBox3);
-            this.EDetails.Controls.Add(this.textBox4);
-            this.EDetails.Controls.Add(this.textBox11);
+            this.EDetails.Controls.Add(this.EmployeeEmail);
+            this.EDetails.Controls.Add(this.EmployeeNum);
+            this.EDetails.Controls.Add(this.EmployeeSurname);
+            this.EDetails.Controls.Add(this.EmployeeName);
             this.EDetails.Controls.Add(this.label32);
             this.EDetails.Controls.Add(this.label33);
             this.EDetails.Controls.Add(this.label34);
             this.EDetails.Controls.Add(this.label38);
             this.EDetails.Controls.Add(this.label39);
             this.EDetails.Controls.Add(this.label40);
-            this.EDetails.Controls.Add(this.comboBox5);
-            this.EDetails.Controls.Add(this.comboBox9);
-            this.EDetails.Controls.Add(this.dateTimePicker1);
+            this.EDetails.Controls.Add(this.EmployeeTypeCbx);
+            this.EDetails.Controls.Add(this.EmployeeGenderCbx);
+            this.EDetails.Controls.Add(this.EmployeeDOB);
+            this.EDetails.Controls.Add(this.button14);
+            this.EDetails.Controls.Add(this.button15);
             this.EDetails.ForeColor = System.Drawing.Color.Black;
             this.EDetails.Location = new System.Drawing.Point(4, 28);
             this.EDetails.Name = "EDetails";
@@ -8675,131 +8685,6 @@
             this.EDetails.TabIndex = 0;
             this.EDetails.Text = "Details";
             this.EDetails.Click += new System.EventHandler(this.EDetails_Click_1);
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.textBox63);
-            this.groupBox5.Controls.Add(this.label35);
-            this.groupBox5.Controls.Add(this.label58);
-            this.groupBox5.Controls.Add(this.label41);
-            this.groupBox5.Controls.Add(this.textBox13);
-            this.groupBox5.Controls.Add(this.textBox2);
-            this.groupBox5.Controls.Add(this.label36);
-            this.groupBox5.Controls.Add(this.comboBox8);
-            this.groupBox5.Controls.Add(this.label37);
-            this.groupBox5.Controls.Add(this.comboBox7);
-            this.groupBox5.Location = new System.Drawing.Point(54, 382);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(417, 237);
-            this.groupBox5.TabIndex = 37;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Address";
-            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
-            // 
-            // textBox63
-            // 
-            this.textBox63.Location = new System.Drawing.Point(164, 73);
-            this.textBox63.Name = "textBox63";
-            this.textBox63.Size = new System.Drawing.Size(245, 27);
-            this.textBox63.TabIndex = 41;
-            this.textBox63.Text = "Suburb";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(17, 30);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(108, 19);
-            this.label35.TabIndex = 38;
-            this.label35.Text = "Address Line 1:";
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(17, 74);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(108, 19);
-            this.label58.TabIndex = 40;
-            this.label58.Text = "Address Line 2:";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(17, 115);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(108, 19);
-            this.label41.TabIndex = 0;
-            this.label41.Text = "Address Line 3:";
-            this.label41.Click += new System.EventHandler(this.label41_Click);
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(164, 29);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(245, 27);
-            this.textBox13.TabIndex = 39;
-            this.textBox13.Text = "Building No./Street Name";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(164, 114);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(245, 27);
-            this.textBox2.TabIndex = 24;
-            this.textBox2.Text = "Province";
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(17, 159);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(38, 19);
-            this.label36.TabIndex = 5;
-            this.label36.Text = "City:";
-            this.label36.Click += new System.EventHandler(this.label36_Click);
-            // 
-            // comboBox8
-            // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
-            "South Africa"});
-            this.comboBox8.Location = new System.Drawing.Point(164, 201);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(245, 27);
-            this.comboBox8.TabIndex = 29;
-            this.comboBox8.SelectedIndexChanged += new System.EventHandler(this.comboBox8_SelectedIndexChanged);
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(17, 202);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(63, 19);
-            this.label37.TabIndex = 4;
-            this.label37.Text = "Country:";
-            this.label37.Click += new System.EventHandler(this.label37_Click);
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
-            "Johannesburg"});
-            this.comboBox7.Location = new System.Drawing.Point(164, 158);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(245, 27);
-            this.comboBox7.TabIndex = 28;
-            this.comboBox7.SelectedIndexChanged += new System.EventHandler(this.comboBox7_SelectedIndexChanged);
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(50, 190);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(60, 19);
-            this.label63.TabIndex = 32;
-            this.label63.Text = "Gender:";
-            this.label63.Click += new System.EventHandler(this.label63_Click);
             // 
             // button14
             // 
@@ -8827,129 +8712,11 @@
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(218, 294);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(245, 27);
-            this.textBox1.TabIndex = 25;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(218, 239);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(245, 27);
-            this.textBox3.TabIndex = 23;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(218, 141);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(245, 27);
-            this.textBox4.TabIndex = 22;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(218, 98);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(245, 27);
-            this.textBox11.TabIndex = 21;
-            this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(50, 297);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(105, 19);
-            this.label32.TabIndex = 15;
-            this.label32.Text = "Email Address:";
-            this.label32.Click += new System.EventHandler(this.label32_Click);
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(50, 346);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(96, 19);
-            this.label33.TabIndex = 14;
-            this.label33.Text = "Date of Birth:";
-            this.label33.Click += new System.EventHandler(this.label33_Click);
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(50, 50);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(114, 19);
-            this.label34.TabIndex = 7;
-            this.label34.Text = "Employee Type: ";
-            this.label34.Click += new System.EventHandler(this.label34_Click);
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(50, 101);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(51, 19);
-            this.label38.TabIndex = 3;
-            this.label38.Text = "Name:";
-            this.label38.Click += new System.EventHandler(this.label38_Click);
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(50, 144);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(69, 19);
-            this.label39.TabIndex = 2;
-            this.label39.Text = "Surname:";
-            this.label39.Click += new System.EventHandler(this.label39_Click);
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(50, 242);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(108, 19);
-            this.label40.TabIndex = 1;
-            this.label40.Text = "Phone Number:";
-            this.label40.Click += new System.EventHandler(this.label40_Click);
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(218, 52);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(245, 27);
-            this.comboBox5.TabIndex = 26;
-            this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.comboBox5_SelectedIndexChanged);
-            // 
-            // comboBox9
-            // 
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(218, 187);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(245, 27);
-            this.comboBox9.TabIndex = 33;
-            this.comboBox9.SelectedIndexChanged += new System.EventHandler(this.comboBox9_SelectedIndexChanged);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(218, 340);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(245, 27);
-            this.dateTimePicker1.TabIndex = 36;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
-            // 
             // EConfirmation
             // 
             this.EConfirmation.BackColor = System.Drawing.Color.White;
+            this.EConfirmation.Controls.Add(this.EmployeeDOBlbl);
             this.EConfirmation.Controls.Add(this.groupBox6);
-            this.EConfirmation.Controls.Add(this.dateTimePicker4);
             this.EConfirmation.Controls.Add(this.label64);
             this.EConfirmation.Controls.Add(this.label65);
             this.EConfirmation.Controls.Add(this.label66);
@@ -8957,14 +8724,14 @@
             this.EConfirmation.Controls.Add(this.label71);
             this.EConfirmation.Controls.Add(this.label72);
             this.EConfirmation.Controls.Add(this.label73);
+            this.EConfirmation.Controls.Add(this.EmployeeEmaillbl);
+            this.EConfirmation.Controls.Add(this.EmployeeTypelbl);
+            this.EConfirmation.Controls.Add(this.EmployeeGenderlbl);
+            this.EConfirmation.Controls.Add(this.EmployeeNamelbl);
+            this.EConfirmation.Controls.Add(this.EmployeeSurnamelbl);
+            this.EConfirmation.Controls.Add(this.EmployeeNumberlbl);
             this.EConfirmation.Controls.Add(this.button16);
             this.EConfirmation.Controls.Add(this.button17);
-            this.EConfirmation.Controls.Add(this.label43);
-            this.EConfirmation.Controls.Add(this.label44);
-            this.EConfirmation.Controls.Add(this.label48);
-            this.EConfirmation.Controls.Add(this.label49);
-            this.EConfirmation.Controls.Add(this.label50);
-            this.EConfirmation.Controls.Add(this.label51);
             this.EConfirmation.ForeColor = System.Drawing.Color.Black;
             this.EConfirmation.Location = new System.Drawing.Point(4, 28);
             this.EConfirmation.Name = "EConfirmation";
@@ -8973,196 +8740,6 @@
             this.EConfirmation.TabIndex = 1;
             this.EConfirmation.Text = "Confirmation";
             this.EConfirmation.Click += new System.EventHandler(this.EConfirmation_Click);
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.label52);
-            this.groupBox6.Controls.Add(this.label81);
-            this.groupBox6.Controls.Add(this.label91);
-            this.groupBox6.Controls.Add(this.label99);
-            this.groupBox6.Controls.Add(this.label272);
-            this.groupBox6.Controls.Add(this.label273);
-            this.groupBox6.Controls.Add(this.label42);
-            this.groupBox6.Controls.Add(this.label46);
-            this.groupBox6.Controls.Add(this.label47);
-            this.groupBox6.Controls.Add(this.label45);
-            this.groupBox6.Location = new System.Drawing.Point(53, 327);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(434, 237);
-            this.groupBox6.TabIndex = 64;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Address";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(212, 74);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(70, 19);
-            this.label52.TabIndex = 41;
-            this.label52.Text = "Kingsway";
-            // 
-            // label81
-            // 
-            this.label81.AutoSize = true;
-            this.label81.Location = new System.Drawing.Point(17, 30);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(108, 19);
-            this.label81.TabIndex = 38;
-            this.label81.Text = "Address Line 1:";
-            // 
-            // label91
-            // 
-            this.label91.AutoSize = true;
-            this.label91.Location = new System.Drawing.Point(17, 74);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(108, 19);
-            this.label91.TabIndex = 40;
-            this.label91.Text = "Address Line 2:";
-            // 
-            // label99
-            // 
-            this.label99.AutoSize = true;
-            this.label99.Location = new System.Drawing.Point(17, 115);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(108, 19);
-            this.label99.TabIndex = 0;
-            this.label99.Text = "Address Line 3:";
-            // 
-            // label272
-            // 
-            this.label272.AutoSize = true;
-            this.label272.Location = new System.Drawing.Point(17, 159);
-            this.label272.Name = "label272";
-            this.label272.Size = new System.Drawing.Size(38, 19);
-            this.label272.TabIndex = 5;
-            this.label272.Text = "City:";
-            // 
-            // label273
-            // 
-            this.label273.AutoSize = true;
-            this.label273.Location = new System.Drawing.Point(17, 202);
-            this.label273.Name = "label273";
-            this.label273.Size = new System.Drawing.Size(63, 19);
-            this.label273.TabIndex = 4;
-            this.label273.Text = "Country:";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(212, 30);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(104, 19);
-            this.label42.TabIndex = 35;
-            this.label42.Text = "23 Jump Street";
-            this.label42.Click += new System.EventHandler(this.label42_Click);
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(212, 159);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(98, 19);
-            this.label46.TabIndex = 31;
-            this.label46.Text = "Johannesburg";
-            this.label46.Click += new System.EventHandler(this.label46_Click);
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(212, 202);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(87, 19);
-            this.label47.TabIndex = 30;
-            this.label47.Text = "South Africa";
-            this.label47.Click += new System.EventHandler(this.label47_Click);
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(212, 115);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(64, 19);
-            this.label45.TabIndex = 32;
-            this.label45.Text = "Gauteng";
-            this.label45.Click += new System.EventHandler(this.label45_Click);
-            // 
-            // dateTimePicker4
-            // 
-            this.dateTimePicker4.Location = new System.Drawing.Point(326, 289);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(245, 27);
-            this.dateTimePicker4.TabIndex = 63;
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(49, 167);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(60, 19);
-            this.label64.TabIndex = 48;
-            this.label64.Text = "Gender:";
-            this.label64.Click += new System.EventHandler(this.label64_Click);
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(49, 251);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(105, 19);
-            this.label65.TabIndex = 47;
-            this.label65.Text = "Email Address:";
-            this.label65.Click += new System.EventHandler(this.label65_Click);
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(50, 295);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(96, 19);
-            this.label66.TabIndex = 46;
-            this.label66.Text = "Date of Birth:";
-            this.label66.Click += new System.EventHandler(this.label66_Click);
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(50, 50);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(114, 19);
-            this.label67.TabIndex = 45;
-            this.label67.Text = "Employee Type: ";
-            this.label67.Click += new System.EventHandler(this.label67_Click);
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(50, 88);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(51, 19);
-            this.label71.TabIndex = 41;
-            this.label71.Text = "Name:";
-            this.label71.Click += new System.EventHandler(this.label71_Click);
-            // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(50, 131);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(69, 19);
-            this.label72.TabIndex = 40;
-            this.label72.Text = "Surname:";
-            this.label72.Click += new System.EventHandler(this.label72_Click);
-            // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(50, 206);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(108, 19);
-            this.label73.TabIndex = 39;
-            this.label73.Text = "Phone Number:";
-            this.label73.Click += new System.EventHandler(this.label73_Click);
             // 
             // button16
             // 
@@ -9190,74 +8767,15 @@
             this.button17.UseVisualStyleBackColor = true;
             this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(321, 251);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(109, 19);
-            this.label43.TabIndex = 34;
-            this.label43.Text = "Jill@main.co.za";
-            this.label43.Click += new System.EventHandler(this.label43_Click);
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(322, 50);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(78, 19);
-            this.label44.TabIndex = 33;
-            this.label44.Text = "Technician";
-            this.label44.Click += new System.EventHandler(this.label44_Click);
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(321, 167);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(56, 19);
-            this.label48.TabIndex = 29;
-            this.label48.Text = "Female";
-            this.label48.Click += new System.EventHandler(this.label48_Click);
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(322, 88);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(26, 19);
-            this.label49.TabIndex = 28;
-            this.label49.Text = "Jill";
-            this.label49.Click += new System.EventHandler(this.label49_Click);
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(322, 131);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(42, 19);
-            this.label50.TabIndex = 27;
-            this.label50.Text = "Main";
-            this.label50.Click += new System.EventHandler(this.label50_Click);
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(322, 206);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(97, 19);
-            this.label51.TabIndex = 26;
-            this.label51.Text = "072 152 1423";
-            this.label51.Click += new System.EventHandler(this.label51_Click);
-            // 
             // ESkills
             // 
             this.ESkills.BackColor = System.Drawing.Color.White;
+            this.ESkills.Controls.Add(this.AddedSkillList);
+            this.ESkills.Controls.Add(this.SkillList);
+            this.ESkills.Controls.Add(this.button21);
             this.ESkills.Controls.Add(this.button20);
             this.ESkills.Controls.Add(this.label55);
             this.ESkills.Controls.Add(this.label54);
-            this.ESkills.Controls.Add(this.listBox2);
-            this.ESkills.Controls.Add(this.listBox1);
             this.ESkills.Controls.Add(this.button18);
             this.ESkills.Controls.Add(this.button19);
             this.ESkills.ForeColor = System.Drawing.Color.Black;
@@ -9268,16 +8786,6 @@
             this.ESkills.TabIndex = 3;
             this.ESkills.Text = "Skills";
             this.ESkills.Click += new System.EventHandler(this.ESkills_Click_1);
-            // 
-            // button20
-            // 
-            this.button20.Location = new System.Drawing.Point(451, 190);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(75, 30);
-            this.button20.TabIndex = 49;
-            this.button20.Text = "Add Skill";
-            this.button20.UseVisualStyleBackColor = true;
-            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // label55
             // 
@@ -9298,32 +8806,6 @@
             this.label54.TabIndex = 47;
             this.label54.Text = "Skills";
             this.label54.Click += new System.EventHandler(this.label54_Click_1);
-            // 
-            // listBox2
-            // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 19;
-            this.listBox2.Items.AddRange(new object[] {
-            "Cleaning",
-            "Maintenance"});
-            this.listBox2.Location = new System.Drawing.Point(626, 43);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(325, 308);
-            this.listBox2.TabIndex = 46;
-            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 19;
-            this.listBox1.Items.AddRange(new object[] {
-            "Microsoft Office",
-            "LAN Installation"});
-            this.listBox1.Location = new System.Drawing.Point(25, 43);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(325, 308);
-            this.listBox1.TabIndex = 45;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // button18
             // 
@@ -10107,16 +9589,16 @@
             // 
             // chart1
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart1.Legends.Add(legend4);
+            chartArea8.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea8);
+            legend8.Name = "Legend1";
+            this.chart1.Legends.Add(legend8);
             this.chart1.Location = new System.Drawing.Point(66, 36);
             this.chart1.Name = "chart1";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chart1.Series.Add(series4);
+            series8.ChartArea = "ChartArea1";
+            series8.Legend = "Legend1";
+            series8.Name = "Series1";
+            this.chart1.Series.Add(series8);
             this.chart1.Size = new System.Drawing.Size(300, 300);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -11147,6 +10629,553 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click_1);
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.EmployeeAd2);
+            this.groupBox5.Controls.Add(this.label35);
+            this.groupBox5.Controls.Add(this.label58);
+            this.groupBox5.Controls.Add(this.label41);
+            this.groupBox5.Controls.Add(this.EmployeeAd1);
+            this.groupBox5.Controls.Add(this.EmployeeAd3);
+            this.groupBox5.Controls.Add(this.label36);
+            this.groupBox5.Controls.Add(this.EmployeeCountry);
+            this.groupBox5.Controls.Add(this.label37);
+            this.groupBox5.Controls.Add(this.EmployeeCity);
+            this.groupBox5.Location = new System.Drawing.Point(32, 353);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(434, 237);
+            this.groupBox5.TabIndex = 52;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Address";
+            // 
+            // EmployeeAd2
+            // 
+            this.EmployeeAd2.ForeColor = System.Drawing.Color.DarkGray;
+            this.EmployeeAd2.Location = new System.Drawing.Point(173, 71);
+            this.EmployeeAd2.MaxLength = 30;
+            this.EmployeeAd2.Name = "EmployeeAd2";
+            this.EmployeeAd2.Size = new System.Drawing.Size(245, 27);
+            this.EmployeeAd2.TabIndex = 41;
+            this.EmployeeAd2.Text = "Suburb";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(17, 30);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(108, 19);
+            this.label35.TabIndex = 38;
+            this.label35.Text = "Address Line 1:";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(17, 74);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(108, 19);
+            this.label58.TabIndex = 40;
+            this.label58.Text = "Address Line 2:";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(17, 115);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(108, 19);
+            this.label41.TabIndex = 0;
+            this.label41.Text = "Address Line 3:";
+            // 
+            // EmployeeAd1
+            // 
+            this.EmployeeAd1.ForeColor = System.Drawing.Color.DarkGray;
+            this.EmployeeAd1.Location = new System.Drawing.Point(173, 27);
+            this.EmployeeAd1.MaxLength = 35;
+            this.EmployeeAd1.Name = "EmployeeAd1";
+            this.EmployeeAd1.Size = new System.Drawing.Size(245, 27);
+            this.EmployeeAd1.TabIndex = 39;
+            this.EmployeeAd1.Text = "Building No./Street Name";
+            // 
+            // EmployeeAd3
+            // 
+            this.EmployeeAd3.ForeColor = System.Drawing.Color.DarkGray;
+            this.EmployeeAd3.Location = new System.Drawing.Point(173, 112);
+            this.EmployeeAd3.MaxLength = 20;
+            this.EmployeeAd3.Name = "EmployeeAd3";
+            this.EmployeeAd3.Size = new System.Drawing.Size(245, 27);
+            this.EmployeeAd3.TabIndex = 24;
+            this.EmployeeAd3.Text = "Province";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(17, 159);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(38, 19);
+            this.label36.TabIndex = 5;
+            this.label36.Text = "City:";
+            // 
+            // EmployeeCountry
+            // 
+            this.EmployeeCountry.DataSource = this.countryBindingSource;
+            this.EmployeeCountry.DisplayMember = "CountryName";
+            this.EmployeeCountry.FormattingEnabled = true;
+            this.EmployeeCountry.Location = new System.Drawing.Point(173, 199);
+            this.EmployeeCountry.Name = "EmployeeCountry";
+            this.EmployeeCountry.Size = new System.Drawing.Size(245, 27);
+            this.EmployeeCountry.TabIndex = 29;
+            this.EmployeeCountry.ValueMember = "CountryID";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(17, 202);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(63, 19);
+            this.label37.TabIndex = 4;
+            this.label37.Text = "Country:";
+            // 
+            // EmployeeCity
+            // 
+            this.EmployeeCity.DataSource = this.cityBindingSource;
+            this.EmployeeCity.DisplayMember = "Name";
+            this.EmployeeCity.FormattingEnabled = true;
+            this.EmployeeCity.Location = new System.Drawing.Point(173, 156);
+            this.EmployeeCity.Name = "EmployeeCity";
+            this.EmployeeCity.Size = new System.Drawing.Size(245, 27);
+            this.EmployeeCity.TabIndex = 28;
+            this.EmployeeCity.ValueMember = "CityID";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(28, 161);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(60, 19);
+            this.label63.TabIndex = 49;
+            this.label63.Text = "Gender:";
+            // 
+            // EmployeeEmail
+            // 
+            this.EmployeeEmail.Location = new System.Drawing.Point(205, 265);
+            this.EmployeeEmail.MaxLength = 30;
+            this.EmployeeEmail.Name = "EmployeeEmail";
+            this.EmployeeEmail.Size = new System.Drawing.Size(245, 27);
+            this.EmployeeEmail.TabIndex = 47;
+            // 
+            // EmployeeNum
+            // 
+            this.EmployeeNum.Location = new System.Drawing.Point(205, 210);
+            this.EmployeeNum.MaxLength = 15;
+            this.EmployeeNum.Name = "EmployeeNum";
+            this.EmployeeNum.Size = new System.Drawing.Size(245, 27);
+            this.EmployeeNum.TabIndex = 46;
+            // 
+            // EmployeeSurname
+            // 
+            this.EmployeeSurname.Location = new System.Drawing.Point(205, 112);
+            this.EmployeeSurname.MaxLength = 30;
+            this.EmployeeSurname.Name = "EmployeeSurname";
+            this.EmployeeSurname.Size = new System.Drawing.Size(245, 27);
+            this.EmployeeSurname.TabIndex = 45;
+            // 
+            // EmployeeName
+            // 
+            this.EmployeeName.Location = new System.Drawing.Point(205, 69);
+            this.EmployeeName.MaxLength = 30;
+            this.EmployeeName.Name = "EmployeeName";
+            this.EmployeeName.Size = new System.Drawing.Size(245, 27);
+            this.EmployeeName.TabIndex = 44;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(28, 268);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(105, 19);
+            this.label32.TabIndex = 43;
+            this.label32.Text = "Email Address:";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(28, 317);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(96, 19);
+            this.label33.TabIndex = 42;
+            this.label33.Text = "Date of Birth:";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(28, 27);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(114, 19);
+            this.label34.TabIndex = 41;
+            this.label34.Text = "Employee Type: ";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(28, 72);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(51, 19);
+            this.label38.TabIndex = 40;
+            this.label38.Text = "Name:";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(28, 115);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(69, 19);
+            this.label39.TabIndex = 39;
+            this.label39.Text = "Surname:";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(28, 213);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(108, 19);
+            this.label40.TabIndex = 38;
+            this.label40.Text = "Phone Number:";
+            // 
+            // EmployeeTypeCbx
+            // 
+            this.EmployeeTypeCbx.DataSource = this.employeeTypeBindingSource;
+            this.EmployeeTypeCbx.DisplayMember = "EmployeeTypeDescription";
+            this.EmployeeTypeCbx.FormattingEnabled = true;
+            this.EmployeeTypeCbx.Location = new System.Drawing.Point(205, 25);
+            this.EmployeeTypeCbx.Name = "EmployeeTypeCbx";
+            this.EmployeeTypeCbx.Size = new System.Drawing.Size(245, 27);
+            this.EmployeeTypeCbx.TabIndex = 48;
+            this.EmployeeTypeCbx.ValueMember = "EmployeeTypeID";
+            // 
+            // EmployeeGenderCbx
+            // 
+            this.EmployeeGenderCbx.FormattingEnabled = true;
+            this.EmployeeGenderCbx.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.EmployeeGenderCbx.Location = new System.Drawing.Point(205, 158);
+            this.EmployeeGenderCbx.Name = "EmployeeGenderCbx";
+            this.EmployeeGenderCbx.Size = new System.Drawing.Size(245, 27);
+            this.EmployeeGenderCbx.TabIndex = 50;
+            // 
+            // EmployeeDOB
+            // 
+            this.EmployeeDOB.Location = new System.Drawing.Point(205, 311);
+            this.EmployeeDOB.Name = "EmployeeDOB";
+            this.EmployeeDOB.Size = new System.Drawing.Size(245, 27);
+            this.EmployeeDOB.TabIndex = 51;
+            // 
+            // EmployeeDOBlbl
+            // 
+            this.EmployeeDOBlbl.AutoSize = true;
+            this.EmployeeDOBlbl.Location = new System.Drawing.Point(306, 276);
+            this.EmployeeDOBlbl.Name = "EmployeeDOBlbl";
+            this.EmployeeDOBlbl.Size = new System.Drawing.Size(13, 19);
+            this.EmployeeDOBlbl.TabIndex = 80;
+            this.EmployeeDOBlbl.Text = ".";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.EmployeeAd2lbl);
+            this.groupBox6.Controls.Add(this.label81);
+            this.groupBox6.Controls.Add(this.label91);
+            this.groupBox6.Controls.Add(this.label99);
+            this.groupBox6.Controls.Add(this.label272);
+            this.groupBox6.Controls.Add(this.label273);
+            this.groupBox6.Controls.Add(this.EmployeeAd1lbl);
+            this.groupBox6.Controls.Add(this.EmployeeCitylbl);
+            this.groupBox6.Controls.Add(this.EmployeeCountrylbl);
+            this.groupBox6.Controls.Add(this.EmployeeAd3lbl);
+            this.groupBox6.Location = new System.Drawing.Point(38, 314);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(537, 237);
+            this.groupBox6.TabIndex = 79;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Address";
+            // 
+            // EmployeeAd2lbl
+            // 
+            this.EmployeeAd2lbl.AutoSize = true;
+            this.EmployeeAd2lbl.Location = new System.Drawing.Point(267, 76);
+            this.EmployeeAd2lbl.Name = "EmployeeAd2lbl";
+            this.EmployeeAd2lbl.Size = new System.Drawing.Size(70, 19);
+            this.EmployeeAd2lbl.TabIndex = 41;
+            this.EmployeeAd2lbl.Text = "Kingsway";
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Location = new System.Drawing.Point(17, 30);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(108, 19);
+            this.label81.TabIndex = 38;
+            this.label81.Text = "Address Line 1:";
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.Location = new System.Drawing.Point(17, 74);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(108, 19);
+            this.label91.TabIndex = 40;
+            this.label91.Text = "Address Line 2:";
+            // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.Location = new System.Drawing.Point(17, 115);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(108, 19);
+            this.label99.TabIndex = 0;
+            this.label99.Text = "Address Line 3:";
+            // 
+            // label272
+            // 
+            this.label272.AutoSize = true;
+            this.label272.Location = new System.Drawing.Point(17, 159);
+            this.label272.Name = "label272";
+            this.label272.Size = new System.Drawing.Size(38, 19);
+            this.label272.TabIndex = 5;
+            this.label272.Text = "City:";
+            // 
+            // label273
+            // 
+            this.label273.AutoSize = true;
+            this.label273.Location = new System.Drawing.Point(17, 202);
+            this.label273.Name = "label273";
+            this.label273.Size = new System.Drawing.Size(63, 19);
+            this.label273.TabIndex = 4;
+            this.label273.Text = "Country:";
+            // 
+            // EmployeeAd1lbl
+            // 
+            this.EmployeeAd1lbl.AutoSize = true;
+            this.EmployeeAd1lbl.Location = new System.Drawing.Point(268, 29);
+            this.EmployeeAd1lbl.Name = "EmployeeAd1lbl";
+            this.EmployeeAd1lbl.Size = new System.Drawing.Size(104, 19);
+            this.EmployeeAd1lbl.TabIndex = 35;
+            this.EmployeeAd1lbl.Text = "23 Jump Street";
+            // 
+            // EmployeeCitylbl
+            // 
+            this.EmployeeCitylbl.AutoSize = true;
+            this.EmployeeCitylbl.Location = new System.Drawing.Point(268, 159);
+            this.EmployeeCitylbl.Name = "EmployeeCitylbl";
+            this.EmployeeCitylbl.Size = new System.Drawing.Size(98, 19);
+            this.EmployeeCitylbl.TabIndex = 31;
+            this.EmployeeCitylbl.Text = "Johannesburg";
+            // 
+            // EmployeeCountrylbl
+            // 
+            this.EmployeeCountrylbl.AutoSize = true;
+            this.EmployeeCountrylbl.Location = new System.Drawing.Point(268, 196);
+            this.EmployeeCountrylbl.Name = "EmployeeCountrylbl";
+            this.EmployeeCountrylbl.Size = new System.Drawing.Size(87, 19);
+            this.EmployeeCountrylbl.TabIndex = 30;
+            this.EmployeeCountrylbl.Text = "South Africa";
+            // 
+            // EmployeeAd3lbl
+            // 
+            this.EmployeeAd3lbl.AutoSize = true;
+            this.EmployeeAd3lbl.Location = new System.Drawing.Point(268, 115);
+            this.EmployeeAd3lbl.Name = "EmployeeAd3lbl";
+            this.EmployeeAd3lbl.Size = new System.Drawing.Size(64, 19);
+            this.EmployeeAd3lbl.TabIndex = 32;
+            this.EmployeeAd3lbl.Text = "Gauteng";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(33, 148);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(60, 19);
+            this.label64.TabIndex = 78;
+            this.label64.Text = "Gender:";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(33, 232);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(105, 19);
+            this.label65.TabIndex = 77;
+            this.label65.Text = "Email Address:";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(34, 276);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(96, 19);
+            this.label66.TabIndex = 76;
+            this.label66.Text = "Date of Birth:";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(34, 31);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(114, 19);
+            this.label67.TabIndex = 75;
+            this.label67.Text = "Employee Type: ";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Location = new System.Drawing.Point(34, 69);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(51, 19);
+            this.label71.TabIndex = 74;
+            this.label71.Text = "Name:";
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Location = new System.Drawing.Point(34, 112);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(69, 19);
+            this.label72.TabIndex = 73;
+            this.label72.Text = "Surname:";
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Location = new System.Drawing.Point(34, 187);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(108, 19);
+            this.label73.TabIndex = 72;
+            this.label73.Text = "Phone Number:";
+            // 
+            // EmployeeEmaillbl
+            // 
+            this.EmployeeEmaillbl.AutoSize = true;
+            this.EmployeeEmaillbl.Location = new System.Drawing.Point(305, 232);
+            this.EmployeeEmaillbl.Name = "EmployeeEmaillbl";
+            this.EmployeeEmaillbl.Size = new System.Drawing.Size(109, 19);
+            this.EmployeeEmaillbl.TabIndex = 71;
+            this.EmployeeEmaillbl.Text = "Jill@main.co.za";
+            // 
+            // EmployeeTypelbl
+            // 
+            this.EmployeeTypelbl.AutoSize = true;
+            this.EmployeeTypelbl.Location = new System.Drawing.Point(306, 31);
+            this.EmployeeTypelbl.Name = "EmployeeTypelbl";
+            this.EmployeeTypelbl.Size = new System.Drawing.Size(78, 19);
+            this.EmployeeTypelbl.TabIndex = 70;
+            this.EmployeeTypelbl.Text = "Technician";
+            // 
+            // EmployeeGenderlbl
+            // 
+            this.EmployeeGenderlbl.AutoSize = true;
+            this.EmployeeGenderlbl.Location = new System.Drawing.Point(305, 148);
+            this.EmployeeGenderlbl.Name = "EmployeeGenderlbl";
+            this.EmployeeGenderlbl.Size = new System.Drawing.Size(56, 19);
+            this.EmployeeGenderlbl.TabIndex = 69;
+            this.EmployeeGenderlbl.Text = "Female";
+            // 
+            // EmployeeNamelbl
+            // 
+            this.EmployeeNamelbl.AutoSize = true;
+            this.EmployeeNamelbl.Location = new System.Drawing.Point(306, 69);
+            this.EmployeeNamelbl.Name = "EmployeeNamelbl";
+            this.EmployeeNamelbl.Size = new System.Drawing.Size(26, 19);
+            this.EmployeeNamelbl.TabIndex = 68;
+            this.EmployeeNamelbl.Text = "Jill";
+            // 
+            // EmployeeSurnamelbl
+            // 
+            this.EmployeeSurnamelbl.AutoSize = true;
+            this.EmployeeSurnamelbl.Location = new System.Drawing.Point(306, 112);
+            this.EmployeeSurnamelbl.Name = "EmployeeSurnamelbl";
+            this.EmployeeSurnamelbl.Size = new System.Drawing.Size(42, 19);
+            this.EmployeeSurnamelbl.TabIndex = 67;
+            this.EmployeeSurnamelbl.Text = "Main";
+            // 
+            // EmployeeNumberlbl
+            // 
+            this.EmployeeNumberlbl.AutoSize = true;
+            this.EmployeeNumberlbl.Location = new System.Drawing.Point(306, 187);
+            this.EmployeeNumberlbl.Name = "EmployeeNumberlbl";
+            this.EmployeeNumberlbl.Size = new System.Drawing.Size(97, 19);
+            this.EmployeeNumberlbl.TabIndex = 66;
+            this.EmployeeNumberlbl.Text = "072 152 1423";
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(448, 214);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(103, 30);
+            this.button21.TabIndex = 52;
+            this.button21.Text = "Remove Skill";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click_2);
+            // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(448, 148);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(103, 30);
+            this.button20.TabIndex = 51;
+            this.button20.Text = "Add Skill";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click_1);
+            // 
+            // SkillList
+            // 
+            this.SkillList.FormattingEnabled = true;
+            this.SkillList.ItemHeight = 19;
+            this.SkillList.Location = new System.Drawing.Point(25, 43);
+            this.SkillList.Name = "SkillList";
+            this.SkillList.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.SkillList.Size = new System.Drawing.Size(325, 308);
+            this.SkillList.TabIndex = 53;
+            // 
+            // AddedSkillList
+            // 
+            this.AddedSkillList.FormattingEnabled = true;
+            this.AddedSkillList.ItemHeight = 19;
+            this.AddedSkillList.Location = new System.Drawing.Point(626, 42);
+            this.AddedSkillList.Name = "AddedSkillList";
+            this.AddedSkillList.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.AddedSkillList.Size = new System.Drawing.Size(325, 308);
+            this.AddedSkillList.TabIndex = 54;
+            // 
+            // insightDataSet
+            // 
+            this.insightDataSet.DataSetName = "InsightDataSet";
+            this.insightDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // employeeTypeBindingSource
+            // 
+            this.employeeTypeBindingSource.DataMember = "EmployeeType";
+            this.employeeTypeBindingSource.DataSource = this.insightDataSet;
+            // 
+            // employeeTypeTableAdapter
+            // 
+            this.employeeTypeTableAdapter.ClearBeforeFill = true;
+            // 
+            // cityBindingSource
+            // 
+            this.cityBindingSource.DataMember = "City";
+            this.cityBindingSource.DataSource = this.insightDataSet;
+            // 
+            // cityTableAdapter
+            // 
+            this.cityTableAdapter.ClearBeforeFill = true;
+            // 
+            // countryBindingSource
+            // 
+            this.countryBindingSource.DataMember = "Country";
+            this.countryBindingSource.DataSource = this.insightDataSet;
+            // 
+            // countryTableAdapter
+            // 
+            this.countryTableAdapter.ClearBeforeFill = true;
+            // 
             // HomeScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
@@ -11357,12 +11386,8 @@
             this.AddEmployeeDetailsTab.ResumeLayout(false);
             this.EDetails.ResumeLayout(false);
             this.EDetails.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
             this.EConfirmation.ResumeLayout(false);
             this.EConfirmation.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
             this.ESkills.ResumeLayout(false);
             this.ESkills.PerformLayout();
             this.EComplete.ResumeLayout(false);
@@ -11426,6 +11451,14 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ClientActionPanel.ResumeLayout(false);
             this.ClientTLAPanel.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeTypeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cityBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.countryBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -11700,56 +11733,16 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn CTDecription;
         private System.Windows.Forms.TabControl AddEmployeeDetailsTab;
         private System.Windows.Forms.TabPage EDetails;
-        private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TabPage EConfirmation;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.Label label72;
-        private System.Windows.Forms.Label label73;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label51;
         private System.Windows.Forms.TabPage EComplete;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.TabPage ESkills;
-        private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.TabControl AddEmployeeTypeTab;
@@ -12171,19 +12164,6 @@
         private System.Windows.Forms.ComboBox comboBox27;
         private System.Windows.Forms.Button button195;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.TextBox textBox63;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Label label81;
-        private System.Windows.Forms.Label label91;
-        private System.Windows.Forms.Label label99;
-        private System.Windows.Forms.Label label272;
-        private System.Windows.Forms.Label label273;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
-        private System.Windows.Forms.Label label52;
         private System.Windows.Forms.DateTimePicker dateTimePicker5;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.TextBox textBox64;
@@ -12328,5 +12308,66 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SAddress;
         private System.Windows.Forms.DataGridViewTextBoxColumn SCountry;
         private System.Windows.Forms.DataGridViewTextBoxColumn SCity;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.TextBox EmployeeAd2;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.TextBox EmployeeAd1;
+        private System.Windows.Forms.TextBox EmployeeAd3;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.ComboBox EmployeeCountry;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.ComboBox EmployeeCity;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.TextBox EmployeeEmail;
+        private System.Windows.Forms.TextBox EmployeeNum;
+        private System.Windows.Forms.TextBox EmployeeSurname;
+        private System.Windows.Forms.TextBox EmployeeName;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.ComboBox EmployeeTypeCbx;
+        private System.Windows.Forms.ComboBox EmployeeGenderCbx;
+        private System.Windows.Forms.DateTimePicker EmployeeDOB;
+        private System.Windows.Forms.Label EmployeeDOBlbl;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Label EmployeeAd2lbl;
+        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.Label label91;
+        private System.Windows.Forms.Label label99;
+        private System.Windows.Forms.Label label272;
+        private System.Windows.Forms.Label label273;
+        private System.Windows.Forms.Label EmployeeAd1lbl;
+        private System.Windows.Forms.Label EmployeeCitylbl;
+        private System.Windows.Forms.Label EmployeeCountrylbl;
+        private System.Windows.Forms.Label EmployeeAd3lbl;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.Label EmployeeEmaillbl;
+        private System.Windows.Forms.Label EmployeeTypelbl;
+        private System.Windows.Forms.Label EmployeeGenderlbl;
+        private System.Windows.Forms.Label EmployeeNamelbl;
+        private System.Windows.Forms.Label EmployeeSurnamelbl;
+        private System.Windows.Forms.Label EmployeeNumberlbl;
+        private System.Windows.Forms.ListBox AddedSkillList;
+        private System.Windows.Forms.ListBox SkillList;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button20;
+        private InsightDataSet insightDataSet;
+        private System.Windows.Forms.BindingSource employeeTypeBindingSource;
+        private InsightDataSetTableAdapters.EmployeeTypeTableAdapter employeeTypeTableAdapter;
+        private System.Windows.Forms.BindingSource cityBindingSource;
+        private InsightDataSetTableAdapters.CityTableAdapter cityTableAdapter;
+        private System.Windows.Forms.BindingSource countryBindingSource;
+        private InsightDataSetTableAdapters.CountryTableAdapter countryTableAdapter;
     }
 }

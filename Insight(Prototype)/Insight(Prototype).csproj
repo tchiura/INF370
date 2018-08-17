@@ -32,8 +32,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,6 +55,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccessLevel.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="AddJobTypePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +106,9 @@
     <Compile Include="AddProjectPage.Designer.cs">
       <DependentUpon>AddProjectPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Address.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="ApproveQuotationPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +144,30 @@
     </Compile>
     <Compile Include="CancelPurchaseOrderPage.Designer.cs">
       <DependentUpon>CancelPurchaseOrderPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="City.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Client.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientLogin.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientQuotation.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientQuotationStatu.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientType.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContactPerson.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Country.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
     </Compile>
     <Compile Include="CreatePurchaseOrderPage.cs">
       <SubType>Form</SubType>
@@ -178,6 +217,21 @@
     <Compile Include="DeleteVehiclePage.Designer.cs">
       <DependentUpon>DeleteVehiclePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employee.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeLogin.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeType.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Equipment.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EquipmentType.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="GenerateInvoicePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,11 +244,50 @@
     <Compile Include="GenerateProjectQuotationPage.Designer.cs">
       <DependentUpon>GenerateProjectQuotationPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Globals.cs" />
+    <Compile Include="Individual.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InsightDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsightDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InsightModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsightModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InsightModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InsightModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsightModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Job.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JobStatu.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JobType.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JobTypePrice.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="LoadScreen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoadScreen.Designer.cs">
       <DependentUpon>LoadScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginLog.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
     </Compile>
     <Compile Include="LoginScreen.cs">
       <SubType>Form</SubType>
@@ -208,11 +301,71 @@
     <Compile Include="HomeScreen.Designer.cs">
       <DependentUpon>HomeScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Notifcation.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NotificationStatu.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Onsite.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrganisationType.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductClientQuotationLine.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductPrice.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductType.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Project.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectPhase.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectPhaseStatu.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectPhaseType.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectRequest.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectRequestStatu.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectRequestType.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectStatu.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Province.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrder.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderStatu.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="ReceiveProductsPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ReceiveProductsPage.Designer.cs">
       <DependentUpon>ReceiveProductsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemovedEquipment.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
     </Compile>
     <Compile Include="RemoveVehiclePage.cs">
       <SubType>Form</SubType>
@@ -225,6 +378,24 @@
     </Compile>
     <Compile Include="ReturnsPage.Designer.cs">
       <DependentUpon>ReturnsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Skill.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierReturn.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
     </Compile>
     <Compile Include="UpdateClientLoginDetailsPage.cs">
       <SubType>Form</SubType>
@@ -317,6 +488,15 @@
     </Compile>
     <Compile Include="UpdateVehiclePage.Designer.cs">
       <DependentUpon>UpdateVehiclePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleStatu.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleType.cs">
+      <DependentUpon>InsightModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ViewClientLoginPage.cs">
       <SubType>Form</SubType>
@@ -500,6 +680,25 @@
     <EmbeddedResource Include="ViewQuotationPage.resx">
       <DependentUpon>ViewQuotationPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EntityDeploy Include="InsightModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>InsightModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="InsightDataSet.xsc">
+      <DependentUpon>InsightDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InsightDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InsightDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InsightDataSet.xss">
+      <DependentUpon>InsightDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InsightModel.edmx.diagram">
+      <DependentUpon>InsightModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -544,6 +743,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Cancel_100px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="InsightModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>InsightModel.Context.cs</LastGenOutput>
+      <DependentUpon>InsightModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="InsightModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>InsightModel.edmx</DependentUpon>
+      <LastGenOutput>InsightModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
