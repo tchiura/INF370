@@ -19,6 +19,8 @@ namespace Insight_Prototype_
             InitializeComponent();
 
             AddClientDetailsTab.Appearance = TabAppearance.FlatButtons;
+            AddVehiclePanel.Appearance = TabAppearance.FlatButtons;
+            //AddVehiclePanel.
             //AddClientDetailsTab.c
 
         }
@@ -265,10 +267,8 @@ namespace Insight_Prototype_
 
         private void AddClienTypetAPBtn_Click(object sender, EventArgs e)
         {
-            Form N = new AddOrganisationTypePage();
-            //AddOTypeDetails.BringToFront();
-            N.ShowDialog();
-            //this
+            Form AO = new AddOrganisationTypePage();
+            AO.ShowDialog();
         }
 
         private void button7_Click_1(object sender, EventArgs e)
@@ -305,7 +305,8 @@ namespace Insight_Prototype_
 
         private void button60_Click(object sender, EventArgs e)
         {
-            AddJobType.BringToFront();
+            Form JT = new AddJobTypePage();
+            JT.ShowDialog();
         }
 
         private void button61_Click(object sender, EventArgs e)
@@ -325,7 +326,8 @@ namespace Insight_Prototype_
 
         private void button35_Click(object sender, EventArgs e)
         {
-            AddEmployeeTypeTab.BringToFront();
+            Form ET = new AddEmployeeTypePage();
+            ET.ShowDialog();
         }
 
         private void button36_Click(object sender, EventArgs e)
@@ -395,7 +397,8 @@ namespace Insight_Prototype_
 
         private void button46_Click(object sender, EventArgs e)
         {
-            
+            Form APT = new AddProductTypePage();
+            APT.ShowDialog();
         }
 
         private void button43_Click(object sender, EventArgs e)
@@ -410,7 +413,8 @@ namespace Insight_Prototype_
 
         private void button50_Click(object sender, EventArgs e)
         {
-            
+            Form EQ = new AddEquipmentTypePage();
+            EQ.ShowDialog();
         }
 
         private void button74_Click(object sender, EventArgs e)
@@ -1090,14 +1094,23 @@ namespace Insight_Prototype_
 
         }
 
+        //Add Vehicle
         private void button125_Click_1(object sender, EventArgs e)
         {
+            VehicleActionPanel.BringToFront();
 
         }
 
         private void button188_Click(object sender, EventArgs e)
         {
+            CVRegLbl.Text = VRegTb.Text;
+            CVTypeLbl.Text = VTypeCmb.Text;
+            CVMakeLbl.Text = VMakeTb.Text;
+            CVModelLbl.Text = VModelTb.Text;
+            CVYearLbl.Text = VYearTb.Text;
+            CVPDateLbl.Text = VPDateDtp.Value.Date.ToString("dd/MM/yyyy");
 
+            AddVehiclePanel.SelectedTab = AddVehiclePanel.TabPages[1];
         }
 
         private void label84_Click(object sender, EventArgs e)
@@ -1187,12 +1200,25 @@ namespace Insight_Prototype_
 
         private void button189_Click(object sender, EventArgs e)
         {
-
+            AddVehiclePanel.SelectedTab = AddVehiclePanel.TabPages[0];
         }
 
         private void button190_Click(object sender, EventArgs e)
         {
+            //AddVehiclePanel.SelectedTab = AddVehiclePanel.TabPages[3];
 
+            //Vehicle InsightVehicle = new Vehicle();
+            //InsightVehicle.VehicleMake = VMakeTb.Text;
+            //InsightVehicle.VehicleModel = VModelTb.Text;
+            //InsightVehicle.VehicleRegistration = VRegTb.Text;
+            ////InsightVehicle.VehicleYear = ((DateTime)VYearTb.Text);
+            //InsightVehicle.PurchaseDate = VPDateDtp.Value.Date;
+
+            //using (InsightEntities db = new InsightEntities())
+            //{
+            //    db.Vehicles.Add(InsightVehicle);
+            //    db.SaveChanges();
+            //}
         }
 
         private void tabPage34_Click(object sender, EventArgs e)
@@ -3028,14 +3054,25 @@ namespace Insight_Prototype_
 
         }
 
+        //Add Supplier Page
         private void button167_Click(object sender, EventArgs e)
         {
-
+            SupplierActionPanel.BringToFront();
         }
 
         private void button168_Click(object sender, EventArgs e)
         {
-
+            //Attribute Mismatch with Database
+            CSTitleLbl.Text = STitleCmb.Text;
+            CSNameLbl.Text = SNameTb.Text;
+            CSCPNamelbl.Text = CPNameTb.Text;
+            CSCPNumberLbl.Text = CPNumberTb.Text; 
+            CSCPEmailLbl.Text = CPEmailTb.Text;
+            CSCPALine1Lbl.Text = CPALine1Tb.Text;
+            CSCPALine2Lbl.Text = CPALine2Tb.Text;
+            CSCPALine3Lbl.Text = CPALine3Tb.Text;
+            CSCPACityLbl.Text = CPACityCmb.Text;
+            CSCPACountryLbl.Text = CPACountryCmb.Text;
         }
 
         private void textBox42_TextChanged(object sender, EventArgs e)
@@ -3925,12 +3962,13 @@ namespace Insight_Prototype_
 
         private void button53_Click(object sender, EventArgs e)
         {
-
+            AddVehiclePanel.BringToFront();
         }
 
         private void button55_Click(object sender, EventArgs e)
         {
-
+            Form VT = new AddVehicleTypePage();
+            VT.ShowDialog();
         }
 
         private void button56_Click(object sender, EventArgs e)
