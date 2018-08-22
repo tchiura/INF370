@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Insight(Prototype)",
+    "\\packages"
   ],
+  "SelectedNode": "\\Insight(Prototype)\\HomeScreen.cs",
   "PreviewInSolutionExplorer": false
 }
