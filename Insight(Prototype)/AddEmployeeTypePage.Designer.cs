@@ -28,48 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.AddEmployeeTypeTC = new System.Windows.Forms.TabControl();
+            this.AddEmployeeTypeDetails = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.EmpTypetb = new System.Windows.Forms.TextBox();
-            this.ETCancelBtn = new System.Windows.Forms.Button();
-            this.ETNextBtn = new System.Windows.Forms.Button();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
             this.label58 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.ETBackBtn = new System.Windows.Forms.Button();
-            this.ETConfirmBtn = new System.Windows.Forms.Button();
-            this.ETConfirmLbl = new System.Windows.Forms.Label();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.label81 = new System.Windows.Forms.Label();
             this.label91 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label99 = new System.Windows.Forms.Label();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
+            this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.Userlbl = new System.Windows.Forms.Label();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.TopBarPanel = new System.Windows.Forms.Panel();
-            this.AddEmployeeTypeTC.SuspendLayout();
+            this.AddEmployeeTypeDetails.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.TopBarPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // AddEmployeeTypeTC
+            // AddEmployeeTypeDetails
             // 
-            this.AddEmployeeTypeTC.Controls.Add(this.tabPage1);
-            this.AddEmployeeTypeTC.Controls.Add(this.tabPage2);
-            this.AddEmployeeTypeTC.Controls.Add(this.tabPage3);
-            this.AddEmployeeTypeTC.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddEmployeeTypeTC.Location = new System.Drawing.Point(0, 30);
-            this.AddEmployeeTypeTC.Name = "AddEmployeeTypeTC";
-            this.AddEmployeeTypeTC.SelectedIndex = 0;
-            this.AddEmployeeTypeTC.Size = new System.Drawing.Size(460, 170);
-            this.AddEmployeeTypeTC.TabIndex = 11;
+            this.AddEmployeeTypeDetails.Controls.Add(this.tabPage1);
+            this.AddEmployeeTypeDetails.Controls.Add(this.tabPage2);
+            this.AddEmployeeTypeDetails.Controls.Add(this.tabPage3);
+            this.AddEmployeeTypeDetails.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AddEmployeeTypeDetails.Location = new System.Drawing.Point(0, 30);
+            this.AddEmployeeTypeDetails.Name = "AddEmployeeTypeDetails";
+            this.AddEmployeeTypeDetails.SelectedIndex = 0;
+            this.AddEmployeeTypeDetails.Size = new System.Drawing.Size(460, 170);
+            this.AddEmployeeTypeDetails.TabIndex = 11;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
-            this.tabPage1.Controls.Add(this.EmpTypetb);
-            this.tabPage1.Controls.Add(this.ETCancelBtn);
-            this.tabPage1.Controls.Add(this.ETNextBtn);
+            this.tabPage1.Controls.Add(this.textBox13);
+            this.tabPage1.Controls.Add(this.button21);
+            this.tabPage1.Controls.Add(this.button22);
             this.tabPage1.Controls.Add(this.label58);
             this.tabPage1.ForeColor = System.Drawing.Color.Black;
             this.tabPage1.Location = new System.Drawing.Point(4, 28);
@@ -79,37 +83,35 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Details";
             // 
-            // EmpTypetb
+            // textBox13
             // 
-            this.EmpTypetb.Location = new System.Drawing.Point(170, 25);
-            this.EmpTypetb.Name = "EmpTypetb";
-            this.EmpTypetb.Size = new System.Drawing.Size(245, 27);
-            this.EmpTypetb.TabIndex = 32;
-            this.EmpTypetb.Text = "Organisation";
+            this.textBox13.Location = new System.Drawing.Point(170, 25);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(245, 27);
+            this.textBox13.TabIndex = 32;
+            this.textBox13.Text = "Organisation";
             // 
-            // ETCancelBtn
+            // button21
             // 
-            this.ETCancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ETCancelBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ETCancelBtn.Location = new System.Drawing.Point(290, 102);
-            this.ETCancelBtn.Name = "ETCancelBtn";
-            this.ETCancelBtn.Size = new System.Drawing.Size(75, 30);
-            this.ETCancelBtn.TabIndex = 31;
-            this.ETCancelBtn.Text = "Cancel";
-            this.ETCancelBtn.UseVisualStyleBackColor = true;
-            this.ETCancelBtn.Click += new System.EventHandler(this.ETCancelBtn_Click);
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button21.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button21.Location = new System.Drawing.Point(290, 102);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(75, 30);
+            this.button21.TabIndex = 31;
+            this.button21.Text = "Cancel";
+            this.button21.UseVisualStyleBackColor = true;
             // 
-            // ETNextBtn
+            // button22
             // 
-            this.ETNextBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ETNextBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ETNextBtn.Location = new System.Drawing.Point(371, 102);
-            this.ETNextBtn.Name = "ETNextBtn";
-            this.ETNextBtn.Size = new System.Drawing.Size(75, 30);
-            this.ETNextBtn.TabIndex = 30;
-            this.ETNextBtn.Text = "Next";
-            this.ETNextBtn.UseVisualStyleBackColor = true;
-            this.ETNextBtn.Click += new System.EventHandler(this.ETNextBtn_Click);
+            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button22.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button22.Location = new System.Drawing.Point(371, 102);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(75, 30);
+            this.button22.TabIndex = 30;
+            this.button22.Text = "Next";
+            this.button22.UseVisualStyleBackColor = true;
             // 
             // label58
             // 
@@ -123,9 +125,9 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
-            this.tabPage2.Controls.Add(this.ETBackBtn);
-            this.tabPage2.Controls.Add(this.ETConfirmBtn);
-            this.tabPage2.Controls.Add(this.ETConfirmLbl);
+            this.tabPage2.Controls.Add(this.button23);
+            this.tabPage2.Controls.Add(this.button24);
+            this.tabPage2.Controls.Add(this.label81);
             this.tabPage2.Controls.Add(this.label91);
             this.tabPage2.ForeColor = System.Drawing.Color.Black;
             this.tabPage2.Location = new System.Drawing.Point(4, 28);
@@ -135,38 +137,36 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Confirmation";
             // 
-            // ETBackBtn
+            // button23
             // 
-            this.ETBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ETBackBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ETBackBtn.Location = new System.Drawing.Point(291, 102);
-            this.ETBackBtn.Name = "ETBackBtn";
-            this.ETBackBtn.Size = new System.Drawing.Size(75, 30);
-            this.ETBackBtn.TabIndex = 37;
-            this.ETBackBtn.Text = "Back";
-            this.ETBackBtn.UseVisualStyleBackColor = true;
-            this.ETBackBtn.Click += new System.EventHandler(this.ETBackBtn_Click);
+            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button23.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button23.Location = new System.Drawing.Point(259, 78);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(75, 30);
+            this.button23.TabIndex = 37;
+            this.button23.Text = "Back";
+            this.button23.UseVisualStyleBackColor = true;
             // 
-            // ETConfirmBtn
+            // button24
             // 
-            this.ETConfirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ETConfirmBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ETConfirmBtn.Location = new System.Drawing.Point(372, 102);
-            this.ETConfirmBtn.Name = "ETConfirmBtn";
-            this.ETConfirmBtn.Size = new System.Drawing.Size(75, 30);
-            this.ETConfirmBtn.TabIndex = 36;
-            this.ETConfirmBtn.Text = "Confirm";
-            this.ETConfirmBtn.UseVisualStyleBackColor = true;
-            this.ETConfirmBtn.Click += new System.EventHandler(this.ETConfirmBtn_Click);
+            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button24.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button24.Location = new System.Drawing.Point(340, 78);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(75, 30);
+            this.button24.TabIndex = 36;
+            this.button24.Text = "Confirm";
+            this.button24.UseVisualStyleBackColor = true;
             // 
-            // ETConfirmLbl
+            // label81
             // 
-            this.ETConfirmLbl.AutoSize = true;
-            this.ETConfirmLbl.Location = new System.Drawing.Point(170, 25);
-            this.ETConfirmLbl.Name = "ETConfirmLbl";
-            this.ETConfirmLbl.Size = new System.Drawing.Size(93, 19);
-            this.ETConfirmLbl.TabIndex = 33;
-            this.ETConfirmLbl.Text = "Organisation";
+            this.label81.AutoSize = true;
+            this.label81.Location = new System.Drawing.Point(170, 25);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(93, 19);
+            this.label81.TabIndex = 33;
+            this.label81.Text = "Organisation";
             // 
             // label91
             // 
@@ -193,7 +193,7 @@
             this.label99.AutoSize = true;
             this.label99.Font = new System.Drawing.Font("Calibri", 20F);
             this.label99.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.label99.Location = new System.Drawing.Point(31, 53);
+            this.label99.Location = new System.Drawing.Point(16, 19);
             this.label99.Name = "label99";
             this.label99.Size = new System.Drawing.Size(391, 33);
             this.label99.TabIndex = 1;
@@ -209,7 +209,17 @@
             this.ClosePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ClosePicBx.TabIndex = 0;
             this.ClosePicBx.TabStop = false;
-            this.ClosePicBx.Click += new System.EventHandler(this.ClosePicBx_Click);
+            // 
+            // MinimisePicBx
+            // 
+            this.MinimisePicBx.Dock = System.Windows.Forms.DockStyle.Right;
+            this.MinimisePicBx.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
+            this.MinimisePicBx.Location = new System.Drawing.Point(404, 0);
+            this.MinimisePicBx.Name = "MinimisePicBx";
+            this.MinimisePicBx.Size = new System.Drawing.Size(28, 30);
+            this.MinimisePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.MinimisePicBx.TabIndex = 1;
+            this.MinimisePicBx.TabStop = false;
             // 
             // Userlbl
             // 
@@ -221,10 +231,23 @@
             this.Userlbl.TabIndex = 0;
             this.Userlbl.Text = "Add Employee Type";
             // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox14.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
+            this.pictureBox14.Location = new System.Drawing.Point(376, 0);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(28, 30);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 2;
+            this.pictureBox14.TabStop = false;
+            // 
             // TopBarPanel
             // 
             this.TopBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.TopBarPanel.Controls.Add(this.pictureBox14);
             this.TopBarPanel.Controls.Add(this.Userlbl);
+            this.TopBarPanel.Controls.Add(this.MinimisePicBx);
             this.TopBarPanel.Controls.Add(this.ClosePicBx);
             this.TopBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopBarPanel.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -241,15 +264,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(460, 200);
-            this.Controls.Add(this.AddEmployeeTypeTC);
+            this.Controls.Add(this.AddEmployeeTypeDetails);
             this.Controls.Add(this.TopBarPanel);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddEmployeeTypePage";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AddEmployeeTypePage";
-            this.AddEmployeeTypeTC.ResumeLayout(false);
+            this.AddEmployeeTypeDetails.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -257,6 +279,8 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.TopBarPanel.ResumeLayout(false);
             this.TopBarPanel.PerformLayout();
             this.ResumeLayout(false);
@@ -264,21 +288,23 @@
         }
 
         #endregion
-        private System.Windows.Forms.TabControl AddEmployeeTypeTC;
+        private System.Windows.Forms.TabControl AddEmployeeTypeDetails;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox EmpTypetb;
-        private System.Windows.Forms.Button ETCancelBtn;
-        private System.Windows.Forms.Button ETNextBtn;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button ETBackBtn;
-        private System.Windows.Forms.Button ETConfirmBtn;
-        private System.Windows.Forms.Label ETConfirmLbl;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Label label81;
         private System.Windows.Forms.Label label91;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label99;
         private System.Windows.Forms.PictureBox ClosePicBx;
+        private System.Windows.Forms.PictureBox MinimisePicBx;
         private System.Windows.Forms.Label Userlbl;
+        private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Panel TopBarPanel;
     }
 }
