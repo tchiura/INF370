@@ -2475,6 +2475,7 @@ namespace Insight_Prototype_
                         yield return reader.GetString(reader.GetOrdinal("SkillDescription"));
                     }
                 }
+                connection.Close();
             }
         }
 
@@ -2482,7 +2483,7 @@ namespace Insight_Prototype_
 
         private void button19_Click(object sender, EventArgs e)
         {
-            string employeeAddress = EmployeeAd1lbl.Text + ", " + EmployeeAd2lbl.Text + ", " + EmployeeAd3lbl.Text;
+            string employeeAddress = EmployeeAd1lbl.Text + "," + EmployeeAd2lbl.Text + "," + EmployeeAd3lbl.Text;
 
             Employee InsightEmployee = new Employee();
             Address InsightAddress = new Address();
@@ -2494,7 +2495,7 @@ namespace Insight_Prototype_
             InsightEmployee.EmployeeSurname = EmployeeSurnamelbl.Text;
             InsightEmployee.EmployeeDateOfBirth = EmployeeDOB.Value.Date;
             InsightEmployee.EmployeeEmailAddress = EmployeeEmaillbl.Text;
-            InsightEmployee.EmployeeNumber = Convert.ToInt32(EmployeeNumberlbl.Text);
+            //InsightEmployee.EmployeeNumber = Convert.ToInt32(EmployeeNumberlbl.Text);
             InsightEmployee.EmployeeGender = EmployeeGenderCbx.Text;
             InsightEmployee.EmployeeTypeID = Convert.ToInt32(EmployeeTypeCbx.SelectedValue);
 
@@ -2503,6 +2504,7 @@ namespace Insight_Prototype_
             InsightAddress.CityID = Convert.ToInt32(EmployeeCity.SelectedValue);
 
             //using EmployeeLogin Table
+        
             InsightEmployeeLogin.EmployeeUsername = "tempUsername";
             InsightEmployeeLogin.EmployeePassword = "tempPassword";
             InsightEmployeeLogin.AccessLevelID = 3;
@@ -2538,18 +2540,42 @@ namespace Insight_Prototype_
             var addedskill = AddedSkillList.Items.Cast<String>().ToList();
 
             SqlConnection conn = new SqlConnection(globalClass.myConn);
-            conn.Open();
-
-            foreach (string x in addedskill)
+            SqlCommand insertEmployeeSkill;
+            SqlCommand getSkillID;
+            SqlDataReader myReader;
+            int skillID = 0; //default
+            //Insert skills into db
+            foreach (string skillDesc in addedskill)
             {
                 //  DataSet ds = new DataSet();
-                SqlCommand insertEmployeeSkill = new SqlCommand("Insert into EmployeeSkill(EmployeeID, SkillID) Values(@EmployeeID, @SkillID)", conn);
-                insertEmployeeSkill.Parameters.AddWithValue("@EmployeeID", employeeID);
-                SqlCommand readSkills = new SqlCommand("Select SkillDescription from Skill");
-                SqlDataReader myReader;
+                #region Retrieve skill id for specific skill description
+                try
+                {
+                    insertEmployeeSkill = new SqlCommand("Insert into EmployeeSkill(EmployeeID, SkillID) Values(@EmployeeID, @SkillID)", conn);
+                    insertEmployeeSkill.Parameters.AddWithValue("@EmployeeID", employeeID);
+                    getSkillID = new SqlCommand("SELECT SkillID FROM Skill WHERE SkillDescription =" + "'" + skillDesc + "'", conn);
+                    conn.Open();
+                    myReader = getSkillID.ExecuteReader();
 
-                myReader = readSkills.ExecuteReader();
+                    //Getting skillId from database
+                    while (myReader.Read())
+                    {
+                        skillID = Convert.ToInt32(myReader["SkillID"]);
+                    }
+                    myReader.Close();
+                    #region Insert skill id with employeeId into EmployeeSkill
+                    insertEmployeeSkill.Parameters.AddWithValue("@SkillID", skillID);
+                    insertEmployeeSkill.ExecuteNonQuery();
+                    #endregion
+                    conn.Close();
+                }
+                catch (Exception myEx)
+                {
+                    MessageBox.Show("Error: " + myEx.Message);
+                }
+                #endregion
 
+                #region Tanaka's code
                 //use reader 
                 //Parameters.AddWithValue(@SkillID
                 //insertEmployeeSkill.ExecuteNonQuery();
@@ -2583,6 +2609,7 @@ namespace Insight_Prototype_
                                 myConn.Close();
                                 myConn.Open();
                   */
+                #endregion
             }
         }
 
@@ -4265,6 +4292,11 @@ namespace Insight_Prototype_
         private void button21_Click_2(object sender, EventArgs e)
         {
             MoveListBoxItems(AddedSkillList, SkillList);
+        }
+
+        private void AddedSkillList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

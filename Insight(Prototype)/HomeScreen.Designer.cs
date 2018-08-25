@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.TopBarPanel = new System.Windows.Forms.Panel();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.Userlbl = new System.Windows.Forms.Label();
@@ -50,33 +50,6 @@
             this.button31 = new System.Windows.Forms.Button();
             this.button127 = new System.Windows.Forms.Button();
             this.BaseActionPanel = new System.Windows.Forms.Panel();
-            this.ProductActionPanel = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.button44 = new System.Windows.Forms.Button();
-            this.button45 = new System.Windows.Forms.Button();
-            this.button46 = new System.Windows.Forms.Button();
-            this.button47 = new System.Windows.Forms.Button();
-            this.button48 = new System.Windows.Forms.Button();
-            this.ClientActionPanel = new System.Windows.Forms.Panel();
-            this.ClientTLAPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.AddOrganisationTypeAPBtn = new System.Windows.Forms.Button();
-            this.ViewClientAPBtn = new System.Windows.Forms.Button();
-            this.ViewOrganisationTypeAPBtn = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.EmployeeActionPanel = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button32 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.JobActionPanel = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.button58 = new System.Windows.Forms.Button();
-            this.button59 = new System.Windows.Forms.Button();
-            this.button60 = new System.Windows.Forms.Button();
-            this.button61 = new System.Windows.Forms.Button();
-            this.button62 = new System.Windows.Forms.Button();
             this.AddEmployeeDetailsTab = new System.Windows.Forms.TabControl();
             this.EDetails = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -149,6 +122,146 @@
             this.button19 = new System.Windows.Forms.Button();
             this.EComplete = new System.Windows.Forms.TabPage();
             this.label62 = new System.Windows.Forms.Label();
+            this.ViewProductPanel = new System.Windows.Forms.Panel();
+            this.label61 = new System.Windows.Forms.Label();
+            this.button91 = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.button92 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
+            this.button93 = new System.Windows.Forms.Button();
+            this.button94 = new System.Windows.Forms.Button();
+            this.button95 = new System.Windows.Forms.Button();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.PrID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PDis = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PQ = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AddVehiclePanel = new System.Windows.Forms.TabControl();
+            this.tabPage32 = new System.Windows.Forms.TabPage();
+            this.label253 = new System.Windows.Forms.Label();
+            this.label252 = new System.Windows.Forms.Label();
+            this.VYearTb = new System.Windows.Forms.TextBox();
+            this.label251 = new System.Windows.Forms.Label();
+            this.VModelTb = new System.Windows.Forms.TextBox();
+            this.label85 = new System.Windows.Forms.Label();
+            this.VMakeTb = new System.Windows.Forms.TextBox();
+            this.AVCancelBtn = new System.Windows.Forms.Button();
+            this.AVNextBtn = new System.Windows.Forms.Button();
+            this.label84 = new System.Windows.Forms.Label();
+            this.label89 = new System.Windows.Forms.Label();
+            this.VTypeCmb = new System.Windows.Forms.ComboBox();
+            this.VRegTb = new System.Windows.Forms.TextBox();
+            this.VPDateDtp = new System.Windows.Forms.DateTimePicker();
+            this.tabPage33 = new System.Windows.Forms.TabPage();
+            this.CVPDateLbl = new System.Windows.Forms.Label();
+            this.CVYearLbl = new System.Windows.Forms.Label();
+            this.CVModelLbl = new System.Windows.Forms.Label();
+            this.CVMakeLbl = new System.Windows.Forms.Label();
+            this.CVTypeLbl = new System.Windows.Forms.Label();
+            this.CVRegLbl = new System.Windows.Forms.Label();
+            this.label243 = new System.Windows.Forms.Label();
+            this.label245 = new System.Windows.Forms.Label();
+            this.label246 = new System.Windows.Forms.Label();
+            this.label247 = new System.Windows.Forms.Label();
+            this.label248 = new System.Windows.Forms.Label();
+            this.label249 = new System.Windows.Forms.Label();
+            this.AVBackBtn = new System.Windows.Forms.Button();
+            this.AVConfirmBtn = new System.Windows.Forms.Button();
+            this.tabPage34 = new System.Windows.Forms.TabPage();
+            this.label250 = new System.Windows.Forms.Label();
+            this.VehicleActionPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.button53 = new System.Windows.Forms.Button();
+            this.button54 = new System.Windows.Forms.Button();
+            this.button55 = new System.Windows.Forms.Button();
+            this.button56 = new System.Windows.Forms.Button();
+            this.button57 = new System.Windows.Forms.Button();
+            this.AddSupplierPanel = new System.Windows.Forms.TabControl();
+            this.tabPage23 = new System.Windows.Forms.TabPage();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.CPALine2Tb = new System.Windows.Forms.TextBox();
+            this.label167 = new System.Windows.Forms.Label();
+            this.label168 = new System.Windows.Forms.Label();
+            this.label174 = new System.Windows.Forms.Label();
+            this.CPALine1Tb = new System.Windows.Forms.TextBox();
+            this.CPALine3Tb = new System.Windows.Forms.TextBox();
+            this.label175 = new System.Windows.Forms.Label();
+            this.CPACountryCmb = new System.Windows.Forms.ComboBox();
+            this.label176 = new System.Windows.Forms.Label();
+            this.CPACityCmb = new System.Windows.Forms.ComboBox();
+            this.label187 = new System.Windows.Forms.Label();
+            this.label191 = new System.Windows.Forms.Label();
+            this.SupCancelBtn = new System.Windows.Forms.Button();
+            this.SupNextBtn = new System.Windows.Forms.Button();
+            this.CPEmailTb = new System.Windows.Forms.TextBox();
+            this.CPNumberTb = new System.Windows.Forms.TextBox();
+            this.CPNameTb = new System.Windows.Forms.TextBox();
+            this.SNameTb = new System.Windows.Forms.TextBox();
+            this.label195 = new System.Windows.Forms.Label();
+            this.label199 = new System.Windows.Forms.Label();
+            this.label200 = new System.Windows.Forms.Label();
+            this.STitleCmb = new System.Windows.Forms.ComboBox();
+            this.tabPage24 = new System.Windows.Forms.TabPage();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.CSCPALine2Lbl = new System.Windows.Forms.Label();
+            this.label194 = new System.Windows.Forms.Label();
+            this.label196 = new System.Windows.Forms.Label();
+            this.label197 = new System.Windows.Forms.Label();
+            this.label198 = new System.Windows.Forms.Label();
+            this.label279 = new System.Windows.Forms.Label();
+            this.CSCPALine3Lbl = new System.Windows.Forms.Label();
+            this.CSCPACountryLbl = new System.Windows.Forms.Label();
+            this.CSCPACityLbl = new System.Windows.Forms.Label();
+            this.CSCPALine1Lbl = new System.Windows.Forms.Label();
+            this.label188 = new System.Windows.Forms.Label();
+            this.label189 = new System.Windows.Forms.Label();
+            this.label192 = new System.Windows.Forms.Label();
+            this.label224 = new System.Windows.Forms.Label();
+            this.label225 = new System.Windows.Forms.Label();
+            this.SupBackBtn = new System.Windows.Forms.Button();
+            this.SupConfirmBtn = new System.Windows.Forms.Button();
+            this.CSTitleLbl = new System.Windows.Forms.Label();
+            this.CSNameLbl = new System.Windows.Forms.Label();
+            this.CSCPNamelbl = new System.Windows.Forms.Label();
+            this.CSCPNumberLbl = new System.Windows.Forms.Label();
+            this.CSCPEmailLbl = new System.Windows.Forms.Label();
+            this.tabPage25 = new System.Windows.Forms.TabPage();
+            this.label223 = new System.Windows.Forms.Label();
+            this.EquipmentActionPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.button43 = new System.Windows.Forms.Button();
+            this.button49 = new System.Windows.Forms.Button();
+            this.button50 = new System.Windows.Forms.Button();
+            this.button51 = new System.Windows.Forms.Button();
+            this.button52 = new System.Windows.Forms.Button();
+            this.ProductActionPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.button44 = new System.Windows.Forms.Button();
+            this.button45 = new System.Windows.Forms.Button();
+            this.button46 = new System.Windows.Forms.Button();
+            this.button47 = new System.Windows.Forms.Button();
+            this.button48 = new System.Windows.Forms.Button();
+            this.ClientActionPanel = new System.Windows.Forms.Panel();
+            this.ClientTLAPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.AddOrganisationTypeAPBtn = new System.Windows.Forms.Button();
+            this.ViewClientAPBtn = new System.Windows.Forms.Button();
+            this.ViewOrganisationTypeAPBtn = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.EmployeeActionPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.button32 = new System.Windows.Forms.Button();
+            this.button33 = new System.Windows.Forms.Button();
+            this.button34 = new System.Windows.Forms.Button();
+            this.button35 = new System.Windows.Forms.Button();
+            this.button36 = new System.Windows.Forms.Button();
+            this.JobActionPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.button58 = new System.Windows.Forms.Button();
+            this.button59 = new System.Windows.Forms.Button();
+            this.button60 = new System.Windows.Forms.Button();
+            this.button61 = new System.Windows.Forms.Button();
+            this.button62 = new System.Windows.Forms.Button();
             this.AddClientDetailsTab = new System.Windows.Forms.TabControl();
             this.CDetails = new System.Windows.Forms.TabPage();
             this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
@@ -380,21 +493,6 @@
             this.dataGridView23 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ViewProductPanel = new System.Windows.Forms.Panel();
-            this.label61 = new System.Windows.Forms.Label();
-            this.button91 = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.button92 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
-            this.button93 = new System.Windows.Forms.Button();
-            this.button94 = new System.Windows.Forms.Button();
-            this.button95 = new System.Windows.Forms.Button();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.PrID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PDis = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Pt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PQ = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ViewJobPanel = new System.Windows.Forms.Panel();
             this.label59 = new System.Windows.Forms.Label();
             this.button83 = new System.Windows.Forms.Button();
@@ -654,89 +752,6 @@
             this.button156 = new System.Windows.Forms.Button();
             this.button157 = new System.Windows.Forms.Button();
             this.button158 = new System.Windows.Forms.Button();
-            this.AddVehiclePanel = new System.Windows.Forms.TabControl();
-            this.tabPage32 = new System.Windows.Forms.TabPage();
-            this.label253 = new System.Windows.Forms.Label();
-            this.label252 = new System.Windows.Forms.Label();
-            this.VYearTb = new System.Windows.Forms.TextBox();
-            this.label251 = new System.Windows.Forms.Label();
-            this.VModelTb = new System.Windows.Forms.TextBox();
-            this.label85 = new System.Windows.Forms.Label();
-            this.VMakeTb = new System.Windows.Forms.TextBox();
-            this.AVCancelBtn = new System.Windows.Forms.Button();
-            this.AVNextBtn = new System.Windows.Forms.Button();
-            this.label84 = new System.Windows.Forms.Label();
-            this.label89 = new System.Windows.Forms.Label();
-            this.VTypeCmb = new System.Windows.Forms.ComboBox();
-            this.VRegTb = new System.Windows.Forms.TextBox();
-            this.tabPage33 = new System.Windows.Forms.TabPage();
-            this.CVPDateLbl = new System.Windows.Forms.Label();
-            this.CVYearLbl = new System.Windows.Forms.Label();
-            this.CVModelLbl = new System.Windows.Forms.Label();
-            this.CVMakeLbl = new System.Windows.Forms.Label();
-            this.CVTypeLbl = new System.Windows.Forms.Label();
-            this.CVRegLbl = new System.Windows.Forms.Label();
-            this.label243 = new System.Windows.Forms.Label();
-            this.label245 = new System.Windows.Forms.Label();
-            this.label246 = new System.Windows.Forms.Label();
-            this.label247 = new System.Windows.Forms.Label();
-            this.label248 = new System.Windows.Forms.Label();
-            this.label249 = new System.Windows.Forms.Label();
-            this.AVBackBtn = new System.Windows.Forms.Button();
-            this.AVConfirmBtn = new System.Windows.Forms.Button();
-            this.tabPage34 = new System.Windows.Forms.TabPage();
-            this.label250 = new System.Windows.Forms.Label();
-            this.AddSupplierPanel = new System.Windows.Forms.TabControl();
-            this.tabPage23 = new System.Windows.Forms.TabPage();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.CPALine2Tb = new System.Windows.Forms.TextBox();
-            this.label167 = new System.Windows.Forms.Label();
-            this.label168 = new System.Windows.Forms.Label();
-            this.label174 = new System.Windows.Forms.Label();
-            this.CPALine1Tb = new System.Windows.Forms.TextBox();
-            this.CPALine3Tb = new System.Windows.Forms.TextBox();
-            this.label175 = new System.Windows.Forms.Label();
-            this.CPACountryCmb = new System.Windows.Forms.ComboBox();
-            this.label176 = new System.Windows.Forms.Label();
-            this.CPACityCmb = new System.Windows.Forms.ComboBox();
-            this.label187 = new System.Windows.Forms.Label();
-            this.label191 = new System.Windows.Forms.Label();
-            this.SupCancelBtn = new System.Windows.Forms.Button();
-            this.SupNextBtn = new System.Windows.Forms.Button();
-            this.CPEmailTb = new System.Windows.Forms.TextBox();
-            this.CPNumberTb = new System.Windows.Forms.TextBox();
-            this.CPNameTb = new System.Windows.Forms.TextBox();
-            this.SNameTb = new System.Windows.Forms.TextBox();
-            this.label195 = new System.Windows.Forms.Label();
-            this.label199 = new System.Windows.Forms.Label();
-            this.label200 = new System.Windows.Forms.Label();
-            this.STitleCmb = new System.Windows.Forms.ComboBox();
-            this.tabPage24 = new System.Windows.Forms.TabPage();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.CSCPALine2Lbl = new System.Windows.Forms.Label();
-            this.label194 = new System.Windows.Forms.Label();
-            this.label196 = new System.Windows.Forms.Label();
-            this.label197 = new System.Windows.Forms.Label();
-            this.label198 = new System.Windows.Forms.Label();
-            this.label279 = new System.Windows.Forms.Label();
-            this.CSCPALine3Lbl = new System.Windows.Forms.Label();
-            this.CSCPACountryLbl = new System.Windows.Forms.Label();
-            this.CSCPACityLbl = new System.Windows.Forms.Label();
-            this.CSCPALine1Lbl = new System.Windows.Forms.Label();
-            this.label188 = new System.Windows.Forms.Label();
-            this.label189 = new System.Windows.Forms.Label();
-            this.label192 = new System.Windows.Forms.Label();
-            this.label224 = new System.Windows.Forms.Label();
-            this.label225 = new System.Windows.Forms.Label();
-            this.SupBackBtn = new System.Windows.Forms.Button();
-            this.SupConfirmBtn = new System.Windows.Forms.Button();
-            this.CSTitleLbl = new System.Windows.Forms.Label();
-            this.CSNameLbl = new System.Windows.Forms.Label();
-            this.CSCPNamelbl = new System.Windows.Forms.Label();
-            this.CSCPNumberLbl = new System.Windows.Forms.Label();
-            this.CSCPEmailLbl = new System.Windows.Forms.Label();
-            this.tabPage25 = new System.Windows.Forms.TabPage();
-            this.label223 = new System.Windows.Forms.Label();
             this.AddProjectRequestPanel = new System.Windows.Forms.TabControl();
             this.tabPage17 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -883,13 +898,6 @@
             this.button40 = new System.Windows.Forms.Button();
             this.button41 = new System.Windows.Forms.Button();
             this.button37 = new System.Windows.Forms.Button();
-            this.VehicleActionPanel = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.button53 = new System.Windows.Forms.Button();
-            this.button54 = new System.Windows.Forms.Button();
-            this.button55 = new System.Windows.Forms.Button();
-            this.button56 = new System.Windows.Forms.Button();
-            this.button57 = new System.Windows.Forms.Button();
             this.SupplierActionPanel = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
@@ -911,17 +919,9 @@
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
             this.button108 = new System.Windows.Forms.Button();
             this.button109 = new System.Windows.Forms.Button();
-            this.EquipmentActionPanel = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.button43 = new System.Windows.Forms.Button();
-            this.button49 = new System.Windows.Forms.Button();
-            this.button50 = new System.Windows.Forms.Button();
-            this.button51 = new System.Windows.Forms.Button();
-            this.button52 = new System.Windows.Forms.Button();
             this.employeeTypeTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.EmployeeTypeTableAdapter();
             this.cityTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.CityTableAdapter();
             this.countryTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.CountryTableAdapter();
-            this.VPDateDtp = new System.Windows.Forms.DateTimePicker();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
@@ -929,14 +929,6 @@
             this.ManagerDashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.InsightPicBx)).BeginInit();
             this.BaseActionPanel.SuspendLayout();
-            this.ProductActionPanel.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            this.ClientActionPanel.SuspendLayout();
-            this.ClientTLAPanel.SuspendLayout();
-            this.EmployeeActionPanel.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.JobActionPanel.SuspendLayout();
-            this.tableLayoutPanel7.SuspendLayout();
             this.AddEmployeeDetailsTab.SuspendLayout();
             this.EDetails.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -948,6 +940,32 @@
             this.groupBox6.SuspendLayout();
             this.ESkills.SuspendLayout();
             this.EComplete.SuspendLayout();
+            this.ViewProductPanel.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.tableLayoutPanel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            this.AddVehiclePanel.SuspendLayout();
+            this.tabPage32.SuspendLayout();
+            this.tabPage33.SuspendLayout();
+            this.tabPage34.SuspendLayout();
+            this.VehicleActionPanel.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
+            this.AddSupplierPanel.SuspendLayout();
+            this.tabPage23.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.tabPage24.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            this.tabPage25.SuspendLayout();
+            this.EquipmentActionPanel.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            this.ProductActionPanel.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.ClientActionPanel.SuspendLayout();
+            this.ClientTLAPanel.SuspendLayout();
+            this.EmployeeActionPanel.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.JobActionPanel.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
             this.AddClientDetailsTab.SuspendLayout();
             this.CDetails.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -994,10 +1012,6 @@
             this.panel24.SuspendLayout();
             this.tableLayoutPanel36.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView23)).BeginInit();
-            this.ViewProductPanel.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.tableLayoutPanel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             this.ViewJobPanel.SuspendLayout();
             this.panel5.SuspendLayout();
             this.tableLayoutPanel13.SuspendLayout();
@@ -1052,16 +1066,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView19)).BeginInit();
             this.ClientProjectActionPanel.SuspendLayout();
             this.tableLayoutPanel26.SuspendLayout();
-            this.AddVehiclePanel.SuspendLayout();
-            this.tabPage32.SuspendLayout();
-            this.tabPage33.SuspendLayout();
-            this.tabPage34.SuspendLayout();
-            this.AddSupplierPanel.SuspendLayout();
-            this.tabPage23.SuspendLayout();
-            this.groupBox10.SuspendLayout();
-            this.tabPage24.SuspendLayout();
-            this.groupBox11.SuspendLayout();
-            this.tabPage25.SuspendLayout();
             this.AddProjectRequestPanel.SuspendLayout();
             this.tabPage17.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -1098,8 +1102,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.ProjectActionPanel.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.VehicleActionPanel.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
             this.SupplierActionPanel.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
@@ -1111,8 +1113,6 @@
             this.tableLayoutPanel21.SuspendLayout();
             this.ProfileActionPanel.SuspendLayout();
             this.tableLayoutPanel18.SuspendLayout();
-            this.EquipmentActionPanel.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // TopBarPanel
@@ -1378,10 +1378,11 @@
             // BaseActionPanel
             // 
             this.BaseActionPanel.BackColor = System.Drawing.Color.White;
+            this.BaseActionPanel.Controls.Add(this.AddEmployeeDetailsTab);
+            this.BaseActionPanel.Controls.Add(this.ViewProductPanel);
             this.BaseActionPanel.Controls.Add(this.AddVehiclePanel);
             this.BaseActionPanel.Controls.Add(this.VehicleActionPanel);
             this.BaseActionPanel.Controls.Add(this.AddSupplierPanel);
-            this.BaseActionPanel.Controls.Add(this.AddEmployeeDetailsTab);
             this.BaseActionPanel.Controls.Add(this.EquipmentActionPanel);
             this.BaseActionPanel.Controls.Add(this.ProductActionPanel);
             this.BaseActionPanel.Controls.Add(this.ClientActionPanel);
@@ -1398,7 +1399,6 @@
             this.BaseActionPanel.Controls.Add(this.ViewProjectRequestPanel);
             this.BaseActionPanel.Controls.Add(this.ViewProjectPanel);
             this.BaseActionPanel.Controls.Add(this.ViewProductTypePanel);
-            this.BaseActionPanel.Controls.Add(this.ViewProductPanel);
             this.BaseActionPanel.Controls.Add(this.ViewJobPanel);
             this.BaseActionPanel.Controls.Add(this.ViewJobTypePanel);
             this.BaseActionPanel.Controls.Add(this.ViewEquipmentPanel);
@@ -1431,403 +1431,6 @@
             this.BaseActionPanel.Size = new System.Drawing.Size(1050, 671);
             this.BaseActionPanel.TabIndex = 2;
             this.BaseActionPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // ProductActionPanel
-            // 
-            this.ProductActionPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ProductActionPanel.BackColor = System.Drawing.Color.White;
-            this.ProductActionPanel.Controls.Add(this.tableLayoutPanel4);
-            this.ProductActionPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.ProductActionPanel.Location = new System.Drawing.Point(0, 0);
-            this.ProductActionPanel.Name = "ProductActionPanel";
-            this.ProductActionPanel.Size = new System.Drawing.Size(1050, 671);
-            this.ProductActionPanel.TabIndex = 8;
-            this.ProductActionPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ProductActionPanel_Paint);
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.button44, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.button45, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.button46, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.button47, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.button48, 0, 2);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(8, 8);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 3;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1032, 431);
-            this.tableLayoutPanel4.TabIndex = 0;
-            this.tableLayoutPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel4_Paint);
-            // 
-            // button44
-            // 
-            this.button44.FlatAppearance.BorderSize = 2;
-            this.button44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button44.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button44.Location = new System.Drawing.Point(3, 3);
-            this.button44.Name = "button44";
-            this.button44.Size = new System.Drawing.Size(510, 137);
-            this.button44.TabIndex = 0;
-            this.button44.Text = "Add Product";
-            this.button44.UseVisualStyleBackColor = true;
-            this.button44.Click += new System.EventHandler(this.button44_Click);
-            // 
-            // button45
-            // 
-            this.button45.FlatAppearance.BorderSize = 2;
-            this.button45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button45.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button45.Location = new System.Drawing.Point(519, 3);
-            this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(510, 137);
-            this.button45.TabIndex = 1;
-            this.button45.Text = "View Product";
-            this.button45.UseVisualStyleBackColor = true;
-            this.button45.Click += new System.EventHandler(this.button45_Click);
-            // 
-            // button46
-            // 
-            this.button46.FlatAppearance.BorderSize = 2;
-            this.button46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button46.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button46.Location = new System.Drawing.Point(3, 146);
-            this.button46.Name = "button46";
-            this.button46.Size = new System.Drawing.Size(510, 137);
-            this.button46.TabIndex = 2;
-            this.button46.Text = "Add Product Type";
-            this.button46.UseVisualStyleBackColor = true;
-            this.button46.Click += new System.EventHandler(this.button46_Click);
-            // 
-            // button47
-            // 
-            this.button47.FlatAppearance.BorderSize = 2;
-            this.button47.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button47.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button47.Location = new System.Drawing.Point(519, 146);
-            this.button47.Name = "button47";
-            this.button47.Size = new System.Drawing.Size(510, 137);
-            this.button47.TabIndex = 3;
-            this.button47.Text = "View Product Type";
-            this.button47.UseVisualStyleBackColor = true;
-            this.button47.Click += new System.EventHandler(this.button47_Click);
-            // 
-            // button48
-            // 
-            this.button48.FlatAppearance.BorderSize = 2;
-            this.button48.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button48.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button48.Location = new System.Drawing.Point(3, 289);
-            this.button48.Name = "button48";
-            this.button48.Size = new System.Drawing.Size(510, 137);
-            this.button48.TabIndex = 5;
-            this.button48.Text = "Generate Report";
-            this.button48.UseVisualStyleBackColor = true;
-            this.button48.Click += new System.EventHandler(this.button48_Click);
-            // 
-            // ClientActionPanel
-            // 
-            this.ClientActionPanel.BackColor = System.Drawing.Color.White;
-            this.ClientActionPanel.Controls.Add(this.ClientTLAPanel);
-            this.ClientActionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ClientActionPanel.Location = new System.Drawing.Point(0, 0);
-            this.ClientActionPanel.Name = "ClientActionPanel";
-            this.ClientActionPanel.Size = new System.Drawing.Size(1050, 671);
-            this.ClientActionPanel.TabIndex = 3;
-            this.ClientActionPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ClientActionPanel_Paint);
-            // 
-            // ClientTLAPanel
-            // 
-            this.ClientTLAPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ClientTLAPanel.ColumnCount = 2;
-            this.ClientTLAPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.ClientTLAPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.ClientTLAPanel.Controls.Add(this.AddOrganisationTypeAPBtn, 0, 1);
-            this.ClientTLAPanel.Controls.Add(this.ViewClientAPBtn, 0, 0);
-            this.ClientTLAPanel.Controls.Add(this.ViewOrganisationTypeAPBtn, 1, 0);
-            this.ClientTLAPanel.Controls.Add(this.button7, 1, 1);
-            this.ClientTLAPanel.Location = new System.Drawing.Point(8, 8);
-            this.ClientTLAPanel.Name = "ClientTLAPanel";
-            this.ClientTLAPanel.RowCount = 3;
-            this.ClientTLAPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.ClientTLAPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.ClientTLAPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.ClientTLAPanel.Size = new System.Drawing.Size(1032, 431);
-            this.ClientTLAPanel.TabIndex = 0;
-            this.ClientTLAPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ClientTLAPanel_Paint);
-            // 
-            // AddOrganisationTypeAPBtn
-            // 
-            this.AddOrganisationTypeAPBtn.FlatAppearance.BorderSize = 2;
-            this.AddOrganisationTypeAPBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddOrganisationTypeAPBtn.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddOrganisationTypeAPBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.AddOrganisationTypeAPBtn.Location = new System.Drawing.Point(3, 146);
-            this.AddOrganisationTypeAPBtn.Name = "AddOrganisationTypeAPBtn";
-            this.AddOrganisationTypeAPBtn.Size = new System.Drawing.Size(510, 137);
-            this.AddOrganisationTypeAPBtn.TabIndex = 2;
-            this.AddOrganisationTypeAPBtn.Text = "Add Organisation Type";
-            this.AddOrganisationTypeAPBtn.UseVisualStyleBackColor = true;
-            this.AddOrganisationTypeAPBtn.Click += new System.EventHandler(this.AddClienTypetAPBtn_Click);
-            // 
-            // ViewClientAPBtn
-            // 
-            this.ViewClientAPBtn.FlatAppearance.BorderSize = 2;
-            this.ViewClientAPBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ViewClientAPBtn.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ViewClientAPBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.ViewClientAPBtn.Location = new System.Drawing.Point(3, 3);
-            this.ViewClientAPBtn.Name = "ViewClientAPBtn";
-            this.ViewClientAPBtn.Size = new System.Drawing.Size(510, 137);
-            this.ViewClientAPBtn.TabIndex = 1;
-            this.ViewClientAPBtn.Text = "View Clients";
-            this.ViewClientAPBtn.UseVisualStyleBackColor = true;
-            this.ViewClientAPBtn.Click += new System.EventHandler(this.ViewClientAPBtn_Click);
-            // 
-            // ViewOrganisationTypeAPBtn
-            // 
-            this.ViewOrganisationTypeAPBtn.FlatAppearance.BorderSize = 2;
-            this.ViewOrganisationTypeAPBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ViewOrganisationTypeAPBtn.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ViewOrganisationTypeAPBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.ViewOrganisationTypeAPBtn.Location = new System.Drawing.Point(519, 3);
-            this.ViewOrganisationTypeAPBtn.Name = "ViewOrganisationTypeAPBtn";
-            this.ViewOrganisationTypeAPBtn.Size = new System.Drawing.Size(510, 137);
-            this.ViewOrganisationTypeAPBtn.TabIndex = 3;
-            this.ViewOrganisationTypeAPBtn.Text = "View Organisation Types";
-            this.ViewOrganisationTypeAPBtn.UseVisualStyleBackColor = true;
-            this.ViewOrganisationTypeAPBtn.Click += new System.EventHandler(this.ViewClientTypeAPBtn_Click);
-            // 
-            // button7
-            // 
-            this.button7.FlatAppearance.BorderSize = 2;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.button7.Location = new System.Drawing.Point(519, 146);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(510, 137);
-            this.button7.TabIndex = 5;
-            this.button7.Text = "Generate  Report";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click_1);
-            // 
-            // EmployeeActionPanel
-            // 
-            this.EmployeeActionPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.EmployeeActionPanel.BackColor = System.Drawing.Color.White;
-            this.EmployeeActionPanel.Controls.Add(this.tableLayoutPanel1);
-            this.EmployeeActionPanel.Location = new System.Drawing.Point(0, 0);
-            this.EmployeeActionPanel.Name = "EmployeeActionPanel";
-            this.EmployeeActionPanel.Size = new System.Drawing.Size(1050, 671);
-            this.EmployeeActionPanel.TabIndex = 6;
-            this.EmployeeActionPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.EmployeeActionPanel_Paint);
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.button32, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button33, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button34, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button35, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button36, 1, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(8, 8);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1032, 431);
-            this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
-            // 
-            // button32
-            // 
-            this.button32.FlatAppearance.BorderSize = 2;
-            this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button32.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.button32.Location = new System.Drawing.Point(3, 289);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(510, 137);
-            this.button32.TabIndex = 5;
-            this.button32.Text = "Generate  Report";
-            this.button32.UseVisualStyleBackColor = true;
-            this.button32.Click += new System.EventHandler(this.button32_Click);
-            // 
-            // button33
-            // 
-            this.button33.FlatAppearance.BorderSize = 2;
-            this.button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button33.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.button33.Location = new System.Drawing.Point(3, 3);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(510, 137);
-            this.button33.TabIndex = 0;
-            this.button33.Text = "Add Employee";
-            this.button33.UseVisualStyleBackColor = true;
-            this.button33.Click += new System.EventHandler(this.button33_Click);
-            // 
-            // button34
-            // 
-            this.button34.FlatAppearance.BorderSize = 2;
-            this.button34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button34.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.button34.Location = new System.Drawing.Point(519, 3);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(510, 137);
-            this.button34.TabIndex = 1;
-            this.button34.Text = "View Employee";
-            this.button34.UseVisualStyleBackColor = true;
-            this.button34.Click += new System.EventHandler(this.button34_Click);
-            // 
-            // button35
-            // 
-            this.button35.FlatAppearance.BorderSize = 2;
-            this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button35.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.button35.Location = new System.Drawing.Point(3, 146);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(510, 137);
-            this.button35.TabIndex = 2;
-            this.button35.Text = "Add Employee Type";
-            this.button35.UseVisualStyleBackColor = true;
-            this.button35.Click += new System.EventHandler(this.button35_Click);
-            // 
-            // button36
-            // 
-            this.button36.FlatAppearance.BorderSize = 2;
-            this.button36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button36.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.button36.Location = new System.Drawing.Point(519, 146);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(510, 137);
-            this.button36.TabIndex = 3;
-            this.button36.Text = "View Employee Type";
-            this.button36.UseVisualStyleBackColor = true;
-            this.button36.Click += new System.EventHandler(this.button36_Click);
-            // 
-            // JobActionPanel
-            // 
-            this.JobActionPanel.BackColor = System.Drawing.Color.White;
-            this.JobActionPanel.Controls.Add(this.tableLayoutPanel7);
-            this.JobActionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.JobActionPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.JobActionPanel.Location = new System.Drawing.Point(0, 0);
-            this.JobActionPanel.Name = "JobActionPanel";
-            this.JobActionPanel.Size = new System.Drawing.Size(1050, 671);
-            this.JobActionPanel.TabIndex = 11;
-            this.JobActionPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.JobActionPanel_Paint);
-            // 
-            // tableLayoutPanel7
-            // 
-            this.tableLayoutPanel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel7.ColumnCount = 2;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Controls.Add(this.button58, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.button59, 1, 0);
-            this.tableLayoutPanel7.Controls.Add(this.button60, 0, 1);
-            this.tableLayoutPanel7.Controls.Add(this.button61, 1, 1);
-            this.tableLayoutPanel7.Controls.Add(this.button62, 0, 2);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(8, 8);
-            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 3;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(1032, 431);
-            this.tableLayoutPanel7.TabIndex = 0;
-            this.tableLayoutPanel7.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel7_Paint);
-            // 
-            // button58
-            // 
-            this.button58.FlatAppearance.BorderSize = 2;
-            this.button58.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button58.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button58.Location = new System.Drawing.Point(3, 3);
-            this.button58.Name = "button58";
-            this.button58.Size = new System.Drawing.Size(506, 137);
-            this.button58.TabIndex = 0;
-            this.button58.Text = "Add Job";
-            this.button58.UseVisualStyleBackColor = true;
-            this.button58.Click += new System.EventHandler(this.button58_Click);
-            // 
-            // button59
-            // 
-            this.button59.FlatAppearance.BorderSize = 2;
-            this.button59.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button59.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button59.Location = new System.Drawing.Point(519, 3);
-            this.button59.Name = "button59";
-            this.button59.Size = new System.Drawing.Size(507, 137);
-            this.button59.TabIndex = 1;
-            this.button59.Text = "View Job";
-            this.button59.UseVisualStyleBackColor = true;
-            this.button59.Click += new System.EventHandler(this.button59_Click);
-            // 
-            // button60
-            // 
-            this.button60.FlatAppearance.BorderSize = 2;
-            this.button60.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button60.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button60.Location = new System.Drawing.Point(3, 146);
-            this.button60.Name = "button60";
-            this.button60.Size = new System.Drawing.Size(506, 137);
-            this.button60.TabIndex = 2;
-            this.button60.Text = "Add Job Type";
-            this.button60.UseVisualStyleBackColor = true;
-            this.button60.Click += new System.EventHandler(this.button60_Click);
-            // 
-            // button61
-            // 
-            this.button61.FlatAppearance.BorderSize = 2;
-            this.button61.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button61.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button61.Location = new System.Drawing.Point(519, 146);
-            this.button61.Name = "button61";
-            this.button61.Size = new System.Drawing.Size(507, 137);
-            this.button61.TabIndex = 3;
-            this.button61.Text = "View Job Type";
-            this.button61.UseVisualStyleBackColor = true;
-            this.button61.Click += new System.EventHandler(this.button61_Click);
-            // 
-            // button62
-            // 
-            this.button62.FlatAppearance.BorderSize = 2;
-            this.button62.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button62.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button62.Location = new System.Drawing.Point(3, 289);
-            this.button62.Name = "button62";
-            this.button62.Size = new System.Drawing.Size(510, 137);
-            this.button62.TabIndex = 5;
-            this.button62.Text = "Generate Report";
-            this.button62.UseVisualStyleBackColor = true;
-            this.button62.Click += new System.EventHandler(this.button62_Click);
             // 
             // AddEmployeeDetailsTab
             // 
@@ -2477,6 +2080,7 @@
             this.AddedSkillList.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.AddedSkillList.Size = new System.Drawing.Size(325, 308);
             this.AddedSkillList.TabIndex = 54;
+            this.AddedSkillList.SelectedIndexChanged += new System.EventHandler(this.AddedSkillList_SelectedIndexChanged);
             // 
             // SkillList
             // 
@@ -2578,6 +2182,1697 @@
             this.label62.TabIndex = 1;
             this.label62.Text = "Employee Successfully Added";
             this.label62.Click += new System.EventHandler(this.label62_Click);
+            // 
+            // ViewProductPanel
+            // 
+            this.ViewProductPanel.Controls.Add(this.label61);
+            this.ViewProductPanel.Controls.Add(this.button91);
+            this.ViewProductPanel.Controls.Add(this.panel7);
+            this.ViewProductPanel.Controls.Add(this.textBox18);
+            this.ViewProductPanel.Controls.Add(this.dataGridView6);
+            this.ViewProductPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ViewProductPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.ViewProductPanel.Location = new System.Drawing.Point(0, 0);
+            this.ViewProductPanel.Name = "ViewProductPanel";
+            this.ViewProductPanel.Size = new System.Drawing.Size(1050, 671);
+            this.ViewProductPanel.TabIndex = 19;
+            this.ViewProductPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ViewProductPanel_Paint);
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(15, 14);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(52, 19);
+            this.label61.TabIndex = 4;
+            this.label61.Text = "Search";
+            this.label61.Click += new System.EventHandler(this.label61_Click);
+            // 
+            // button91
+            // 
+            this.button91.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button91.Location = new System.Drawing.Point(297, 36);
+            this.button91.Name = "button91";
+            this.button91.Size = new System.Drawing.Size(140, 27);
+            this.button91.TabIndex = 3;
+            this.button91.Text = "Search";
+            this.button91.UseVisualStyleBackColor = true;
+            this.button91.Click += new System.EventHandler(this.button91_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.panel7.Controls.Add(this.button92);
+            this.panel7.Controls.Add(this.tableLayoutPanel15);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel7.Location = new System.Drawing.Point(906, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(144, 671);
+            this.panel7.TabIndex = 2;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
+            // 
+            // button92
+            // 
+            this.button92.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button92.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button92.Location = new System.Drawing.Point(0, 612);
+            this.button92.Name = "button92";
+            this.button92.Size = new System.Drawing.Size(144, 59);
+            this.button92.TabIndex = 3;
+            this.button92.Text = "Back";
+            this.button92.UseVisualStyleBackColor = true;
+            this.button92.Click += new System.EventHandler(this.button92_Click);
+            // 
+            // tableLayoutPanel15
+            // 
+            this.tableLayoutPanel15.ColumnCount = 1;
+            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel15.Controls.Add(this.button93, 0, 1);
+            this.tableLayoutPanel15.Controls.Add(this.button94, 0, 0);
+            this.tableLayoutPanel15.Controls.Add(this.button95, 0, 2);
+            this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel15.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel15.Name = "tableLayoutPanel15";
+            this.tableLayoutPanel15.RowCount = 6;
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(144, 386);
+            this.tableLayoutPanel15.TabIndex = 0;
+            this.tableLayoutPanel15.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel15_Paint);
+            // 
+            // button93
+            // 
+            this.button93.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button93.Location = new System.Drawing.Point(3, 67);
+            this.button93.Name = "button93";
+            this.button93.Size = new System.Drawing.Size(138, 56);
+            this.button93.TabIndex = 1;
+            this.button93.Text = "Delete Product";
+            this.button93.UseVisualStyleBackColor = true;
+            this.button93.Click += new System.EventHandler(this.button93_Click);
+            // 
+            // button94
+            // 
+            this.button94.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button94.Location = new System.Drawing.Point(3, 3);
+            this.button94.Name = "button94";
+            this.button94.Size = new System.Drawing.Size(138, 56);
+            this.button94.TabIndex = 0;
+            this.button94.Text = "Update Product";
+            this.button94.UseVisualStyleBackColor = true;
+            this.button94.Click += new System.EventHandler(this.button94_Click);
+            // 
+            // button95
+            // 
+            this.button95.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button95.Location = new System.Drawing.Point(3, 131);
+            this.button95.Name = "button95";
+            this.button95.Size = new System.Drawing.Size(138, 56);
+            this.button95.TabIndex = 2;
+            this.button95.Text = "Assign Product";
+            this.button95.UseVisualStyleBackColor = true;
+            this.button95.Click += new System.EventHandler(this.button95_Click);
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(12, 36);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(265, 27);
+            this.textBox18.TabIndex = 1;
+            this.textBox18.TextChanged += new System.EventHandler(this.textBox18_TextChanged);
+            // 
+            // dataGridView6
+            // 
+            this.dataGridView6.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.PrID,
+            this.PDis,
+            this.Pt,
+            this.PQ});
+            this.dataGridView6.Location = new System.Drawing.Point(12, 75);
+            this.dataGridView6.Name = "dataGridView6";
+            this.dataGridView6.Size = new System.Drawing.Size(885, 585);
+            this.dataGridView6.TabIndex = 0;
+            this.dataGridView6.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView6_CellContentClick);
+            // 
+            // PrID
+            // 
+            this.PrID.HeaderText = "ID";
+            this.PrID.Name = "PrID";
+            // 
+            // PDis
+            // 
+            this.PDis.HeaderText = "Description";
+            this.PDis.Name = "PDis";
+            // 
+            // Pt
+            // 
+            this.Pt.HeaderText = "Product Type";
+            this.Pt.Name = "Pt";
+            // 
+            // PQ
+            // 
+            this.PQ.HeaderText = "Quantity";
+            this.PQ.Name = "PQ";
+            // 
+            // AddVehiclePanel
+            // 
+            this.AddVehiclePanel.Controls.Add(this.tabPage32);
+            this.AddVehiclePanel.Controls.Add(this.tabPage33);
+            this.AddVehiclePanel.Controls.Add(this.tabPage34);
+            this.AddVehiclePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AddVehiclePanel.Location = new System.Drawing.Point(0, 0);
+            this.AddVehiclePanel.Name = "AddVehiclePanel";
+            this.AddVehiclePanel.SelectedIndex = 0;
+            this.AddVehiclePanel.Size = new System.Drawing.Size(1050, 671);
+            this.AddVehiclePanel.TabIndex = 46;
+            this.AddVehiclePanel.SelectedIndexChanged += new System.EventHandler(this.AddVehiclePanel_SelectedIndexChanged);
+            // 
+            // tabPage32
+            // 
+            this.tabPage32.BackColor = System.Drawing.Color.White;
+            this.tabPage32.Controls.Add(this.label253);
+            this.tabPage32.Controls.Add(this.label252);
+            this.tabPage32.Controls.Add(this.VYearTb);
+            this.tabPage32.Controls.Add(this.label251);
+            this.tabPage32.Controls.Add(this.VModelTb);
+            this.tabPage32.Controls.Add(this.label85);
+            this.tabPage32.Controls.Add(this.VMakeTb);
+            this.tabPage32.Controls.Add(this.AVCancelBtn);
+            this.tabPage32.Controls.Add(this.AVNextBtn);
+            this.tabPage32.Controls.Add(this.label84);
+            this.tabPage32.Controls.Add(this.label89);
+            this.tabPage32.Controls.Add(this.VTypeCmb);
+            this.tabPage32.Controls.Add(this.VRegTb);
+            this.tabPage32.Controls.Add(this.VPDateDtp);
+            this.tabPage32.ForeColor = System.Drawing.Color.Black;
+            this.tabPage32.Location = new System.Drawing.Point(4, 28);
+            this.tabPage32.Name = "tabPage32";
+            this.tabPage32.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage32.Size = new System.Drawing.Size(1042, 639);
+            this.tabPage32.TabIndex = 0;
+            this.tabPage32.Text = "Details";
+            this.tabPage32.Click += new System.EventHandler(this.tabPage32_Click);
+            // 
+            // label253
+            // 
+            this.label253.AutoSize = true;
+            this.label253.Location = new System.Drawing.Point(50, 274);
+            this.label253.Name = "label253";
+            this.label253.Size = new System.Drawing.Size(107, 19);
+            this.label253.TabIndex = 39;
+            this.label253.Text = "Purchase Date:";
+            this.label253.Click += new System.EventHandler(this.label253_Click);
+            // 
+            // label252
+            // 
+            this.label252.AutoSize = true;
+            this.label252.Location = new System.Drawing.Point(50, 229);
+            this.label252.Name = "label252";
+            this.label252.Size = new System.Drawing.Size(41, 19);
+            this.label252.TabIndex = 37;
+            this.label252.Text = "Year:";
+            this.label252.Click += new System.EventHandler(this.label252_Click);
+            // 
+            // VYearTb
+            // 
+            this.VYearTb.Location = new System.Drawing.Point(306, 227);
+            this.VYearTb.Name = "VYearTb";
+            this.VYearTb.Size = new System.Drawing.Size(245, 27);
+            this.VYearTb.TabIndex = 38;
+            this.VYearTb.Text = "2018";
+            this.VYearTb.TextChanged += new System.EventHandler(this.textBox53_TextChanged);
+            // 
+            // label251
+            // 
+            this.label251.AutoSize = true;
+            this.label251.Location = new System.Drawing.Point(50, 184);
+            this.label251.Name = "label251";
+            this.label251.Size = new System.Drawing.Size(54, 19);
+            this.label251.TabIndex = 35;
+            this.label251.Text = "Model:";
+            this.label251.Click += new System.EventHandler(this.label251_Click);
+            // 
+            // VModelTb
+            // 
+            this.VModelTb.Location = new System.Drawing.Point(306, 180);
+            this.VModelTb.Name = "VModelTb";
+            this.VModelTb.Size = new System.Drawing.Size(245, 27);
+            this.VModelTb.TabIndex = 36;
+            this.VModelTb.Text = "X Class";
+            this.VModelTb.TextChanged += new System.EventHandler(this.textBox52_TextChanged);
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.Location = new System.Drawing.Point(50, 139);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(48, 19);
+            this.label85.TabIndex = 33;
+            this.label85.Text = "Make:";
+            this.label85.Click += new System.EventHandler(this.label85_Click);
+            // 
+            // VMakeTb
+            // 
+            this.VMakeTb.Location = new System.Drawing.Point(306, 133);
+            this.VMakeTb.Name = "VMakeTb";
+            this.VMakeTb.Size = new System.Drawing.Size(245, 27);
+            this.VMakeTb.TabIndex = 34;
+            this.VMakeTb.Text = "Mercedes";
+            this.VMakeTb.TextChanged += new System.EventHandler(this.textBox51_TextChanged);
+            // 
+            // AVCancelBtn
+            // 
+            this.AVCancelBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.AVCancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AVCancelBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AVCancelBtn.Location = new System.Drawing.Point(880, 589);
+            this.AVCancelBtn.Name = "AVCancelBtn";
+            this.AVCancelBtn.Size = new System.Drawing.Size(75, 30);
+            this.AVCancelBtn.TabIndex = 31;
+            this.AVCancelBtn.Text = "Cancel";
+            this.AVCancelBtn.UseVisualStyleBackColor = true;
+            this.AVCancelBtn.Click += new System.EventHandler(this.button125_Click_1);
+            // 
+            // AVNextBtn
+            // 
+            this.AVNextBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.AVNextBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AVNextBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AVNextBtn.Location = new System.Drawing.Point(961, 590);
+            this.AVNextBtn.Name = "AVNextBtn";
+            this.AVNextBtn.Size = new System.Drawing.Size(75, 30);
+            this.AVNextBtn.TabIndex = 30;
+            this.AVNextBtn.Text = "Next";
+            this.AVNextBtn.UseVisualStyleBackColor = true;
+            this.AVNextBtn.Click += new System.EventHandler(this.button188_Click);
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Location = new System.Drawing.Point(50, 93);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(43, 19);
+            this.label84.TabIndex = 6;
+            this.label84.Text = "Type:";
+            this.label84.Click += new System.EventHandler(this.label84_Click);
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.Location = new System.Drawing.Point(50, 50);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(147, 19);
+            this.label89.TabIndex = 3;
+            this.label89.Text = "Registration Number:";
+            this.label89.Click += new System.EventHandler(this.label89_Click);
+            // 
+            // VTypeCmb
+            // 
+            this.VTypeCmb.FormattingEnabled = true;
+            this.VTypeCmb.Location = new System.Drawing.Point(306, 85);
+            this.VTypeCmb.Name = "VTypeCmb";
+            this.VTypeCmb.Size = new System.Drawing.Size(245, 27);
+            this.VTypeCmb.TabIndex = 27;
+            this.VTypeCmb.Text = "Bakkie";
+            this.VTypeCmb.SelectedIndexChanged += new System.EventHandler(this.comboBox25_SelectedIndexChanged);
+            // 
+            // VRegTb
+            // 
+            this.VRegTb.Location = new System.Drawing.Point(306, 41);
+            this.VRegTb.Name = "VRegTb";
+            this.VRegTb.Size = new System.Drawing.Size(245, 27);
+            this.VRegTb.TabIndex = 32;
+            this.VRegTb.Text = "AA 22 BB GP";
+            this.VRegTb.TextChanged += new System.EventHandler(this.textBox23_TextChanged);
+            // 
+            // VPDateDtp
+            // 
+            this.VPDateDtp.Location = new System.Drawing.Point(306, 273);
+            this.VPDateDtp.Name = "VPDateDtp";
+            this.VPDateDtp.Size = new System.Drawing.Size(245, 27);
+            this.VPDateDtp.TabIndex = 41;
+            // 
+            // tabPage33
+            // 
+            this.tabPage33.BackColor = System.Drawing.Color.White;
+            this.tabPage33.Controls.Add(this.CVPDateLbl);
+            this.tabPage33.Controls.Add(this.CVYearLbl);
+            this.tabPage33.Controls.Add(this.CVModelLbl);
+            this.tabPage33.Controls.Add(this.CVMakeLbl);
+            this.tabPage33.Controls.Add(this.CVTypeLbl);
+            this.tabPage33.Controls.Add(this.CVRegLbl);
+            this.tabPage33.Controls.Add(this.label243);
+            this.tabPage33.Controls.Add(this.label245);
+            this.tabPage33.Controls.Add(this.label246);
+            this.tabPage33.Controls.Add(this.label247);
+            this.tabPage33.Controls.Add(this.label248);
+            this.tabPage33.Controls.Add(this.label249);
+            this.tabPage33.Controls.Add(this.AVBackBtn);
+            this.tabPage33.Controls.Add(this.AVConfirmBtn);
+            this.tabPage33.ForeColor = System.Drawing.Color.Black;
+            this.tabPage33.Location = new System.Drawing.Point(4, 28);
+            this.tabPage33.Name = "tabPage33";
+            this.tabPage33.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage33.Size = new System.Drawing.Size(1042, 639);
+            this.tabPage33.TabIndex = 1;
+            this.tabPage33.Text = "Confirmation";
+            this.tabPage33.Click += new System.EventHandler(this.tabPage33_Click);
+            // 
+            // CVPDateLbl
+            // 
+            this.CVPDateLbl.AutoSize = true;
+            this.CVPDateLbl.Location = new System.Drawing.Point(378, 276);
+            this.CVPDateLbl.Name = "CVPDateLbl";
+            this.CVPDateLbl.Size = new System.Drawing.Size(83, 19);
+            this.CVPDateLbl.TabIndex = 51;
+            this.CVPDateLbl.Text = "06-05-2018";
+            this.CVPDateLbl.Click += new System.EventHandler(this.label254_Click);
+            // 
+            // CVYearLbl
+            // 
+            this.CVYearLbl.AutoSize = true;
+            this.CVYearLbl.Location = new System.Drawing.Point(378, 231);
+            this.CVYearLbl.Name = "CVYearLbl";
+            this.CVYearLbl.Size = new System.Drawing.Size(41, 19);
+            this.CVYearLbl.TabIndex = 50;
+            this.CVYearLbl.Text = "2018";
+            this.CVYearLbl.Click += new System.EventHandler(this.label255_Click);
+            // 
+            // CVModelLbl
+            // 
+            this.CVModelLbl.AutoSize = true;
+            this.CVModelLbl.Location = new System.Drawing.Point(378, 186);
+            this.CVModelLbl.Name = "CVModelLbl";
+            this.CVModelLbl.Size = new System.Drawing.Size(56, 19);
+            this.CVModelLbl.TabIndex = 49;
+            this.CVModelLbl.Text = "X Class";
+            this.CVModelLbl.Click += new System.EventHandler(this.label256_Click);
+            // 
+            // CVMakeLbl
+            // 
+            this.CVMakeLbl.AutoSize = true;
+            this.CVMakeLbl.Location = new System.Drawing.Point(378, 141);
+            this.CVMakeLbl.Name = "CVMakeLbl";
+            this.CVMakeLbl.Size = new System.Drawing.Size(81, 19);
+            this.CVMakeLbl.TabIndex = 48;
+            this.CVMakeLbl.Text = "Merecedes";
+            this.CVMakeLbl.Click += new System.EventHandler(this.label257_Click);
+            // 
+            // CVTypeLbl
+            // 
+            this.CVTypeLbl.AutoSize = true;
+            this.CVTypeLbl.Location = new System.Drawing.Point(378, 95);
+            this.CVTypeLbl.Name = "CVTypeLbl";
+            this.CVTypeLbl.Size = new System.Drawing.Size(52, 19);
+            this.CVTypeLbl.TabIndex = 47;
+            this.CVTypeLbl.Text = "Bakkie";
+            this.CVTypeLbl.Click += new System.EventHandler(this.label258_Click);
+            // 
+            // CVRegLbl
+            // 
+            this.CVRegLbl.AutoSize = true;
+            this.CVRegLbl.Location = new System.Drawing.Point(378, 55);
+            this.CVRegLbl.Name = "CVRegLbl";
+            this.CVRegLbl.Size = new System.Drawing.Size(91, 19);
+            this.CVRegLbl.TabIndex = 46;
+            this.CVRegLbl.Text = "AA 22 BB GP";
+            this.CVRegLbl.Click += new System.EventHandler(this.label259_Click);
+            // 
+            // label243
+            // 
+            this.label243.AutoSize = true;
+            this.label243.Location = new System.Drawing.Point(50, 274);
+            this.label243.Name = "label243";
+            this.label243.Size = new System.Drawing.Size(107, 19);
+            this.label243.TabIndex = 45;
+            this.label243.Text = "Purchase Date:";
+            this.label243.Click += new System.EventHandler(this.label243_Click);
+            // 
+            // label245
+            // 
+            this.label245.AutoSize = true;
+            this.label245.Location = new System.Drawing.Point(50, 229);
+            this.label245.Name = "label245";
+            this.label245.Size = new System.Drawing.Size(41, 19);
+            this.label245.TabIndex = 44;
+            this.label245.Text = "Year:";
+            this.label245.Click += new System.EventHandler(this.label245_Click);
+            // 
+            // label246
+            // 
+            this.label246.AutoSize = true;
+            this.label246.Location = new System.Drawing.Point(50, 184);
+            this.label246.Name = "label246";
+            this.label246.Size = new System.Drawing.Size(54, 19);
+            this.label246.TabIndex = 43;
+            this.label246.Text = "Model:";
+            this.label246.Click += new System.EventHandler(this.label246_Click);
+            // 
+            // label247
+            // 
+            this.label247.AutoSize = true;
+            this.label247.Location = new System.Drawing.Point(50, 139);
+            this.label247.Name = "label247";
+            this.label247.Size = new System.Drawing.Size(48, 19);
+            this.label247.TabIndex = 42;
+            this.label247.Text = "Make:";
+            this.label247.Click += new System.EventHandler(this.label247_Click);
+            // 
+            // label248
+            // 
+            this.label248.AutoSize = true;
+            this.label248.Location = new System.Drawing.Point(50, 93);
+            this.label248.Name = "label248";
+            this.label248.Size = new System.Drawing.Size(43, 19);
+            this.label248.TabIndex = 41;
+            this.label248.Text = "Type:";
+            this.label248.Click += new System.EventHandler(this.label248_Click);
+            // 
+            // label249
+            // 
+            this.label249.AutoSize = true;
+            this.label249.Location = new System.Drawing.Point(50, 50);
+            this.label249.Name = "label249";
+            this.label249.Size = new System.Drawing.Size(147, 19);
+            this.label249.TabIndex = 40;
+            this.label249.Text = "Registration Number:";
+            this.label249.Click += new System.EventHandler(this.label249_Click);
+            // 
+            // AVBackBtn
+            // 
+            this.AVBackBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.AVBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AVBackBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AVBackBtn.Location = new System.Drawing.Point(880, 602);
+            this.AVBackBtn.Name = "AVBackBtn";
+            this.AVBackBtn.Size = new System.Drawing.Size(75, 30);
+            this.AVBackBtn.TabIndex = 37;
+            this.AVBackBtn.Text = "Back";
+            this.AVBackBtn.UseVisualStyleBackColor = true;
+            this.AVBackBtn.Click += new System.EventHandler(this.button189_Click);
+            // 
+            // AVConfirmBtn
+            // 
+            this.AVConfirmBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.AVConfirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AVConfirmBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AVConfirmBtn.Location = new System.Drawing.Point(961, 603);
+            this.AVConfirmBtn.Name = "AVConfirmBtn";
+            this.AVConfirmBtn.Size = new System.Drawing.Size(75, 30);
+            this.AVConfirmBtn.TabIndex = 36;
+            this.AVConfirmBtn.Text = "Confirm";
+            this.AVConfirmBtn.UseVisualStyleBackColor = true;
+            this.AVConfirmBtn.Click += new System.EventHandler(this.button190_Click);
+            // 
+            // tabPage34
+            // 
+            this.tabPage34.BackColor = System.Drawing.Color.White;
+            this.tabPage34.Controls.Add(this.label250);
+            this.tabPage34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.tabPage34.Location = new System.Drawing.Point(4, 28);
+            this.tabPage34.Name = "tabPage34";
+            this.tabPage34.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage34.Size = new System.Drawing.Size(1042, 639);
+            this.tabPage34.TabIndex = 2;
+            this.tabPage34.Text = "Complete";
+            this.tabPage34.Click += new System.EventHandler(this.tabPage34_Click);
+            // 
+            // label250
+            // 
+            this.label250.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label250.AutoSize = true;
+            this.label250.Font = new System.Drawing.Font("Calibri", 30F);
+            this.label250.Location = new System.Drawing.Point(293, 462);
+            this.label250.Name = "label250";
+            this.label250.Size = new System.Drawing.Size(457, 49);
+            this.label250.TabIndex = 1;
+            this.label250.Text = "Vehicle Successfully Added";
+            this.label250.Click += new System.EventHandler(this.label250_Click);
+            // 
+            // VehicleActionPanel
+            // 
+            this.VehicleActionPanel.BackColor = System.Drawing.Color.White;
+            this.VehicleActionPanel.Controls.Add(this.tableLayoutPanel6);
+            this.VehicleActionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.VehicleActionPanel.Location = new System.Drawing.Point(0, 0);
+            this.VehicleActionPanel.Name = "VehicleActionPanel";
+            this.VehicleActionPanel.Size = new System.Drawing.Size(1050, 671);
+            this.VehicleActionPanel.TabIndex = 10;
+            this.VehicleActionPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.VehicleActionPanel_Paint);
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel6.ColumnCount = 2;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.Controls.Add(this.button53, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.button54, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.button55, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.button56, 1, 1);
+            this.tableLayoutPanel6.Controls.Add(this.button57, 0, 2);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(8, 8);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 3;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(1032, 431);
+            this.tableLayoutPanel6.TabIndex = 0;
+            this.tableLayoutPanel6.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel6_Paint);
+            // 
+            // button53
+            // 
+            this.button53.FlatAppearance.BorderSize = 2;
+            this.button53.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button53.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button53.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.button53.Location = new System.Drawing.Point(3, 3);
+            this.button53.Name = "button53";
+            this.button53.Size = new System.Drawing.Size(510, 137);
+            this.button53.TabIndex = 0;
+            this.button53.Text = "Add Vehicle";
+            this.button53.UseVisualStyleBackColor = true;
+            this.button53.Click += new System.EventHandler(this.button53_Click);
+            // 
+            // button54
+            // 
+            this.button54.FlatAppearance.BorderSize = 2;
+            this.button54.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button54.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.button54.Location = new System.Drawing.Point(519, 3);
+            this.button54.Name = "button54";
+            this.button54.Size = new System.Drawing.Size(510, 137);
+            this.button54.TabIndex = 1;
+            this.button54.Text = "View Vehicle";
+            this.button54.UseVisualStyleBackColor = true;
+            this.button54.Click += new System.EventHandler(this.button54_Click);
+            // 
+            // button55
+            // 
+            this.button55.FlatAppearance.BorderSize = 2;
+            this.button55.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button55.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.button55.Location = new System.Drawing.Point(3, 146);
+            this.button55.Name = "button55";
+            this.button55.Size = new System.Drawing.Size(510, 137);
+            this.button55.TabIndex = 2;
+            this.button55.Text = "Add Vehicle Type";
+            this.button55.UseVisualStyleBackColor = true;
+            this.button55.Click += new System.EventHandler(this.button55_Click);
+            // 
+            // button56
+            // 
+            this.button56.FlatAppearance.BorderSize = 2;
+            this.button56.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button56.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.button56.Location = new System.Drawing.Point(519, 146);
+            this.button56.Name = "button56";
+            this.button56.Size = new System.Drawing.Size(510, 137);
+            this.button56.TabIndex = 3;
+            this.button56.Text = "View Vehicle Type";
+            this.button56.UseVisualStyleBackColor = true;
+            this.button56.Click += new System.EventHandler(this.button56_Click);
+            // 
+            // button57
+            // 
+            this.button57.FlatAppearance.BorderSize = 2;
+            this.button57.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button57.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button57.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.button57.Location = new System.Drawing.Point(3, 289);
+            this.button57.Name = "button57";
+            this.button57.Size = new System.Drawing.Size(510, 137);
+            this.button57.TabIndex = 5;
+            this.button57.Text = "Generate Report";
+            this.button57.UseVisualStyleBackColor = true;
+            this.button57.Click += new System.EventHandler(this.button57_Click);
+            // 
+            // AddSupplierPanel
+            // 
+            this.AddSupplierPanel.Controls.Add(this.tabPage23);
+            this.AddSupplierPanel.Controls.Add(this.tabPage24);
+            this.AddSupplierPanel.Controls.Add(this.tabPage25);
+            this.AddSupplierPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AddSupplierPanel.Location = new System.Drawing.Point(0, 0);
+            this.AddSupplierPanel.Name = "AddSupplierPanel";
+            this.AddSupplierPanel.SelectedIndex = 0;
+            this.AddSupplierPanel.Size = new System.Drawing.Size(1050, 671);
+            this.AddSupplierPanel.TabIndex = 41;
+            this.AddSupplierPanel.SelectedIndexChanged += new System.EventHandler(this.AddSupplierPanel_SelectedIndexChanged);
+            // 
+            // tabPage23
+            // 
+            this.tabPage23.BackColor = System.Drawing.Color.White;
+            this.tabPage23.Controls.Add(this.groupBox10);
+            this.tabPage23.Controls.Add(this.label187);
+            this.tabPage23.Controls.Add(this.label191);
+            this.tabPage23.Controls.Add(this.SupCancelBtn);
+            this.tabPage23.Controls.Add(this.SupNextBtn);
+            this.tabPage23.Controls.Add(this.CPEmailTb);
+            this.tabPage23.Controls.Add(this.CPNumberTb);
+            this.tabPage23.Controls.Add(this.CPNameTb);
+            this.tabPage23.Controls.Add(this.SNameTb);
+            this.tabPage23.Controls.Add(this.label195);
+            this.tabPage23.Controls.Add(this.label199);
+            this.tabPage23.Controls.Add(this.label200);
+            this.tabPage23.Controls.Add(this.STitleCmb);
+            this.tabPage23.ForeColor = System.Drawing.Color.Black;
+            this.tabPage23.Location = new System.Drawing.Point(4, 28);
+            this.tabPage23.Name = "tabPage23";
+            this.tabPage23.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage23.Size = new System.Drawing.Size(1042, 639);
+            this.tabPage23.TabIndex = 0;
+            this.tabPage23.Text = "Details";
+            this.tabPage23.Click += new System.EventHandler(this.tabPage23_Click);
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.CPALine2Tb);
+            this.groupBox10.Controls.Add(this.label167);
+            this.groupBox10.Controls.Add(this.label168);
+            this.groupBox10.Controls.Add(this.label174);
+            this.groupBox10.Controls.Add(this.CPALine1Tb);
+            this.groupBox10.Controls.Add(this.CPALine3Tb);
+            this.groupBox10.Controls.Add(this.label175);
+            this.groupBox10.Controls.Add(this.CPACountryCmb);
+            this.groupBox10.Controls.Add(this.label176);
+            this.groupBox10.Controls.Add(this.CPACityCmb);
+            this.groupBox10.Location = new System.Drawing.Point(54, 261);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(504, 243);
+            this.groupBox10.TabIndex = 41;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Address";
+            // 
+            // CPALine2Tb
+            // 
+            this.CPALine2Tb.Location = new System.Drawing.Point(256, 66);
+            this.CPALine2Tb.Name = "CPALine2Tb";
+            this.CPALine2Tb.Size = new System.Drawing.Size(245, 27);
+            this.CPALine2Tb.TabIndex = 41;
+            this.CPALine2Tb.Text = "Suburb";
+            // 
+            // label167
+            // 
+            this.label167.AutoSize = true;
+            this.label167.Location = new System.Drawing.Point(17, 30);
+            this.label167.Name = "label167";
+            this.label167.Size = new System.Drawing.Size(108, 19);
+            this.label167.TabIndex = 38;
+            this.label167.Text = "Address Line 1:";
+            // 
+            // label168
+            // 
+            this.label168.AutoSize = true;
+            this.label168.Location = new System.Drawing.Point(17, 74);
+            this.label168.Name = "label168";
+            this.label168.Size = new System.Drawing.Size(108, 19);
+            this.label168.TabIndex = 40;
+            this.label168.Text = "Address Line 2:";
+            // 
+            // label174
+            // 
+            this.label174.AutoSize = true;
+            this.label174.Location = new System.Drawing.Point(17, 115);
+            this.label174.Name = "label174";
+            this.label174.Size = new System.Drawing.Size(108, 19);
+            this.label174.TabIndex = 0;
+            this.label174.Text = "Address Line 3:";
+            // 
+            // CPALine1Tb
+            // 
+            this.CPALine1Tb.Location = new System.Drawing.Point(256, 22);
+            this.CPALine1Tb.Name = "CPALine1Tb";
+            this.CPALine1Tb.Size = new System.Drawing.Size(245, 27);
+            this.CPALine1Tb.TabIndex = 39;
+            this.CPALine1Tb.Text = "Building No./Street Name";
+            // 
+            // CPALine3Tb
+            // 
+            this.CPALine3Tb.Location = new System.Drawing.Point(256, 107);
+            this.CPALine3Tb.Name = "CPALine3Tb";
+            this.CPALine3Tb.Size = new System.Drawing.Size(245, 27);
+            this.CPALine3Tb.TabIndex = 24;
+            this.CPALine3Tb.Text = "Province";
+            // 
+            // label175
+            // 
+            this.label175.AutoSize = true;
+            this.label175.Location = new System.Drawing.Point(17, 159);
+            this.label175.Name = "label175";
+            this.label175.Size = new System.Drawing.Size(38, 19);
+            this.label175.TabIndex = 5;
+            this.label175.Text = "City:";
+            // 
+            // CPACountryCmb
+            // 
+            this.CPACountryCmb.FormattingEnabled = true;
+            this.CPACountryCmb.Items.AddRange(new object[] {
+            "South Africa"});
+            this.CPACountryCmb.Location = new System.Drawing.Point(256, 194);
+            this.CPACountryCmb.Name = "CPACountryCmb";
+            this.CPACountryCmb.Size = new System.Drawing.Size(245, 27);
+            this.CPACountryCmb.TabIndex = 29;
+            // 
+            // label176
+            // 
+            this.label176.AutoSize = true;
+            this.label176.Location = new System.Drawing.Point(17, 202);
+            this.label176.Name = "label176";
+            this.label176.Size = new System.Drawing.Size(63, 19);
+            this.label176.TabIndex = 4;
+            this.label176.Text = "Country:";
+            // 
+            // CPACityCmb
+            // 
+            this.CPACityCmb.FormattingEnabled = true;
+            this.CPACityCmb.Items.AddRange(new object[] {
+            "Johannesburg"});
+            this.CPACityCmb.Location = new System.Drawing.Point(256, 151);
+            this.CPACityCmb.Name = "CPACityCmb";
+            this.CPACityCmb.Size = new System.Drawing.Size(245, 27);
+            this.CPACityCmb.TabIndex = 28;
+            // 
+            // label187
+            // 
+            this.label187.AutoSize = true;
+            this.label187.Location = new System.Drawing.Point(50, 224);
+            this.label187.Name = "label187";
+            this.label187.Size = new System.Drawing.Size(105, 19);
+            this.label187.TabIndex = 37;
+            this.label187.Text = "Email Address:";
+            this.label187.Click += new System.EventHandler(this.label187_Click);
+            // 
+            // label191
+            // 
+            this.label191.AutoSize = true;
+            this.label191.Location = new System.Drawing.Point(50, 179);
+            this.label191.Name = "label191";
+            this.label191.Size = new System.Drawing.Size(108, 19);
+            this.label191.TabIndex = 33;
+            this.label191.Text = "Phone Number:";
+            this.label191.Click += new System.EventHandler(this.label191_Click);
+            // 
+            // SupCancelBtn
+            // 
+            this.SupCancelBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.SupCancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SupCancelBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SupCancelBtn.Location = new System.Drawing.Point(879, 590);
+            this.SupCancelBtn.Name = "SupCancelBtn";
+            this.SupCancelBtn.Size = new System.Drawing.Size(75, 30);
+            this.SupCancelBtn.TabIndex = 31;
+            this.SupCancelBtn.Text = "Cancel";
+            this.SupCancelBtn.UseVisualStyleBackColor = true;
+            this.SupCancelBtn.Click += new System.EventHandler(this.button167_Click);
+            // 
+            // SupNextBtn
+            // 
+            this.SupNextBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.SupNextBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SupNextBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SupNextBtn.Location = new System.Drawing.Point(960, 591);
+            this.SupNextBtn.Name = "SupNextBtn";
+            this.SupNextBtn.Size = new System.Drawing.Size(75, 30);
+            this.SupNextBtn.TabIndex = 30;
+            this.SupNextBtn.Text = "Next";
+            this.SupNextBtn.UseVisualStyleBackColor = true;
+            this.SupNextBtn.Click += new System.EventHandler(this.button168_Click);
+            // 
+            // CPEmailTb
+            // 
+            this.CPEmailTb.Location = new System.Drawing.Point(306, 216);
+            this.CPEmailTb.Name = "CPEmailTb";
+            this.CPEmailTb.Size = new System.Drawing.Size(245, 27);
+            this.CPEmailTb.TabIndex = 24;
+            this.CPEmailTb.TextChanged += new System.EventHandler(this.textBox43_TextChanged);
+            // 
+            // CPNumberTb
+            // 
+            this.CPNumberTb.Location = new System.Drawing.Point(306, 171);
+            this.CPNumberTb.Name = "CPNumberTb";
+            this.CPNumberTb.Size = new System.Drawing.Size(245, 27);
+            this.CPNumberTb.TabIndex = 22;
+            this.CPNumberTb.TextChanged += new System.EventHandler(this.textBox45_TextChanged);
+            // 
+            // CPNameTb
+            // 
+            this.CPNameTb.Location = new System.Drawing.Point(306, 128);
+            this.CPNameTb.Name = "CPNameTb";
+            this.CPNameTb.Size = new System.Drawing.Size(245, 27);
+            this.CPNameTb.TabIndex = 21;
+            this.CPNameTb.TextChanged += new System.EventHandler(this.textBox46_TextChanged);
+            // 
+            // SNameTb
+            // 
+            this.SNameTb.Location = new System.Drawing.Point(306, 85);
+            this.SNameTb.Name = "SNameTb";
+            this.SNameTb.Size = new System.Drawing.Size(245, 27);
+            this.SNameTb.TabIndex = 20;
+            this.SNameTb.TextChanged += new System.EventHandler(this.textBox47_TextChanged);
+            // 
+            // label195
+            // 
+            this.label195.AutoSize = true;
+            this.label195.Location = new System.Drawing.Point(50, 50);
+            this.label195.Name = "label195";
+            this.label195.Size = new System.Drawing.Size(46, 19);
+            this.label195.TabIndex = 7;
+            this.label195.Text = "Title: ";
+            this.label195.Click += new System.EventHandler(this.label195_Click);
+            // 
+            // label199
+            // 
+            this.label199.AutoSize = true;
+            this.label199.Location = new System.Drawing.Point(50, 93);
+            this.label199.Name = "label199";
+            this.label199.Size = new System.Drawing.Size(107, 19);
+            this.label199.TabIndex = 3;
+            this.label199.Text = "Supplier Name:";
+            this.label199.Click += new System.EventHandler(this.label199_Click);
+            // 
+            // label200
+            // 
+            this.label200.AutoSize = true;
+            this.label200.Location = new System.Drawing.Point(50, 136);
+            this.label200.Name = "label200";
+            this.label200.Size = new System.Drawing.Size(153, 19);
+            this.label200.TabIndex = 2;
+            this.label200.Text = "Contact Person Name:";
+            this.label200.Click += new System.EventHandler(this.label200_Click);
+            // 
+            // STitleCmb
+            // 
+            this.STitleCmb.FormattingEnabled = true;
+            this.STitleCmb.Location = new System.Drawing.Point(306, 42);
+            this.STitleCmb.Name = "STitleCmb";
+            this.STitleCmb.Size = new System.Drawing.Size(245, 27);
+            this.STitleCmb.TabIndex = 26;
+            this.STitleCmb.SelectedIndexChanged += new System.EventHandler(this.comboBox17_SelectedIndexChanged);
+            // 
+            // tabPage24
+            // 
+            this.tabPage24.BackColor = System.Drawing.Color.White;
+            this.tabPage24.Controls.Add(this.groupBox11);
+            this.tabPage24.Controls.Add(this.label188);
+            this.tabPage24.Controls.Add(this.label189);
+            this.tabPage24.Controls.Add(this.label192);
+            this.tabPage24.Controls.Add(this.label224);
+            this.tabPage24.Controls.Add(this.label225);
+            this.tabPage24.Controls.Add(this.SupBackBtn);
+            this.tabPage24.Controls.Add(this.SupConfirmBtn);
+            this.tabPage24.Controls.Add(this.CSTitleLbl);
+            this.tabPage24.Controls.Add(this.CSNameLbl);
+            this.tabPage24.Controls.Add(this.CSCPNamelbl);
+            this.tabPage24.Controls.Add(this.CSCPNumberLbl);
+            this.tabPage24.Controls.Add(this.CSCPEmailLbl);
+            this.tabPage24.ForeColor = System.Drawing.Color.Black;
+            this.tabPage24.Location = new System.Drawing.Point(4, 28);
+            this.tabPage24.Name = "tabPage24";
+            this.tabPage24.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage24.Size = new System.Drawing.Size(1042, 639);
+            this.tabPage24.TabIndex = 1;
+            this.tabPage24.Text = "Confirmation";
+            this.tabPage24.Click += new System.EventHandler(this.tabPage24_Click);
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.CSCPALine2Lbl);
+            this.groupBox11.Controls.Add(this.label194);
+            this.groupBox11.Controls.Add(this.label196);
+            this.groupBox11.Controls.Add(this.label197);
+            this.groupBox11.Controls.Add(this.label198);
+            this.groupBox11.Controls.Add(this.label279);
+            this.groupBox11.Controls.Add(this.CSCPALine3Lbl);
+            this.groupBox11.Controls.Add(this.CSCPACountryLbl);
+            this.groupBox11.Controls.Add(this.CSCPACityLbl);
+            this.groupBox11.Controls.Add(this.CSCPALine1Lbl);
+            this.groupBox11.Location = new System.Drawing.Point(54, 251);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(504, 243);
+            this.groupBox11.TabIndex = 66;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Address";
+            // 
+            // CSCPALine2Lbl
+            // 
+            this.CSCPALine2Lbl.AutoSize = true;
+            this.CSCPALine2Lbl.Location = new System.Drawing.Point(252, 74);
+            this.CSCPALine2Lbl.Name = "CSCPALine2Lbl";
+            this.CSCPALine2Lbl.Size = new System.Drawing.Size(70, 19);
+            this.CSCPALine2Lbl.TabIndex = 41;
+            this.CSCPALine2Lbl.Text = "Kingsway";
+            // 
+            // label194
+            // 
+            this.label194.AutoSize = true;
+            this.label194.Location = new System.Drawing.Point(17, 30);
+            this.label194.Name = "label194";
+            this.label194.Size = new System.Drawing.Size(108, 19);
+            this.label194.TabIndex = 38;
+            this.label194.Text = "Address Line 1:";
+            // 
+            // label196
+            // 
+            this.label196.AutoSize = true;
+            this.label196.Location = new System.Drawing.Point(17, 74);
+            this.label196.Name = "label196";
+            this.label196.Size = new System.Drawing.Size(108, 19);
+            this.label196.TabIndex = 40;
+            this.label196.Text = "Address Line 2:";
+            // 
+            // label197
+            // 
+            this.label197.AutoSize = true;
+            this.label197.Location = new System.Drawing.Point(17, 115);
+            this.label197.Name = "label197";
+            this.label197.Size = new System.Drawing.Size(108, 19);
+            this.label197.TabIndex = 0;
+            this.label197.Text = "Address Line 3:";
+            // 
+            // label198
+            // 
+            this.label198.AutoSize = true;
+            this.label198.Location = new System.Drawing.Point(17, 159);
+            this.label198.Name = "label198";
+            this.label198.Size = new System.Drawing.Size(38, 19);
+            this.label198.TabIndex = 5;
+            this.label198.Text = "City:";
+            // 
+            // label279
+            // 
+            this.label279.AutoSize = true;
+            this.label279.Location = new System.Drawing.Point(17, 202);
+            this.label279.Name = "label279";
+            this.label279.Size = new System.Drawing.Size(63, 19);
+            this.label279.TabIndex = 4;
+            this.label279.Text = "Country:";
+            // 
+            // CSCPALine3Lbl
+            // 
+            this.CSCPALine3Lbl.AutoSize = true;
+            this.CSCPALine3Lbl.Location = new System.Drawing.Point(252, 115);
+            this.CSCPALine3Lbl.Name = "CSCPALine3Lbl";
+            this.CSCPALine3Lbl.Size = new System.Drawing.Size(64, 19);
+            this.CSCPALine3Lbl.TabIndex = 32;
+            this.CSCPALine3Lbl.Text = "Gauteng";
+            this.CSCPALine3Lbl.Click += new System.EventHandler(this.label206_Click);
+            // 
+            // CSCPACountryLbl
+            // 
+            this.CSCPACountryLbl.AutoSize = true;
+            this.CSCPACountryLbl.Location = new System.Drawing.Point(252, 201);
+            this.CSCPACountryLbl.Name = "CSCPACountryLbl";
+            this.CSCPACountryLbl.Size = new System.Drawing.Size(87, 19);
+            this.CSCPACountryLbl.TabIndex = 30;
+            this.CSCPACountryLbl.Text = "South Africa";
+            this.CSCPACountryLbl.Click += new System.EventHandler(this.label208_Click);
+            // 
+            // CSCPACityLbl
+            // 
+            this.CSCPACityLbl.AutoSize = true;
+            this.CSCPACityLbl.Location = new System.Drawing.Point(252, 158);
+            this.CSCPACityLbl.Name = "CSCPACityLbl";
+            this.CSCPACityLbl.Size = new System.Drawing.Size(98, 19);
+            this.CSCPACityLbl.TabIndex = 31;
+            this.CSCPACityLbl.Text = "Johannesburg";
+            this.CSCPACityLbl.Click += new System.EventHandler(this.label207_Click);
+            // 
+            // CSCPALine1Lbl
+            // 
+            this.CSCPALine1Lbl.AutoSize = true;
+            this.CSCPALine1Lbl.Location = new System.Drawing.Point(252, 30);
+            this.CSCPALine1Lbl.Name = "CSCPALine1Lbl";
+            this.CSCPALine1Lbl.Size = new System.Drawing.Size(72, 19);
+            this.CSCPALine1Lbl.TabIndex = 35;
+            this.CSCPALine1Lbl.Text = "Block 753";
+            this.CSCPALine1Lbl.Click += new System.EventHandler(this.label203_Click);
+            // 
+            // label188
+            // 
+            this.label188.AutoSize = true;
+            this.label188.Location = new System.Drawing.Point(51, 219);
+            this.label188.Name = "label188";
+            this.label188.Size = new System.Drawing.Size(105, 19);
+            this.label188.TabIndex = 55;
+            this.label188.Text = "Email Address:";
+            this.label188.Click += new System.EventHandler(this.label188_Click);
+            // 
+            // label189
+            // 
+            this.label189.AutoSize = true;
+            this.label189.Location = new System.Drawing.Point(51, 174);
+            this.label189.Name = "label189";
+            this.label189.Size = new System.Drawing.Size(108, 19);
+            this.label189.TabIndex = 54;
+            this.label189.Text = "Phone Number:";
+            this.label189.Click += new System.EventHandler(this.label189_Click);
+            // 
+            // label192
+            // 
+            this.label192.AutoSize = true;
+            this.label192.Location = new System.Drawing.Point(51, 50);
+            this.label192.Name = "label192";
+            this.label192.Size = new System.Drawing.Size(46, 19);
+            this.label192.TabIndex = 52;
+            this.label192.Text = "Title: ";
+            this.label192.Click += new System.EventHandler(this.label192_Click);
+            // 
+            // label224
+            // 
+            this.label224.AutoSize = true;
+            this.label224.Location = new System.Drawing.Point(51, 88);
+            this.label224.Name = "label224";
+            this.label224.Size = new System.Drawing.Size(107, 19);
+            this.label224.TabIndex = 48;
+            this.label224.Text = "Supplier Name:";
+            this.label224.Click += new System.EventHandler(this.label224_Click);
+            // 
+            // label225
+            // 
+            this.label225.AutoSize = true;
+            this.label225.Location = new System.Drawing.Point(51, 131);
+            this.label225.Name = "label225";
+            this.label225.Size = new System.Drawing.Size(153, 19);
+            this.label225.TabIndex = 47;
+            this.label225.Text = "Contact Person Name:";
+            this.label225.Click += new System.EventHandler(this.label225_Click);
+            // 
+            // SupBackBtn
+            // 
+            this.SupBackBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.SupBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SupBackBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SupBackBtn.Location = new System.Drawing.Point(880, 602);
+            this.SupBackBtn.Name = "SupBackBtn";
+            this.SupBackBtn.Size = new System.Drawing.Size(75, 30);
+            this.SupBackBtn.TabIndex = 37;
+            this.SupBackBtn.Text = "Back";
+            this.SupBackBtn.UseVisualStyleBackColor = true;
+            this.SupBackBtn.Click += new System.EventHandler(this.button169_Click);
+            // 
+            // SupConfirmBtn
+            // 
+            this.SupConfirmBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.SupConfirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SupConfirmBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SupConfirmBtn.Location = new System.Drawing.Point(961, 603);
+            this.SupConfirmBtn.Name = "SupConfirmBtn";
+            this.SupConfirmBtn.Size = new System.Drawing.Size(75, 30);
+            this.SupConfirmBtn.TabIndex = 36;
+            this.SupConfirmBtn.Text = "Confirm";
+            this.SupConfirmBtn.UseVisualStyleBackColor = true;
+            this.SupConfirmBtn.Click += new System.EventHandler(this.button170_Click);
+            // 
+            // CSTitleLbl
+            // 
+            this.CSTitleLbl.AutoSize = true;
+            this.CSTitleLbl.Location = new System.Drawing.Point(322, 50);
+            this.CSTitleLbl.Name = "CSTitleLbl";
+            this.CSTitleLbl.Size = new System.Drawing.Size(27, 19);
+            this.CSTitleLbl.TabIndex = 33;
+            this.CSTitleLbl.Text = "Mr";
+            this.CSTitleLbl.Click += new System.EventHandler(this.label205_Click);
+            // 
+            // CSNameLbl
+            // 
+            this.CSNameLbl.AutoSize = true;
+            this.CSNameLbl.Location = new System.Drawing.Point(322, 88);
+            this.CSNameLbl.Name = "CSNameLbl";
+            this.CSNameLbl.Size = new System.Drawing.Size(102, 19);
+            this.CSNameLbl.TabIndex = 29;
+            this.CSNameLbl.Text = "Comp Supplier";
+            this.CSNameLbl.Click += new System.EventHandler(this.label209_Click);
+            // 
+            // CSCPNamelbl
+            // 
+            this.CSCPNamelbl.AutoSize = true;
+            this.CSCPNamelbl.Location = new System.Drawing.Point(322, 131);
+            this.CSCPNamelbl.Name = "CSCPNamelbl";
+            this.CSCPNamelbl.Size = new System.Drawing.Size(77, 19);
+            this.CSCPNamelbl.TabIndex = 28;
+            this.CSCPNamelbl.Text = "Max Super";
+            this.CSCPNamelbl.Click += new System.EventHandler(this.label210_Click);
+            // 
+            // CSCPNumberLbl
+            // 
+            this.CSCPNumberLbl.AutoSize = true;
+            this.CSCPNumberLbl.Location = new System.Drawing.Point(322, 174);
+            this.CSCPNumberLbl.Name = "CSCPNumberLbl";
+            this.CSCPNumberLbl.Size = new System.Drawing.Size(97, 19);
+            this.CSCPNumberLbl.TabIndex = 27;
+            this.CSCPNumberLbl.Text = "083 245 7895";
+            this.CSCPNumberLbl.Click += new System.EventHandler(this.label211_Click);
+            // 
+            // CSCPEmailLbl
+            // 
+            this.CSCPEmailLbl.AutoSize = true;
+            this.CSCPEmailLbl.Location = new System.Drawing.Point(322, 217);
+            this.CSCPEmailLbl.Name = "CSCPEmailLbl";
+            this.CSCPEmailLbl.Size = new System.Drawing.Size(122, 19);
+            this.CSCPEmailLbl.TabIndex = 26;
+            this.CSCPEmailLbl.Text = "Max@super.co.za";
+            this.CSCPEmailLbl.Click += new System.EventHandler(this.label212_Click);
+            // 
+            // tabPage25
+            // 
+            this.tabPage25.BackColor = System.Drawing.Color.White;
+            this.tabPage25.Controls.Add(this.label223);
+            this.tabPage25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.tabPage25.Location = new System.Drawing.Point(4, 28);
+            this.tabPage25.Name = "tabPage25";
+            this.tabPage25.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage25.Size = new System.Drawing.Size(1042, 639);
+            this.tabPage25.TabIndex = 2;
+            this.tabPage25.Text = "Complete";
+            this.tabPage25.Click += new System.EventHandler(this.tabPage25_Click);
+            // 
+            // label223
+            // 
+            this.label223.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label223.AutoSize = true;
+            this.label223.Font = new System.Drawing.Font("Calibri", 30F);
+            this.label223.Location = new System.Drawing.Point(285, 462);
+            this.label223.Name = "label223";
+            this.label223.Size = new System.Drawing.Size(473, 49);
+            this.label223.TabIndex = 1;
+            this.label223.Text = "Supplier Successfully Added";
+            this.label223.Click += new System.EventHandler(this.label223_Click);
+            // 
+            // EquipmentActionPanel
+            // 
+            this.EquipmentActionPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.EquipmentActionPanel.BackColor = System.Drawing.Color.White;
+            this.EquipmentActionPanel.Controls.Add(this.tableLayoutPanel5);
+            this.EquipmentActionPanel.Location = new System.Drawing.Point(0, 0);
+            this.EquipmentActionPanel.Name = "EquipmentActionPanel";
+            this.EquipmentActionPanel.Size = new System.Drawing.Size(1050, 671);
+            this.EquipmentActionPanel.TabIndex = 9;
+            this.EquipmentActionPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.EquipmentActionPanel_Paint);
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.Controls.Add(this.button43, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.button49, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.button50, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.button51, 1, 1);
+            this.tableLayoutPanel5.Controls.Add(this.button52, 0, 2);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(8, 8);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 3;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(1032, 431);
+            this.tableLayoutPanel5.TabIndex = 0;
+            this.tableLayoutPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel5_Paint);
+            // 
+            // button43
+            // 
+            this.button43.FlatAppearance.BorderSize = 2;
+            this.button43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button43.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.button43.Location = new System.Drawing.Point(3, 3);
+            this.button43.Name = "button43";
+            this.button43.Size = new System.Drawing.Size(510, 137);
+            this.button43.TabIndex = 0;
+            this.button43.Text = "Add Equipment";
+            this.button43.UseVisualStyleBackColor = true;
+            this.button43.Click += new System.EventHandler(this.button43_Click);
+            // 
+            // button49
+            // 
+            this.button49.FlatAppearance.BorderSize = 2;
+            this.button49.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button49.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.button49.Location = new System.Drawing.Point(519, 3);
+            this.button49.Name = "button49";
+            this.button49.Size = new System.Drawing.Size(510, 137);
+            this.button49.TabIndex = 1;
+            this.button49.Text = "View Equipment";
+            this.button49.UseVisualStyleBackColor = true;
+            this.button49.Click += new System.EventHandler(this.button49_Click);
+            // 
+            // button50
+            // 
+            this.button50.FlatAppearance.BorderSize = 2;
+            this.button50.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button50.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.button50.Location = new System.Drawing.Point(3, 146);
+            this.button50.Name = "button50";
+            this.button50.Size = new System.Drawing.Size(510, 137);
+            this.button50.TabIndex = 2;
+            this.button50.Text = "Add Equipment Type";
+            this.button50.UseVisualStyleBackColor = true;
+            this.button50.Click += new System.EventHandler(this.button50_Click);
+            // 
+            // button51
+            // 
+            this.button51.FlatAppearance.BorderSize = 2;
+            this.button51.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button51.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.button51.Location = new System.Drawing.Point(519, 146);
+            this.button51.Name = "button51";
+            this.button51.Size = new System.Drawing.Size(510, 137);
+            this.button51.TabIndex = 3;
+            this.button51.Text = "View Equipment Type";
+            this.button51.UseVisualStyleBackColor = true;
+            this.button51.Click += new System.EventHandler(this.button51_Click);
+            // 
+            // button52
+            // 
+            this.button52.FlatAppearance.BorderSize = 2;
+            this.button52.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button52.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button52.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.button52.Location = new System.Drawing.Point(3, 289);
+            this.button52.Name = "button52";
+            this.button52.Size = new System.Drawing.Size(510, 137);
+            this.button52.TabIndex = 5;
+            this.button52.Text = "Generate Report";
+            this.button52.UseVisualStyleBackColor = true;
+            this.button52.Click += new System.EventHandler(this.button52_Click);
+            // 
+            // ProductActionPanel
+            // 
+            this.ProductActionPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ProductActionPanel.BackColor = System.Drawing.Color.White;
+            this.ProductActionPanel.Controls.Add(this.tableLayoutPanel4);
+            this.ProductActionPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.ProductActionPanel.Location = new System.Drawing.Point(0, 0);
+            this.ProductActionPanel.Name = "ProductActionPanel";
+            this.ProductActionPanel.Size = new System.Drawing.Size(1050, 671);
+            this.ProductActionPanel.TabIndex = 8;
+            this.ProductActionPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ProductActionPanel_Paint);
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.button44, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.button45, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.button46, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.button47, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.button48, 0, 2);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(8, 8);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 3;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1032, 431);
+            this.tableLayoutPanel4.TabIndex = 0;
+            this.tableLayoutPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel4_Paint);
+            // 
+            // button44
+            // 
+            this.button44.FlatAppearance.BorderSize = 2;
+            this.button44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button44.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button44.Location = new System.Drawing.Point(3, 3);
+            this.button44.Name = "button44";
+            this.button44.Size = new System.Drawing.Size(510, 137);
+            this.button44.TabIndex = 0;
+            this.button44.Text = "Add Product";
+            this.button44.UseVisualStyleBackColor = true;
+            this.button44.Click += new System.EventHandler(this.button44_Click);
+            // 
+            // button45
+            // 
+            this.button45.FlatAppearance.BorderSize = 2;
+            this.button45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button45.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button45.Location = new System.Drawing.Point(519, 3);
+            this.button45.Name = "button45";
+            this.button45.Size = new System.Drawing.Size(510, 137);
+            this.button45.TabIndex = 1;
+            this.button45.Text = "View Product";
+            this.button45.UseVisualStyleBackColor = true;
+            this.button45.Click += new System.EventHandler(this.button45_Click);
+            // 
+            // button46
+            // 
+            this.button46.FlatAppearance.BorderSize = 2;
+            this.button46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button46.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button46.Location = new System.Drawing.Point(3, 146);
+            this.button46.Name = "button46";
+            this.button46.Size = new System.Drawing.Size(510, 137);
+            this.button46.TabIndex = 2;
+            this.button46.Text = "Add Product Type";
+            this.button46.UseVisualStyleBackColor = true;
+            this.button46.Click += new System.EventHandler(this.button46_Click);
+            // 
+            // button47
+            // 
+            this.button47.FlatAppearance.BorderSize = 2;
+            this.button47.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button47.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button47.Location = new System.Drawing.Point(519, 146);
+            this.button47.Name = "button47";
+            this.button47.Size = new System.Drawing.Size(510, 137);
+            this.button47.TabIndex = 3;
+            this.button47.Text = "View Product Type";
+            this.button47.UseVisualStyleBackColor = true;
+            this.button47.Click += new System.EventHandler(this.button47_Click);
+            // 
+            // button48
+            // 
+            this.button48.FlatAppearance.BorderSize = 2;
+            this.button48.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button48.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button48.Location = new System.Drawing.Point(3, 289);
+            this.button48.Name = "button48";
+            this.button48.Size = new System.Drawing.Size(510, 137);
+            this.button48.TabIndex = 5;
+            this.button48.Text = "Generate Report";
+            this.button48.UseVisualStyleBackColor = true;
+            this.button48.Click += new System.EventHandler(this.button48_Click);
+            // 
+            // ClientActionPanel
+            // 
+            this.ClientActionPanel.BackColor = System.Drawing.Color.White;
+            this.ClientActionPanel.Controls.Add(this.ClientTLAPanel);
+            this.ClientActionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ClientActionPanel.Location = new System.Drawing.Point(0, 0);
+            this.ClientActionPanel.Name = "ClientActionPanel";
+            this.ClientActionPanel.Size = new System.Drawing.Size(1050, 671);
+            this.ClientActionPanel.TabIndex = 3;
+            this.ClientActionPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ClientActionPanel_Paint);
+            // 
+            // ClientTLAPanel
+            // 
+            this.ClientTLAPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ClientTLAPanel.ColumnCount = 2;
+            this.ClientTLAPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.ClientTLAPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.ClientTLAPanel.Controls.Add(this.AddOrganisationTypeAPBtn, 0, 1);
+            this.ClientTLAPanel.Controls.Add(this.ViewClientAPBtn, 0, 0);
+            this.ClientTLAPanel.Controls.Add(this.ViewOrganisationTypeAPBtn, 1, 0);
+            this.ClientTLAPanel.Controls.Add(this.button7, 1, 1);
+            this.ClientTLAPanel.Location = new System.Drawing.Point(8, 8);
+            this.ClientTLAPanel.Name = "ClientTLAPanel";
+            this.ClientTLAPanel.RowCount = 3;
+            this.ClientTLAPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.ClientTLAPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.ClientTLAPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.ClientTLAPanel.Size = new System.Drawing.Size(1032, 431);
+            this.ClientTLAPanel.TabIndex = 0;
+            this.ClientTLAPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ClientTLAPanel_Paint);
+            // 
+            // AddOrganisationTypeAPBtn
+            // 
+            this.AddOrganisationTypeAPBtn.FlatAppearance.BorderSize = 2;
+            this.AddOrganisationTypeAPBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddOrganisationTypeAPBtn.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddOrganisationTypeAPBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.AddOrganisationTypeAPBtn.Location = new System.Drawing.Point(3, 146);
+            this.AddOrganisationTypeAPBtn.Name = "AddOrganisationTypeAPBtn";
+            this.AddOrganisationTypeAPBtn.Size = new System.Drawing.Size(510, 137);
+            this.AddOrganisationTypeAPBtn.TabIndex = 2;
+            this.AddOrganisationTypeAPBtn.Text = "Add Organisation Type";
+            this.AddOrganisationTypeAPBtn.UseVisualStyleBackColor = true;
+            this.AddOrganisationTypeAPBtn.Click += new System.EventHandler(this.AddClienTypetAPBtn_Click);
+            // 
+            // ViewClientAPBtn
+            // 
+            this.ViewClientAPBtn.FlatAppearance.BorderSize = 2;
+            this.ViewClientAPBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ViewClientAPBtn.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewClientAPBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.ViewClientAPBtn.Location = new System.Drawing.Point(3, 3);
+            this.ViewClientAPBtn.Name = "ViewClientAPBtn";
+            this.ViewClientAPBtn.Size = new System.Drawing.Size(510, 137);
+            this.ViewClientAPBtn.TabIndex = 1;
+            this.ViewClientAPBtn.Text = "View Clients";
+            this.ViewClientAPBtn.UseVisualStyleBackColor = true;
+            this.ViewClientAPBtn.Click += new System.EventHandler(this.ViewClientAPBtn_Click);
+            // 
+            // ViewOrganisationTypeAPBtn
+            // 
+            this.ViewOrganisationTypeAPBtn.FlatAppearance.BorderSize = 2;
+            this.ViewOrganisationTypeAPBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ViewOrganisationTypeAPBtn.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewOrganisationTypeAPBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.ViewOrganisationTypeAPBtn.Location = new System.Drawing.Point(519, 3);
+            this.ViewOrganisationTypeAPBtn.Name = "ViewOrganisationTypeAPBtn";
+            this.ViewOrganisationTypeAPBtn.Size = new System.Drawing.Size(510, 137);
+            this.ViewOrganisationTypeAPBtn.TabIndex = 3;
+            this.ViewOrganisationTypeAPBtn.Text = "View Organisation Types";
+            this.ViewOrganisationTypeAPBtn.UseVisualStyleBackColor = true;
+            this.ViewOrganisationTypeAPBtn.Click += new System.EventHandler(this.ViewClientTypeAPBtn_Click);
+            // 
+            // button7
+            // 
+            this.button7.FlatAppearance.BorderSize = 2;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.button7.Location = new System.Drawing.Point(519, 146);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(510, 137);
+            this.button7.TabIndex = 5;
+            this.button7.Text = "Generate  Report";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click_1);
+            // 
+            // EmployeeActionPanel
+            // 
+            this.EmployeeActionPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.EmployeeActionPanel.BackColor = System.Drawing.Color.White;
+            this.EmployeeActionPanel.Controls.Add(this.tableLayoutPanel1);
+            this.EmployeeActionPanel.Location = new System.Drawing.Point(0, 0);
+            this.EmployeeActionPanel.Name = "EmployeeActionPanel";
+            this.EmployeeActionPanel.Size = new System.Drawing.Size(1050, 671);
+            this.EmployeeActionPanel.TabIndex = 6;
+            this.EmployeeActionPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.EmployeeActionPanel_Paint);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.button32, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.button33, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button34, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button35, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.button36, 1, 1);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(8, 8);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1032, 431);
+            this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            // 
+            // button32
+            // 
+            this.button32.FlatAppearance.BorderSize = 2;
+            this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button32.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.button32.Location = new System.Drawing.Point(3, 289);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(510, 137);
+            this.button32.TabIndex = 5;
+            this.button32.Text = "Generate  Report";
+            this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
+            // 
+            // button33
+            // 
+            this.button33.FlatAppearance.BorderSize = 2;
+            this.button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button33.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.button33.Location = new System.Drawing.Point(3, 3);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(510, 137);
+            this.button33.TabIndex = 0;
+            this.button33.Text = "Add Employee";
+            this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.button33_Click);
+            // 
+            // button34
+            // 
+            this.button34.FlatAppearance.BorderSize = 2;
+            this.button34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button34.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.button34.Location = new System.Drawing.Point(519, 3);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(510, 137);
+            this.button34.TabIndex = 1;
+            this.button34.Text = "View Employee";
+            this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.button34_Click);
+            // 
+            // button35
+            // 
+            this.button35.FlatAppearance.BorderSize = 2;
+            this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button35.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.button35.Location = new System.Drawing.Point(3, 146);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(510, 137);
+            this.button35.TabIndex = 2;
+            this.button35.Text = "Add Employee Type";
+            this.button35.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.button35_Click);
+            // 
+            // button36
+            // 
+            this.button36.FlatAppearance.BorderSize = 2;
+            this.button36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button36.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.button36.Location = new System.Drawing.Point(519, 146);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(510, 137);
+            this.button36.TabIndex = 3;
+            this.button36.Text = "View Employee Type";
+            this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
+            // 
+            // JobActionPanel
+            // 
+            this.JobActionPanel.BackColor = System.Drawing.Color.White;
+            this.JobActionPanel.Controls.Add(this.tableLayoutPanel7);
+            this.JobActionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.JobActionPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.JobActionPanel.Location = new System.Drawing.Point(0, 0);
+            this.JobActionPanel.Name = "JobActionPanel";
+            this.JobActionPanel.Size = new System.Drawing.Size(1050, 671);
+            this.JobActionPanel.TabIndex = 11;
+            this.JobActionPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.JobActionPanel_Paint);
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel7.ColumnCount = 2;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.Controls.Add(this.button58, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.button59, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.button60, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.button61, 1, 1);
+            this.tableLayoutPanel7.Controls.Add(this.button62, 0, 2);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(8, 8);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 3;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(1032, 431);
+            this.tableLayoutPanel7.TabIndex = 0;
+            this.tableLayoutPanel7.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel7_Paint);
+            // 
+            // button58
+            // 
+            this.button58.FlatAppearance.BorderSize = 2;
+            this.button58.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button58.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button58.Location = new System.Drawing.Point(3, 3);
+            this.button58.Name = "button58";
+            this.button58.Size = new System.Drawing.Size(506, 137);
+            this.button58.TabIndex = 0;
+            this.button58.Text = "Add Job";
+            this.button58.UseVisualStyleBackColor = true;
+            this.button58.Click += new System.EventHandler(this.button58_Click);
+            // 
+            // button59
+            // 
+            this.button59.FlatAppearance.BorderSize = 2;
+            this.button59.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button59.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button59.Location = new System.Drawing.Point(519, 3);
+            this.button59.Name = "button59";
+            this.button59.Size = new System.Drawing.Size(507, 137);
+            this.button59.TabIndex = 1;
+            this.button59.Text = "View Job";
+            this.button59.UseVisualStyleBackColor = true;
+            this.button59.Click += new System.EventHandler(this.button59_Click);
+            // 
+            // button60
+            // 
+            this.button60.FlatAppearance.BorderSize = 2;
+            this.button60.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button60.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button60.Location = new System.Drawing.Point(3, 146);
+            this.button60.Name = "button60";
+            this.button60.Size = new System.Drawing.Size(506, 137);
+            this.button60.TabIndex = 2;
+            this.button60.Text = "Add Job Type";
+            this.button60.UseVisualStyleBackColor = true;
+            this.button60.Click += new System.EventHandler(this.button60_Click);
+            // 
+            // button61
+            // 
+            this.button61.FlatAppearance.BorderSize = 2;
+            this.button61.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button61.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button61.Location = new System.Drawing.Point(519, 146);
+            this.button61.Name = "button61";
+            this.button61.Size = new System.Drawing.Size(507, 137);
+            this.button61.TabIndex = 3;
+            this.button61.Text = "View Job Type";
+            this.button61.UseVisualStyleBackColor = true;
+            this.button61.Click += new System.EventHandler(this.button61_Click);
+            // 
+            // button62
+            // 
+            this.button62.FlatAppearance.BorderSize = 2;
+            this.button62.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button62.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button62.Location = new System.Drawing.Point(3, 289);
+            this.button62.Name = "button62";
+            this.button62.Size = new System.Drawing.Size(510, 137);
+            this.button62.TabIndex = 5;
+            this.button62.Text = "Generate Report";
+            this.button62.UseVisualStyleBackColor = true;
+            this.button62.Click += new System.EventHandler(this.button62_Click);
             // 
             // AddClientDetailsTab
             // 
@@ -4900,163 +6195,6 @@
             this.dataGridViewTextBoxColumn34.HeaderText = "Description";
             this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
             this.dataGridViewTextBoxColumn34.Width = 200;
-            // 
-            // ViewProductPanel
-            // 
-            this.ViewProductPanel.Controls.Add(this.label61);
-            this.ViewProductPanel.Controls.Add(this.button91);
-            this.ViewProductPanel.Controls.Add(this.panel7);
-            this.ViewProductPanel.Controls.Add(this.textBox18);
-            this.ViewProductPanel.Controls.Add(this.dataGridView6);
-            this.ViewProductPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ViewProductPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.ViewProductPanel.Location = new System.Drawing.Point(0, 0);
-            this.ViewProductPanel.Name = "ViewProductPanel";
-            this.ViewProductPanel.Size = new System.Drawing.Size(1050, 671);
-            this.ViewProductPanel.TabIndex = 19;
-            this.ViewProductPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ViewProductPanel_Paint);
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(15, 14);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(52, 19);
-            this.label61.TabIndex = 4;
-            this.label61.Text = "Search";
-            this.label61.Click += new System.EventHandler(this.label61_Click);
-            // 
-            // button91
-            // 
-            this.button91.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button91.Location = new System.Drawing.Point(297, 36);
-            this.button91.Name = "button91";
-            this.button91.Size = new System.Drawing.Size(140, 27);
-            this.button91.TabIndex = 3;
-            this.button91.Text = "Search";
-            this.button91.UseVisualStyleBackColor = true;
-            this.button91.Click += new System.EventHandler(this.button91_Click);
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.panel7.Controls.Add(this.button92);
-            this.panel7.Controls.Add(this.tableLayoutPanel15);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel7.Location = new System.Drawing.Point(906, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(144, 671);
-            this.panel7.TabIndex = 2;
-            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
-            // 
-            // button92
-            // 
-            this.button92.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button92.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button92.Location = new System.Drawing.Point(0, 612);
-            this.button92.Name = "button92";
-            this.button92.Size = new System.Drawing.Size(144, 59);
-            this.button92.TabIndex = 3;
-            this.button92.Text = "Back";
-            this.button92.UseVisualStyleBackColor = true;
-            this.button92.Click += new System.EventHandler(this.button92_Click);
-            // 
-            // tableLayoutPanel15
-            // 
-            this.tableLayoutPanel15.ColumnCount = 1;
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel15.Controls.Add(this.button93, 0, 1);
-            this.tableLayoutPanel15.Controls.Add(this.button94, 0, 0);
-            this.tableLayoutPanel15.Controls.Add(this.button95, 0, 2);
-            this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel15.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel15.Name = "tableLayoutPanel15";
-            this.tableLayoutPanel15.RowCount = 6;
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(144, 386);
-            this.tableLayoutPanel15.TabIndex = 0;
-            this.tableLayoutPanel15.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel15_Paint);
-            // 
-            // button93
-            // 
-            this.button93.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button93.Location = new System.Drawing.Point(3, 67);
-            this.button93.Name = "button93";
-            this.button93.Size = new System.Drawing.Size(138, 56);
-            this.button93.TabIndex = 1;
-            this.button93.Text = "Delete Product";
-            this.button93.UseVisualStyleBackColor = true;
-            this.button93.Click += new System.EventHandler(this.button93_Click);
-            // 
-            // button94
-            // 
-            this.button94.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button94.Location = new System.Drawing.Point(3, 3);
-            this.button94.Name = "button94";
-            this.button94.Size = new System.Drawing.Size(138, 56);
-            this.button94.TabIndex = 0;
-            this.button94.Text = "Update Product";
-            this.button94.UseVisualStyleBackColor = true;
-            this.button94.Click += new System.EventHandler(this.button94_Click);
-            // 
-            // button95
-            // 
-            this.button95.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button95.Location = new System.Drawing.Point(3, 131);
-            this.button95.Name = "button95";
-            this.button95.Size = new System.Drawing.Size(138, 56);
-            this.button95.TabIndex = 2;
-            this.button95.Text = "Assign Product";
-            this.button95.UseVisualStyleBackColor = true;
-            this.button95.Click += new System.EventHandler(this.button95_Click);
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(12, 36);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(265, 27);
-            this.textBox18.TabIndex = 1;
-            this.textBox18.TextChanged += new System.EventHandler(this.textBox18_TextChanged);
-            // 
-            // dataGridView6
-            // 
-            this.dataGridView6.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.PrID,
-            this.PDis,
-            this.Pt,
-            this.PQ});
-            this.dataGridView6.Location = new System.Drawing.Point(12, 75);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.Size = new System.Drawing.Size(885, 585);
-            this.dataGridView6.TabIndex = 0;
-            this.dataGridView6.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView6_CellContentClick);
-            // 
-            // PrID
-            // 
-            this.PrID.HeaderText = "ID";
-            this.PrID.Name = "PrID";
-            // 
-            // PDis
-            // 
-            this.PDis.HeaderText = "Description";
-            this.PDis.Name = "PDis";
-            // 
-            // Pt
-            // 
-            this.Pt.HeaderText = "Product Type";
-            this.Pt.Name = "Pt";
-            // 
-            // PQ
-            // 
-            this.PQ.HeaderText = "Quantity";
-            this.PQ.Name = "PQ";
             // 
             // ViewJobPanel
             // 
@@ -7829,926 +8967,6 @@
             this.button158.UseVisualStyleBackColor = true;
             this.button158.Click += new System.EventHandler(this.button158_Click);
             // 
-            // AddVehiclePanel
-            // 
-            this.AddVehiclePanel.Controls.Add(this.tabPage32);
-            this.AddVehiclePanel.Controls.Add(this.tabPage33);
-            this.AddVehiclePanel.Controls.Add(this.tabPage34);
-            this.AddVehiclePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddVehiclePanel.Location = new System.Drawing.Point(0, 0);
-            this.AddVehiclePanel.Name = "AddVehiclePanel";
-            this.AddVehiclePanel.SelectedIndex = 0;
-            this.AddVehiclePanel.Size = new System.Drawing.Size(1050, 671);
-            this.AddVehiclePanel.TabIndex = 46;
-            this.AddVehiclePanel.SelectedIndexChanged += new System.EventHandler(this.AddVehiclePanel_SelectedIndexChanged);
-            // 
-            // tabPage32
-            // 
-            this.tabPage32.BackColor = System.Drawing.Color.White;
-            this.tabPage32.Controls.Add(this.label253);
-            this.tabPage32.Controls.Add(this.label252);
-            this.tabPage32.Controls.Add(this.VYearTb);
-            this.tabPage32.Controls.Add(this.label251);
-            this.tabPage32.Controls.Add(this.VModelTb);
-            this.tabPage32.Controls.Add(this.label85);
-            this.tabPage32.Controls.Add(this.VMakeTb);
-            this.tabPage32.Controls.Add(this.AVCancelBtn);
-            this.tabPage32.Controls.Add(this.AVNextBtn);
-            this.tabPage32.Controls.Add(this.label84);
-            this.tabPage32.Controls.Add(this.label89);
-            this.tabPage32.Controls.Add(this.VTypeCmb);
-            this.tabPage32.Controls.Add(this.VRegTb);
-            this.tabPage32.Controls.Add(this.VPDateDtp);
-            this.tabPage32.ForeColor = System.Drawing.Color.Black;
-            this.tabPage32.Location = new System.Drawing.Point(4, 28);
-            this.tabPage32.Name = "tabPage32";
-            this.tabPage32.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage32.Size = new System.Drawing.Size(1042, 639);
-            this.tabPage32.TabIndex = 0;
-            this.tabPage32.Text = "Details";
-            this.tabPage32.Click += new System.EventHandler(this.tabPage32_Click);
-            // 
-            // label253
-            // 
-            this.label253.AutoSize = true;
-            this.label253.Location = new System.Drawing.Point(50, 274);
-            this.label253.Name = "label253";
-            this.label253.Size = new System.Drawing.Size(107, 19);
-            this.label253.TabIndex = 39;
-            this.label253.Text = "Purchase Date:";
-            this.label253.Click += new System.EventHandler(this.label253_Click);
-            // 
-            // label252
-            // 
-            this.label252.AutoSize = true;
-            this.label252.Location = new System.Drawing.Point(50, 229);
-            this.label252.Name = "label252";
-            this.label252.Size = new System.Drawing.Size(41, 19);
-            this.label252.TabIndex = 37;
-            this.label252.Text = "Year:";
-            this.label252.Click += new System.EventHandler(this.label252_Click);
-            // 
-            // VYearTb
-            // 
-            this.VYearTb.Location = new System.Drawing.Point(306, 227);
-            this.VYearTb.Name = "VYearTb";
-            this.VYearTb.Size = new System.Drawing.Size(245, 27);
-            this.VYearTb.TabIndex = 38;
-            this.VYearTb.Text = "2018";
-            this.VYearTb.TextChanged += new System.EventHandler(this.textBox53_TextChanged);
-            // 
-            // label251
-            // 
-            this.label251.AutoSize = true;
-            this.label251.Location = new System.Drawing.Point(50, 184);
-            this.label251.Name = "label251";
-            this.label251.Size = new System.Drawing.Size(54, 19);
-            this.label251.TabIndex = 35;
-            this.label251.Text = "Model:";
-            this.label251.Click += new System.EventHandler(this.label251_Click);
-            // 
-            // VModelTb
-            // 
-            this.VModelTb.Location = new System.Drawing.Point(306, 180);
-            this.VModelTb.Name = "VModelTb";
-            this.VModelTb.Size = new System.Drawing.Size(245, 27);
-            this.VModelTb.TabIndex = 36;
-            this.VModelTb.Text = "X Class";
-            this.VModelTb.TextChanged += new System.EventHandler(this.textBox52_TextChanged);
-            // 
-            // label85
-            // 
-            this.label85.AutoSize = true;
-            this.label85.Location = new System.Drawing.Point(50, 139);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(48, 19);
-            this.label85.TabIndex = 33;
-            this.label85.Text = "Make:";
-            this.label85.Click += new System.EventHandler(this.label85_Click);
-            // 
-            // VMakeTb
-            // 
-            this.VMakeTb.Location = new System.Drawing.Point(306, 133);
-            this.VMakeTb.Name = "VMakeTb";
-            this.VMakeTb.Size = new System.Drawing.Size(245, 27);
-            this.VMakeTb.TabIndex = 34;
-            this.VMakeTb.Text = "Mercedes";
-            this.VMakeTb.TextChanged += new System.EventHandler(this.textBox51_TextChanged);
-            // 
-            // AVCancelBtn
-            // 
-            this.AVCancelBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.AVCancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AVCancelBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AVCancelBtn.Location = new System.Drawing.Point(880, 589);
-            this.AVCancelBtn.Name = "AVCancelBtn";
-            this.AVCancelBtn.Size = new System.Drawing.Size(75, 30);
-            this.AVCancelBtn.TabIndex = 31;
-            this.AVCancelBtn.Text = "Cancel";
-            this.AVCancelBtn.UseVisualStyleBackColor = true;
-            this.AVCancelBtn.Click += new System.EventHandler(this.button125_Click_1);
-            // 
-            // AVNextBtn
-            // 
-            this.AVNextBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.AVNextBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AVNextBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AVNextBtn.Location = new System.Drawing.Point(961, 590);
-            this.AVNextBtn.Name = "AVNextBtn";
-            this.AVNextBtn.Size = new System.Drawing.Size(75, 30);
-            this.AVNextBtn.TabIndex = 30;
-            this.AVNextBtn.Text = "Next";
-            this.AVNextBtn.UseVisualStyleBackColor = true;
-            this.AVNextBtn.Click += new System.EventHandler(this.button188_Click);
-            // 
-            // label84
-            // 
-            this.label84.AutoSize = true;
-            this.label84.Location = new System.Drawing.Point(50, 93);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(43, 19);
-            this.label84.TabIndex = 6;
-            this.label84.Text = "Type:";
-            this.label84.Click += new System.EventHandler(this.label84_Click);
-            // 
-            // label89
-            // 
-            this.label89.AutoSize = true;
-            this.label89.Location = new System.Drawing.Point(50, 50);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(147, 19);
-            this.label89.TabIndex = 3;
-            this.label89.Text = "Registration Number:";
-            this.label89.Click += new System.EventHandler(this.label89_Click);
-            // 
-            // VTypeCmb
-            // 
-            this.VTypeCmb.FormattingEnabled = true;
-            this.VTypeCmb.Location = new System.Drawing.Point(306, 85);
-            this.VTypeCmb.Name = "VTypeCmb";
-            this.VTypeCmb.Size = new System.Drawing.Size(245, 27);
-            this.VTypeCmb.TabIndex = 27;
-            this.VTypeCmb.Text = "Bakkie";
-            this.VTypeCmb.SelectedIndexChanged += new System.EventHandler(this.comboBox25_SelectedIndexChanged);
-            // 
-            // VRegTb
-            // 
-            this.VRegTb.Location = new System.Drawing.Point(306, 41);
-            this.VRegTb.Name = "VRegTb";
-            this.VRegTb.Size = new System.Drawing.Size(245, 27);
-            this.VRegTb.TabIndex = 32;
-            this.VRegTb.Text = "AA 22 BB GP";
-            this.VRegTb.TextChanged += new System.EventHandler(this.textBox23_TextChanged);
-            // 
-            // tabPage33
-            // 
-            this.tabPage33.BackColor = System.Drawing.Color.White;
-            this.tabPage33.Controls.Add(this.CVPDateLbl);
-            this.tabPage33.Controls.Add(this.CVYearLbl);
-            this.tabPage33.Controls.Add(this.CVModelLbl);
-            this.tabPage33.Controls.Add(this.CVMakeLbl);
-            this.tabPage33.Controls.Add(this.CVTypeLbl);
-            this.tabPage33.Controls.Add(this.CVRegLbl);
-            this.tabPage33.Controls.Add(this.label243);
-            this.tabPage33.Controls.Add(this.label245);
-            this.tabPage33.Controls.Add(this.label246);
-            this.tabPage33.Controls.Add(this.label247);
-            this.tabPage33.Controls.Add(this.label248);
-            this.tabPage33.Controls.Add(this.label249);
-            this.tabPage33.Controls.Add(this.AVBackBtn);
-            this.tabPage33.Controls.Add(this.AVConfirmBtn);
-            this.tabPage33.ForeColor = System.Drawing.Color.Black;
-            this.tabPage33.Location = new System.Drawing.Point(4, 28);
-            this.tabPage33.Name = "tabPage33";
-            this.tabPage33.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage33.Size = new System.Drawing.Size(1042, 639);
-            this.tabPage33.TabIndex = 1;
-            this.tabPage33.Text = "Confirmation";
-            this.tabPage33.Click += new System.EventHandler(this.tabPage33_Click);
-            // 
-            // CVPDateLbl
-            // 
-            this.CVPDateLbl.AutoSize = true;
-            this.CVPDateLbl.Location = new System.Drawing.Point(378, 276);
-            this.CVPDateLbl.Name = "CVPDateLbl";
-            this.CVPDateLbl.Size = new System.Drawing.Size(83, 19);
-            this.CVPDateLbl.TabIndex = 51;
-            this.CVPDateLbl.Text = "06-05-2018";
-            this.CVPDateLbl.Click += new System.EventHandler(this.label254_Click);
-            // 
-            // CVYearLbl
-            // 
-            this.CVYearLbl.AutoSize = true;
-            this.CVYearLbl.Location = new System.Drawing.Point(378, 231);
-            this.CVYearLbl.Name = "CVYearLbl";
-            this.CVYearLbl.Size = new System.Drawing.Size(41, 19);
-            this.CVYearLbl.TabIndex = 50;
-            this.CVYearLbl.Text = "2018";
-            this.CVYearLbl.Click += new System.EventHandler(this.label255_Click);
-            // 
-            // CVModelLbl
-            // 
-            this.CVModelLbl.AutoSize = true;
-            this.CVModelLbl.Location = new System.Drawing.Point(378, 186);
-            this.CVModelLbl.Name = "CVModelLbl";
-            this.CVModelLbl.Size = new System.Drawing.Size(56, 19);
-            this.CVModelLbl.TabIndex = 49;
-            this.CVModelLbl.Text = "X Class";
-            this.CVModelLbl.Click += new System.EventHandler(this.label256_Click);
-            // 
-            // CVMakeLbl
-            // 
-            this.CVMakeLbl.AutoSize = true;
-            this.CVMakeLbl.Location = new System.Drawing.Point(378, 141);
-            this.CVMakeLbl.Name = "CVMakeLbl";
-            this.CVMakeLbl.Size = new System.Drawing.Size(81, 19);
-            this.CVMakeLbl.TabIndex = 48;
-            this.CVMakeLbl.Text = "Merecedes";
-            this.CVMakeLbl.Click += new System.EventHandler(this.label257_Click);
-            // 
-            // CVTypeLbl
-            // 
-            this.CVTypeLbl.AutoSize = true;
-            this.CVTypeLbl.Location = new System.Drawing.Point(378, 95);
-            this.CVTypeLbl.Name = "CVTypeLbl";
-            this.CVTypeLbl.Size = new System.Drawing.Size(52, 19);
-            this.CVTypeLbl.TabIndex = 47;
-            this.CVTypeLbl.Text = "Bakkie";
-            this.CVTypeLbl.Click += new System.EventHandler(this.label258_Click);
-            // 
-            // CVRegLbl
-            // 
-            this.CVRegLbl.AutoSize = true;
-            this.CVRegLbl.Location = new System.Drawing.Point(378, 55);
-            this.CVRegLbl.Name = "CVRegLbl";
-            this.CVRegLbl.Size = new System.Drawing.Size(91, 19);
-            this.CVRegLbl.TabIndex = 46;
-            this.CVRegLbl.Text = "AA 22 BB GP";
-            this.CVRegLbl.Click += new System.EventHandler(this.label259_Click);
-            // 
-            // label243
-            // 
-            this.label243.AutoSize = true;
-            this.label243.Location = new System.Drawing.Point(50, 274);
-            this.label243.Name = "label243";
-            this.label243.Size = new System.Drawing.Size(107, 19);
-            this.label243.TabIndex = 45;
-            this.label243.Text = "Purchase Date:";
-            this.label243.Click += new System.EventHandler(this.label243_Click);
-            // 
-            // label245
-            // 
-            this.label245.AutoSize = true;
-            this.label245.Location = new System.Drawing.Point(50, 229);
-            this.label245.Name = "label245";
-            this.label245.Size = new System.Drawing.Size(41, 19);
-            this.label245.TabIndex = 44;
-            this.label245.Text = "Year:";
-            this.label245.Click += new System.EventHandler(this.label245_Click);
-            // 
-            // label246
-            // 
-            this.label246.AutoSize = true;
-            this.label246.Location = new System.Drawing.Point(50, 184);
-            this.label246.Name = "label246";
-            this.label246.Size = new System.Drawing.Size(54, 19);
-            this.label246.TabIndex = 43;
-            this.label246.Text = "Model:";
-            this.label246.Click += new System.EventHandler(this.label246_Click);
-            // 
-            // label247
-            // 
-            this.label247.AutoSize = true;
-            this.label247.Location = new System.Drawing.Point(50, 139);
-            this.label247.Name = "label247";
-            this.label247.Size = new System.Drawing.Size(48, 19);
-            this.label247.TabIndex = 42;
-            this.label247.Text = "Make:";
-            this.label247.Click += new System.EventHandler(this.label247_Click);
-            // 
-            // label248
-            // 
-            this.label248.AutoSize = true;
-            this.label248.Location = new System.Drawing.Point(50, 93);
-            this.label248.Name = "label248";
-            this.label248.Size = new System.Drawing.Size(43, 19);
-            this.label248.TabIndex = 41;
-            this.label248.Text = "Type:";
-            this.label248.Click += new System.EventHandler(this.label248_Click);
-            // 
-            // label249
-            // 
-            this.label249.AutoSize = true;
-            this.label249.Location = new System.Drawing.Point(50, 50);
-            this.label249.Name = "label249";
-            this.label249.Size = new System.Drawing.Size(147, 19);
-            this.label249.TabIndex = 40;
-            this.label249.Text = "Registration Number:";
-            this.label249.Click += new System.EventHandler(this.label249_Click);
-            // 
-            // AVBackBtn
-            // 
-            this.AVBackBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.AVBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AVBackBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AVBackBtn.Location = new System.Drawing.Point(880, 602);
-            this.AVBackBtn.Name = "AVBackBtn";
-            this.AVBackBtn.Size = new System.Drawing.Size(75, 30);
-            this.AVBackBtn.TabIndex = 37;
-            this.AVBackBtn.Text = "Back";
-            this.AVBackBtn.UseVisualStyleBackColor = true;
-            this.AVBackBtn.Click += new System.EventHandler(this.button189_Click);
-            // 
-            // AVConfirmBtn
-            // 
-            this.AVConfirmBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.AVConfirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AVConfirmBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AVConfirmBtn.Location = new System.Drawing.Point(961, 603);
-            this.AVConfirmBtn.Name = "AVConfirmBtn";
-            this.AVConfirmBtn.Size = new System.Drawing.Size(75, 30);
-            this.AVConfirmBtn.TabIndex = 36;
-            this.AVConfirmBtn.Text = "Confirm";
-            this.AVConfirmBtn.UseVisualStyleBackColor = true;
-            this.AVConfirmBtn.Click += new System.EventHandler(this.button190_Click);
-            // 
-            // tabPage34
-            // 
-            this.tabPage34.BackColor = System.Drawing.Color.White;
-            this.tabPage34.Controls.Add(this.label250);
-            this.tabPage34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.tabPage34.Location = new System.Drawing.Point(4, 28);
-            this.tabPage34.Name = "tabPage34";
-            this.tabPage34.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage34.Size = new System.Drawing.Size(1042, 639);
-            this.tabPage34.TabIndex = 2;
-            this.tabPage34.Text = "Complete";
-            this.tabPage34.Click += new System.EventHandler(this.tabPage34_Click);
-            // 
-            // label250
-            // 
-            this.label250.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label250.AutoSize = true;
-            this.label250.Font = new System.Drawing.Font("Calibri", 30F);
-            this.label250.Location = new System.Drawing.Point(293, 462);
-            this.label250.Name = "label250";
-            this.label250.Size = new System.Drawing.Size(457, 49);
-            this.label250.TabIndex = 1;
-            this.label250.Text = "Vehicle Successfully Added";
-            this.label250.Click += new System.EventHandler(this.label250_Click);
-            // 
-            // AddSupplierPanel
-            // 
-            this.AddSupplierPanel.Controls.Add(this.tabPage23);
-            this.AddSupplierPanel.Controls.Add(this.tabPage24);
-            this.AddSupplierPanel.Controls.Add(this.tabPage25);
-            this.AddSupplierPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddSupplierPanel.Location = new System.Drawing.Point(0, 0);
-            this.AddSupplierPanel.Name = "AddSupplierPanel";
-            this.AddSupplierPanel.SelectedIndex = 0;
-            this.AddSupplierPanel.Size = new System.Drawing.Size(1050, 671);
-            this.AddSupplierPanel.TabIndex = 41;
-            this.AddSupplierPanel.SelectedIndexChanged += new System.EventHandler(this.AddSupplierPanel_SelectedIndexChanged);
-            // 
-            // tabPage23
-            // 
-            this.tabPage23.BackColor = System.Drawing.Color.White;
-            this.tabPage23.Controls.Add(this.groupBox10);
-            this.tabPage23.Controls.Add(this.label187);
-            this.tabPage23.Controls.Add(this.label191);
-            this.tabPage23.Controls.Add(this.SupCancelBtn);
-            this.tabPage23.Controls.Add(this.SupNextBtn);
-            this.tabPage23.Controls.Add(this.CPEmailTb);
-            this.tabPage23.Controls.Add(this.CPNumberTb);
-            this.tabPage23.Controls.Add(this.CPNameTb);
-            this.tabPage23.Controls.Add(this.SNameTb);
-            this.tabPage23.Controls.Add(this.label195);
-            this.tabPage23.Controls.Add(this.label199);
-            this.tabPage23.Controls.Add(this.label200);
-            this.tabPage23.Controls.Add(this.STitleCmb);
-            this.tabPage23.ForeColor = System.Drawing.Color.Black;
-            this.tabPage23.Location = new System.Drawing.Point(4, 28);
-            this.tabPage23.Name = "tabPage23";
-            this.tabPage23.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage23.Size = new System.Drawing.Size(1042, 639);
-            this.tabPage23.TabIndex = 0;
-            this.tabPage23.Text = "Details";
-            this.tabPage23.Click += new System.EventHandler(this.tabPage23_Click);
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.CPALine2Tb);
-            this.groupBox10.Controls.Add(this.label167);
-            this.groupBox10.Controls.Add(this.label168);
-            this.groupBox10.Controls.Add(this.label174);
-            this.groupBox10.Controls.Add(this.CPALine1Tb);
-            this.groupBox10.Controls.Add(this.CPALine3Tb);
-            this.groupBox10.Controls.Add(this.label175);
-            this.groupBox10.Controls.Add(this.CPACountryCmb);
-            this.groupBox10.Controls.Add(this.label176);
-            this.groupBox10.Controls.Add(this.CPACityCmb);
-            this.groupBox10.Location = new System.Drawing.Point(54, 261);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(504, 243);
-            this.groupBox10.TabIndex = 41;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Address";
-            // 
-            // CPALine2Tb
-            // 
-            this.CPALine2Tb.Location = new System.Drawing.Point(256, 66);
-            this.CPALine2Tb.Name = "CPALine2Tb";
-            this.CPALine2Tb.Size = new System.Drawing.Size(245, 27);
-            this.CPALine2Tb.TabIndex = 41;
-            this.CPALine2Tb.Text = "Suburb";
-            // 
-            // label167
-            // 
-            this.label167.AutoSize = true;
-            this.label167.Location = new System.Drawing.Point(17, 30);
-            this.label167.Name = "label167";
-            this.label167.Size = new System.Drawing.Size(108, 19);
-            this.label167.TabIndex = 38;
-            this.label167.Text = "Address Line 1:";
-            // 
-            // label168
-            // 
-            this.label168.AutoSize = true;
-            this.label168.Location = new System.Drawing.Point(17, 74);
-            this.label168.Name = "label168";
-            this.label168.Size = new System.Drawing.Size(108, 19);
-            this.label168.TabIndex = 40;
-            this.label168.Text = "Address Line 2:";
-            // 
-            // label174
-            // 
-            this.label174.AutoSize = true;
-            this.label174.Location = new System.Drawing.Point(17, 115);
-            this.label174.Name = "label174";
-            this.label174.Size = new System.Drawing.Size(108, 19);
-            this.label174.TabIndex = 0;
-            this.label174.Text = "Address Line 3:";
-            // 
-            // CPALine1Tb
-            // 
-            this.CPALine1Tb.Location = new System.Drawing.Point(256, 22);
-            this.CPALine1Tb.Name = "CPALine1Tb";
-            this.CPALine1Tb.Size = new System.Drawing.Size(245, 27);
-            this.CPALine1Tb.TabIndex = 39;
-            this.CPALine1Tb.Text = "Building No./Street Name";
-            // 
-            // CPALine3Tb
-            // 
-            this.CPALine3Tb.Location = new System.Drawing.Point(256, 107);
-            this.CPALine3Tb.Name = "CPALine3Tb";
-            this.CPALine3Tb.Size = new System.Drawing.Size(245, 27);
-            this.CPALine3Tb.TabIndex = 24;
-            this.CPALine3Tb.Text = "Province";
-            // 
-            // label175
-            // 
-            this.label175.AutoSize = true;
-            this.label175.Location = new System.Drawing.Point(17, 159);
-            this.label175.Name = "label175";
-            this.label175.Size = new System.Drawing.Size(38, 19);
-            this.label175.TabIndex = 5;
-            this.label175.Text = "City:";
-            // 
-            // CPACountryCmb
-            // 
-            this.CPACountryCmb.FormattingEnabled = true;
-            this.CPACountryCmb.Items.AddRange(new object[] {
-            "South Africa"});
-            this.CPACountryCmb.Location = new System.Drawing.Point(256, 194);
-            this.CPACountryCmb.Name = "CPACountryCmb";
-            this.CPACountryCmb.Size = new System.Drawing.Size(245, 27);
-            this.CPACountryCmb.TabIndex = 29;
-            // 
-            // label176
-            // 
-            this.label176.AutoSize = true;
-            this.label176.Location = new System.Drawing.Point(17, 202);
-            this.label176.Name = "label176";
-            this.label176.Size = new System.Drawing.Size(63, 19);
-            this.label176.TabIndex = 4;
-            this.label176.Text = "Country:";
-            // 
-            // CPACityCmb
-            // 
-            this.CPACityCmb.FormattingEnabled = true;
-            this.CPACityCmb.Items.AddRange(new object[] {
-            "Johannesburg"});
-            this.CPACityCmb.Location = new System.Drawing.Point(256, 151);
-            this.CPACityCmb.Name = "CPACityCmb";
-            this.CPACityCmb.Size = new System.Drawing.Size(245, 27);
-            this.CPACityCmb.TabIndex = 28;
-            // 
-            // label187
-            // 
-            this.label187.AutoSize = true;
-            this.label187.Location = new System.Drawing.Point(50, 224);
-            this.label187.Name = "label187";
-            this.label187.Size = new System.Drawing.Size(105, 19);
-            this.label187.TabIndex = 37;
-            this.label187.Text = "Email Address:";
-            this.label187.Click += new System.EventHandler(this.label187_Click);
-            // 
-            // label191
-            // 
-            this.label191.AutoSize = true;
-            this.label191.Location = new System.Drawing.Point(50, 179);
-            this.label191.Name = "label191";
-            this.label191.Size = new System.Drawing.Size(108, 19);
-            this.label191.TabIndex = 33;
-            this.label191.Text = "Phone Number:";
-            this.label191.Click += new System.EventHandler(this.label191_Click);
-            // 
-            // SupCancelBtn
-            // 
-            this.SupCancelBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.SupCancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SupCancelBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SupCancelBtn.Location = new System.Drawing.Point(879, 590);
-            this.SupCancelBtn.Name = "SupCancelBtn";
-            this.SupCancelBtn.Size = new System.Drawing.Size(75, 30);
-            this.SupCancelBtn.TabIndex = 31;
-            this.SupCancelBtn.Text = "Cancel";
-            this.SupCancelBtn.UseVisualStyleBackColor = true;
-            this.SupCancelBtn.Click += new System.EventHandler(this.button167_Click);
-            // 
-            // SupNextBtn
-            // 
-            this.SupNextBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.SupNextBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SupNextBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SupNextBtn.Location = new System.Drawing.Point(960, 591);
-            this.SupNextBtn.Name = "SupNextBtn";
-            this.SupNextBtn.Size = new System.Drawing.Size(75, 30);
-            this.SupNextBtn.TabIndex = 30;
-            this.SupNextBtn.Text = "Next";
-            this.SupNextBtn.UseVisualStyleBackColor = true;
-            this.SupNextBtn.Click += new System.EventHandler(this.button168_Click);
-            // 
-            // CPEmailTb
-            // 
-            this.CPEmailTb.Location = new System.Drawing.Point(306, 216);
-            this.CPEmailTb.Name = "CPEmailTb";
-            this.CPEmailTb.Size = new System.Drawing.Size(245, 27);
-            this.CPEmailTb.TabIndex = 24;
-            this.CPEmailTb.TextChanged += new System.EventHandler(this.textBox43_TextChanged);
-            // 
-            // CPNumberTb
-            // 
-            this.CPNumberTb.Location = new System.Drawing.Point(306, 171);
-            this.CPNumberTb.Name = "CPNumberTb";
-            this.CPNumberTb.Size = new System.Drawing.Size(245, 27);
-            this.CPNumberTb.TabIndex = 22;
-            this.CPNumberTb.TextChanged += new System.EventHandler(this.textBox45_TextChanged);
-            // 
-            // CPNameTb
-            // 
-            this.CPNameTb.Location = new System.Drawing.Point(306, 128);
-            this.CPNameTb.Name = "CPNameTb";
-            this.CPNameTb.Size = new System.Drawing.Size(245, 27);
-            this.CPNameTb.TabIndex = 21;
-            this.CPNameTb.TextChanged += new System.EventHandler(this.textBox46_TextChanged);
-            // 
-            // SNameTb
-            // 
-            this.SNameTb.Location = new System.Drawing.Point(306, 85);
-            this.SNameTb.Name = "SNameTb";
-            this.SNameTb.Size = new System.Drawing.Size(245, 27);
-            this.SNameTb.TabIndex = 20;
-            this.SNameTb.TextChanged += new System.EventHandler(this.textBox47_TextChanged);
-            // 
-            // label195
-            // 
-            this.label195.AutoSize = true;
-            this.label195.Location = new System.Drawing.Point(50, 50);
-            this.label195.Name = "label195";
-            this.label195.Size = new System.Drawing.Size(46, 19);
-            this.label195.TabIndex = 7;
-            this.label195.Text = "Title: ";
-            this.label195.Click += new System.EventHandler(this.label195_Click);
-            // 
-            // label199
-            // 
-            this.label199.AutoSize = true;
-            this.label199.Location = new System.Drawing.Point(50, 93);
-            this.label199.Name = "label199";
-            this.label199.Size = new System.Drawing.Size(107, 19);
-            this.label199.TabIndex = 3;
-            this.label199.Text = "Supplier Name:";
-            this.label199.Click += new System.EventHandler(this.label199_Click);
-            // 
-            // label200
-            // 
-            this.label200.AutoSize = true;
-            this.label200.Location = new System.Drawing.Point(50, 136);
-            this.label200.Name = "label200";
-            this.label200.Size = new System.Drawing.Size(153, 19);
-            this.label200.TabIndex = 2;
-            this.label200.Text = "Contact Person Name:";
-            this.label200.Click += new System.EventHandler(this.label200_Click);
-            // 
-            // STitleCmb
-            // 
-            this.STitleCmb.FormattingEnabled = true;
-            this.STitleCmb.Location = new System.Drawing.Point(306, 42);
-            this.STitleCmb.Name = "STitleCmb";
-            this.STitleCmb.Size = new System.Drawing.Size(245, 27);
-            this.STitleCmb.TabIndex = 26;
-            this.STitleCmb.SelectedIndexChanged += new System.EventHandler(this.comboBox17_SelectedIndexChanged);
-            // 
-            // tabPage24
-            // 
-            this.tabPage24.BackColor = System.Drawing.Color.White;
-            this.tabPage24.Controls.Add(this.groupBox11);
-            this.tabPage24.Controls.Add(this.label188);
-            this.tabPage24.Controls.Add(this.label189);
-            this.tabPage24.Controls.Add(this.label192);
-            this.tabPage24.Controls.Add(this.label224);
-            this.tabPage24.Controls.Add(this.label225);
-            this.tabPage24.Controls.Add(this.SupBackBtn);
-            this.tabPage24.Controls.Add(this.SupConfirmBtn);
-            this.tabPage24.Controls.Add(this.CSTitleLbl);
-            this.tabPage24.Controls.Add(this.CSNameLbl);
-            this.tabPage24.Controls.Add(this.CSCPNamelbl);
-            this.tabPage24.Controls.Add(this.CSCPNumberLbl);
-            this.tabPage24.Controls.Add(this.CSCPEmailLbl);
-            this.tabPage24.ForeColor = System.Drawing.Color.Black;
-            this.tabPage24.Location = new System.Drawing.Point(4, 28);
-            this.tabPage24.Name = "tabPage24";
-            this.tabPage24.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage24.Size = new System.Drawing.Size(1042, 639);
-            this.tabPage24.TabIndex = 1;
-            this.tabPage24.Text = "Confirmation";
-            this.tabPage24.Click += new System.EventHandler(this.tabPage24_Click);
-            // 
-            // groupBox11
-            // 
-            this.groupBox11.Controls.Add(this.CSCPALine2Lbl);
-            this.groupBox11.Controls.Add(this.label194);
-            this.groupBox11.Controls.Add(this.label196);
-            this.groupBox11.Controls.Add(this.label197);
-            this.groupBox11.Controls.Add(this.label198);
-            this.groupBox11.Controls.Add(this.label279);
-            this.groupBox11.Controls.Add(this.CSCPALine3Lbl);
-            this.groupBox11.Controls.Add(this.CSCPACountryLbl);
-            this.groupBox11.Controls.Add(this.CSCPACityLbl);
-            this.groupBox11.Controls.Add(this.CSCPALine1Lbl);
-            this.groupBox11.Location = new System.Drawing.Point(54, 251);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(504, 243);
-            this.groupBox11.TabIndex = 66;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Address";
-            // 
-            // CSCPALine2Lbl
-            // 
-            this.CSCPALine2Lbl.AutoSize = true;
-            this.CSCPALine2Lbl.Location = new System.Drawing.Point(252, 74);
-            this.CSCPALine2Lbl.Name = "CSCPALine2Lbl";
-            this.CSCPALine2Lbl.Size = new System.Drawing.Size(70, 19);
-            this.CSCPALine2Lbl.TabIndex = 41;
-            this.CSCPALine2Lbl.Text = "Kingsway";
-            // 
-            // label194
-            // 
-            this.label194.AutoSize = true;
-            this.label194.Location = new System.Drawing.Point(17, 30);
-            this.label194.Name = "label194";
-            this.label194.Size = new System.Drawing.Size(108, 19);
-            this.label194.TabIndex = 38;
-            this.label194.Text = "Address Line 1:";
-            // 
-            // label196
-            // 
-            this.label196.AutoSize = true;
-            this.label196.Location = new System.Drawing.Point(17, 74);
-            this.label196.Name = "label196";
-            this.label196.Size = new System.Drawing.Size(108, 19);
-            this.label196.TabIndex = 40;
-            this.label196.Text = "Address Line 2:";
-            // 
-            // label197
-            // 
-            this.label197.AutoSize = true;
-            this.label197.Location = new System.Drawing.Point(17, 115);
-            this.label197.Name = "label197";
-            this.label197.Size = new System.Drawing.Size(108, 19);
-            this.label197.TabIndex = 0;
-            this.label197.Text = "Address Line 3:";
-            // 
-            // label198
-            // 
-            this.label198.AutoSize = true;
-            this.label198.Location = new System.Drawing.Point(17, 159);
-            this.label198.Name = "label198";
-            this.label198.Size = new System.Drawing.Size(38, 19);
-            this.label198.TabIndex = 5;
-            this.label198.Text = "City:";
-            // 
-            // label279
-            // 
-            this.label279.AutoSize = true;
-            this.label279.Location = new System.Drawing.Point(17, 202);
-            this.label279.Name = "label279";
-            this.label279.Size = new System.Drawing.Size(63, 19);
-            this.label279.TabIndex = 4;
-            this.label279.Text = "Country:";
-            // 
-            // CSCPALine3Lbl
-            // 
-            this.CSCPALine3Lbl.AutoSize = true;
-            this.CSCPALine3Lbl.Location = new System.Drawing.Point(252, 115);
-            this.CSCPALine3Lbl.Name = "CSCPALine3Lbl";
-            this.CSCPALine3Lbl.Size = new System.Drawing.Size(64, 19);
-            this.CSCPALine3Lbl.TabIndex = 32;
-            this.CSCPALine3Lbl.Text = "Gauteng";
-            this.CSCPALine3Lbl.Click += new System.EventHandler(this.label206_Click);
-            // 
-            // CSCPACountryLbl
-            // 
-            this.CSCPACountryLbl.AutoSize = true;
-            this.CSCPACountryLbl.Location = new System.Drawing.Point(252, 201);
-            this.CSCPACountryLbl.Name = "CSCPACountryLbl";
-            this.CSCPACountryLbl.Size = new System.Drawing.Size(87, 19);
-            this.CSCPACountryLbl.TabIndex = 30;
-            this.CSCPACountryLbl.Text = "South Africa";
-            this.CSCPACountryLbl.Click += new System.EventHandler(this.label208_Click);
-            // 
-            // CSCPACityLbl
-            // 
-            this.CSCPACityLbl.AutoSize = true;
-            this.CSCPACityLbl.Location = new System.Drawing.Point(252, 158);
-            this.CSCPACityLbl.Name = "CSCPACityLbl";
-            this.CSCPACityLbl.Size = new System.Drawing.Size(98, 19);
-            this.CSCPACityLbl.TabIndex = 31;
-            this.CSCPACityLbl.Text = "Johannesburg";
-            this.CSCPACityLbl.Click += new System.EventHandler(this.label207_Click);
-            // 
-            // CSCPALine1Lbl
-            // 
-            this.CSCPALine1Lbl.AutoSize = true;
-            this.CSCPALine1Lbl.Location = new System.Drawing.Point(252, 30);
-            this.CSCPALine1Lbl.Name = "CSCPALine1Lbl";
-            this.CSCPALine1Lbl.Size = new System.Drawing.Size(72, 19);
-            this.CSCPALine1Lbl.TabIndex = 35;
-            this.CSCPALine1Lbl.Text = "Block 753";
-            this.CSCPALine1Lbl.Click += new System.EventHandler(this.label203_Click);
-            // 
-            // label188
-            // 
-            this.label188.AutoSize = true;
-            this.label188.Location = new System.Drawing.Point(51, 219);
-            this.label188.Name = "label188";
-            this.label188.Size = new System.Drawing.Size(105, 19);
-            this.label188.TabIndex = 55;
-            this.label188.Text = "Email Address:";
-            this.label188.Click += new System.EventHandler(this.label188_Click);
-            // 
-            // label189
-            // 
-            this.label189.AutoSize = true;
-            this.label189.Location = new System.Drawing.Point(51, 174);
-            this.label189.Name = "label189";
-            this.label189.Size = new System.Drawing.Size(108, 19);
-            this.label189.TabIndex = 54;
-            this.label189.Text = "Phone Number:";
-            this.label189.Click += new System.EventHandler(this.label189_Click);
-            // 
-            // label192
-            // 
-            this.label192.AutoSize = true;
-            this.label192.Location = new System.Drawing.Point(51, 50);
-            this.label192.Name = "label192";
-            this.label192.Size = new System.Drawing.Size(46, 19);
-            this.label192.TabIndex = 52;
-            this.label192.Text = "Title: ";
-            this.label192.Click += new System.EventHandler(this.label192_Click);
-            // 
-            // label224
-            // 
-            this.label224.AutoSize = true;
-            this.label224.Location = new System.Drawing.Point(51, 88);
-            this.label224.Name = "label224";
-            this.label224.Size = new System.Drawing.Size(107, 19);
-            this.label224.TabIndex = 48;
-            this.label224.Text = "Supplier Name:";
-            this.label224.Click += new System.EventHandler(this.label224_Click);
-            // 
-            // label225
-            // 
-            this.label225.AutoSize = true;
-            this.label225.Location = new System.Drawing.Point(51, 131);
-            this.label225.Name = "label225";
-            this.label225.Size = new System.Drawing.Size(153, 19);
-            this.label225.TabIndex = 47;
-            this.label225.Text = "Contact Person Name:";
-            this.label225.Click += new System.EventHandler(this.label225_Click);
-            // 
-            // SupBackBtn
-            // 
-            this.SupBackBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.SupBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SupBackBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SupBackBtn.Location = new System.Drawing.Point(880, 602);
-            this.SupBackBtn.Name = "SupBackBtn";
-            this.SupBackBtn.Size = new System.Drawing.Size(75, 30);
-            this.SupBackBtn.TabIndex = 37;
-            this.SupBackBtn.Text = "Back";
-            this.SupBackBtn.UseVisualStyleBackColor = true;
-            this.SupBackBtn.Click += new System.EventHandler(this.button169_Click);
-            // 
-            // SupConfirmBtn
-            // 
-            this.SupConfirmBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.SupConfirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SupConfirmBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SupConfirmBtn.Location = new System.Drawing.Point(961, 603);
-            this.SupConfirmBtn.Name = "SupConfirmBtn";
-            this.SupConfirmBtn.Size = new System.Drawing.Size(75, 30);
-            this.SupConfirmBtn.TabIndex = 36;
-            this.SupConfirmBtn.Text = "Confirm";
-            this.SupConfirmBtn.UseVisualStyleBackColor = true;
-            this.SupConfirmBtn.Click += new System.EventHandler(this.button170_Click);
-            // 
-            // CSTitleLbl
-            // 
-            this.CSTitleLbl.AutoSize = true;
-            this.CSTitleLbl.Location = new System.Drawing.Point(322, 50);
-            this.CSTitleLbl.Name = "CSTitleLbl";
-            this.CSTitleLbl.Size = new System.Drawing.Size(27, 19);
-            this.CSTitleLbl.TabIndex = 33;
-            this.CSTitleLbl.Text = "Mr";
-            this.CSTitleLbl.Click += new System.EventHandler(this.label205_Click);
-            // 
-            // CSNameLbl
-            // 
-            this.CSNameLbl.AutoSize = true;
-            this.CSNameLbl.Location = new System.Drawing.Point(322, 88);
-            this.CSNameLbl.Name = "CSNameLbl";
-            this.CSNameLbl.Size = new System.Drawing.Size(102, 19);
-            this.CSNameLbl.TabIndex = 29;
-            this.CSNameLbl.Text = "Comp Supplier";
-            this.CSNameLbl.Click += new System.EventHandler(this.label209_Click);
-            // 
-            // CSCPNamelbl
-            // 
-            this.CSCPNamelbl.AutoSize = true;
-            this.CSCPNamelbl.Location = new System.Drawing.Point(322, 131);
-            this.CSCPNamelbl.Name = "CSCPNamelbl";
-            this.CSCPNamelbl.Size = new System.Drawing.Size(77, 19);
-            this.CSCPNamelbl.TabIndex = 28;
-            this.CSCPNamelbl.Text = "Max Super";
-            this.CSCPNamelbl.Click += new System.EventHandler(this.label210_Click);
-            // 
-            // CSCPNumberLbl
-            // 
-            this.CSCPNumberLbl.AutoSize = true;
-            this.CSCPNumberLbl.Location = new System.Drawing.Point(322, 174);
-            this.CSCPNumberLbl.Name = "CSCPNumberLbl";
-            this.CSCPNumberLbl.Size = new System.Drawing.Size(97, 19);
-            this.CSCPNumberLbl.TabIndex = 27;
-            this.CSCPNumberLbl.Text = "083 245 7895";
-            this.CSCPNumberLbl.Click += new System.EventHandler(this.label211_Click);
-            // 
-            // CSCPEmailLbl
-            // 
-            this.CSCPEmailLbl.AutoSize = true;
-            this.CSCPEmailLbl.Location = new System.Drawing.Point(322, 217);
-            this.CSCPEmailLbl.Name = "CSCPEmailLbl";
-            this.CSCPEmailLbl.Size = new System.Drawing.Size(122, 19);
-            this.CSCPEmailLbl.TabIndex = 26;
-            this.CSCPEmailLbl.Text = "Max@super.co.za";
-            this.CSCPEmailLbl.Click += new System.EventHandler(this.label212_Click);
-            // 
-            // tabPage25
-            // 
-            this.tabPage25.BackColor = System.Drawing.Color.White;
-            this.tabPage25.Controls.Add(this.label223);
-            this.tabPage25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.tabPage25.Location = new System.Drawing.Point(4, 28);
-            this.tabPage25.Name = "tabPage25";
-            this.tabPage25.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage25.Size = new System.Drawing.Size(1042, 639);
-            this.tabPage25.TabIndex = 2;
-            this.tabPage25.Text = "Complete";
-            this.tabPage25.Click += new System.EventHandler(this.tabPage25_Click);
-            // 
-            // label223
-            // 
-            this.label223.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label223.AutoSize = true;
-            this.label223.Font = new System.Drawing.Font("Calibri", 30F);
-            this.label223.Location = new System.Drawing.Point(285, 462);
-            this.label223.Name = "label223";
-            this.label223.Size = new System.Drawing.Size(473, 49);
-            this.label223.TabIndex = 1;
-            this.label223.Text = "Supplier Successfully Added";
-            this.label223.Click += new System.EventHandler(this.label223_Click);
-            // 
             // AddProjectRequestPanel
             // 
             this.AddProjectRequestPanel.Controls.Add(this.tabPage17);
@@ -10320,16 +10538,16 @@
             // 
             // chart1
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart1.Legends.Add(legend4);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(66, 36);
             this.chart1.Name = "chart1";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chart1.Series.Add(series4);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(300, 300);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -10449,110 +10667,6 @@
             this.button37.Text = "Generate  Report";
             this.button37.UseVisualStyleBackColor = true;
             this.button37.Click += new System.EventHandler(this.button37_Click);
-            // 
-            // VehicleActionPanel
-            // 
-            this.VehicleActionPanel.BackColor = System.Drawing.Color.White;
-            this.VehicleActionPanel.Controls.Add(this.tableLayoutPanel6);
-            this.VehicleActionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.VehicleActionPanel.Location = new System.Drawing.Point(0, 0);
-            this.VehicleActionPanel.Name = "VehicleActionPanel";
-            this.VehicleActionPanel.Size = new System.Drawing.Size(1050, 671);
-            this.VehicleActionPanel.TabIndex = 10;
-            this.VehicleActionPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.VehicleActionPanel_Paint);
-            // 
-            // tableLayoutPanel6
-            // 
-            this.tableLayoutPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel6.ColumnCount = 2;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.button53, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.button54, 1, 0);
-            this.tableLayoutPanel6.Controls.Add(this.button55, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.button56, 1, 1);
-            this.tableLayoutPanel6.Controls.Add(this.button57, 0, 2);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(8, 8);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 3;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(1032, 431);
-            this.tableLayoutPanel6.TabIndex = 0;
-            this.tableLayoutPanel6.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel6_Paint);
-            // 
-            // button53
-            // 
-            this.button53.FlatAppearance.BorderSize = 2;
-            this.button53.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button53.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button53.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.button53.Location = new System.Drawing.Point(3, 3);
-            this.button53.Name = "button53";
-            this.button53.Size = new System.Drawing.Size(510, 137);
-            this.button53.TabIndex = 0;
-            this.button53.Text = "Add Vehicle";
-            this.button53.UseVisualStyleBackColor = true;
-            this.button53.Click += new System.EventHandler(this.button53_Click);
-            // 
-            // button54
-            // 
-            this.button54.FlatAppearance.BorderSize = 2;
-            this.button54.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button54.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.button54.Location = new System.Drawing.Point(519, 3);
-            this.button54.Name = "button54";
-            this.button54.Size = new System.Drawing.Size(510, 137);
-            this.button54.TabIndex = 1;
-            this.button54.Text = "View Vehicle";
-            this.button54.UseVisualStyleBackColor = true;
-            this.button54.Click += new System.EventHandler(this.button54_Click);
-            // 
-            // button55
-            // 
-            this.button55.FlatAppearance.BorderSize = 2;
-            this.button55.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button55.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.button55.Location = new System.Drawing.Point(3, 146);
-            this.button55.Name = "button55";
-            this.button55.Size = new System.Drawing.Size(510, 137);
-            this.button55.TabIndex = 2;
-            this.button55.Text = "Add Vehicle Type";
-            this.button55.UseVisualStyleBackColor = true;
-            this.button55.Click += new System.EventHandler(this.button55_Click);
-            // 
-            // button56
-            // 
-            this.button56.FlatAppearance.BorderSize = 2;
-            this.button56.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button56.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.button56.Location = new System.Drawing.Point(519, 146);
-            this.button56.Name = "button56";
-            this.button56.Size = new System.Drawing.Size(510, 137);
-            this.button56.TabIndex = 3;
-            this.button56.Text = "View Vehicle Type";
-            this.button56.UseVisualStyleBackColor = true;
-            this.button56.Click += new System.EventHandler(this.button56_Click);
-            // 
-            // button57
-            // 
-            this.button57.FlatAppearance.BorderSize = 2;
-            this.button57.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button57.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button57.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.button57.Location = new System.Drawing.Point(3, 289);
-            this.button57.Name = "button57";
-            this.button57.Size = new System.Drawing.Size(510, 137);
-            this.button57.TabIndex = 5;
-            this.button57.Text = "Generate Report";
-            this.button57.UseVisualStyleBackColor = true;
-            this.button57.Click += new System.EventHandler(this.button57_Click);
             // 
             // SupplierActionPanel
             // 
@@ -10857,112 +10971,6 @@
             this.button109.UseVisualStyleBackColor = true;
             this.button109.Click += new System.EventHandler(this.button109_Click);
             // 
-            // EquipmentActionPanel
-            // 
-            this.EquipmentActionPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.EquipmentActionPanel.BackColor = System.Drawing.Color.White;
-            this.EquipmentActionPanel.Controls.Add(this.tableLayoutPanel5);
-            this.EquipmentActionPanel.Location = new System.Drawing.Point(0, 0);
-            this.EquipmentActionPanel.Name = "EquipmentActionPanel";
-            this.EquipmentActionPanel.Size = new System.Drawing.Size(1050, 671);
-            this.EquipmentActionPanel.TabIndex = 9;
-            this.EquipmentActionPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.EquipmentActionPanel_Paint);
-            // 
-            // tableLayoutPanel5
-            // 
-            this.tableLayoutPanel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel5.ColumnCount = 2;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Controls.Add(this.button43, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.button49, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.button50, 0, 1);
-            this.tableLayoutPanel5.Controls.Add(this.button51, 1, 1);
-            this.tableLayoutPanel5.Controls.Add(this.button52, 0, 2);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(8, 8);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 3;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(1032, 431);
-            this.tableLayoutPanel5.TabIndex = 0;
-            this.tableLayoutPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel5_Paint);
-            // 
-            // button43
-            // 
-            this.button43.FlatAppearance.BorderSize = 2;
-            this.button43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button43.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.button43.Location = new System.Drawing.Point(3, 3);
-            this.button43.Name = "button43";
-            this.button43.Size = new System.Drawing.Size(510, 137);
-            this.button43.TabIndex = 0;
-            this.button43.Text = "Add Equipment";
-            this.button43.UseVisualStyleBackColor = true;
-            this.button43.Click += new System.EventHandler(this.button43_Click);
-            // 
-            // button49
-            // 
-            this.button49.FlatAppearance.BorderSize = 2;
-            this.button49.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button49.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.button49.Location = new System.Drawing.Point(519, 3);
-            this.button49.Name = "button49";
-            this.button49.Size = new System.Drawing.Size(510, 137);
-            this.button49.TabIndex = 1;
-            this.button49.Text = "View Equipment";
-            this.button49.UseVisualStyleBackColor = true;
-            this.button49.Click += new System.EventHandler(this.button49_Click);
-            // 
-            // button50
-            // 
-            this.button50.FlatAppearance.BorderSize = 2;
-            this.button50.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button50.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.button50.Location = new System.Drawing.Point(3, 146);
-            this.button50.Name = "button50";
-            this.button50.Size = new System.Drawing.Size(510, 137);
-            this.button50.TabIndex = 2;
-            this.button50.Text = "Add Equipment Type";
-            this.button50.UseVisualStyleBackColor = true;
-            this.button50.Click += new System.EventHandler(this.button50_Click);
-            // 
-            // button51
-            // 
-            this.button51.FlatAppearance.BorderSize = 2;
-            this.button51.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button51.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.button51.Location = new System.Drawing.Point(519, 146);
-            this.button51.Name = "button51";
-            this.button51.Size = new System.Drawing.Size(510, 137);
-            this.button51.TabIndex = 3;
-            this.button51.Text = "View Equipment Type";
-            this.button51.UseVisualStyleBackColor = true;
-            this.button51.Click += new System.EventHandler(this.button51_Click);
-            // 
-            // button52
-            // 
-            this.button52.FlatAppearance.BorderSize = 2;
-            this.button52.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button52.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button52.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.button52.Location = new System.Drawing.Point(3, 289);
-            this.button52.Name = "button52";
-            this.button52.Size = new System.Drawing.Size(510, 137);
-            this.button52.TabIndex = 5;
-            this.button52.Text = "Generate Report";
-            this.button52.UseVisualStyleBackColor = true;
-            this.button52.Click += new System.EventHandler(this.button52_Click);
-            // 
             // employeeTypeTableAdapter
             // 
             this.employeeTypeTableAdapter.ClearBeforeFill = true;
@@ -10974,13 +10982,6 @@
             // countryTableAdapter
             // 
             this.countryTableAdapter.ClearBeforeFill = true;
-            // 
-            // VPDateDtp
-            // 
-            this.VPDateDtp.Location = new System.Drawing.Point(306, 273);
-            this.VPDateDtp.Name = "VPDateDtp";
-            this.VPDateDtp.Size = new System.Drawing.Size(245, 27);
-            this.VPDateDtp.TabIndex = 41;
             // 
             // HomeScreen
             // 
@@ -11007,14 +11008,6 @@
             this.ManagerDashboardPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.InsightPicBx)).EndInit();
             this.BaseActionPanel.ResumeLayout(false);
-            this.ProductActionPanel.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.ClientActionPanel.ResumeLayout(false);
-            this.ClientTLAPanel.ResumeLayout(false);
-            this.EmployeeActionPanel.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.JobActionPanel.ResumeLayout(false);
-            this.tableLayoutPanel7.ResumeLayout(false);
             this.AddEmployeeDetailsTab.ResumeLayout(false);
             this.EDetails.ResumeLayout(false);
             this.EDetails.PerformLayout();
@@ -11032,6 +11025,41 @@
             this.ESkills.PerformLayout();
             this.EComplete.ResumeLayout(false);
             this.EComplete.PerformLayout();
+            this.ViewProductPanel.ResumeLayout(false);
+            this.ViewProductPanel.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.tableLayoutPanel15.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            this.AddVehiclePanel.ResumeLayout(false);
+            this.tabPage32.ResumeLayout(false);
+            this.tabPage32.PerformLayout();
+            this.tabPage33.ResumeLayout(false);
+            this.tabPage33.PerformLayout();
+            this.tabPage34.ResumeLayout(false);
+            this.tabPage34.PerformLayout();
+            this.VehicleActionPanel.ResumeLayout(false);
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.AddSupplierPanel.ResumeLayout(false);
+            this.tabPage23.ResumeLayout(false);
+            this.tabPage23.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            this.tabPage24.ResumeLayout(false);
+            this.tabPage24.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
+            this.tabPage25.ResumeLayout(false);
+            this.tabPage25.PerformLayout();
+            this.EquipmentActionPanel.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.ProductActionPanel.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.ClientActionPanel.ResumeLayout(false);
+            this.ClientTLAPanel.ResumeLayout(false);
+            this.EmployeeActionPanel.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.JobActionPanel.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
             this.AddClientDetailsTab.ResumeLayout(false);
             this.CDetails.ResumeLayout(false);
             this.CDetails.PerformLayout();
@@ -11093,11 +11121,6 @@
             this.panel24.ResumeLayout(false);
             this.tableLayoutPanel36.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView23)).EndInit();
-            this.ViewProductPanel.ResumeLayout(false);
-            this.ViewProductPanel.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.tableLayoutPanel15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             this.ViewJobPanel.ResumeLayout(false);
             this.ViewJobPanel.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -11168,24 +11191,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView19)).EndInit();
             this.ClientProjectActionPanel.ResumeLayout(false);
             this.tableLayoutPanel26.ResumeLayout(false);
-            this.AddVehiclePanel.ResumeLayout(false);
-            this.tabPage32.ResumeLayout(false);
-            this.tabPage32.PerformLayout();
-            this.tabPage33.ResumeLayout(false);
-            this.tabPage33.PerformLayout();
-            this.tabPage34.ResumeLayout(false);
-            this.tabPage34.PerformLayout();
-            this.AddSupplierPanel.ResumeLayout(false);
-            this.tabPage23.ResumeLayout(false);
-            this.tabPage23.PerformLayout();
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
-            this.tabPage24.ResumeLayout(false);
-            this.tabPage24.PerformLayout();
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
-            this.tabPage25.ResumeLayout(false);
-            this.tabPage25.PerformLayout();
             this.AddProjectRequestPanel.ResumeLayout(false);
             this.tabPage17.ResumeLayout(false);
             this.tabPage17.PerformLayout();
@@ -11242,8 +11247,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ProjectActionPanel.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
-            this.VehicleActionPanel.ResumeLayout(false);
-            this.tableLayoutPanel6.ResumeLayout(false);
             this.SupplierActionPanel.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.tableLayoutPanel10.ResumeLayout(false);
@@ -11255,8 +11258,6 @@
             this.tableLayoutPanel21.ResumeLayout(false);
             this.ProfileActionPanel.ResumeLayout(false);
             this.tableLayoutPanel18.ResumeLayout(false);
-            this.EquipmentActionPanel.ResumeLayout(false);
-            this.tableLayoutPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
