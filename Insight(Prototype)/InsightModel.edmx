@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="InsightModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="InsightModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="AccessLevel">
           <Key>
             <PropertyRef Name="AccessLevelID" />
@@ -116,6 +116,8 @@
           <Property Name="EmployeeLastLogin" Type="date" />
           <Property Name="AccessLevelID" Type="int" Nullable="false" />
         </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Insight.dbo.EmployeeSkill' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="EmployeeSkill">
           <Key>
             <PropertyRef Name="EmployeeID" />
@@ -156,7 +158,7 @@ warning 6002: The table/view 'Insight.dbo.Individual' does not have a primary ke
             <PropertyRef Name="IndividualDateOfBirth" />
           </Key>
           <Property Name="ClientID" Type="int" Nullable="false" />
-          <Property Name="IndividualEmailAddress" Type="varbinary" MaxLength="30" Nullable="false" />
+          <Property Name="IndividualEmailAddress" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="IndividualDateOfBirth" Type="date" Nullable="false" />
         </EntityType>
         <EntityType Name="Job">
@@ -1271,7 +1273,6 @@ warning 6002: The table/view 'Insight.dbo.ProductClientQuotationLine' does not h
           <EntitySet Name="Country" EntityType="Self.Country" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="EmployeeLogin" EntityType="Self.EmployeeLogin" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="EmployeeSkill" EntityType="Self.EmployeeSkill" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="EmployeeType" EntityType="Self.EmployeeType" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Equipment" EntityType="Self.Equipment" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="EquipmentType" EntityType="Self.EquipmentType" Schema="dbo" store:Type="Tables" />
@@ -1305,6 +1306,12 @@ warning 6002: The table/view 'Insight.dbo.ProductClientQuotationLine' does not h
           <EntitySet Name="Vehicle" EntityType="Self.Vehicle" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="VehicleStatus" EntityType="Self.VehicleStatus" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="VehicleType" EntityType="Self.VehicleType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EmployeeSkill" EntityType="Self.EmployeeSkill" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [EmployeeSkill].[EmployeeID] AS [EmployeeID], 
+    [EmployeeSkill].[SkillID] AS [SkillID]
+    FROM [dbo].[EmployeeSkill] AS [EmployeeSkill]</DefiningQuery>
+          </EntitySet>
           <EntitySet Name="Individual" EntityType="Self.Individual" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
     [Individual].[ClientID] AS [ClientID], 
@@ -1608,8 +1615,7 @@ warning 6002: The table/view 'Insight.dbo.ProductClientQuotationLine' does not h
             <End Role="Vehicle" EntitySet="Vehicle" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="InsightModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -2111,7 +2117,7 @@ warning 6002: The table/view 'Insight.dbo.ProductClientQuotationLine' does not h
             <PropertyRef Name="IndividualDateOfBirth" />
           </Key>
           <Property Name="ClientID" Type="Int32" Nullable="false" />
-          <Property Name="IndividualEmailAddress" Type="Binary" MaxLength="30" FixedLength="false" Nullable="false" />
+          <Property Name="IndividualEmailAddress" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="IndividualDateOfBirth" Type="DateTime" Nullable="false" Precision="0" />
           <NavigationProperty Name="Client" Relationship="Self.FK_Individual_Client" FromRole="Individual" ToRole="Client" />
         </EntityType>
