@@ -16,7 +16,7 @@ namespace Insight_Prototype_
         {
             //Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddClientDetailsPage());
+            Application.Run(new ClientHomeScreen());
         }
     }
 }

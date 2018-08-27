@@ -169,6 +169,12 @@
     <Compile Include="Client.cs">
       <DependentUpon>InsightModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="ClientHomeScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientHomeScreen.Designer.cs">
+      <DependentUpon>ClientHomeScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientLogin.cs">
       <DependentUpon>InsightModel.tt</DependentUpon>
     </Compile>
@@ -591,6 +597,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CancelPurchaseOrderPage.resx">
       <DependentUpon>CancelPurchaseOrderPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientHomeScreen.resx">
+      <DependentUpon>ClientHomeScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreatePurchaseOrderPage.resx">
       <DependentUpon>CreatePurchaseOrderPage.cs</DependentUpon>
