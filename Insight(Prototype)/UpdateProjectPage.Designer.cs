@@ -49,6 +49,7 @@
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.EConfirmation = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -60,7 +61,7 @@
             this.button17 = new System.Windows.Forms.Button();
             this.EComplete = new System.Windows.Forms.TabPage();
             this.label62 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
@@ -86,6 +87,7 @@
             this.TopBarPanel.Name = "TopBarPanel";
             this.TopBarPanel.Size = new System.Drawing.Size(533, 29);
             this.TopBarPanel.TabIndex = 10;
+            this.TopBarPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.TopBarPanel_Paint);
             // 
             // pictureBox14
             // 
@@ -104,9 +106,9 @@
             this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.Userlbl.Location = new System.Drawing.Point(3, 2);
             this.Userlbl.Name = "Userlbl";
-            this.Userlbl.Size = new System.Drawing.Size(91, 23);
+            this.Userlbl.Size = new System.Drawing.Size(129, 23);
             this.Userlbl.TabIndex = 0;
-            this.Userlbl.Text = "Username";
+            this.Userlbl.Text = "Update Project";
             // 
             // MinimisePicBx
             // 
@@ -146,6 +148,7 @@
             // EDetails
             // 
             this.EDetails.BackColor = System.Drawing.Color.White;
+            this.EDetails.Controls.Add(this.linkLabel1);
             this.EDetails.Controls.Add(this.label4);
             this.EDetails.Controls.Add(this.richTextBox3);
             this.EDetails.Controls.Add(this.label5);
@@ -274,7 +277,7 @@
             this.button14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button14.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(232, 342);
+            this.button14.Location = new System.Drawing.Point(308, 341);
             this.button14.Margin = new System.Windows.Forms.Padding(4);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(100, 44);
@@ -287,7 +290,7 @@
             this.button15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button15.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.Location = new System.Drawing.Point(346, 342);
+            this.button15.Location = new System.Drawing.Point(416, 341);
             this.button15.Margin = new System.Windows.Forms.Padding(4);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(100, 44);
@@ -316,6 +319,16 @@
             this.EConfirmation.Size = new System.Drawing.Size(525, 394);
             this.EConfirmation.TabIndex = 1;
             this.EConfirmation.Text = "Confirmation";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(167, 23);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(200, 19);
+            this.label2.TabIndex = 98;
+            this.label2.Text = "A project to install computers";
             // 
             // label1
             // 
@@ -382,7 +395,7 @@
             this.button16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button16.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.Location = new System.Drawing.Point(214, 328);
+            this.button16.Location = new System.Drawing.Point(308, 341);
             this.button16.Margin = new System.Windows.Forms.Padding(4);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(100, 44);
@@ -395,7 +408,7 @@
             this.button17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button17.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.Location = new System.Drawing.Point(322, 328);
+            this.button17.Location = new System.Drawing.Point(416, 341);
             this.button17.Margin = new System.Windows.Forms.Padding(4);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(100, 44);
@@ -428,15 +441,16 @@
             this.label62.TabIndex = 1;
             this.label62.Text = "Project Successfully Updated";
             // 
-            // label2
+            // linkLabel1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(167, 23);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(200, 19);
-            this.label2.TabIndex = 98;
-            this.label2.Text = "A project to install computers";
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(431, 291);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(34, 19);
+            this.linkLabel1.TabIndex = 80;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Edit";
             // 
             // UpdateProjectPage
             // 
@@ -448,7 +462,7 @@
             this.Controls.Add(this.TopBarPanel);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UpdateProjectPage";
             this.Text = "UpdateProjectPage";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -503,5 +517,6 @@
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.TabPage EComplete;
         private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

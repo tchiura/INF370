@@ -1,58 +1,61 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Insight_Prototype_
 {
     public partial class AddOrganisationTypePage : Form
     {
+        string OrgType = "";
         public AddOrganisationTypePage()
         {
             InitializeComponent();
         }
 
-        string OrgDescr = "";
-         private void ClosePicBx_Click(object sender, EventArgs e)
+        private void AOTNextBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void AGNextBtn_Click(object sender, EventArgs e)
-        {
-
-            OrgDescr = OrgTypeTb.Text;
-            if (OrgDescr == "")
+            OrgType = AOTypeTb.Text;
+            if (OrgType == "")
             {
-                MessageBox.Show("Please Enter an Organisation Type");
+                MessageBox.Show("Please enter a valid Organisation Type.");
             }
             else
             {
-                OTConfirmLbl.Text = OrgDescr;
-                AddOrganisationTypeTC.SelectedTab = AddOrganisationTypeTC.TabPages[1];
+                AOTConfirmLbl.Text = OrgType;
+                AddOrganisationTypeTab.SelectedIndex = 1;
             }
         }
 
-        private void AGCancelBtn_Click(object sender, EventArgs e)
-        {
-            this.Close();
+        private void AOTCancelBtn_Click(object sender, EventArgs e)
+        { 
+            Form Home = new HomeScreen();
+            Home.Show();
+            this.Show();
         }
 
-        private void AGBackBtn_Click(object sender, EventArgs e)
+        private void AOTBackBtn_Click(object sender, EventArgs e)
         {
-            AddOrganisationTypeTC.SelectedTab = AddOrganisationTypeTC.TabPages[0];
+            AddOrganisationTypeTab.SelectedIndex = 0;
         }
 
-        private void AGConfirmBtn_Click(object sender, EventArgs e)
+        private void AOTConfirmBtn_Click(object sender, EventArgs e)
         {
-            OrganisationType InsightOrganisationType = new OrganisationType();
-            InsightOrganisationType.OrganisationTypeDescription = OrgDescr;
+            ClientType InsightOrgType = new ClientType();
+
+            InsightOrgType.ClientTypeDescription = OrgType;
 
             using (InsightEntities db = new InsightEntities())
             {
-                db.OrganisationTypes.Add(InsightOrganisationType);
+                db.ClientTypes.Add(InsightOrgType);
                 db.SaveChanges();
+                AddOrganisationTypeTab.SelectedIndex = 2;
             }
-
-            AddOrganisationTypeTC.SelectedTab = AddOrganisationTypeTC.TabPages[2];
         }
     }
 }

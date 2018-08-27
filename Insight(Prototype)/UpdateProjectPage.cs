@@ -26,5 +26,10 @@ namespace Insight_Prototype_
         {
 
         }
+
+        private void TopBarPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

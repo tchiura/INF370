@@ -12,59 +12,49 @@ namespace Insight_Prototype_
 {
     public partial class AddEquipmentTypePage : Form
     {
+        string EquipType = "";
         public AddEquipmentTypePage()
         {
             InitializeComponent();
         }
 
-        string EquipDescr = "";
-
-        private void ClosePicBx_Click(object sender, EventArgs e)
+        private void AEqTCancelBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Form Home = new HomeScreen();
+            Home.Show();
+            this.Show();
         }
 
-        private void EquipTCancelBtn_Click(object sender, EventArgs e)
+        private void AEqTNextBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void EquipTNextBtn_Click(object sender, EventArgs e)
-        {
-            EquipDescr = EquipmentTypeTb.Text;
-            if (EquipDescr == "")
+            EquipType = AEqTypeTb.Text;
+            if (EquipType == "")
             {
-                MessageBox.Show("Please Enter an Equipment Type");
+                MessageBox.Show("Please enter a valid EquipType.");
             }
             else
             {
-                EquipTConfirmLbl.Text = EquipDescr;
-                AddEquipmentTypeTC.SelectedTab = AddEquipmentTypeTC.TabPages[1];
+                AEqTConfirmLbl.Text = EquipType;
+                AddEquipmentTypeTab.SelectedIndex = 1;
             }
         }
 
-        private void EquipTBackBtn_Click(object sender, EventArgs e)
+        private void AEqTBackBtn_Click(object sender, EventArgs e)
         {
-            AddEquipmentTypeTC.SelectedTab = AddEquipmentTypeTC.TabPages[0];
+            AddEquipmentTypeTab.SelectedIndex = 0;
         }
 
-        private void EquipTConfirmBtn_Click(object sender, EventArgs e)
+        private void AEqTConfirmBtn_Click(object sender, EventArgs e)
         {
-            EquipmentType InsightEquipmentType = new EquipmentType();
-            InsightEquipmentType.EquipmentTypeDescription = EquipDescr;
+            EquipmentType InsightEquipType = new EquipmentType();
+
+            InsightEquipType.EquipmentTypeDescription = EquipType;
 
             using (InsightEntities db = new InsightEntities())
             {
-                db.EquipmentTypes.Add(InsightEquipmentType);
+                db.EquipmentTypes.Add(InsightEquipType);
                 db.SaveChanges();
             }
-
-            AddEquipmentTypeTC.SelectedTab = AddEquipmentTypeTC.TabPages[2];
-        }
-
-        private void label99_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

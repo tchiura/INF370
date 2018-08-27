@@ -12,54 +12,52 @@ namespace Insight_Prototype_
 {
     public partial class AddVehicleTypePage : Form
     {
+        string VehicleType = "";
         public AddVehicleTypePage()
         {
             InitializeComponent();
         }
 
-        string VehicleDescr = "";
-
-        private void VTNextBtn_Click(object sender, EventArgs e)
+        private void AVTCancelBtn_Click(object sender, EventArgs e)
         {
-            VehicleDescr = VehicleTypeTb.Text;
-            if(VehicleDescr == "")
+            Form Home = new HomeScreen();
+            Home.Show();
+            this.Show();
+        }
+
+        private void AVTNextBtn_Click(object sender, EventArgs e)
+        {
+            VehicleType = AVTypeTb.Text;
+            if (VehicleType == "")
             {
-                MessageBox.Show("Please Enter a Vehicle Type");
+                MessageBox.Show("Please enter a valid Vehicle Type.");
             }
             else
             {
-                VTConfirmLbl.Text = VehicleDescr;
-                AddVehicleTypeTC.SelectedTab = AddVehicleTypeTC.TabPages[1];
+                AVTConfirmLbl.Text = VehicleType;
+                AddVehicleTypeTab.SelectedIndex = 1;
             }
         }
 
-        private void VTCancelBtn_Click(object sender, EventArgs e)
+        private void AVTBackBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            AddVehicleTypeTab.SelectedIndex = 0;
+            AVTypeTb.Focus();
+            AVTypeTb.Clear();
         }
 
-        private void ClosePicBx_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void VTBackBtn_Click(object sender, EventArgs e)
-        {
-            AddVehicleTypeTC.SelectedTab = AddVehicleTypeTC.TabPages[0];
-        }
-
-        private void VTConfirmBtn_Click(object sender, EventArgs e)
+        private void AVTConfirmBtn_Click(object sender, EventArgs e)
         {
             VehicleType InsightVehicleType = new VehicleType();
-            InsightVehicleType.VehicleTypeDescription = VehicleDescr;
+
+            InsightVehicleType.VehicleTypeDescription = VehicleType;
 
             using (InsightEntities db = new InsightEntities())
             {
                 db.VehicleTypes.Add(InsightVehicleType);
                 db.SaveChanges();
+                AddVehicleTypeTab.SelectedIndex = 2;
             }
-
-            AddVehicleTypeTC.SelectedTab = AddVehicleTypeTC.TabPages[2];
         }
     }
 }
