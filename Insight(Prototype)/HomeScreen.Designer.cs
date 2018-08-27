@@ -12367,6 +12367,6 @@
         private System.Windows.Forms.BindingSource cityBindingSource;
         private InsightDataSetTableAdapters.CityTableAdapter cityTableAdapter;
         private System.Windows.Forms.BindingSource countryBindingSource;
-        private InsightDataSetTableAdapters.CountryTableAdapter countryTableAdapter;
+        private InsightDataSetTableAdapters.CountryTableAdapter countryTableAdapter; 
     }
 }
