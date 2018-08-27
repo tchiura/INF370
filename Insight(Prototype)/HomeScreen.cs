@@ -1117,12 +1117,12 @@ namespace Insight_Prototype_
 
         private void button188_Click(object sender, EventArgs e)
         {
-            CVRegLbl.Text = VRegTb.Text;
-            CVTypeLbl.Text = VTypeCmb.Text;
-            CVMakeLbl.Text = VMakeTb.Text;
-            CVModelLbl.Text = VModelTb.Text;
-            CVYearLbl.Text = VYearTb.Text;
-            CVPDateLbl.Text = VPDateDtp.Value.Date.ToString("dd/MM/yyyy");
+            //CVRegLbl.Text = VRegTb.Text;
+            //CVTypeLbl.Text = VTypeCmb.Text;
+            //CVMakeLbl.Text = VMakeTb.Text;
+            //CVModelLbl.Text = VModelTb.Text;
+            //CVYearLbl.Text = VYearTb.Text;
+            //CVPDateLbl.Text = VPDateDtp.Value.Date.ToString("dd/MM/yyyy");
 
             AddVehiclePanel.SelectedTab = AddVehiclePanel.TabPages[1];
         }
@@ -3066,16 +3066,17 @@ namespace Insight_Prototype_
             private void button168_Click(object sender, EventArgs e)
             {
                 //Attribute Mismatch with Database
-                CSTitleLbl.Text = STitleCmb.Text;
-                CSNameLbl.Text = SNameTb.Text;
-                CSCPNamelbl.Text = CPNameTb.Text;
-                CSCPNumberLbl.Text = CPNumberTb.Text;
-                CSCPEmailLbl.Text = CPEmailTb.Text;
-                CSCPALine1Lbl.Text = CPALine1Tb.Text;
-                CSCPALine2Lbl.Text = CPALine2Tb.Text;
-                CSCPALine3Lbl.Text = CPALine3Tb.Text;
-                CSCPACityLbl.Text = CPACityCmb.Text;
-                CSCPACountryLbl.Text = CPACountryCmb.Text;
+                //CSTitleLbl.Text = STitleCmb.Text;
+                //CSNameLbl.Text = SNameTb.Text;
+                //CSCPNamelbl.Text = CPNameTb.Text;
+                //CSCPNumberLbl.Text = CPNumberTb.Text;
+                //CSCPEmailLbl.Text = CPEmailTb.Text;
+                //CSCPALine1Lbl.Text = CPALine1Tb.Text;
+                //CSCPALine2Lbl.Text = CPALine2Tb.Text;
+                //CSCPALine3Lbl.Text = CPALine3Tb.Text;
+                //CSCPACityLbl.Text = CPACityCmb.Text;
+                //CSCPACountryLbl.Text = CPACountryCmb.Text;
+
             }
 
             private void textBox42_TextChanged(object sender, EventArgs e)
