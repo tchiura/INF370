@@ -498,7 +498,7 @@
       <PropertyRef Name="IndividualDateOfBirth" />
     </Key>
     <Property Name="ClientID" Type="Int32" Nullable="false" />
-    <Property Name="IndividualEmailAddress" Type="Binary" MaxLength="30" FixedLength="false" Nullable="false" />
+    <Property Name="IndividualEmailAddress" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="IndividualDateOfBirth" Type="DateTime" Nullable="false" Precision="0" />
     <NavigationProperty Name="Client" Relationship="Self.FK_Individual_Client" FromRole="Individual" ToRole="Client" />
   </EntityType>
