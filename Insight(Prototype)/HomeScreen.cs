@@ -2560,7 +2560,6 @@ namespace Insight_Prototype_
             //Insert skills into db
             foreach (string skillDesc in addedskill)
             {
-                //  DataSet ds = new DataSet();
                 #region Retrieve skill id for specific skill description
                 try
                 {
