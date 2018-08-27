@@ -2553,7 +2553,7 @@ namespace Insight_Prototype_
                                 /*command.CommandText = "UPDATE Student 
                                 SET Address = @add, City = @cit Where FirstName = @fn and LastName = @add";
                                  
-
+             
                                 myConn.Close();
                                 myConn.Open();
                   */
