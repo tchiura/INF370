@@ -3076,6 +3076,7 @@ namespace Insight_Prototype_
                 CSCPALine3Lbl.Text = CPALine3Tb.Text;
                 CSCPACityLbl.Text = CPACityCmb.Text;
                 CSCPACountryLbl.Text = CPACountryCmb.Text;
+
             }
 
             private void textBox42_TextChanged(object sender, EventArgs e)
