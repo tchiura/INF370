@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.TopBarPanel = new System.Windows.Forms.Panel();
-            this.Userlbl = new System.Windows.Forms.Label();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.Userlbl = new System.Windows.Forms.Label();
             this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
-            this.AddClientTypeDetails = new System.Windows.Forms.TabControl();
+            this.AddProductTypeTab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
+            this.AProdTypeTb = new System.Windows.Forms.TextBox();
+            this.AProdTCancelBtn = new System.Windows.Forms.Button();
+            this.AProdTNextBtn = new System.Windows.Forms.Button();
             this.label58 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.label81 = new System.Windows.Forms.Label();
+            this.AProdTBackBtn = new System.Windows.Forms.Button();
+            this.AProdTConfirmBtn = new System.Windows.Forms.Button();
+            this.AProdTConftimLbl = new System.Windows.Forms.Label();
             this.label91 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label99 = new System.Windows.Forms.Label();
@@ -50,7 +50,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
-            this.AddClientTypeDetails.SuspendLayout();
+            this.AddProductTypeTab.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -72,16 +72,6 @@
             this.TopBarPanel.Size = new System.Drawing.Size(460, 30);
             this.TopBarPanel.TabIndex = 15;
             // 
-            // Userlbl
-            // 
-            this.Userlbl.AutoSize = true;
-            this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.Userlbl.Location = new System.Drawing.Point(3, 2);
-            this.Userlbl.Name = "Userlbl";
-            this.Userlbl.Size = new System.Drawing.Size(149, 23);
-            this.Userlbl.TabIndex = 0;
-            this.Userlbl.Text = "Add Product Type";
-            // 
             // pictureBox14
             // 
             this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Right;
@@ -92,6 +82,16 @@
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 2;
             this.pictureBox14.TabStop = false;
+            // 
+            // Userlbl
+            // 
+            this.Userlbl.AutoSize = true;
+            this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.Userlbl.Location = new System.Drawing.Point(3, 2);
+            this.Userlbl.Name = "Userlbl";
+            this.Userlbl.Size = new System.Drawing.Size(149, 23);
+            this.Userlbl.TabIndex = 0;
+            this.Userlbl.Text = "Add Product Type";
             // 
             // MinimisePicBx
             // 
@@ -115,25 +115,25 @@
             this.ClosePicBx.TabIndex = 0;
             this.ClosePicBx.TabStop = false;
             // 
-            // AddClientTypeDetails
+            // AddProductTypeTab
             // 
-            this.AddClientTypeDetails.Controls.Add(this.tabPage1);
-            this.AddClientTypeDetails.Controls.Add(this.tabPage2);
-            this.AddClientTypeDetails.Controls.Add(this.tabPage3);
-            this.AddClientTypeDetails.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddClientTypeDetails.Location = new System.Drawing.Point(0, 30);
-            this.AddClientTypeDetails.Margin = new System.Windows.Forms.Padding(4);
-            this.AddClientTypeDetails.Name = "AddClientTypeDetails";
-            this.AddClientTypeDetails.SelectedIndex = 0;
-            this.AddClientTypeDetails.Size = new System.Drawing.Size(460, 170);
-            this.AddClientTypeDetails.TabIndex = 17;
+            this.AddProductTypeTab.Controls.Add(this.tabPage1);
+            this.AddProductTypeTab.Controls.Add(this.tabPage2);
+            this.AddProductTypeTab.Controls.Add(this.tabPage3);
+            this.AddProductTypeTab.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AddProductTypeTab.Location = new System.Drawing.Point(0, 30);
+            this.AddProductTypeTab.Margin = new System.Windows.Forms.Padding(4);
+            this.AddProductTypeTab.Name = "AddProductTypeTab";
+            this.AddProductTypeTab.SelectedIndex = 0;
+            this.AddProductTypeTab.Size = new System.Drawing.Size(460, 170);
+            this.AddProductTypeTab.TabIndex = 17;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
-            this.tabPage1.Controls.Add(this.textBox13);
-            this.tabPage1.Controls.Add(this.button21);
-            this.tabPage1.Controls.Add(this.button22);
+            this.tabPage1.Controls.Add(this.AProdTypeTb);
+            this.tabPage1.Controls.Add(this.AProdTCancelBtn);
+            this.tabPage1.Controls.Add(this.AProdTNextBtn);
             this.tabPage1.Controls.Add(this.label58);
             this.tabPage1.ForeColor = System.Drawing.Color.Black;
             this.tabPage1.Location = new System.Drawing.Point(4, 28);
@@ -144,38 +144,40 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Details";
             // 
-            // textBox13
+            // AProdTypeTb
             // 
-            this.textBox13.Location = new System.Drawing.Point(170, 25);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(245, 27);
-            this.textBox13.TabIndex = 32;
-            this.textBox13.Text = "Organisation";
+            this.AProdTypeTb.Location = new System.Drawing.Point(170, 25);
+            this.AProdTypeTb.Margin = new System.Windows.Forms.Padding(4);
+            this.AProdTypeTb.Name = "AProdTypeTb";
+            this.AProdTypeTb.Size = new System.Drawing.Size(245, 27);
+            this.AProdTypeTb.TabIndex = 32;
+            this.AProdTypeTb.Text = "Organisation";
             // 
-            // button21
+            // AProdTCancelBtn
             // 
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.Location = new System.Drawing.Point(286, 100);
-            this.button21.Margin = new System.Windows.Forms.Padding(4);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(75, 30);
-            this.button21.TabIndex = 31;
-            this.button21.Text = "Cancel";
-            this.button21.UseVisualStyleBackColor = true;
+            this.AProdTCancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AProdTCancelBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AProdTCancelBtn.Location = new System.Drawing.Point(286, 100);
+            this.AProdTCancelBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.AProdTCancelBtn.Name = "AProdTCancelBtn";
+            this.AProdTCancelBtn.Size = new System.Drawing.Size(75, 30);
+            this.AProdTCancelBtn.TabIndex = 31;
+            this.AProdTCancelBtn.Text = "Cancel";
+            this.AProdTCancelBtn.UseVisualStyleBackColor = true;
+            this.AProdTCancelBtn.Click += new System.EventHandler(this.AProdTCancelBtn_Click);
             // 
-            // button22
+            // AProdTNextBtn
             // 
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.Location = new System.Drawing.Point(369, 100);
-            this.button22.Margin = new System.Windows.Forms.Padding(4);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(75, 30);
-            this.button22.TabIndex = 30;
-            this.button22.Text = "Next";
-            this.button22.UseVisualStyleBackColor = true;
+            this.AProdTNextBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AProdTNextBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AProdTNextBtn.Location = new System.Drawing.Point(369, 100);
+            this.AProdTNextBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.AProdTNextBtn.Name = "AProdTNextBtn";
+            this.AProdTNextBtn.Size = new System.Drawing.Size(75, 30);
+            this.AProdTNextBtn.TabIndex = 30;
+            this.AProdTNextBtn.Text = "Next";
+            this.AProdTNextBtn.UseVisualStyleBackColor = true;
+            this.AProdTNextBtn.Click += new System.EventHandler(this.AProdTNextBtn_Click);
             // 
             // label58
             // 
@@ -190,9 +192,9 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
-            this.tabPage2.Controls.Add(this.button23);
-            this.tabPage2.Controls.Add(this.button24);
-            this.tabPage2.Controls.Add(this.label81);
+            this.tabPage2.Controls.Add(this.AProdTBackBtn);
+            this.tabPage2.Controls.Add(this.AProdTConfirmBtn);
+            this.tabPage2.Controls.Add(this.AProdTConftimLbl);
             this.tabPage2.Controls.Add(this.label91);
             this.tabPage2.ForeColor = System.Drawing.Color.Black;
             this.tabPage2.Location = new System.Drawing.Point(4, 28);
@@ -203,39 +205,41 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Confirmation";
             // 
-            // button23
+            // AProdTBackBtn
             // 
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button23.Location = new System.Drawing.Point(286, 100);
-            this.button23.Margin = new System.Windows.Forms.Padding(4);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(75, 30);
-            this.button23.TabIndex = 37;
-            this.button23.Text = "Back";
-            this.button23.UseVisualStyleBackColor = true;
+            this.AProdTBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AProdTBackBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AProdTBackBtn.Location = new System.Drawing.Point(286, 100);
+            this.AProdTBackBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.AProdTBackBtn.Name = "AProdTBackBtn";
+            this.AProdTBackBtn.Size = new System.Drawing.Size(75, 30);
+            this.AProdTBackBtn.TabIndex = 37;
+            this.AProdTBackBtn.Text = "Back";
+            this.AProdTBackBtn.UseVisualStyleBackColor = true;
+            this.AProdTBackBtn.Click += new System.EventHandler(this.AProdTBackBtn_Click);
             // 
-            // button24
+            // AProdTConfirmBtn
             // 
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button24.Location = new System.Drawing.Point(369, 100);
-            this.button24.Margin = new System.Windows.Forms.Padding(4);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(75, 30);
-            this.button24.TabIndex = 36;
-            this.button24.Text = "Confirm";
-            this.button24.UseVisualStyleBackColor = true;
+            this.AProdTConfirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AProdTConfirmBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AProdTConfirmBtn.Location = new System.Drawing.Point(369, 100);
+            this.AProdTConfirmBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.AProdTConfirmBtn.Name = "AProdTConfirmBtn";
+            this.AProdTConfirmBtn.Size = new System.Drawing.Size(75, 30);
+            this.AProdTConfirmBtn.TabIndex = 36;
+            this.AProdTConfirmBtn.Text = "Confirm";
+            this.AProdTConfirmBtn.UseVisualStyleBackColor = true;
+            this.AProdTConfirmBtn.Click += new System.EventHandler(this.AProdTConfirmBtn_Click);
             // 
-            // label81
+            // AProdTConftimLbl
             // 
-            this.label81.AutoSize = true;
-            this.label81.Location = new System.Drawing.Point(227, 37);
-            this.label81.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(93, 19);
-            this.label81.TabIndex = 33;
-            this.label81.Text = "Organisation";
+            this.AProdTConftimLbl.AutoSize = true;
+            this.AProdTConftimLbl.Location = new System.Drawing.Point(227, 37);
+            this.AProdTConftimLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.AProdTConftimLbl.Name = "AProdTConftimLbl";
+            this.AProdTConftimLbl.Size = new System.Drawing.Size(93, 19);
+            this.AProdTConftimLbl.TabIndex = 33;
+            this.AProdTConftimLbl.Text = "Organisation";
             // 
             // label91
             // 
@@ -277,11 +281,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(460, 200);
-            this.Controls.Add(this.AddClientTypeDetails);
+            this.Controls.Add(this.AddProductTypeTab);
             this.Controls.Add(this.TopBarPanel);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddProductTypePage";
             this.Text = "AddProductTypePage";
             this.TopBarPanel.ResumeLayout(false);
@@ -289,7 +293,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).EndInit();
-            this.AddClientTypeDetails.ResumeLayout(false);
+            this.AddProductTypeTab.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -306,16 +310,16 @@
         private System.Windows.Forms.Label Userlbl;
         private System.Windows.Forms.PictureBox MinimisePicBx;
         private System.Windows.Forms.PictureBox ClosePicBx;
-        private System.Windows.Forms.TabControl AddClientTypeDetails;
+        private System.Windows.Forms.TabControl AddProductTypeTab;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.TextBox AProdTypeTb;
+        private System.Windows.Forms.Button AProdTCancelBtn;
+        private System.Windows.Forms.Button AProdTNextBtn;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.Button AProdTBackBtn;
+        private System.Windows.Forms.Button AProdTConfirmBtn;
+        private System.Windows.Forms.Label AProdTConftimLbl;
         private System.Windows.Forms.Label label91;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label99;

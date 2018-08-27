@@ -33,16 +33,16 @@
             this.Userlbl = new System.Windows.Forms.Label();
             this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
-            this.AddClientTypeDetails = new System.Windows.Forms.TabControl();
+            this.AddOrganisationTypeTab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
+            this.AOTypeTb = new System.Windows.Forms.TextBox();
+            this.AOTCancelBtn = new System.Windows.Forms.Button();
+            this.AOTNextBtn = new System.Windows.Forms.Button();
             this.label58 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.label81 = new System.Windows.Forms.Label();
+            this.AOTBackBtn = new System.Windows.Forms.Button();
+            this.AOTConfirmBtn = new System.Windows.Forms.Button();
+            this.AOTConfirmLbl = new System.Windows.Forms.Label();
             this.label91 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label99 = new System.Windows.Forms.Label();
@@ -50,7 +50,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
-            this.AddClientTypeDetails.SuspendLayout();
+            this.AddOrganisationTypeTab.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -115,25 +115,25 @@
             this.ClosePicBx.TabIndex = 0;
             this.ClosePicBx.TabStop = false;
             // 
-            // AddClientTypeDetails
+            // AddOrganisationTypeTab
             // 
-            this.AddClientTypeDetails.Controls.Add(this.tabPage1);
-            this.AddClientTypeDetails.Controls.Add(this.tabPage2);
-            this.AddClientTypeDetails.Controls.Add(this.tabPage3);
-            this.AddClientTypeDetails.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddClientTypeDetails.Location = new System.Drawing.Point(0, 30);
-            this.AddClientTypeDetails.Margin = new System.Windows.Forms.Padding(4);
-            this.AddClientTypeDetails.Name = "AddClientTypeDetails";
-            this.AddClientTypeDetails.SelectedIndex = 0;
-            this.AddClientTypeDetails.Size = new System.Drawing.Size(460, 170);
-            this.AddClientTypeDetails.TabIndex = 11;
+            this.AddOrganisationTypeTab.Controls.Add(this.tabPage1);
+            this.AddOrganisationTypeTab.Controls.Add(this.tabPage2);
+            this.AddOrganisationTypeTab.Controls.Add(this.tabPage3);
+            this.AddOrganisationTypeTab.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AddOrganisationTypeTab.Location = new System.Drawing.Point(0, 30);
+            this.AddOrganisationTypeTab.Margin = new System.Windows.Forms.Padding(4);
+            this.AddOrganisationTypeTab.Name = "AddOrganisationTypeTab";
+            this.AddOrganisationTypeTab.SelectedIndex = 0;
+            this.AddOrganisationTypeTab.Size = new System.Drawing.Size(460, 170);
+            this.AddOrganisationTypeTab.TabIndex = 11;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
-            this.tabPage1.Controls.Add(this.textBox13);
-            this.tabPage1.Controls.Add(this.button21);
-            this.tabPage1.Controls.Add(this.button22);
+            this.tabPage1.Controls.Add(this.AOTypeTb);
+            this.tabPage1.Controls.Add(this.AOTCancelBtn);
+            this.tabPage1.Controls.Add(this.AOTNextBtn);
             this.tabPage1.Controls.Add(this.label58);
             this.tabPage1.ForeColor = System.Drawing.Color.Black;
             this.tabPage1.Location = new System.Drawing.Point(4, 28);
@@ -144,38 +144,40 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Details";
             // 
-            // textBox13
+            // AOTypeTb
             // 
-            this.textBox13.Location = new System.Drawing.Point(170, 25);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(245, 27);
-            this.textBox13.TabIndex = 32;
-            this.textBox13.Text = "Organisation";
+            this.AOTypeTb.Location = new System.Drawing.Point(170, 25);
+            this.AOTypeTb.Margin = new System.Windows.Forms.Padding(4);
+            this.AOTypeTb.Name = "AOTypeTb";
+            this.AOTypeTb.Size = new System.Drawing.Size(245, 27);
+            this.AOTypeTb.TabIndex = 32;
+            this.AOTypeTb.Text = "Organisation";
             // 
-            // button21
+            // AOTCancelBtn
             // 
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.Location = new System.Drawing.Point(286, 100);
-            this.button21.Margin = new System.Windows.Forms.Padding(4);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(75, 30);
-            this.button21.TabIndex = 31;
-            this.button21.Text = "Cancel";
-            this.button21.UseVisualStyleBackColor = true;
+            this.AOTCancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AOTCancelBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AOTCancelBtn.Location = new System.Drawing.Point(286, 100);
+            this.AOTCancelBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.AOTCancelBtn.Name = "AOTCancelBtn";
+            this.AOTCancelBtn.Size = new System.Drawing.Size(75, 30);
+            this.AOTCancelBtn.TabIndex = 31;
+            this.AOTCancelBtn.Text = "Cancel";
+            this.AOTCancelBtn.UseVisualStyleBackColor = true;
+            this.AOTCancelBtn.Click += new System.EventHandler(this.AOTCancelBtn_Click);
             // 
-            // button22
+            // AOTNextBtn
             // 
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.Location = new System.Drawing.Point(369, 100);
-            this.button22.Margin = new System.Windows.Forms.Padding(4);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(75, 30);
-            this.button22.TabIndex = 30;
-            this.button22.Text = "Next";
-            this.button22.UseVisualStyleBackColor = true;
+            this.AOTNextBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AOTNextBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AOTNextBtn.Location = new System.Drawing.Point(369, 100);
+            this.AOTNextBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.AOTNextBtn.Name = "AOTNextBtn";
+            this.AOTNextBtn.Size = new System.Drawing.Size(75, 30);
+            this.AOTNextBtn.TabIndex = 30;
+            this.AOTNextBtn.Text = "Next";
+            this.AOTNextBtn.UseVisualStyleBackColor = true;
+            this.AOTNextBtn.Click += new System.EventHandler(this.AOTNextBtn_Click);
             // 
             // label58
             // 
@@ -190,9 +192,9 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
-            this.tabPage2.Controls.Add(this.button23);
-            this.tabPage2.Controls.Add(this.button24);
-            this.tabPage2.Controls.Add(this.label81);
+            this.tabPage2.Controls.Add(this.AOTBackBtn);
+            this.tabPage2.Controls.Add(this.AOTConfirmBtn);
+            this.tabPage2.Controls.Add(this.AOTConfirmLbl);
             this.tabPage2.Controls.Add(this.label91);
             this.tabPage2.ForeColor = System.Drawing.Color.Black;
             this.tabPage2.Location = new System.Drawing.Point(4, 28);
@@ -203,39 +205,41 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Confirmation";
             // 
-            // button23
+            // AOTBackBtn
             // 
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button23.Location = new System.Drawing.Point(286, 100);
-            this.button23.Margin = new System.Windows.Forms.Padding(4);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(75, 30);
-            this.button23.TabIndex = 37;
-            this.button23.Text = "Back";
-            this.button23.UseVisualStyleBackColor = true;
+            this.AOTBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AOTBackBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AOTBackBtn.Location = new System.Drawing.Point(286, 100);
+            this.AOTBackBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.AOTBackBtn.Name = "AOTBackBtn";
+            this.AOTBackBtn.Size = new System.Drawing.Size(75, 30);
+            this.AOTBackBtn.TabIndex = 37;
+            this.AOTBackBtn.Text = "Back";
+            this.AOTBackBtn.UseVisualStyleBackColor = true;
+            this.AOTBackBtn.Click += new System.EventHandler(this.AOTBackBtn_Click);
             // 
-            // button24
+            // AOTConfirmBtn
             // 
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button24.Location = new System.Drawing.Point(369, 100);
-            this.button24.Margin = new System.Windows.Forms.Padding(4);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(75, 30);
-            this.button24.TabIndex = 36;
-            this.button24.Text = "Confirm";
-            this.button24.UseVisualStyleBackColor = true;
+            this.AOTConfirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AOTConfirmBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AOTConfirmBtn.Location = new System.Drawing.Point(369, 100);
+            this.AOTConfirmBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.AOTConfirmBtn.Name = "AOTConfirmBtn";
+            this.AOTConfirmBtn.Size = new System.Drawing.Size(75, 30);
+            this.AOTConfirmBtn.TabIndex = 36;
+            this.AOTConfirmBtn.Text = "Confirm";
+            this.AOTConfirmBtn.UseVisualStyleBackColor = true;
+            this.AOTConfirmBtn.Click += new System.EventHandler(this.AOTConfirmBtn_Click);
             // 
-            // label81
+            // AOTConfirmLbl
             // 
-            this.label81.AutoSize = true;
-            this.label81.Location = new System.Drawing.Point(227, 37);
-            this.label81.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(93, 19);
-            this.label81.TabIndex = 33;
-            this.label81.Text = "Organisation";
+            this.AOTConfirmLbl.AutoSize = true;
+            this.AOTConfirmLbl.Location = new System.Drawing.Point(227, 37);
+            this.AOTConfirmLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.AOTConfirmLbl.Name = "AOTConfirmLbl";
+            this.AOTConfirmLbl.Size = new System.Drawing.Size(93, 19);
+            this.AOTConfirmLbl.TabIndex = 33;
+            this.AOTConfirmLbl.Text = "Organisation";
             // 
             // label91
             // 
@@ -264,7 +268,7 @@
             this.label99.AutoSize = true;
             this.label99.Font = new System.Drawing.Font("Calibri", 20F);
             this.label99.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.label99.Location = new System.Drawing.Point(21, 28);
+            this.label99.Location = new System.Drawing.Point(14, 53);
             this.label99.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label99.Name = "label99";
             this.label99.Size = new System.Drawing.Size(424, 33);
@@ -277,11 +281,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(460, 200);
-            this.Controls.Add(this.AddClientTypeDetails);
+            this.Controls.Add(this.AddOrganisationTypeTab);
             this.Controls.Add(this.TopBarPanel);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddOrganisationTypePage";
             this.Text = "AddClientTypePage";
             this.TopBarPanel.ResumeLayout(false);
@@ -289,7 +293,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).EndInit();
-            this.AddClientTypeDetails.ResumeLayout(false);
+            this.AddOrganisationTypeTab.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -307,16 +311,16 @@
         private System.Windows.Forms.Label Userlbl;
         private System.Windows.Forms.PictureBox MinimisePicBx;
         private System.Windows.Forms.PictureBox ClosePicBx;
-        private System.Windows.Forms.TabControl AddClientTypeDetails;
+        private System.Windows.Forms.TabControl AddOrganisationTypeTab;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.TextBox AOTypeTb;
+        private System.Windows.Forms.Button AOTCancelBtn;
+        private System.Windows.Forms.Button AOTNextBtn;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.Button AOTBackBtn;
+        private System.Windows.Forms.Button AOTConfirmBtn;
+        private System.Windows.Forms.Label AOTConfirmLbl;
         private System.Windows.Forms.Label label91;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label99;

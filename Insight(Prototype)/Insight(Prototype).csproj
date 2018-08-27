@@ -58,6 +58,12 @@
     <Compile Include="AccessLevel.cs">
       <DependentUpon>InsightModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="AddEquipmentTypePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEquipmentTypePage.Designer.cs">
+      <DependentUpon>AddEquipmentTypePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddJobTypePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,18 @@
     </Compile>
     <Compile Include="Address.cs">
       <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AddSkillPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSkillPage.Designer.cs">
+      <DependentUpon>AddSkillPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddVehicleTypePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddVehicleTypePage.Designer.cs">
+      <DependentUpon>AddVehicleTypePage.cs</DependentUpon>
     </Compile>
     <Compile Include="ApproveQuotationPage.cs">
       <SubType>Form</SubType>
@@ -523,6 +541,9 @@
       <DependentUpon>ViewQuotationPage.cs</DependentUpon>
     </Compile>
     <Compile Include="WinAPI.cs" />
+    <EmbeddedResource Include="AddEquipmentTypePage.resx">
+      <DependentUpon>AddEquipmentTypePage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddJobTypePage.resx">
       <DependentUpon>AddJobTypePage.cs</DependentUpon>
     </EmbeddedResource>
@@ -546,6 +567,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddProjectPage.resx">
       <DependentUpon>AddProjectPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSkillPage.resx">
+      <DependentUpon>AddSkillPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddVehicleTypePage.resx">
+      <DependentUpon>AddVehicleTypePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ApproveQuotationPage.resx">
       <DependentUpon>ApproveQuotationPage.cs</DependentUpon>
@@ -603,6 +630,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HomeScreen.resx">
       <DependentUpon>HomeScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="ReceiveProductsPage.resx">
       <DependentUpon>ReceiveProductsPage.cs</DependentUpon>
