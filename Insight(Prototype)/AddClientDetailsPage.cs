@@ -188,8 +188,6 @@ namespace Insight_Prototype_
                 contactNametxt.Enabled = true;
                 contactNumbertxt.Enabled = true;
                 emaillbl.Text = "Contact Person Email Address:";
-                //  emaillbl.Location = new Point(50, 310);
-                // contactEmail.Location = new Point(306, 306);
             }
 
             if (clientcbx.Text == "Individual")
@@ -203,8 +201,6 @@ namespace Insight_Prototype_
                 contactNametxt.Enabled = false;
                 contactNumbertxt.Enabled = false;
                 emaillbl.Text = "Email Address:";
-                //emaillbl.Location = new Point(50, 80);
-                // contactEmail.Location = new Point(306, 172);
             }
         }
     }

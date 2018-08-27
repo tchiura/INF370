@@ -388,8 +388,22 @@ namespace Insight_Prototype_
         private void button41_Click(object sender, EventArgs e)
         {
             ViewProjectRequestPanel.BringToFront();
+            populateProjectRequest();
         }
 
+        void populateProjectRequest()
+        {
+            /*dgvProjectRequest.AutoGenerateColumns = false;
+            using(InsightEntities db = new InsightEntities())
+            {
+                dgvProjectRequest.DataSource = db.ProjectRequests.ToList<ProjectRequest>();
+            }*/
+
+            SqlConnection myConn = new SqlConnection(globalClass.myConn);
+            myConn.Open();
+
+            SqlCommand viewProjectRequest = new SqlCommand("Select ProjectRequestID, ProjectRequestDescription, ProjectRequestDate, ProjectRequestType, ClientName, AddressDescription, City, Country From Project");
+        }
         private void button42_Click(object sender, EventArgs e)
         {
 
@@ -2482,7 +2496,7 @@ namespace Insight_Prototype_
 
         private void button19_Click(object sender, EventArgs e)
         {
-            string employeeAddress = EmployeeAd1lbl.Text + "," + EmployeeAd2lbl.Text + "," + EmployeeAd3lbl.Text;
+            string employeeAddress = EmployeeAd1lbl.Text + ", " + EmployeeAd2lbl.Text + ", " + EmployeeAd3lbl.Text;
 
             Employee InsightEmployee = new Employee();
             Address InsightAddress = new Address();
