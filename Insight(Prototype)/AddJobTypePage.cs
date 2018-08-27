@@ -12,54 +12,53 @@ namespace Insight_Prototype_
 {
     public partial class AddJobTypePage : Form
     {
+
+        Globals globalClass = new Globals();
+        string JT;
         public AddJobTypePage()
         {
             InitializeComponent();
         }
 
-        //Add Job Type Details
-        string TypeDescr = "";
-        private void Button22_Click(object sender, EventArgs e)
+        private void button22_Click(object sender, EventArgs e)
         {
-            TypeDescr = tbJobType.Text;
-            if(TypeDescr == "")
+            string JT = AJTypeTb.Text;
+            if(JT == "")
             {
-                MessageBox.Show("Please Enter a Job Type");
+                MessageBox.Show("Please enter a valid Job Type.");
             }
             else
             {
-                JTConfirmLbl.Text = TypeDescr;
-                AddJobTypeTC.SelectedTab = AddJobTypeTC.TabPages[1];
+                AddJobTypeTab.SelectedIndex = 1;
+                AJTConfirmLbl.Text = JT;
             }
         }
 
-        private void button24_Click(object sender, EventArgs e)
+        private void AJTCancelBtn_Click(object sender, EventArgs e)
+        {
+            Form Home = new HomeScreen();
+            Home.Show();
+            this.Close();
+        }
+
+        private void AJTBackBtn_Click(object sender, EventArgs e)
+        {
+            AddJobTypeTab.SelectedIndex = 0;
+            AJTypeTb.Focus();
+            AJTypeTb.Clear();
+        }
+
+        private void AJTConfirmBtn_Click(object sender, EventArgs e)
         {
             JobType InsightJobType = new JobType();
-            InsightJobType.JobTypeDescription = TypeDescr;
+
+            InsightJobType.JobTypeDescription = JT;
 
             using (InsightEntities db = new InsightEntities())
             {
                 db.JobTypes.Add(InsightJobType);
                 db.SaveChanges();
             }
-
-            AddJobTypeTC.SelectedTab = AddJobTypeTC.TabPages[2];
-        }
-
-        private void JTCancelBtn_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void JTBackBtn_Click(object sender, EventArgs e)
-        {
-            AddJobTypeTC.SelectedTab = AddJobTypeTC.TabPages[0];
-        }
-
-        private void ClosePicBx_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
