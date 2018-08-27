@@ -15,7 +15,7 @@ namespace Insight_Prototype_
     public partial class Individual
     {
         public int ClientID { get; set; }
-        public byte[] IndividualEmailAddress { get; set; }
+        public string IndividualEmailAddress { get; set; }
         public System.DateTime IndividualDateOfBirth { get; set; }
     
         public virtual Client Client { get; set; }

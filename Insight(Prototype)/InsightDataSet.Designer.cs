@@ -6483,14 +6483,6 @@ namespace Insight_Prototype_ {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public EmployeeSkillRow FindByEmployeeIDSkillID(int EmployeeID, int SkillID) {
-                return ((EmployeeSkillRow)(this.Rows.Find(new object[] {
-                            EmployeeID,
-                            SkillID})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public override global::System.Data.DataTable Clone() {
                 EmployeeSkillDataTable cln = ((EmployeeSkillDataTable)(base.Clone()));
                 cln.InitVars();
@@ -6517,9 +6509,6 @@ namespace Insight_Prototype_ {
                 base.Columns.Add(this.columnEmployeeID);
                 this.columnSkillID = new global::System.Data.DataColumn("SkillID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSkillID);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnEmployeeID,
-                                this.columnSkillID}, true));
                 this.columnEmployeeID.AllowDBNull = false;
                 this.columnSkillID.AllowDBNull = false;
             }
@@ -7622,7 +7611,7 @@ namespace Insight_Prototype_ {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public IndividualRow AddIndividualRow(ClientRow parentClientRowByFK_Individual_Client, byte[] IndividualEmailAddress, System.DateTime IndividualDateOfBirth) {
+            public IndividualRow AddIndividualRow(ClientRow parentClientRowByFK_Individual_Client, string IndividualEmailAddress, System.DateTime IndividualDateOfBirth) {
                 IndividualRow rowIndividualRow = ((IndividualRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -7663,12 +7652,13 @@ namespace Insight_Prototype_ {
             private void InitClass() {
                 this.columnClientID = new global::System.Data.DataColumn("ClientID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnClientID);
-                this.columnIndividualEmailAddress = new global::System.Data.DataColumn("IndividualEmailAddress", typeof(byte[]), null, global::System.Data.MappingType.Element);
+                this.columnIndividualEmailAddress = new global::System.Data.DataColumn("IndividualEmailAddress", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnIndividualEmailAddress);
                 this.columnIndividualDateOfBirth = new global::System.Data.DataColumn("IndividualDateOfBirth", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnIndividualDateOfBirth);
                 this.columnClientID.AllowDBNull = false;
                 this.columnIndividualEmailAddress.AllowDBNull = false;
+                this.columnIndividualEmailAddress.MaxLength = 30;
                 this.columnIndividualDateOfBirth.AllowDBNull = false;
             }
             
@@ -20477,9 +20467,9 @@ namespace Insight_Prototype_ {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public byte[] IndividualEmailAddress {
+            public string IndividualEmailAddress {
                 get {
-                    return ((byte[])(this[this.tableIndividual.IndividualEmailAddressColumn]));
+                    return ((string)(this[this.tableIndividual.IndividualEmailAddressColumn]));
                 }
                 set {
                     this[this.tableIndividual.IndividualEmailAddressColumn] = value;
@@ -29553,30 +29543,13 @@ SELECT EmployeeLoginID, EmployeeUsername, EmployeePassword, EmployeeLastLogin, A
             tableMapping.ColumnMappings.Add("EmployeeID", "EmployeeID");
             tableMapping.ColumnMappings.Add("SkillID", "SkillID");
             this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[EmployeeSkill] WHERE (([EmployeeID] = @Original_EmployeeID) AN" +
-                "D ([SkillID] = @Original_SkillID))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_EmployeeID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EmployeeID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SkillID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SkillID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[EmployeeSkill] ([EmployeeID], [SkillID]) VALUES (@EmployeeID, " +
-                "@SkillID);\r\nSELECT EmployeeID, SkillID FROM EmployeeSkill WHERE (EmployeeID = @E" +
-                "mployeeID) AND (SkillID = @SkillID)";
+                "@SkillID)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EmployeeID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EmployeeID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SkillID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SkillID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[EmployeeSkill] SET [EmployeeID] = @EmployeeID, [SkillID] = @SkillID WHERE (([EmployeeID] = @Original_EmployeeID) AND ([SkillID] = @Original_SkillID));
-SELECT EmployeeID, SkillID FROM EmployeeSkill WHERE (EmployeeID = @EmployeeID) AND (SkillID = @SkillID)";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EmployeeID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EmployeeID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SkillID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SkillID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_EmployeeID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EmployeeID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SkillID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SkillID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -29652,29 +29625,6 @@ SELECT EmployeeID, SkillID FROM EmployeeSkill WHERE (EmployeeID = @EmployeeID) A
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_EmployeeID, int Original_SkillID) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_EmployeeID));
-            this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_SkillID));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
         public virtual int Insert(int EmployeeID, int SkillID) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((int)(EmployeeID));
@@ -29693,39 +29643,6 @@ SELECT EmployeeID, SkillID FROM EmployeeSkill WHERE (EmployeeID = @EmployeeID) A
                     this.Adapter.InsertCommand.Connection.Close();
                 }
             }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int EmployeeID, int SkillID, int Original_EmployeeID, int Original_SkillID) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(EmployeeID));
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(SkillID));
-            this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(Original_EmployeeID));
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_SkillID));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int Original_EmployeeID, int Original_SkillID) {
-            return this.Update(Original_EmployeeID, Original_SkillID, Original_EmployeeID, Original_SkillID);
         }
     }
     
@@ -30835,7 +30752,7 @@ SELECT EquipmentTypeID, EquipmentTypeDescription FROM EquipmentType WHERE (Equip
                 ")";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClientID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IndividualEmailAddress", global::System.Data.SqlDbType.VarBinary, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IndividualEmailAddress", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IndividualEmailAddress", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IndividualEmailAddress", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IndividualDateOfBirth", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IndividualDateOfBirth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -30914,13 +30831,13 @@ SELECT EquipmentTypeID, EquipmentTypeDescription FROM EquipmentType WHERE (Equip
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int ClientID, byte[] IndividualEmailAddress, System.DateTime IndividualDateOfBirth) {
+        public virtual int Insert(int ClientID, string IndividualEmailAddress, System.DateTime IndividualDateOfBirth) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((int)(ClientID));
             if ((IndividualEmailAddress == null)) {
                 throw new global::System.ArgumentNullException("IndividualEmailAddress");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((byte[])(IndividualEmailAddress));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(IndividualEmailAddress));
             }
             this.Adapter.InsertCommand.Parameters[2].Value = ((System.DateTime)(IndividualDateOfBirth));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
