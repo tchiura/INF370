@@ -19,6 +19,8 @@ namespace Insight_Prototype_
             InitializeComponent();
 
             AddClientDetailsTab.Appearance = TabAppearance.FlatButtons;
+            AddVehiclePanel.Appearance = TabAppearance.FlatButtons;
+            //AddVehiclePanel.
             //AddClientDetailsTab.c
 
         }
@@ -138,7 +140,7 @@ namespace Insight_Prototype_
 
         private void button30_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label53_Click(object sender, EventArgs e)
@@ -265,10 +267,8 @@ namespace Insight_Prototype_
 
         private void AddClienTypetAPBtn_Click(object sender, EventArgs e)
         {
-            Form N = new AddOrganisationTypePage();
-            //AddOTypeDetails.BringToFront();
-            N.ShowDialog();
-            //this
+            Form AO = new AddOrganisationTypePage();
+            AO.ShowDialog();
         }
 
         private void button7_Click_1(object sender, EventArgs e)
@@ -295,7 +295,7 @@ namespace Insight_Prototype_
 
         private void button58_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button59_Click(object sender, EventArgs e)
@@ -305,7 +305,8 @@ namespace Insight_Prototype_
 
         private void button60_Click(object sender, EventArgs e)
         {
-            AddJobType.BringToFront();
+            Form JT = new AddJobTypePage();
+            JT.ShowDialog();
         }
 
         private void button61_Click(object sender, EventArgs e)
@@ -325,7 +326,8 @@ namespace Insight_Prototype_
 
         private void button35_Click(object sender, EventArgs e)
         {
-            AddEmployeeTypeTab.BringToFront();
+            Form ET = new AddEmployeeTypePage();
+            ET.ShowDialog();
         }
 
         private void button36_Click(object sender, EventArgs e)
@@ -360,7 +362,7 @@ namespace Insight_Prototype_
 
         private void button63_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button64_Click(object sender, EventArgs e)
@@ -370,7 +372,7 @@ namespace Insight_Prototype_
 
         private void button68_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button38_Click(object sender, EventArgs e)
@@ -386,16 +388,31 @@ namespace Insight_Prototype_
         private void button41_Click(object sender, EventArgs e)
         {
             ViewProjectRequestPanel.BringToFront();
+            populateProjectRequest();
         }
 
+        void populateProjectRequest()
+        {
+            /*dgvProjectRequest.AutoGenerateColumns = false;
+            using(InsightEntities db = new InsightEntities())
+            {
+                dgvProjectRequest.DataSource = db.ProjectRequests.ToList<ProjectRequest>();
+            }*/
+
+            SqlConnection myConn = new SqlConnection(globalClass.myConn);
+            myConn.Open();
+
+            SqlCommand viewProjectRequest = new SqlCommand("Select ProjectRequestID, ProjectRequestDescription, ProjectRequestDate, ProjectRequestType, ClientName, AddressDescription, City, Country From Project");
+        }
         private void button42_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button46_Click(object sender, EventArgs e)
         {
-            
+            Form APT = new AddProductTypePage();
+            APT.ShowDialog();
         }
 
         private void button43_Click(object sender, EventArgs e)
@@ -410,7 +427,8 @@ namespace Insight_Prototype_
 
         private void button50_Click(object sender, EventArgs e)
         {
-            
+            Form EQ = new AddEquipmentTypePage();
+            EQ.ShowDialog();
         }
 
         private void button74_Click(object sender, EventArgs e)
@@ -603,7 +621,7 @@ namespace Insight_Prototype_
             Form A = new ApproveQuotationPage();
             this.Hide();
             A.ShowDialog();
-            this.Show(); 
+            this.Show();
         }
 
         private void button155_Click(object sender, EventArgs e)
@@ -613,12 +631,12 @@ namespace Insight_Prototype_
 
         private void button158_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button37_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void button138_Click(object sender, EventArgs e)
@@ -1090,14 +1108,23 @@ namespace Insight_Prototype_
 
         }
 
+        //Add Vehicle
         private void button125_Click_1(object sender, EventArgs e)
         {
+            VehicleActionPanel.BringToFront();
 
         }
 
         private void button188_Click(object sender, EventArgs e)
         {
+            CVRegLbl.Text = VRegTb.Text;
+            CVTypeLbl.Text = VTypeCmb.Text;
+            CVMakeLbl.Text = VMakeTb.Text;
+            CVModelLbl.Text = VModelTb.Text;
+            CVYearLbl.Text = VYearTb.Text;
+            CVPDateLbl.Text = VPDateDtp.Value.Date.ToString("dd/MM/yyyy");
 
+            AddVehiclePanel.SelectedTab = AddVehiclePanel.TabPages[1];
         }
 
         private void label84_Click(object sender, EventArgs e)
@@ -1187,12 +1214,25 @@ namespace Insight_Prototype_
 
         private void button189_Click(object sender, EventArgs e)
         {
-
+            AddVehiclePanel.SelectedTab = AddVehiclePanel.TabPages[0];
         }
 
         private void button190_Click(object sender, EventArgs e)
         {
+            //AddVehiclePanel.SelectedTab = AddVehiclePanel.TabPages[3];
 
+            //Vehicle InsightVehicle = new Vehicle();
+            //InsightVehicle.VehicleMake = VMakeTb.Text;
+            //InsightVehicle.VehicleModel = VModelTb.Text;
+            //InsightVehicle.VehicleRegistration = VRegTb.Text;
+            ////InsightVehicle.VehicleYear = ((DateTime)VYearTb.Text);
+            //InsightVehicle.PurchaseDate = VPDateDtp.Value.Date;
+
+            //using (InsightEntities db = new InsightEntities())
+            //{
+            //    db.Vehicles.Add(InsightVehicle);
+            //    db.SaveChanges();
+            //}
         }
 
         private void tabPage34_Click(object sender, EventArgs e)
@@ -2468,7 +2508,7 @@ namespace Insight_Prototype_
             InsightEmployee.EmployeeSurname = EmployeeSurnamelbl.Text;
             InsightEmployee.EmployeeDateOfBirth = EmployeeDOB.Value.Date;
             InsightEmployee.EmployeeEmailAddress = EmployeeEmaillbl.Text;
-            InsightEmployee.EmployeeNumber = Convert.ToInt32(EmployeeNumberlbl.Text);
+            //InsightEmployee.EmployeeNumber = Convert.ToInt32(EmployeeNumberlbl.Text);
             InsightEmployee.EmployeeGender = EmployeeGenderCbx.Text;
             InsightEmployee.EmployeeTypeID = Convert.ToInt32(EmployeeTypeCbx.SelectedValue);
 
@@ -2477,6 +2517,7 @@ namespace Insight_Prototype_
             InsightAddress.CityID = Convert.ToInt32(EmployeeCity.SelectedValue);
 
             //using EmployeeLogin Table
+
             InsightEmployeeLogin.EmployeeUsername = "tempUsername";
             InsightEmployeeLogin.EmployeePassword = "tempPassword";
             InsightEmployeeLogin.AccessLevelID = 3;
@@ -2512,1721 +2553,1721 @@ namespace Insight_Prototype_
             var addedskill = AddedSkillList.Items.Cast<String>().ToList();
 
             SqlConnection conn = new SqlConnection(globalClass.myConn);
-            conn.Open();
-
-            foreach (string x in addedskill)
+            SqlCommand insertEmployeeSkill;
+            SqlCommand getSkillID;
+            SqlDataReader myReader;
+            int skillID = 0; //default
+            //Insert skills into db
+            foreach (string skillDesc in addedskill)
             {
-                //  DataSet ds = new DataSet();
-                SqlCommand insertEmployeeSkill = new SqlCommand("Insert into EmployeeSkill(EmployeeID, SkillID) Values(@EmployeeID, @SkillID)", conn);
-                insertEmployeeSkill.Parameters.AddWithValue("@EmployeeID", employeeID);
-                SqlCommand readSkills = new SqlCommand("Select SkillDescription from Skill");
-                SqlDataReader myReader;
+                #region Retrieve skill id for specific skill description
+                try
+                {
+                    insertEmployeeSkill = new SqlCommand("Insert into EmployeeSkill(EmployeeID, SkillID) Values(@EmployeeID, @SkillID)", conn);
+                    insertEmployeeSkill.Parameters.AddWithValue("@EmployeeID", employeeID);
+                    getSkillID = new SqlCommand("SELECT SkillID FROM Skill WHERE SkillDescription =" + "'" + skillDesc + "'", conn);
+                    conn.Open();
+                    myReader = getSkillID.ExecuteReader();
 
-                myReader = readSkills.ExecuteReader();
-
-                //use reader 
-                //Parameters.AddWithValue(@SkillID
-                //insertEmployeeSkill.ExecuteNonQuery();
-                /*
-                 SqlCommand myCmd = new SqlCommand(cmdTxt, myConn);
-                SqlCommand updateComm = new SqlCommand(updateUserTable, myConn);
-                myReader = myCmd.ExecuteReader();
-                bool validCredentials = false;
-                bool brk = false;
-
-
-               try
-               {
+                    //Getting skillId from database
                     while (myReader.Read())
                     {
-                        //Check if account exists
-                        if (Convert.ToString(myReader["Email"]) == txtUsername.Text)
-                        {
-                            if (Convert.ToString(myReader["Password"]) == txtPassword.Text)
-                            {
-                                //Correct password
-                                validCredentials = true;
-
-                                //Stop searching
-                                brk = true;
-                                UserID = Convert.ToInt32(myReader["UserID"]);
-                                /*command.CommandText = "UPDATE Student 
-                                SET Address = @add, City = @cit Where FirstName = @fn and LastName = @add";
-                                 
-
-                                myConn.Close();
-                                myConn.Open();
-                  */
+                        skillID = Convert.ToInt32(myReader["SkillID"]);
+                    }
+                    myReader.Close();
+                    #region Insert skill id with employeeId into EmployeeSkill
+                    insertEmployeeSkill.Parameters.AddWithValue("@SkillID", skillID);
+                    insertEmployeeSkill.ExecuteNonQuery();
+                    #endregion
+                    conn.Close();
+                }
+                catch (Exception myEx)
+                {
+                    MessageBox.Show("Error: " + myEx.Message);
+                }
+                #endregion
             }
         }
 
-        private void MoveListBoxItems(ListBox source, ListBox destination)
-        {
-            ListBox.SelectedObjectCollection sourceItems = source.SelectedItems;
-            foreach (var item in sourceItems)
+            private void MoveListBoxItems(ListBox source, ListBox destination)
             {
-                destination.Items.Add(item);
+                ListBox.SelectedObjectCollection sourceItems = source.SelectedItems;
+                foreach (var item in sourceItems)
+                {
+                    destination.Items.Add(item);
+                }
+                while (source.SelectedItems.Count > 0)
+                {
+                    source.Items.Remove(source.SelectedItems[0]);
+                }
             }
-            while (source.SelectedItems.Count > 0)
+
+            private void EComplete_Click(object sender, EventArgs e)
             {
-                source.Items.Remove(source.SelectedItems[0]);
+
             }
-        }
 
-        private void EComplete_Click(object sender, EventArgs e)
-        {
+            private void label62_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label62_Click(object sender, EventArgs e)
-        {
+            private void ViewProjectPanel_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void ViewProjectPanel_Paint(object sender, PaintEventArgs e)
-        {
+            private void label57_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label57_Click(object sender, EventArgs e)
-        {
+            private void button75_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button75_Click(object sender, EventArgs e)
-        {
+            private void panel4_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
+            private void button76_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button76_Click(object sender, EventArgs e)
-        {
+            private void tableLayoutPanel12_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void tableLayoutPanel12_Paint(object sender, PaintEventArgs e)
-        {
+            private void textBox15_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox15_TextChanged(object sender, EventArgs e)
-        {
+            private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+            {
 
-        }
+            }
 
-        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+            private void ViewSupplierPanel_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void ViewSupplierPanel_Paint(object sender, PaintEventArgs e)
-        {
+            private void label204_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label204_Click(object sender, EventArgs e)
-        {
+            private void button171_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button171_Click(object sender, EventArgs e)
-        {
+            private void panel16_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void panel16_Paint(object sender, PaintEventArgs e)
-        {
+            private void button172_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button172_Click(object sender, EventArgs e)
-        {
+            private void tableLayoutPanel28_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void tableLayoutPanel28_Paint(object sender, PaintEventArgs e)
-        {
+            private void textBox44_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox44_TextChanged(object sender, EventArgs e)
-        {
+            private void dataGridView16_CellContentClick(object sender, DataGridViewCellEventArgs e)
+            {
 
-        }
+            }
 
-        private void dataGridView16_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+            private void AddProjectPanel_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void AddProjectPanel_Paint(object sender, PaintEventArgs e)
-        {
+            private void panel2_Paint_1(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void panel2_Paint_1(object sender, PaintEventArgs e)
-        {
+            private void button144_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button144_Click(object sender, EventArgs e)
-        {
+            private void tableLayoutPanel24_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void tableLayoutPanel24_Paint(object sender, PaintEventArgs e)
-        {
+            private void dataGridView12_CellContentClick(object sender, DataGridViewCellEventArgs e)
+            {
 
-        }
+            }
 
-        private void dataGridView12_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+            private void AddClientDetailsTab_SelectedIndexChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void AddClientDetailsTab_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            private void CDetails_Click_1(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void CDetails_Click_1(object sender, EventArgs e)
-        {
+            private void label77_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label77_Click(object sender, EventArgs e)
-        {
+            private void label78_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label78_Click(object sender, EventArgs e)
-        {
+            private void label79_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label79_Click(object sender, EventArgs e)
-        {
+            private void label80_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label80_Click(object sender, EventArgs e)
-        {
+            private void label82_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label82_Click(object sender, EventArgs e)
-        {
+            private void label83_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label83_Click(object sender, EventArgs e)
-        {
+            private void button11_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button11_Click(object sender, EventArgs e)
-        {
+            private void button8_Click_1(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button8_Click_1(object sender, EventArgs e)
-        {
+            private void textBox10_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox10_TextChanged(object sender, EventArgs e)
-        {
+            private void textBox9_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox9_TextChanged(object sender, EventArgs e)
-        {
+            private void textBox8_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox8_TextChanged(object sender, EventArgs e)
-        {
+            private void textBox7_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
+            private void textBox6_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
+            private void textBox5_TextChanged_1(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox5_TextChanged_1(object sender, EventArgs e)
-        {
+            private void label10_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label10_Click(object sender, EventArgs e)
-        {
+            private void label9_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label9_Click(object sender, EventArgs e)
-        {
+            private void label8_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label8_Click(object sender, EventArgs e)
-        {
+            private void label7_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
+            private void label6_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
+            private void label5_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
+            private void label4_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
+            private void label3_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
+            private void label2_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
+            private void label1_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
+            private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
-        {
+            private void CConfirmation_Click_1(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void CConfirmation_Click_1(object sender, EventArgs e)
-        {
+            private void button12_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button12_Click(object sender, EventArgs e)
-        {
+            private void button13_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button13_Click(object sender, EventArgs e)
-        {
+            private void label21_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label21_Click(object sender, EventArgs e)
-        {
+            private void label22_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label22_Click(object sender, EventArgs e)
-        {
+            private void label23_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label23_Click(object sender, EventArgs e)
-        {
+            private void label24_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label24_Click(object sender, EventArgs e)
-        {
+            private void label25_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label25_Click(object sender, EventArgs e)
-        {
+            private void label26_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label26_Click(object sender, EventArgs e)
-        {
+            private void label27_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label27_Click(object sender, EventArgs e)
-        {
+            private void label28_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label28_Click(object sender, EventArgs e)
-        {
+            private void label29_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label29_Click(object sender, EventArgs e)
-        {
+            private void label30_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label30_Click(object sender, EventArgs e)
-        {
+            private void label11_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label11_Click(object sender, EventArgs e)
-        {
+            private void label12_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label12_Click(object sender, EventArgs e)
-        {
+            private void label13_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label13_Click(object sender, EventArgs e)
-        {
+            private void label14_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label14_Click(object sender, EventArgs e)
-        {
+            private void label15_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label15_Click(object sender, EventArgs e)
-        {
+            private void label16_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label16_Click(object sender, EventArgs e)
-        {
+            private void label17_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label17_Click(object sender, EventArgs e)
-        {
+            private void label18_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label18_Click(object sender, EventArgs e)
-        {
+            private void label19_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label19_Click(object sender, EventArgs e)
-        {
+            private void label20_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label20_Click(object sender, EventArgs e)
-        {
+            private void CComplete_Click_1(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void CComplete_Click_1(object sender, EventArgs e)
-        {
+            private void label31_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label31_Click(object sender, EventArgs e)
-        {
+            private void ViewJobTypePanel_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void ViewJobTypePanel_Paint(object sender, PaintEventArgs e)
-        {
+            private void label186_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label186_Click(object sender, EventArgs e)
-        {
+            private void button163_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button163_Click(object sender, EventArgs e)
-        {
+            private void panel15_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void panel15_Paint(object sender, PaintEventArgs e)
-        {
+            private void button164_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button164_Click(object sender, EventArgs e)
-        {
+            private void tableLayoutPanel27_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void tableLayoutPanel27_Paint(object sender, PaintEventArgs e)
-        {
+            private void textBox41_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox41_TextChanged(object sender, EventArgs e)
-        {
+            private void dataGridView15_CellContentClick(object sender, DataGridViewCellEventArgs e)
+            {
 
-        }
+            }
 
-        private void dataGridView15_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+            private void AddSupplierPanel_SelectedIndexChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void AddSupplierPanel_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            private void tabPage23_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tabPage23_Click(object sender, EventArgs e)
-        {
+            private void label187_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label187_Click(object sender, EventArgs e)
-        {
+            private void label191_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label191_Click(object sender, EventArgs e)
-        {
+            //Add Supplier Page
+            private void button167_Click(object sender, EventArgs e)
+            {
+                SupplierActionPanel.BringToFront();
+            }
 
-        }
+            private void button168_Click(object sender, EventArgs e)
+            {
+                //Attribute Mismatch with Database
+                CSTitleLbl.Text = STitleCmb.Text;
+                CSNameLbl.Text = SNameTb.Text;
+                CSCPNamelbl.Text = CPNameTb.Text;
+                CSCPNumberLbl.Text = CPNumberTb.Text;
+                CSCPEmailLbl.Text = CPEmailTb.Text;
+                CSCPALine1Lbl.Text = CPALine1Tb.Text;
+                CSCPALine2Lbl.Text = CPALine2Tb.Text;
+                CSCPALine3Lbl.Text = CPALine3Tb.Text;
+                CSCPACityLbl.Text = CPACityCmb.Text;
+                CSCPACountryLbl.Text = CPACountryCmb.Text;
+            }
 
-        private void button167_Click(object sender, EventArgs e)
-        {
+            private void textBox42_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button168_Click(object sender, EventArgs e)
-        {
+            private void textBox43_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox42_TextChanged(object sender, EventArgs e)
-        {
+            private void textBox45_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox43_TextChanged(object sender, EventArgs e)
-        {
+            private void textBox46_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox45_TextChanged(object sender, EventArgs e)
-        {
+            private void textBox47_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox46_TextChanged(object sender, EventArgs e)
-        {
+            private void label194_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox47_TextChanged(object sender, EventArgs e)
-        {
+            private void label195_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label194_Click(object sender, EventArgs e)
-        {
+            private void label196_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label195_Click(object sender, EventArgs e)
-        {
+            private void label197_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label196_Click(object sender, EventArgs e)
-        {
+            private void label198_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label197_Click(object sender, EventArgs e)
-        {
+            private void label199_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label198_Click(object sender, EventArgs e)
-        {
+            private void label200_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label199_Click(object sender, EventArgs e)
-        {
+            private void comboBox17_SelectedIndexChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label200_Click(object sender, EventArgs e)
-        {
+            private void comboBox18_SelectedIndexChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void comboBox17_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            private void comboBox19_SelectedIndexChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void comboBox18_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            private void comboBox20_SelectedIndexChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void comboBox19_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            private void tabPage24_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void comboBox20_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            private void label188_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tabPage24_Click(object sender, EventArgs e)
-        {
+            private void label189_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label188_Click(object sender, EventArgs e)
-        {
+            private void label190_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label189_Click(object sender, EventArgs e)
-        {
+            private void label192_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label190_Click(object sender, EventArgs e)
-        {
+            private void label193_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label192_Click(object sender, EventArgs e)
-        {
+            private void label201_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label193_Click(object sender, EventArgs e)
-        {
+            private void label202_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label201_Click(object sender, EventArgs e)
-        {
+            private void label224_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label202_Click(object sender, EventArgs e)
-        {
+            private void label225_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label224_Click(object sender, EventArgs e)
-        {
+            private void button169_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label225_Click(object sender, EventArgs e)
-        {
+            private void button170_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button169_Click(object sender, EventArgs e)
-        {
+            private void label203_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button170_Click(object sender, EventArgs e)
-        {
+            private void label205_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label203_Click(object sender, EventArgs e)
-        {
+            private void label206_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label205_Click(object sender, EventArgs e)
-        {
+            private void label207_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label206_Click(object sender, EventArgs e)
-        {
+            private void label208_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label207_Click(object sender, EventArgs e)
-        {
+            private void label209_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label208_Click(object sender, EventArgs e)
-        {
+            private void label210_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label209_Click(object sender, EventArgs e)
-        {
+            private void label211_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label210_Click(object sender, EventArgs e)
-        {
+            private void label212_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label211_Click(object sender, EventArgs e)
-        {
+            private void label223_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label212_Click(object sender, EventArgs e)
-        {
+            private void EquipmentActionPanel_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void label223_Click(object sender, EventArgs e)
-        {
+            private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void EquipmentActionPanel_Paint(object sender, PaintEventArgs e)
-        {
+            private void button51_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
-        {
+            private void button52_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button51_Click(object sender, EventArgs e)
-        {
+            private void ProductActionPanel_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void button52_Click(object sender, EventArgs e)
-        {
+            private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void ProductActionPanel_Paint(object sender, PaintEventArgs e)
-        {
+            private void button47_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
-        {
+            private void button48_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button47_Click(object sender, EventArgs e)
-        {
+            private void JobActionPanel_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void button48_Click(object sender, EventArgs e)
-        {
+            private void tableLayoutPanel7_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void JobActionPanel_Paint(object sender, PaintEventArgs e)
-        {
+            private void button62_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tableLayoutPanel7_Paint(object sender, PaintEventArgs e)
-        {
+            private void SupplierActionPanel_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void button62_Click(object sender, EventArgs e)
-        {
+            private void groupBox3_Enter(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void SupplierActionPanel_Paint(object sender, PaintEventArgs e)
-        {
+            private void tableLayoutPanel10_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void groupBox3_Enter(object sender, EventArgs e)
-        {
+            private void button67_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tableLayoutPanel10_Paint(object sender, PaintEventArgs e)
-        {
+            private void groupBox2_Enter(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button67_Click(object sender, EventArgs e)
-        {
+            private void tableLayoutPanel9_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
+            private void groupBox1_Enter(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tableLayoutPanel9_Paint(object sender, PaintEventArgs e)
-        {
+            private void tableLayoutPanel8_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
+            private void ViewPurchaseOrder_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void tableLayoutPanel8_Paint(object sender, PaintEventArgs e)
-        {
+            private void label213_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void ViewPurchaseOrder_Paint(object sender, PaintEventArgs e)
-        {
+            private void button175_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label213_Click(object sender, EventArgs e)
-        {
+            private void panel17_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void button175_Click(object sender, EventArgs e)
-        {
+            private void button176_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void panel17_Paint(object sender, PaintEventArgs e)
-        {
+            private void tableLayoutPanel29_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void button176_Click(object sender, EventArgs e)
-        {
+            private void button177_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tableLayoutPanel29_Paint(object sender, PaintEventArgs e)
-        {
+            private void button178_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button177_Click(object sender, EventArgs e)
-        {
+            private void button179_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button178_Click(object sender, EventArgs e)
-        {
+            private void textBox48_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button179_Click(object sender, EventArgs e)
-        {
+            private void dataGridView17_CellContentClick(object sender, DataGridViewCellEventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox48_TextChanged(object sender, EventArgs e)
-        {
+            private void AddSkillTab_SelectedIndexChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void dataGridView17_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+            private void tabPage12_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void AddSkillTab_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            private void textBox32_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tabPage12_Click(object sender, EventArgs e)
-        {
+            private void button128_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox32_TextChanged(object sender, EventArgs e)
-        {
+            private void button131_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button128_Click(object sender, EventArgs e)
-        {
+            private void label147_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button131_Click(object sender, EventArgs e)
-        {
+            private void tabPage13_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label147_Click(object sender, EventArgs e)
-        {
+            private void label153_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tabPage13_Click(object sender, EventArgs e)
-        {
+            private void label154_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label153_Click(object sender, EventArgs e)
-        {
+            private void button132_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label154_Click(object sender, EventArgs e)
-        {
+            private void button133_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button132_Click(object sender, EventArgs e)
-        {
+            private void label150_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button133_Click(object sender, EventArgs e)
-        {
+            private void label151_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label150_Click(object sender, EventArgs e)
-        {
+            private void tabPage14_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label151_Click(object sender, EventArgs e)
-        {
+            private void label152_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tabPage14_Click(object sender, EventArgs e)
-        {
+            private void DuplicateViewSupplierPanel_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void label152_Click(object sender, EventArgs e)
-        {
+            private void label60_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void DuplicateViewSupplierPanel_Paint(object sender, PaintEventArgs e)
-        {
+            private void button85_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label60_Click(object sender, EventArgs e)
-        {
+            private void panel6_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void button85_Click(object sender, EventArgs e)
-        {
+            private void button86_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
+            private void tableLayoutPanel14_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void button86_Click(object sender, EventArgs e)
-        {
+            private void button87_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tableLayoutPanel14_Paint(object sender, PaintEventArgs e)
-        {
+            private void button88_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button87_Click(object sender, EventArgs e)
-        {
+            private void textBox17_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button88_Click(object sender, EventArgs e)
-        {
+            private void dataGridView5_CellContentClick(object sender, DataGridViewCellEventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox17_TextChanged(object sender, EventArgs e)
-        {
+            private void EmployeeActionPanel_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void dataGridView5_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+            private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void EmployeeActionPanel_Paint(object sender, PaintEventArgs e)
-        {
+            private void button32_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
+            private void ProfileActionPanel_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void button32_Click(object sender, EventArgs e)
-        {
+            private void tableLayoutPanel18_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void ProfileActionPanel_Paint(object sender, PaintEventArgs e)
-        {
+            private void AddProjectRequestPanel_SelectedIndexChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tableLayoutPanel18_Paint(object sender, PaintEventArgs e)
-        {
+            private void tabPage17_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void AddProjectRequestPanel_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            private void label171_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tabPage17_Click(object sender, EventArgs e)
-        {
+            private void label172_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label171_Click(object sender, EventArgs e)
-        {
+            private void label173_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label172_Click(object sender, EventArgs e)
-        {
+            private void comboBox14_SelectedIndexChanged_1(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label173_Click(object sender, EventArgs e)
-        {
+            private void comboBox15_SelectedIndexChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void comboBox14_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
+            private void comboBox16_SelectedIndexChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void comboBox15_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            private void textBox39_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void comboBox16_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            private void label170_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox39_TextChanged(object sender, EventArgs e)
-        {
+            private void textBox38_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label170_Click(object sender, EventArgs e)
-        {
+            private void button159_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox38_TextChanged(object sender, EventArgs e)
-        {
+            private void button160_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button159_Click(object sender, EventArgs e)
-        {
+            private void label166_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button160_Click(object sender, EventArgs e)
-        {
+            private void label177_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label166_Click(object sender, EventArgs e)
-        {
+            private void label178_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label177_Click(object sender, EventArgs e)
-        {
+            private void label180_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label178_Click(object sender, EventArgs e)
-        {
+            private void label181_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label180_Click(object sender, EventArgs e)
-        {
+            private void label167_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label181_Click(object sender, EventArgs e)
-        {
+            private void label168_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label167_Click(object sender, EventArgs e)
-        {
+            private void label174_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label168_Click(object sender, EventArgs e)
-        {
+            private void label175_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label174_Click(object sender, EventArgs e)
-        {
+            private void label176_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label175_Click(object sender, EventArgs e)
-        {
+            private void button161_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label176_Click(object sender, EventArgs e)
-        {
+            private void button162_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button161_Click(object sender, EventArgs e)
-        {
+            private void tabPage19_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button162_Click(object sender, EventArgs e)
-        {
+            private void label169_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tabPage19_Click(object sender, EventArgs e)
-        {
+            private void AddEmployeeTypeTab_SelectedIndexChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label169_Click(object sender, EventArgs e)
-        {
+            private void tabPage9_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void AddEmployeeTypeTab_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            private void textBox30_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tabPage9_Click(object sender, EventArgs e)
-        {
+            private void button119_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox30_TextChanged(object sender, EventArgs e)
-        {
+            private void button120_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button119_Click(object sender, EventArgs e)
-        {
+            private void label109_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button120_Click(object sender, EventArgs e)
-        {
+            private void tabPage10_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label109_Click(object sender, EventArgs e)
-        {
+            private void label144_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tabPage10_Click(object sender, EventArgs e)
-        {
+            private void label145_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label144_Click(object sender, EventArgs e)
-        {
+            private void button121_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label145_Click(object sender, EventArgs e)
-        {
+            private void button122_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button121_Click(object sender, EventArgs e)
-        {
+            private void label110_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button122_Click(object sender, EventArgs e)
-        {
+            private void label111_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label110_Click(object sender, EventArgs e)
-        {
+            private void tabPage11_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label111_Click(object sender, EventArgs e)
-        {
+            private void label143_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tabPage11_Click(object sender, EventArgs e)
-        {
+            private void InitiateProjectPanel_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void label143_Click(object sender, EventArgs e)
-        {
+            private void button148_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void InitiateProjectPanel_Paint(object sender, PaintEventArgs e)
-        {
+            private void label164_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button148_Click(object sender, EventArgs e)
-        {
+            private void button146_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label164_Click(object sender, EventArgs e)
-        {
+            private void textBox36_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button146_Click(object sender, EventArgs e)
-        {
+            private void dataGridView13_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox36_TextChanged(object sender, EventArgs e)
-        {
+            private void EmployeeUpdateLoginPage_SelectedIndexChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void dataGridView13_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
+            private void tabPage15_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void EmployeeUpdateLoginPage_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+            {
 
-        }
+            }
 
-        private void tabPage15_Click(object sender, EventArgs e)
-        {
+            private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+            {
 
-        }
+            }
 
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
+            private void label156_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
+            private void label157_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label156_Click(object sender, EventArgs e)
-        {
+            private void button140_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label157_Click(object sender, EventArgs e)
-        {
+            private void button141_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button140_Click(object sender, EventArgs e)
-        {
+            private void label158_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button141_Click(object sender, EventArgs e)
-        {
+            private void label159_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label158_Click(object sender, EventArgs e)
-        {
+            private void textBox34_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label159_Click(object sender, EventArgs e)
-        {
+            private void textBox35_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox34_TextChanged(object sender, EventArgs e)
-        {
+            private void tabPage16_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox35_TextChanged(object sender, EventArgs e)
-        {
+            private void label160_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tabPage16_Click(object sender, EventArgs e)
-        {
+            private void label161_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label160_Click(object sender, EventArgs e)
-        {
+            private void label162_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label161_Click(object sender, EventArgs e)
-        {
+            private void label163_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label162_Click(object sender, EventArgs e)
-        {
+            private void button142_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label163_Click(object sender, EventArgs e)
-        {
+            private void button143_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button142_Click(object sender, EventArgs e)
-        {
+            private void ViewSkillPanel_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void button143_Click(object sender, EventArgs e)
-        {
+            private void label155_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void ViewSkillPanel_Paint(object sender, PaintEventArgs e)
-        {
+            private void button134_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void label155_Click(object sender, EventArgs e)
-        {
+            private void panel12_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void button134_Click(object sender, EventArgs e)
-        {
+            private void button135_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void panel12_Paint(object sender, PaintEventArgs e)
-        {
+            private void tableLayoutPanel22_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void button135_Click(object sender, EventArgs e)
-        {
+            private void button136_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tableLayoutPanel22_Paint(object sender, PaintEventArgs e)
-        {
+            private void button137_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button136_Click(object sender, EventArgs e)
-        {
+            private void textBox33_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button137_Click(object sender, EventArgs e)
-        {
+            private void dataGridView11_CellContentClick(object sender, DataGridViewCellEventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox33_TextChanged(object sender, EventArgs e)
-        {
+            private void VehicleActionPanel_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void dataGridView11_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+            private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void VehicleActionPanel_Paint(object sender, PaintEventArgs e)
-        {
+            private void button53_Click(object sender, EventArgs e)
+            {
+                AddVehiclePanel.BringToFront();
+            }
 
-        }
+            private void button55_Click(object sender, EventArgs e)
+            {
+                Form VT = new AddVehicleTypePage();
+                VT.ShowDialog();
+            }
 
-        private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
-        {
+            private void button56_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button53_Click(object sender, EventArgs e)
-        {
+            private void button57_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button55_Click(object sender, EventArgs e)
-        {
+            private void DashboardPanel_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void button56_Click(object sender, EventArgs e)
-        {
+            private void panel13_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void button57_Click(object sender, EventArgs e)
-        {
+            private void button195_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void DashboardPanel_Paint(object sender, PaintEventArgs e)
-        {
+            private void tableLayoutPanel31_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void panel13_Paint(object sender, PaintEventArgs e)
-        {
+            private void ClientQoutationApprovalPanel_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void button195_Click(object sender, EventArgs e)
-        {
+            private void label261_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tableLayoutPanel31_Paint(object sender, PaintEventArgs e)
-        {
+            private void button147_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void ClientQoutationApprovalPanel_Paint(object sender, PaintEventArgs e)
-        {
+            private void panel20_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void label261_Click(object sender, EventArgs e)
-        {
+            private void button197_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button147_Click(object sender, EventArgs e)
-        {
+            private void tableLayoutPanel32_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void panel20_Paint(object sender, PaintEventArgs e)
-        {
+            private void button198_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button197_Click(object sender, EventArgs e)
-        {
+            private void textBox56_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tableLayoutPanel32_Paint(object sender, PaintEventArgs e)
-        {
+            private void dataGridView19_CellContentClick(object sender, DataGridViewCellEventArgs e)
+            {
 
-        }
+            }
 
-        private void button198_Click(object sender, EventArgs e)
-        {
+            private void button199_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox56_TextChanged(object sender, EventArgs e)
-        {
+            private void pictureBox6_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void dataGridView19_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+            private void pictureBox3_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button199_Click(object sender, EventArgs e)
-        {
+            private void pictureBox12_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
+            private void pictureBox10_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
+            private void pictureBox11_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void pictureBox12_Click(object sender, EventArgs e)
-        {
+            private void pictureBox8_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void pictureBox10_Click(object sender, EventArgs e)
-        {
+            private void pictureBox4_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void pictureBox11_Click(object sender, EventArgs e)
-        {
+            private void pictureBox2_Click_1(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
+            private void pictureBox1_Click_1(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
+            private void pictureBox9_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void pictureBox2_Click_1(object sender, EventArgs e)
-        {
+            private void pictureBox7_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
+            private void pictureBox5_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void pictureBox9_Click(object sender, EventArgs e)
-        {
+            private void label262_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
+            private void button200_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
+            private void panel21_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void label262_Click(object sender, EventArgs e)
-        {
+            private void button201_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button200_Click(object sender, EventArgs e)
-        {
+            private void tableLayoutPanel33_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void panel21_Paint(object sender, PaintEventArgs e)
-        {
+            private void button202_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button201_Click(object sender, EventArgs e)
-        {
+            private void button203_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tableLayoutPanel33_Paint(object sender, PaintEventArgs e)
-        {
+            private void textBox57_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button202_Click(object sender, EventArgs e)
-        {
+            private void dataGridView20_CellContentClick(object sender, DataGridViewCellEventArgs e)
+            {
 
-        }
+            }
 
-        private void button203_Click(object sender, EventArgs e)
-        {
+            private void button82_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox57_TextChanged(object sender, EventArgs e)
-        {
+            private void ProjectCancellationPanel_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void dataGridView20_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+            private void label263_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button82_Click(object sender, EventArgs e)
-        {
+            private void button204_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void ProjectCancellationPanel_Paint(object sender, PaintEventArgs e)
-        {
+            private void panel22_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void label263_Click(object sender, EventArgs e)
-        {
+            private void button205_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button204_Click(object sender, EventArgs e)
-        {
+            private void tableLayoutPanel34_Paint(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void panel22_Paint(object sender, PaintEventArgs e)
-        {
+            private void button206_Click(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void button205_Click(object sender, EventArgs e)
-        {
+            private void textBox58_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void tableLayoutPanel34_Paint(object sender, PaintEventArgs e)
-        {
+            private void dataGridView21_CellContentClick(object sender, DataGridViewCellEventArgs e)
+            {
 
-        }
+            }
 
-        private void button206_Click(object sender, EventArgs e)
-        {
+            private void panel2_Paint_2(object sender, PaintEventArgs e)
+            {
 
-        }
+            }
 
-        private void textBox58_TextChanged(object sender, EventArgs e)
-        {
+            private void button145_Click_1(object sender, EventArgs e)
+            {
+                Form m = new AddProjectPage();
+                m.ShowDialog();
+                this.Hide();
+            }
 
-        }
+            private void pictureBox14_Click(object sender, EventArgs e)
+            {
 
-        private void dataGridView21_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+                this.WindowState = FormWindowState.Maximized;
+            }
 
-        }
+            private void dataGridView12_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+            {
 
-        private void panel2_Paint_2(object sender, PaintEventArgs e)
-        {
+            }
 
-        }
+            private void groupBox5_Enter(object sender, EventArgs e)
+            {
 
-        private void button145_Click_1(object sender, EventArgs e)
-        {
-            Form m = new AddProjectPage();
-            m.ShowDialog();
-            this.Hide();
-        }
+            }
 
-        private void pictureBox14_Click(object sender, EventArgs e)
-        {
+            private void button116_Click_1(object sender, EventArgs e)
+            {
 
-            this.WindowState = FormWindowState.Maximized;
-        }
+            }
 
-        private void dataGridView12_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
+            private void button115_Click_1(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void groupBox5_Enter(object sender, EventArgs e)
-        {
+            private void button145_Click_2(object sender, EventArgs e)
+            {
+                Form APP = new AddProjectPage();
+                this.Hide();
+                APP.ShowDialog();
+                this.Show();
+            }
 
-        }
+            private void button144_Click_1(object sender, EventArgs e)
+            {
+                ProjectActionPanel.BringToFront();
+            }
 
-        private void button116_Click_1(object sender, EventArgs e)
-        {
+            private void button20_Click_1(object sender, EventArgs e)
+            {
+                MoveListBoxItems(SkillList, AddedSkillList);
+            }
 
-        }
-
-        private void button115_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button145_Click_2(object sender, EventArgs e)
-        {
-            Form APP = new AddProjectPage();
-            this.Hide();
-            APP.ShowDialog();
-            this.Show();
-        }
-
-        private void button144_Click_1(object sender, EventArgs e)
-        {
-            ProjectActionPanel.BringToFront();
-        }
-
-        private void button20_Click_1(object sender, EventArgs e)
-        {
-            MoveListBoxItems(SkillList, AddedSkillList);
-        }
-
-        private void button21_Click_2(object sender, EventArgs e)
-        {
-            MoveListBoxItems(AddedSkillList, SkillList);
+            private void button21_Click_2(object sender, EventArgs e)
+            {
+                MoveListBoxItems(AddedSkillList, SkillList);
+            }
         }
     }
-}
