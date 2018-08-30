@@ -2618,7 +2618,6 @@ namespace Insight_Prototype_
             {
                 MessageBox.Show("User already exists. Please try again.");
             }
-            
         }
 
             private void MoveListBoxItems(ListBox source, ListBox destination)
