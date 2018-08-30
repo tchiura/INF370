@@ -58,6 +58,12 @@
     <Compile Include="AccessLevel.cs">
       <DependentUpon>InsightModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="AddClientDetailsPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddClientDetailsPage.Designer.cs">
+      <DependentUpon>AddClientDetailsPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddEquipmentTypePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,12 @@
     <Compile Include="Address.cs">
       <DependentUpon>InsightModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="AddSkillPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSkillPage.Designer.cs">
+      <DependentUpon>AddSkillPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddVehicleTypePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +174,12 @@
     </Compile>
     <Compile Include="Client.cs">
       <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientHomeScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientHomeScreen.Designer.cs">
+      <DependentUpon>ClientHomeScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="ClientLogin.cs">
       <DependentUpon>InsightModel.tt</DependentUpon>
@@ -535,6 +553,9 @@
       <DependentUpon>ViewQuotationPage.cs</DependentUpon>
     </Compile>
     <Compile Include="WinAPI.cs" />
+    <EmbeddedResource Include="AddClientDetailsPage.resx">
+      <DependentUpon>AddClientDetailsPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddEquipmentTypePage.resx">
       <DependentUpon>AddEquipmentTypePage.cs</DependentUpon>
     </EmbeddedResource>
@@ -562,6 +583,9 @@
     <EmbeddedResource Include="AddProjectPage.resx">
       <DependentUpon>AddProjectPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddSkillPage.resx">
+      <DependentUpon>AddSkillPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddVehicleTypePage.resx">
       <DependentUpon>AddVehicleTypePage.cs</DependentUpon>
     </EmbeddedResource>
@@ -582,6 +606,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CancelPurchaseOrderPage.resx">
       <DependentUpon>CancelPurchaseOrderPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientHomeScreen.resx">
+      <DependentUpon>ClientHomeScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreatePurchaseOrderPage.resx">
       <DependentUpon>CreatePurchaseOrderPage.cs</DependentUpon>
@@ -621,6 +648,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HomeScreen.resx">
       <DependentUpon>HomeScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="ReceiveProductsPage.resx">
       <DependentUpon>ReceiveProductsPage.cs</DependentUpon>
@@ -763,19 +791,19 @@
     <None Include="Resources\Cancel_100px2.png" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="InsightModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>InsightModel.Context.cs</LastGenOutput>
       <DependentUpon>InsightModel.edmx</DependentUpon>
+      <LastGenOutput>InsightModel.Context.cs</LastGenOutput>
     </Content>
     <Content Include="InsightModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>InsightModel.edmx</DependentUpon>
       <LastGenOutput>InsightModel.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

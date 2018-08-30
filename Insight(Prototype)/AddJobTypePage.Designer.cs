@@ -29,27 +29,31 @@
         private void InitializeComponent()
         {
             this.Userlbl = new System.Windows.Forms.Label();
-            this.ClosePicBx = new System.Windows.Forms.PictureBox();
             this.TopBarPanel = new System.Windows.Forms.Panel();
-            this.AddJobTypeTC = new System.Windows.Forms.TabControl();
+            this.AddJobTypeTab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tbJobType = new System.Windows.Forms.TextBox();
-            this.JTCancelBtn = new System.Windows.Forms.Button();
-            this.JTNextBtn = new System.Windows.Forms.Button();
+            this.AJTypeTb = new System.Windows.Forms.TextBox();
+            this.AJTCancelBtn = new System.Windows.Forms.Button();
+            this.AJTNextBtn = new System.Windows.Forms.Button();
             this.label58 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.JTBackBtn = new System.Windows.Forms.Button();
-            this.JTConfirmBtn = new System.Windows.Forms.Button();
-            this.JTConfirmLbl = new System.Windows.Forms.Label();
+            this.AJTBackBtn = new System.Windows.Forms.Button();
+            this.AJTConfirmBtn = new System.Windows.Forms.Button();
+            this.AJTConfirmLbl = new System.Windows.Forms.Label();
             this.label91 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label99 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.MinimisePicBx = new System.Windows.Forms.PictureBox();
+            this.ClosePicBx = new System.Windows.Forms.PictureBox();
             this.TopBarPanel.SuspendLayout();
-            this.AddJobTypeTC.SuspendLayout();
+            this.AddJobTypeTab.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
             this.SuspendLayout();
             // 
             // Userlbl
@@ -62,22 +66,12 @@
             this.Userlbl.TabIndex = 0;
             this.Userlbl.Text = "Add Job Type";
             // 
-            // ClosePicBx
-            // 
-            this.ClosePicBx.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ClosePicBx.Image = global::Insight_Prototype_.Properties.Resources.Cancel_100px2;
-            this.ClosePicBx.Location = new System.Drawing.Point(432, 0);
-            this.ClosePicBx.Name = "ClosePicBx";
-            this.ClosePicBx.Size = new System.Drawing.Size(28, 30);
-            this.ClosePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ClosePicBx.TabIndex = 0;
-            this.ClosePicBx.TabStop = false;
-            this.ClosePicBx.Click += new System.EventHandler(this.ClosePicBx_Click);
-            // 
             // TopBarPanel
             // 
             this.TopBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.TopBarPanel.Controls.Add(this.pictureBox14);
             this.TopBarPanel.Controls.Add(this.Userlbl);
+            this.TopBarPanel.Controls.Add(this.MinimisePicBx);
             this.TopBarPanel.Controls.Add(this.ClosePicBx);
             this.TopBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopBarPanel.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -88,25 +82,25 @@
             this.TopBarPanel.Size = new System.Drawing.Size(460, 30);
             this.TopBarPanel.TabIndex = 12;
             // 
-            // AddJobTypeTC
+            // AddJobTypeTab
             // 
-            this.AddJobTypeTC.Controls.Add(this.tabPage1);
-            this.AddJobTypeTC.Controls.Add(this.tabPage2);
-            this.AddJobTypeTC.Controls.Add(this.tabPage3);
-            this.AddJobTypeTC.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddJobTypeTC.Location = new System.Drawing.Point(0, 30);
-            this.AddJobTypeTC.Margin = new System.Windows.Forms.Padding(4);
-            this.AddJobTypeTC.Name = "AddJobTypeTC";
-            this.AddJobTypeTC.SelectedIndex = 0;
-            this.AddJobTypeTC.Size = new System.Drawing.Size(460, 170);
-            this.AddJobTypeTC.TabIndex = 14;
+            this.AddJobTypeTab.Controls.Add(this.tabPage1);
+            this.AddJobTypeTab.Controls.Add(this.tabPage2);
+            this.AddJobTypeTab.Controls.Add(this.tabPage3);
+            this.AddJobTypeTab.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AddJobTypeTab.Location = new System.Drawing.Point(0, 30);
+            this.AddJobTypeTab.Margin = new System.Windows.Forms.Padding(4);
+            this.AddJobTypeTab.Name = "AddJobTypeTab";
+            this.AddJobTypeTab.SelectedIndex = 0;
+            this.AddJobTypeTab.Size = new System.Drawing.Size(460, 170);
+            this.AddJobTypeTab.TabIndex = 14;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
-            this.tabPage1.Controls.Add(this.tbJobType);
-            this.tabPage1.Controls.Add(this.JTCancelBtn);
-            this.tabPage1.Controls.Add(this.JTNextBtn);
+            this.tabPage1.Controls.Add(this.AJTypeTb);
+            this.tabPage1.Controls.Add(this.AJTCancelBtn);
+            this.tabPage1.Controls.Add(this.AJTNextBtn);
             this.tabPage1.Controls.Add(this.label58);
             this.tabPage1.ForeColor = System.Drawing.Color.Black;
             this.tabPage1.Location = new System.Drawing.Point(4, 28);
@@ -117,40 +111,40 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Details";
             // 
-            // tbJobType
+            // AJTypeTb
             // 
-            this.tbJobType.Location = new System.Drawing.Point(170, 25);
-            this.tbJobType.Margin = new System.Windows.Forms.Padding(4);
-            this.tbJobType.Name = "tbJobType";
-            this.tbJobType.Size = new System.Drawing.Size(245, 27);
-            this.tbJobType.TabIndex = 32;
-            this.tbJobType.Text = "Organisation";
+            this.AJTypeTb.Location = new System.Drawing.Point(170, 25);
+            this.AJTypeTb.Margin = new System.Windows.Forms.Padding(4);
+            this.AJTypeTb.Name = "AJTypeTb";
+            this.AJTypeTb.Size = new System.Drawing.Size(245, 27);
+            this.AJTypeTb.TabIndex = 32;
+            this.AJTypeTb.Text = "Organisation";
             // 
-            // JTCancelBtn
+            // AJTCancelBtn
             // 
-            this.JTCancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.JTCancelBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.JTCancelBtn.Location = new System.Drawing.Point(286, 99);
-            this.JTCancelBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.JTCancelBtn.Name = "JTCancelBtn";
-            this.JTCancelBtn.Size = new System.Drawing.Size(75, 30);
-            this.JTCancelBtn.TabIndex = 31;
-            this.JTCancelBtn.Text = "Cancel";
-            this.JTCancelBtn.UseVisualStyleBackColor = true;
-            this.JTCancelBtn.Click += new System.EventHandler(this.JTCancelBtn_Click);
+            this.AJTCancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AJTCancelBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AJTCancelBtn.Location = new System.Drawing.Point(286, 99);
+            this.AJTCancelBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.AJTCancelBtn.Name = "AJTCancelBtn";
+            this.AJTCancelBtn.Size = new System.Drawing.Size(75, 30);
+            this.AJTCancelBtn.TabIndex = 31;
+            this.AJTCancelBtn.Text = "Cancel";
+            this.AJTCancelBtn.UseVisualStyleBackColor = true;
+            this.AJTCancelBtn.Click += new System.EventHandler(this.AJTCancelBtn_Click);
             // 
-            // JTNextBtn
+            // AJTNextBtn
             // 
-            this.JTNextBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.JTNextBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.JTNextBtn.Location = new System.Drawing.Point(369, 100);
-            this.JTNextBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.JTNextBtn.Name = "JTNextBtn";
-            this.JTNextBtn.Size = new System.Drawing.Size(75, 30);
-            this.JTNextBtn.TabIndex = 30;
-            this.JTNextBtn.Text = "Next";
-            this.JTNextBtn.UseVisualStyleBackColor = true;
-            this.JTNextBtn.Click += new System.EventHandler(this.Button22_Click);
+            this.AJTNextBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AJTNextBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AJTNextBtn.Location = new System.Drawing.Point(369, 100);
+            this.AJTNextBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.AJTNextBtn.Name = "AJTNextBtn";
+            this.AJTNextBtn.Size = new System.Drawing.Size(75, 30);
+            this.AJTNextBtn.TabIndex = 30;
+            this.AJTNextBtn.Text = "Next";
+            this.AJTNextBtn.UseVisualStyleBackColor = true;
+            this.AJTNextBtn.Click += new System.EventHandler(this.button22_Click);
             // 
             // label58
             // 
@@ -165,9 +159,9 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
-            this.tabPage2.Controls.Add(this.JTBackBtn);
-            this.tabPage2.Controls.Add(this.JTConfirmBtn);
-            this.tabPage2.Controls.Add(this.JTConfirmLbl);
+            this.tabPage2.Controls.Add(this.AJTBackBtn);
+            this.tabPage2.Controls.Add(this.AJTConfirmBtn);
+            this.tabPage2.Controls.Add(this.AJTConfirmLbl);
             this.tabPage2.Controls.Add(this.label91);
             this.tabPage2.ForeColor = System.Drawing.Color.Black;
             this.tabPage2.Location = new System.Drawing.Point(4, 28);
@@ -178,46 +172,46 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Confirmation";
             // 
-            // JTBackBtn
+            // AJTBackBtn
             // 
-            this.JTBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.JTBackBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.JTBackBtn.Location = new System.Drawing.Point(286, 100);
-            this.JTBackBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.JTBackBtn.Name = "JTBackBtn";
-            this.JTBackBtn.Size = new System.Drawing.Size(75, 30);
-            this.JTBackBtn.TabIndex = 37;
-            this.JTBackBtn.Text = "Back";
-            this.JTBackBtn.UseVisualStyleBackColor = true;
-            this.JTBackBtn.Click += new System.EventHandler(this.JTBackBtn_Click);
+            this.AJTBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AJTBackBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AJTBackBtn.Location = new System.Drawing.Point(286, 100);
+            this.AJTBackBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.AJTBackBtn.Name = "AJTBackBtn";
+            this.AJTBackBtn.Size = new System.Drawing.Size(75, 30);
+            this.AJTBackBtn.TabIndex = 37;
+            this.AJTBackBtn.Text = "Back";
+            this.AJTBackBtn.UseVisualStyleBackColor = true;
+            this.AJTBackBtn.Click += new System.EventHandler(this.AJTBackBtn_Click);
             // 
-            // JTConfirmBtn
+            // AJTConfirmBtn
             // 
-            this.JTConfirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.JTConfirmBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.JTConfirmBtn.Location = new System.Drawing.Point(369, 100);
-            this.JTConfirmBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.JTConfirmBtn.Name = "JTConfirmBtn";
-            this.JTConfirmBtn.Size = new System.Drawing.Size(75, 30);
-            this.JTConfirmBtn.TabIndex = 36;
-            this.JTConfirmBtn.Text = "Confirm";
-            this.JTConfirmBtn.UseVisualStyleBackColor = true;
-            this.JTConfirmBtn.Click += new System.EventHandler(this.button24_Click);
+            this.AJTConfirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AJTConfirmBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AJTConfirmBtn.Location = new System.Drawing.Point(369, 100);
+            this.AJTConfirmBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.AJTConfirmBtn.Name = "AJTConfirmBtn";
+            this.AJTConfirmBtn.Size = new System.Drawing.Size(75, 30);
+            this.AJTConfirmBtn.TabIndex = 36;
+            this.AJTConfirmBtn.Text = "Confirm";
+            this.AJTConfirmBtn.UseVisualStyleBackColor = true;
+            this.AJTConfirmBtn.Click += new System.EventHandler(this.AJTConfirmBtn_Click);
             // 
-            // JTConfirmLbl
+            // AJTConfirmLbl
             // 
-            this.JTConfirmLbl.AutoSize = true;
-            this.JTConfirmLbl.Location = new System.Drawing.Point(227, 37);
-            this.JTConfirmLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.JTConfirmLbl.Name = "JTConfirmLbl";
-            this.JTConfirmLbl.Size = new System.Drawing.Size(93, 19);
-            this.JTConfirmLbl.TabIndex = 33;
-            this.JTConfirmLbl.Text = "Organisation";
+            this.AJTConfirmLbl.AutoSize = true;
+            this.AJTConfirmLbl.Location = new System.Drawing.Point(220, 30);
+            this.AJTConfirmLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.AJTConfirmLbl.Name = "AJTConfirmLbl";
+            this.AJTConfirmLbl.Size = new System.Drawing.Size(93, 19);
+            this.AJTConfirmLbl.TabIndex = 33;
+            this.AJTConfirmLbl.Text = "Organisation";
             // 
             // label91
             // 
             this.label91.AutoSize = true;
-            this.label91.Location = new System.Drawing.Point(33, 37);
+            this.label91.Location = new System.Drawing.Point(26, 30);
             this.label91.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label91.Name = "label91";
             this.label91.Size = new System.Drawing.Size(72, 19);
@@ -248,48 +242,85 @@
             this.label99.TabIndex = 1;
             this.label99.Text = "Job Type Successfully Added";
             // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox14.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
+            this.pictureBox14.Location = new System.Drawing.Point(376, 0);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(28, 30);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 2;
+            this.pictureBox14.TabStop = false;
+            // 
+            // MinimisePicBx
+            // 
+            this.MinimisePicBx.Dock = System.Windows.Forms.DockStyle.Right;
+            this.MinimisePicBx.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
+            this.MinimisePicBx.Location = new System.Drawing.Point(404, 0);
+            this.MinimisePicBx.Name = "MinimisePicBx";
+            this.MinimisePicBx.Size = new System.Drawing.Size(28, 30);
+            this.MinimisePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.MinimisePicBx.TabIndex = 1;
+            this.MinimisePicBx.TabStop = false;
+            // 
+            // ClosePicBx
+            // 
+            this.ClosePicBx.Dock = System.Windows.Forms.DockStyle.Right;
+            this.ClosePicBx.Image = global::Insight_Prototype_.Properties.Resources.Cancel_100px2;
+            this.ClosePicBx.Location = new System.Drawing.Point(432, 0);
+            this.ClosePicBx.Name = "ClosePicBx";
+            this.ClosePicBx.Size = new System.Drawing.Size(28, 30);
+            this.ClosePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ClosePicBx.TabIndex = 0;
+            this.ClosePicBx.TabStop = false;
+            // 
             // AddJobTypePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(460, 200);
-            this.Controls.Add(this.AddJobTypeTC);
+            this.Controls.Add(this.AddJobTypeTab);
             this.Controls.Add(this.TopBarPanel);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddJobTypePage";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AddJobTypePage";
-            ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).EndInit();
             this.TopBarPanel.ResumeLayout(false);
             this.TopBarPanel.PerformLayout();
-            this.AddJobTypeTC.ResumeLayout(false);
+            this.AddJobTypeTab.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Label Userlbl;
+        private System.Windows.Forms.PictureBox MinimisePicBx;
         private System.Windows.Forms.PictureBox ClosePicBx;
         private System.Windows.Forms.Panel TopBarPanel;
-        private System.Windows.Forms.TabControl AddJobTypeTC;
+        private System.Windows.Forms.TabControl AddJobTypeTab;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox tbJobType;
-        private System.Windows.Forms.Button JTCancelBtn;
-        private System.Windows.Forms.Button JTNextBtn;
+        private System.Windows.Forms.TextBox AJTypeTb;
+        private System.Windows.Forms.Button AJTCancelBtn;
+        private System.Windows.Forms.Button AJTNextBtn;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button JTBackBtn;
-        private System.Windows.Forms.Button JTConfirmBtn;
-        private System.Windows.Forms.Label JTConfirmLbl;
+        private System.Windows.Forms.Button AJTBackBtn;
+        private System.Windows.Forms.Button AJTConfirmBtn;
+        private System.Windows.Forms.Label AJTConfirmLbl;
         private System.Windows.Forms.Label label91;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label99;

@@ -12,54 +12,51 @@ namespace Insight_Prototype_
 {
     public partial class AddProductTypePage : Form
     {
+        string ProdType = "";
         public AddProductTypePage()
         {
             InitializeComponent();
         }
 
-        string ProdDescr = "";
-        private void ClosePicBx_Click(object sender, EventArgs e)
+        private void AProdTCancelBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Form Home = new HomeScreen();
+            Home.Show();
+            this.Show();
         }
 
-        private void AProdNextBtn_Click(object sender, EventArgs e)
+        private void AProdTNextBtn_Click(object sender, EventArgs e)
         {
-            
-            ProdDescr = ProdTypeTb.Text;
-            if (ProdDescr == "")
+            ProdType = AProdTypeTb.Text;
+            if (ProdType == "")
             {
-                MessageBox.Show("Please Enter an Product Type");
+                MessageBox.Show("Please enter a valid Employee Type.");
             }
             else
             {
-                ProdTConfirmLbl.Text = ProdDescr;
-                AddProductTypeTC.SelectedTab = AddProductTypeTC.TabPages[1];
+                AProdTConftimLbl.Text = ProdType;
+                AddProductTypeTab.SelectedIndex = 1;
             }
+
         }
 
-        private void ProdTBackBtn_Click(object sender, EventArgs e)
-        {
-            AddProductTypeTC.SelectedTab = AddProductTypeTC.TabPages[0];
+        private void AProdTBackBtn_Click(object sender, EventArgs e)
+        { 
+            AddProductTypeTab.SelectedIndex = 0;
         }
 
-        private void ProbTConfirmBtn_Click(object sender, EventArgs e)
+        private void AProdTConfirmBtn_Click(object sender, EventArgs e)
         {
-            ProductType InsightProductType = new ProductType();
-            InsightProductType.ProductTypeDescription = ProdDescr;
+            ProductType InsightProdType = new ProductType();
+
+            InsightProdType.ProductTypeDescription = ProdType;
 
             using (InsightEntities db = new InsightEntities())
             {
-                db.ProductTypes.Add(InsightProductType);
+                db.ProductTypes.Add(InsightProdType);
                 db.SaveChanges();
             }
-
-            AddProductTypeTC.SelectedTab = AddProductTypeTC.TabPages[2];
-        }
-
-        private void AProdCancelBtn_Click(object sender, EventArgs e)
-        {
-            this.Close();
+                AddProductTypeTab.SelectedIndex = 2;
         }
     }
 }

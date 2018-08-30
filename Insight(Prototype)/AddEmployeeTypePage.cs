@@ -12,54 +12,52 @@ namespace Insight_Prototype_
 {
     public partial class AddEmployeeTypePage : Form
     {
+        string EType = "";
         public AddEmployeeTypePage()
         {
             InitializeComponent();
         }
 
-        private void ClosePicBx_Click(object sender, EventArgs e)
+        private void button22_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        string EmpDescr = "";
-
-        private void ETNextBtn_Click(object sender, EventArgs e)
-        {
-            EmpDescr = EmpTypetb.Text;
-            if (EmpDescr == "")
+            EType = AETypeTb.Text;
+            if(EType == "")
             {
-                MessageBox.Show("Please Enter an Employee Type");
+                MessageBox.Show("Please enter a valid Employee Type.");
             }
             else
             {
-                ETConfirmLbl.Text = EmpDescr;
-                AddEmployeeTypeTC.SelectedTab = AddEmployeeTypeTC.TabPages[1];
+                AETConfirmLbl.Text = EType;
+                AddEmployeeTypeTab.SelectedIndex = 1;
             }
         }
 
-        private void ETConfirmBtn_Click(object sender, EventArgs e)
+        private void AETBackBtn_Click(object sender, EventArgs e)
+        {
+            AddEmployeeTypeTab.SelectedIndex = 0;
+            AETypeTb.Focus();
+            AETypeTb.Clear();
+        }
+
+        private void AETConfirmBtn_Click(object sender, EventArgs e)
         {
             EmployeeType InsightEmployeeType = new EmployeeType();
-            InsightEmployeeType.EmployeeTypeDescription = EmpDescr;
+
+            InsightEmployeeType.EmployeeTypeDescription = EType;
 
             using (InsightEntities db = new InsightEntities())
             {
                 db.EmployeeTypes.Add(InsightEmployeeType);
                 db.SaveChanges();
+                AddEmployeeTypeTab.SelectedIndex = 2;
             }
-
-            AddEmployeeTypeTC.SelectedTab = AddEmployeeTypeTC.TabPages[2];
         }
 
-        private void ETBackBtn_Click(object sender, EventArgs e)
+        private void AETCancelBtn_Click(object sender, EventArgs e)
         {
-            AddEmployeeTypeTC.SelectedTab = AddEmployeeTypeTC.TabPages[0];
-        }
-
-        private void ETCancelBtn_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            Form Home = new HomeScreen();
+            Home.Show();
+            this.Show();
         }
     }
 }
