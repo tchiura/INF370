@@ -16,5 +16,14 @@ namespace Insight_Prototype_
         {
             InitializeComponent();
         }
+
+        private void AssignVehiclePage_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'insightDataSet.Job' table. You can move, or remove it, as needed.
+            this.jobTableAdapter.Fill(this.insightDataSet.Job);
+            // TODO: This line of code loads data into the 'insightDataSet.Vehicle' table. You can move, or remove it, as needed.
+            this.vehicleTableAdapter.Fill(this.insightDataSet.Vehicle);
+
+        }
     }
 }

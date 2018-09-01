@@ -404,7 +404,10 @@ namespace Insight_Prototype_
 
         private void button43_Click(object sender, EventArgs e)
         {
-            AddEquipmentTab.BringToFront();
+            Form AEq = new AddEquipmentPage();
+            this.Hide();
+            AEq.ShowDialog();
+            this.Show();
         }
 
         private void button49_Click(object sender, EventArgs e)
@@ -437,7 +440,7 @@ namespace Insight_Prototype_
 
         private void button113_Click(object sender, EventArgs e)
         {
-            Form A = new DeleteClientTypePage();
+            Form A = new DeleteOrganisationTypePage();
             this.Hide();
             A.ShowDialog();
             this.Show();
@@ -525,7 +528,7 @@ namespace Insight_Prototype_
 
         private void button89_Click(object sender, EventArgs e)
         {
-            Form A = new DeleteJobPage();
+            Form A = new CancelJobPage();
             this.Hide();
             A.ShowDialog();
             this.Show();
