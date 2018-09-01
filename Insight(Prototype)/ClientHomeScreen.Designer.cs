@@ -29,6 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.countryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.insightDataSet = new Insight_Prototype_.InsightDataSet();
+            this.cityBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.projectRequestTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.projectRequestTypeTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.ProjectRequestTypeTableAdapter();
+            this.countryTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.CountryTableAdapter();
+            this.cityTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.CityTableAdapter();
+            this.TopBarPanel = new System.Windows.Forms.Panel();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.Userlbl = new System.Windows.Forms.Label();
+            this.MinimisePicBx = new System.Windows.Forms.PictureBox();
+            this.ClosePicBx = new System.Windows.Forms.PictureBox();
             this.ManagerDashboardPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.InsightPicBx = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -46,17 +58,13 @@
             this.addressline1txt = new System.Windows.Forms.TextBox();
             this.label271 = new System.Windows.Forms.Label();
             this.countrycbx = new System.Windows.Forms.ComboBox();
-            this.countryBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.insightDataSet = new Insight_Prototype_.InsightDataSet();
             this.addressline2txt = new System.Windows.Forms.TextBox();
             this.citycbx = new System.Windows.Forms.ComboBox();
-            this.cityBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label270 = new System.Windows.Forms.Label();
             this.label173 = new System.Windows.Forms.Label();
             this.label172 = new System.Windows.Forms.Label();
             this.label276 = new System.Windows.Forms.Label();
             this.PRcbx = new System.Windows.Forms.ComboBox();
-            this.projectRequestTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.PRtext = new System.Windows.Forms.RichTextBox();
             this.label166 = new System.Windows.Forms.Label();
             this.tabPage18 = new System.Windows.Forms.TabPage();
@@ -79,22 +87,114 @@
             this.PRconfirmtxt = new System.Windows.Forms.RichTextBox();
             this.tabPage19 = new System.Windows.Forms.TabPage();
             this.label169 = new System.Windows.Forms.Label();
-            this.projectRequestTypeTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.ProjectRequestTypeTableAdapter();
-            this.countryTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.CountryTableAdapter();
-            this.cityTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.CityTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.countryBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cityBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projectRequestTypeBindingSource)).BeginInit();
+            this.TopBarPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
             this.ManagerDashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.InsightPicBx)).BeginInit();
             this.AddProjectRequestPanel.SuspendLayout();
             this.tabPage17.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.countryBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cityBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projectRequestTypeBindingSource)).BeginInit();
             this.tabPage18.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.tabPage19.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // countryBindingSource
+            // 
+            this.countryBindingSource.DataMember = "Country";
+            this.countryBindingSource.DataSource = this.insightDataSet;
+            // 
+            // insightDataSet
+            // 
+            this.insightDataSet.DataSetName = "InsightDataSet";
+            this.insightDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cityBindingSource
+            // 
+            this.cityBindingSource.DataMember = "City";
+            this.cityBindingSource.DataSource = this.insightDataSet;
+            // 
+            // projectRequestTypeBindingSource
+            // 
+            this.projectRequestTypeBindingSource.DataMember = "ProjectRequestType";
+            this.projectRequestTypeBindingSource.DataSource = this.insightDataSet;
+            // 
+            // projectRequestTypeTableAdapter
+            // 
+            this.projectRequestTypeTableAdapter.ClearBeforeFill = true;
+            // 
+            // countryTableAdapter
+            // 
+            this.countryTableAdapter.ClearBeforeFill = true;
+            // 
+            // cityTableAdapter
+            // 
+            this.cityTableAdapter.ClearBeforeFill = true;
+            // 
+            // TopBarPanel
+            // 
+            this.TopBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.TopBarPanel.Controls.Add(this.pictureBox14);
+            this.TopBarPanel.Controls.Add(this.Userlbl);
+            this.TopBarPanel.Controls.Add(this.MinimisePicBx);
+            this.TopBarPanel.Controls.Add(this.ClosePicBx);
+            this.TopBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TopBarPanel.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TopBarPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.TopBarPanel.Location = new System.Drawing.Point(0, 0);
+            this.TopBarPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TopBarPanel.Name = "TopBarPanel";
+            this.TopBarPanel.Size = new System.Drawing.Size(857, 30);
+            this.TopBarPanel.TabIndex = 40;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox14.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
+            this.pictureBox14.Location = new System.Drawing.Point(773, 0);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(28, 30);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 2;
+            this.pictureBox14.TabStop = false;
+            // 
+            // Userlbl
+            // 
+            this.Userlbl.AutoSize = true;
+            this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.Userlbl.Location = new System.Drawing.Point(3, 2);
+            this.Userlbl.Name = "Userlbl";
+            this.Userlbl.Size = new System.Drawing.Size(91, 23);
+            this.Userlbl.TabIndex = 0;
+            this.Userlbl.Text = "Username";
+            // 
+            // MinimisePicBx
+            // 
+            this.MinimisePicBx.Dock = System.Windows.Forms.DockStyle.Right;
+            this.MinimisePicBx.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
+            this.MinimisePicBx.Location = new System.Drawing.Point(801, 0);
+            this.MinimisePicBx.Name = "MinimisePicBx";
+            this.MinimisePicBx.Size = new System.Drawing.Size(28, 30);
+            this.MinimisePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.MinimisePicBx.TabIndex = 1;
+            this.MinimisePicBx.TabStop = false;
+            // 
+            // ClosePicBx
+            // 
+            this.ClosePicBx.Dock = System.Windows.Forms.DockStyle.Right;
+            this.ClosePicBx.Image = global::Insight_Prototype_.Properties.Resources.Cancel_100px2;
+            this.ClosePicBx.Location = new System.Drawing.Point(829, 0);
+            this.ClosePicBx.Name = "ClosePicBx";
+            this.ClosePicBx.Size = new System.Drawing.Size(28, 30);
+            this.ClosePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ClosePicBx.TabIndex = 0;
+            this.ClosePicBx.TabStop = false;
             // 
             // ManagerDashboardPanel
             // 
@@ -107,11 +207,11 @@
             this.ManagerDashboardPanel.Controls.Add(this.button10);
             this.ManagerDashboardPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.ManagerDashboardPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.ManagerDashboardPanel.Location = new System.Drawing.Point(0, 0);
+            this.ManagerDashboardPanel.Location = new System.Drawing.Point(0, 30);
             this.ManagerDashboardPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ManagerDashboardPanel.Name = "ManagerDashboardPanel";
-            this.ManagerDashboardPanel.Size = new System.Drawing.Size(250, 614);
-            this.ManagerDashboardPanel.TabIndex = 2;
+            this.ManagerDashboardPanel.Size = new System.Drawing.Size(250, 584);
+            this.ManagerDashboardPanel.TabIndex = 42;
             // 
             // InsightPicBx
             // 
@@ -208,11 +308,11 @@
             this.AddProjectRequestPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AddProjectRequestPanel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddProjectRequestPanel.ItemSize = new System.Drawing.Size(60, 24);
-            this.AddProjectRequestPanel.Location = new System.Drawing.Point(250, 0);
+            this.AddProjectRequestPanel.Location = new System.Drawing.Point(250, 30);
             this.AddProjectRequestPanel.Name = "AddProjectRequestPanel";
             this.AddProjectRequestPanel.SelectedIndex = 0;
-            this.AddProjectRequestPanel.Size = new System.Drawing.Size(607, 614);
-            this.AddProjectRequestPanel.TabIndex = 39;
+            this.AddProjectRequestPanel.Size = new System.Drawing.Size(607, 584);
+            this.AddProjectRequestPanel.TabIndex = 43;
             // 
             // tabPage17
             // 
@@ -228,7 +328,7 @@
             this.tabPage17.Location = new System.Drawing.Point(4, 28);
             this.tabPage17.Name = "tabPage17";
             this.tabPage17.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage17.Size = new System.Drawing.Size(599, 582);
+            this.tabPage17.Size = new System.Drawing.Size(599, 552);
             this.tabPage17.TabIndex = 0;
             this.tabPage17.Text = "Details";
             // 
@@ -237,7 +337,7 @@
             this.button159.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button159.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button159.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button159.Location = new System.Drawing.Point(408, 533);
+            this.button159.Location = new System.Drawing.Point(408, 503);
             this.button159.Name = "button159";
             this.button159.Size = new System.Drawing.Size(75, 30);
             this.button159.TabIndex = 53;
@@ -249,13 +349,12 @@
             this.button160.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button160.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button160.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button160.Location = new System.Drawing.Point(489, 533);
+            this.button160.Location = new System.Drawing.Point(489, 503);
             this.button160.Name = "button160";
             this.button160.Size = new System.Drawing.Size(75, 30);
             this.button160.TabIndex = 52;
             this.button160.Text = "Next";
             this.button160.UseVisualStyleBackColor = true;
-            this.button160.Click += new System.EventHandler(this.button160_Click);
             // 
             // groupBox4
             // 
@@ -320,16 +419,6 @@
             this.countrycbx.TabIndex = 40;
             this.countrycbx.ValueMember = "CountryID";
             // 
-            // countryBindingSource
-            // 
-            this.countryBindingSource.DataMember = "Country";
-            this.countryBindingSource.DataSource = this.insightDataSet;
-            // 
-            // insightDataSet
-            // 
-            this.insightDataSet.DataSetName = "InsightDataSet";
-            this.insightDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // addressline2txt
             // 
             this.addressline2txt.Location = new System.Drawing.Point(255, 68);
@@ -347,11 +436,6 @@
             this.citycbx.Size = new System.Drawing.Size(245, 27);
             this.citycbx.TabIndex = 39;
             this.citycbx.ValueMember = "CityID";
-            // 
-            // cityBindingSource
-            // 
-            this.cityBindingSource.DataMember = "City";
-            this.cityBindingSource.DataSource = this.insightDataSet;
             // 
             // label270
             // 
@@ -401,11 +485,6 @@
             this.PRcbx.TabIndex = 50;
             this.PRcbx.ValueMember = "ProjectRequestTypeID";
             // 
-            // projectRequestTypeBindingSource
-            // 
-            this.projectRequestTypeBindingSource.DataMember = "ProjectRequestType";
-            this.projectRequestTypeBindingSource.DataSource = this.insightDataSet;
-            // 
             // PRtext
             // 
             this.PRtext.Location = new System.Drawing.Point(309, 94);
@@ -439,7 +518,7 @@
             this.tabPage18.Location = new System.Drawing.Point(4, 28);
             this.tabPage18.Name = "tabPage18";
             this.tabPage18.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage18.Size = new System.Drawing.Size(599, 582);
+            this.tabPage18.Size = new System.Drawing.Size(599, 552);
             this.tabPage18.TabIndex = 1;
             this.tabPage18.Text = "Confirmation";
             // 
@@ -448,7 +527,7 @@
             this.button161.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button161.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button161.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button161.Location = new System.Drawing.Point(408, 518);
+            this.button161.Location = new System.Drawing.Point(408, 488);
             this.button161.Name = "button161";
             this.button161.Size = new System.Drawing.Size(75, 30);
             this.button161.TabIndex = 58;
@@ -460,13 +539,12 @@
             this.button162.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button162.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button162.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button162.Location = new System.Drawing.Point(489, 518);
+            this.button162.Location = new System.Drawing.Point(739, 488);
             this.button162.Name = "button162";
             this.button162.Size = new System.Drawing.Size(75, 30);
             this.button162.TabIndex = 57;
             this.button162.Text = "Confirm";
             this.button162.UseVisualStyleBackColor = true;
-            this.button162.Click += new System.EventHandler(this.button162_Click);
             // 
             // PRlbl
             // 
@@ -621,7 +699,7 @@
             this.tabPage19.Location = new System.Drawing.Point(4, 28);
             this.tabPage19.Name = "tabPage19";
             this.tabPage19.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage19.Size = new System.Drawing.Size(599, 582);
+            this.tabPage19.Size = new System.Drawing.Size(599, 552);
             this.tabPage19.TabIndex = 2;
             this.tabPage19.Text = "Complete";
             // 
@@ -630,23 +708,11 @@
             this.label169.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label169.AutoSize = true;
             this.label169.Font = new System.Drawing.Font("Calibri", 30F);
-            this.label169.Location = new System.Drawing.Point(15, 294);
+            this.label169.Location = new System.Drawing.Point(140, 279);
             this.label169.Name = "label169";
             this.label169.Size = new System.Drawing.Size(562, 49);
             this.label169.TabIndex = 1;
             this.label169.Text = "Project Request Successfully Sent";
-            // 
-            // projectRequestTypeTableAdapter
-            // 
-            this.projectRequestTypeTableAdapter.ClearBeforeFill = true;
-            // 
-            // countryTableAdapter
-            // 
-            this.countryTableAdapter.ClearBeforeFill = true;
-            // 
-            // cityTableAdapter
-            // 
-            this.cityTableAdapter.ClearBeforeFill = true;
             // 
             // ClientHomeScreen
             // 
@@ -655,9 +721,20 @@
             this.ClientSize = new System.Drawing.Size(857, 614);
             this.Controls.Add(this.AddProjectRequestPanel);
             this.Controls.Add(this.ManagerDashboardPanel);
+            this.Controls.Add(this.TopBarPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ClientHomeScreen";
             this.Text = "ClientHomeScreen";
             this.Load += new System.EventHandler(this.ClientHomeScreen_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.countryBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cityBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projectRequestTypeBindingSource)).EndInit();
+            this.TopBarPanel.ResumeLayout(false);
+            this.TopBarPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).EndInit();
             this.ManagerDashboardPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.InsightPicBx)).EndInit();
             this.AddProjectRequestPanel.ResumeLayout(false);
@@ -665,10 +742,6 @@
             this.tabPage17.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.countryBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cityBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projectRequestTypeBindingSource)).EndInit();
             this.tabPage18.ResumeLayout(false);
             this.tabPage18.PerformLayout();
             this.groupBox9.ResumeLayout(false);
@@ -680,7 +753,18 @@
         }
 
         #endregion
-
+        private InsightDataSet insightDataSet;
+        private System.Windows.Forms.BindingSource projectRequestTypeBindingSource;
+        private InsightDataSetTableAdapters.ProjectRequestTypeTableAdapter projectRequestTypeTableAdapter;
+        private System.Windows.Forms.BindingSource countryBindingSource;
+        private InsightDataSetTableAdapters.CountryTableAdapter countryTableAdapter;
+        private System.Windows.Forms.BindingSource cityBindingSource;
+        private InsightDataSetTableAdapters.CityTableAdapter cityTableAdapter;
+        private System.Windows.Forms.Panel TopBarPanel;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.Label Userlbl;
+        private System.Windows.Forms.PictureBox MinimisePicBx;
+        private System.Windows.Forms.PictureBox ClosePicBx;
         private System.Windows.Forms.FlowLayoutPanel ManagerDashboardPanel;
         private System.Windows.Forms.PictureBox InsightPicBx;
         private System.Windows.Forms.Button button1;
@@ -690,6 +774,8 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.TabControl AddProjectRequestPanel;
         private System.Windows.Forms.TabPage tabPage17;
+        private System.Windows.Forms.Button button159;
+        private System.Windows.Forms.Button button160;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label170;
         private System.Windows.Forms.TextBox addressline3txt;
@@ -706,6 +792,8 @@
         private System.Windows.Forms.RichTextBox PRtext;
         private System.Windows.Forms.Label label166;
         private System.Windows.Forms.TabPage tabPage18;
+        private System.Windows.Forms.Button button161;
+        private System.Windows.Forms.Button button162;
         private System.Windows.Forms.Label PRlbl;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Label addressline2lbl;
@@ -723,16 +811,5 @@
         private System.Windows.Forms.RichTextBox PRconfirmtxt;
         private System.Windows.Forms.TabPage tabPage19;
         private System.Windows.Forms.Label label169;
-        private System.Windows.Forms.Button button159;
-        private System.Windows.Forms.Button button160;
-        private System.Windows.Forms.Button button161;
-        private System.Windows.Forms.Button button162;
-        private InsightDataSet insightDataSet;
-        private System.Windows.Forms.BindingSource projectRequestTypeBindingSource;
-        private InsightDataSetTableAdapters.ProjectRequestTypeTableAdapter projectRequestTypeTableAdapter;
-        private System.Windows.Forms.BindingSource countryBindingSource;
-        private InsightDataSetTableAdapters.CountryTableAdapter countryTableAdapter;
-        private System.Windows.Forms.BindingSource cityBindingSource;
-        private InsightDataSetTableAdapters.CityTableAdapter cityTableAdapter;
     }
 }

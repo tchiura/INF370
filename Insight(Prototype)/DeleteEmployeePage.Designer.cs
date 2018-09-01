@@ -59,8 +59,8 @@
             this.EmployeeNamelbl = new System.Windows.Forms.Label();
             this.EmployeeSurnamelbl = new System.Windows.Forms.Label();
             this.EmployeeNumberlbl = new System.Windows.Forms.Label();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
+            this.DEmpCancelBtn = new System.Windows.Forms.Button();
+            this.DEmpDeleteBtn = new System.Windows.Forms.Button();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
@@ -146,8 +146,8 @@
             this.DeleteClientDetailsPanel.Controls.Add(this.EmployeeNamelbl);
             this.DeleteClientDetailsPanel.Controls.Add(this.EmployeeSurnamelbl);
             this.DeleteClientDetailsPanel.Controls.Add(this.EmployeeNumberlbl);
-            this.DeleteClientDetailsPanel.Controls.Add(this.button14);
-            this.DeleteClientDetailsPanel.Controls.Add(this.button15);
+            this.DeleteClientDetailsPanel.Controls.Add(this.DEmpCancelBtn);
+            this.DeleteClientDetailsPanel.Controls.Add(this.DEmpDeleteBtn);
             this.DeleteClientDetailsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DeleteClientDetailsPanel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DeleteClientDetailsPanel.Location = new System.Drawing.Point(0, 29);
@@ -390,29 +390,31 @@
             this.EmployeeNumberlbl.TabIndex = 81;
             this.EmployeeNumberlbl.Text = "072 152 1423";
             // 
-            // button14
+            // DEmpCancelBtn
             // 
-            this.button14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(1120, 590);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(75, 30);
-            this.button14.TabIndex = 57;
-            this.button14.Text = "Cancel";
-            this.button14.UseVisualStyleBackColor = true;
+            this.DEmpCancelBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.DEmpCancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DEmpCancelBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DEmpCancelBtn.Location = new System.Drawing.Point(1120, 590);
+            this.DEmpCancelBtn.Name = "DEmpCancelBtn";
+            this.DEmpCancelBtn.Size = new System.Drawing.Size(75, 30);
+            this.DEmpCancelBtn.TabIndex = 57;
+            this.DEmpCancelBtn.Text = "Cancel";
+            this.DEmpCancelBtn.UseVisualStyleBackColor = true;
+            this.DEmpCancelBtn.Click += new System.EventHandler(this.button14_Click);
             // 
-            // button15
+            // DEmpDeleteBtn
             // 
-            this.button15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.Location = new System.Drawing.Point(1201, 590);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(75, 30);
-            this.button15.TabIndex = 56;
-            this.button15.Text = "Delete";
-            this.button15.UseVisualStyleBackColor = true;
+            this.DEmpDeleteBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.DEmpDeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DEmpDeleteBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DEmpDeleteBtn.Location = new System.Drawing.Point(1201, 590);
+            this.DEmpDeleteBtn.Name = "DEmpDeleteBtn";
+            this.DEmpDeleteBtn.Size = new System.Drawing.Size(75, 30);
+            this.DEmpDeleteBtn.TabIndex = 56;
+            this.DEmpDeleteBtn.Text = "Delete";
+            this.DEmpDeleteBtn.UseVisualStyleBackColor = true;
+            this.DEmpDeleteBtn.Click += new System.EventHandler(this.DEmpDeleteBtn_Click);
             // 
             // DeleteEmployeePage
             // 
@@ -472,7 +474,7 @@
         private System.Windows.Forms.Label EmployeeNamelbl;
         private System.Windows.Forms.Label EmployeeSurnamelbl;
         private System.Windows.Forms.Label EmployeeNumberlbl;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button DEmpCancelBtn;
+        private System.Windows.Forms.Button DEmpDeleteBtn;
     }
 }

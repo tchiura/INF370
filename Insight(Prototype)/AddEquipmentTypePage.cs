@@ -22,7 +22,7 @@ namespace Insight_Prototype_
         {
             Form Home = new HomeScreen();
             Home.Show();
-            this.Show();
+            this.Close();
         }
 
         private void AEqTNextBtn_Click(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace Insight_Prototype_
             EquipType = AEqTypeTb.Text;
             if (EquipType == "")
             {
-                MessageBox.Show("Please enter a valid EquipType.");
+                MessageBox.Show("Please enter a valid Equipment Type.");
             }
             else
             {
