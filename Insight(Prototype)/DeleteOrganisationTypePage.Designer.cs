@@ -1,6 +1,6 @@
 ﻿namespace Insight_Prototype_
 {
-    partial class DeleteVehiclePage
+    partial class DeleteOrganisationTypePage
     {
         /// <summary>
         /// Required designer variable.
@@ -33,10 +33,16 @@
             this.Userlbl = new System.Windows.Forms.Label();
             this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
+            this.DeleteClientDetailsPanel = new System.Windows.Forms.Panel();
+            this.DOTCancelBtn = new System.Windows.Forms.Button();
+            this.DOTDeleteBtn = new System.Windows.Forms.Button();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
+            this.DeleteClientDetailsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // TopBarPanel
@@ -52,14 +58,14 @@
             this.TopBarPanel.Location = new System.Drawing.Point(0, 0);
             this.TopBarPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TopBarPanel.Name = "TopBarPanel";
-            this.TopBarPanel.Size = new System.Drawing.Size(1284, 30);
-            this.TopBarPanel.TabIndex = 60;
+            this.TopBarPanel.Size = new System.Drawing.Size(460, 30);
+            this.TopBarPanel.TabIndex = 59;
             // 
             // pictureBox14
             // 
             this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBox14.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
-            this.pictureBox14.Location = new System.Drawing.Point(1200, 0);
+            this.pictureBox14.Location = new System.Drawing.Point(376, 0);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(28, 30);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -72,15 +78,15 @@
             this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.Userlbl.Location = new System.Drawing.Point(3, 2);
             this.Userlbl.Name = "Userlbl";
-            this.Userlbl.Size = new System.Drawing.Size(126, 23);
+            this.Userlbl.Size = new System.Drawing.Size(210, 23);
             this.Userlbl.TabIndex = 0;
-            this.Userlbl.Text = "Delete Vehicle";
+            this.Userlbl.Text = "Delete Organisation Type";
             // 
             // MinimisePicBx
             // 
             this.MinimisePicBx.Dock = System.Windows.Forms.DockStyle.Right;
             this.MinimisePicBx.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
-            this.MinimisePicBx.Location = new System.Drawing.Point(1228, 0);
+            this.MinimisePicBx.Location = new System.Drawing.Point(404, 0);
             this.MinimisePicBx.Name = "MinimisePicBx";
             this.MinimisePicBx.Size = new System.Drawing.Size(28, 30);
             this.MinimisePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -91,29 +97,92 @@
             // 
             this.ClosePicBx.Dock = System.Windows.Forms.DockStyle.Right;
             this.ClosePicBx.Image = global::Insight_Prototype_.Properties.Resources.Cancel_100px2;
-            this.ClosePicBx.Location = new System.Drawing.Point(1256, 0);
+            this.ClosePicBx.Location = new System.Drawing.Point(432, 0);
             this.ClosePicBx.Name = "ClosePicBx";
             this.ClosePicBx.Size = new System.Drawing.Size(28, 30);
             this.ClosePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ClosePicBx.TabIndex = 0;
             this.ClosePicBx.TabStop = false;
             // 
-            // DeleteVehiclePage
+            // DeleteClientDetailsPanel
+            // 
+            this.DeleteClientDetailsPanel.BackColor = System.Drawing.Color.White;
+            this.DeleteClientDetailsPanel.Controls.Add(this.DOTCancelBtn);
+            this.DeleteClientDetailsPanel.Controls.Add(this.DOTDeleteBtn);
+            this.DeleteClientDetailsPanel.Controls.Add(this.label27);
+            this.DeleteClientDetailsPanel.Controls.Add(this.label17);
+            this.DeleteClientDetailsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DeleteClientDetailsPanel.Location = new System.Drawing.Point(0, 30);
+            this.DeleteClientDetailsPanel.Name = "DeleteClientDetailsPanel";
+            this.DeleteClientDetailsPanel.Size = new System.Drawing.Size(460, 170);
+            this.DeleteClientDetailsPanel.TabIndex = 60;
+            // 
+            // DOTCancelBtn
+            // 
+            this.DOTCancelBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.DOTCancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DOTCancelBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DOTCancelBtn.Location = new System.Drawing.Point(296, 128);
+            this.DOTCancelBtn.Name = "DOTCancelBtn";
+            this.DOTCancelBtn.Size = new System.Drawing.Size(75, 30);
+            this.DOTCancelBtn.TabIndex = 57;
+            this.DOTCancelBtn.Text = "Cancel";
+            this.DOTCancelBtn.UseVisualStyleBackColor = true;
+            this.DOTCancelBtn.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // DOTDeleteBtn
+            // 
+            this.DOTDeleteBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.DOTDeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DOTDeleteBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DOTDeleteBtn.Location = new System.Drawing.Point(377, 128);
+            this.DOTDeleteBtn.Name = "DOTDeleteBtn";
+            this.DOTDeleteBtn.Size = new System.Drawing.Size(75, 30);
+            this.DOTDeleteBtn.TabIndex = 56;
+            this.DOTDeleteBtn.Text = "Delete";
+            this.DOTDeleteBtn.UseVisualStyleBackColor = true;
+            this.DOTDeleteBtn.Click += new System.EventHandler(this.DOTDeleteBtn_Click);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(256, 45);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(40, 17);
+            this.label27.TabIndex = 49;
+            this.label27.Text = "NGO";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(38, 45);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(83, 17);
+            this.label17.TabIndex = 39;
+            this.label17.Text = "Description:";
+            // 
+            // DeleteOrganisationTypePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1284, 661);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.ClientSize = new System.Drawing.Size(460, 200);
+            this.Controls.Add(this.DeleteClientDetailsPanel);
             this.Controls.Add(this.TopBarPanel);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "DeleteVehiclePage";
-            this.Text = "DeleteVehiclePage";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Name = "DeleteOrganisationTypePage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "DeleteClientPage";
             this.TopBarPanel.ResumeLayout(false);
             this.TopBarPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).EndInit();
+            this.DeleteClientDetailsPanel.ResumeLayout(false);
+            this.DeleteClientDetailsPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -125,5 +194,10 @@
         private System.Windows.Forms.Label Userlbl;
         private System.Windows.Forms.PictureBox MinimisePicBx;
         private System.Windows.Forms.PictureBox ClosePicBx;
+        private System.Windows.Forms.Panel DeleteClientDetailsPanel;
+        private System.Windows.Forms.Button DOTCancelBtn;
+        private System.Windows.Forms.Button DOTDeleteBtn;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label17;
     }
 }

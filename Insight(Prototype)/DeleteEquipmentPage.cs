@@ -16,5 +16,29 @@ namespace Insight_Prototype_
         {
             InitializeComponent();
         }
+
+        private void DeleteEquipmentPage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void QEqCancelBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void DEqBtn_Click(object sender, EventArgs e)
+        {
+            //Are we going to delete a certain quantity of of equipment or all of them?
+            using (InsightEntities db = new InsightEntities())
+            {
+                var Eq = db.Equipments.SingleOrDefault(x => x.EquipmentID == 2);
+                if(Eq != null)
+                {
+                    db.Equipments.Remove(Eq);
+                    db.SaveChanges();
+                }
+            }
+        }
     }
 }

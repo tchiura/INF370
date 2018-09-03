@@ -30,9 +30,6 @@
         {
             this.TopBarPanel = new System.Windows.Forms.Panel();
             this.Userlbl = new System.Windows.Forms.Label();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.MinimisePicBx = new System.Windows.Forms.PictureBox();
-            this.ClosePicBx = new System.Windows.Forms.PictureBox();
             this.AddVehicleTypeTab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.AVTypeTb = new System.Windows.Forms.TextBox();
@@ -46,14 +43,17 @@
             this.label91 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label99 = new System.Windows.Forms.Label();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.MinimisePicBx = new System.Windows.Forms.PictureBox();
+            this.ClosePicBx = new System.Windows.Forms.PictureBox();
             this.TopBarPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
             this.AddVehicleTypeTab.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
             this.SuspendLayout();
             // 
             // TopBarPanel
@@ -81,39 +81,6 @@
             this.Userlbl.Size = new System.Drawing.Size(145, 23);
             this.Userlbl.TabIndex = 0;
             this.Userlbl.Text = "Add Vehicle Type";
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox14.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
-            this.pictureBox14.Location = new System.Drawing.Point(376, 0);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(28, 30);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 2;
-            this.pictureBox14.TabStop = false;
-            // 
-            // MinimisePicBx
-            // 
-            this.MinimisePicBx.Dock = System.Windows.Forms.DockStyle.Right;
-            this.MinimisePicBx.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
-            this.MinimisePicBx.Location = new System.Drawing.Point(404, 0);
-            this.MinimisePicBx.Name = "MinimisePicBx";
-            this.MinimisePicBx.Size = new System.Drawing.Size(28, 30);
-            this.MinimisePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.MinimisePicBx.TabIndex = 1;
-            this.MinimisePicBx.TabStop = false;
-            // 
-            // ClosePicBx
-            // 
-            this.ClosePicBx.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ClosePicBx.Image = global::Insight_Prototype_.Properties.Resources.Cancel_100px2;
-            this.ClosePicBx.Location = new System.Drawing.Point(432, 0);
-            this.ClosePicBx.Name = "ClosePicBx";
-            this.ClosePicBx.Size = new System.Drawing.Size(28, 30);
-            this.ClosePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ClosePicBx.TabIndex = 0;
-            this.ClosePicBx.TabStop = false;
             // 
             // AddVehicleTypeTab
             // 
@@ -240,6 +207,7 @@
             this.AVTConfirmLbl.Size = new System.Drawing.Size(93, 19);
             this.AVTConfirmLbl.TabIndex = 33;
             this.AVTConfirmLbl.Text = "Organisation";
+            this.AVTConfirmLbl.Click += new System.EventHandler(this.AVTConfirmLbl_Click);
             // 
             // label91
             // 
@@ -250,6 +218,7 @@
             this.label91.Size = new System.Drawing.Size(98, 19);
             this.label91.TabIndex = 23;
             this.label91.Text = "Vehicle Type: ";
+            this.label91.Click += new System.EventHandler(this.label91_Click);
             // 
             // tabPage3
             // 
@@ -275,6 +244,39 @@
             this.label99.TabIndex = 1;
             this.label99.Text = "Vehicle Type Successfully Added";
             // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox14.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
+            this.pictureBox14.Location = new System.Drawing.Point(376, 0);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(28, 30);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 2;
+            this.pictureBox14.TabStop = false;
+            // 
+            // MinimisePicBx
+            // 
+            this.MinimisePicBx.Dock = System.Windows.Forms.DockStyle.Right;
+            this.MinimisePicBx.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
+            this.MinimisePicBx.Location = new System.Drawing.Point(404, 0);
+            this.MinimisePicBx.Name = "MinimisePicBx";
+            this.MinimisePicBx.Size = new System.Drawing.Size(28, 30);
+            this.MinimisePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.MinimisePicBx.TabIndex = 1;
+            this.MinimisePicBx.TabStop = false;
+            // 
+            // ClosePicBx
+            // 
+            this.ClosePicBx.Dock = System.Windows.Forms.DockStyle.Right;
+            this.ClosePicBx.Image = global::Insight_Prototype_.Properties.Resources.Cancel_100px2;
+            this.ClosePicBx.Location = new System.Drawing.Point(432, 0);
+            this.ClosePicBx.Name = "ClosePicBx";
+            this.ClosePicBx.Size = new System.Drawing.Size(28, 30);
+            this.ClosePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ClosePicBx.TabIndex = 0;
+            this.ClosePicBx.TabStop = false;
+            // 
             // AddVehicleTypePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
@@ -285,14 +287,11 @@
             this.Controls.Add(this.TopBarPanel);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddVehicleTypePage";
             this.Text = "AddVehicleTypePage";
             this.TopBarPanel.ResumeLayout(false);
             this.TopBarPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).EndInit();
             this.AddVehicleTypeTab.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -300,6 +299,9 @@
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).EndInit();
             this.ResumeLayout(false);
 
         }

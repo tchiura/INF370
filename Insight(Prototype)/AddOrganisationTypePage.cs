@@ -46,13 +46,13 @@ namespace Insight_Prototype_
 
         private void AOTConfirmBtn_Click(object sender, EventArgs e)
         {
-            ClientType InsightOrgType = new ClientType();
+            OrganisationType InsightOrgType = new OrganisationType();
 
-            InsightOrgType.ClientTypeDescription = OrgType;
+            InsightOrgType.OrganisationTypeDescription = OrgType;
 
             using (InsightEntities db = new InsightEntities())
             {
-                db.ClientTypes.Add(InsightOrgType);
+                db.OrganisationTypes.Add(InsightOrgType);
                 db.SaveChanges();
                 AddOrganisationTypeTab.SelectedIndex = 2;
             }

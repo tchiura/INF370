@@ -22,5 +22,27 @@ namespace Insight_Prototype_
 
             MessageBox.Show("Are you sure you want to delete this employee?","Delete",MessageBoxButtons.YesNo);
         }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void DEmpDeleteBtn_Click(object sender, EventArgs e)
+        {
+            //Add deletion of Login and Address as well as getting ID Value from view form
+            //Bind all labels to the ID
+
+            using (InsightEntities db = new InsightEntities())
+            {
+                var Emp = db.Employees.SingleOrDefault(x => x.EmployeeID == 2);
+
+                if (Emp != null)
+                {
+                    db.Employees.Remove(Emp);
+                    db.SaveChanges();
+                }
+            }
+        }
     }
 }
