@@ -29,36 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.ManagerDashboardPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.InsightPicBx = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.AddProjectRequestPanel = new System.Windows.Forms.TabControl();
-            this.tabPage17 = new System.Windows.Forms.TabPage();
-            this.button159 = new System.Windows.Forms.Button();
-            this.button160 = new System.Windows.Forms.Button();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label170 = new System.Windows.Forms.Label();
-            this.addressline3txt = new System.Windows.Forms.TextBox();
-            this.addressline1txt = new System.Windows.Forms.TextBox();
-            this.label271 = new System.Windows.Forms.Label();
-            this.countrycbx = new System.Windows.Forms.ComboBox();
             this.countryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.insightDataSet = new Insight_Prototype_.InsightDataSet();
-            this.addressline2txt = new System.Windows.Forms.TextBox();
-            this.citycbx = new System.Windows.Forms.ComboBox();
             this.cityBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label270 = new System.Windows.Forms.Label();
-            this.label173 = new System.Windows.Forms.Label();
-            this.label172 = new System.Windows.Forms.Label();
-            this.label276 = new System.Windows.Forms.Label();
-            this.PRcbx = new System.Windows.Forms.ComboBox();
             this.projectRequestTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.PRtext = new System.Windows.Forms.RichTextBox();
-            this.label166 = new System.Windows.Forms.Label();
             this.tabPage18 = new System.Windows.Forms.TabPage();
             this.button161 = new System.Windows.Forms.Button();
             this.button162 = new System.Windows.Forms.Button();
@@ -82,11 +57,37 @@
             this.projectRequestTypeTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.ProjectRequestTypeTableAdapter();
             this.countryTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.CountryTableAdapter();
             this.cityTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.CityTableAdapter();
-            this.ManagerDashboardPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.InsightPicBx)).BeginInit();
+            this.label166 = new System.Windows.Forms.Label();
+            this.PRtext = new System.Windows.Forms.RichTextBox();
+            this.PRcbx = new System.Windows.Forms.ComboBox();
+            this.label276 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label172 = new System.Windows.Forms.Label();
+            this.label173 = new System.Windows.Forms.Label();
+            this.label270 = new System.Windows.Forms.Label();
+            this.citycbx = new System.Windows.Forms.ComboBox();
+            this.addressline2txt = new System.Windows.Forms.TextBox();
+            this.countrycbx = new System.Windows.Forms.ComboBox();
+            this.label271 = new System.Windows.Forms.Label();
+            this.addressline1txt = new System.Windows.Forms.TextBox();
+            this.addressline3txt = new System.Windows.Forms.TextBox();
+            this.label170 = new System.Windows.Forms.Label();
+            this.button160 = new System.Windows.Forms.Button();
+            this.button159 = new System.Windows.Forms.Button();
+            this.tabPage17 = new System.Windows.Forms.TabPage();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.InsightPicBx = new System.Windows.Forms.PictureBox();
+            this.ManagerDashboardPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.TopBarPanel = new System.Windows.Forms.Panel();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.Userlbl = new System.Windows.Forms.Label();
+            this.MinimisePicBx = new System.Windows.Forms.PictureBox();
+            this.ClosePicBx = new System.Windows.Forms.PictureBox();
             this.AddProjectRequestPanel.SuspendLayout();
-            this.tabPage17.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.countryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cityBindingSource)).BeginInit();
@@ -94,111 +95,15 @@
             this.tabPage18.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.tabPage19.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.tabPage17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.InsightPicBx)).BeginInit();
+            this.ManagerDashboardPanel.SuspendLayout();
+            this.TopBarPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
             this.SuspendLayout();
-            // 
-            // ManagerDashboardPanel
-            // 
-            this.ManagerDashboardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.ManagerDashboardPanel.Controls.Add(this.InsightPicBx);
-            this.ManagerDashboardPanel.Controls.Add(this.button1);
-            this.ManagerDashboardPanel.Controls.Add(this.button4);
-            this.ManagerDashboardPanel.Controls.Add(this.button6);
-            this.ManagerDashboardPanel.Controls.Add(this.button9);
-            this.ManagerDashboardPanel.Controls.Add(this.button10);
-            this.ManagerDashboardPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.ManagerDashboardPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.ManagerDashboardPanel.Location = new System.Drawing.Point(0, 0);
-            this.ManagerDashboardPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ManagerDashboardPanel.Name = "ManagerDashboardPanel";
-            this.ManagerDashboardPanel.Size = new System.Drawing.Size(250, 614);
-            this.ManagerDashboardPanel.TabIndex = 2;
-            // 
-            // InsightPicBx
-            // 
-            this.InsightPicBx.Dock = System.Windows.Forms.DockStyle.Top;
-            this.InsightPicBx.Image = global::Insight_Prototype_.Properties.Resources.Insight;
-            this.InsightPicBx.Location = new System.Drawing.Point(3, 0);
-            this.InsightPicBx.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.InsightPicBx.Name = "InsightPicBx";
-            this.InsightPicBx.Size = new System.Drawing.Size(245, 68);
-            this.InsightPicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.InsightPicBx.TabIndex = 2;
-            this.InsightPicBx.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(3, 75);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(245, 50);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Project";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(3, 133);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(245, 50);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Supplier";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(3, 191);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(245, 50);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Client";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Location = new System.Drawing.Point(3, 249);
-            this.button9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(245, 50);
-            this.button9.TabIndex = 10;
-            this.button9.Text = "Equipment";
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Location = new System.Drawing.Point(3, 307);
-            this.button10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(245, 50);
-            this.button10.TabIndex = 11;
-            this.button10.Text = "Administration";
-            this.button10.UseVisualStyleBackColor = false;
             // 
             // AddProjectRequestPanel
             // 
@@ -208,117 +113,11 @@
             this.AddProjectRequestPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AddProjectRequestPanel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddProjectRequestPanel.ItemSize = new System.Drawing.Size(60, 24);
-            this.AddProjectRequestPanel.Location = new System.Drawing.Point(250, 0);
+            this.AddProjectRequestPanel.Location = new System.Drawing.Point(250, 29);
             this.AddProjectRequestPanel.Name = "AddProjectRequestPanel";
             this.AddProjectRequestPanel.SelectedIndex = 0;
-            this.AddProjectRequestPanel.Size = new System.Drawing.Size(607, 614);
+            this.AddProjectRequestPanel.Size = new System.Drawing.Size(607, 585);
             this.AddProjectRequestPanel.TabIndex = 39;
-            // 
-            // tabPage17
-            // 
-            this.tabPage17.BackColor = System.Drawing.Color.White;
-            this.tabPage17.Controls.Add(this.button159);
-            this.tabPage17.Controls.Add(this.button160);
-            this.tabPage17.Controls.Add(this.groupBox4);
-            this.tabPage17.Controls.Add(this.label276);
-            this.tabPage17.Controls.Add(this.PRcbx);
-            this.tabPage17.Controls.Add(this.PRtext);
-            this.tabPage17.Controls.Add(this.label166);
-            this.tabPage17.ForeColor = System.Drawing.Color.Black;
-            this.tabPage17.Location = new System.Drawing.Point(4, 28);
-            this.tabPage17.Name = "tabPage17";
-            this.tabPage17.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage17.Size = new System.Drawing.Size(599, 582);
-            this.tabPage17.TabIndex = 0;
-            this.tabPage17.Text = "Details";
-            // 
-            // button159
-            // 
-            this.button159.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button159.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button159.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button159.Location = new System.Drawing.Point(408, 533);
-            this.button159.Name = "button159";
-            this.button159.Size = new System.Drawing.Size(75, 30);
-            this.button159.TabIndex = 53;
-            this.button159.Text = "Cancel";
-            this.button159.UseVisualStyleBackColor = true;
-            // 
-            // button160
-            // 
-            this.button160.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button160.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button160.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button160.Location = new System.Drawing.Point(489, 533);
-            this.button160.Name = "button160";
-            this.button160.Size = new System.Drawing.Size(75, 30);
-            this.button160.TabIndex = 52;
-            this.button160.Text = "Next";
-            this.button160.UseVisualStyleBackColor = true;
-            this.button160.Click += new System.EventHandler(this.button160_Click);
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.label170);
-            this.groupBox4.Controls.Add(this.addressline3txt);
-            this.groupBox4.Controls.Add(this.addressline1txt);
-            this.groupBox4.Controls.Add(this.label271);
-            this.groupBox4.Controls.Add(this.countrycbx);
-            this.groupBox4.Controls.Add(this.addressline2txt);
-            this.groupBox4.Controls.Add(this.citycbx);
-            this.groupBox4.Controls.Add(this.label270);
-            this.groupBox4.Controls.Add(this.label173);
-            this.groupBox4.Controls.Add(this.label172);
-            this.groupBox4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(54, 268);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(510, 250);
-            this.groupBox4.TabIndex = 0;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Address";
-            // 
-            // label170
-            // 
-            this.label170.AutoSize = true;
-            this.label170.Location = new System.Drawing.Point(24, 33);
-            this.label170.Name = "label170";
-            this.label170.Size = new System.Drawing.Size(108, 19);
-            this.label170.TabIndex = 33;
-            this.label170.Text = "Address Line 1:";
-            // 
-            // addressline3txt
-            // 
-            this.addressline3txt.Location = new System.Drawing.Point(254, 112);
-            this.addressline3txt.Name = "addressline3txt";
-            this.addressline3txt.Size = new System.Drawing.Size(245, 27);
-            this.addressline3txt.TabIndex = 55;
-            // 
-            // addressline1txt
-            // 
-            this.addressline1txt.Location = new System.Drawing.Point(255, 23);
-            this.addressline1txt.Name = "addressline1txt";
-            this.addressline1txt.Size = new System.Drawing.Size(245, 27);
-            this.addressline1txt.TabIndex = 34;
-            // 
-            // label271
-            // 
-            this.label271.AutoSize = true;
-            this.label271.Location = new System.Drawing.Point(23, 122);
-            this.label271.Name = "label271";
-            this.label271.Size = new System.Drawing.Size(108, 19);
-            this.label271.TabIndex = 54;
-            this.label271.Text = "Address Line 3:";
-            // 
-            // countrycbx
-            // 
-            this.countrycbx.DataSource = this.countryBindingSource;
-            this.countrycbx.DisplayMember = "CountryName";
-            this.countrycbx.FormattingEnabled = true;
-            this.countrycbx.Location = new System.Drawing.Point(255, 157);
-            this.countrycbx.Name = "countrycbx";
-            this.countrycbx.Size = new System.Drawing.Size(245, 27);
-            this.countrycbx.TabIndex = 40;
-            this.countrycbx.ValueMember = "CountryID";
             // 
             // countryBindingSource
             // 
@@ -330,100 +129,15 @@
             this.insightDataSet.DataSetName = "InsightDataSet";
             this.insightDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // addressline2txt
-            // 
-            this.addressline2txt.Location = new System.Drawing.Point(255, 68);
-            this.addressline2txt.Name = "addressline2txt";
-            this.addressline2txt.Size = new System.Drawing.Size(245, 27);
-            this.addressline2txt.TabIndex = 53;
-            // 
-            // citycbx
-            // 
-            this.citycbx.DataSource = this.cityBindingSource;
-            this.citycbx.DisplayMember = "Name";
-            this.citycbx.FormattingEnabled = true;
-            this.citycbx.Location = new System.Drawing.Point(255, 200);
-            this.citycbx.Name = "citycbx";
-            this.citycbx.Size = new System.Drawing.Size(245, 27);
-            this.citycbx.TabIndex = 39;
-            this.citycbx.ValueMember = "CityID";
-            // 
             // cityBindingSource
             // 
             this.cityBindingSource.DataMember = "City";
             this.cityBindingSource.DataSource = this.insightDataSet;
             // 
-            // label270
-            // 
-            this.label270.AutoSize = true;
-            this.label270.Location = new System.Drawing.Point(24, 78);
-            this.label270.Name = "label270";
-            this.label270.Size = new System.Drawing.Size(108, 19);
-            this.label270.TabIndex = 52;
-            this.label270.Text = "Address Line 2:";
-            // 
-            // label173
-            // 
-            this.label173.AutoSize = true;
-            this.label173.Location = new System.Drawing.Point(24, 172);
-            this.label173.Name = "label173";
-            this.label173.Size = new System.Drawing.Size(63, 19);
-            this.label173.TabIndex = 35;
-            this.label173.Text = "Country:";
-            // 
-            // label172
-            // 
-            this.label172.AutoSize = true;
-            this.label172.Location = new System.Drawing.Point(24, 215);
-            this.label172.Name = "label172";
-            this.label172.Size = new System.Drawing.Size(38, 19);
-            this.label172.TabIndex = 36;
-            this.label172.Text = "City:";
-            // 
-            // label276
-            // 
-            this.label276.AutoSize = true;
-            this.label276.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label276.Location = new System.Drawing.Point(50, 50);
-            this.label276.Name = "label276";
-            this.label276.Size = new System.Drawing.Size(149, 19);
-            this.label276.TabIndex = 51;
-            this.label276.Text = "Project Request Type:";
-            // 
-            // PRcbx
-            // 
-            this.PRcbx.DataSource = this.projectRequestTypeBindingSource;
-            this.PRcbx.DisplayMember = "ProjectRequestDescription";
-            this.PRcbx.FormattingEnabled = true;
-            this.PRcbx.Location = new System.Drawing.Point(309, 47);
-            this.PRcbx.Name = "PRcbx";
-            this.PRcbx.Size = new System.Drawing.Size(245, 27);
-            this.PRcbx.TabIndex = 50;
-            this.PRcbx.ValueMember = "ProjectRequestTypeID";
-            // 
             // projectRequestTypeBindingSource
             // 
             this.projectRequestTypeBindingSource.DataMember = "ProjectRequestType";
             this.projectRequestTypeBindingSource.DataSource = this.insightDataSet;
-            // 
-            // PRtext
-            // 
-            this.PRtext.Location = new System.Drawing.Point(309, 94);
-            this.PRtext.MaxLength = 150;
-            this.PRtext.Name = "PRtext";
-            this.PRtext.Size = new System.Drawing.Size(245, 163);
-            this.PRtext.TabIndex = 41;
-            this.PRtext.Text = "";
-            // 
-            // label166
-            // 
-            this.label166.AutoSize = true;
-            this.label166.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label166.Location = new System.Drawing.Point(50, 101);
-            this.label166.Name = "label166";
-            this.label166.Size = new System.Drawing.Size(120, 19);
-            this.label166.TabIndex = 7;
-            this.label166.Text = "Request Details: ";
             // 
             // tabPage18
             // 
@@ -439,7 +153,7 @@
             this.tabPage18.Location = new System.Drawing.Point(4, 28);
             this.tabPage18.Name = "tabPage18";
             this.tabPage18.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage18.Size = new System.Drawing.Size(599, 582);
+            this.tabPage18.Size = new System.Drawing.Size(849, 582);
             this.tabPage18.TabIndex = 1;
             this.tabPage18.Text = "Confirmation";
             // 
@@ -460,7 +174,7 @@
             this.button162.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button162.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button162.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button162.Location = new System.Drawing.Point(489, 518);
+            this.button162.Location = new System.Drawing.Point(239, 518);
             this.button162.Name = "button162";
             this.button162.Size = new System.Drawing.Size(75, 30);
             this.button162.TabIndex = 57;
@@ -621,7 +335,7 @@
             this.tabPage19.Location = new System.Drawing.Point(4, 28);
             this.tabPage19.Name = "tabPage19";
             this.tabPage19.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage19.Size = new System.Drawing.Size(599, 582);
+            this.tabPage19.Size = new System.Drawing.Size(849, 582);
             this.tabPage19.TabIndex = 2;
             this.tabPage19.Text = "Complete";
             // 
@@ -648,6 +362,360 @@
             // 
             this.cityTableAdapter.ClearBeforeFill = true;
             // 
+            // label166
+            // 
+            this.label166.AutoSize = true;
+            this.label166.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label166.Location = new System.Drawing.Point(50, 101);
+            this.label166.Name = "label166";
+            this.label166.Size = new System.Drawing.Size(120, 19);
+            this.label166.TabIndex = 7;
+            this.label166.Text = "Request Details: ";
+            // 
+            // PRtext
+            // 
+            this.PRtext.Location = new System.Drawing.Point(309, 94);
+            this.PRtext.MaxLength = 150;
+            this.PRtext.Name = "PRtext";
+            this.PRtext.Size = new System.Drawing.Size(245, 163);
+            this.PRtext.TabIndex = 41;
+            this.PRtext.Text = "";
+            // 
+            // PRcbx
+            // 
+            this.PRcbx.DataSource = this.projectRequestTypeBindingSource;
+            this.PRcbx.DisplayMember = "ProjectRequestDescription";
+            this.PRcbx.FormattingEnabled = true;
+            this.PRcbx.Location = new System.Drawing.Point(309, 47);
+            this.PRcbx.Name = "PRcbx";
+            this.PRcbx.Size = new System.Drawing.Size(245, 27);
+            this.PRcbx.TabIndex = 50;
+            this.PRcbx.ValueMember = "ProjectRequestTypeID";
+            // 
+            // label276
+            // 
+            this.label276.AutoSize = true;
+            this.label276.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label276.Location = new System.Drawing.Point(50, 50);
+            this.label276.Name = "label276";
+            this.label276.Size = new System.Drawing.Size(149, 19);
+            this.label276.TabIndex = 51;
+            this.label276.Text = "Project Request Type:";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label170);
+            this.groupBox4.Controls.Add(this.addressline3txt);
+            this.groupBox4.Controls.Add(this.addressline1txt);
+            this.groupBox4.Controls.Add(this.label271);
+            this.groupBox4.Controls.Add(this.countrycbx);
+            this.groupBox4.Controls.Add(this.addressline2txt);
+            this.groupBox4.Controls.Add(this.citycbx);
+            this.groupBox4.Controls.Add(this.label270);
+            this.groupBox4.Controls.Add(this.label173);
+            this.groupBox4.Controls.Add(this.label172);
+            this.groupBox4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(54, 268);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(510, 250);
+            this.groupBox4.TabIndex = 0;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Address";
+            // 
+            // label172
+            // 
+            this.label172.AutoSize = true;
+            this.label172.Location = new System.Drawing.Point(24, 215);
+            this.label172.Name = "label172";
+            this.label172.Size = new System.Drawing.Size(38, 19);
+            this.label172.TabIndex = 36;
+            this.label172.Text = "City:";
+            // 
+            // label173
+            // 
+            this.label173.AutoSize = true;
+            this.label173.Location = new System.Drawing.Point(24, 172);
+            this.label173.Name = "label173";
+            this.label173.Size = new System.Drawing.Size(63, 19);
+            this.label173.TabIndex = 35;
+            this.label173.Text = "Country:";
+            // 
+            // label270
+            // 
+            this.label270.AutoSize = true;
+            this.label270.Location = new System.Drawing.Point(24, 78);
+            this.label270.Name = "label270";
+            this.label270.Size = new System.Drawing.Size(108, 19);
+            this.label270.TabIndex = 52;
+            this.label270.Text = "Address Line 2:";
+            // 
+            // citycbx
+            // 
+            this.citycbx.DataSource = this.cityBindingSource;
+            this.citycbx.DisplayMember = "Name";
+            this.citycbx.FormattingEnabled = true;
+            this.citycbx.Location = new System.Drawing.Point(255, 200);
+            this.citycbx.Name = "citycbx";
+            this.citycbx.Size = new System.Drawing.Size(245, 27);
+            this.citycbx.TabIndex = 39;
+            this.citycbx.ValueMember = "CityID";
+            // 
+            // addressline2txt
+            // 
+            this.addressline2txt.Location = new System.Drawing.Point(255, 68);
+            this.addressline2txt.Name = "addressline2txt";
+            this.addressline2txt.Size = new System.Drawing.Size(245, 27);
+            this.addressline2txt.TabIndex = 53;
+            // 
+            // countrycbx
+            // 
+            this.countrycbx.DataSource = this.countryBindingSource;
+            this.countrycbx.DisplayMember = "CountryName";
+            this.countrycbx.FormattingEnabled = true;
+            this.countrycbx.Location = new System.Drawing.Point(255, 157);
+            this.countrycbx.Name = "countrycbx";
+            this.countrycbx.Size = new System.Drawing.Size(245, 27);
+            this.countrycbx.TabIndex = 40;
+            this.countrycbx.ValueMember = "CountryID";
+            // 
+            // label271
+            // 
+            this.label271.AutoSize = true;
+            this.label271.Location = new System.Drawing.Point(23, 122);
+            this.label271.Name = "label271";
+            this.label271.Size = new System.Drawing.Size(108, 19);
+            this.label271.TabIndex = 54;
+            this.label271.Text = "Address Line 3:";
+            // 
+            // addressline1txt
+            // 
+            this.addressline1txt.Location = new System.Drawing.Point(255, 23);
+            this.addressline1txt.Name = "addressline1txt";
+            this.addressline1txt.Size = new System.Drawing.Size(245, 27);
+            this.addressline1txt.TabIndex = 34;
+            // 
+            // addressline3txt
+            // 
+            this.addressline3txt.Location = new System.Drawing.Point(254, 112);
+            this.addressline3txt.Name = "addressline3txt";
+            this.addressline3txt.Size = new System.Drawing.Size(245, 27);
+            this.addressline3txt.TabIndex = 55;
+            // 
+            // label170
+            // 
+            this.label170.AutoSize = true;
+            this.label170.Location = new System.Drawing.Point(24, 33);
+            this.label170.Name = "label170";
+            this.label170.Size = new System.Drawing.Size(108, 19);
+            this.label170.TabIndex = 33;
+            this.label170.Text = "Address Line 1:";
+            // 
+            // button160
+            // 
+            this.button160.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button160.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button160.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button160.Location = new System.Drawing.Point(489, 504);
+            this.button160.Name = "button160";
+            this.button160.Size = new System.Drawing.Size(75, 30);
+            this.button160.TabIndex = 52;
+            this.button160.Text = "Next";
+            this.button160.UseVisualStyleBackColor = true;
+            this.button160.Click += new System.EventHandler(this.button160_Click);
+            // 
+            // button159
+            // 
+            this.button159.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button159.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button159.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button159.Location = new System.Drawing.Point(408, 504);
+            this.button159.Name = "button159";
+            this.button159.Size = new System.Drawing.Size(75, 30);
+            this.button159.TabIndex = 53;
+            this.button159.Text = "Cancel";
+            this.button159.UseVisualStyleBackColor = true;
+            // 
+            // tabPage17
+            // 
+            this.tabPage17.BackColor = System.Drawing.Color.White;
+            this.tabPage17.Controls.Add(this.button159);
+            this.tabPage17.Controls.Add(this.button160);
+            this.tabPage17.Controls.Add(this.groupBox4);
+            this.tabPage17.Controls.Add(this.label276);
+            this.tabPage17.Controls.Add(this.PRcbx);
+            this.tabPage17.Controls.Add(this.PRtext);
+            this.tabPage17.Controls.Add(this.label166);
+            this.tabPage17.ForeColor = System.Drawing.Color.Black;
+            this.tabPage17.Location = new System.Drawing.Point(4, 28);
+            this.tabPage17.Name = "tabPage17";
+            this.tabPage17.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage17.Size = new System.Drawing.Size(599, 553);
+            this.tabPage17.TabIndex = 0;
+            this.tabPage17.Text = "Details";
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.Color.White;
+            this.button10.Location = new System.Drawing.Point(3, 307);
+            this.button10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(245, 50);
+            this.button10.TabIndex = 11;
+            this.button10.Text = "Administration";
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.Color.White;
+            this.button9.Location = new System.Drawing.Point(3, 249);
+            this.button9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(245, 50);
+            this.button9.TabIndex = 10;
+            this.button9.Text = "Equipment";
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(3, 191);
+            this.button6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(245, 50);
+            this.button6.TabIndex = 7;
+            this.button6.Text = "Client";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(3, 133);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(245, 50);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "Supplier";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(3, 75);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(245, 50);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Project";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // InsightPicBx
+            // 
+            this.InsightPicBx.Dock = System.Windows.Forms.DockStyle.Top;
+            this.InsightPicBx.Image = global::Insight_Prototype_.Properties.Resources.Insight;
+            this.InsightPicBx.Location = new System.Drawing.Point(3, 0);
+            this.InsightPicBx.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.InsightPicBx.Name = "InsightPicBx";
+            this.InsightPicBx.Size = new System.Drawing.Size(245, 68);
+            this.InsightPicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.InsightPicBx.TabIndex = 2;
+            this.InsightPicBx.TabStop = false;
+            // 
+            // ManagerDashboardPanel
+            // 
+            this.ManagerDashboardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.ManagerDashboardPanel.Controls.Add(this.InsightPicBx);
+            this.ManagerDashboardPanel.Controls.Add(this.button1);
+            this.ManagerDashboardPanel.Controls.Add(this.button4);
+            this.ManagerDashboardPanel.Controls.Add(this.button6);
+            this.ManagerDashboardPanel.Controls.Add(this.button9);
+            this.ManagerDashboardPanel.Controls.Add(this.button10);
+            this.ManagerDashboardPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ManagerDashboardPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.ManagerDashboardPanel.Location = new System.Drawing.Point(0, 29);
+            this.ManagerDashboardPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ManagerDashboardPanel.Name = "ManagerDashboardPanel";
+            this.ManagerDashboardPanel.Size = new System.Drawing.Size(250, 585);
+            this.ManagerDashboardPanel.TabIndex = 2;
+            // 
+            // TopBarPanel
+            // 
+            this.TopBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.TopBarPanel.Controls.Add(this.pictureBox14);
+            this.TopBarPanel.Controls.Add(this.Userlbl);
+            this.TopBarPanel.Controls.Add(this.MinimisePicBx);
+            this.TopBarPanel.Controls.Add(this.ClosePicBx);
+            this.TopBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TopBarPanel.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TopBarPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.TopBarPanel.Location = new System.Drawing.Point(0, 0);
+            this.TopBarPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TopBarPanel.Name = "TopBarPanel";
+            this.TopBarPanel.Size = new System.Drawing.Size(857, 29);
+            this.TopBarPanel.TabIndex = 42;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox14.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
+            this.pictureBox14.Location = new System.Drawing.Point(773, 0);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(28, 29);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 2;
+            this.pictureBox14.TabStop = false;
+            // 
+            // Userlbl
+            // 
+            this.Userlbl.AutoSize = true;
+            this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.Userlbl.Location = new System.Drawing.Point(3, 2);
+            this.Userlbl.Name = "Userlbl";
+            this.Userlbl.Size = new System.Drawing.Size(91, 23);
+            this.Userlbl.TabIndex = 0;
+            this.Userlbl.Text = "Username";
+            // 
+            // MinimisePicBx
+            // 
+            this.MinimisePicBx.Dock = System.Windows.Forms.DockStyle.Right;
+            this.MinimisePicBx.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
+            this.MinimisePicBx.Location = new System.Drawing.Point(801, 0);
+            this.MinimisePicBx.Name = "MinimisePicBx";
+            this.MinimisePicBx.Size = new System.Drawing.Size(28, 29);
+            this.MinimisePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.MinimisePicBx.TabIndex = 1;
+            this.MinimisePicBx.TabStop = false;
+            // 
+            // ClosePicBx
+            // 
+            this.ClosePicBx.Dock = System.Windows.Forms.DockStyle.Right;
+            this.ClosePicBx.Image = global::Insight_Prototype_.Properties.Resources.Cancel_100px2;
+            this.ClosePicBx.Location = new System.Drawing.Point(829, 0);
+            this.ClosePicBx.Name = "ClosePicBx";
+            this.ClosePicBx.Size = new System.Drawing.Size(28, 29);
+            this.ClosePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ClosePicBx.TabIndex = 0;
+            this.ClosePicBx.TabStop = false;
+            // 
             // ClientHomeScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -655,16 +723,12 @@
             this.ClientSize = new System.Drawing.Size(857, 614);
             this.Controls.Add(this.AddProjectRequestPanel);
             this.Controls.Add(this.ManagerDashboardPanel);
+            this.Controls.Add(this.TopBarPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ClientHomeScreen";
             this.Text = "ClientHomeScreen";
             this.Load += new System.EventHandler(this.ClientHomeScreen_Load);
-            this.ManagerDashboardPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.InsightPicBx)).EndInit();
             this.AddProjectRequestPanel.ResumeLayout(false);
-            this.tabPage17.ResumeLayout(false);
-            this.tabPage17.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.countryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cityBindingSource)).EndInit();
@@ -675,36 +739,23 @@
             this.groupBox9.PerformLayout();
             this.tabPage19.ResumeLayout(false);
             this.tabPage19.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.tabPage17.ResumeLayout(false);
+            this.tabPage17.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.InsightPicBx)).EndInit();
+            this.ManagerDashboardPanel.ResumeLayout(false);
+            this.TopBarPanel.ResumeLayout(false);
+            this.TopBarPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.FlowLayoutPanel ManagerDashboardPanel;
-        private System.Windows.Forms.PictureBox InsightPicBx;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.TabControl AddProjectRequestPanel;
-        private System.Windows.Forms.TabPage tabPage17;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label label170;
-        private System.Windows.Forms.TextBox addressline3txt;
-        private System.Windows.Forms.TextBox addressline1txt;
-        private System.Windows.Forms.Label label271;
-        private System.Windows.Forms.ComboBox countrycbx;
-        private System.Windows.Forms.TextBox addressline2txt;
-        private System.Windows.Forms.ComboBox citycbx;
-        private System.Windows.Forms.Label label270;
-        private System.Windows.Forms.Label label173;
-        private System.Windows.Forms.Label label172;
-        private System.Windows.Forms.Label label276;
-        private System.Windows.Forms.ComboBox PRcbx;
-        private System.Windows.Forms.RichTextBox PRtext;
-        private System.Windows.Forms.Label label166;
         private System.Windows.Forms.TabPage tabPage18;
         private System.Windows.Forms.Label PRlbl;
         private System.Windows.Forms.GroupBox groupBox9;
@@ -723,8 +774,6 @@
         private System.Windows.Forms.RichTextBox PRconfirmtxt;
         private System.Windows.Forms.TabPage tabPage19;
         private System.Windows.Forms.Label label169;
-        private System.Windows.Forms.Button button159;
-        private System.Windows.Forms.Button button160;
         private System.Windows.Forms.Button button161;
         private System.Windows.Forms.Button button162;
         private InsightDataSet insightDataSet;
@@ -734,5 +783,35 @@
         private InsightDataSetTableAdapters.CountryTableAdapter countryTableAdapter;
         private System.Windows.Forms.BindingSource cityBindingSource;
         private InsightDataSetTableAdapters.CityTableAdapter cityTableAdapter;
+        private System.Windows.Forms.TabPage tabPage17;
+        private System.Windows.Forms.Button button159;
+        private System.Windows.Forms.Button button160;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label170;
+        private System.Windows.Forms.TextBox addressline3txt;
+        private System.Windows.Forms.TextBox addressline1txt;
+        private System.Windows.Forms.Label label271;
+        private System.Windows.Forms.ComboBox countrycbx;
+        private System.Windows.Forms.TextBox addressline2txt;
+        private System.Windows.Forms.ComboBox citycbx;
+        private System.Windows.Forms.Label label270;
+        private System.Windows.Forms.Label label173;
+        private System.Windows.Forms.Label label172;
+        private System.Windows.Forms.Label label276;
+        private System.Windows.Forms.ComboBox PRcbx;
+        private System.Windows.Forms.RichTextBox PRtext;
+        private System.Windows.Forms.Label label166;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox InsightPicBx;
+        private System.Windows.Forms.FlowLayoutPanel ManagerDashboardPanel;
+        private System.Windows.Forms.Panel TopBarPanel;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.Label Userlbl;
+        private System.Windows.Forms.PictureBox MinimisePicBx;
+        private System.Windows.Forms.PictureBox ClosePicBx;
     }
 }

@@ -304,3 +304,5 @@ C:\Users\User\Source\Repos\SharpDynamics\Insight(Prototype)\obj\Debug\Insight(Pr
 C:\Users\User\Source\Repos\SharpDynamics\Insight(Prototype)\obj\Debug\Insight(Prototype).pdb
 C:\Users\User\source\repos\SharpDynamics\Insight(Prototype)\obj\Debug\Insight_Prototype_.AddClientDetailsPage.resources
 C:\Users\User\source\repos\SharpDynamics\Insight(Prototype)\obj\Debug\Insight_Prototype_.ClientHomeScreen.resources
+C:\Users\User\source\repos\SharpDynamics\Insight(Prototype)\obj\Debug\Insight_Prototype_.ViewClientDetailsPage.resources
+C:\Users\User\source\repos\SharpDynamics\Insight(Prototype)\obj\Debug\Insight_Prototype_.ViewProjectRequestPage.resources

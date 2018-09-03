@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Security.Cryptography;
 using System.Data.SqlClient;
 
 namespace Insight_Prototype_
@@ -115,6 +116,7 @@ namespace Insight_Prototype_
             Client InsightClient = new Client();
             Individual InsightIndividual = new Individual();
             Address InsightClientAddress = new Address();
+            ClientLogin InsightClientLogin = new ClientLogin();
 
             //Client Table
             InsightClient.ClientName = clientNametxt.Text;
@@ -124,11 +126,7 @@ namespace Insight_Prototype_
             InsightClientAddress.AddressDescription = clientAddress;
             InsightClientAddress.CityID = Convert.ToInt32(citycbx.SelectedValue);
 
-            //Individual Table
-            //InsightIndividual.IndividualEmailAddress = contactEmail.Text;
-            //InsightIndividual.IndividualDateOfBirth = clientDOB.Value.Date;
-
-
+            #region store client and address info
 
             using (InsightEntities db = new InsightEntities())
             {
@@ -137,7 +135,7 @@ namespace Insight_Prototype_
             }
 
             int clientTypeID = Convert.ToInt32(clientcbx.SelectedValue);
-            int addressID = InsightClientAddress.AddressID;
+            int addressID = InsightClientAddress.AddressID; 
 
             using (InsightEntities db = new InsightEntities())
             {
@@ -147,32 +145,108 @@ namespace Insight_Prototype_
                 db.SaveChanges();
             }
 
+            #endregion
             int clientID = InsightClient.ClientID;
 
+            #region Individual
             if (clientcbx.Text == "Individual")
             {
-                SqlConnection conn = new SqlConnection(globalClass.myConn);
-                conn.Open();
+                SqlConnection Myconn = new SqlConnection(globalClass.myConn);
+                Myconn.Open();
 
-                SqlCommand insertIndividual = new SqlCommand("Insert Into Individual(ClientID, IndividualEmailAddress, IndividualDateOfBirth) Values (@ClientID, @IndividualEmailAddress, @IndividualDateOfBirth)", conn);
+                SqlCommand insertIndividual = new SqlCommand("Insert Into Individual(ClientID, IndividualEmailAddress, IndividualDateOfBirth) Values (@ClientID, @IndividualEmailAddress, @IndividualDateOfBirth)", Myconn);
                 insertIndividual.Parameters.AddWithValue("@ClientID", clientID);
                 insertIndividual.Parameters.AddWithValue("@IndividualEmailAddress", contactEmail.Text);
                 insertIndividual.Parameters.AddWithValue("@IndividualDateOfBirth", clientDOB.Value.Date);
                 insertIndividual.ExecuteNonQuery();
-                conn.Close();
+                Myconn.Close();
             }
-
+            #endregion
+            #region Organisation
             if (clientcbx.Text == "Organisation")
             {
-                SqlConnection conn = new SqlConnection(globalClass.myConn);
-                conn.Open();
+                ContactPerson organisationContact = new ContactPerson();
+                SqlConnection Myconn = new SqlConnection(globalClass.myConn);
+                Myconn.Open();
 
-                SqlCommand insertOrganisation = new SqlCommand("Insert into Organisation(ClientID, OrganisationTypeID) Values (@ClientID, @OrganisationTypeID)", conn);
+                SqlCommand insertOrganisation = new SqlCommand("Insert into Organisation(ClientID, OrganisationTypeID) Values (@ClientID, @OrganisationTypeID)", Myconn);
                 insertOrganisation.Parameters.AddWithValue("@ClientID", clientID);
                 insertOrganisation.Parameters.AddWithValue("@OrganisationTypeID", organisationTypecbx.SelectedValue);
                 insertOrganisation.ExecuteNonQuery();
-                conn.Close();
+                Myconn.Close();
+
+                organisationContact.ContactPersonEmailAddress = contactEmail.Text;
+                organisationContact.ContactPersonJobDescription = contactJobtxt.Text;
+                organisationContact.ContactPersonName = contactNametxt.Text;
+                organisationContact.ContactPersonPhoneNumber = Convert.ToInt32(contactNumbertxt.Text);
+                organisationContact.ClientID = clientID;
+
+                using (InsightEntities db = new InsightEntities())
+                {
+                    db.ContactPersons.Add(organisationContact);
+                    db.SaveChanges();
+                }
             }
+            #endregion
+
+            string username = Char.ToUpper(clientcbx.Text[0]) + "." + clientNamelbl.Text;
+
+            #region generate username and password
+
+            SqlConnection conn = new SqlConnection(globalClass.myConn);
+            SqlDataReader myReader;
+            int usernumber = 1;
+            int tmp = 0;
+
+            try
+            {
+                while (tmp == 0)
+                {
+                    SqlCommand checkUser = new SqlCommand("Select ClientUsername From ClientLogin Where ClientUsername =" + "'" + username + "'", conn);
+                    conn.Open();
+                    myReader = checkUser.ExecuteReader();
+
+                    if (myReader.HasRows)
+                    {
+                        username = username + Convert.ToString(usernumber);
+                        usernumber++;
+                    }
+                    else
+                    {
+                        myReader.Close();
+                        conn.Close();
+                        tmp = 1;
+                    }
+                }
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Error: " + error.Message);
+            }
+            
+            string pass = username + "#123";
+
+            //Generate hash
+            HashAlgorithm hashFunc = SHA256.Create();
+            byte[] hold = hashFunc.ComputeHash(Encoding.UTF8.GetBytes(pass));
+
+            StringBuilder hashString = new StringBuilder();
+            foreach (byte b in hold)
+            {
+                hashString.Append(b.ToString("X2"));
+            }
+            //Store hash string in database
+            InsightClientLogin.ClientPassword = hashString.ToString();
+            InsightClientLogin.AccessLevelID = 2;
+            #endregion
+
+            using (InsightEntities db = new InsightEntities())
+            {
+                db.ClientLogins.Add(InsightClientLogin);
+                db.SaveChanges();
+            }
+
+            MessageBox.Show("Successful, Username: " + username + " Password: " + pass);
         }
 
         private void clientcbx_TextChanged(object sender, EventArgs e)
