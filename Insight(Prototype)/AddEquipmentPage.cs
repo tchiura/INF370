@@ -62,6 +62,8 @@ namespace Insight_Prototype_
             InsightEquipment.EquipmentDescription = EqDescr;
             //InsightEquipment.EquipmentType = EqType;
             InsightEquipment.EquipmentQuantity = EqQuantity;
+            //InsightEquipment.EquipmentType = 
+
 
             AddEquipmentTab.SelectedIndex = 2;
         }

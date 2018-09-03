@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Insight_Prototype_
 {
-    public partial class UpdateJobDetailsPage : Form
+    public partial class UpdateJobPage : Form
     {
-        public UpdateJobDetailsPage()
+        public UpdateJobPage()
         {
             InitializeComponent();
         }

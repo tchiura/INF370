@@ -439,12 +439,6 @@
     <Compile Include="RemovedEquipment.cs">
       <DependentUpon>InsightModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="RemoveVehiclePage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RemoveVehiclePage.Designer.cs">
-      <DependentUpon>RemoveVehiclePage.cs</DependentUpon>
-    </Compile>
     <Compile Include="ReturnsPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -715,9 +709,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReceiveProductsPage.resx">
       <DependentUpon>ReceiveProductsPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RemoveVehiclePage.resx">
-      <DependentUpon>RemoveVehiclePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReturnsPage.resx">
       <DependentUpon>ReturnsPage.cs</DependentUpon>

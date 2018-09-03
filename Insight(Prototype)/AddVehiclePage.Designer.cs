@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.TopBarPanel = new System.Windows.Forms.Panel();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.Userlbl = new System.Windows.Forms.Label();
@@ -35,13 +36,6 @@
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
             this.AddVehicleTab = new System.Windows.Forms.TabControl();
             this.tabPage29 = new System.Windows.Forms.TabPage();
-            this.AVCancelBtn = new System.Windows.Forms.Button();
-            this.AVNextBtn = new System.Windows.Forms.Button();
-            this.tabPage30 = new System.Windows.Forms.TabPage();
-            this.AVBackBtn = new System.Windows.Forms.Button();
-            this.AVConfirmBtn = new System.Windows.Forms.Button();
-            this.tabPage31 = new System.Windows.Forms.TabPage();
-            this.label232 = new System.Windows.Forms.Label();
             this.label253 = new System.Windows.Forms.Label();
             this.label252 = new System.Windows.Forms.Label();
             this.VYearTb = new System.Windows.Forms.TextBox();
@@ -53,6 +47,10 @@
             this.label89 = new System.Windows.Forms.Label();
             this.VTypCmb = new System.Windows.Forms.ComboBox();
             this.VRegTb = new System.Windows.Forms.TextBox();
+            this.AVCancelBtn = new System.Windows.Forms.Button();
+            this.AVNextBtn = new System.Windows.Forms.Button();
+            this.VPDateDT = new System.Windows.Forms.DateTimePicker();
+            this.tabPage30 = new System.Windows.Forms.TabPage();
             this.CVPDateLbl = new System.Windows.Forms.Label();
             this.CVYearLbl = new System.Windows.Forms.Label();
             this.CVModelLbl = new System.Windows.Forms.Label();
@@ -65,7 +63,13 @@
             this.label247 = new System.Windows.Forms.Label();
             this.label248 = new System.Windows.Forms.Label();
             this.label249 = new System.Windows.Forms.Label();
-            this.VPDateDT = new System.Windows.Forms.DateTimePicker();
+            this.AVBackBtn = new System.Windows.Forms.Button();
+            this.AVConfirmBtn = new System.Windows.Forms.Button();
+            this.tabPage31 = new System.Windows.Forms.TabPage();
+            this.label232 = new System.Windows.Forms.Label();
+            this.insightDataSet = new Insight_Prototype_.InsightDataSet();
+            this.vehicleTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vehicleTypeTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.VehicleTypeTableAdapter();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
@@ -74,6 +78,8 @@
             this.tabPage29.SuspendLayout();
             this.tabPage30.SuspendLayout();
             this.tabPage31.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vehicleTypeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // TopBarPanel
@@ -172,106 +178,6 @@
             this.tabPage29.TabIndex = 0;
             this.tabPage29.Text = "Details";
             // 
-            // AVCancelBtn
-            // 
-            this.AVCancelBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.AVCancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AVCancelBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AVCancelBtn.Location = new System.Drawing.Point(318, 320);
-            this.AVCancelBtn.Name = "AVCancelBtn";
-            this.AVCancelBtn.Size = new System.Drawing.Size(75, 30);
-            this.AVCancelBtn.TabIndex = 31;
-            this.AVCancelBtn.Text = "Cancel";
-            this.AVCancelBtn.UseVisualStyleBackColor = true;
-            this.AVCancelBtn.Click += new System.EventHandler(this.AVCancelBtn_Click);
-            // 
-            // AVNextBtn
-            // 
-            this.AVNextBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.AVNextBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AVNextBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AVNextBtn.Location = new System.Drawing.Point(399, 320);
-            this.AVNextBtn.Name = "AVNextBtn";
-            this.AVNextBtn.Size = new System.Drawing.Size(75, 30);
-            this.AVNextBtn.TabIndex = 30;
-            this.AVNextBtn.Text = "Next";
-            this.AVNextBtn.UseVisualStyleBackColor = true;
-            this.AVNextBtn.Click += new System.EventHandler(this.AVNextBtn_Click);
-            // 
-            // tabPage30
-            // 
-            this.tabPage30.BackColor = System.Drawing.Color.White;
-            this.tabPage30.Controls.Add(this.CVPDateLbl);
-            this.tabPage30.Controls.Add(this.CVYearLbl);
-            this.tabPage30.Controls.Add(this.CVModelLbl);
-            this.tabPage30.Controls.Add(this.CVMakeLbl);
-            this.tabPage30.Controls.Add(this.CVTypeLbl);
-            this.tabPage30.Controls.Add(this.CVRegLbl);
-            this.tabPage30.Controls.Add(this.label243);
-            this.tabPage30.Controls.Add(this.label245);
-            this.tabPage30.Controls.Add(this.label246);
-            this.tabPage30.Controls.Add(this.label247);
-            this.tabPage30.Controls.Add(this.label248);
-            this.tabPage30.Controls.Add(this.label249);
-            this.tabPage30.Controls.Add(this.AVBackBtn);
-            this.tabPage30.Controls.Add(this.AVConfirmBtn);
-            this.tabPage30.ForeColor = System.Drawing.Color.Black;
-            this.tabPage30.Location = new System.Drawing.Point(4, 28);
-            this.tabPage30.Name = "tabPage30";
-            this.tabPage30.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage30.Size = new System.Drawing.Size(482, 358);
-            this.tabPage30.TabIndex = 1;
-            this.tabPage30.Text = "Confirmation";
-            // 
-            // AVBackBtn
-            // 
-            this.AVBackBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.AVBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AVBackBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AVBackBtn.Location = new System.Drawing.Point(318, 320);
-            this.AVBackBtn.Name = "AVBackBtn";
-            this.AVBackBtn.Size = new System.Drawing.Size(75, 30);
-            this.AVBackBtn.TabIndex = 37;
-            this.AVBackBtn.Text = "Back";
-            this.AVBackBtn.UseVisualStyleBackColor = true;
-            this.AVBackBtn.Click += new System.EventHandler(this.AVBackBtn_Click);
-            // 
-            // AVConfirmBtn
-            // 
-            this.AVConfirmBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.AVConfirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AVConfirmBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AVConfirmBtn.Location = new System.Drawing.Point(399, 320);
-            this.AVConfirmBtn.Name = "AVConfirmBtn";
-            this.AVConfirmBtn.Size = new System.Drawing.Size(75, 30);
-            this.AVConfirmBtn.TabIndex = 36;
-            this.AVConfirmBtn.Text = "Confirm";
-            this.AVConfirmBtn.UseVisualStyleBackColor = true;
-            this.AVConfirmBtn.Click += new System.EventHandler(this.AVConfirmBtn_Click);
-            // 
-            // tabPage31
-            // 
-            this.tabPage31.BackColor = System.Drawing.Color.White;
-            this.tabPage31.Controls.Add(this.label232);
-            this.tabPage31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.tabPage31.Location = new System.Drawing.Point(4, 28);
-            this.tabPage31.Name = "tabPage31";
-            this.tabPage31.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage31.Size = new System.Drawing.Size(482, 358);
-            this.tabPage31.TabIndex = 2;
-            this.tabPage31.Text = "Complete";
-            // 
-            // label232
-            // 
-            this.label232.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label232.AutoSize = true;
-            this.label232.Font = new System.Drawing.Font("Calibri", 20F);
-            this.label232.Location = new System.Drawing.Point(89, 163);
-            this.label232.Name = "label232";
-            this.label232.Size = new System.Drawing.Size(304, 33);
-            this.label232.TabIndex = 1;
-            this.label232.Text = "Vehicle Successfully Added";
-            // 
             // label253
             // 
             this.label253.AutoSize = true;
@@ -352,12 +258,13 @@
             // 
             // VTypCmb
             // 
+            this.VTypCmb.DataSource = this.vehicleTypeBindingSource;
+            this.VTypCmb.DisplayMember = "VehicleTypeDescription";
             this.VTypCmb.FormattingEnabled = true;
             this.VTypCmb.Location = new System.Drawing.Point(229, 73);
             this.VTypCmb.Name = "VTypCmb";
             this.VTypCmb.Size = new System.Drawing.Size(245, 27);
             this.VTypCmb.TabIndex = 43;
-            this.VTypCmb.Text = "Bakkie";
             // 
             // VRegTb
             // 
@@ -366,6 +273,64 @@
             this.VRegTb.Size = new System.Drawing.Size(245, 27);
             this.VRegTb.TabIndex = 44;
             this.VRegTb.Text = "AA 22 BB GP";
+            // 
+            // AVCancelBtn
+            // 
+            this.AVCancelBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.AVCancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AVCancelBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AVCancelBtn.Location = new System.Drawing.Point(318, 320);
+            this.AVCancelBtn.Name = "AVCancelBtn";
+            this.AVCancelBtn.Size = new System.Drawing.Size(75, 30);
+            this.AVCancelBtn.TabIndex = 31;
+            this.AVCancelBtn.Text = "Cancel";
+            this.AVCancelBtn.UseVisualStyleBackColor = true;
+            this.AVCancelBtn.Click += new System.EventHandler(this.AVCancelBtn_Click);
+            // 
+            // AVNextBtn
+            // 
+            this.AVNextBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.AVNextBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AVNextBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AVNextBtn.Location = new System.Drawing.Point(399, 320);
+            this.AVNextBtn.Name = "AVNextBtn";
+            this.AVNextBtn.Size = new System.Drawing.Size(75, 30);
+            this.AVNextBtn.TabIndex = 30;
+            this.AVNextBtn.Text = "Next";
+            this.AVNextBtn.UseVisualStyleBackColor = true;
+            this.AVNextBtn.Click += new System.EventHandler(this.AVNextBtn_Click);
+            // 
+            // VPDateDT
+            // 
+            this.VPDateDT.Location = new System.Drawing.Point(229, 262);
+            this.VPDateDT.Name = "VPDateDT";
+            this.VPDateDT.Size = new System.Drawing.Size(245, 27);
+            this.VPDateDT.TabIndex = 53;
+            // 
+            // tabPage30
+            // 
+            this.tabPage30.BackColor = System.Drawing.Color.White;
+            this.tabPage30.Controls.Add(this.CVPDateLbl);
+            this.tabPage30.Controls.Add(this.CVYearLbl);
+            this.tabPage30.Controls.Add(this.CVModelLbl);
+            this.tabPage30.Controls.Add(this.CVMakeLbl);
+            this.tabPage30.Controls.Add(this.CVTypeLbl);
+            this.tabPage30.Controls.Add(this.CVRegLbl);
+            this.tabPage30.Controls.Add(this.label243);
+            this.tabPage30.Controls.Add(this.label245);
+            this.tabPage30.Controls.Add(this.label246);
+            this.tabPage30.Controls.Add(this.label247);
+            this.tabPage30.Controls.Add(this.label248);
+            this.tabPage30.Controls.Add(this.label249);
+            this.tabPage30.Controls.Add(this.AVBackBtn);
+            this.tabPage30.Controls.Add(this.AVConfirmBtn);
+            this.tabPage30.ForeColor = System.Drawing.Color.Black;
+            this.tabPage30.Location = new System.Drawing.Point(4, 28);
+            this.tabPage30.Name = "tabPage30";
+            this.tabPage30.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage30.Size = new System.Drawing.Size(482, 358);
+            this.tabPage30.TabIndex = 1;
+            this.tabPage30.Text = "Confirmation";
             // 
             // CVPDateLbl
             // 
@@ -475,12 +440,68 @@
             this.label249.TabIndex = 52;
             this.label249.Text = "Registration Number";
             // 
-            // VPDateDT
+            // AVBackBtn
             // 
-            this.VPDateDT.Location = new System.Drawing.Point(229, 262);
-            this.VPDateDT.Name = "VPDateDT";
-            this.VPDateDT.Size = new System.Drawing.Size(245, 27);
-            this.VPDateDT.TabIndex = 53;
+            this.AVBackBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.AVBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AVBackBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AVBackBtn.Location = new System.Drawing.Point(318, 320);
+            this.AVBackBtn.Name = "AVBackBtn";
+            this.AVBackBtn.Size = new System.Drawing.Size(75, 30);
+            this.AVBackBtn.TabIndex = 37;
+            this.AVBackBtn.Text = "Back";
+            this.AVBackBtn.UseVisualStyleBackColor = true;
+            this.AVBackBtn.Click += new System.EventHandler(this.AVBackBtn_Click);
+            // 
+            // AVConfirmBtn
+            // 
+            this.AVConfirmBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.AVConfirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AVConfirmBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AVConfirmBtn.Location = new System.Drawing.Point(399, 320);
+            this.AVConfirmBtn.Name = "AVConfirmBtn";
+            this.AVConfirmBtn.Size = new System.Drawing.Size(75, 30);
+            this.AVConfirmBtn.TabIndex = 36;
+            this.AVConfirmBtn.Text = "Confirm";
+            this.AVConfirmBtn.UseVisualStyleBackColor = true;
+            this.AVConfirmBtn.Click += new System.EventHandler(this.AVConfirmBtn_Click);
+            // 
+            // tabPage31
+            // 
+            this.tabPage31.BackColor = System.Drawing.Color.White;
+            this.tabPage31.Controls.Add(this.label232);
+            this.tabPage31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.tabPage31.Location = new System.Drawing.Point(4, 28);
+            this.tabPage31.Name = "tabPage31";
+            this.tabPage31.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage31.Size = new System.Drawing.Size(482, 358);
+            this.tabPage31.TabIndex = 2;
+            this.tabPage31.Text = "Complete";
+            // 
+            // label232
+            // 
+            this.label232.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label232.AutoSize = true;
+            this.label232.Font = new System.Drawing.Font("Calibri", 20F);
+            this.label232.Location = new System.Drawing.Point(89, 163);
+            this.label232.Name = "label232";
+            this.label232.Size = new System.Drawing.Size(304, 33);
+            this.label232.TabIndex = 1;
+            this.label232.Text = "Vehicle Successfully Added";
+            // 
+            // insightDataSet
+            // 
+            this.insightDataSet.DataSetName = "InsightDataSet";
+            this.insightDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // vehicleTypeBindingSource
+            // 
+            this.vehicleTypeBindingSource.DataMember = "VehicleType";
+            this.vehicleTypeBindingSource.DataSource = this.insightDataSet;
+            // 
+            // vehicleTypeTableAdapter
+            // 
+            this.vehicleTypeTableAdapter.ClearBeforeFill = true;
             // 
             // AddVehiclePage
             // 
@@ -495,6 +516,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddVehiclePage";
             this.Text = "AddVehiclePage";
+            this.Load += new System.EventHandler(this.AddVehiclePage_Load);
             this.TopBarPanel.ResumeLayout(false);
             this.TopBarPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
@@ -507,6 +529,8 @@
             this.tabPage30.PerformLayout();
             this.tabPage31.ResumeLayout(false);
             this.tabPage31.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vehicleTypeBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -551,5 +575,8 @@
         private System.Windows.Forms.Label label248;
         private System.Windows.Forms.Label label249;
         private System.Windows.Forms.DateTimePicker VPDateDT;
+        private InsightDataSet insightDataSet;
+        private System.Windows.Forms.BindingSource vehicleTypeBindingSource;
+        private InsightDataSetTableAdapters.VehicleTypeTableAdapter vehicleTypeTableAdapter;
     }
 }

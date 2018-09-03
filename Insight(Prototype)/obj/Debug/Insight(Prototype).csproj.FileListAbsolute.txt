@@ -198,7 +198,6 @@ C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.InSight_Load.resources
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.LoginScreen.resources
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.ReceiveProductsPage.resources
-C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.RemoveVehiclePage.resources
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.ReturnsPage.resources
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.UpdateClientLoginDetailsPage.resources
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.UpdateClientTypePage.resources
@@ -207,7 +206,6 @@ C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.UpdateEmployeeLoginDetailsPage.resources
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.UpdateEmployeeTypePage.resources
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.UpdateEquipmentPage.resources
-C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.UpdateJobDetailsPage.resources
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.UpdateJobTypePage.resources
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.UpdateProductPage.resources
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.UpdateProductTypePage.resources
@@ -246,3 +244,5 @@ C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.DeleteEquipmentTypePage.resources
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.DeleteProductType.resources
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.DeleteEmployeeTypePage.resources
+C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.AddProductPage.resources
+C:\Users\Kulani\source\repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.UpdateJobPage.resources

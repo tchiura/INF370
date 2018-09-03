@@ -57,7 +57,6 @@
             this.label239 = new System.Windows.Forms.Label();
             this.label240 = new System.Windows.Forms.Label();
             this.label226 = new System.Windows.Forms.Label();
-            this.label227 = new System.Windows.Forms.Label();
             this.label228 = new System.Windows.Forms.Label();
             this.AEqBackBtn = new System.Windows.Forms.Button();
             this.AEqConfirmBtn = new System.Windows.Forms.Button();
@@ -293,18 +292,17 @@
             // 
             this.tabPage30.BackColor = System.Drawing.Color.White;
             this.tabPage30.Controls.Add(this.AEqQuantityLbl);
-            this.tabPage30.Controls.Add(this.label234);
             this.tabPage30.Controls.Add(this.label235);
             this.tabPage30.Controls.Add(this.label239);
             this.tabPage30.Controls.Add(this.label240);
             this.tabPage30.Controls.Add(this.label226);
-            this.tabPage30.Controls.Add(this.label227);
             this.tabPage30.Controls.Add(this.label228);
             this.tabPage30.Controls.Add(this.AEqBackBtn);
             this.tabPage30.Controls.Add(this.AEqConfirmBtn);
             this.tabPage30.Controls.Add(this.AEqDescripLbl);
             this.tabPage30.Controls.Add(this.AEqTypeLbl);
             this.tabPage30.Controls.Add(this.AEqConditionLbl);
+            this.tabPage30.Controls.Add(this.label234);
             this.tabPage30.ForeColor = System.Drawing.Color.Black;
             this.tabPage30.Location = new System.Drawing.Point(4, 28);
             this.tabPage30.Name = "tabPage30";
@@ -367,15 +365,6 @@
             this.label226.TabIndex = 58;
             this.label226.Text = "Type:";
             // 
-            // label227
-            // 
-            this.label227.AutoSize = true;
-            this.label227.Location = new System.Drawing.Point(31, 108);
-            this.label227.Name = "label227";
-            this.label227.Size = new System.Drawing.Size(69, 19);
-            this.label227.TabIndex = 57;
-            this.label227.Text = "Quantity:";
-            // 
             // label228
             // 
             this.label228.AutoSize = true;
@@ -390,7 +379,7 @@
             this.AEqBackBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.AEqBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AEqBackBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AEqBackBtn.Location = new System.Drawing.Point(320, 207);
+            this.AEqBackBtn.Location = new System.Drawing.Point(318, 207);
             this.AEqBackBtn.Name = "AEqBackBtn";
             this.AEqBackBtn.Size = new System.Drawing.Size(75, 30);
             this.AEqBackBtn.TabIndex = 37;
@@ -403,7 +392,7 @@
             this.AEqConfirmBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.AEqConfirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AEqConfirmBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AEqConfirmBtn.Location = new System.Drawing.Point(401, 209);
+            this.AEqConfirmBtn.Location = new System.Drawing.Point(399, 207);
             this.AEqConfirmBtn.Name = "AEqConfirmBtn";
             this.AEqConfirmBtn.Size = new System.Drawing.Size(75, 30);
             this.AEqConfirmBtn.TabIndex = 36;
@@ -523,7 +512,6 @@
         private System.Windows.Forms.Label label239;
         private System.Windows.Forms.Label label240;
         private System.Windows.Forms.Label label226;
-        private System.Windows.Forms.Label label227;
         private System.Windows.Forms.Label label228;
         private System.Windows.Forms.Button AEqBackBtn;
         private System.Windows.Forms.Button AEqConfirmBtn;

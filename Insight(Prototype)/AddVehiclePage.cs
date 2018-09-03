@@ -32,7 +32,6 @@ namespace Insight_Prototype_
 
         private void AVNextBtn_Click(object sender, EventArgs e)
         {
-            //Year datatype?
             Reg = VRegTb.Text;
             Make = VMakeTb.Text;
             Model = VModelTb.Text;
@@ -46,22 +45,25 @@ namespace Insight_Prototype_
             CVTypeLbl.Text = Type;
             CVYearLbl.Text = Year;
             CVPDateLbl.Text = PDate;
-            
+            AddVehicleTab.SelectedIndex = 1;
 
         }
 
         private void AVConfirmBtn_Click(object sender, EventArgs e)
         {
+            //VehicleType vehicleType = new VehicleType();
             Vehicle InsightVehicle = new Vehicle();
             InsightVehicle.VehicleRegistration = Reg;
             InsightVehicle.VehicleMake = Make;
             InsightVehicle.VehicleModel = Model;
-            //InsightVehicle.VehicleType = Type;
-            //InsightVehicle.VehicleYear = Year;
-            //InsightVehicle.PurchaseDate = PDate;
+            //InsightVehicle.VehicleYear = Convert.ToDateTime(Year);
+            InsightVehicle.VehicleStatusID = 1;
+            InsightVehicle.VehicleYear = DateTime.Now;
+            InsightVehicle.PurchaseDate = Convert.ToDateTime(PDate);
 
             using (InsightEntities db = new InsightEntities())
             {
+                InsightVehicle.VehicleType = db.VehicleTypes.SingleOrDefault(x => x.VehicleTypeDescription == Type);
                 db.Vehicles.Add(InsightVehicle);
                 db.SaveChanges();
                 AddVehicleTab.SelectedIndex = 2;
@@ -71,6 +73,13 @@ namespace Insight_Prototype_
         private void AVBackBtn_Click(object sender, EventArgs e)
         {
             AddVehicleTab.SelectedIndex = 0;
+        }
+
+        private void AddVehiclePage_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'insightDataSet.VehicleType' table. You can move, or remove it, as needed.
+            this.vehicleTypeTableAdapter.Fill(this.insightDataSet.VehicleType);
+
         }
     }
 }

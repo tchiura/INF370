@@ -28,6 +28,16 @@ namespace Insight_Prototype_
 
         private void Form4_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'insightDataSet.OrganisationType' table. You can move, or remove it, as needed.
+            this.organisationTypeTableAdapter.Fill(this.insightDataSet.OrganisationType);
+            // TODO: This line of code loads data into the 'insightDataSet.ClientType' table. You can move, or remove it, as needed.
+            this.clientTypeTableAdapter.Fill(this.insightDataSet.ClientType);
+            // TODO: This line of code loads data into the 'insightDataSet.JobVehicle' table. You can move, or remove it, as needed.
+            this.jobVehicleTableAdapter.Fill(this.insightDataSet.JobVehicle);
+            // TODO: This line of code loads data into the 'insightDataSet.Vehicle' table. You can move, or remove it, as needed.
+            this.vehicleTableAdapter.Fill(this.insightDataSet.Vehicle);
+            // TODO: This line of code loads data into the 'insightDataSet.VehicleType' table. You can move, or remove it, as needed.
+            this.vehicleTypeTableAdapter.Fill(this.insightDataSet.VehicleType);
             // TODO: This line of code loads data into the 'insightDataSet.Country' table. You can move, or remove it, as needed.
             this.countryTableAdapter.Fill(this.insightDataSet.Country);
             // TODO: This line of code loads data into the 'insightDataSet.City' table. You can move, or remove it, as needed.
@@ -196,7 +206,7 @@ namespace Insight_Prototype_
 
         private void ViewVehiclePanel_Paint(object sender, PaintEventArgs e)
         {
-
+            ViewVehiclePanel.BringToFront();
         }
 
         private void button54_Click(object sender, EventArgs e)
@@ -520,7 +530,7 @@ namespace Insight_Prototype_
 
         private void button90_Click(object sender, EventArgs e)
         {
-            Form A = new UpdateJobDetailsPage();
+            Form A = new UpdateJobPage();
             this.Hide();
             A.ShowDialog();
             this.Show();
@@ -1107,12 +1117,12 @@ namespace Insight_Prototype_
 
         private void button188_Click(object sender, EventArgs e)
         {
-            CVRegLbl.Text = VRegTb.Text;
-            CVTypeLbl.Text = VTypeCmb.Text;
-            CVMakeLbl.Text = VMakeTb.Text;
-            CVModelLbl.Text = VModelTb.Text;
-            CVYearLbl.Text = VYearTb.Text;
-            CVPDateLbl.Text = VPDateDtp.Value.Date.ToString("dd/MM/yyyy");
+            //CVRegLbl.Text = VRegTb.Text;
+            //CVTypeLbl.Text = VTypeCmb.Text;
+            //CVMakeLbl.Text = VMakeTb.Text;
+            //CVModelLbl.Text = VModelTb.Text;
+            //CVYearLbl.Text = VYearTb.Text;
+            //CVPDateLbl.Text = VPDateDtp.Value.Date.ToString("dd/MM/yyyy");
 
             AddVehiclePanel.SelectedTab = AddVehiclePanel.TabPages[1];
         }
@@ -3100,16 +3110,16 @@ namespace Insight_Prototype_
             private void button168_Click(object sender, EventArgs e)
             {
                 //Attribute Mismatch with Database
-                CSTitleLbl.Text = STitleCmb.Text;
-                CSNameLbl.Text = SNameTb.Text;
-                CSCPNamelbl.Text = CPNameTb.Text;
-                CSCPNumberLbl.Text = CPNumberTb.Text;
-                CSCPEmailLbl.Text = CPEmailTb.Text;
-                CSCPALine1Lbl.Text = CPALine1Tb.Text;
-                CSCPALine2Lbl.Text = CPALine2Tb.Text;
-                CSCPALine3Lbl.Text = CPALine3Tb.Text;
-                CSCPACityLbl.Text = CPACityCmb.Text;
-                CSCPACountryLbl.Text = CPACountryCmb.Text;
+                //CSTitleLbl.Text = STitleCmb.Text;
+                //CSNameLbl.Text = SNameTb.Text;
+                //CSCPNamelbl.Text = CPNameTb.Text;
+                //CSCPNumberLbl.Text = CPNumberTb.Text;
+                //CSCPEmailLbl.Text = CPEmailTb.Text;
+                //CSCPALine1Lbl.Text = CPALine1Tb.Text;
+                //CSCPALine2Lbl.Text = CPALine2Tb.Text;
+                //CSCPALine3Lbl.Text = CPALine3Tb.Text;
+                //CSCPACityLbl.Text = CPACityCmb.Text;
+                //CSCPACountryLbl.Text = CPACountryCmb.Text;
             }
 
             private void textBox42_TextChanged(object sender, EventArgs e)
@@ -3999,7 +4009,10 @@ namespace Insight_Prototype_
 
             private void button53_Click(object sender, EventArgs e)
             {
-                AddVehiclePanel.BringToFront();
+                Form AV = new AddVehiclePage();
+                this.Hide();
+                AV.ShowDialog();
+                this.Show();
             }
 
             private void button55_Click(object sender, EventArgs e)
@@ -4303,5 +4316,11 @@ namespace Insight_Prototype_
             {
                 MoveListBoxItems(AddedSkillList, SkillList);
             }
+
+        private void dataGridView18_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DVTypeBtn.Enabled = true;
+            UVTypeBtn.Enabled = true;
         }
+    }
     }
