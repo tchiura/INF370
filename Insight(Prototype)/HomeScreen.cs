@@ -1104,6 +1104,7 @@ namespace Insight_Prototype_
 
         private void button188_Click(object sender, EventArgs e)
         {
+            /*
             CVRegLbl.Text = VRegTb.Text;
             CVTypeLbl.Text = VTypeCmb.Text;
             CVMakeLbl.Text = VMakeTb.Text;
@@ -1112,6 +1113,7 @@ namespace Insight_Prototype_
             CVPDateLbl.Text = VPDateDtp.Value.Date.ToString("dd/MM/yyyy");
 
             AddVehiclePanel.SelectedTab = AddVehiclePanel.TabPages[1];
+            */
         }
 
         private void label84_Click(object sender, EventArgs e)
@@ -2483,6 +2485,7 @@ namespace Insight_Prototype_
 
         private void button19_Click(object sender, EventArgs e)
         {
+            //IMPORTANT NOTE, PASSWORD IN DB SHOUlD BE CHANGED TO VARCHAR(100)!
             SqlConnection conn = new SqlConnection(globalClass.myConn);
             SqlDataReader myReader;
             bool duplicate = false;
@@ -3097,6 +3100,7 @@ namespace Insight_Prototype_
             private void button168_Click(object sender, EventArgs e)
             {
                 //Attribute Mismatch with Database
+                /*
                 CSTitleLbl.Text = STitleCmb.Text;
                 CSNameLbl.Text = SNameTb.Text;
                 CSCPNamelbl.Text = CPNameTb.Text;
@@ -3107,6 +3111,7 @@ namespace Insight_Prototype_
                 CSCPALine3Lbl.Text = CPALine3Tb.Text;
                 CSCPACityLbl.Text = CPACityCmb.Text;
                 CSCPACountryLbl.Text = CPACountryCmb.Text;
+                */
             }
 
             private void textBox42_TextChanged(object sender, EventArgs e)
