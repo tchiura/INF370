@@ -246,3 +246,4 @@ C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.DeleteEmployeeTypePage.resources
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.AddProductPage.resources
 C:\Users\Kulani\source\repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.UpdateJobPage.resources
+C:\Users\Kulani\source\repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.ViewVehicleTypePage.resources

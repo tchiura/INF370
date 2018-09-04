@@ -4319,8 +4319,8 @@ namespace Insight_Prototype_
 
         private void dataGridView18_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            DVTypeBtn.Enabled = true;
-            UVTypeBtn.Enabled = true;
+            //DVTypeBtn.Enabled = true;
+            //UVTypeBtn.Enabled = true;
         }
     }
     }

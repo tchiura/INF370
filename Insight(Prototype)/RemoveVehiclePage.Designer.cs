@@ -1,6 +1,6 @@
 ﻿namespace Insight_Prototype_
 {
-    partial class DeleteVehiclePage
+    partial class RemoveVehiclePage
     {
         /// <summary>
         /// Required designer variable.
