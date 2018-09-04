@@ -50,6 +50,24 @@
             this.button31 = new System.Windows.Forms.Button();
             this.button127 = new System.Windows.Forms.Button();
             this.BaseActionPanel = new System.Windows.Forms.Panel();
+            this.ViewProjectRequestPanel = new System.Windows.Forms.Panel();
+            this.label165 = new System.Windows.Forms.Label();
+            this.button78 = new System.Windows.Forms.Button();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.button149 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
+            this.button151 = new System.Windows.Forms.Button();
+            this.button211 = new System.Windows.Forms.Button();
+            this.textBox37 = new System.Windows.Forms.TextBox();
+            this.dataGridView14 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AddClientDetailsTab = new System.Windows.Forms.TabControl();
             this.CDetails = new System.Windows.Forms.TabPage();
             this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
@@ -399,24 +417,6 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ViewProjectRequestPanel = new System.Windows.Forms.Panel();
-            this.label165 = new System.Windows.Forms.Label();
-            this.button78 = new System.Windows.Forms.Button();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.button149 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
-            this.button151 = new System.Windows.Forms.Button();
-            this.button211 = new System.Windows.Forms.Button();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.dataGridView14 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ViewProjectPanel = new System.Windows.Forms.Panel();
             this.label57 = new System.Windows.Forms.Label();
             this.button75 = new System.Windows.Forms.Button();
@@ -943,6 +943,10 @@
             this.ManagerDashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.InsightPicBx)).BeginInit();
             this.BaseActionPanel.SuspendLayout();
+            this.ViewProjectRequestPanel.SuspendLayout();
+            this.panel14.SuspendLayout();
+            this.tableLayoutPanel25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView14)).BeginInit();
             this.AddClientDetailsTab.SuspendLayout();
             this.CDetails.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -999,10 +1003,6 @@
             this.panel17.SuspendLayout();
             this.tableLayoutPanel29.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView17)).BeginInit();
-            this.ViewProjectRequestPanel.SuspendLayout();
-            this.panel14.SuspendLayout();
-            this.tableLayoutPanel25.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView14)).BeginInit();
             this.ViewProjectPanel.SuspendLayout();
             this.panel4.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
@@ -1397,10 +1397,10 @@
             // BaseActionPanel
             // 
             this.BaseActionPanel.BackColor = System.Drawing.Color.White;
+            this.BaseActionPanel.Controls.Add(this.AddEmployeeDetailsTab);
             this.BaseActionPanel.Controls.Add(this.ViewProjectRequestPanel);
             this.BaseActionPanel.Controls.Add(this.AddClientDetailsTab);
             this.BaseActionPanel.Controls.Add(this.AddJobType);
-            this.BaseActionPanel.Controls.Add(this.AddEmployeeDetailsTab);
             this.BaseActionPanel.Controls.Add(this.UpdatePersonalDetailsPanel);
             this.BaseActionPanel.Controls.Add(this.AddProjectPanel);
             this.BaseActionPanel.Controls.Add(this.ViewVehicleType);
@@ -1451,6 +1451,174 @@
             this.BaseActionPanel.Size = new System.Drawing.Size(1050, 671);
             this.BaseActionPanel.TabIndex = 2;
             this.BaseActionPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // ViewProjectRequestPanel
+            // 
+            this.ViewProjectRequestPanel.Controls.Add(this.label165);
+            this.ViewProjectRequestPanel.Controls.Add(this.button78);
+            this.ViewProjectRequestPanel.Controls.Add(this.panel14);
+            this.ViewProjectRequestPanel.Controls.Add(this.textBox37);
+            this.ViewProjectRequestPanel.Controls.Add(this.dataGridView14);
+            this.ViewProjectRequestPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ViewProjectRequestPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.ViewProjectRequestPanel.Location = new System.Drawing.Point(0, 0);
+            this.ViewProjectRequestPanel.Name = "ViewProjectRequestPanel";
+            this.ViewProjectRequestPanel.Size = new System.Drawing.Size(1050, 671);
+            this.ViewProjectRequestPanel.TabIndex = 36;
+            this.ViewProjectRequestPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ViewProjectRequestPanel_Paint);
+            // 
+            // label165
+            // 
+            this.label165.AutoSize = true;
+            this.label165.Location = new System.Drawing.Point(15, 14);
+            this.label165.Name = "label165";
+            this.label165.Size = new System.Drawing.Size(52, 19);
+            this.label165.TabIndex = 4;
+            this.label165.Text = "Search";
+            this.label165.Click += new System.EventHandler(this.label165_Click);
+            // 
+            // button78
+            // 
+            this.button78.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button78.Location = new System.Drawing.Point(297, 36);
+            this.button78.Name = "button78";
+            this.button78.Size = new System.Drawing.Size(140, 27);
+            this.button78.TabIndex = 3;
+            this.button78.Text = "Search";
+            this.button78.UseVisualStyleBackColor = true;
+            this.button78.Click += new System.EventHandler(this.button78_Click);
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.panel14.Controls.Add(this.button149);
+            this.panel14.Controls.Add(this.tableLayoutPanel25);
+            this.panel14.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel14.Location = new System.Drawing.Point(906, 0);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(144, 671);
+            this.panel14.TabIndex = 2;
+            this.panel14.Paint += new System.Windows.Forms.PaintEventHandler(this.panel14_Paint);
+            // 
+            // button149
+            // 
+            this.button149.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button149.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button149.Location = new System.Drawing.Point(0, 612);
+            this.button149.Name = "button149";
+            this.button149.Size = new System.Drawing.Size(144, 59);
+            this.button149.TabIndex = 3;
+            this.button149.Text = "Back";
+            this.button149.UseVisualStyleBackColor = true;
+            this.button149.Click += new System.EventHandler(this.button149_Click);
+            // 
+            // tableLayoutPanel25
+            // 
+            this.tableLayoutPanel25.ColumnCount = 1;
+            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel25.Controls.Add(this.button151, 0, 0);
+            this.tableLayoutPanel25.Controls.Add(this.button211, 0, 1);
+            this.tableLayoutPanel25.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel25.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel25.Name = "tableLayoutPanel25";
+            this.tableLayoutPanel25.RowCount = 6;
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel25.Size = new System.Drawing.Size(144, 386);
+            this.tableLayoutPanel25.TabIndex = 0;
+            this.tableLayoutPanel25.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel25_Paint);
+            // 
+            // button151
+            // 
+            this.button151.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button151.Location = new System.Drawing.Point(3, 3);
+            this.button151.Name = "button151";
+            this.button151.Size = new System.Drawing.Size(138, 56);
+            this.button151.TabIndex = 0;
+            this.button151.Text = "Generate Qoutation";
+            this.button151.UseVisualStyleBackColor = true;
+            this.button151.Click += new System.EventHandler(this.button151_Click);
+            // 
+            // button211
+            // 
+            this.button211.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button211.Location = new System.Drawing.Point(3, 67);
+            this.button211.Name = "button211";
+            this.button211.Size = new System.Drawing.Size(138, 56);
+            this.button211.TabIndex = 1;
+            this.button211.Text = "View Qoutation";
+            this.button211.UseVisualStyleBackColor = true;
+            // 
+            // textBox37
+            // 
+            this.textBox37.Location = new System.Drawing.Point(12, 36);
+            this.textBox37.Name = "textBox37";
+            this.textBox37.Size = new System.Drawing.Size(265, 27);
+            this.textBox37.TabIndex = 1;
+            this.textBox37.TextChanged += new System.EventHandler(this.textBox37_TextChanged);
+            // 
+            // dataGridView14
+            // 
+            this.dataGridView14.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView14.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView14.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn6,
+            this.Column24,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.Column25,
+            this.Column26,
+            this.dataGridViewTextBoxColumn10,
+            this.Column27});
+            this.dataGridView14.Location = new System.Drawing.Point(12, 75);
+            this.dataGridView14.Name = "dataGridView14";
+            this.dataGridView14.Size = new System.Drawing.Size(885, 585);
+            this.dataGridView14.TabIndex = 0;
+            this.dataGridView14.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView14_CellContentClick);
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.HeaderText = "Project Request ID";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // Column24
+            // 
+            this.Column24.HeaderText = "Project Request Description";
+            this.Column24.Name = "Column24";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.HeaderText = "Client Name";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.HeaderText = "Address";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // Column25
+            // 
+            this.Column25.HeaderText = "City";
+            this.Column25.Name = "Column25";
+            // 
+            // Column26
+            // 
+            this.Column26.HeaderText = "Country";
+            this.Column26.Name = "Column26";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.HeaderText = "Project Request Type";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // Column27
+            // 
+            this.Column27.HeaderText = "Project Request Date";
+            this.Column27.Name = "Column27";
             // 
             // AddClientDetailsTab
             // 
@@ -5123,174 +5291,6 @@
             // 
             this.dataGridViewTextBoxColumn19.HeaderText = "Price";
             this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            // 
-            // ViewProjectRequestPanel
-            // 
-            this.ViewProjectRequestPanel.Controls.Add(this.label165);
-            this.ViewProjectRequestPanel.Controls.Add(this.button78);
-            this.ViewProjectRequestPanel.Controls.Add(this.panel14);
-            this.ViewProjectRequestPanel.Controls.Add(this.textBox37);
-            this.ViewProjectRequestPanel.Controls.Add(this.dataGridView14);
-            this.ViewProjectRequestPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ViewProjectRequestPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.ViewProjectRequestPanel.Location = new System.Drawing.Point(0, 0);
-            this.ViewProjectRequestPanel.Name = "ViewProjectRequestPanel";
-            this.ViewProjectRequestPanel.Size = new System.Drawing.Size(1050, 671);
-            this.ViewProjectRequestPanel.TabIndex = 36;
-            this.ViewProjectRequestPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ViewProjectRequestPanel_Paint);
-            // 
-            // label165
-            // 
-            this.label165.AutoSize = true;
-            this.label165.Location = new System.Drawing.Point(15, 14);
-            this.label165.Name = "label165";
-            this.label165.Size = new System.Drawing.Size(52, 19);
-            this.label165.TabIndex = 4;
-            this.label165.Text = "Search";
-            this.label165.Click += new System.EventHandler(this.label165_Click);
-            // 
-            // button78
-            // 
-            this.button78.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button78.Location = new System.Drawing.Point(297, 36);
-            this.button78.Name = "button78";
-            this.button78.Size = new System.Drawing.Size(140, 27);
-            this.button78.TabIndex = 3;
-            this.button78.Text = "Search";
-            this.button78.UseVisualStyleBackColor = true;
-            this.button78.Click += new System.EventHandler(this.button78_Click);
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.panel14.Controls.Add(this.button149);
-            this.panel14.Controls.Add(this.tableLayoutPanel25);
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel14.Location = new System.Drawing.Point(906, 0);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(144, 671);
-            this.panel14.TabIndex = 2;
-            this.panel14.Paint += new System.Windows.Forms.PaintEventHandler(this.panel14_Paint);
-            // 
-            // button149
-            // 
-            this.button149.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button149.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button149.Location = new System.Drawing.Point(0, 612);
-            this.button149.Name = "button149";
-            this.button149.Size = new System.Drawing.Size(144, 59);
-            this.button149.TabIndex = 3;
-            this.button149.Text = "Back";
-            this.button149.UseVisualStyleBackColor = true;
-            this.button149.Click += new System.EventHandler(this.button149_Click);
-            // 
-            // tableLayoutPanel25
-            // 
-            this.tableLayoutPanel25.ColumnCount = 1;
-            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel25.Controls.Add(this.button151, 0, 0);
-            this.tableLayoutPanel25.Controls.Add(this.button211, 0, 1);
-            this.tableLayoutPanel25.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel25.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel25.Name = "tableLayoutPanel25";
-            this.tableLayoutPanel25.RowCount = 6;
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel25.Size = new System.Drawing.Size(144, 386);
-            this.tableLayoutPanel25.TabIndex = 0;
-            this.tableLayoutPanel25.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel25_Paint);
-            // 
-            // button151
-            // 
-            this.button151.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button151.Location = new System.Drawing.Point(3, 3);
-            this.button151.Name = "button151";
-            this.button151.Size = new System.Drawing.Size(138, 56);
-            this.button151.TabIndex = 0;
-            this.button151.Text = "Generate Qoutation";
-            this.button151.UseVisualStyleBackColor = true;
-            this.button151.Click += new System.EventHandler(this.button151_Click);
-            // 
-            // button211
-            // 
-            this.button211.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button211.Location = new System.Drawing.Point(3, 67);
-            this.button211.Name = "button211";
-            this.button211.Size = new System.Drawing.Size(138, 56);
-            this.button211.TabIndex = 1;
-            this.button211.Text = "View Qoutation";
-            this.button211.UseVisualStyleBackColor = true;
-            // 
-            // textBox37
-            // 
-            this.textBox37.Location = new System.Drawing.Point(12, 36);
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(265, 27);
-            this.textBox37.TabIndex = 1;
-            this.textBox37.TextChanged += new System.EventHandler(this.textBox37_TextChanged);
-            // 
-            // dataGridView14
-            // 
-            this.dataGridView14.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView14.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView14.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn6,
-            this.Column24,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.Column25,
-            this.Column26,
-            this.dataGridViewTextBoxColumn10,
-            this.Column27});
-            this.dataGridView14.Location = new System.Drawing.Point(12, 75);
-            this.dataGridView14.Name = "dataGridView14";
-            this.dataGridView14.Size = new System.Drawing.Size(885, 585);
-            this.dataGridView14.TabIndex = 0;
-            this.dataGridView14.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView14_CellContentClick);
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "Project Request ID";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // Column24
-            // 
-            this.Column24.HeaderText = "Project Request Description";
-            this.Column24.Name = "Column24";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "Client Name";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.HeaderText = "Address";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // Column25
-            // 
-            this.Column25.HeaderText = "City";
-            this.Column25.Name = "Column25";
-            // 
-            // Column26
-            // 
-            this.Column26.HeaderText = "Country";
-            this.Column26.Name = "Column26";
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.HeaderText = "Project Request Type";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            // 
-            // Column27
-            // 
-            this.Column27.HeaderText = "Project Request Date";
-            this.Column27.Name = "Column27";
             // 
             // ViewProjectPanel
             // 
@@ -11200,6 +11200,11 @@
             this.ManagerDashboardPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.InsightPicBx)).EndInit();
             this.BaseActionPanel.ResumeLayout(false);
+            this.ViewProjectRequestPanel.ResumeLayout(false);
+            this.ViewProjectRequestPanel.PerformLayout();
+            this.panel14.ResumeLayout(false);
+            this.tableLayoutPanel25.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView14)).EndInit();
             this.AddClientDetailsTab.ResumeLayout(false);
             this.CDetails.ResumeLayout(false);
             this.CDetails.PerformLayout();
@@ -11282,11 +11287,6 @@
             this.panel17.ResumeLayout(false);
             this.tableLayoutPanel29.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView17)).EndInit();
-            this.ViewProjectRequestPanel.ResumeLayout(false);
-            this.ViewProjectRequestPanel.PerformLayout();
-            this.panel14.ResumeLayout(false);
-            this.tableLayoutPanel25.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView14)).EndInit();
             this.ViewProjectPanel.ResumeLayout(false);
             this.ViewProjectPanel.PerformLayout();
             this.panel4.ResumeLayout(false);
