@@ -16,5 +16,10 @@ namespace Insight_Prototype_
         {
             InitializeComponent();
         }
+
+        private void label234_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -16,15 +16,5 @@ namespace Insight_Prototype_
         {
             InitializeComponent();
         }
-
-        private void button15_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Are you sure you want to remove this equipment?", "Remove", MessageBoxButtons.YesNo);
-        }
-
-        private void DeleteClientDetailsPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

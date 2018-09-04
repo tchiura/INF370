@@ -36,7 +36,7 @@
             this.DeleteClientDetailsPanel = new System.Windows.Forms.Panel();
             this.DOTCancelBtn = new System.Windows.Forms.Button();
             this.DOTDeleteBtn = new System.Windows.Forms.Button();
-            this.label27 = new System.Windows.Forms.Label();
+            this.DOrgTypeLbl = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -109,7 +109,7 @@
             this.DeleteClientDetailsPanel.BackColor = System.Drawing.Color.White;
             this.DeleteClientDetailsPanel.Controls.Add(this.DOTCancelBtn);
             this.DeleteClientDetailsPanel.Controls.Add(this.DOTDeleteBtn);
-            this.DeleteClientDetailsPanel.Controls.Add(this.label27);
+            this.DeleteClientDetailsPanel.Controls.Add(this.DOrgTypeLbl);
             this.DeleteClientDetailsPanel.Controls.Add(this.label17);
             this.DeleteClientDetailsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DeleteClientDetailsPanel.Location = new System.Drawing.Point(0, 30);
@@ -143,15 +143,15 @@
             this.DOTDeleteBtn.UseVisualStyleBackColor = true;
             this.DOTDeleteBtn.Click += new System.EventHandler(this.DOTDeleteBtn_Click);
             // 
-            // label27
+            // DOrgTypeLbl
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(256, 45);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(40, 17);
-            this.label27.TabIndex = 49;
-            this.label27.Text = "NGO";
+            this.DOrgTypeLbl.AutoSize = true;
+            this.DOrgTypeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DOrgTypeLbl.Location = new System.Drawing.Point(256, 45);
+            this.DOrgTypeLbl.Name = "DOrgTypeLbl";
+            this.DOrgTypeLbl.Size = new System.Drawing.Size(40, 17);
+            this.DOrgTypeLbl.TabIndex = 49;
+            this.DOrgTypeLbl.Text = "NGO";
             // 
             // label17
             // 
@@ -197,7 +197,7 @@
         private System.Windows.Forms.Panel DeleteClientDetailsPanel;
         private System.Windows.Forms.Button DOTCancelBtn;
         private System.Windows.Forms.Button DOTDeleteBtn;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label DOrgTypeLbl;
         private System.Windows.Forms.Label label17;
     }
 }

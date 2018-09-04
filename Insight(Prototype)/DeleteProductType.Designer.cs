@@ -30,13 +30,13 @@
         {
             this.DProdTDeleteBtn = new System.Windows.Forms.Button();
             this.TopBarPanel = new System.Windows.Forms.Panel();
-            this.Userlbl = new System.Windows.Forms.Label();
-            this.DProdTCancelBtn = new System.Windows.Forms.Button();
-            this.AVTConfirmLbl = new System.Windows.Forms.Label();
-            this.label91 = new System.Windows.Forms.Label();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.Userlbl = new System.Windows.Forms.Label();
             this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
+            this.DProdTCancelBtn = new System.Windows.Forms.Button();
+            this.DProdTypeLbl = new System.Windows.Forms.Label();
+            this.label91 = new System.Windows.Forms.Label();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
@@ -72,49 +72,6 @@
             this.TopBarPanel.Size = new System.Drawing.Size(460, 30);
             this.TopBarPanel.TabIndex = 47;
             // 
-            // Userlbl
-            // 
-            this.Userlbl.AutoSize = true;
-            this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.Userlbl.Location = new System.Drawing.Point(3, 2);
-            this.Userlbl.Name = "Userlbl";
-            this.Userlbl.Size = new System.Drawing.Size(171, 23);
-            this.Userlbl.TabIndex = 0;
-            this.Userlbl.Text = "Delete Product Type";
-            // 
-            // DProdTCancelBtn
-            // 
-            this.DProdTCancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DProdTCancelBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DProdTCancelBtn.Location = new System.Drawing.Point(289, 157);
-            this.DProdTCancelBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.DProdTCancelBtn.Name = "DProdTCancelBtn";
-            this.DProdTCancelBtn.Size = new System.Drawing.Size(75, 30);
-            this.DProdTCancelBtn.TabIndex = 51;
-            this.DProdTCancelBtn.Text = "Cancel";
-            this.DProdTCancelBtn.UseVisualStyleBackColor = true;
-            this.DProdTCancelBtn.Click += new System.EventHandler(this.DProdTCancelBtn_Click);
-            // 
-            // AVTConfirmLbl
-            // 
-            this.AVTConfirmLbl.AutoSize = true;
-            this.AVTConfirmLbl.Location = new System.Drawing.Point(230, 87);
-            this.AVTConfirmLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.AVTConfirmLbl.Name = "AVTConfirmLbl";
-            this.AVTConfirmLbl.Size = new System.Drawing.Size(52, 19);
-            this.AVTConfirmLbl.TabIndex = 49;
-            this.AVTConfirmLbl.Text = "Router";
-            // 
-            // label91
-            // 
-            this.label91.AutoSize = true;
-            this.label91.Location = new System.Drawing.Point(36, 87);
-            this.label91.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(100, 19);
-            this.label91.TabIndex = 48;
-            this.label91.Text = "Product Type: ";
-            // 
             // pictureBox14
             // 
             this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Right;
@@ -125,6 +82,16 @@
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 2;
             this.pictureBox14.TabStop = false;
+            // 
+            // Userlbl
+            // 
+            this.Userlbl.AutoSize = true;
+            this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.Userlbl.Location = new System.Drawing.Point(3, 2);
+            this.Userlbl.Name = "Userlbl";
+            this.Userlbl.Size = new System.Drawing.Size(171, 23);
+            this.Userlbl.TabIndex = 0;
+            this.Userlbl.Text = "Delete Product Type";
             // 
             // MinimisePicBx
             // 
@@ -148,6 +115,39 @@
             this.ClosePicBx.TabIndex = 0;
             this.ClosePicBx.TabStop = false;
             // 
+            // DProdTCancelBtn
+            // 
+            this.DProdTCancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DProdTCancelBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DProdTCancelBtn.Location = new System.Drawing.Point(289, 157);
+            this.DProdTCancelBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.DProdTCancelBtn.Name = "DProdTCancelBtn";
+            this.DProdTCancelBtn.Size = new System.Drawing.Size(75, 30);
+            this.DProdTCancelBtn.TabIndex = 51;
+            this.DProdTCancelBtn.Text = "Cancel";
+            this.DProdTCancelBtn.UseVisualStyleBackColor = true;
+            this.DProdTCancelBtn.Click += new System.EventHandler(this.DProdTCancelBtn_Click);
+            // 
+            // DProdTypeLbl
+            // 
+            this.DProdTypeLbl.AutoSize = true;
+            this.DProdTypeLbl.Location = new System.Drawing.Point(224, 61);
+            this.DProdTypeLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DProdTypeLbl.Name = "DProdTypeLbl";
+            this.DProdTypeLbl.Size = new System.Drawing.Size(52, 19);
+            this.DProdTypeLbl.TabIndex = 49;
+            this.DProdTypeLbl.Text = "Router";
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.Location = new System.Drawing.Point(30, 61);
+            this.label91.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(100, 19);
+            this.label91.TabIndex = 48;
+            this.label91.Text = "Product Type: ";
+            // 
             // DeleteProductType
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
@@ -157,11 +157,11 @@
             this.Controls.Add(this.DProdTDeleteBtn);
             this.Controls.Add(this.TopBarPanel);
             this.Controls.Add(this.DProdTCancelBtn);
-            this.Controls.Add(this.AVTConfirmLbl);
+            this.Controls.Add(this.DProdTypeLbl);
             this.Controls.Add(this.label91);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DeleteProductType";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DeleteProductType";
@@ -184,7 +184,7 @@
         private System.Windows.Forms.PictureBox MinimisePicBx;
         private System.Windows.Forms.PictureBox ClosePicBx;
         private System.Windows.Forms.Button DProdTCancelBtn;
-        private System.Windows.Forms.Label AVTConfirmLbl;
+        private System.Windows.Forms.Label DProdTypeLbl;
         private System.Windows.Forms.Label label91;
     }
 }
