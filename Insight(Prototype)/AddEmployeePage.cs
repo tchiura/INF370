@@ -51,6 +51,7 @@ namespace Insight_Prototype_
             }
         }
 
+
         public IEnumerable<string> GetTagList()
         {
             using (var connection = new SqlConnection(globalClass.myConn))
