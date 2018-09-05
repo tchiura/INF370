@@ -33,6 +33,7 @@ namespace Insight_Prototype_
             EmployeeAd3lbl.Text = EmployeeAd3.Text;
             EmployeeCitylbl.Text = EmployeeCity.Text;
             EmployeeCountrylbl.Text = EmployeeCountry.Text;
+
         }
 
         private void AddEmployeePage_Load(object sender, EventArgs e)
