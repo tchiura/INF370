@@ -64,9 +64,7 @@
     <Compile Include="AddClientDetailsPage.Designer.cs">
       <DependentUpon>AddClientDetailsPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddEmployeePage.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="AddEmployeePage.cs" />
     <Compile Include="AddEmployeePage.Designer.cs">
       <DependentUpon>AddEmployeePage.cs</DependentUpon>
     </Compile>
@@ -76,9 +74,7 @@
     <Compile Include="AddEquipmentTypePage.Designer.cs">
       <DependentUpon>AddEquipmentTypePage.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddJobTypePage.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="AddJobTypePage.cs" />
     <Compile Include="AddJobTypePage.Designer.cs">
       <DependentUpon>AddJobTypePage.cs</DependentUpon>
     </Compile>
@@ -205,9 +201,7 @@
     <Compile Include="CreatePurchaseOrderPage.Designer.cs">
       <DependentUpon>CreatePurchaseOrderPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="DeleteClientTypePage.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="DeleteClientTypePage.cs" />
     <Compile Include="DeleteClientTypePage.Designer.cs">
       <DependentUpon>DeleteClientTypePage.cs</DependentUpon>
     </Compile>
@@ -229,9 +223,7 @@
     <Compile Include="DeleteEquipmentPage.Designer.cs">
       <DependentUpon>DeleteEquipmentPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="DeleteJobPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="DeleteJobPage.cs" />
     <Compile Include="DeleteJobPage.Designer.cs">
       <DependentUpon>DeleteJobPage.cs</DependentUpon>
     </Compile>
@@ -241,9 +233,7 @@
     <Compile Include="DeleteSupplierPage.Designer.cs">
       <DependentUpon>DeleteSupplierPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="DeleteVehiclePage.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="DeleteVehiclePage.cs" />
     <Compile Include="DeleteVehiclePage.Designer.cs">
       <DependentUpon>DeleteVehiclePage.cs</DependentUpon>
     </Compile>
@@ -267,6 +257,12 @@
     </Compile>
     <Compile Include="EquipmentType.cs">
       <DependentUpon>InsightModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEmployee.Designer.cs">
+      <DependentUpon>frmAddEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="GenerateInvoicePage.cs">
       <SubType>Form</SubType>
@@ -657,6 +653,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteVehiclePage.resx">
       <DependentUpon>DeleteVehiclePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEmployee.resx">
+      <DependentUpon>frmAddEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GenerateInvoicePage.resx">
       <DependentUpon>GenerateInvoicePage.cs</DependentUpon>
