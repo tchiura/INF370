@@ -64,6 +64,12 @@
     <Compile Include="AddClientDetailsPage.Designer.cs">
       <DependentUpon>AddClientDetailsPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddEmployeePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEmployeePage.Designer.cs">
+      <DependentUpon>AddEmployeePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddEquipmentTypePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -561,6 +567,9 @@
     <Compile Include="WinAPI.cs" />
     <EmbeddedResource Include="AddClientDetailsPage.resx">
       <DependentUpon>AddClientDetailsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEmployeePage.resx">
+      <DependentUpon>AddEmployeePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddEquipmentTypePage.resx">
       <DependentUpon>AddEquipmentTypePage.cs</DependentUpon>

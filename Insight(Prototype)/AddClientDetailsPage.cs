@@ -246,6 +246,7 @@ namespace Insight_Prototype_
                 db.SaveChanges();
             }
 
+            //email feature
             MessageBox.Show("Successful, Username: " + username + " Password: " + pass);
         }
 
