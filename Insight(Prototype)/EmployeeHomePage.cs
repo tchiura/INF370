@@ -10,15 +10,11 @@ using System.Windows.Forms;
 
 namespace Insight_Prototype_
 {
-    public partial class ClientHomeScreen : Form
+    public partial class EmployeeHomePage : Form
     {
-        public ClientHomeScreen()
+        public EmployeeHomePage()
         {
             InitializeComponent();
-        }
-
-        private void ClientHomeScreen_Load(object sender, EventArgs e)
-        {
         }
     }
 }
