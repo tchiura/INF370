@@ -79,7 +79,6 @@ namespace Insight_Prototype_
                 }
             }
             #endregion
-
             if (validLogin)
             {
                 Form f2 = new EmployeeHomePage();

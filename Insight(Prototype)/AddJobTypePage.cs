@@ -31,7 +31,6 @@ namespace Insight_Prototype_
                 JTConfirmLbl.Text = TypeDescr;
                 AddJobTypeTC.SelectedTab = AddJobTypeTC.TabPages[1];
             }
-
         }
 
         private void button24_Click(object sender, EventArgs e)

@@ -95,7 +95,7 @@ namespace Insight_Prototype_
                 {
                     duplicate = true;
                 }
-
+            
                 myReader.Close();
                 conn.Close();
             }
