@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Insight_Prototype_
 {
-    public partial class DeleteJobPage : Form
+    public partial class ViewClientDetailsPage : Form
     {
-        public DeleteJobPage()
+        public ViewClientDetailsPage()
         {
             InitializeComponent();
-        }
-
-        private void button15_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Are you sure you want to delete this job?", "Delete", MessageBoxButtons.YesNo);
         }
     }
 }

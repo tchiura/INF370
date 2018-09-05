@@ -59,5 +59,15 @@ namespace Insight_Prototype_
                 AddVehicleTypeTab.SelectedIndex = 2;
             }
         }
+
+        private void AVTConfirmLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label91_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

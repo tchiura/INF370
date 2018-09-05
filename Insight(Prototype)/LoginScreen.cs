@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
@@ -9,6 +8,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System;
 
 namespace Insight_Prototype_
 {
@@ -21,12 +21,13 @@ namespace Insight_Prototype_
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Globals myglobalclass = new Globals();
             bool validLogin = false;
             bool validUsername = false;
-            //Check if login details are valid
-            #region
-            SqlConnection conn = new SqlConnection("Data Source =.; Initial Catalog = Insight; Integrated Security = True");
+
+            SqlConnection conn = new SqlConnection(myglobalclass.myConn);
             SqlDataReader myReader;
+
             #region Checking if user exists first. If correct, check if password is correct
             try
             {
@@ -43,6 +44,7 @@ namespace Insight_Prototype_
             {
                 MessageBox.Show("Error: " + myEx.Message);
             }
+            #endregion
             #region Check if password is correct
             if (validUsername)
             {
@@ -77,12 +79,10 @@ namespace Insight_Prototype_
                 }
             }
             #endregion
-            #endregion
-            #endregion
 
             if (validLogin)
             {
-                Form f2 = new HomeScreen();
+                Form f2 = new EmployeeHomePage();
                 f2.Show();
                 this.Hide();
             }
@@ -92,9 +92,11 @@ namespace Insight_Prototype_
             }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            AddClientDetailsPage clientpage = new AddClientDetailsPage();
+            clientpage.ShowDialog();
+            this.Dispose();
         }
     }
 }

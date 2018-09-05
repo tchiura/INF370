@@ -15435,7 +15435,7 @@ namespace Insight_Prototype_ {
             
             private global::System.Data.DataColumn columnProjectRequestTypeID;
             
-            private global::System.Data.DataColumn columnProjectRequestDescription;
+            private global::System.Data.DataColumn columnProjectRequestTypeDescription;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
@@ -15480,9 +15480,9 @@ namespace Insight_Prototype_ {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn ProjectRequestDescriptionColumn {
+            public global::System.Data.DataColumn ProjectRequestTypeDescriptionColumn {
                 get {
-                    return this.columnProjectRequestDescription;
+                    return this.columnProjectRequestTypeDescription;
                 }
             }
             
@@ -15523,11 +15523,11 @@ namespace Insight_Prototype_ {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public ProjectRequestTypeRow AddProjectRequestTypeRow(string ProjectRequestDescription) {
+            public ProjectRequestTypeRow AddProjectRequestTypeRow(string ProjectRequestTypeDescription) {
                 ProjectRequestTypeRow rowProjectRequestTypeRow = ((ProjectRequestTypeRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        ProjectRequestDescription};
+                        ProjectRequestTypeDescription};
                 rowProjectRequestTypeRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowProjectRequestTypeRow);
                 return rowProjectRequestTypeRow;
@@ -15558,7 +15558,7 @@ namespace Insight_Prototype_ {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             internal void InitVars() {
                 this.columnProjectRequestTypeID = base.Columns["ProjectRequestTypeID"];
-                this.columnProjectRequestDescription = base.Columns["ProjectRequestDescription"];
+                this.columnProjectRequestTypeDescription = base.Columns["ProjectRequestTypeDescription"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -15566,8 +15566,8 @@ namespace Insight_Prototype_ {
             private void InitClass() {
                 this.columnProjectRequestTypeID = new global::System.Data.DataColumn("ProjectRequestTypeID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnProjectRequestTypeID);
-                this.columnProjectRequestDescription = new global::System.Data.DataColumn("ProjectRequestDescription", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnProjectRequestDescription);
+                this.columnProjectRequestTypeDescription = new global::System.Data.DataColumn("ProjectRequestTypeDescription", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProjectRequestTypeDescription);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnProjectRequestTypeID}, true));
                 this.columnProjectRequestTypeID.AutoIncrement = true;
@@ -15576,8 +15576,8 @@ namespace Insight_Prototype_ {
                 this.columnProjectRequestTypeID.AllowDBNull = false;
                 this.columnProjectRequestTypeID.ReadOnly = true;
                 this.columnProjectRequestTypeID.Unique = true;
-                this.columnProjectRequestDescription.AllowDBNull = false;
-                this.columnProjectRequestDescription.MaxLength = 15;
+                this.columnProjectRequestTypeDescription.AllowDBNull = false;
+                this.columnProjectRequestTypeDescription.MaxLength = 15;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -22468,12 +22468,12 @@ namespace Insight_Prototype_ {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string ProjectRequestDescription {
+            public string ProjectRequestTypeDescription {
                 get {
-                    return ((string)(this[this.tableProjectRequestType.ProjectRequestDescriptionColumn]));
+                    return ((string)(this[this.tableProjectRequestType.ProjectRequestTypeDescriptionColumn]));
                 }
                 set {
-                    this[this.tableProjectRequestType.ProjectRequestDescriptionColumn] = value;
+                    this[this.tableProjectRequestType.ProjectRequestTypeDescriptionColumn] = value;
                 }
             }
             
@@ -38697,31 +38697,31 @@ SELECT ProjectRequestStatusID, ProjectRequestStatusDescription FROM ProjectReque
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "ProjectRequestType";
             tableMapping.ColumnMappings.Add("ProjectRequestTypeID", "ProjectRequestTypeID");
-            tableMapping.ColumnMappings.Add("ProjectRequestDescription", "ProjectRequestDescription");
+            tableMapping.ColumnMappings.Add("ProjectRequestTypeDescription", "ProjectRequestTypeDescription");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[ProjectRequestType] WHERE (([ProjectRequestTypeID] = @Original" +
-                "_ProjectRequestTypeID) AND ([ProjectRequestDescription] = @Original_ProjectReque" +
-                "stDescription))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [ProjectRequestType] WHERE (([ProjectRequestTypeID] = @Original_Proje" +
+                "ctRequestTypeID) AND ([ProjectRequestTypeDescription] = @Original_ProjectRequest" +
+                "TypeDescription))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ProjectRequestTypeID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectRequestTypeID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ProjectRequestDescription", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectRequestDescription", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ProjectRequestTypeDescription", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectRequestTypeDescription", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[ProjectRequestType] ([ProjectRequestDescription]) VALUES (@Pro" +
-                "jectRequestDescription);\r\nSELECT ProjectRequestTypeID, ProjectRequestDescription" +
-                " FROM ProjectRequestType WHERE (ProjectRequestTypeID = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [ProjectRequestType] ([ProjectRequestTypeDescription]) VALUES (@Proje" +
+                "ctRequestTypeDescription);\r\nSELECT ProjectRequestTypeID, ProjectRequestTypeDescr" +
+                "iption FROM ProjectRequestType WHERE (ProjectRequestTypeID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProjectRequestDescription", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectRequestDescription", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProjectRequestTypeDescription", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectRequestTypeDescription", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[ProjectRequestType] SET [ProjectRequestDescription] = @ProjectRequestDescription WHERE (([ProjectRequestTypeID] = @Original_ProjectRequestTypeID) AND ([ProjectRequestDescription] = @Original_ProjectRequestDescription));
-SELECT ProjectRequestTypeID, ProjectRequestDescription FROM ProjectRequestType WHERE (ProjectRequestTypeID = @ProjectRequestTypeID)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [ProjectRequestType] SET [ProjectRequestTypeDescription] = @ProjectRequestTypeDescription WHERE (([ProjectRequestTypeID] = @Original_ProjectRequestTypeID) AND ([ProjectRequestTypeDescription] = @Original_ProjectRequestTypeDescription));
+SELECT ProjectRequestTypeID, ProjectRequestTypeDescription FROM ProjectRequestType WHERE (ProjectRequestTypeID = @ProjectRequestTypeID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProjectRequestDescription", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectRequestDescription", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProjectRequestTypeDescription", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectRequestTypeDescription", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ProjectRequestTypeID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectRequestTypeID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ProjectRequestDescription", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectRequestDescription", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ProjectRequestTypeDescription", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectRequestTypeDescription", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProjectRequestTypeID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectRequestTypeID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -38738,7 +38738,7 @@ SELECT ProjectRequestTypeID, ProjectRequestDescription FROM ProjectRequestType W
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ProjectRequestTypeID, ProjectRequestDescription FROM dbo.ProjectRequestTyp" +
+            this._commandCollection[0].CommandText = "SELECT ProjectRequestTypeID, ProjectRequestTypeDescription FROM ProjectRequestTyp" +
                 "e";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
@@ -38800,13 +38800,13 @@ SELECT ProjectRequestTypeID, ProjectRequestDescription FROM ProjectRequestType W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_ProjectRequestTypeID, string Original_ProjectRequestDescription) {
+        public virtual int Delete(int Original_ProjectRequestTypeID, string Original_ProjectRequestTypeDescription) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ProjectRequestTypeID));
-            if ((Original_ProjectRequestDescription == null)) {
-                throw new global::System.ArgumentNullException("Original_ProjectRequestDescription");
+            if ((Original_ProjectRequestTypeDescription == null)) {
+                throw new global::System.ArgumentNullException("Original_ProjectRequestTypeDescription");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_ProjectRequestDescription));
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_ProjectRequestTypeDescription));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -38828,12 +38828,12 @@ SELECT ProjectRequestTypeID, ProjectRequestDescription FROM ProjectRequestType W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string ProjectRequestDescription) {
-            if ((ProjectRequestDescription == null)) {
-                throw new global::System.ArgumentNullException("ProjectRequestDescription");
+        public virtual int Insert(string ProjectRequestTypeDescription) {
+            if ((ProjectRequestTypeDescription == null)) {
+                throw new global::System.ArgumentNullException("ProjectRequestTypeDescription");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(ProjectRequestDescription));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(ProjectRequestTypeDescription));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -38855,19 +38855,19 @@ SELECT ProjectRequestTypeID, ProjectRequestDescription FROM ProjectRequestType W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string ProjectRequestDescription, int Original_ProjectRequestTypeID, string Original_ProjectRequestDescription, int ProjectRequestTypeID) {
-            if ((ProjectRequestDescription == null)) {
-                throw new global::System.ArgumentNullException("ProjectRequestDescription");
+        public virtual int Update(string ProjectRequestTypeDescription, int Original_ProjectRequestTypeID, string Original_ProjectRequestTypeDescription, int ProjectRequestTypeID) {
+            if ((ProjectRequestTypeDescription == null)) {
+                throw new global::System.ArgumentNullException("ProjectRequestTypeDescription");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(ProjectRequestDescription));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(ProjectRequestTypeDescription));
             }
             this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(Original_ProjectRequestTypeID));
-            if ((Original_ProjectRequestDescription == null)) {
-                throw new global::System.ArgumentNullException("Original_ProjectRequestDescription");
+            if ((Original_ProjectRequestTypeDescription == null)) {
+                throw new global::System.ArgumentNullException("Original_ProjectRequestTypeDescription");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Original_ProjectRequestDescription));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Original_ProjectRequestTypeDescription));
             }
             this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(ProjectRequestTypeID));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
@@ -38890,8 +38890,8 @@ SELECT ProjectRequestTypeID, ProjectRequestDescription FROM ProjectRequestType W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string ProjectRequestDescription, int Original_ProjectRequestTypeID, string Original_ProjectRequestDescription) {
-            return this.Update(ProjectRequestDescription, Original_ProjectRequestTypeID, Original_ProjectRequestDescription, Original_ProjectRequestTypeID);
+        public virtual int Update(string ProjectRequestTypeDescription, int Original_ProjectRequestTypeID, string Original_ProjectRequestTypeDescription) {
+            return this.Update(ProjectRequestTypeDescription, Original_ProjectRequestTypeID, Original_ProjectRequestTypeDescription, Original_ProjectRequestTypeID);
         }
     }
     

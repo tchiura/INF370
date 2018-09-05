@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Insight_Prototype_
 {
-    public partial class DeleteClientTypePage : Form
+    public partial class AddEmployeePage : Form
     {
-        public DeleteClientTypePage()
+        public AddEmployeePage()
         {
             InitializeComponent();
         }

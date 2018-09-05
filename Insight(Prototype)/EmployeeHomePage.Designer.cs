@@ -1,6 +1,6 @@
 ﻿namespace Insight_Prototype_
 {
-    partial class DeleteVehiclePage
+    partial class EmployeeHomePage
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // DeleteVehiclePage
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1284, 661);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "DeleteVehiclePage";
-            this.Text = "DeleteVehiclePage";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "EmployeeHomePage";
         }
 
         #endregion

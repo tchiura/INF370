@@ -34,33 +34,33 @@
             this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
             this.DeleteClientDetailsPanel = new System.Windows.Forms.Panel();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
+            this.DDOB = new System.Windows.Forms.DateTimePicker();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox68 = new System.Windows.Forms.TextBox();
-            this.textBox69 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
+            this.DCCityLbl = new System.Windows.Forms.Label();
+            this.DCCountryLbl = new System.Windows.Forms.Label();
             this.label281 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
+            this.DCPEmailLbl = new System.Windows.Forms.Label();
+            this.DClientTypeLbl = new System.Windows.Forms.Label();
+            this.DCompNameLbl = new System.Windows.Forms.Label();
+            this.DCPNameLbl = new System.Windows.Forms.Label();
+            this.DCPNumLbl = new System.Windows.Forms.Label();
+            this.DCPJobDescrLbl = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.DCAd1Lbl = new System.Windows.Forms.Label();
+            this.DCAd2Lbl = new System.Windows.Forms.Label();
+            this.DCAd3Lbl = new System.Windows.Forms.Label();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
@@ -131,15 +131,15 @@
             // DeleteClientDetailsPanel
             // 
             this.DeleteClientDetailsPanel.BackColor = System.Drawing.Color.White;
-            this.DeleteClientDetailsPanel.Controls.Add(this.dateTimePicker6);
+            this.DeleteClientDetailsPanel.Controls.Add(this.DDOB);
             this.DeleteClientDetailsPanel.Controls.Add(this.groupBox8);
             this.DeleteClientDetailsPanel.Controls.Add(this.label281);
-            this.DeleteClientDetailsPanel.Controls.Add(this.label22);
-            this.DeleteClientDetailsPanel.Controls.Add(this.label23);
-            this.DeleteClientDetailsPanel.Controls.Add(this.label27);
-            this.DeleteClientDetailsPanel.Controls.Add(this.label28);
-            this.DeleteClientDetailsPanel.Controls.Add(this.label29);
-            this.DeleteClientDetailsPanel.Controls.Add(this.label30);
+            this.DeleteClientDetailsPanel.Controls.Add(this.DCPEmailLbl);
+            this.DeleteClientDetailsPanel.Controls.Add(this.DClientTypeLbl);
+            this.DeleteClientDetailsPanel.Controls.Add(this.DCompNameLbl);
+            this.DeleteClientDetailsPanel.Controls.Add(this.DCPNameLbl);
+            this.DeleteClientDetailsPanel.Controls.Add(this.DCPNumLbl);
+            this.DeleteClientDetailsPanel.Controls.Add(this.DCPJobDescrLbl);
             this.DeleteClientDetailsPanel.Controls.Add(this.label11);
             this.DeleteClientDetailsPanel.Controls.Add(this.label12);
             this.DeleteClientDetailsPanel.Controls.Add(this.label13);
@@ -155,63 +155,31 @@
             this.DeleteClientDetailsPanel.Size = new System.Drawing.Size(1284, 631);
             this.DeleteClientDetailsPanel.TabIndex = 14;
             // 
-            // button14
+            // DDOB
             // 
-            this.button14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(1120, 589);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(75, 30);
-            this.button14.TabIndex = 57;
-            this.button14.Text = "Cancel";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // button15
-            // 
-            this.button15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.Location = new System.Drawing.Point(1201, 589);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(75, 30);
-            this.button15.TabIndex = 56;
-            this.button15.Text = "Delete";
-            this.button15.UseVisualStyleBackColor = true;
-            // 
-            // dateTimePicker6
-            // 
-            this.dateTimePicker6.Location = new System.Drawing.Point(305, 272);
-            this.dateTimePicker6.Name = "dateTimePicker6";
-            this.dateTimePicker6.Size = new System.Drawing.Size(245, 27);
-            this.dateTimePicker6.TabIndex = 90;
+            this.DDOB.Location = new System.Drawing.Point(305, 272);
+            this.DDOB.Name = "DDOB";
+            this.DDOB.Size = new System.Drawing.Size(245, 27);
+            this.DDOB.TabIndex = 90;
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.textBox9);
+            this.groupBox8.Controls.Add(this.DCAd3Lbl);
+            this.groupBox8.Controls.Add(this.DCAd1Lbl);
+            this.groupBox8.Controls.Add(this.DCAd2Lbl);
             this.groupBox8.Controls.Add(this.label2);
             this.groupBox8.Controls.Add(this.label5);
             this.groupBox8.Controls.Add(this.label6);
-            this.groupBox8.Controls.Add(this.textBox68);
-            this.groupBox8.Controls.Add(this.textBox69);
             this.groupBox8.Controls.Add(this.label7);
             this.groupBox8.Controls.Add(this.label9);
-            this.groupBox8.Controls.Add(this.label25);
-            this.groupBox8.Controls.Add(this.label26);
+            this.groupBox8.Controls.Add(this.DCCityLbl);
+            this.groupBox8.Controls.Add(this.DCCountryLbl);
             this.groupBox8.Location = new System.Drawing.Point(33, 318);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(504, 243);
             this.groupBox8.TabIndex = 89;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Address";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(256, 66);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(245, 27);
-            this.textBox9.TabIndex = 41;
-            this.textBox9.Text = "Suburb";
             // 
             // label2
             // 
@@ -240,22 +208,6 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Address Line 3:";
             // 
-            // textBox68
-            // 
-            this.textBox68.Location = new System.Drawing.Point(256, 22);
-            this.textBox68.Name = "textBox68";
-            this.textBox68.Size = new System.Drawing.Size(245, 27);
-            this.textBox68.TabIndex = 39;
-            this.textBox68.Text = "Building No./Street Name";
-            // 
-            // textBox69
-            // 
-            this.textBox69.Location = new System.Drawing.Point(256, 107);
-            this.textBox69.Name = "textBox69";
-            this.textBox69.Size = new System.Drawing.Size(245, 27);
-            this.textBox69.TabIndex = 24;
-            this.textBox69.Text = "Province";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -274,23 +226,23 @@
             this.label9.TabIndex = 4;
             this.label9.Text = "Country:";
             // 
-            // label25
+            // DCCityLbl
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(252, 156);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(98, 19);
-            this.label25.TabIndex = 31;
-            this.label25.Text = "Johannesburg";
+            this.DCCityLbl.AutoSize = true;
+            this.DCCityLbl.Location = new System.Drawing.Point(252, 156);
+            this.DCCityLbl.Name = "DCCityLbl";
+            this.DCCityLbl.Size = new System.Drawing.Size(98, 19);
+            this.DCCityLbl.TabIndex = 31;
+            this.DCCityLbl.Text = "Johannesburg";
             // 
-            // label26
+            // DCCountryLbl
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(252, 199);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(87, 19);
-            this.label26.TabIndex = 30;
-            this.label26.Text = "South Africa";
+            this.DCCountryLbl.AutoSize = true;
+            this.DCCountryLbl.Location = new System.Drawing.Point(252, 199);
+            this.DCCountryLbl.Name = "DCCountryLbl";
+            this.DCCountryLbl.Size = new System.Drawing.Size(87, 19);
+            this.DCCountryLbl.TabIndex = 30;
+            this.DCCountryLbl.Text = "South Africa";
             // 
             // label281
             // 
@@ -301,59 +253,59 @@
             this.label281.TabIndex = 88;
             this.label281.Text = "Date of Birth";
             // 
-            // label22
+            // DCPEmailLbl
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(301, 234);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(113, 19);
-            this.label22.TabIndex = 87;
-            this.label22.Text = "Joe@dunn.co.za";
+            this.DCPEmailLbl.AutoSize = true;
+            this.DCPEmailLbl.Location = new System.Drawing.Point(301, 234);
+            this.DCPEmailLbl.Name = "DCPEmailLbl";
+            this.DCPEmailLbl.Size = new System.Drawing.Size(113, 19);
+            this.DCPEmailLbl.TabIndex = 87;
+            this.DCPEmailLbl.Text = "Joe@dunn.co.za";
             // 
-            // label23
+            // DClientTypeLbl
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(301, 25);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(93, 19);
-            this.label23.TabIndex = 86;
-            this.label23.Text = "Organisation";
+            this.DClientTypeLbl.AutoSize = true;
+            this.DClientTypeLbl.Location = new System.Drawing.Point(301, 25);
+            this.DClientTypeLbl.Name = "DClientTypeLbl";
+            this.DClientTypeLbl.Size = new System.Drawing.Size(93, 19);
+            this.DClientTypeLbl.TabIndex = 86;
+            this.DClientTypeLbl.Text = "Organisation";
             // 
-            // label27
+            // DCompNameLbl
             // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(301, 63);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(86, 19);
-            this.label27.TabIndex = 85;
-            this.label27.Text = "Dusty Busty";
+            this.DCompNameLbl.AutoSize = true;
+            this.DCompNameLbl.Location = new System.Drawing.Point(301, 63);
+            this.DCompNameLbl.Name = "DCompNameLbl";
+            this.DCompNameLbl.Size = new System.Drawing.Size(86, 19);
+            this.DCompNameLbl.TabIndex = 85;
+            this.DCompNameLbl.Text = "Dusty Busty";
             // 
-            // label28
+            // DCPNameLbl
             // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(301, 106);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(68, 19);
-            this.label28.TabIndex = 84;
-            this.label28.Text = "Joe Dunn";
+            this.DCPNameLbl.AutoSize = true;
+            this.DCPNameLbl.Location = new System.Drawing.Point(301, 106);
+            this.DCPNameLbl.Name = "DCPNameLbl";
+            this.DCPNameLbl.Size = new System.Drawing.Size(68, 19);
+            this.DCPNameLbl.TabIndex = 84;
+            this.DCPNameLbl.Text = "Joe Dunn";
             // 
-            // label29
+            // DCPNumLbl
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(301, 149);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(97, 19);
-            this.label29.TabIndex = 83;
-            this.label29.Text = "015 123 4567";
+            this.DCPNumLbl.AutoSize = true;
+            this.DCPNumLbl.Location = new System.Drawing.Point(301, 149);
+            this.DCPNumLbl.Name = "DCPNumLbl";
+            this.DCPNumLbl.Size = new System.Drawing.Size(97, 19);
+            this.DCPNumLbl.TabIndex = 83;
+            this.DCPNumLbl.Text = "015 123 4567";
             // 
-            // label30
+            // DCPJobDescrLbl
             // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(301, 192);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(67, 19);
-            this.label30.TabIndex = 82;
-            this.label30.Text = "Manager";
+            this.DCPJobDescrLbl.AutoSize = true;
+            this.DCPJobDescrLbl.Location = new System.Drawing.Point(301, 192);
+            this.DCPJobDescrLbl.Name = "DCPJobDescrLbl";
+            this.DCPJobDescrLbl.Size = new System.Drawing.Size(67, 19);
+            this.DCPJobDescrLbl.TabIndex = 82;
+            this.DCPJobDescrLbl.Text = "Manager";
             // 
             // label11
             // 
@@ -409,6 +361,57 @@
             this.label20.TabIndex = 76;
             this.label20.Text = "Contact Person Job Description:";
             // 
+            // button14
+            // 
+            this.button14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button14.Location = new System.Drawing.Point(1120, 589);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(75, 30);
+            this.button14.TabIndex = 57;
+            this.button14.Text = "Cancel";
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // button15
+            // 
+            this.button15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.Location = new System.Drawing.Point(1201, 589);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(75, 30);
+            this.button15.TabIndex = 56;
+            this.button15.Text = "Delete";
+            this.button15.UseVisualStyleBackColor = true;
+            // 
+            // DCAd1Lbl
+            // 
+            this.DCAd1Lbl.AutoSize = true;
+            this.DCAd1Lbl.Location = new System.Drawing.Point(252, 30);
+            this.DCAd1Lbl.Name = "DCAd1Lbl";
+            this.DCAd1Lbl.Size = new System.Drawing.Size(98, 19);
+            this.DCAd1Lbl.TabIndex = 43;
+            this.DCAd1Lbl.Text = "Johannesburg";
+            // 
+            // DCAd2Lbl
+            // 
+            this.DCAd2Lbl.AutoSize = true;
+            this.DCAd2Lbl.Location = new System.Drawing.Point(252, 73);
+            this.DCAd2Lbl.Name = "DCAd2Lbl";
+            this.DCAd2Lbl.Size = new System.Drawing.Size(87, 19);
+            this.DCAd2Lbl.TabIndex = 42;
+            this.DCAd2Lbl.Text = "South Africa";
+            // 
+            // DCAd3Lbl
+            // 
+            this.DCAd3Lbl.AutoSize = true;
+            this.DCAd3Lbl.Location = new System.Drawing.Point(252, 115);
+            this.DCAd3Lbl.Name = "DCAd3Lbl";
+            this.DCAd3Lbl.Size = new System.Drawing.Size(98, 19);
+            this.DCAd3Lbl.TabIndex = 45;
+            this.DCAd3Lbl.Text = "Johannesburg";
+            // 
             // DeleteClientPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -445,30 +448,30 @@
         private System.Windows.Forms.Panel DeleteClientDetailsPanel;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.DateTimePicker dateTimePicker6;
+        private System.Windows.Forms.DateTimePicker DDOB;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox68;
-        private System.Windows.Forms.TextBox textBox69;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label DCCityLbl;
+        private System.Windows.Forms.Label DCCountryLbl;
         private System.Windows.Forms.Label label281;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label DCPEmailLbl;
+        private System.Windows.Forms.Label DClientTypeLbl;
+        private System.Windows.Forms.Label DCompNameLbl;
+        private System.Windows.Forms.Label DCPNameLbl;
+        private System.Windows.Forms.Label DCPNumLbl;
+        private System.Windows.Forms.Label DCPJobDescrLbl;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label DCAd3Lbl;
+        private System.Windows.Forms.Label DCAd1Lbl;
+        private System.Windows.Forms.Label DCAd2Lbl;
     }
 }
