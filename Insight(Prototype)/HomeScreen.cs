@@ -192,6 +192,7 @@ namespace Insight_Prototype_
         private void button1_Click(object sender, EventArgs e)
         {
             ProjectActionPanel.BringToFront();
+
         }
 
         private void button31_Click(object sender, EventArgs e)

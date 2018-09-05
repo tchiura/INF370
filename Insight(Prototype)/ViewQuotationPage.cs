@@ -21,5 +21,15 @@ namespace Insight_Prototype_
         {
 
         }
+
+        private void label165_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel25_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

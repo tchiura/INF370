@@ -30,6 +30,9 @@
         {
             this.Userlbl = new System.Windows.Forms.Label();
             this.TopBarPanel = new System.Windows.Forms.Panel();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.MinimisePicBx = new System.Windows.Forms.PictureBox();
+            this.ClosePicBx = new System.Windows.Forms.PictureBox();
             this.AddJobTypeTab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.AJTypeTb = new System.Windows.Forms.TextBox();
@@ -43,17 +46,14 @@
             this.label91 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label99 = new System.Windows.Forms.Label();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.MinimisePicBx = new System.Windows.Forms.PictureBox();
-            this.ClosePicBx = new System.Windows.Forms.PictureBox();
             this.TopBarPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
             this.AddJobTypeTab.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
             this.SuspendLayout();
             // 
             // Userlbl
@@ -82,6 +82,39 @@
             this.TopBarPanel.Size = new System.Drawing.Size(460, 30);
             this.TopBarPanel.TabIndex = 12;
             // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox14.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
+            this.pictureBox14.Location = new System.Drawing.Point(376, 0);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(28, 30);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 2;
+            this.pictureBox14.TabStop = false;
+            // 
+            // MinimisePicBx
+            // 
+            this.MinimisePicBx.Dock = System.Windows.Forms.DockStyle.Right;
+            this.MinimisePicBx.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
+            this.MinimisePicBx.Location = new System.Drawing.Point(404, 0);
+            this.MinimisePicBx.Name = "MinimisePicBx";
+            this.MinimisePicBx.Size = new System.Drawing.Size(28, 30);
+            this.MinimisePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.MinimisePicBx.TabIndex = 1;
+            this.MinimisePicBx.TabStop = false;
+            // 
+            // ClosePicBx
+            // 
+            this.ClosePicBx.Dock = System.Windows.Forms.DockStyle.Right;
+            this.ClosePicBx.Image = global::Insight_Prototype_.Properties.Resources.Cancel_100px2;
+            this.ClosePicBx.Location = new System.Drawing.Point(432, 0);
+            this.ClosePicBx.Name = "ClosePicBx";
+            this.ClosePicBx.Size = new System.Drawing.Size(28, 30);
+            this.ClosePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ClosePicBx.TabIndex = 0;
+            this.ClosePicBx.TabStop = false;
+            // 
             // AddJobTypeTab
             // 
             this.AddJobTypeTab.Controls.Add(this.tabPage1);
@@ -92,7 +125,7 @@
             this.AddJobTypeTab.Margin = new System.Windows.Forms.Padding(4);
             this.AddJobTypeTab.Name = "AddJobTypeTab";
             this.AddJobTypeTab.SelectedIndex = 0;
-            this.AddJobTypeTab.Size = new System.Drawing.Size(460, 170);
+            this.AddJobTypeTab.Size = new System.Drawing.Size(460, 384);
             this.AddJobTypeTab.TabIndex = 14;
             // 
             // tabPage1
@@ -107,7 +140,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(452, 138);
+            this.tabPage1.Size = new System.Drawing.Size(452, 352);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Details";
             // 
@@ -242,45 +275,12 @@
             this.label99.TabIndex = 1;
             this.label99.Text = "Job Type Successfully Added";
             // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox14.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
-            this.pictureBox14.Location = new System.Drawing.Point(376, 0);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(28, 30);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 2;
-            this.pictureBox14.TabStop = false;
-            // 
-            // MinimisePicBx
-            // 
-            this.MinimisePicBx.Dock = System.Windows.Forms.DockStyle.Right;
-            this.MinimisePicBx.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
-            this.MinimisePicBx.Location = new System.Drawing.Point(404, 0);
-            this.MinimisePicBx.Name = "MinimisePicBx";
-            this.MinimisePicBx.Size = new System.Drawing.Size(28, 30);
-            this.MinimisePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.MinimisePicBx.TabIndex = 1;
-            this.MinimisePicBx.TabStop = false;
-            // 
-            // ClosePicBx
-            // 
-            this.ClosePicBx.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ClosePicBx.Image = global::Insight_Prototype_.Properties.Resources.Cancel_100px2;
-            this.ClosePicBx.Location = new System.Drawing.Point(432, 0);
-            this.ClosePicBx.Name = "ClosePicBx";
-            this.ClosePicBx.Size = new System.Drawing.Size(28, 30);
-            this.ClosePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ClosePicBx.TabIndex = 0;
-            this.ClosePicBx.TabStop = false;
-            // 
             // AddJobTypePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(460, 200);
+            this.ClientSize = new System.Drawing.Size(460, 414);
             this.Controls.Add(this.AddJobTypeTab);
             this.Controls.Add(this.TopBarPanel);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -290,6 +290,9 @@
             this.Text = "AddJobTypePage";
             this.TopBarPanel.ResumeLayout(false);
             this.TopBarPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).EndInit();
             this.AddJobTypeTab.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -297,9 +300,6 @@
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).EndInit();
             this.ResumeLayout(false);
 
         }

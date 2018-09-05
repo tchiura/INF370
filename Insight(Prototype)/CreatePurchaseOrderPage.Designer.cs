@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label262 = new System.Windows.Forms.Label();
             this.ViewQuotationPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -35,25 +36,32 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button200 = new System.Windows.Forms.Button();
             this.textBox57 = new System.Windows.Forms.TextBox();
-            this.dataGridView20 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.S = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TopBarPanel = new System.Windows.Forms.Panel();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.Userlbl = new System.Windows.Forms.Label();
             this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
+            this.ProRequestDgv = new System.Windows.Forms.DataGridView();
+            this.insightDataSet = new Insight_Prototype_.InsightDataSet();
+            this.projectRequestBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.projectRequestTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.ProjectRequestTableAdapter();
+            this.projectRequestDescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.projectRequestTypeIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.projectRequestStatusIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.supplierBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.supplierTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.SupplierTableAdapter();
             this.ViewQuotationPanel.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView20)).BeginInit();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProRequestDgv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projectRequestBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label262
@@ -78,11 +86,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.listBox1);
+            this.panel1.Controls.Add(this.ProRequestDgv);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button200);
             this.panel1.Controls.Add(this.textBox57);
-            this.panel1.Controls.Add(this.dataGridView20);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -92,7 +101,7 @@
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(12, 593);
+            this.button2.Location = new System.Drawing.Point(986, 593);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(140, 27);
             this.button2.TabIndex = 10;
@@ -125,52 +134,6 @@
             this.textBox57.Name = "textBox57";
             this.textBox57.Size = new System.Drawing.Size(265, 20);
             this.textBox57.TabIndex = 5;
-            // 
-            // dataGridView20
-            // 
-            this.dataGridView20.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView20.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView20.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.S,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
-            this.dataGridView20.Location = new System.Drawing.Point(12, 74);
-            this.dataGridView20.Name = "dataGridView20";
-            this.dataGridView20.Size = new System.Drawing.Size(1260, 505);
-            this.dataGridView20.TabIndex = 4;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Supplier Quotation ID";
-            this.Column1.Name = "Column1";
-            // 
-            // S
-            // 
-            this.S.HeaderText = "Supplier ID";
-            this.S.Name = "S";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Date";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Project Request ID";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Quantity";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Price";
-            this.Column5.Name = "Column5";
             // 
             // TopBarPanel
             // 
@@ -231,6 +194,85 @@
             this.ClosePicBx.TabIndex = 0;
             this.ClosePicBx.TabStop = false;
             // 
+            // ProRequestDgv
+            // 
+            this.ProRequestDgv.AutoGenerateColumns = false;
+            this.ProRequestDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ProRequestDgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.projectRequestDescriptionDataGridViewTextBoxColumn,
+            this.projectRequestTypeIDDataGridViewTextBoxColumn,
+            this.projectRequestStatusIDDataGridViewTextBoxColumn,
+            this.clientIDDataGridViewTextBoxColumn});
+            this.ProRequestDgv.DataSource = this.projectRequestBindingSource;
+            this.ProRequestDgv.Location = new System.Drawing.Point(51, 71);
+            this.ProRequestDgv.Name = "ProRequestDgv";
+            this.ProRequestDgv.Size = new System.Drawing.Size(908, 436);
+            this.ProRequestDgv.TabIndex = 11;
+            // 
+            // insightDataSet
+            // 
+            this.insightDataSet.DataSetName = "InsightDataSet";
+            this.insightDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // projectRequestBindingSource
+            // 
+            this.projectRequestBindingSource.DataMember = "ProjectRequest";
+            this.projectRequestBindingSource.DataSource = this.insightDataSet;
+            // 
+            // projectRequestTableAdapter
+            // 
+            this.projectRequestTableAdapter.ClearBeforeFill = true;
+            // 
+            // projectRequestDescriptionDataGridViewTextBoxColumn
+            // 
+            this.projectRequestDescriptionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.projectRequestDescriptionDataGridViewTextBoxColumn.DataPropertyName = "ProjectRequestDescription";
+            this.projectRequestDescriptionDataGridViewTextBoxColumn.HeaderText = "ProjectRequestDescription";
+            this.projectRequestDescriptionDataGridViewTextBoxColumn.Name = "projectRequestDescriptionDataGridViewTextBoxColumn";
+            // 
+            // projectRequestTypeIDDataGridViewTextBoxColumn
+            // 
+            this.projectRequestTypeIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.projectRequestTypeIDDataGridViewTextBoxColumn.DataPropertyName = "ProjectRequestTypeID";
+            this.projectRequestTypeIDDataGridViewTextBoxColumn.HeaderText = "ProjectRequestTypeID";
+            this.projectRequestTypeIDDataGridViewTextBoxColumn.Name = "projectRequestTypeIDDataGridViewTextBoxColumn";
+            this.projectRequestTypeIDDataGridViewTextBoxColumn.Width = 140;
+            // 
+            // projectRequestStatusIDDataGridViewTextBoxColumn
+            // 
+            this.projectRequestStatusIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.projectRequestStatusIDDataGridViewTextBoxColumn.DataPropertyName = "ProjectRequestStatusID";
+            this.projectRequestStatusIDDataGridViewTextBoxColumn.HeaderText = "ProjectRequestStatusID";
+            this.projectRequestStatusIDDataGridViewTextBoxColumn.Name = "projectRequestStatusIDDataGridViewTextBoxColumn";
+            this.projectRequestStatusIDDataGridViewTextBoxColumn.Width = 146;
+            // 
+            // clientIDDataGridViewTextBoxColumn
+            // 
+            this.clientIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.clientIDDataGridViewTextBoxColumn.DataPropertyName = "ClientID";
+            this.clientIDDataGridViewTextBoxColumn.HeaderText = "ClientID";
+            this.clientIDDataGridViewTextBoxColumn.Name = "clientIDDataGridViewTextBoxColumn";
+            this.clientIDDataGridViewTextBoxColumn.Width = 69;
+            // 
+            // listBox1
+            // 
+            this.listBox1.DataSource = this.supplierBindingSource;
+            this.listBox1.DisplayMember = "SupplierName";
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(965, 71);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(307, 433);
+            this.listBox1.TabIndex = 12;
+            // 
+            // supplierBindingSource
+            // 
+            this.supplierBindingSource.DataMember = "Supplier";
+            this.supplierBindingSource.DataSource = this.insightDataSet;
+            // 
+            // supplierTableAdapter
+            // 
+            this.supplierTableAdapter.ClearBeforeFill = true;
+            // 
             // CreatePurchaseOrderPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -243,16 +285,20 @@
             this.Name = "CreatePurchaseOrderPage";
             this.Text = "CreatePurchaseOrderPage";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.CreatePurchaseOrderPage_Load);
             this.ViewQuotationPanel.ResumeLayout(false);
             this.ViewQuotationPanel.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView20)).EndInit();
             this.TopBarPanel.ResumeLayout(false);
             this.TopBarPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProRequestDgv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projectRequestBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -266,17 +312,21 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button200;
         private System.Windows.Forms.TextBox textBox57;
-        private System.Windows.Forms.DataGridView dataGridView20;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn S;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Panel TopBarPanel;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Label Userlbl;
         private System.Windows.Forms.PictureBox MinimisePicBx;
         private System.Windows.Forms.PictureBox ClosePicBx;
+        private System.Windows.Forms.DataGridView ProRequestDgv;
+        private InsightDataSet insightDataSet;
+        private System.Windows.Forms.BindingSource projectRequestBindingSource;
+        private InsightDataSetTableAdapters.ProjectRequestTableAdapter projectRequestTableAdapter;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn projectRequestDescriptionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn projectRequestTypeIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn projectRequestStatusIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clientIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource supplierBindingSource;
+        private InsightDataSetTableAdapters.SupplierTableAdapter supplierTableAdapter;
     }
 }
