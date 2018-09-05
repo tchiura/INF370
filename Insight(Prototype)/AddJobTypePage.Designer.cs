@@ -33,6 +33,8 @@
             this.TopBarPanel = new System.Windows.Forms.Panel();
             this.AddJobTypeTC = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.tbJobType = new System.Windows.Forms.TextBox();
             this.JTCancelBtn = new System.Windows.Forms.Button();
             this.JTNextBtn = new System.Windows.Forms.Button();
@@ -44,15 +46,13 @@
             this.label91 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label99 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
             this.TopBarPanel.SuspendLayout();
             this.AddJobTypeTC.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // Userlbl
@@ -75,7 +75,6 @@
             this.ClosePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ClosePicBx.TabIndex = 0;
             this.ClosePicBx.TabStop = false;
-            this.ClosePicBx.Click += new System.EventHandler(this.ClosePicBx_Click);
             // 
             // TopBarPanel
             // 
@@ -122,6 +121,22 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Details";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(24, 82);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(104, 19);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "Job Type Price:";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(281, 74);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(134, 27);
+            this.numericUpDown1.TabIndex = 33;
+            // 
             // tbJobType
             // 
             this.tbJobType.Location = new System.Drawing.Point(170, 25);
@@ -142,7 +157,6 @@
             this.JTCancelBtn.TabIndex = 31;
             this.JTCancelBtn.Text = "Cancel";
             this.JTCancelBtn.UseVisualStyleBackColor = true;
-            this.JTCancelBtn.Click += new System.EventHandler(this.JTCancelBtn_Click);
             // 
             // JTNextBtn
             // 
@@ -155,7 +169,6 @@
             this.JTNextBtn.TabIndex = 30;
             this.JTNextBtn.Text = "Next";
             this.JTNextBtn.UseVisualStyleBackColor = true;
-            this.JTNextBtn.Click += new System.EventHandler(this.Button22_Click);
             // 
             // label58
             // 
@@ -179,7 +192,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(452, 138);
+            this.tabPage2.Size = new System.Drawing.Size(452, 198);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Confirmation";
             // 
@@ -194,7 +207,6 @@
             this.JTBackBtn.TabIndex = 37;
             this.JTBackBtn.Text = "Back";
             this.JTBackBtn.UseVisualStyleBackColor = true;
-            this.JTBackBtn.Click += new System.EventHandler(this.JTBackBtn_Click);
             // 
             // JTConfirmBtn
             // 
@@ -207,7 +219,7 @@
             this.JTConfirmBtn.TabIndex = 36;
             this.JTConfirmBtn.Text = "Confirm";
             this.JTConfirmBtn.UseVisualStyleBackColor = true;
-            this.JTConfirmBtn.Click += new System.EventHandler(this.button24_Click);
+            this.JTConfirmBtn.Click += new System.EventHandler(this.JTConfirmBtn_Click);
             // 
             // JTConfirmLbl
             // 
@@ -237,7 +249,7 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Size = new System.Drawing.Size(452, 138);
+            this.tabPage3.Size = new System.Drawing.Size(452, 198);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Complete";
             // 
@@ -252,22 +264,6 @@
             this.label99.Size = new System.Drawing.Size(321, 33);
             this.label99.TabIndex = 1;
             this.label99.Text = "Job Type Successfully Added";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(281, 74);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(134, 27);
-            this.numericUpDown1.TabIndex = 33;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 82);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 19);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "Job Type Price:";
             // 
             // AddJobTypePage
             // 
@@ -289,11 +285,11 @@
             this.AddJobTypeTC.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
