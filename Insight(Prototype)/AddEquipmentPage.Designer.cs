@@ -40,8 +40,6 @@
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
             this.AddEquipmentTab = new System.Windows.Forms.TabControl();
             this.tabPage29 = new System.Windows.Forms.TabPage();
-            this.label233 = new System.Windows.Forms.Label();
-            this.AEqConditionCmb = new System.Windows.Forms.ComboBox();
             this.AEqQuantityUD = new System.Windows.Forms.NumericUpDown();
             this.AEqCancelBtn = new System.Windows.Forms.Button();
             this.AEqNextBtn = new System.Windows.Forms.Button();
@@ -52,18 +50,15 @@
             this.AEqDecripTb = new System.Windows.Forms.TextBox();
             this.tabPage30 = new System.Windows.Forms.TabPage();
             this.AEqQuantityLbl = new System.Windows.Forms.Label();
-            this.label234 = new System.Windows.Forms.Label();
             this.label235 = new System.Windows.Forms.Label();
             this.label239 = new System.Windows.Forms.Label();
             this.label240 = new System.Windows.Forms.Label();
             this.label226 = new System.Windows.Forms.Label();
-            this.label227 = new System.Windows.Forms.Label();
             this.label228 = new System.Windows.Forms.Label();
             this.AEqBackBtn = new System.Windows.Forms.Button();
             this.AEqConfirmBtn = new System.Windows.Forms.Button();
             this.AEqDescripLbl = new System.Windows.Forms.Label();
             this.AEqTypeLbl = new System.Windows.Forms.Label();
-            this.AEqConditionLbl = new System.Windows.Forms.Label();
             this.tabPage31 = new System.Windows.Forms.TabPage();
             this.label232 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).BeginInit();
@@ -167,14 +162,12 @@
             this.AddEquipmentTab.Location = new System.Drawing.Point(0, 30);
             this.AddEquipmentTab.Name = "AddEquipmentTab";
             this.AddEquipmentTab.SelectedIndex = 0;
-            this.AddEquipmentTab.Size = new System.Drawing.Size(490, 277);
+            this.AddEquipmentTab.Size = new System.Drawing.Size(490, 237);
             this.AddEquipmentTab.TabIndex = 48;
             // 
             // tabPage29
             // 
             this.tabPage29.BackColor = System.Drawing.Color.White;
-            this.tabPage29.Controls.Add(this.label233);
-            this.tabPage29.Controls.Add(this.AEqConditionCmb);
             this.tabPage29.Controls.Add(this.AEqQuantityUD);
             this.tabPage29.Controls.Add(this.AEqCancelBtn);
             this.tabPage29.Controls.Add(this.AEqNextBtn);
@@ -187,33 +180,13 @@
             this.tabPage29.Location = new System.Drawing.Point(4, 28);
             this.tabPage29.Name = "tabPage29";
             this.tabPage29.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage29.Size = new System.Drawing.Size(482, 245);
+            this.tabPage29.Size = new System.Drawing.Size(482, 205);
             this.tabPage29.TabIndex = 0;
             this.tabPage29.Text = "Details";
             // 
-            // label233
-            // 
-            this.label233.AutoSize = true;
-            this.label233.Location = new System.Drawing.Point(25, 120);
-            this.label233.Name = "label233";
-            this.label233.Size = new System.Drawing.Size(75, 19);
-            this.label233.TabIndex = 34;
-            this.label233.Text = "Condition:";
-            // 
-            // AEqConditionCmb
-            // 
-            this.AEqConditionCmb.FormattingEnabled = true;
-            this.AEqConditionCmb.Items.AddRange(new object[] {
-            "New",
-            "Second Hand"});
-            this.AEqConditionCmb.Location = new System.Drawing.Point(202, 117);
-            this.AEqConditionCmb.Name = "AEqConditionCmb";
-            this.AEqConditionCmb.Size = new System.Drawing.Size(245, 27);
-            this.AEqConditionCmb.TabIndex = 35;
-            // 
             // AEqQuantityUD
             // 
-            this.AEqQuantityUD.Location = new System.Drawing.Point(202, 163);
+            this.AEqQuantityUD.Location = new System.Drawing.Point(202, 123);
             this.AEqQuantityUD.Name = "AEqQuantityUD";
             this.AEqQuantityUD.Size = new System.Drawing.Size(120, 27);
             this.AEqQuantityUD.TabIndex = 33;
@@ -223,7 +196,7 @@
             this.AEqCancelBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.AEqCancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AEqCancelBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AEqCancelBtn.Location = new System.Drawing.Point(318, 207);
+            this.AEqCancelBtn.Location = new System.Drawing.Point(318, 167);
             this.AEqCancelBtn.Name = "AEqCancelBtn";
             this.AEqCancelBtn.Size = new System.Drawing.Size(75, 30);
             this.AEqCancelBtn.TabIndex = 31;
@@ -236,7 +209,7 @@
             this.AEqNextBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.AEqNextBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AEqNextBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AEqNextBtn.Location = new System.Drawing.Point(399, 207);
+            this.AEqNextBtn.Location = new System.Drawing.Point(399, 167);
             this.AEqNextBtn.Name = "AEqNextBtn";
             this.AEqNextBtn.Size = new System.Drawing.Size(75, 30);
             this.AEqNextBtn.TabIndex = 30;
@@ -256,7 +229,7 @@
             // label220
             // 
             this.label220.AutoSize = true;
-            this.label220.Location = new System.Drawing.Point(25, 160);
+            this.label220.Location = new System.Drawing.Point(25, 120);
             this.label220.Name = "label220";
             this.label220.Size = new System.Drawing.Size(69, 19);
             this.label220.TabIndex = 5;
@@ -293,43 +266,31 @@
             // 
             this.tabPage30.BackColor = System.Drawing.Color.White;
             this.tabPage30.Controls.Add(this.AEqQuantityLbl);
-            this.tabPage30.Controls.Add(this.label234);
             this.tabPage30.Controls.Add(this.label235);
             this.tabPage30.Controls.Add(this.label239);
             this.tabPage30.Controls.Add(this.label240);
             this.tabPage30.Controls.Add(this.label226);
-            this.tabPage30.Controls.Add(this.label227);
             this.tabPage30.Controls.Add(this.label228);
             this.tabPage30.Controls.Add(this.AEqBackBtn);
             this.tabPage30.Controls.Add(this.AEqConfirmBtn);
             this.tabPage30.Controls.Add(this.AEqDescripLbl);
             this.tabPage30.Controls.Add(this.AEqTypeLbl);
-            this.tabPage30.Controls.Add(this.AEqConditionLbl);
             this.tabPage30.ForeColor = System.Drawing.Color.Black;
             this.tabPage30.Location = new System.Drawing.Point(4, 28);
             this.tabPage30.Name = "tabPage30";
             this.tabPage30.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage30.Size = new System.Drawing.Size(482, 245);
+            this.tabPage30.Size = new System.Drawing.Size(482, 182);
             this.tabPage30.TabIndex = 1;
             this.tabPage30.Text = "Confirmation";
             // 
             // AEqQuantityLbl
             // 
             this.AEqQuantityLbl.AutoSize = true;
-            this.AEqQuantityLbl.Location = new System.Drawing.Point(303, 150);
+            this.AEqQuantityLbl.Location = new System.Drawing.Point(303, 112);
             this.AEqQuantityLbl.Name = "AEqQuantityLbl";
             this.AEqQuantityLbl.Size = new System.Drawing.Size(17, 19);
             this.AEqQuantityLbl.TabIndex = 63;
             this.AEqQuantityLbl.Text = "5";
-            // 
-            // label234
-            // 
-            this.label234.AutoSize = true;
-            this.label234.Location = new System.Drawing.Point(31, 110);
-            this.label234.Name = "label234";
-            this.label234.Size = new System.Drawing.Size(75, 19);
-            this.label234.TabIndex = 62;
-            this.label234.Text = "Condition:";
             // 
             // label235
             // 
@@ -343,7 +304,7 @@
             // label239
             // 
             this.label239.AutoSize = true;
-            this.label239.Location = new System.Drawing.Point(31, 150);
+            this.label239.Location = new System.Drawing.Point(31, 112);
             this.label239.Name = "label239";
             this.label239.Size = new System.Drawing.Size(69, 19);
             this.label239.TabIndex = 60;
@@ -367,15 +328,6 @@
             this.label226.TabIndex = 58;
             this.label226.Text = "Type:";
             // 
-            // label227
-            // 
-            this.label227.AutoSize = true;
-            this.label227.Location = new System.Drawing.Point(31, 108);
-            this.label227.Name = "label227";
-            this.label227.Size = new System.Drawing.Size(69, 19);
-            this.label227.TabIndex = 57;
-            this.label227.Text = "Quantity:";
-            // 
             // label228
             // 
             this.label228.AutoSize = true;
@@ -390,7 +342,7 @@
             this.AEqBackBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.AEqBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AEqBackBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AEqBackBtn.Location = new System.Drawing.Point(320, 207);
+            this.AEqBackBtn.Location = new System.Drawing.Point(318, 144);
             this.AEqBackBtn.Name = "AEqBackBtn";
             this.AEqBackBtn.Size = new System.Drawing.Size(75, 30);
             this.AEqBackBtn.TabIndex = 37;
@@ -403,7 +355,7 @@
             this.AEqConfirmBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.AEqConfirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AEqConfirmBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AEqConfirmBtn.Location = new System.Drawing.Point(401, 209);
+            this.AEqConfirmBtn.Location = new System.Drawing.Point(399, 144);
             this.AEqConfirmBtn.Name = "AEqConfirmBtn";
             this.AEqConfirmBtn.Size = new System.Drawing.Size(75, 30);
             this.AEqConfirmBtn.TabIndex = 36;
@@ -429,15 +381,6 @@
             this.AEqTypeLbl.TabIndex = 32;
             this.AEqTypeLbl.Text = "Ladder";
             // 
-            // AEqConditionLbl
-            // 
-            this.AEqConditionLbl.AutoSize = true;
-            this.AEqConditionLbl.Location = new System.Drawing.Point(303, 108);
-            this.AEqConditionLbl.Name = "AEqConditionLbl";
-            this.AEqConditionLbl.Size = new System.Drawing.Size(38, 19);
-            this.AEqConditionLbl.TabIndex = 31;
-            this.AEqConditionLbl.Text = "New";
-            // 
             // tabPage31
             // 
             this.tabPage31.BackColor = System.Drawing.Color.White;
@@ -446,7 +389,7 @@
             this.tabPage31.Location = new System.Drawing.Point(4, 28);
             this.tabPage31.Name = "tabPage31";
             this.tabPage31.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage31.Size = new System.Drawing.Size(482, 245);
+            this.tabPage31.Size = new System.Drawing.Size(482, 205);
             this.tabPage31.TabIndex = 2;
             this.tabPage31.Text = "Complete";
             // 
@@ -455,7 +398,7 @@
             this.label232.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label232.AutoSize = true;
             this.label232.Font = new System.Drawing.Font("Calibri", 20F);
-            this.label232.Location = new System.Drawing.Point(68, 106);
+            this.label232.Location = new System.Drawing.Point(68, 86);
             this.label232.Name = "label232";
             this.label232.Size = new System.Drawing.Size(346, 33);
             this.label232.TabIndex = 1;
@@ -465,7 +408,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(490, 307);
+            this.ClientSize = new System.Drawing.Size(490, 267);
             this.Controls.Add(this.AddEquipmentTab);
             this.Controls.Add(this.TopBarPanel);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -506,8 +449,6 @@
         private System.Windows.Forms.PictureBox ClosePicBx;
         private System.Windows.Forms.TabControl AddEquipmentTab;
         private System.Windows.Forms.TabPage tabPage29;
-        private System.Windows.Forms.Label label233;
-        private System.Windows.Forms.ComboBox AEqConditionCmb;
         private System.Windows.Forms.NumericUpDown AEqQuantityUD;
         private System.Windows.Forms.Button AEqCancelBtn;
         private System.Windows.Forms.Button AEqNextBtn;
@@ -518,18 +459,15 @@
         private System.Windows.Forms.TextBox AEqDecripTb;
         private System.Windows.Forms.TabPage tabPage30;
         private System.Windows.Forms.Label AEqQuantityLbl;
-        private System.Windows.Forms.Label label234;
         private System.Windows.Forms.Label label235;
         private System.Windows.Forms.Label label239;
         private System.Windows.Forms.Label label240;
         private System.Windows.Forms.Label label226;
-        private System.Windows.Forms.Label label227;
         private System.Windows.Forms.Label label228;
         private System.Windows.Forms.Button AEqBackBtn;
         private System.Windows.Forms.Button AEqConfirmBtn;
         private System.Windows.Forms.Label AEqDescripLbl;
         private System.Windows.Forms.Label AEqTypeLbl;
-        private System.Windows.Forms.Label AEqConditionLbl;
         private System.Windows.Forms.TabPage tabPage31;
         private System.Windows.Forms.Label label232;
     }

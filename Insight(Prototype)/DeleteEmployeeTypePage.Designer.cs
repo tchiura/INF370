@@ -35,7 +35,7 @@
             this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
             this.DETCancelBtn = new System.Windows.Forms.Button();
-            this.AVTConfirmLbl = new System.Windows.Forms.Label();
+            this.DEmpTypeLbl = new System.Windows.Forms.Label();
             this.label91 = new System.Windows.Forms.Label();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -128,20 +128,20 @@
             this.DETCancelBtn.UseVisualStyleBackColor = true;
             this.DETCancelBtn.Click += new System.EventHandler(this.DETCancelBtn_Click);
             // 
-            // AVTConfirmLbl
+            // DEmpTypeLbl
             // 
-            this.AVTConfirmLbl.AutoSize = true;
-            this.AVTConfirmLbl.Location = new System.Drawing.Point(237, 75);
-            this.AVTConfirmLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.AVTConfirmLbl.Name = "AVTConfirmLbl";
-            this.AVTConfirmLbl.Size = new System.Drawing.Size(55, 19);
-            this.AVTConfirmLbl.TabIndex = 54;
-            this.AVTConfirmLbl.Text = "Runner";
+            this.DEmpTypeLbl.AutoSize = true;
+            this.DEmpTypeLbl.Location = new System.Drawing.Point(229, 58);
+            this.DEmpTypeLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DEmpTypeLbl.Name = "DEmpTypeLbl";
+            this.DEmpTypeLbl.Size = new System.Drawing.Size(55, 19);
+            this.DEmpTypeLbl.TabIndex = 54;
+            this.DEmpTypeLbl.Text = "Runner";
             // 
             // label91
             // 
             this.label91.AutoSize = true;
-            this.label91.Location = new System.Drawing.Point(43, 75);
+            this.label91.Location = new System.Drawing.Point(35, 58);
             this.label91.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label91.Name = "label91";
             this.label91.Size = new System.Drawing.Size(114, 19);
@@ -157,11 +157,11 @@
             this.Controls.Add(this.DETDeleteBtn);
             this.Controls.Add(this.TopBarPanel);
             this.Controls.Add(this.DETCancelBtn);
-            this.Controls.Add(this.AVTConfirmLbl);
+            this.Controls.Add(this.DEmpTypeLbl);
             this.Controls.Add(this.label91);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DeleteEmployeeTypePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DeleteEmployeeTypePage";
@@ -184,7 +184,7 @@
         private System.Windows.Forms.PictureBox MinimisePicBx;
         private System.Windows.Forms.PictureBox ClosePicBx;
         private System.Windows.Forms.Button DETCancelBtn;
-        private System.Windows.Forms.Label AVTConfirmLbl;
+        private System.Windows.Forms.Label DEmpTypeLbl;
         private System.Windows.Forms.Label label91;
     }
 }

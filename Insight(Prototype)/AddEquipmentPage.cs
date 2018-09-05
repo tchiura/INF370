@@ -38,7 +38,7 @@ namespace Insight_Prototype_
         {
             EqDescr = AEqDecripTb.Text;
             EqType = AEqTypeCmb.Text;
-            EqCondi = AEqConditionCmb.Text;
+            //EqCondi = AEqConditionCmb.Text;
             EqQuantity = Convert.ToInt32(AEqQuantityUD.Value);
 
             if (EqDescr == "" || EqType == "" || EqCondi == "" || EqQuantity == 0) 
@@ -49,7 +49,7 @@ namespace Insight_Prototype_
             {
                 AEqDescripLbl.Text = EqDescr;
                 AEqTypeLbl.Text = EqType;
-                AEqConditionLbl.Text = EqCondi;
+                //AEqConditionLbl.Text = EqCondi;
                 AEqQuantityLbl.Text = Convert.ToString(EqQuantity);
                 AddEquipmentTab.SelectedIndex = 1;
             }
@@ -62,6 +62,8 @@ namespace Insight_Prototype_
             InsightEquipment.EquipmentDescription = EqDescr;
             //InsightEquipment.EquipmentType = EqType;
             InsightEquipment.EquipmentQuantity = EqQuantity;
+            //InsightEquipment.EquipmentType = 
+
 
             AddEquipmentTab.SelectedIndex = 2;
         }

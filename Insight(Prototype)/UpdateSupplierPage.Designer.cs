@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.TopBarPanel = new System.Windows.Forms.Panel();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.Userlbl = new System.Windows.Forms.Label();
             this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
-            this.AddSkillDetails = new System.Windows.Forms.TabControl();
+            this.UpdateSupplierTab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.linkLabel9 = new System.Windows.Forms.LinkLabel();
             this.label123 = new System.Windows.Forms.Label();
@@ -95,78 +96,90 @@
             this.button24 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label99 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.TopBarPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
-            this.AddSkillDetails.SuspendLayout();
+            this.UpdateSupplierTab.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // TopBarPanel
             // 
-            this.TopBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(31)))), ((int)(((byte)(75)))));
+            this.TopBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.TopBarPanel.Controls.Add(this.pictureBox14);
             this.TopBarPanel.Controls.Add(this.Userlbl);
             this.TopBarPanel.Controls.Add(this.MinimisePicBx);
             this.TopBarPanel.Controls.Add(this.ClosePicBx);
             this.TopBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TopBarPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.TopBarPanel.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TopBarPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
             this.TopBarPanel.Location = new System.Drawing.Point(0, 0);
             this.TopBarPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TopBarPanel.Name = "TopBarPanel";
             this.TopBarPanel.Size = new System.Drawing.Size(1284, 29);
-            this.TopBarPanel.TabIndex = 8;
+            this.TopBarPanel.TabIndex = 80;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox14.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
+            this.pictureBox14.Location = new System.Drawing.Point(1200, 0);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(28, 29);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 2;
+            this.pictureBox14.TabStop = false;
             // 
             // Userlbl
             // 
             this.Userlbl.AutoSize = true;
-            this.Userlbl.Font = new System.Drawing.Font("Calibri", 12F);
-            this.Userlbl.Location = new System.Drawing.Point(12, 6);
+            this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.Userlbl.Location = new System.Drawing.Point(3, 2);
             this.Userlbl.Name = "Userlbl";
-            this.Userlbl.Size = new System.Drawing.Size(75, 19);
+            this.Userlbl.Size = new System.Drawing.Size(138, 23);
             this.Userlbl.TabIndex = 0;
-            this.Userlbl.Text = "Username";
+            this.Userlbl.Text = "Update Supplier";
             // 
             // MinimisePicBx
             // 
             this.MinimisePicBx.Dock = System.Windows.Forms.DockStyle.Right;
-            this.MinimisePicBx.Image = global::Insight_Prototype_.Properties.Resources.Minus_32px;
+            this.MinimisePicBx.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
             this.MinimisePicBx.Location = new System.Drawing.Point(1228, 0);
             this.MinimisePicBx.Name = "MinimisePicBx";
             this.MinimisePicBx.Size = new System.Drawing.Size(28, 29);
-            this.MinimisePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.MinimisePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.MinimisePicBx.TabIndex = 1;
             this.MinimisePicBx.TabStop = false;
             // 
             // ClosePicBx
             // 
             this.ClosePicBx.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ClosePicBx.Image = global::Insight_Prototype_.Properties.Resources.Shutdown_32px;
+            this.ClosePicBx.Image = global::Insight_Prototype_.Properties.Resources.Cancel_100px2;
             this.ClosePicBx.Location = new System.Drawing.Point(1256, 0);
             this.ClosePicBx.Name = "ClosePicBx";
             this.ClosePicBx.Size = new System.Drawing.Size(28, 29);
-            this.ClosePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.ClosePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ClosePicBx.TabIndex = 0;
             this.ClosePicBx.TabStop = false;
             // 
-            // AddSkillDetails
+            // UpdateSupplierTab
             // 
-            this.AddSkillDetails.Controls.Add(this.tabPage1);
-            this.AddSkillDetails.Controls.Add(this.tabPage2);
-            this.AddSkillDetails.Controls.Add(this.tabPage3);
-            this.AddSkillDetails.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddSkillDetails.Location = new System.Drawing.Point(0, 29);
-            this.AddSkillDetails.Name = "AddSkillDetails";
-            this.AddSkillDetails.SelectedIndex = 0;
-            this.AddSkillDetails.Size = new System.Drawing.Size(1284, 632);
-            this.AddSkillDetails.TabIndex = 12;
+            this.UpdateSupplierTab.Controls.Add(this.tabPage1);
+            this.UpdateSupplierTab.Controls.Add(this.tabPage2);
+            this.UpdateSupplierTab.Controls.Add(this.tabPage3);
+            this.UpdateSupplierTab.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UpdateSupplierTab.Location = new System.Drawing.Point(0, 29);
+            this.UpdateSupplierTab.Name = "UpdateSupplierTab";
+            this.UpdateSupplierTab.SelectedIndex = 0;
+            this.UpdateSupplierTab.Size = new System.Drawing.Size(1284, 632);
+            this.UpdateSupplierTab.TabIndex = 81;
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.tabPage1.BackColor = System.Drawing.Color.White;
             this.tabPage1.Controls.Add(this.linkLabel9);
             this.tabPage1.Controls.Add(this.label123);
             this.tabPage1.Controls.Add(this.label124);
@@ -590,7 +603,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.Silver;
+            this.tabPage2.BackColor = System.Drawing.Color.White;
             this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.label3);
@@ -825,9 +838,8 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.Silver;
+            this.tabPage3.BackColor = System.Drawing.Color.White;
             this.tabPage3.Controls.Add(this.label99);
-            this.tabPage3.Controls.Add(this.pictureBox3);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -846,24 +858,13 @@
             this.label99.TabIndex = 1;
             this.label99.Text = "Supplier Successfully Updated";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox3.Image = global::Insight_Prototype_.Properties.Resources.Ok_100px;
-            this.pictureBox3.Location = new System.Drawing.Point(438, 45);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(400, 400);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
             // UpdateSupplierPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1284, 661);
-            this.Controls.Add(this.AddSkillDetails);
+            this.Controls.Add(this.UpdateSupplierTab);
             this.Controls.Add(this.TopBarPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UpdateSupplierPage";
@@ -871,16 +872,16 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.TopBarPanel.ResumeLayout(false);
             this.TopBarPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).EndInit();
-            this.AddSkillDetails.ResumeLayout(false);
+            this.UpdateSupplierTab.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -888,21 +889,22 @@
         #endregion
 
         private System.Windows.Forms.Panel TopBarPanel;
+        private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Label Userlbl;
         private System.Windows.Forms.PictureBox MinimisePicBx;
         private System.Windows.Forms.PictureBox ClosePicBx;
-        private System.Windows.Forms.TabControl AddSkillDetails;
+        private System.Windows.Forms.TabControl UpdateSupplierTab;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Label label99;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.LinkLabel linkLabel9;
+        private System.Windows.Forms.Label label123;
+        private System.Windows.Forms.Label label124;
+        private System.Windows.Forms.Label label125;
+        private System.Windows.Forms.Label label126;
+        private System.Windows.Forms.Label label127;
+        private System.Windows.Forms.Label label128;
+        private System.Windows.Forms.Label label130;
+        private System.Windows.Forms.Label label131;
+        private System.Windows.Forms.Label label132;
         private System.Windows.Forms.LinkLabel linkLabel8;
         private System.Windows.Forms.LinkLabel linkLabel7;
         private System.Windows.Forms.TextBox textBox6;
@@ -922,21 +924,16 @@
         private System.Windows.Forms.Label label98;
         private System.Windows.Forms.Label label100;
         private System.Windows.Forms.Label label101;
-        private System.Windows.Forms.LinkLabel linkLabel9;
-        private System.Windows.Forms.Label label123;
-        private System.Windows.Forms.Label label124;
-        private System.Windows.Forms.Label label125;
-        private System.Windows.Forms.Label label126;
-        private System.Windows.Forms.Label label127;
-        private System.Windows.Forms.Label label128;
-        private System.Windows.Forms.Label label130;
-        private System.Windows.Forms.Label label131;
-        private System.Windows.Forms.Label label132;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button22;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -955,5 +952,9 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Label label99;
     }
 }

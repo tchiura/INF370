@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Insight_Prototype_
 {
-    public partial class UpdateJobPage : Form
+    public partial class AddProjectRequestPage : Form
     {
-        public UpdateJobPage()
+        public AddProjectRequestPage()
         {
             InitializeComponent();
-        }
-
-        private void EDetails_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

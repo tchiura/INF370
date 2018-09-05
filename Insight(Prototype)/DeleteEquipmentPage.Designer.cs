@@ -39,9 +39,9 @@
             this.label226 = new System.Windows.Forms.Label();
             this.label227 = new System.Windows.Forms.Label();
             this.label228 = new System.Windows.Forms.Label();
-            this.AEqDescripLbl = new System.Windows.Forms.Label();
-            this.AEqTypeLbl = new System.Windows.Forms.Label();
-            this.AEqConditionLbl = new System.Windows.Forms.Label();
+            this.DEqDescripLbl = new System.Windows.Forms.Label();
+            this.DEqTypeLbl = new System.Windows.Forms.Label();
+            this.DEqConditionLbl = new System.Windows.Forms.Label();
             this.QEqCancelBtn = new System.Windows.Forms.Button();
             this.DEqBtn = new System.Windows.Forms.Button();
             this.TopBarPanel.SuspendLayout();
@@ -163,32 +163,32 @@
             this.label228.TabIndex = 67;
             this.label228.Text = "Description:";
             // 
-            // AEqDescripLbl
+            // DEqDescripLbl
             // 
-            this.AEqDescripLbl.AutoSize = true;
-            this.AEqDescripLbl.Location = new System.Drawing.Point(306, 54);
-            this.AEqDescripLbl.Name = "AEqDescripLbl";
-            this.AEqDescripLbl.Size = new System.Drawing.Size(100, 19);
-            this.AEqDescripLbl.TabIndex = 66;
-            this.AEqDescripLbl.Text = "ClimbUp 1.5m";
+            this.DEqDescripLbl.AutoSize = true;
+            this.DEqDescripLbl.Location = new System.Drawing.Point(306, 54);
+            this.DEqDescripLbl.Name = "DEqDescripLbl";
+            this.DEqDescripLbl.Size = new System.Drawing.Size(100, 19);
+            this.DEqDescripLbl.TabIndex = 66;
+            this.DEqDescripLbl.Text = "ClimbUp 1.5m";
             // 
-            // AEqTypeLbl
+            // DEqTypeLbl
             // 
-            this.AEqTypeLbl.AutoSize = true;
-            this.AEqTypeLbl.Location = new System.Drawing.Point(306, 97);
-            this.AEqTypeLbl.Name = "AEqTypeLbl";
-            this.AEqTypeLbl.Size = new System.Drawing.Size(53, 19);
-            this.AEqTypeLbl.TabIndex = 65;
-            this.AEqTypeLbl.Text = "Ladder";
+            this.DEqTypeLbl.AutoSize = true;
+            this.DEqTypeLbl.Location = new System.Drawing.Point(306, 97);
+            this.DEqTypeLbl.Name = "DEqTypeLbl";
+            this.DEqTypeLbl.Size = new System.Drawing.Size(53, 19);
+            this.DEqTypeLbl.TabIndex = 65;
+            this.DEqTypeLbl.Text = "Ladder";
             // 
-            // AEqConditionLbl
+            // DEqConditionLbl
             // 
-            this.AEqConditionLbl.AutoSize = true;
-            this.AEqConditionLbl.Location = new System.Drawing.Point(306, 140);
-            this.AEqConditionLbl.Name = "AEqConditionLbl";
-            this.AEqConditionLbl.Size = new System.Drawing.Size(38, 19);
-            this.AEqConditionLbl.TabIndex = 64;
-            this.AEqConditionLbl.Text = "New";
+            this.DEqConditionLbl.AutoSize = true;
+            this.DEqConditionLbl.Location = new System.Drawing.Point(306, 140);
+            this.DEqConditionLbl.Name = "DEqConditionLbl";
+            this.DEqConditionLbl.Size = new System.Drawing.Size(38, 19);
+            this.DEqConditionLbl.TabIndex = 64;
+            this.DEqConditionLbl.Text = "New";
             // 
             // QEqCancelBtn
             // 
@@ -230,13 +230,13 @@
             this.Controls.Add(this.label226);
             this.Controls.Add(this.label227);
             this.Controls.Add(this.label228);
-            this.Controls.Add(this.AEqDescripLbl);
-            this.Controls.Add(this.AEqTypeLbl);
-            this.Controls.Add(this.AEqConditionLbl);
+            this.Controls.Add(this.DEqDescripLbl);
+            this.Controls.Add(this.DEqTypeLbl);
+            this.Controls.Add(this.DEqConditionLbl);
             this.Controls.Add(this.TopBarPanel);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DeleteEquipmentPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DeleteEquipmentPage";
@@ -264,9 +264,9 @@
         private System.Windows.Forms.Label label226;
         private System.Windows.Forms.Label label227;
         private System.Windows.Forms.Label label228;
-        private System.Windows.Forms.Label AEqDescripLbl;
-        private System.Windows.Forms.Label AEqTypeLbl;
-        private System.Windows.Forms.Label AEqConditionLbl;
+        private System.Windows.Forms.Label DEqDescripLbl;
+        private System.Windows.Forms.Label DEqTypeLbl;
+        private System.Windows.Forms.Label DEqConditionLbl;
         private System.Windows.Forms.Button QEqCancelBtn;
         private System.Windows.Forms.Button DEqBtn;
     }

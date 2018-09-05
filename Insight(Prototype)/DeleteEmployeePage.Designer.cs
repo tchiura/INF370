@@ -34,18 +34,18 @@
             this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
             this.DeleteClientDetailsPanel = new System.Windows.Forms.Panel();
-            this.EmployeeDOBlbl = new System.Windows.Forms.Label();
+            this.DEmployeeDOBlbl = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.EmployeeAd2lbl = new System.Windows.Forms.Label();
+            this.DEmployeeAd2lbl = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
             this.label91 = new System.Windows.Forms.Label();
             this.label99 = new System.Windows.Forms.Label();
             this.label272 = new System.Windows.Forms.Label();
             this.label273 = new System.Windows.Forms.Label();
-            this.EmployeeAd1lbl = new System.Windows.Forms.Label();
-            this.EmployeeCitylbl = new System.Windows.Forms.Label();
-            this.EmployeeCountrylbl = new System.Windows.Forms.Label();
-            this.EmployeeAd3lbl = new System.Windows.Forms.Label();
+            this.DEmployeeAd1lbl = new System.Windows.Forms.Label();
+            this.DEmployeeCitylbl = new System.Windows.Forms.Label();
+            this.DEmployeeCountrylbl = new System.Windows.Forms.Label();
+            this.DEmployeeAd3lbl = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
@@ -53,12 +53,12 @@
             this.label71 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
-            this.EmployeeEmaillbl = new System.Windows.Forms.Label();
-            this.EmployeeTypelbl = new System.Windows.Forms.Label();
-            this.EmployeeGenderlbl = new System.Windows.Forms.Label();
-            this.EmployeeNamelbl = new System.Windows.Forms.Label();
-            this.EmployeeSurnamelbl = new System.Windows.Forms.Label();
-            this.EmployeeNumberlbl = new System.Windows.Forms.Label();
+            this.DEmployeeEmaillbl = new System.Windows.Forms.Label();
+            this.DEmployeeTypelbl = new System.Windows.Forms.Label();
+            this.DEmployeeGenderlbl = new System.Windows.Forms.Label();
+            this.DEmployeeNamelbl = new System.Windows.Forms.Label();
+            this.DEmployeeSurnamelbl = new System.Windows.Forms.Label();
+            this.DEmployeeNumberlbl = new System.Windows.Forms.Label();
             this.DEmpCancelBtn = new System.Windows.Forms.Button();
             this.DEmpDeleteBtn = new System.Windows.Forms.Button();
             this.TopBarPanel.SuspendLayout();
@@ -131,7 +131,7 @@
             // DeleteClientDetailsPanel
             // 
             this.DeleteClientDetailsPanel.BackColor = System.Drawing.Color.White;
-            this.DeleteClientDetailsPanel.Controls.Add(this.EmployeeDOBlbl);
+            this.DeleteClientDetailsPanel.Controls.Add(this.DEmployeeDOBlbl);
             this.DeleteClientDetailsPanel.Controls.Add(this.groupBox6);
             this.DeleteClientDetailsPanel.Controls.Add(this.label64);
             this.DeleteClientDetailsPanel.Controls.Add(this.label65);
@@ -140,12 +140,12 @@
             this.DeleteClientDetailsPanel.Controls.Add(this.label71);
             this.DeleteClientDetailsPanel.Controls.Add(this.label72);
             this.DeleteClientDetailsPanel.Controls.Add(this.label73);
-            this.DeleteClientDetailsPanel.Controls.Add(this.EmployeeEmaillbl);
-            this.DeleteClientDetailsPanel.Controls.Add(this.EmployeeTypelbl);
-            this.DeleteClientDetailsPanel.Controls.Add(this.EmployeeGenderlbl);
-            this.DeleteClientDetailsPanel.Controls.Add(this.EmployeeNamelbl);
-            this.DeleteClientDetailsPanel.Controls.Add(this.EmployeeSurnamelbl);
-            this.DeleteClientDetailsPanel.Controls.Add(this.EmployeeNumberlbl);
+            this.DeleteClientDetailsPanel.Controls.Add(this.DEmployeeEmaillbl);
+            this.DeleteClientDetailsPanel.Controls.Add(this.DEmployeeTypelbl);
+            this.DeleteClientDetailsPanel.Controls.Add(this.DEmployeeGenderlbl);
+            this.DeleteClientDetailsPanel.Controls.Add(this.DEmployeeNamelbl);
+            this.DeleteClientDetailsPanel.Controls.Add(this.DEmployeeSurnamelbl);
+            this.DeleteClientDetailsPanel.Controls.Add(this.DEmployeeNumberlbl);
             this.DeleteClientDetailsPanel.Controls.Add(this.DEmpCancelBtn);
             this.DeleteClientDetailsPanel.Controls.Add(this.DEmpDeleteBtn);
             this.DeleteClientDetailsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -155,27 +155,27 @@
             this.DeleteClientDetailsPanel.Size = new System.Drawing.Size(1284, 632);
             this.DeleteClientDetailsPanel.TabIndex = 9;
             // 
-            // EmployeeDOBlbl
+            // DEmployeeDOBlbl
             // 
-            this.EmployeeDOBlbl.AutoSize = true;
-            this.EmployeeDOBlbl.Location = new System.Drawing.Point(330, 281);
-            this.EmployeeDOBlbl.Name = "EmployeeDOBlbl";
-            this.EmployeeDOBlbl.Size = new System.Drawing.Size(13, 19);
-            this.EmployeeDOBlbl.TabIndex = 95;
-            this.EmployeeDOBlbl.Text = ".";
+            this.DEmployeeDOBlbl.AutoSize = true;
+            this.DEmployeeDOBlbl.Location = new System.Drawing.Point(330, 281);
+            this.DEmployeeDOBlbl.Name = "DEmployeeDOBlbl";
+            this.DEmployeeDOBlbl.Size = new System.Drawing.Size(13, 19);
+            this.DEmployeeDOBlbl.TabIndex = 95;
+            this.DEmployeeDOBlbl.Text = ".";
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.EmployeeAd2lbl);
+            this.groupBox6.Controls.Add(this.DEmployeeAd2lbl);
             this.groupBox6.Controls.Add(this.label81);
             this.groupBox6.Controls.Add(this.label91);
             this.groupBox6.Controls.Add(this.label99);
             this.groupBox6.Controls.Add(this.label272);
             this.groupBox6.Controls.Add(this.label273);
-            this.groupBox6.Controls.Add(this.EmployeeAd1lbl);
-            this.groupBox6.Controls.Add(this.EmployeeCitylbl);
-            this.groupBox6.Controls.Add(this.EmployeeCountrylbl);
-            this.groupBox6.Controls.Add(this.EmployeeAd3lbl);
+            this.groupBox6.Controls.Add(this.DEmployeeAd1lbl);
+            this.groupBox6.Controls.Add(this.DEmployeeCitylbl);
+            this.groupBox6.Controls.Add(this.DEmployeeCountrylbl);
+            this.groupBox6.Controls.Add(this.DEmployeeAd3lbl);
             this.groupBox6.Location = new System.Drawing.Point(62, 319);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(537, 237);
@@ -183,14 +183,14 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Address";
             // 
-            // EmployeeAd2lbl
+            // DEmployeeAd2lbl
             // 
-            this.EmployeeAd2lbl.AutoSize = true;
-            this.EmployeeAd2lbl.Location = new System.Drawing.Point(267, 76);
-            this.EmployeeAd2lbl.Name = "EmployeeAd2lbl";
-            this.EmployeeAd2lbl.Size = new System.Drawing.Size(70, 19);
-            this.EmployeeAd2lbl.TabIndex = 41;
-            this.EmployeeAd2lbl.Text = "Kingsway";
+            this.DEmployeeAd2lbl.AutoSize = true;
+            this.DEmployeeAd2lbl.Location = new System.Drawing.Point(267, 76);
+            this.DEmployeeAd2lbl.Name = "DEmployeeAd2lbl";
+            this.DEmployeeAd2lbl.Size = new System.Drawing.Size(70, 19);
+            this.DEmployeeAd2lbl.TabIndex = 41;
+            this.DEmployeeAd2lbl.Text = "Kingsway";
             // 
             // label81
             // 
@@ -237,41 +237,42 @@
             this.label273.TabIndex = 4;
             this.label273.Text = "Country:";
             // 
-            // EmployeeAd1lbl
+            // DEmployeeAd1lbl
             // 
-            this.EmployeeAd1lbl.AutoSize = true;
-            this.EmployeeAd1lbl.Location = new System.Drawing.Point(268, 29);
-            this.EmployeeAd1lbl.Name = "EmployeeAd1lbl";
-            this.EmployeeAd1lbl.Size = new System.Drawing.Size(104, 19);
-            this.EmployeeAd1lbl.TabIndex = 35;
-            this.EmployeeAd1lbl.Text = "23 Jump Street";
+            this.DEmployeeAd1lbl.AutoSize = true;
+            this.DEmployeeAd1lbl.Location = new System.Drawing.Point(268, 29);
+            this.DEmployeeAd1lbl.Name = "DEmployeeAd1lbl";
+            this.DEmployeeAd1lbl.Size = new System.Drawing.Size(104, 19);
+            this.DEmployeeAd1lbl.TabIndex = 35;
+            this.DEmployeeAd1lbl.Text = "23 Jump Street";
+            this.DEmployeeAd1lbl.Click += new System.EventHandler(this.EmployeeAd1lbl_Click);
             // 
-            // EmployeeCitylbl
+            // DEmployeeCitylbl
             // 
-            this.EmployeeCitylbl.AutoSize = true;
-            this.EmployeeCitylbl.Location = new System.Drawing.Point(268, 159);
-            this.EmployeeCitylbl.Name = "EmployeeCitylbl";
-            this.EmployeeCitylbl.Size = new System.Drawing.Size(98, 19);
-            this.EmployeeCitylbl.TabIndex = 31;
-            this.EmployeeCitylbl.Text = "Johannesburg";
+            this.DEmployeeCitylbl.AutoSize = true;
+            this.DEmployeeCitylbl.Location = new System.Drawing.Point(268, 159);
+            this.DEmployeeCitylbl.Name = "DEmployeeCitylbl";
+            this.DEmployeeCitylbl.Size = new System.Drawing.Size(98, 19);
+            this.DEmployeeCitylbl.TabIndex = 31;
+            this.DEmployeeCitylbl.Text = "Johannesburg";
             // 
-            // EmployeeCountrylbl
+            // DEmployeeCountrylbl
             // 
-            this.EmployeeCountrylbl.AutoSize = true;
-            this.EmployeeCountrylbl.Location = new System.Drawing.Point(268, 196);
-            this.EmployeeCountrylbl.Name = "EmployeeCountrylbl";
-            this.EmployeeCountrylbl.Size = new System.Drawing.Size(87, 19);
-            this.EmployeeCountrylbl.TabIndex = 30;
-            this.EmployeeCountrylbl.Text = "South Africa";
+            this.DEmployeeCountrylbl.AutoSize = true;
+            this.DEmployeeCountrylbl.Location = new System.Drawing.Point(268, 196);
+            this.DEmployeeCountrylbl.Name = "DEmployeeCountrylbl";
+            this.DEmployeeCountrylbl.Size = new System.Drawing.Size(87, 19);
+            this.DEmployeeCountrylbl.TabIndex = 30;
+            this.DEmployeeCountrylbl.Text = "South Africa";
             // 
-            // EmployeeAd3lbl
+            // DEmployeeAd3lbl
             // 
-            this.EmployeeAd3lbl.AutoSize = true;
-            this.EmployeeAd3lbl.Location = new System.Drawing.Point(268, 115);
-            this.EmployeeAd3lbl.Name = "EmployeeAd3lbl";
-            this.EmployeeAd3lbl.Size = new System.Drawing.Size(64, 19);
-            this.EmployeeAd3lbl.TabIndex = 32;
-            this.EmployeeAd3lbl.Text = "Gauteng";
+            this.DEmployeeAd3lbl.AutoSize = true;
+            this.DEmployeeAd3lbl.Location = new System.Drawing.Point(268, 115);
+            this.DEmployeeAd3lbl.Name = "DEmployeeAd3lbl";
+            this.DEmployeeAd3lbl.Size = new System.Drawing.Size(64, 19);
+            this.DEmployeeAd3lbl.TabIndex = 32;
+            this.DEmployeeAd3lbl.Text = "Gauteng";
             // 
             // label64
             // 
@@ -336,59 +337,59 @@
             this.label73.TabIndex = 87;
             this.label73.Text = "Phone Number:";
             // 
-            // EmployeeEmaillbl
+            // DEmployeeEmaillbl
             // 
-            this.EmployeeEmaillbl.AutoSize = true;
-            this.EmployeeEmaillbl.Location = new System.Drawing.Point(329, 237);
-            this.EmployeeEmaillbl.Name = "EmployeeEmaillbl";
-            this.EmployeeEmaillbl.Size = new System.Drawing.Size(109, 19);
-            this.EmployeeEmaillbl.TabIndex = 86;
-            this.EmployeeEmaillbl.Text = "Jill@main.co.za";
+            this.DEmployeeEmaillbl.AutoSize = true;
+            this.DEmployeeEmaillbl.Location = new System.Drawing.Point(329, 237);
+            this.DEmployeeEmaillbl.Name = "DEmployeeEmaillbl";
+            this.DEmployeeEmaillbl.Size = new System.Drawing.Size(109, 19);
+            this.DEmployeeEmaillbl.TabIndex = 86;
+            this.DEmployeeEmaillbl.Text = "Jill@main.co.za";
             // 
-            // EmployeeTypelbl
+            // DEmployeeTypelbl
             // 
-            this.EmployeeTypelbl.AutoSize = true;
-            this.EmployeeTypelbl.Location = new System.Drawing.Point(330, 36);
-            this.EmployeeTypelbl.Name = "EmployeeTypelbl";
-            this.EmployeeTypelbl.Size = new System.Drawing.Size(78, 19);
-            this.EmployeeTypelbl.TabIndex = 85;
-            this.EmployeeTypelbl.Text = "Technician";
+            this.DEmployeeTypelbl.AutoSize = true;
+            this.DEmployeeTypelbl.Location = new System.Drawing.Point(330, 36);
+            this.DEmployeeTypelbl.Name = "DEmployeeTypelbl";
+            this.DEmployeeTypelbl.Size = new System.Drawing.Size(78, 19);
+            this.DEmployeeTypelbl.TabIndex = 85;
+            this.DEmployeeTypelbl.Text = "Technician";
             // 
-            // EmployeeGenderlbl
+            // DEmployeeGenderlbl
             // 
-            this.EmployeeGenderlbl.AutoSize = true;
-            this.EmployeeGenderlbl.Location = new System.Drawing.Point(329, 153);
-            this.EmployeeGenderlbl.Name = "EmployeeGenderlbl";
-            this.EmployeeGenderlbl.Size = new System.Drawing.Size(56, 19);
-            this.EmployeeGenderlbl.TabIndex = 84;
-            this.EmployeeGenderlbl.Text = "Female";
+            this.DEmployeeGenderlbl.AutoSize = true;
+            this.DEmployeeGenderlbl.Location = new System.Drawing.Point(329, 153);
+            this.DEmployeeGenderlbl.Name = "DEmployeeGenderlbl";
+            this.DEmployeeGenderlbl.Size = new System.Drawing.Size(56, 19);
+            this.DEmployeeGenderlbl.TabIndex = 84;
+            this.DEmployeeGenderlbl.Text = "Female";
             // 
-            // EmployeeNamelbl
+            // DEmployeeNamelbl
             // 
-            this.EmployeeNamelbl.AutoSize = true;
-            this.EmployeeNamelbl.Location = new System.Drawing.Point(330, 74);
-            this.EmployeeNamelbl.Name = "EmployeeNamelbl";
-            this.EmployeeNamelbl.Size = new System.Drawing.Size(26, 19);
-            this.EmployeeNamelbl.TabIndex = 83;
-            this.EmployeeNamelbl.Text = "Jill";
+            this.DEmployeeNamelbl.AutoSize = true;
+            this.DEmployeeNamelbl.Location = new System.Drawing.Point(330, 74);
+            this.DEmployeeNamelbl.Name = "DEmployeeNamelbl";
+            this.DEmployeeNamelbl.Size = new System.Drawing.Size(26, 19);
+            this.DEmployeeNamelbl.TabIndex = 83;
+            this.DEmployeeNamelbl.Text = "Jill";
             // 
-            // EmployeeSurnamelbl
+            // DEmployeeSurnamelbl
             // 
-            this.EmployeeSurnamelbl.AutoSize = true;
-            this.EmployeeSurnamelbl.Location = new System.Drawing.Point(330, 117);
-            this.EmployeeSurnamelbl.Name = "EmployeeSurnamelbl";
-            this.EmployeeSurnamelbl.Size = new System.Drawing.Size(42, 19);
-            this.EmployeeSurnamelbl.TabIndex = 82;
-            this.EmployeeSurnamelbl.Text = "Main";
+            this.DEmployeeSurnamelbl.AutoSize = true;
+            this.DEmployeeSurnamelbl.Location = new System.Drawing.Point(330, 117);
+            this.DEmployeeSurnamelbl.Name = "DEmployeeSurnamelbl";
+            this.DEmployeeSurnamelbl.Size = new System.Drawing.Size(42, 19);
+            this.DEmployeeSurnamelbl.TabIndex = 82;
+            this.DEmployeeSurnamelbl.Text = "Main";
             // 
-            // EmployeeNumberlbl
+            // DEmployeeNumberlbl
             // 
-            this.EmployeeNumberlbl.AutoSize = true;
-            this.EmployeeNumberlbl.Location = new System.Drawing.Point(330, 192);
-            this.EmployeeNumberlbl.Name = "EmployeeNumberlbl";
-            this.EmployeeNumberlbl.Size = new System.Drawing.Size(97, 19);
-            this.EmployeeNumberlbl.TabIndex = 81;
-            this.EmployeeNumberlbl.Text = "072 152 1423";
+            this.DEmployeeNumberlbl.AutoSize = true;
+            this.DEmployeeNumberlbl.Location = new System.Drawing.Point(330, 192);
+            this.DEmployeeNumberlbl.Name = "DEmployeeNumberlbl";
+            this.DEmployeeNumberlbl.Size = new System.Drawing.Size(97, 19);
+            this.DEmployeeNumberlbl.TabIndex = 81;
+            this.DEmployeeNumberlbl.Text = "072 152 1423";
             // 
             // DEmpCancelBtn
             // 
@@ -449,18 +450,18 @@
         private System.Windows.Forms.PictureBox MinimisePicBx;
         private System.Windows.Forms.PictureBox ClosePicBx;
         private System.Windows.Forms.Panel DeleteClientDetailsPanel;
-        private System.Windows.Forms.Label EmployeeDOBlbl;
+        private System.Windows.Forms.Label DEmployeeDOBlbl;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Label EmployeeAd2lbl;
+        private System.Windows.Forms.Label DEmployeeAd2lbl;
         private System.Windows.Forms.Label label81;
         private System.Windows.Forms.Label label91;
         private System.Windows.Forms.Label label99;
         private System.Windows.Forms.Label label272;
         private System.Windows.Forms.Label label273;
-        private System.Windows.Forms.Label EmployeeAd1lbl;
-        private System.Windows.Forms.Label EmployeeCitylbl;
-        private System.Windows.Forms.Label EmployeeCountrylbl;
-        private System.Windows.Forms.Label EmployeeAd3lbl;
+        private System.Windows.Forms.Label DEmployeeAd1lbl;
+        private System.Windows.Forms.Label DEmployeeCitylbl;
+        private System.Windows.Forms.Label DEmployeeCountrylbl;
+        private System.Windows.Forms.Label DEmployeeAd3lbl;
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label66;
@@ -468,12 +469,12 @@
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.Label label73;
-        private System.Windows.Forms.Label EmployeeEmaillbl;
-        private System.Windows.Forms.Label EmployeeTypelbl;
-        private System.Windows.Forms.Label EmployeeGenderlbl;
-        private System.Windows.Forms.Label EmployeeNamelbl;
-        private System.Windows.Forms.Label EmployeeSurnamelbl;
-        private System.Windows.Forms.Label EmployeeNumberlbl;
+        private System.Windows.Forms.Label DEmployeeEmaillbl;
+        private System.Windows.Forms.Label DEmployeeTypelbl;
+        private System.Windows.Forms.Label DEmployeeGenderlbl;
+        private System.Windows.Forms.Label DEmployeeNamelbl;
+        private System.Windows.Forms.Label DEmployeeSurnamelbl;
+        private System.Windows.Forms.Label DEmployeeNumberlbl;
         private System.Windows.Forms.Button DEmpCancelBtn;
         private System.Windows.Forms.Button DEmpDeleteBtn;
     }

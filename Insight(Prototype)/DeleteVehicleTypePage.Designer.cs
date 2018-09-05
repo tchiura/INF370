@@ -35,7 +35,7 @@
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
             this.DVTCancelBtn = new System.Windows.Forms.Button();
             this.DVTDeleteBtn = new System.Windows.Forms.Button();
-            this.AVTConfirmLbl = new System.Windows.Forms.Label();
+            this.DVTypeLbl = new System.Windows.Forms.Label();
             this.label91 = new System.Windows.Forms.Label();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -128,15 +128,15 @@
             this.DVTDeleteBtn.UseVisualStyleBackColor = true;
             this.DVTDeleteBtn.Click += new System.EventHandler(this.DVTConfirmBtn_Click);
             // 
-            // AVTConfirmLbl
+            // DVTypeLbl
             // 
-            this.AVTConfirmLbl.AutoSize = true;
-            this.AVTConfirmLbl.Location = new System.Drawing.Point(230, 77);
-            this.AVTConfirmLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.AVTConfirmLbl.Name = "AVTConfirmLbl";
-            this.AVTConfirmLbl.Size = new System.Drawing.Size(77, 19);
-            this.AVTConfirmLbl.TabIndex = 39;
-            this.AVTConfirmLbl.Text = "Skoroskoro";
+            this.DVTypeLbl.AutoSize = true;
+            this.DVTypeLbl.Location = new System.Drawing.Point(230, 77);
+            this.DVTypeLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DVTypeLbl.Name = "DVTypeLbl";
+            this.DVTypeLbl.Size = new System.Drawing.Size(77, 19);
+            this.DVTypeLbl.TabIndex = 39;
+            this.DVTypeLbl.Text = "Skoroskoro";
             // 
             // label91
             // 
@@ -156,7 +156,7 @@
             this.ClientSize = new System.Drawing.Size(460, 200);
             this.Controls.Add(this.DVTCancelBtn);
             this.Controls.Add(this.DVTDeleteBtn);
-            this.Controls.Add(this.AVTConfirmLbl);
+            this.Controls.Add(this.DVTypeLbl);
             this.Controls.Add(this.label91);
             this.Controls.Add(this.TopBarPanel);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -183,7 +183,7 @@
         private System.Windows.Forms.PictureBox ClosePicBx;
         private System.Windows.Forms.Button DVTCancelBtn;
         private System.Windows.Forms.Button DVTDeleteBtn;
-        private System.Windows.Forms.Label AVTConfirmLbl;
+        private System.Windows.Forms.Label DVTypeLbl;
         private System.Windows.Forms.Label label91;
     }
 }
