@@ -36,15 +36,15 @@
             this.UpdateProductTypeTab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
+            this.UPTypeLbl = new System.Windows.Forms.Label();
+            this.UPTypeTb = new System.Windows.Forms.TextBox();
+            this.UPTCancelBtn = new System.Windows.Forms.Button();
+            this.UPTNextBtn = new System.Windows.Forms.Button();
             this.label58 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.UPTBackBtn = new System.Windows.Forms.Button();
+            this.UPTConfirmBtn = new System.Windows.Forms.Button();
+            this.CUPTypeLbl = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label99 = new System.Windows.Forms.Label();
@@ -133,10 +133,10 @@
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
             this.tabPage1.Controls.Add(this.linkLabel1);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.textBox13);
-            this.tabPage1.Controls.Add(this.button21);
-            this.tabPage1.Controls.Add(this.button22);
+            this.tabPage1.Controls.Add(this.UPTypeLbl);
+            this.tabPage1.Controls.Add(this.UPTypeTb);
+            this.tabPage1.Controls.Add(this.UPTCancelBtn);
+            this.tabPage1.Controls.Add(this.UPTNextBtn);
             this.tabPage1.Controls.Add(this.label58);
             this.tabPage1.ForeColor = System.Drawing.Color.Black;
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -149,55 +149,57 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(528, 73);
+            this.linkLabel1.Location = new System.Drawing.Point(397, 57);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(25, 13);
             this.linkLabel1.TabIndex = 35;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Edit";
             // 
-            // label1
+            // UPTypeLbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(154, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 19);
-            this.label1.TabIndex = 33;
-            this.label1.Text = "Device";
+            this.UPTypeLbl.AutoSize = true;
+            this.UPTypeLbl.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UPTypeLbl.Location = new System.Drawing.Point(154, 30);
+            this.UPTypeLbl.Name = "UPTypeLbl";
+            this.UPTypeLbl.Size = new System.Drawing.Size(53, 19);
+            this.UPTypeLbl.TabIndex = 33;
+            this.UPTypeLbl.Text = "Device";
             // 
-            // textBox13
+            // UPTypeTb
             // 
-            this.textBox13.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(157, 27);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(245, 27);
-            this.textBox13.TabIndex = 32;
-            this.textBox13.Visible = false;
+            this.UPTypeTb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UPTypeTb.Location = new System.Drawing.Point(157, 27);
+            this.UPTypeTb.Name = "UPTypeTb";
+            this.UPTypeTb.Size = new System.Drawing.Size(245, 27);
+            this.UPTypeTb.TabIndex = 32;
+            this.UPTypeTb.Visible = false;
             // 
-            // button21
+            // UPTCancelBtn
             // 
-            this.button21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.Location = new System.Drawing.Point(288, 107);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(75, 30);
-            this.button21.TabIndex = 31;
-            this.button21.Text = "Cancel";
-            this.button21.UseVisualStyleBackColor = true;
+            this.UPTCancelBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.UPTCancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UPTCancelBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UPTCancelBtn.Location = new System.Drawing.Point(288, 107);
+            this.UPTCancelBtn.Name = "UPTCancelBtn";
+            this.UPTCancelBtn.Size = new System.Drawing.Size(75, 30);
+            this.UPTCancelBtn.TabIndex = 31;
+            this.UPTCancelBtn.Text = "Cancel";
+            this.UPTCancelBtn.UseVisualStyleBackColor = true;
+            this.UPTCancelBtn.Click += new System.EventHandler(this.UPTCancelBtn_Click);
             // 
-            // button22
+            // UPTNextBtn
             // 
-            this.button22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.Location = new System.Drawing.Point(369, 107);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(75, 30);
-            this.button22.TabIndex = 30;
-            this.button22.Text = "Next";
-            this.button22.UseVisualStyleBackColor = true;
+            this.UPTNextBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.UPTNextBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UPTNextBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UPTNextBtn.Location = new System.Drawing.Point(369, 107);
+            this.UPTNextBtn.Name = "UPTNextBtn";
+            this.UPTNextBtn.Size = new System.Drawing.Size(75, 30);
+            this.UPTNextBtn.TabIndex = 30;
+            this.UPTNextBtn.Text = "Next";
+            this.UPTNextBtn.UseVisualStyleBackColor = true;
+            this.UPTNextBtn.Click += new System.EventHandler(this.UPTNextBtn_Click);
             // 
             // label58
             // 
@@ -212,9 +214,9 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
-            this.tabPage2.Controls.Add(this.button23);
-            this.tabPage2.Controls.Add(this.button24);
-            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.UPTBackBtn);
+            this.tabPage2.Controls.Add(this.UPTConfirmBtn);
+            this.tabPage2.Controls.Add(this.CUPTypeLbl);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.ForeColor = System.Drawing.Color.Black;
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -224,40 +226,40 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Confirmation";
             // 
-            // button23
+            // UPTBackBtn
             // 
-            this.button23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button23.Location = new System.Drawing.Point(288, 107);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(75, 30);
-            this.button23.TabIndex = 37;
-            this.button23.Text = "Back";
-            this.button23.UseVisualStyleBackColor = true;
-            this.button23.Click += new System.EventHandler(this.button23_Click);
+            this.UPTBackBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.UPTBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UPTBackBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UPTBackBtn.Location = new System.Drawing.Point(288, 107);
+            this.UPTBackBtn.Name = "UPTBackBtn";
+            this.UPTBackBtn.Size = new System.Drawing.Size(75, 30);
+            this.UPTBackBtn.TabIndex = 37;
+            this.UPTBackBtn.Text = "Back";
+            this.UPTBackBtn.UseVisualStyleBackColor = true;
+            this.UPTBackBtn.Click += new System.EventHandler(this.button23_Click);
             // 
-            // button24
+            // UPTConfirmBtn
             // 
-            this.button24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button24.Location = new System.Drawing.Point(369, 107);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(75, 30);
-            this.button24.TabIndex = 36;
-            this.button24.Text = "Confirm";
-            this.button24.UseVisualStyleBackColor = true;
+            this.UPTConfirmBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.UPTConfirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UPTConfirmBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UPTConfirmBtn.Location = new System.Drawing.Point(369, 107);
+            this.UPTConfirmBtn.Name = "UPTConfirmBtn";
+            this.UPTConfirmBtn.Size = new System.Drawing.Size(75, 30);
+            this.UPTConfirmBtn.TabIndex = 36;
+            this.UPTConfirmBtn.Text = "Confirm";
+            this.UPTConfirmBtn.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // CUPTypeLbl
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(210, 35);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 19);
-            this.label3.TabIndex = 40;
-            this.label3.Text = "Device";
+            this.CUPTypeLbl.AutoSize = true;
+            this.CUPTypeLbl.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CUPTypeLbl.Location = new System.Drawing.Point(210, 35);
+            this.CUPTypeLbl.Name = "CUPTypeLbl";
+            this.CUPTypeLbl.Size = new System.Drawing.Size(53, 19);
+            this.CUPTypeLbl.TabIndex = 40;
+            this.CUPTypeLbl.Text = "Device";
             // 
             // label4
             // 
@@ -295,7 +297,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(460, 200);
             this.Controls.Add(this.UpdateProductTypeTab);
             this.Controls.Add(this.TopBarPanel);
@@ -329,15 +331,15 @@
         private System.Windows.Forms.TabControl UpdateProductTypeTab;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Label UPTypeLbl;
+        private System.Windows.Forms.TextBox UPTypeTb;
+        private System.Windows.Forms.Button UPTCancelBtn;
+        private System.Windows.Forms.Button UPTNextBtn;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button UPTBackBtn;
+        private System.Windows.Forms.Button UPTConfirmBtn;
+        private System.Windows.Forms.Label CUPTypeLbl;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label99;

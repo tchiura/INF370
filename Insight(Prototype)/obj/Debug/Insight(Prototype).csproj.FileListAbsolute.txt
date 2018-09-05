@@ -192,7 +192,6 @@ C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.DeleteEmployeePage.resources
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.DeleteEquipmentPage.resources
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.DeleteSupplierPage.resources
-C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.DeleteVehiclePage.resources
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.GenerateInvoicePage.resources
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.GenerateProjectQuotationPage.resources
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.InSight_Load.resources
@@ -200,7 +199,6 @@ C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.ReceiveProductsPage.resources
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.ReturnsPage.resources
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.UpdateClientLoginDetailsPage.resources
-C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.UpdateClientTypePage.resources
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.UpdateEmployeeDetailsPage.resources
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.Properties.Resources.resources
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.UpdateEmployeeLoginDetailsPage.resources
@@ -247,3 +245,11 @@ C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_
 C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.AddProductPage.resources
 C:\Users\Kulani\source\repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.UpdateJobPage.resources
 C:\Users\Kulani\source\repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.ViewVehicleTypePage.resources
+C:\Users\Kulani\source\repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.AddProjectRequestPage.resources
+C:\Users\Kulani\source\repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.AddSupplierPage.resources
+C:\Users\Kulani\source\repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.RemoveVehiclePage.resources
+C:\Users\Kulani\source\repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.UpdateVehicleStatusPage.resources
+C:\Users\Kulani\source\repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.AddProjectRequestTypePage.resources
+C:\Users\Kulani\source\repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.DeleteProjectRequestTypePage.resources
+C:\Users\Kulani\source\repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.UpdateOrganisationTypePage.resources
+C:\Users\Kulani\source\repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.UpdateProjectRequestTypePage.resources

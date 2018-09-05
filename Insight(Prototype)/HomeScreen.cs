@@ -19,11 +19,6 @@ namespace Insight_Prototype_
         {
             InitializeComponent();
 
-            AddClientDetailsTab.Appearance = TabAppearance.FlatButtons;
-            AddVehiclePanel.Appearance = TabAppearance.FlatButtons;
-            //AddVehiclePanel.
-            //AddClientDetailsTab.c
-
         }
 
         private void Form4_Load(object sender, EventArgs e)
@@ -458,7 +453,7 @@ namespace Insight_Prototype_
 
         private void button114_Click(object sender, EventArgs e)
         {
-            Form A = new UpdateClientTypePage();
+            Form A = new UpdateOrganisationTypePage();
             this.Hide();
             A.ShowDialog();
             this.Show();

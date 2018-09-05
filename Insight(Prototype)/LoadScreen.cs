@@ -30,7 +30,7 @@ namespace Insight_Prototype_
             //progressBar1.MarqueeAnimationSpeed = 200;
             if(progressBar1.Value == 100)
             {
-                Form f3 = new ViewVehicleTypePage();
+                Form f3 = new UpdateProjectRequestTypePage();
                 f3.Show();
                 this.Hide();
                 timer1.Stop();
