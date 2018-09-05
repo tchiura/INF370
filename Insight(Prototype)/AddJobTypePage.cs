@@ -32,6 +32,7 @@ namespace Insight_Prototype_
                 AddJobTypeTab.SelectedIndex = 1;
                 AJTConfirmLbl.Text = JT;
             }
+
         }
 
         private void AJTCancelBtn_Click(object sender, EventArgs e)
