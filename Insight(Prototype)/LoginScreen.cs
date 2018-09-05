@@ -82,7 +82,7 @@ namespace Insight_Prototype_
 
             if (validLogin)
             {
-                Form f2 = new HomeScreen();
+                Form f2 = new EmployeeHomePage();
                 f2.Show();
                 this.Hide();
             }
@@ -90,6 +90,13 @@ namespace Insight_Prototype_
             {
                 MessageBox.Show("Invalid login details. Please try again.");
             }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            AddClientDetailsPage clientpage = new AddClientDetailsPage();
+            clientpage.ShowDialog();
+            this.Dispose();
         }
     }
 }

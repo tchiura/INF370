@@ -250,6 +250,12 @@
     <Compile Include="Employee.cs">
       <DependentUpon>InsightModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="EmployeeHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeHomePage.Designer.cs">
+      <DependentUpon>EmployeeHomePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="EmployeeLogin.cs">
       <DependentUpon>InsightModel.tt</DependentUpon>
     </Compile>
@@ -408,6 +414,12 @@
     </Compile>
     <Compile Include="ReturnsPage.Designer.cs">
       <DependentUpon>ReturnsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendProjectRequestPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendProjectRequestPage.Designer.cs">
+      <DependentUpon>SendProjectRequestPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Skill.cs">
       <DependentUpon>InsightModel.tt</DependentUpon>
@@ -669,6 +681,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReturnsPage.resx">
       <DependentUpon>ReturnsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendProjectRequestPage.resx">
+      <DependentUpon>SendProjectRequestPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateClientLoginDetailsPage.resx">
       <DependentUpon>UpdateClientLoginDetailsPage.cs</DependentUpon>

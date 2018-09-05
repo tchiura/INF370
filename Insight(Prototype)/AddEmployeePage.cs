@@ -92,7 +92,10 @@ namespace Insight_Prototype_
                 myReader = checkUser.ExecuteReader();
 
                 if (myReader.HasRows)
+                {
                     duplicate = true;
+                }
+
                 myReader.Close();
                 conn.Close();
             }
@@ -111,7 +114,6 @@ namespace Insight_Prototype_
                 Employee InsightEmployee = new Employee();
                 Address InsightAddress = new Address();
                 EmployeeLogin InsightEmployeeLogin = new EmployeeLogin();
-                //dataGridView1.DataSource= InsightEmployee.Skills.ToList();
 
                 //Using Employee Table
                 InsightEmployee.EmployeeName = EmployeeNamelbl.Text;
