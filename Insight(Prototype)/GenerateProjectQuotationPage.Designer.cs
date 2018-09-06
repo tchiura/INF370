@@ -39,15 +39,8 @@
             this.button78 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView15 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.PrID = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.PDis = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Pt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PQ = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -62,6 +55,11 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pt = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.PDis = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PQ = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
@@ -198,30 +196,12 @@
             this.dataGridView15.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView15.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView15.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn11,
             this.Column1});
             this.dataGridView15.Location = new System.Drawing.Point(6, 19);
             this.dataGridView15.Name = "dataGridView15";
             this.dataGridView15.Size = new System.Drawing.Size(482, 394);
             this.dataGridView15.TabIndex = 4;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 50;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.HeaderText = "Description";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.Width = 200;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Job Rate";
-            this.Column1.Name = "Column1";
             // 
             // groupBox1
             // 
@@ -238,37 +218,14 @@
             this.dataGridView6.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.PrID,
-            this.PDis,
             this.Pt,
+            this.PDis,
             this.PQ});
             this.dataGridView6.Enabled = false;
             this.dataGridView6.Location = new System.Drawing.Point(6, 19);
             this.dataGridView6.Name = "dataGridView6";
             this.dataGridView6.Size = new System.Drawing.Size(480, 394);
             this.dataGridView6.TabIndex = 3;
-            // 
-            // PrID
-            // 
-            this.PrID.HeaderText = "ID";
-            this.PrID.Name = "PrID";
-            this.PrID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.PrID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // PDis
-            // 
-            this.PDis.HeaderText = "Description";
-            this.PDis.Name = "PDis";
-            // 
-            // Pt
-            // 
-            this.Pt.HeaderText = "Product Type";
-            this.Pt.Name = "Pt";
-            // 
-            // PQ
-            // 
-            this.PQ.HeaderText = "Quantity";
-            this.PQ.Name = "PQ";
             // 
             // tabPage2
             // 
@@ -392,6 +349,36 @@
             this.dataGridViewTextBoxColumn6.HeaderText = "Quantity";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
+            // Pt
+            // 
+            this.Pt.HeaderText = "Product Type";
+            this.Pt.Name = "Pt";
+            this.Pt.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Pt.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // PDis
+            // 
+            this.PDis.HeaderText = "Product";
+            this.PDis.Name = "PDis";
+            // 
+            // PQ
+            // 
+            this.PQ.HeaderText = "Quantity";
+            this.PQ.Name = "PQ";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.HeaderText = "Job Type";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn11.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn11.Width = 200;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Job Rate";
+            this.Column1.Name = "Column1";
+            // 
             // GenerateProjectQuotationPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -437,15 +424,8 @@
         private System.Windows.Forms.Button button78;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridView15;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridView6;
-        private System.Windows.Forms.DataGridViewComboBoxColumn PrID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PDis;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Pt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PQ;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -460,5 +440,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Pt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PDis;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PQ;
     }
 }
