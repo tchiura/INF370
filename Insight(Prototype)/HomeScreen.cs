@@ -414,10 +414,10 @@ namespace Insight_Prototype_
 
         private void button43_Click(object sender, EventArgs e)
         {
-            Form AEq = new AddEquipmentPage();
-            this.Hide();
-            AEq.ShowDialog();
-            this.Show();
+            //Form AEq = new AddEquipmentPage();
+            //this.Hide();
+            //AEq.ShowDialog();
+            //this.Show();
         }
 
         private void button49_Click(object sender, EventArgs e)
@@ -450,10 +450,10 @@ namespace Insight_Prototype_
 
         private void button113_Click(object sender, EventArgs e)
         {
-            Form A = new DeleteOrganisationTypePage();
-            this.Hide();
-            A.ShowDialog();
-            this.Show();
+            //Form A = new DeleteOrganisationTypePage();
+            //this.Hide();
+            //A.ShowDialog();
+            //this.Show();
         }
 
         private void button114_Click(object sender, EventArgs e)
@@ -538,13 +538,13 @@ namespace Insight_Prototype_
 
         private void button89_Click(object sender, EventArgs e)
         {
-            Form A = new CancelJobPage();
-            this.Hide();
-            A.ShowDialog();
-            this.Show();
+        ////    Form A = new CancelJobPage();
+        ////    this.Hide();
+        ////    A.ShowDialog();
+        ////    this.Show();
         }
 
-        private void button165_Click(object sender, EventArgs e)
+    private void button165_Click(object sender, EventArgs e)
         {
             //Form A = new D();
             //this.Hide();
@@ -4009,10 +4009,10 @@ namespace Insight_Prototype_
 
             private void button53_Click(object sender, EventArgs e)
             {
-                Form AV = new AddVehiclePage();
-                this.Hide();
-                AV.ShowDialog();
-                this.Show();
+                //Form AV = new AddVehiclePage();
+                //this.Hide();
+                //AV.ShowDialog();
+                //this.Show();
             }
 
             private void button55_Click(object sender, EventArgs e)
