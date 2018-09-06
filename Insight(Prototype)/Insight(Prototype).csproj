@@ -250,6 +250,12 @@
     <Compile Include="EquipmentType.cs">
       <DependentUpon>InsightModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="frmAddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEmployee.Designer.cs">
+      <DependentUpon>frmAddEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="GenerateInvoicePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -612,6 +618,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteVehiclePage.resx">
       <DependentUpon>DeleteVehiclePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEmployee.resx">
+      <DependentUpon>frmAddEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GenerateInvoicePage.resx">
       <DependentUpon>GenerateInvoicePage.cs</DependentUpon>
