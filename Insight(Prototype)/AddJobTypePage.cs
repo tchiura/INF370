@@ -60,5 +60,10 @@ namespace Insight_Prototype_
                 db.SaveChanges();
             }
         }
+
+        private void JTConfirmBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
