@@ -28,61 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.TopBarPanel = new System.Windows.Forms.Panel();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.Userlbl = new System.Windows.Forms.Label();
             this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button78 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView15 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvJobType = new System.Windows.Forms.DataGridView();
+            this.JobType = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.jobTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.insightDataSet = new Insight_Prototype_.InsightDataSet();
+            this.Rate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.PrID = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.PDis = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Pt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PQ = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvProduct = new System.Windows.Forms.DataGridView();
+            this.productTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fKProductProductTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewComboBoxColumn3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewComboBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewComboBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productTypeTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.ProductTypeTableAdapter();
+            this.productTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.ProductTableAdapter();
+            this.jobTypeTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.JobTypeTableAdapter();
+            this.jobTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.JobTableAdapter();
+            this.fKJobTypePriceJobTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.jobTypePriceTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.JobTypePriceTableAdapter();
+            this.ProductType = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Product = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TopBarPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvJobType)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jobTypeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productTypeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKProductProductTypeBindingSource)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKJobTypePriceJobTypeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // TopBarPanel
             // 
             this.TopBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.TopBarPanel.Controls.Add(this.pictureBox14);
             this.TopBarPanel.Controls.Add(this.Userlbl);
             this.TopBarPanel.Controls.Add(this.MinimisePicBx);
             this.TopBarPanel.Controls.Add(this.ClosePicBx);
@@ -94,17 +106,6 @@
             this.TopBarPanel.Name = "TopBarPanel";
             this.TopBarPanel.Size = new System.Drawing.Size(1081, 29);
             this.TopBarPanel.TabIndex = 1;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox14.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
-            this.pictureBox14.Location = new System.Drawing.Point(997, 0);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(28, 29);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 2;
-            this.pictureBox14.TabStop = false;
             // 
             // Userlbl
             // 
@@ -126,6 +127,7 @@
             this.MinimisePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.MinimisePicBx.TabIndex = 1;
             this.MinimisePicBx.TabStop = false;
+            this.MinimisePicBx.Click += new System.EventHandler(this.MinimisePicBx_Click);
             // 
             // ClosePicBx
             // 
@@ -137,12 +139,14 @@
             this.ClosePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ClosePicBx.TabIndex = 0;
             this.ClosePicBx.TabStop = false;
+            this.ClosePicBx.Click += new System.EventHandler(this.ClosePicBx_Click);
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(0, 29);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -152,16 +156,27 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.Controls.Add(this.button4);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.button78);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 28);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1073, 508);
+            this.tabPage1.Size = new System.Drawing.Size(1073, 502);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Quote Content";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(415, 462);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 12;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button1
             // 
@@ -185,7 +200,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dataGridView15);
+            this.groupBox2.Controls.Add(this.dgvJobType);
             this.groupBox2.Location = new System.Drawing.Point(549, 18);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(494, 419);
@@ -193,39 +208,52 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Job Types";
             // 
-            // dataGridView15
+            // dgvJobType
             // 
-            this.dataGridView15.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView15.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView15.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn11,
-            this.Column1});
-            this.dataGridView15.Location = new System.Drawing.Point(6, 19);
-            this.dataGridView15.Name = "dataGridView15";
-            this.dataGridView15.Size = new System.Drawing.Size(482, 394);
-            this.dataGridView15.TabIndex = 4;
+            this.dgvJobType.BackgroundColor = System.Drawing.Color.White;
+            this.dgvJobType.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvJobType.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.JobType,
+            this.Rate});
+            this.dgvJobType.Location = new System.Drawing.Point(6, 19);
+            this.dgvJobType.Name = "dgvJobType";
+            this.dgvJobType.Size = new System.Drawing.Size(482, 394);
+            this.dgvJobType.TabIndex = 4;
+            this.dgvJobType.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvJobType_CellValueChanged);
+            this.dgvJobType.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dgvJobType_EditingControlShowing);
             // 
-            // dataGridViewTextBoxColumn7
+            // JobType
             // 
-            this.dataGridViewTextBoxColumn7.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 50;
+            this.JobType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.JobType.DataSource = this.jobTypeBindingSource;
+            this.JobType.DisplayMember = "JobTypeDescription";
+            this.JobType.HeaderText = "Job Type";
+            this.JobType.Name = "JobType";
+            this.JobType.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.JobType.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.JobType.ValueMember = "JobTypeID";
             // 
-            // dataGridViewTextBoxColumn11
+            // jobTypeBindingSource
             // 
-            this.dataGridViewTextBoxColumn11.HeaderText = "Description";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.Width = 200;
+            this.jobTypeBindingSource.DataMember = "JobType";
+            this.jobTypeBindingSource.DataSource = this.insightDataSet;
             // 
-            // Column1
+            // insightDataSet
             // 
-            this.Column1.HeaderText = "Job Rate";
-            this.Column1.Name = "Column1";
+            this.insightDataSet.DataSetName = "InsightDataSet";
+            this.insightDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // Rate
+            // 
+            this.Rate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Rate.DataPropertyName = "JobTypePriceAmount";
+            this.Rate.HeaderText = "Rate/hr";
+            this.Rate.Name = "Rate";
+            this.Rate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dataGridView6);
+            this.groupBox1.Controls.Add(this.dgvProduct);
             this.groupBox1.Location = new System.Drawing.Point(28, 18);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(492, 419);
@@ -233,42 +261,29 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Products";
             // 
-            // dataGridView6
+            // dgvProduct
             // 
-            this.dataGridView6.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.PrID,
-            this.PDis,
-            this.Pt,
-            this.PQ});
-            this.dataGridView6.Enabled = false;
-            this.dataGridView6.Location = new System.Drawing.Point(6, 19);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.Size = new System.Drawing.Size(480, 394);
-            this.dataGridView6.TabIndex = 3;
+            this.dgvProduct.BackgroundColor = System.Drawing.Color.White;
+            this.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ProductType,
+            this.Product,
+            this.Quantity});
+            this.dgvProduct.Location = new System.Drawing.Point(6, 19);
+            this.dgvProduct.Name = "dgvProduct";
+            this.dgvProduct.Size = new System.Drawing.Size(480, 394);
+            this.dgvProduct.TabIndex = 0;
+            this.dgvProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduct_CellClick);
             // 
-            // PrID
+            // productTypeBindingSource
             // 
-            this.PrID.HeaderText = "ID";
-            this.PrID.Name = "PrID";
-            this.PrID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.PrID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.productTypeBindingSource.DataMember = "ProductType";
+            this.productTypeBindingSource.DataSource = this.insightDataSet;
             // 
-            // PDis
+            // fKProductProductTypeBindingSource
             // 
-            this.PDis.HeaderText = "Description";
-            this.PDis.Name = "PDis";
-            // 
-            // Pt
-            // 
-            this.Pt.HeaderText = "Product Type";
-            this.Pt.Name = "Pt";
-            // 
-            // PQ
-            // 
-            this.PQ.HeaderText = "Quantity";
-            this.PQ.Name = "PQ";
+            this.fKProductProductTypeBindingSource.DataMember = "FK_Product_ProductType";
+            this.fKProductProductTypeBindingSource.DataSource = this.productTypeBindingSource;
             // 
             // tabPage2
             // 
@@ -276,10 +291,10 @@
             this.tabPage2.Controls.Add(this.button3);
             this.tabPage2.Controls.Add(this.groupBox3);
             this.tabPage2.Controls.Add(this.groupBox4);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 28);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1073, 508);
+            this.tabPage2.Size = new System.Drawing.Size(1073, 502);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Confirmation";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -319,31 +334,33 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3});
-            this.dataGridView1.Enabled = false;
+            this.dataGridViewComboBoxColumn3,
+            this.dataGridViewTextBoxColumn1});
             this.dataGridView1.Location = new System.Drawing.Point(6, 19);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(482, 394);
-            this.dataGridView1.TabIndex = 4;
+            this.dataGridView1.TabIndex = 5;
+            // 
+            // dataGridViewComboBoxColumn3
+            // 
+            this.dataGridViewComboBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewComboBoxColumn3.DataSource = this.jobTypeBindingSource;
+            this.dataGridViewComboBoxColumn3.DisplayMember = "JobTypeDescription";
+            this.dataGridViewComboBoxColumn3.HeaderText = "Job Type";
+            this.dataGridViewComboBoxColumn3.Name = "dataGridViewComboBoxColumn3";
+            this.dataGridViewComboBoxColumn3.ReadOnly = true;
+            this.dataGridViewComboBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewComboBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "JobTypePriceAmount";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Rate/hr";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 50;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Description";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Job Rate";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // groupBox4
             // 
@@ -361,36 +378,100 @@
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewComboBoxColumn1,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
-            this.dataGridView2.Enabled = false;
+            this.dataGridViewComboBoxColumn2,
+            this.dataGridViewTextBoxColumn4});
             this.dataGridView2.Location = new System.Drawing.Point(6, 19);
             this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
             this.dataGridView2.Size = new System.Drawing.Size(480, 394);
-            this.dataGridView2.TabIndex = 3;
+            this.dataGridView2.TabIndex = 1;
             // 
             // dataGridViewComboBoxColumn1
             // 
-            this.dataGridViewComboBoxColumn1.HeaderText = "ID";
+            this.dataGridViewComboBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewComboBoxColumn1.DataSource = this.productTypeBindingSource;
+            this.dataGridViewComboBoxColumn1.DisplayMember = "ProductTypeDescription";
+            this.dataGridViewComboBoxColumn1.HeaderText = "ProductType";
             this.dataGridViewComboBoxColumn1.Name = "dataGridViewComboBoxColumn1";
+            this.dataGridViewComboBoxColumn1.ReadOnly = true;
             this.dataGridViewComboBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewComboBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
+            // dataGridViewComboBoxColumn2
+            // 
+            this.dataGridViewComboBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewComboBoxColumn2.DataSource = this.fKProductProductTypeBindingSource;
+            this.dataGridViewComboBoxColumn2.DisplayMember = "ProductDescription";
+            this.dataGridViewComboBoxColumn2.HeaderText = "Product";
+            this.dataGridViewComboBoxColumn2.Name = "dataGridViewComboBoxColumn2";
+            this.dataGridViewComboBoxColumn2.ReadOnly = true;
+            this.dataGridViewComboBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewComboBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
             // dataGridViewTextBoxColumn4
             // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Description";
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn4.HeaderText = "Quantity";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn5
+            // productBindingSource
             // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Product Type";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.productBindingSource.DataMember = "Product";
+            this.productBindingSource.DataSource = this.insightDataSet;
             // 
-            // dataGridViewTextBoxColumn6
+            // productTypeTableAdapter
             // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "Quantity";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.productTypeTableAdapter.ClearBeforeFill = true;
+            // 
+            // productTableAdapter
+            // 
+            this.productTableAdapter.ClearBeforeFill = true;
+            // 
+            // jobTypeTableAdapter
+            // 
+            this.jobTypeTableAdapter.ClearBeforeFill = true;
+            // 
+            // jobTableAdapter
+            // 
+            this.jobTableAdapter.ClearBeforeFill = true;
+            // 
+            // fKJobTypePriceJobTypeBindingSource
+            // 
+            this.fKJobTypePriceJobTypeBindingSource.DataMember = "FK_JobTypePrice_JobType";
+            this.fKJobTypePriceJobTypeBindingSource.DataSource = this.jobTypeBindingSource;
+            // 
+            // jobTypePriceTableAdapter
+            // 
+            this.jobTypePriceTableAdapter.ClearBeforeFill = true;
+            // 
+            // ProductType
+            // 
+            this.ProductType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ProductType.DataSource = this.productTypeBindingSource;
+            this.ProductType.DisplayMember = "ProductTypeDescription";
+            this.ProductType.HeaderText = "ProductType";
+            this.ProductType.Name = "ProductType";
+            this.ProductType.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ProductType.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.ProductType.ValueMember = "ProductTypeDescription";
+            // 
+            // Product
+            // 
+            this.Product.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Product.DataSource = this.fKProductProductTypeBindingSource;
+            this.Product.DisplayMember = "ProductDescription";
+            this.Product.HeaderText = "Product";
+            this.Product.Name = "Product";
+            this.Product.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Product.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Product.ValueMember = "ProductDescription";
+            // 
+            // Quantity
+            // 
+            this.Quantity.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.Name = "Quantity";
             // 
             // GenerateProjectQuotationPage
             // 
@@ -404,22 +485,28 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "GenerateProjectQuotationPage";
             this.Text = "GenerateProjectQuotationPage";
+            this.Load += new System.EventHandler(this.GenerateProjectQuotationPage_Load);
             this.TopBarPanel.ResumeLayout(false);
             this.TopBarPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvJobType)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jobTypeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productTypeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKProductProductTypeBindingSource)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKJobTypePriceJobTypeBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -427,7 +514,6 @@
         #endregion
 
         private System.Windows.Forms.Panel TopBarPanel;
-        private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Label Userlbl;
         private System.Windows.Forms.PictureBox MinimisePicBx;
         private System.Windows.Forms.PictureBox ClosePicBx;
@@ -436,29 +522,37 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button78;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dataGridView15;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridView dgvJobType;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridView6;
-        private System.Windows.Forms.DataGridViewComboBoxColumn PrID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PDis;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Pt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PQ;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.DataGridView dgvProduct;
+        private InsightDataSet insightDataSet;
+        private System.Windows.Forms.BindingSource productTypeBindingSource;
+        private InsightDataSetTableAdapters.ProductTypeTableAdapter productTypeTableAdapter;
+        private System.Windows.Forms.BindingSource productBindingSource;
+        private InsightDataSetTableAdapters.ProductTableAdapter productTableAdapter;
+        private System.Windows.Forms.BindingSource jobTypeBindingSource;
+        private InsightDataSetTableAdapters.JobTypeTableAdapter jobTypeTableAdapter;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.BindingSource fKProductProductTypeBindingSource;
+        private InsightDataSetTableAdapters.JobTableAdapter jobTableAdapter;
+        private System.Windows.Forms.BindingSource fKJobTypePriceJobTypeBindingSource;
+        private InsightDataSetTableAdapters.JobTypePriceTableAdapter jobTypePriceTableAdapter;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn1;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewComboBoxColumn JobType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Rate;
+        private System.Windows.Forms.DataGridViewComboBoxColumn ProductType;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Product;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
     }
 }

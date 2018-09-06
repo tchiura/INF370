@@ -16,7 +16,7 @@ namespace Insight_Prototype_
         {
             //Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new InSight_Load());
+            Application.Run(new GenerateProjectQuotationPage());
         }
     }
 }
