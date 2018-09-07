@@ -253,3 +253,4 @@ C:\Users\Kulani\source\repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_
 C:\Users\Kulani\source\repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.DeleteProjectRequestTypePage.resources
 C:\Users\Kulani\source\repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.UpdateOrganisationTypePage.resources
 C:\Users\Kulani\source\repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.UpdateProjectRequestTypePage.resources
+C:\Users\Kulani\Source\Repos\370\Insight(Prototype)\obj\Debug\Insight_Prototype_.UpdateVehicleTypePage.resources

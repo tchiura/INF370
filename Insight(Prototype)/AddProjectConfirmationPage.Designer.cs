@@ -83,6 +83,7 @@
             this.button8.TabIndex = 76;
             this.button8.Text = "Confirm";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // label1
             // 
