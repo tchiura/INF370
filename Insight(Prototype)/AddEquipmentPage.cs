@@ -15,7 +15,6 @@ namespace Insight_Prototype_
 
         string EqDescr = "";
         string EqType = "";
-        string EqCondi = "";
         int EqQuantity = 0;
         public AddEquipmentPage()
         {
@@ -34,6 +33,8 @@ namespace Insight_Prototype_
             this.Close();
         }
 
+        //If Quantity is 0, are you trying to add a new item?
+        //If
         private void AEqNextBtn_Click(object sender, EventArgs e)
         {
             EqDescr = AEqDecripTb.Text;
@@ -41,15 +42,21 @@ namespace Insight_Prototype_
             //EqCondi = AEqConditionCmb.Text;
             EqQuantity = Convert.ToInt32(AEqQuantityUD.Value);
 
-            if (EqDescr == "" || EqType == "" || EqCondi == "" || EqQuantity == 0) 
+            if (EqDescr == "" || EqType == "" && EqQuantity == 0)
             {
                 MessageBox.Show("Please enter valid values.");
+            }
+            else
+            if (EqQuantity == 0)
+            {
+                MessageBox.Show(this, "Quantity is zero, Are you adding a new equipment item?", "New Equipment", MessageBoxButtons.YesNo);
+                //Yes Condition: Add as new
+                //No Condition: Message - Please enter a quantity
             }
             else
             {
                 AEqDescripLbl.Text = EqDescr;
                 AEqTypeLbl.Text = EqType;
-                //AEqConditionLbl.Text = EqCondi;
                 AEqQuantityLbl.Text = Convert.ToString(EqQuantity);
                 AddEquipmentTab.SelectedIndex = 1;
             }
@@ -60,12 +67,17 @@ namespace Insight_Prototype_
             Equipment InsightEquipment = new Equipment();
 
             InsightEquipment.EquipmentDescription = EqDescr;
-            //InsightEquipment.EquipmentType = EqType;
             InsightEquipment.EquipmentQuantity = EqQuantity;
-            //InsightEquipment.EquipmentType = 
 
+            using (InsightEntities db = new InsightEntities())
+            {
+                var Ty = db.EquipmentTypes.SingleOrDefault(x => x.EquipmentTypeDescription == EqType);
+                InsightEquipment.EquipmentTypeID = Ty.EquipmentTypeID;
+                db.Equipments.Add(InsightEquipment);
+                db.SaveChanges();
+            }
 
-            AddEquipmentTab.SelectedIndex = 2;
+                AddEquipmentTab.SelectedIndex = 2;
         }
 
         private void AEqBackBtn_Click(object sender, EventArgs e)

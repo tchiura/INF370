@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.TopBarPanel = new System.Windows.Forms.Panel();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.Userlbl = new System.Windows.Forms.Label();
             this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.AddSkillDetails = new System.Windows.Forms.TabControl();
+            this.ReceiveProductTab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -86,90 +86,91 @@
             this.button24 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label99 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.TopBarPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.AddSkillDetails.SuspendLayout();
+            this.ReceiveProductTab.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // TopBarPanel
             // 
-            this.TopBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(31)))), ((int)(((byte)(75)))));
+            this.TopBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.TopBarPanel.Controls.Add(this.pictureBox14);
             this.TopBarPanel.Controls.Add(this.Userlbl);
             this.TopBarPanel.Controls.Add(this.MinimisePicBx);
             this.TopBarPanel.Controls.Add(this.ClosePicBx);
             this.TopBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TopBarPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.TopBarPanel.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TopBarPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
             this.TopBarPanel.Location = new System.Drawing.Point(0, 0);
             this.TopBarPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TopBarPanel.Name = "TopBarPanel";
             this.TopBarPanel.Size = new System.Drawing.Size(1300, 29);
-            this.TopBarPanel.TabIndex = 1;
+            this.TopBarPanel.TabIndex = 8;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox14.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
+            this.pictureBox14.Location = new System.Drawing.Point(1216, 0);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(28, 29);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 2;
+            this.pictureBox14.TabStop = false;
             // 
             // Userlbl
             // 
             this.Userlbl.AutoSize = true;
-            this.Userlbl.Font = new System.Drawing.Font("Calibri", 12F);
-            this.Userlbl.Location = new System.Drawing.Point(12, 6);
+            this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.Userlbl.Location = new System.Drawing.Point(3, 2);
             this.Userlbl.Name = "Userlbl";
-            this.Userlbl.Size = new System.Drawing.Size(75, 19);
+            this.Userlbl.Size = new System.Drawing.Size(147, 23);
             this.Userlbl.TabIndex = 0;
-            this.Userlbl.Text = "Username";
+            this.Userlbl.Text = "Receive Products";
             // 
             // MinimisePicBx
             // 
             this.MinimisePicBx.Dock = System.Windows.Forms.DockStyle.Right;
-            this.MinimisePicBx.Image = global::Insight_Prototype_.Properties.Resources.Minus_32px;
+            this.MinimisePicBx.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
             this.MinimisePicBx.Location = new System.Drawing.Point(1244, 0);
             this.MinimisePicBx.Name = "MinimisePicBx";
             this.MinimisePicBx.Size = new System.Drawing.Size(28, 29);
-            this.MinimisePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.MinimisePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.MinimisePicBx.TabIndex = 1;
             this.MinimisePicBx.TabStop = false;
             // 
             // ClosePicBx
             // 
             this.ClosePicBx.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ClosePicBx.Image = global::Insight_Prototype_.Properties.Resources.Shutdown_32px;
+            this.ClosePicBx.Image = global::Insight_Prototype_.Properties.Resources.Cancel_100px2;
             this.ClosePicBx.Location = new System.Drawing.Point(1272, 0);
             this.ClosePicBx.Name = "ClosePicBx";
             this.ClosePicBx.Size = new System.Drawing.Size(28, 29);
-            this.ClosePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.ClosePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ClosePicBx.TabIndex = 0;
             this.ClosePicBx.TabStop = false;
             // 
-            // panel1
+            // ReceiveProductTab
             // 
-            this.panel1.BackColor = System.Drawing.Color.Silver;
-            this.panel1.Controls.Add(this.AddSkillDetails);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 29);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1300, 671);
-            this.panel1.TabIndex = 3;
-            // 
-            // AddSkillDetails
-            // 
-            this.AddSkillDetails.Controls.Add(this.tabPage1);
-            this.AddSkillDetails.Controls.Add(this.tabPage2);
-            this.AddSkillDetails.Controls.Add(this.tabPage3);
-            this.AddSkillDetails.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddSkillDetails.Location = new System.Drawing.Point(0, 0);
-            this.AddSkillDetails.Name = "AddSkillDetails";
-            this.AddSkillDetails.SelectedIndex = 0;
-            this.AddSkillDetails.Size = new System.Drawing.Size(1300, 671);
-            this.AddSkillDetails.TabIndex = 13;
+            this.ReceiveProductTab.Controls.Add(this.tabPage1);
+            this.ReceiveProductTab.Controls.Add(this.tabPage2);
+            this.ReceiveProductTab.Controls.Add(this.tabPage3);
+            this.ReceiveProductTab.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ReceiveProductTab.Location = new System.Drawing.Point(0, 29);
+            this.ReceiveProductTab.Name = "ReceiveProductTab";
+            this.ReceiveProductTab.SelectedIndex = 0;
+            this.ReceiveProductTab.Size = new System.Drawing.Size(1300, 671);
+            this.ReceiveProductTab.TabIndex = 14;
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.tabPage1.BackColor = System.Drawing.Color.White;
             this.tabPage1.Controls.Add(this.comboBox1);
             this.tabPage1.Controls.Add(this.dateTimePicker1);
             this.tabPage1.Controls.Add(this.textBox1);
@@ -194,6 +195,7 @@
             this.tabPage1.Controls.Add(this.label100);
             this.tabPage1.Controls.Add(this.button21);
             this.tabPage1.Controls.Add(this.button22);
+            this.tabPage1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.ForeColor = System.Drawing.Color.Black;
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -207,21 +209,21 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(308, 457);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 21);
+            this.comboBox1.Size = new System.Drawing.Size(200, 27);
             this.comboBox1.TabIndex = 110;
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(308, 412);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 27);
             this.dateTimePicker1.TabIndex = 109;
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(308, 372);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 20);
+            this.textBox1.Size = new System.Drawing.Size(200, 27);
             this.textBox1.TabIndex = 108;
             // 
             // label21
@@ -258,7 +260,7 @@
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(308, 335);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 27);
             this.numericUpDown1.TabIndex = 104;
             // 
             // label124
@@ -437,7 +439,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.Silver;
+            this.tabPage2.BackColor = System.Drawing.Color.White;
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.label24);
@@ -716,9 +718,8 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.Silver;
+            this.tabPage3.BackColor = System.Drawing.Color.White;
             this.tabPage3.Controls.Add(this.label99);
-            this.tabPage3.Controls.Add(this.pictureBox3);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -737,24 +738,13 @@
             this.label99.TabIndex = 1;
             this.label99.Text = "Products Have Been Successfully Received";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox3.Image = global::Insight_Prototype_.Properties.Resources.Ok_100px;
-            this.pictureBox3.Location = new System.Drawing.Point(446, 64);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(400, 400);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
             // ReceiveProductsPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1300, 700);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.ReceiveProductTab);
             this.Controls.Add(this.TopBarPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ReceiveProductsPage";
@@ -762,10 +752,10 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.TopBarPanel.ResumeLayout(false);
             this.TopBarPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.AddSkillDetails.ResumeLayout(false);
+            this.ReceiveProductTab.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
@@ -773,7 +763,6 @@
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -781,12 +770,13 @@
         #endregion
 
         private System.Windows.Forms.Panel TopBarPanel;
+        private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Label Userlbl;
         private System.Windows.Forms.PictureBox MinimisePicBx;
         private System.Windows.Forms.PictureBox ClosePicBx;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TabControl AddSkillDetails;
+        private System.Windows.Forms.TabControl ReceiveProductTab;
         private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label21;
@@ -811,14 +801,6 @@
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Label label99;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label24;
@@ -839,5 +821,11 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Label label99;
     }
 }

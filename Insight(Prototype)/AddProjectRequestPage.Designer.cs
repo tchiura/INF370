@@ -65,12 +65,11 @@
             this.CPRDetailsLbl = new System.Windows.Forms.Label();
             this.APRBackBtn = new System.Windows.Forms.Button();
             this.APRConfirmBtn = new System.Windows.Forms.Button();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.tabPage19 = new System.Windows.Forms.TabPage();
             this.label169 = new System.Windows.Forms.Label();
             this.TopBarPanel = new System.Windows.Forms.Panel();
-            this.Userlbl = new System.Windows.Forms.Label();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.Userlbl = new System.Windows.Forms.Label();
             this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
             this.AddProjectRequestTab.SuspendLayout();
@@ -265,6 +264,7 @@
             this.APRNextBtn.TabIndex = 30;
             this.APRNextBtn.Text = "Next";
             this.APRNextBtn.UseVisualStyleBackColor = true;
+            this.APRNextBtn.Click += new System.EventHandler(this.APRNextBtn_Click);
             // 
             // label166
             // 
@@ -285,7 +285,6 @@
             this.tabPage18.Controls.Add(this.CPRDetailsLbl);
             this.tabPage18.Controls.Add(this.APRBackBtn);
             this.tabPage18.Controls.Add(this.APRConfirmBtn);
-            this.tabPage18.Controls.Add(this.richTextBox2);
             this.tabPage18.ForeColor = System.Drawing.Color.Black;
             this.tabPage18.Location = new System.Drawing.Point(4, 28);
             this.tabPage18.Name = "tabPage18";
@@ -435,9 +434,10 @@
             this.CPRDetailsLbl.AutoSize = true;
             this.CPRDetailsLbl.Location = new System.Drawing.Point(235, 72);
             this.CPRDetailsLbl.Name = "CPRDetailsLbl";
-            this.CPRDetailsLbl.Size = new System.Drawing.Size(218, 19);
+            this.CPRDetailsLbl.Size = new System.Drawing.Size(220, 76);
             this.CPRDetailsLbl.TabIndex = 43;
-            this.CPRDetailsLbl.Text = "Installation of WiFi in classroom";
+            this.CPRDetailsLbl.Text = "Installation of WiFi in classroom\r\nRequired from use with 25 static\r\ncomputers as" +
+    " well as all other\r\nwireless devices";
             // 
             // APRBackBtn
             // 
@@ -462,14 +462,6 @@
             this.APRConfirmBtn.TabIndex = 36;
             this.APRConfirmBtn.Text = "Confirm";
             this.APRConfirmBtn.UseVisualStyleBackColor = true;
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Location = new System.Drawing.Point(239, 72);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(245, 163);
-            this.richTextBox2.TabIndex = 54;
-            this.richTextBox2.Text = "";
             // 
             // tabPage19
             // 
@@ -510,16 +502,6 @@
             this.TopBarPanel.Size = new System.Drawing.Size(500, 30);
             this.TopBarPanel.TabIndex = 61;
             // 
-            // Userlbl
-            // 
-            this.Userlbl.AutoSize = true;
-            this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.Userlbl.Location = new System.Drawing.Point(3, 2);
-            this.Userlbl.Name = "Userlbl";
-            this.Userlbl.Size = new System.Drawing.Size(173, 23);
-            this.Userlbl.TabIndex = 0;
-            this.Userlbl.Text = "Add Project Request";
-            // 
             // pictureBox14
             // 
             this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Right;
@@ -530,6 +512,16 @@
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 2;
             this.pictureBox14.TabStop = false;
+            // 
+            // Userlbl
+            // 
+            this.Userlbl.AutoSize = true;
+            this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.Userlbl.Location = new System.Drawing.Point(3, 2);
+            this.Userlbl.Name = "Userlbl";
+            this.Userlbl.Size = new System.Drawing.Size(173, 23);
+            this.Userlbl.TabIndex = 0;
+            this.Userlbl.Text = "Add Project Request";
             // 
             // MinimisePicBx
             // 
@@ -563,7 +555,7 @@
             this.Controls.Add(this.TopBarPanel);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddProjectRequestPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddProjectRequestPage";
@@ -626,7 +618,6 @@
         private System.Windows.Forms.Label CPRDetailsLbl;
         private System.Windows.Forms.Button APRBackBtn;
         private System.Windows.Forms.Button APRConfirmBtn;
-        private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.TabPage tabPage19;
         private System.Windows.Forms.Label label169;
         private System.Windows.Forms.Panel TopBarPanel;

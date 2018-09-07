@@ -33,19 +33,19 @@ namespace Insight_Prototype_
 
         private void AProdNextBtn_Click(object sender, EventArgs e)
         {
-            if(Descr == "" | Type == "" | Quantity == 0 | Price == 0)
+            Descr = AProdDescrTb.Text;
+            Type = AProdTypeCmb.Text;
+            Quantity = Convert.ToInt32(AProdQuntityUD.Value);
+            Price = Convert.ToDecimal(AProdPriceTb.Text);
+
+            if (Descr == "" | Type == "" | Quantity == 0 | Price == 0)
             {
                 MessageBox.Show("Please enter all relevant values");
             }
             else
             {
-                Descr = AProdDescrTb.Text;
-                Type = AProdTypeCmb.Text;
-                Quantity = Convert.ToInt32(AProdQuntityUD.Value);
-                Price = Convert.ToDecimal(AProdPriceTb.Text);
-
                 CAProdDescrLbl.Text = Descr;
-                CAProdPriceLbl.Text = Convert.ToString(Price);
+                CAProdPriceLbl.Text = "R " + Convert.ToString(Price);
                 CAProdQuantityLbl.Text = Convert.ToString(Quantity);
                 CAProdTypeLbl.Text = Type;
 
@@ -66,19 +66,32 @@ namespace Insight_Prototype_
 
             InsightProduct.ProductDescription = Descr;
             InsightProduct.ProductQuantity = Quantity;
-            //InsightProduct.ProductType = Type;
-            //InsightProduct.ProductPrices = InsightProdPrice;
 
             InsightProdPrice.ProductPriceDate = DateTime.Now;
             InsightProdPrice.ProductPriceAmount = Price;
-            //InsightProdPrice.ProductID = ?
+
+            //Determine Decimal points for values without decimals on entry
+
             using (InsightEntities db = new InsightEntities())
             {
+                var Ty = db.ProductTypes.SingleOrDefault(x => x.ProductTypeDescription == Type);
+                InsightProduct.ProductTypeID = Ty.ProductTypeID;
+                InsightProdPrice.ProductID = InsightProduct.ProductID;
+                db.ProductPrices.Add(InsightProdPrice);
                 db.Products.Add(InsightProduct);
                 db.SaveChanges();
                 //Selecting the ID to save into the Price Table
                 //var ID = db.Products.Select(x => x.ProductDescription == InsightProduct.ProductDescription);
             }
+
+            AddProductTab.SelectedIndex = 2;
+        }
+
+        private void AddProductPage_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'insightDataSet.ProductType' table. You can move, or remove it, as needed.
+            this.productTypeTableAdapter.Fill(this.insightDataSet.ProductType);
+
         }
     }
 }

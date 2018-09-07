@@ -12,6 +12,7 @@ namespace Insight_Prototype_
 {
     public partial class UpdateProductTypePage : Form
     {
+        string UpProdType = "";
         public UpdateProductTypePage()
         {
             InitializeComponent();
@@ -23,6 +24,16 @@ namespace Insight_Prototype_
         }
 
         private void button23_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UPTCancelBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void UPTNextBtn_Click(object sender, EventArgs e)
         {
 
         }

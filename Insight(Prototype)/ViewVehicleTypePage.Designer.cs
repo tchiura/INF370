@@ -45,11 +45,11 @@
             this.UVTypeBtn = new System.Windows.Forms.Button();
             this.textBox55 = new System.Windows.Forms.TextBox();
             this.VehicleTypeDgv = new System.Windows.Forms.DataGridView();
-            this.insightDataSet = new Insight_Prototype_.InsightDataSet();
-            this.vehicleTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vehicleTypeTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.VehicleTypeTableAdapter();
             this.vehicleTypeIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vehicleTypeDescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vehicleTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.insightDataSet = new Insight_Prototype_.InsightDataSet();
+            this.vehicleTypeTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.VehicleTypeTableAdapter();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
@@ -58,8 +58,8 @@
             this.panel18.SuspendLayout();
             this.tableLayoutPanel30.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VehicleTypeDgv)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehicleTypeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // TopBarPanel
@@ -176,6 +176,7 @@
             this.button192.TabIndex = 3;
             this.button192.Text = "Back";
             this.button192.UseVisualStyleBackColor = true;
+            this.button192.Click += new System.EventHandler(this.button192_Click);
             // 
             // tableLayoutPanel30
             // 
@@ -216,6 +217,7 @@
             this.UVTypeBtn.TabIndex = 2;
             this.UVTypeBtn.Text = "Update Vehicle Type";
             this.UVTypeBtn.UseVisualStyleBackColor = true;
+            this.UVTypeBtn.Click += new System.EventHandler(this.UVTypeBtn_Click);
             // 
             // textBox55
             // 
@@ -248,20 +250,6 @@
             this.VehicleTypeDgv.Size = new System.Drawing.Size(885, 585);
             this.VehicleTypeDgv.TabIndex = 0;
             // 
-            // insightDataSet
-            // 
-            this.insightDataSet.DataSetName = "InsightDataSet";
-            this.insightDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // vehicleTypeBindingSource
-            // 
-            this.vehicleTypeBindingSource.DataMember = "VehicleType";
-            this.vehicleTypeBindingSource.DataSource = this.insightDataSet;
-            // 
-            // vehicleTypeTableAdapter
-            // 
-            this.vehicleTypeTableAdapter.ClearBeforeFill = true;
-            // 
             // vehicleTypeIDDataGridViewTextBoxColumn
             // 
             this.vehicleTypeIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
@@ -278,6 +266,20 @@
             this.vehicleTypeDescriptionDataGridViewTextBoxColumn.HeaderText = "Vehicle Type Description";
             this.vehicleTypeDescriptionDataGridViewTextBoxColumn.Name = "vehicleTypeDescriptionDataGridViewTextBoxColumn";
             // 
+            // vehicleTypeBindingSource
+            // 
+            this.vehicleTypeBindingSource.DataMember = "VehicleType";
+            this.vehicleTypeBindingSource.DataSource = this.insightDataSet;
+            // 
+            // insightDataSet
+            // 
+            this.insightDataSet.DataSetName = "InsightDataSet";
+            this.insightDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // vehicleTypeTableAdapter
+            // 
+            this.vehicleTypeTableAdapter.ClearBeforeFill = true;
+            // 
             // ViewVehicleTypePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
@@ -288,8 +290,7 @@
             this.Controls.Add(this.TopBarPanel);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ViewVehicleTypePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewVehicleTypePage";
@@ -304,8 +305,8 @@
             this.panel18.ResumeLayout(false);
             this.tableLayoutPanel30.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.VehicleTypeDgv)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehicleTypeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

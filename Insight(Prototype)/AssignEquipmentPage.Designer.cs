@@ -118,9 +118,9 @@
             this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.Userlbl.Location = new System.Drawing.Point(3, 2);
             this.Userlbl.Name = "Userlbl";
-            this.Userlbl.Size = new System.Drawing.Size(91, 23);
+            this.Userlbl.Size = new System.Drawing.Size(152, 23);
             this.Userlbl.TabIndex = 0;
-            this.Userlbl.Text = "Username";
+            this.Userlbl.Text = "Assign Equipment";
             // 
             // MinimisePicBx
             // 
@@ -157,7 +157,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.tabPage2.BackColor = System.Drawing.Color.White;
             this.tabPage2.Controls.Add(this.button1);
             this.tabPage2.Controls.Add(this.dataGridView4);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -191,7 +191,7 @@
             this.JJobStatus});
             this.dataGridView4.Location = new System.Drawing.Point(6, 6);
             this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(1262, 543);
+            this.dataGridView4.Size = new System.Drawing.Size(699, 543);
             this.dataGridView4.TabIndex = 1;
             this.dataGridView4.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellContentClick);
             // 

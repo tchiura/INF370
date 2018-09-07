@@ -28,13 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.TopBarPanel = new System.Windows.Forms.Panel();
-            this.Userlbl = new System.Windows.Forms.Label();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.Userlbl = new System.Windows.Forms.Label();
             this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
             this.AddProductTab = new System.Windows.Forms.TabControl();
             this.tabPage26 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.AProdPriceTb = new System.Windows.Forms.TextBox();
             this.AProdQuntityUD = new System.Windows.Forms.NumericUpDown();
             this.AProdCancelBtn = new System.Windows.Forms.Button();
             this.AProdNextBtn = new System.Windows.Forms.Button();
@@ -44,6 +47,8 @@
             this.AProdTypeCmb = new System.Windows.Forms.ComboBox();
             this.AProdDescrTb = new System.Windows.Forms.TextBox();
             this.tabPage27 = new System.Windows.Forms.TabPage();
+            this.CAProdPriceLbl = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label214 = new System.Windows.Forms.Label();
             this.label215 = new System.Windows.Forms.Label();
             this.label216 = new System.Windows.Forms.Label();
@@ -54,10 +59,9 @@
             this.CAProdQuantityLbl = new System.Windows.Forms.Label();
             this.tabPage28 = new System.Windows.Forms.TabPage();
             this.label244 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.AProdPriceTb = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.CAProdPriceLbl = new System.Windows.Forms.Label();
+            this.insightDataSet = new Insight_Prototype_.InsightDataSet();
+            this.productTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productTypeTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.ProductTypeTableAdapter();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
@@ -67,6 +71,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.AProdQuntityUD)).BeginInit();
             this.tabPage27.SuspendLayout();
             this.tabPage28.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productTypeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // TopBarPanel
@@ -85,16 +91,6 @@
             this.TopBarPanel.Size = new System.Drawing.Size(490, 30);
             this.TopBarPanel.TabIndex = 82;
             // 
-            // Userlbl
-            // 
-            this.Userlbl.AutoSize = true;
-            this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.Userlbl.Location = new System.Drawing.Point(3, 2);
-            this.Userlbl.Name = "Userlbl";
-            this.Userlbl.Size = new System.Drawing.Size(108, 23);
-            this.Userlbl.TabIndex = 0;
-            this.Userlbl.Text = "Add Product";
-            // 
             // pictureBox14
             // 
             this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Right;
@@ -105,6 +101,16 @@
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 2;
             this.pictureBox14.TabStop = false;
+            // 
+            // Userlbl
+            // 
+            this.Userlbl.AutoSize = true;
+            this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.Userlbl.Location = new System.Drawing.Point(3, 2);
+            this.Userlbl.Name = "Userlbl";
+            this.Userlbl.Size = new System.Drawing.Size(108, 23);
+            this.Userlbl.TabIndex = 0;
+            this.Userlbl.Text = "Add Product";
             // 
             // MinimisePicBx
             // 
@@ -160,6 +166,22 @@
             this.tabPage26.Size = new System.Drawing.Size(482, 250);
             this.tabPage26.TabIndex = 0;
             this.tabPage26.Text = "Details";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 157);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 19);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "Price:";
+            // 
+            // AProdPriceTb
+            // 
+            this.AProdPriceTb.Location = new System.Drawing.Point(210, 149);
+            this.AProdPriceTb.Name = "AProdPriceTb";
+            this.AProdPriceTb.Size = new System.Drawing.Size(245, 27);
+            this.AProdPriceTb.TabIndex = 35;
             // 
             // AProdQuntityUD
             // 
@@ -223,6 +245,8 @@
             // 
             // AProdTypeCmb
             // 
+            this.AProdTypeCmb.DataSource = this.productTypeBindingSource;
+            this.AProdTypeCmb.DisplayMember = "ProductTypeDescription";
             this.AProdTypeCmb.FormattingEnabled = true;
             this.AProdTypeCmb.Location = new System.Drawing.Point(210, 55);
             this.AProdTypeCmb.Name = "AProdTypeCmb";
@@ -256,6 +280,24 @@
             this.tabPage27.Size = new System.Drawing.Size(482, 250);
             this.tabPage27.TabIndex = 1;
             this.tabPage27.Text = "Confirmation";
+            // 
+            // CAProdPriceLbl
+            // 
+            this.CAProdPriceLbl.AutoSize = true;
+            this.CAProdPriceLbl.Location = new System.Drawing.Point(292, 158);
+            this.CAProdPriceLbl.Name = "CAProdPriceLbl";
+            this.CAProdPriceLbl.Size = new System.Drawing.Size(17, 19);
+            this.CAProdPriceLbl.TabIndex = 60;
+            this.CAProdPriceLbl.Text = "5";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(20, 158);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 19);
+            this.label2.TabIndex = 59;
+            this.label2.Text = "Price:";
             // 
             // label214
             // 
@@ -360,39 +402,19 @@
             this.label244.TabIndex = 1;
             this.label244.Text = "Product Successfully Added";
             // 
-            // label1
+            // insightDataSet
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 157);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 19);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "Price:";
+            this.insightDataSet.DataSetName = "InsightDataSet";
+            this.insightDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // AProdPriceTb
+            // productTypeBindingSource
             // 
-            this.AProdPriceTb.Location = new System.Drawing.Point(210, 149);
-            this.AProdPriceTb.Name = "AProdPriceTb";
-            this.AProdPriceTb.Size = new System.Drawing.Size(245, 27);
-            this.AProdPriceTb.TabIndex = 35;
+            this.productTypeBindingSource.DataMember = "ProductType";
+            this.productTypeBindingSource.DataSource = this.insightDataSet;
             // 
-            // label2
+            // productTypeTableAdapter
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 166);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 19);
-            this.label2.TabIndex = 59;
-            this.label2.Text = "Price:";
-            // 
-            // CAProdPriceLbl
-            // 
-            this.CAProdPriceLbl.AutoSize = true;
-            this.CAProdPriceLbl.Location = new System.Drawing.Point(292, 166);
-            this.CAProdPriceLbl.Name = "CAProdPriceLbl";
-            this.CAProdPriceLbl.Size = new System.Drawing.Size(17, 19);
-            this.CAProdPriceLbl.TabIndex = 60;
-            this.CAProdPriceLbl.Text = "5";
+            this.productTypeTableAdapter.ClearBeforeFill = true;
             // 
             // AddProductPage
             // 
@@ -404,10 +426,11 @@
             this.Controls.Add(this.TopBarPanel);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddProductPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddProductPage";
+            this.Load += new System.EventHandler(this.AddProductPage_Load);
             this.TopBarPanel.ResumeLayout(false);
             this.TopBarPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
@@ -421,6 +444,8 @@
             this.tabPage27.PerformLayout();
             this.tabPage28.ResumeLayout(false);
             this.tabPage28.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productTypeBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -457,5 +482,8 @@
         private System.Windows.Forms.Label CAProdQuantityLbl;
         private System.Windows.Forms.TabPage tabPage28;
         private System.Windows.Forms.Label label244;
+        private InsightDataSet insightDataSet;
+        private System.Windows.Forms.BindingSource productTypeBindingSource;
+        private InsightDataSetTableAdapters.ProductTypeTableAdapter productTypeTableAdapter;
     }
 }

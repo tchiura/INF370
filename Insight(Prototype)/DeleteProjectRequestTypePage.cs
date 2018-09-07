@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Insight_Prototype_
 {
-    public partial class UpdateClientTypePage : Form
+    public partial class DeleteProjectRequestTypePage : Form
     {
-        public UpdateClientTypePage()
+        public DeleteProjectRequestTypePage()
         {
             InitializeComponent();
-        }
-
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

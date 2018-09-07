@@ -23,5 +23,17 @@ namespace Insight_Prototype_
             this.vehicleTypeTableAdapter.Fill(this.insightDataSet.VehicleType);
 
         }
+
+        private void button192_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void UVTypeBtn_Click(object sender, EventArgs e)
+        {
+            Form UVT = new UpdateVehicleTypePage();
+            this.Hide();
+            UVT.ShowDialog();
+        }
     }
 }
