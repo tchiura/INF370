@@ -36,8 +36,6 @@ namespace Insight_Prototype_
 
         private void AJTCancelBtn_Click(object sender, EventArgs e)
         {
-            Form Home = new HomeScreen();
-            Home.Show();
             this.Close();
         }
 

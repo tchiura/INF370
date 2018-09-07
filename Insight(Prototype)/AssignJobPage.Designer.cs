@@ -533,9 +533,9 @@
             this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.Userlbl.Location = new System.Drawing.Point(3, 2);
             this.Userlbl.Name = "Userlbl";
-            this.Userlbl.Size = new System.Drawing.Size(91, 23);
+            this.Userlbl.Size = new System.Drawing.Size(92, 23);
             this.Userlbl.TabIndex = 0;
-            this.Userlbl.Text = "Username";
+            this.Userlbl.Text = "Assign Job";
             // 
             // MinimisePicBx
             // 

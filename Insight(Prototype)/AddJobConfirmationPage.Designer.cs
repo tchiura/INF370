@@ -154,6 +154,7 @@
             this.button11.TabIndex = 44;
             this.button11.Text = "Cancel";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button8
             // 
@@ -167,6 +168,7 @@
             this.button8.TabIndex = 43;
             this.button8.Text = "Confirm";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // AddJobConfirmationPage
             // 

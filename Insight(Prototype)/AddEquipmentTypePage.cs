@@ -55,6 +55,8 @@ namespace Insight_Prototype_
                 db.EquipmentTypes.Add(InsightEquipType);
                 db.SaveChanges();
             }
+
+            AddEquipmentTypeTab.SelectedIndex = 2;
         }
     }
 }

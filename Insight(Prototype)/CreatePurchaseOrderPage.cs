@@ -16,5 +16,14 @@ namespace Insight_Prototype_
         {
             InitializeComponent();
         }
+
+        private void CreatePurchaseOrderPage_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'insightDataSet.Supplier' table. You can move, or remove it, as needed.
+            this.supplierTableAdapter.Fill(this.insightDataSet.Supplier);
+            // TODO: This line of code loads data into the 'insightDataSet.ProjectRequest' table. You can move, or remove it, as needed.
+            this.projectRequestTableAdapter.Fill(this.insightDataSet.ProjectRequest);
+
+        }
     }
 }
