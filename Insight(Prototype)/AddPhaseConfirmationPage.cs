@@ -44,7 +44,6 @@ namespace Insight_Prototype_
                 var Stat = db.ProjectPhaseStatus.SingleOrDefault(x => x.ProjectPhaseStatusDescription == PhaseStat);
                 InsightProPhase.ProjectPhaseTypeID = Ty.ProjectPhaseTypeID;
                 InsightProPhase.ProjectPhaseStatusID = Stat.ProjectPhaseStatusID;
-
                 db.ProjectPhases.Add(InsightProPhase);
                 db.SaveChanges();
             }
