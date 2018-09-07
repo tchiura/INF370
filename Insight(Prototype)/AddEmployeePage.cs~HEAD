@@ -46,6 +46,7 @@ namespace Insight_Prototype_
             this.employeeTypeTableAdapter.Fill(this.insightDataSet.EmployeeType);
             List<string> skills = GetTagList().ToList();
 
+
             foreach (string x in skills)
             {
                 SkillList.Items.Add(x);
