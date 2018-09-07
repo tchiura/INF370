@@ -46,20 +46,18 @@
             this.Rate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvProduct = new System.Windows.Forms.DataGridView();
+            this.ProductType = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.productTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Product = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.fKProductProductTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewComboBoxColumn3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvcJobType = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewComboBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.dataGridViewComboBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvcProduct = new System.Windows.Forms.DataGridView();
             this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.productTypeTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.ProductTypeTableAdapter();
             this.productTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.ProductTableAdapter();
@@ -67,9 +65,6 @@
             this.jobTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.JobTableAdapter();
             this.fKJobTypePriceJobTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.jobTypePriceTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.JobTypePriceTableAdapter();
-            this.ProductType = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.Product = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
@@ -85,9 +80,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.fKProductProductTypeBindingSource)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvcJobType)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvcProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKJobTypePriceJobTypeBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -176,6 +171,7 @@
             this.button4.TabIndex = 12;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Visible = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button1
@@ -187,6 +183,7 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "Next";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button78
             // 
@@ -275,15 +272,43 @@
             this.dgvProduct.TabIndex = 0;
             this.dgvProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduct_CellClick);
             // 
+            // ProductType
+            // 
+            this.ProductType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ProductType.DataSource = this.productTypeBindingSource;
+            this.ProductType.DisplayMember = "ProductTypeDescription";
+            this.ProductType.HeaderText = "ProductType";
+            this.ProductType.Name = "ProductType";
+            this.ProductType.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ProductType.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.ProductType.ValueMember = "ProductTypeDescription";
+            // 
             // productTypeBindingSource
             // 
             this.productTypeBindingSource.DataMember = "ProductType";
             this.productTypeBindingSource.DataSource = this.insightDataSet;
             // 
+            // Product
+            // 
+            this.Product.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Product.DataSource = this.fKProductProductTypeBindingSource;
+            this.Product.DisplayMember = "ProductDescription";
+            this.Product.HeaderText = "Product";
+            this.Product.Name = "Product";
+            this.Product.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Product.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Product.ValueMember = "ProductDescription";
+            // 
             // fKProductProductTypeBindingSource
             // 
             this.fKProductProductTypeBindingSource.DataMember = "FK_Product_ProductType";
             this.fKProductProductTypeBindingSource.DataSource = this.productTypeBindingSource;
+            // 
+            // Quantity
+            // 
+            this.Quantity.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.Name = "Quantity";
             // 
             // tabPage2
             // 
@@ -321,7 +346,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.dataGridView1);
+            this.groupBox3.Controls.Add(this.dgvcJobType);
             this.groupBox3.Location = new System.Drawing.Point(550, 19);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(494, 419);
@@ -329,42 +354,19 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Job Types";
             // 
-            // dataGridView1
+            // dgvcJobType
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewComboBoxColumn3,
-            this.dataGridViewTextBoxColumn1});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(482, 394);
-            this.dataGridView1.TabIndex = 5;
-            // 
-            // dataGridViewComboBoxColumn3
-            // 
-            this.dataGridViewComboBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewComboBoxColumn3.DataSource = this.jobTypeBindingSource;
-            this.dataGridViewComboBoxColumn3.DisplayMember = "JobTypeDescription";
-            this.dataGridViewComboBoxColumn3.HeaderText = "Job Type";
-            this.dataGridViewComboBoxColumn3.Name = "dataGridViewComboBoxColumn3";
-            this.dataGridViewComboBoxColumn3.ReadOnly = true;
-            this.dataGridViewComboBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewComboBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "JobTypePriceAmount";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Rate/hr";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvcJobType.BackgroundColor = System.Drawing.Color.White;
+            this.dgvcJobType.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvcJobType.Location = new System.Drawing.Point(6, 19);
+            this.dgvcJobType.Name = "dgvcJobType";
+            this.dgvcJobType.ReadOnly = true;
+            this.dgvcJobType.Size = new System.Drawing.Size(482, 394);
+            this.dgvcJobType.TabIndex = 5;
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.dataGridView2);
+            this.groupBox4.Controls.Add(this.dgvcProduct);
             this.groupBox4.Location = new System.Drawing.Point(29, 19);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(492, 419);
@@ -372,48 +374,15 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Products";
             // 
-            // dataGridView2
+            // dgvcProduct
             // 
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewComboBoxColumn1,
-            this.dataGridViewComboBoxColumn2,
-            this.dataGridViewTextBoxColumn4});
-            this.dataGridView2.Location = new System.Drawing.Point(6, 19);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(480, 394);
-            this.dataGridView2.TabIndex = 1;
-            // 
-            // dataGridViewComboBoxColumn1
-            // 
-            this.dataGridViewComboBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewComboBoxColumn1.DataSource = this.productTypeBindingSource;
-            this.dataGridViewComboBoxColumn1.DisplayMember = "ProductTypeDescription";
-            this.dataGridViewComboBoxColumn1.HeaderText = "ProductType";
-            this.dataGridViewComboBoxColumn1.Name = "dataGridViewComboBoxColumn1";
-            this.dataGridViewComboBoxColumn1.ReadOnly = true;
-            this.dataGridViewComboBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewComboBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // dataGridViewComboBoxColumn2
-            // 
-            this.dataGridViewComboBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewComboBoxColumn2.DataSource = this.fKProductProductTypeBindingSource;
-            this.dataGridViewComboBoxColumn2.DisplayMember = "ProductDescription";
-            this.dataGridViewComboBoxColumn2.HeaderText = "Product";
-            this.dataGridViewComboBoxColumn2.Name = "dataGridViewComboBoxColumn2";
-            this.dataGridViewComboBoxColumn2.ReadOnly = true;
-            this.dataGridViewComboBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewComboBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn4.HeaderText = "Quantity";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dgvcProduct.BackgroundColor = System.Drawing.Color.White;
+            this.dgvcProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvcProduct.Location = new System.Drawing.Point(6, 19);
+            this.dgvcProduct.Name = "dgvcProduct";
+            this.dgvcProduct.ReadOnly = true;
+            this.dgvcProduct.Size = new System.Drawing.Size(480, 394);
+            this.dgvcProduct.TabIndex = 1;
             // 
             // productBindingSource
             // 
@@ -445,34 +414,6 @@
             // 
             this.jobTypePriceTableAdapter.ClearBeforeFill = true;
             // 
-            // ProductType
-            // 
-            this.ProductType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ProductType.DataSource = this.productTypeBindingSource;
-            this.ProductType.DisplayMember = "ProductTypeDescription";
-            this.ProductType.HeaderText = "ProductType";
-            this.ProductType.Name = "ProductType";
-            this.ProductType.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ProductType.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.ProductType.ValueMember = "ProductTypeDescription";
-            // 
-            // Product
-            // 
-            this.Product.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Product.DataSource = this.fKProductProductTypeBindingSource;
-            this.Product.DisplayMember = "ProductDescription";
-            this.Product.HeaderText = "Product";
-            this.Product.Name = "Product";
-            this.Product.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Product.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Product.ValueMember = "ProductDescription";
-            // 
-            // Quantity
-            // 
-            this.Quantity.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Quantity.HeaderText = "Quantity";
-            this.Quantity.Name = "Quantity";
-            // 
             // GenerateProjectQuotationPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -502,9 +443,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.fKProductProductTypeBindingSource)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvcJobType)).EndInit();
             this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvcProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKJobTypePriceJobTypeBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -542,17 +483,12 @@
         private InsightDataSetTableAdapters.JobTableAdapter jobTableAdapter;
         private System.Windows.Forms.BindingSource fKJobTypePriceJobTypeBindingSource;
         private InsightDataSetTableAdapters.JobTypePriceTableAdapter jobTypePriceTableAdapter;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn1;
-        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewComboBoxColumn JobType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Rate;
+        private System.Windows.Forms.DataGridView dgvcJobType;
+        private System.Windows.Forms.DataGridView dgvcProduct;
         private System.Windows.Forms.DataGridViewComboBoxColumn ProductType;
         private System.Windows.Forms.DataGridViewComboBoxColumn Product;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
+        private System.Windows.Forms.DataGridViewComboBoxColumn JobType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Rate;
     }
 }

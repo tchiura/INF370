@@ -88,6 +88,8 @@ namespace Insight_Prototype_
                 {
                     //int id=Convert.ToInt32(a.ToString());
                     var q = db.JobTypePrices.Where(jtp => jtp.JobTypeID == id).First();
+                  //  var x = db.JobTypes.Where(jt => jt.JobTypeID == id)
+                  //store in other column
                     dgvJobType[1, selectedrowindex].Value = q.JobTypePriceAmount.ToString();
                     dgvJobType.Refresh();
                 }
@@ -96,14 +98,62 @@ namespace Insight_Prototype_
 
         private void dgvProduct_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            /*
-             * {
-   DataGridViewComboBoxColumn cmbColumn = (DataGridViewComboBoxColumn)dataGridView1.Columns["comboBox"];
-   string sItem = null;
-   sItem = dataGridView1.CurrentCell.EditedFormattedValue.ToString();
+         /*   
+   DataGridViewComboBoxColumn cmbColumn = (DataGridViewComboBoxColumn)dgvProduct.Columns["ProductType"];
+   string sItem = "";
+   sItem = dgvProduct.CurrentCell.EditedFormattedValue.ToString();
    cmbColumn.Items.Remove(sItem);
-   dataGridView1.Refresh();
-             */
+   dgvProduct.Refresh(); */          
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            DataTable product = new DataTable();
+            DataTable jobtable = new DataTable();
+
+            foreach (DataGridViewColumn col in dgvJobType.Columns)
+            {
+                jobtable.Columns.Add(col.Name);
+            }
+
+
+            foreach (DataGridViewColumn col in dgvProduct.Columns)
+            {
+                product.Columns.Add(col.Name);
+            }
+
+            foreach (DataGridViewRow row in dgvJobType.Rows)
+            {
+                DataRow dRow = jobtable.NewRow();
+
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    //dgvProduct.CurrentRow.Cells["JobType"].Value.ToString();
+                    dRow[cell.ColumnIndex] = cell.Value;
+                }
+
+                /*foreach (DataGridViewCell cell in row.Cells)
+                {
+                    //dgvProduct.CurrentRow.Cells["JobType"].Value.ToString();
+                    dRow[cell.ColumnIndex] = cell.Value;
+                }*/
+
+                jobtable.Rows.Add(dRow);
+            }
+
+            foreach (DataGridViewRow row in dgvProduct.Rows)
+            {
+                DataRow dRow = product.NewRow();
+
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    dRow[cell.ColumnIndex] = cell.Value;
+                }
+                product.Rows.Add(dRow);
+            }
+
+            dgvcProduct.DataSource = product;
+            dgvcJobType.DataSource = jobtable;
         }
     }
 }
