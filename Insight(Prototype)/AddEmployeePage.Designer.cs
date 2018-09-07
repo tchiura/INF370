@@ -19,7 +19,6 @@
             }
         
             base.Dispose(disposing);
-
         }
 
         #region Windows Form Designer generated code
@@ -42,8 +41,11 @@
             this.EmployeeAd3 = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
             this.EmployeeCountry = new System.Windows.Forms.ComboBox();
+            this.countryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.insightDataSet = new Insight_Prototype_.InsightDataSet();
             this.label37 = new System.Windows.Forms.Label();
             this.EmployeeCity = new System.Windows.Forms.ComboBox();
+            this.cityBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label63 = new System.Windows.Forms.Label();
             this.EmployeeEmail = new System.Windows.Forms.TextBox();
             this.EmployeeNum = new System.Windows.Forms.TextBox();
@@ -56,6 +58,7 @@
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.EmployeeTypeCbx = new System.Windows.Forms.ComboBox();
+            this.employeeTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.EmployeeGenderCbx = new System.Windows.Forms.ComboBox();
             this.EmployeeDOB = new System.Windows.Forms.DateTimePicker();
             this.button14 = new System.Windows.Forms.Button();
@@ -99,24 +102,20 @@
             this.button19 = new System.Windows.Forms.Button();
             this.EComplete = new System.Windows.Forms.TabPage();
             this.label62 = new System.Windows.Forms.Label();
-            this.insightDataSet = new Insight_Prototype_.InsightDataSet();
-            this.employeeTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.employeeTypeTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.EmployeeTypeTableAdapter();
-            this.cityBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cityTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.CityTableAdapter();
-            this.countryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.countryTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.CountryTableAdapter();
             this.AddEmployeeDetailsTab.SuspendLayout();
             this.EDetails.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.countryBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cityBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeTypeBindingSource)).BeginInit();
             this.EConfirmation.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.ESkills.SuspendLayout();
             this.EComplete.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeTypeBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cityBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.countryBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // AddEmployeeDetailsTab
@@ -267,6 +266,16 @@
             this.EmployeeCountry.TabIndex = 4;
             this.EmployeeCountry.ValueMember = "CountryID";
             // 
+            // countryBindingSource
+            // 
+            this.countryBindingSource.DataMember = "Country";
+            this.countryBindingSource.DataSource = this.insightDataSet;
+            // 
+            // insightDataSet
+            // 
+            this.insightDataSet.DataSetName = "InsightDataSet";
+            this.insightDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // label37
             // 
             this.label37.AutoSize = true;
@@ -288,6 +297,11 @@
             this.EmployeeCity.Size = new System.Drawing.Size(245, 27);
             this.EmployeeCity.TabIndex = 3;
             this.EmployeeCity.ValueMember = "CityID";
+            // 
+            // cityBindingSource
+            // 
+            this.cityBindingSource.DataMember = "City";
+            this.cityBindingSource.DataSource = this.insightDataSet;
             // 
             // label63
             // 
@@ -406,6 +420,11 @@
             this.EmployeeTypeCbx.Size = new System.Drawing.Size(245, 27);
             this.EmployeeTypeCbx.TabIndex = 0;
             this.EmployeeTypeCbx.ValueMember = "EmployeeTypeID";
+            // 
+            // employeeTypeBindingSource
+            // 
+            this.employeeTypeBindingSource.DataMember = "EmployeeType";
+            this.employeeTypeBindingSource.DataSource = this.insightDataSet;
             // 
             // EmployeeGenderCbx
             // 
@@ -899,33 +918,13 @@
             this.label62.TabIndex = 1;
             this.label62.Text = "Employee Successfully Added";
             // 
-            // insightDataSet
-            // 
-            this.insightDataSet.DataSetName = "InsightDataSet";
-            this.insightDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // employeeTypeBindingSource
-            // 
-            this.employeeTypeBindingSource.DataMember = "EmployeeType";
-            this.employeeTypeBindingSource.DataSource = this.insightDataSet;
-            // 
             // employeeTypeTableAdapter
             // 
             this.employeeTypeTableAdapter.ClearBeforeFill = true;
             // 
-            // cityBindingSource
-            // 
-            this.cityBindingSource.DataMember = "City";
-            this.cityBindingSource.DataSource = this.insightDataSet;
-            // 
             // cityTableAdapter
             // 
             this.cityTableAdapter.ClearBeforeFill = true;
-            // 
-            // countryBindingSource
-            // 
-            this.countryBindingSource.DataMember = "Country";
-            this.countryBindingSource.DataSource = this.insightDataSet;
             // 
             // countryTableAdapter
             // 
@@ -945,6 +944,10 @@
             this.EDetails.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.countryBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cityBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeTypeBindingSource)).EndInit();
             this.EConfirmation.ResumeLayout(false);
             this.EConfirmation.PerformLayout();
             this.groupBox6.ResumeLayout(false);
@@ -953,10 +956,6 @@
             this.ESkills.PerformLayout();
             this.EComplete.ResumeLayout(false);
             this.EComplete.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeTypeBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cityBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.countryBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

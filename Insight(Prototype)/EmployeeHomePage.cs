@@ -12,6 +12,7 @@ namespace Insight_Prototype_
 {
     public partial class EmployeeHomePage : Form
     {
+
         public EmployeeHomePage()
         {
             InitializeComponent();

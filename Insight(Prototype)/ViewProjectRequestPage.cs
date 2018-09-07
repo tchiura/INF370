@@ -17,6 +17,7 @@ namespace Insight_Prototype_
         {
             InitializeComponent();
         }
+    
 
         Globals globalclass = new Globals();
         
