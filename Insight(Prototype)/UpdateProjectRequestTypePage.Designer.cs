@@ -125,7 +125,7 @@
             this.button21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button21.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.Location = new System.Drawing.Point(288, 95);
+            this.button21.Location = new System.Drawing.Point(288, 101);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(75, 30);
             this.button21.TabIndex = 31;
@@ -159,7 +159,7 @@
             this.button22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button22.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.Location = new System.Drawing.Point(369, 95);
+            this.button22.Location = new System.Drawing.Point(369, 101);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(75, 30);
             this.button22.TabIndex = 30;
@@ -301,7 +301,7 @@
             this.Controls.Add(this.TopBarPanel);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UpdateProjectRequestTypePage";
             this.Text = "UpdateProjectRequestType";
             this.Load += new System.EventHandler(this.UpdateProjectRequestTypePage_Load);

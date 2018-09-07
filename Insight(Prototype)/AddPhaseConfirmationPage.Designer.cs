@@ -77,6 +77,7 @@
             this.button11.TabIndex = 75;
             this.button11.Text = "Cancel";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button8
             // 
@@ -90,6 +91,7 @@
             this.button8.TabIndex = 74;
             this.button8.Text = "Confirm";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // label6
             // 
@@ -199,8 +201,8 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddPhaseConfirmationPage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddPhaseConfirmationPage";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

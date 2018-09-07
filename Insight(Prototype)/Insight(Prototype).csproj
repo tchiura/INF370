@@ -591,6 +591,12 @@
     <Compile Include="UpdateVehicleStatusPage.Designer.cs">
       <DependentUpon>UpdateVehicleStatusPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateVehicleTypePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateVehicleTypePage.Designer.cs">
+      <DependentUpon>UpdateVehicleTypePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vehicle.cs">
       <DependentUpon>InsightModel.tt</DependentUpon>
     </Compile>
@@ -827,6 +833,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateVehicleStatusPage.resx">
       <DependentUpon>UpdateVehicleStatusPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateVehicleTypePage.resx">
+      <DependentUpon>UpdateVehicleTypePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewClientLoginPage.resx">
       <DependentUpon>ViewClientLoginPage.cs</DependentUpon>

@@ -20,9 +20,7 @@ namespace Insight_Prototype_
 
         private void AProdTCancelBtn_Click(object sender, EventArgs e)
         {
-            Form Home = new HomeScreen();
-            Home.Show();
-            this.Show();
+            this.Close();
         }
 
         private void AProdTNextBtn_Click(object sender, EventArgs e)

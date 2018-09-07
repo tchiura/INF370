@@ -1,6 +1,6 @@
 ﻿namespace Insight_Prototype_
 {
-    partial class AddProjectRequestTypePage
+    partial class UpdateVehicleTypePage
     {
         /// <summary>
         /// Required designer variable.
@@ -29,28 +29,30 @@
         private void InitializeComponent()
         {
             this.TopBarPanel = new System.Windows.Forms.Panel();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.Userlbl = new System.Windows.Forms.Label();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
-            this.AddProjectRequestTypeTab = new System.Windows.Forms.TabControl();
+            this.UVehicleTypeTab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.PReqTypeTb = new System.Windows.Forms.TextBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
             this.CancelBtn = new System.Windows.Forms.Button();
-            this.NextBtn = new System.Windows.Forms.Button();
+            this.UpdateBtn = new System.Windows.Forms.Button();
             this.label58 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.BackBtn = new System.Windows.Forms.Button();
             this.ConfirmBtn = new System.Windows.Forms.Button();
-            this.PReqConfirmLbl = new System.Windows.Forms.Label();
-            this.label91 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label99 = new System.Windows.Forms.Label();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
-            this.AddProjectRequestTypeTab.SuspendLayout();
+            this.UVehicleTypeTab.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -70,7 +72,17 @@
             this.TopBarPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TopBarPanel.Name = "TopBarPanel";
             this.TopBarPanel.Size = new System.Drawing.Size(460, 30);
-            this.TopBarPanel.TabIndex = 12;
+            this.TopBarPanel.TabIndex = 50;
+            // 
+            // Userlbl
+            // 
+            this.Userlbl.AutoSize = true;
+            this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.Userlbl.Location = new System.Drawing.Point(3, 2);
+            this.Userlbl.Name = "Userlbl";
+            this.Userlbl.Size = new System.Drawing.Size(171, 23);
+            this.Userlbl.TabIndex = 0;
+            this.Userlbl.Text = "Update Vehicle Type";
             // 
             // pictureBox14
             // 
@@ -82,16 +94,6 @@
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 2;
             this.pictureBox14.TabStop = false;
-            // 
-            // Userlbl
-            // 
-            this.Userlbl.AutoSize = true;
-            this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.Userlbl.Location = new System.Drawing.Point(3, 2);
-            this.Userlbl.Name = "Userlbl";
-            this.Userlbl.Size = new System.Drawing.Size(214, 23);
-            this.Userlbl.TabIndex = 0;
-            this.Userlbl.Text = "Add Project Request Type";
             // 
             // MinimisePicBx
             // 
@@ -115,24 +117,26 @@
             this.ClosePicBx.TabIndex = 0;
             this.ClosePicBx.TabStop = false;
             // 
-            // AddProjectRequestTypeTab
+            // UVehicleTypeTab
             // 
-            this.AddProjectRequestTypeTab.Controls.Add(this.tabPage1);
-            this.AddProjectRequestTypeTab.Controls.Add(this.tabPage2);
-            this.AddProjectRequestTypeTab.Controls.Add(this.tabPage3);
-            this.AddProjectRequestTypeTab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddProjectRequestTypeTab.Location = new System.Drawing.Point(0, 30);
-            this.AddProjectRequestTypeTab.Name = "AddProjectRequestTypeTab";
-            this.AddProjectRequestTypeTab.SelectedIndex = 0;
-            this.AddProjectRequestTypeTab.Size = new System.Drawing.Size(460, 170);
-            this.AddProjectRequestTypeTab.TabIndex = 14;
+            this.UVehicleTypeTab.Controls.Add(this.tabPage1);
+            this.UVehicleTypeTab.Controls.Add(this.tabPage2);
+            this.UVehicleTypeTab.Controls.Add(this.tabPage3);
+            this.UVehicleTypeTab.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UVehicleTypeTab.Location = new System.Drawing.Point(0, 30);
+            this.UVehicleTypeTab.Name = "UVehicleTypeTab";
+            this.UVehicleTypeTab.SelectedIndex = 0;
+            this.UVehicleTypeTab.Size = new System.Drawing.Size(460, 170);
+            this.UVehicleTypeTab.TabIndex = 51;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
-            this.tabPage1.Controls.Add(this.PReqTypeTb);
+            this.tabPage1.Controls.Add(this.linkLabel1);
+            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.textBox13);
             this.tabPage1.Controls.Add(this.CancelBtn);
-            this.tabPage1.Controls.Add(this.NextBtn);
+            this.tabPage1.Controls.Add(this.UpdateBtn);
             this.tabPage1.Controls.Add(this.label58);
             this.tabPage1.ForeColor = System.Drawing.Color.Black;
             this.tabPage1.Location = new System.Drawing.Point(4, 28);
@@ -142,53 +146,76 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Details";
             // 
-            // PReqTypeTb
+            // linkLabel1
             // 
-            this.PReqTypeTb.Location = new System.Drawing.Point(185, 25);
-            this.PReqTypeTb.Name = "PReqTypeTb";
-            this.PReqTypeTb.Size = new System.Drawing.Size(245, 27);
-            this.PReqTypeTb.TabIndex = 32;
-            this.PReqTypeTb.Text = "Installation";
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(412, 54);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(34, 19);
+            this.linkLabel1.TabIndex = 35;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Edit";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(189, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 19);
+            this.label1.TabIndex = 33;
+            this.label1.Text = "SUV";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox13.Location = new System.Drawing.Point(192, 24);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(245, 27);
+            this.textBox13.TabIndex = 32;
+            this.textBox13.Visible = false;
             // 
             // CancelBtn
             // 
+            this.CancelBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.CancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CancelBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelBtn.Location = new System.Drawing.Point(290, 102);
+            this.CancelBtn.Location = new System.Drawing.Point(288, 100);
             this.CancelBtn.Name = "CancelBtn";
             this.CancelBtn.Size = new System.Drawing.Size(75, 30);
             this.CancelBtn.TabIndex = 31;
             this.CancelBtn.Text = "Cancel";
             this.CancelBtn.UseVisualStyleBackColor = true;
             // 
-            // NextBtn
+            // UpdateBtn
             // 
-            this.NextBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.NextBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NextBtn.Location = new System.Drawing.Point(371, 102);
-            this.NextBtn.Name = "NextBtn";
-            this.NextBtn.Size = new System.Drawing.Size(75, 30);
-            this.NextBtn.TabIndex = 30;
-            this.NextBtn.Text = "Next";
-            this.NextBtn.UseVisualStyleBackColor = true;
-            this.NextBtn.Click += new System.EventHandler(this.NextBtn_Click);
+            this.UpdateBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.UpdateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UpdateBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpdateBtn.Location = new System.Drawing.Point(369, 100);
+            this.UpdateBtn.Name = "UpdateBtn";
+            this.UpdateBtn.Size = new System.Drawing.Size(75, 30);
+            this.UpdateBtn.TabIndex = 30;
+            this.UpdateBtn.Text = "Update";
+            this.UpdateBtn.UseVisualStyleBackColor = true;
             // 
             // label58
             // 
             this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(27, 28);
+            this.label58.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Location = new System.Drawing.Point(22, 27);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(149, 19);
             this.label58.TabIndex = 7;
-            this.label58.Text = "Project Request Type:";
+            this.label58.Text = "Update Vehicle Type: ";
             // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
             this.tabPage2.Controls.Add(this.BackBtn);
             this.tabPage2.Controls.Add(this.ConfirmBtn);
-            this.tabPage2.Controls.Add(this.PReqConfirmLbl);
-            this.tabPage2.Controls.Add(this.label91);
+            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.ForeColor = System.Drawing.Color.Black;
             this.tabPage2.Location = new System.Drawing.Point(4, 28);
             this.tabPage2.Name = "tabPage2";
@@ -199,6 +226,7 @@
             // 
             // BackBtn
             // 
+            this.BackBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.BackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BackBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BackBtn.Location = new System.Drawing.Point(288, 100);
@@ -207,10 +235,10 @@
             this.BackBtn.TabIndex = 37;
             this.BackBtn.Text = "Back";
             this.BackBtn.UseVisualStyleBackColor = true;
-            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
             // ConfirmBtn
             // 
+            this.ConfirmBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.ConfirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ConfirmBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConfirmBtn.Location = new System.Drawing.Point(369, 100);
@@ -219,25 +247,26 @@
             this.ConfirmBtn.TabIndex = 36;
             this.ConfirmBtn.Text = "Confirm";
             this.ConfirmBtn.UseVisualStyleBackColor = true;
-            this.ConfirmBtn.Click += new System.EventHandler(this.ConfirmBtn_Click);
             // 
-            // PReqConfirmLbl
+            // label3
             // 
-            this.PReqConfirmLbl.AutoSize = true;
-            this.PReqConfirmLbl.Location = new System.Drawing.Point(200, 27);
-            this.PReqConfirmLbl.Name = "PReqConfirmLbl";
-            this.PReqConfirmLbl.Size = new System.Drawing.Size(82, 19);
-            this.PReqConfirmLbl.TabIndex = 33;
-            this.PReqConfirmLbl.Text = "Installation";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(277, 27);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 19);
+            this.label3.TabIndex = 40;
+            this.label3.Text = "SUV";
             // 
-            // label91
+            // label4
             // 
-            this.label91.AutoSize = true;
-            this.label91.Location = new System.Drawing.Point(29, 27);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(149, 19);
-            this.label91.TabIndex = 23;
-            this.label91.Text = "Project Request Type:";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(22, 27);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(149, 19);
+            this.label4.TabIndex = 39;
+            this.label4.Text = "Update Vehicle Type: ";
             // 
             // tabPage3
             // 
@@ -252,34 +281,35 @@
             // 
             // label99
             // 
+            this.label99.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label99.AutoSize = true;
             this.label99.Font = new System.Drawing.Font("Calibri", 18F);
-            this.label99.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.label99.Location = new System.Drawing.Point(18, 55);
+            this.label99.Location = new System.Drawing.Point(12, 55);
             this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(416, 29);
+            this.label99.Size = new System.Drawing.Size(428, 29);
             this.label99.TabIndex = 1;
-            this.label99.Text = "Project Request  Type Successfully Added";
+            this.label99.Text = "Update Vehicle Type Successfully Updated";
             // 
-            // AddProjectRequestTypePage
+            // UpdateVehicleTypePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(460, 200);
-            this.Controls.Add(this.AddProjectRequestTypeTab);
+            this.Controls.Add(this.UVehicleTypeTab);
             this.Controls.Add(this.TopBarPanel);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "AddProjectRequestTypePage";
-            this.Text = "AddProjectRequestType";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "UpdateVehicleTypePage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "UpdateVehicleTypePage";
             this.TopBarPanel.ResumeLayout(false);
             this.TopBarPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).EndInit();
-            this.AddProjectRequestTypeTab.ResumeLayout(false);
+            this.UVehicleTypeTab.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -297,17 +327,19 @@
         private System.Windows.Forms.Label Userlbl;
         private System.Windows.Forms.PictureBox MinimisePicBx;
         private System.Windows.Forms.PictureBox ClosePicBx;
-        private System.Windows.Forms.TabControl AddProjectRequestTypeTab;
+        private System.Windows.Forms.TabControl UVehicleTypeTab;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox PReqTypeTb;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Button CancelBtn;
-        private System.Windows.Forms.Button NextBtn;
+        private System.Windows.Forms.Button UpdateBtn;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button BackBtn;
         private System.Windows.Forms.Button ConfirmBtn;
-        private System.Windows.Forms.Label PReqConfirmLbl;
-        private System.Windows.Forms.Label label91;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label99;
     }

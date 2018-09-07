@@ -268,7 +268,7 @@
             this.label99.AutoSize = true;
             this.label99.Font = new System.Drawing.Font("Calibri", 20F);
             this.label99.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.label99.Location = new System.Drawing.Point(21, 28);
+            this.label99.Location = new System.Drawing.Point(42, 53);
             this.label99.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label99.Name = "label99";
             this.label99.Size = new System.Drawing.Size(369, 33);

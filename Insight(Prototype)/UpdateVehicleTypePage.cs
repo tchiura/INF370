@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Insight_Prototype_
 {
-    public partial class AddProjectRequestPage : Form
+    public partial class UpdateVehicleTypePage : Form
     {
-        public AddProjectRequestPage()
+        public UpdateVehicleTypePage()
         {
             InitializeComponent();
-        }
-
-        private void APRNextBtn_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

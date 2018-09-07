@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.TopBarPanel = new System.Windows.Forms.Panel();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.Userlbl = new System.Windows.Forms.Label();
             this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
-            this.AddSupplierPanel = new System.Windows.Forms.TabControl();
+            this.AddSupplierTab = new System.Windows.Forms.TabControl();
             this.tabPage23 = new System.Windows.Forms.TabPage();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.AddL2Tb = new System.Windows.Forms.TextBox();
@@ -44,14 +45,17 @@
             this.AddL3Tb = new System.Windows.Forms.TextBox();
             this.label175 = new System.Windows.Forms.Label();
             this.CountryCmb = new System.Windows.Forms.ComboBox();
+            this.countryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.insightDataSet = new Insight_Prototype_.InsightDataSet();
             this.label176 = new System.Windows.Forms.Label();
             this.CityCmb = new System.Windows.Forms.ComboBox();
+            this.cityBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label187 = new System.Windows.Forms.Label();
             this.label191 = new System.Windows.Forms.Label();
             this.CancelBtn = new System.Windows.Forms.Button();
             this.NextBtn = new System.Windows.Forms.Button();
             this.EmailTb = new System.Windows.Forms.TextBox();
-            this.NumberTb = new System.Windows.Forms.TextBox();
+            this.JobDecrTb = new System.Windows.Forms.TextBox();
             this.CPNameTb = new System.Windows.Forms.TextBox();
             this.SupplierNameTb = new System.Windows.Forms.TextBox();
             this.label195 = new System.Windows.Forms.Label();
@@ -84,16 +88,28 @@
             this.EmailLbl = new System.Windows.Forms.Label();
             this.tabPage25 = new System.Windows.Forms.TabPage();
             this.label223 = new System.Windows.Forms.Label();
+            this.cityTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.CityTableAdapter();
+            this.countryTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.CountryTableAdapter();
+            this.contactPersonBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.contactPersonTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.ContactPersonTableAdapter();
+            this.label1 = new System.Windows.Forms.Label();
+            this.NumberTb = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.JobDescrLbl = new System.Windows.Forms.Label();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
-            this.AddSupplierPanel.SuspendLayout();
+            this.AddSupplierTab.SuspendLayout();
             this.tabPage23.SuspendLayout();
             this.groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.countryBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cityBindingSource)).BeginInit();
             this.tabPage24.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.tabPage25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.contactPersonBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // TopBarPanel
@@ -155,28 +171,30 @@
             this.ClosePicBx.TabIndex = 0;
             this.ClosePicBx.TabStop = false;
             // 
-            // AddSupplierPanel
+            // AddSupplierTab
             // 
-            this.AddSupplierPanel.Controls.Add(this.tabPage23);
-            this.AddSupplierPanel.Controls.Add(this.tabPage24);
-            this.AddSupplierPanel.Controls.Add(this.tabPage25);
-            this.AddSupplierPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddSupplierPanel.Location = new System.Drawing.Point(0, 29);
-            this.AddSupplierPanel.Name = "AddSupplierPanel";
-            this.AddSupplierPanel.SelectedIndex = 0;
-            this.AddSupplierPanel.Size = new System.Drawing.Size(500, 561);
-            this.AddSupplierPanel.TabIndex = 86;
+            this.AddSupplierTab.Controls.Add(this.tabPage23);
+            this.AddSupplierTab.Controls.Add(this.tabPage24);
+            this.AddSupplierTab.Controls.Add(this.tabPage25);
+            this.AddSupplierTab.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AddSupplierTab.Location = new System.Drawing.Point(0, 29);
+            this.AddSupplierTab.Name = "AddSupplierTab";
+            this.AddSupplierTab.SelectedIndex = 0;
+            this.AddSupplierTab.Size = new System.Drawing.Size(500, 594);
+            this.AddSupplierTab.TabIndex = 86;
             // 
             // tabPage23
             // 
             this.tabPage23.BackColor = System.Drawing.Color.White;
+            this.tabPage23.Controls.Add(this.label1);
+            this.tabPage23.Controls.Add(this.NumberTb);
             this.tabPage23.Controls.Add(this.groupBox10);
             this.tabPage23.Controls.Add(this.label187);
             this.tabPage23.Controls.Add(this.label191);
             this.tabPage23.Controls.Add(this.CancelBtn);
             this.tabPage23.Controls.Add(this.NextBtn);
             this.tabPage23.Controls.Add(this.EmailTb);
-            this.tabPage23.Controls.Add(this.NumberTb);
+            this.tabPage23.Controls.Add(this.JobDecrTb);
             this.tabPage23.Controls.Add(this.CPNameTb);
             this.tabPage23.Controls.Add(this.SupplierNameTb);
             this.tabPage23.Controls.Add(this.label195);
@@ -187,7 +205,7 @@
             this.tabPage23.Location = new System.Drawing.Point(4, 28);
             this.tabPage23.Name = "tabPage23";
             this.tabPage23.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage23.Size = new System.Drawing.Size(492, 529);
+            this.tabPage23.Size = new System.Drawing.Size(492, 562);
             this.tabPage23.TabIndex = 0;
             this.tabPage23.Text = "Details";
             // 
@@ -203,7 +221,7 @@
             this.groupBox10.Controls.Add(this.CountryCmb);
             this.groupBox10.Controls.Add(this.label176);
             this.groupBox10.Controls.Add(this.CityCmb);
-            this.groupBox10.Location = new System.Drawing.Point(28, 236);
+            this.groupBox10.Location = new System.Drawing.Point(28, 275);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(456, 243);
             this.groupBox10.TabIndex = 41;
@@ -272,13 +290,23 @@
             // 
             // CountryCmb
             // 
+            this.CountryCmb.DataSource = this.countryBindingSource;
+            this.CountryCmb.DisplayMember = "CountryName";
             this.CountryCmb.FormattingEnabled = true;
-            this.CountryCmb.Items.AddRange(new object[] {
-            "South Africa"});
             this.CountryCmb.Location = new System.Drawing.Point(195, 194);
             this.CountryCmb.Name = "CountryCmb";
             this.CountryCmb.Size = new System.Drawing.Size(245, 27);
             this.CountryCmb.TabIndex = 29;
+            // 
+            // countryBindingSource
+            // 
+            this.countryBindingSource.DataMember = "Country";
+            this.countryBindingSource.DataSource = this.insightDataSet;
+            // 
+            // insightDataSet
+            // 
+            this.insightDataSet.DataSetName = "InsightDataSet";
+            this.insightDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label176
             // 
@@ -291,18 +319,23 @@
             // 
             // CityCmb
             // 
+            this.CityCmb.DataSource = this.cityBindingSource;
+            this.CityCmb.DisplayMember = "Name";
             this.CityCmb.FormattingEnabled = true;
-            this.CityCmb.Items.AddRange(new object[] {
-            "Johannesburg"});
             this.CityCmb.Location = new System.Drawing.Point(195, 151);
             this.CityCmb.Name = "CityCmb";
             this.CityCmb.Size = new System.Drawing.Size(245, 27);
             this.CityCmb.TabIndex = 28;
             // 
+            // cityBindingSource
+            // 
+            this.cityBindingSource.DataMember = "City";
+            this.cityBindingSource.DataSource = this.insightDataSet;
+            // 
             // label187
             // 
             this.label187.AutoSize = true;
-            this.label187.Location = new System.Drawing.Point(24, 199);
+            this.label187.Location = new System.Drawing.Point(24, 245);
             this.label187.Name = "label187";
             this.label187.Size = new System.Drawing.Size(105, 19);
             this.label187.TabIndex = 37;
@@ -313,16 +346,16 @@
             this.label191.AutoSize = true;
             this.label191.Location = new System.Drawing.Point(24, 154);
             this.label191.Name = "label191";
-            this.label191.Size = new System.Drawing.Size(108, 19);
+            this.label191.Size = new System.Drawing.Size(112, 19);
             this.label191.TabIndex = 33;
-            this.label191.Text = "Phone Number:";
+            this.label191.Text = "Job Description:";
             // 
             // CancelBtn
             // 
             this.CancelBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.CancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CancelBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelBtn.Location = new System.Drawing.Point(328, 491);
+            this.CancelBtn.Location = new System.Drawing.Point(328, 524);
             this.CancelBtn.Name = "CancelBtn";
             this.CancelBtn.Size = new System.Drawing.Size(75, 30);
             this.CancelBtn.TabIndex = 31;
@@ -335,7 +368,7 @@
             this.NextBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.NextBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.NextBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NextBtn.Location = new System.Drawing.Point(409, 491);
+            this.NextBtn.Location = new System.Drawing.Point(409, 524);
             this.NextBtn.Name = "NextBtn";
             this.NextBtn.Size = new System.Drawing.Size(75, 30);
             this.NextBtn.TabIndex = 30;
@@ -345,17 +378,17 @@
             // 
             // EmailTb
             // 
-            this.EmailTb.Location = new System.Drawing.Point(223, 191);
+            this.EmailTb.Location = new System.Drawing.Point(223, 237);
             this.EmailTb.Name = "EmailTb";
             this.EmailTb.Size = new System.Drawing.Size(245, 27);
             this.EmailTb.TabIndex = 24;
             // 
-            // NumberTb
+            // JobDecrTb
             // 
-            this.NumberTb.Location = new System.Drawing.Point(223, 146);
-            this.NumberTb.Name = "NumberTb";
-            this.NumberTb.Size = new System.Drawing.Size(245, 27);
-            this.NumberTb.TabIndex = 22;
+            this.JobDecrTb.Location = new System.Drawing.Point(223, 146);
+            this.JobDecrTb.Name = "JobDecrTb";
+            this.JobDecrTb.Size = new System.Drawing.Size(245, 27);
+            this.JobDecrTb.TabIndex = 22;
             // 
             // CPNameTb
             // 
@@ -401,6 +434,12 @@
             // TitleCmb
             // 
             this.TitleCmb.FormattingEnabled = true;
+            this.TitleCmb.Items.AddRange(new object[] {
+            "Mr",
+            "Mrs",
+            "Miss",
+            "Dr",
+            "Prof"});
             this.TitleCmb.Location = new System.Drawing.Point(223, 17);
             this.TitleCmb.Name = "TitleCmb";
             this.TitleCmb.Size = new System.Drawing.Size(245, 27);
@@ -409,6 +448,8 @@
             // tabPage24
             // 
             this.tabPage24.BackColor = System.Drawing.Color.White;
+            this.tabPage24.Controls.Add(this.label2);
+            this.tabPage24.Controls.Add(this.JobDescrLbl);
             this.tabPage24.Controls.Add(this.groupBox11);
             this.tabPage24.Controls.Add(this.label188);
             this.tabPage24.Controls.Add(this.label189);
@@ -426,7 +467,7 @@
             this.tabPage24.Location = new System.Drawing.Point(4, 28);
             this.tabPage24.Name = "tabPage24";
             this.tabPage24.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage24.Size = new System.Drawing.Size(492, 529);
+            this.tabPage24.Size = new System.Drawing.Size(492, 562);
             this.tabPage24.TabIndex = 1;
             this.tabPage24.Text = "Confirmation";
             // 
@@ -442,7 +483,7 @@
             this.groupBox11.Controls.Add(this.CountryLbl);
             this.groupBox11.Controls.Add(this.CityLbl);
             this.groupBox11.Controls.Add(this.Add1Lbl);
-            this.groupBox11.Location = new System.Drawing.Point(20, 221);
+            this.groupBox11.Location = new System.Drawing.Point(20, 275);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(453, 243);
             this.groupBox11.TabIndex = 66;
@@ -542,7 +583,7 @@
             // label188
             // 
             this.label188.AutoSize = true;
-            this.label188.Location = new System.Drawing.Point(17, 189);
+            this.label188.Location = new System.Drawing.Point(17, 218);
             this.label188.Name = "label188";
             this.label188.Size = new System.Drawing.Size(105, 19);
             this.label188.TabIndex = 55;
@@ -551,7 +592,7 @@
             // label189
             // 
             this.label189.AutoSize = true;
-            this.label189.Location = new System.Drawing.Point(17, 144);
+            this.label189.Location = new System.Drawing.Point(17, 180);
             this.label189.Name = "label189";
             this.label189.Size = new System.Drawing.Size(108, 19);
             this.label189.TabIndex = 54;
@@ -589,24 +630,26 @@
             this.BackBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.BackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BackBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BackBtn.Location = new System.Drawing.Point(328, 491);
+            this.BackBtn.Location = new System.Drawing.Point(328, 524);
             this.BackBtn.Name = "BackBtn";
             this.BackBtn.Size = new System.Drawing.Size(75, 30);
             this.BackBtn.TabIndex = 37;
             this.BackBtn.Text = "Back";
             this.BackBtn.UseVisualStyleBackColor = true;
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
             // ConfirmBtn
             // 
             this.ConfirmBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.ConfirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ConfirmBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConfirmBtn.Location = new System.Drawing.Point(409, 491);
+            this.ConfirmBtn.Location = new System.Drawing.Point(409, 524);
             this.ConfirmBtn.Name = "ConfirmBtn";
             this.ConfirmBtn.Size = new System.Drawing.Size(75, 30);
             this.ConfirmBtn.TabIndex = 36;
             this.ConfirmBtn.Text = "Confirm";
             this.ConfirmBtn.UseVisualStyleBackColor = true;
+            this.ConfirmBtn.Click += new System.EventHandler(this.ConfirmBtn_Click);
             // 
             // TitleLbl
             // 
@@ -638,7 +681,7 @@
             // NumberLbl
             // 
             this.NumberLbl.AutoSize = true;
-            this.NumberLbl.Location = new System.Drawing.Point(288, 144);
+            this.NumberLbl.Location = new System.Drawing.Point(288, 180);
             this.NumberLbl.Name = "NumberLbl";
             this.NumberLbl.Size = new System.Drawing.Size(97, 19);
             this.NumberLbl.TabIndex = 27;
@@ -647,7 +690,7 @@
             // EmailLbl
             // 
             this.EmailLbl.AutoSize = true;
-            this.EmailLbl.Location = new System.Drawing.Point(288, 187);
+            this.EmailLbl.Location = new System.Drawing.Point(288, 216);
             this.EmailLbl.Name = "EmailLbl";
             this.EmailLbl.Size = new System.Drawing.Size(122, 19);
             this.EmailLbl.TabIndex = 26;
@@ -676,13 +719,64 @@
             this.label223.TabIndex = 1;
             this.label223.Text = "Supplier Successfully Added";
             // 
+            // cityTableAdapter
+            // 
+            this.cityTableAdapter.ClearBeforeFill = true;
+            // 
+            // countryTableAdapter
+            // 
+            this.countryTableAdapter.ClearBeforeFill = true;
+            // 
+            // contactPersonBindingSource
+            // 
+            this.contactPersonBindingSource.DataMember = "ContactPerson";
+            this.contactPersonBindingSource.DataSource = this.insightDataSet;
+            // 
+            // contactPersonTableAdapter
+            // 
+            this.contactPersonTableAdapter.ClearBeforeFill = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(24, 199);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(108, 19);
+            this.label1.TabIndex = 43;
+            this.label1.Text = "Phone Number:";
+            // 
+            // NumberTb
+            // 
+            this.NumberTb.Location = new System.Drawing.Point(223, 191);
+            this.NumberTb.Name = "NumberTb";
+            this.NumberTb.Size = new System.Drawing.Size(245, 27);
+            this.NumberTb.TabIndex = 42;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(17, 141);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(108, 19);
+            this.label2.TabIndex = 68;
+            this.label2.Text = "Phone Number:";
+            // 
+            // JobDescrLbl
+            // 
+            this.JobDescrLbl.AutoSize = true;
+            this.JobDescrLbl.Location = new System.Drawing.Point(288, 141);
+            this.JobDescrLbl.Name = "JobDescrLbl";
+            this.JobDescrLbl.Size = new System.Drawing.Size(67, 19);
+            this.JobDescrLbl.TabIndex = 67;
+            this.JobDescrLbl.Text = "Manager";
+            // 
             // AddSupplierPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(500, 590);
-            this.Controls.Add(this.AddSupplierPanel);
+            this.ClientSize = new System.Drawing.Size(500, 623);
+            this.Controls.Add(this.AddSupplierTab);
             this.Controls.Add(this.TopBarPanel);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -690,22 +784,27 @@
             this.Name = "AddSupplierPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddSupplierPage";
+            this.Load += new System.EventHandler(this.AddSupplierPage_Load);
             this.TopBarPanel.ResumeLayout(false);
             this.TopBarPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).EndInit();
-            this.AddSupplierPanel.ResumeLayout(false);
+            this.AddSupplierTab.ResumeLayout(false);
             this.tabPage23.ResumeLayout(false);
             this.tabPage23.PerformLayout();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.countryBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cityBindingSource)).EndInit();
             this.tabPage24.ResumeLayout(false);
             this.tabPage24.PerformLayout();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
             this.tabPage25.ResumeLayout(false);
             this.tabPage25.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.contactPersonBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -717,7 +816,7 @@
         private System.Windows.Forms.Label Userlbl;
         private System.Windows.Forms.PictureBox MinimisePicBx;
         private System.Windows.Forms.PictureBox ClosePicBx;
-        private System.Windows.Forms.TabControl AddSupplierPanel;
+        private System.Windows.Forms.TabControl AddSupplierTab;
         private System.Windows.Forms.TabPage tabPage23;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.TextBox AddL2Tb;
@@ -735,7 +834,7 @@
         private System.Windows.Forms.Button CancelBtn;
         private System.Windows.Forms.Button NextBtn;
         private System.Windows.Forms.TextBox EmailTb;
-        private System.Windows.Forms.TextBox NumberTb;
+        private System.Windows.Forms.TextBox JobDecrTb;
         private System.Windows.Forms.TextBox CPNameTb;
         private System.Windows.Forms.TextBox SupplierNameTb;
         private System.Windows.Forms.Label label195;
@@ -768,5 +867,16 @@
         private System.Windows.Forms.Label EmailLbl;
         private System.Windows.Forms.TabPage tabPage25;
         private System.Windows.Forms.Label label223;
+        private InsightDataSet insightDataSet;
+        private System.Windows.Forms.BindingSource cityBindingSource;
+        private InsightDataSetTableAdapters.CityTableAdapter cityTableAdapter;
+        private System.Windows.Forms.BindingSource countryBindingSource;
+        private InsightDataSetTableAdapters.CountryTableAdapter countryTableAdapter;
+        private System.Windows.Forms.BindingSource contactPersonBindingSource;
+        private InsightDataSetTableAdapters.ContactPersonTableAdapter contactPersonTableAdapter;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox NumberTb;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label JobDescrLbl;
     }
 }

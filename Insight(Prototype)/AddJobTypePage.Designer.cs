@@ -35,6 +35,12 @@
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
             this.AddJobTypeTab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.AddedSkillList = new System.Windows.Forms.ListBox();
+            this.SkillList = new System.Windows.Forms.ListBox();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
             this.AJTypeTb = new System.Windows.Forms.TextBox();
             this.AJTCancelBtn = new System.Windows.Forms.Button();
             this.AJTNextBtn = new System.Windows.Forms.Button();
@@ -46,6 +52,8 @@
             this.label91 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label99 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
@@ -79,14 +87,14 @@
             this.TopBarPanel.Location = new System.Drawing.Point(0, 0);
             this.TopBarPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TopBarPanel.Name = "TopBarPanel";
-            this.TopBarPanel.Size = new System.Drawing.Size(460, 30);
+            this.TopBarPanel.Size = new System.Drawing.Size(986, 30);
             this.TopBarPanel.TabIndex = 12;
             // 
             // pictureBox14
             // 
             this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBox14.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
-            this.pictureBox14.Location = new System.Drawing.Point(376, 0);
+            this.pictureBox14.Location = new System.Drawing.Point(902, 0);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(28, 30);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -97,7 +105,7 @@
             // 
             this.MinimisePicBx.Dock = System.Windows.Forms.DockStyle.Right;
             this.MinimisePicBx.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
-            this.MinimisePicBx.Location = new System.Drawing.Point(404, 0);
+            this.MinimisePicBx.Location = new System.Drawing.Point(930, 0);
             this.MinimisePicBx.Name = "MinimisePicBx";
             this.MinimisePicBx.Size = new System.Drawing.Size(28, 30);
             this.MinimisePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -108,7 +116,7 @@
             // 
             this.ClosePicBx.Dock = System.Windows.Forms.DockStyle.Right;
             this.ClosePicBx.Image = global::Insight_Prototype_.Properties.Resources.Cancel_100px2;
-            this.ClosePicBx.Location = new System.Drawing.Point(432, 0);
+            this.ClosePicBx.Location = new System.Drawing.Point(958, 0);
             this.ClosePicBx.Name = "ClosePicBx";
             this.ClosePicBx.Size = new System.Drawing.Size(28, 30);
             this.ClosePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -125,12 +133,18 @@
             this.AddJobTypeTab.Margin = new System.Windows.Forms.Padding(4);
             this.AddJobTypeTab.Name = "AddJobTypeTab";
             this.AddJobTypeTab.SelectedIndex = 0;
-            this.AddJobTypeTab.Size = new System.Drawing.Size(460, 384);
+            this.AddJobTypeTab.Size = new System.Drawing.Size(986, 474);
             this.AddJobTypeTab.TabIndex = 14;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.Controls.Add(this.AddedSkillList);
+            this.tabPage1.Controls.Add(this.SkillList);
+            this.tabPage1.Controls.Add(this.button21);
+            this.tabPage1.Controls.Add(this.button20);
+            this.tabPage1.Controls.Add(this.label55);
+            this.tabPage1.Controls.Add(this.label54);
             this.tabPage1.Controls.Add(this.AJTypeTb);
             this.tabPage1.Controls.Add(this.AJTCancelBtn);
             this.tabPage1.Controls.Add(this.AJTNextBtn);
@@ -140,13 +154,69 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(452, 352);
+            this.tabPage1.Size = new System.Drawing.Size(978, 442);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Details";
             // 
+            // AddedSkillList
+            // 
+            this.AddedSkillList.FormattingEnabled = true;
+            this.AddedSkillList.ItemHeight = 19;
+            this.AddedSkillList.Location = new System.Drawing.Point(630, 73);
+            this.AddedSkillList.Name = "AddedSkillList";
+            this.AddedSkillList.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.AddedSkillList.Size = new System.Drawing.Size(325, 308);
+            this.AddedSkillList.TabIndex = 60;
+            // 
+            // SkillList
+            // 
+            this.SkillList.FormattingEnabled = true;
+            this.SkillList.ItemHeight = 19;
+            this.SkillList.Location = new System.Drawing.Point(29, 74);
+            this.SkillList.Name = "SkillList";
+            this.SkillList.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.SkillList.Size = new System.Drawing.Size(325, 308);
+            this.SkillList.TabIndex = 59;
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(452, 245);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(103, 30);
+            this.button21.TabIndex = 58;
+            this.button21.Text = "Remove Skill";
+            this.button21.UseVisualStyleBackColor = true;
+            // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(452, 179);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(103, 30);
+            this.button20.TabIndex = 57;
+            this.button20.Text = "Add Skill";
+            this.button20.UseVisualStyleBackColor = true;
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(626, 49);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(87, 19);
+            this.label55.TabIndex = 56;
+            this.label55.Text = "Added Skills";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(25, 52);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(42, 19);
+            this.label54.TabIndex = 55;
+            this.label54.Text = "Skills";
+            // 
             // AJTypeTb
             // 
-            this.AJTypeTb.Location = new System.Drawing.Point(170, 25);
+            this.AJTypeTb.Location = new System.Drawing.Point(170, 19);
             this.AJTypeTb.Margin = new System.Windows.Forms.Padding(4);
             this.AJTypeTb.Name = "AJTypeTb";
             this.AJTypeTb.Size = new System.Drawing.Size(245, 27);
@@ -157,7 +227,7 @@
             // 
             this.AJTCancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AJTCancelBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AJTCancelBtn.Location = new System.Drawing.Point(286, 99);
+            this.AJTCancelBtn.Location = new System.Drawing.Point(797, 402);
             this.AJTCancelBtn.Margin = new System.Windows.Forms.Padding(4);
             this.AJTCancelBtn.Name = "AJTCancelBtn";
             this.AJTCancelBtn.Size = new System.Drawing.Size(75, 30);
@@ -170,7 +240,7 @@
             // 
             this.AJTNextBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AJTNextBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AJTNextBtn.Location = new System.Drawing.Point(369, 100);
+            this.AJTNextBtn.Location = new System.Drawing.Point(880, 403);
             this.AJTNextBtn.Margin = new System.Windows.Forms.Padding(4);
             this.AJTNextBtn.Name = "AJTNextBtn";
             this.AJTNextBtn.Size = new System.Drawing.Size(75, 30);
@@ -182,7 +252,7 @@
             // label58
             // 
             this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(25, 25);
+            this.label58.Location = new System.Drawing.Point(25, 19);
             this.label58.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(72, 19);
@@ -192,6 +262,8 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
+            this.tabPage2.Controls.Add(this.listBox1);
+            this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Controls.Add(this.AJTBackBtn);
             this.tabPage2.Controls.Add(this.AJTConfirmBtn);
             this.tabPage2.Controls.Add(this.AJTConfirmLbl);
@@ -201,7 +273,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(452, 138);
+            this.tabPage2.Size = new System.Drawing.Size(978, 442);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Confirmation";
             // 
@@ -209,7 +281,7 @@
             // 
             this.AJTBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AJTBackBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AJTBackBtn.Location = new System.Drawing.Point(286, 100);
+            this.AJTBackBtn.Location = new System.Drawing.Point(811, 403);
             this.AJTBackBtn.Margin = new System.Windows.Forms.Padding(4);
             this.AJTBackBtn.Name = "AJTBackBtn";
             this.AJTBackBtn.Size = new System.Drawing.Size(75, 30);
@@ -222,7 +294,7 @@
             // 
             this.AJTConfirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AJTConfirmBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AJTConfirmBtn.Location = new System.Drawing.Point(369, 100);
+            this.AJTConfirmBtn.Location = new System.Drawing.Point(894, 403);
             this.AJTConfirmBtn.Margin = new System.Windows.Forms.Padding(4);
             this.AJTConfirmBtn.Name = "AJTConfirmBtn";
             this.AJTConfirmBtn.Size = new System.Drawing.Size(75, 30);
@@ -237,9 +309,9 @@
             this.AJTConfirmLbl.Location = new System.Drawing.Point(220, 30);
             this.AJTConfirmLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.AJTConfirmLbl.Name = "AJTConfirmLbl";
-            this.AJTConfirmLbl.Size = new System.Drawing.Size(93, 19);
+            this.AJTConfirmLbl.Size = new System.Drawing.Size(116, 19);
             this.AJTConfirmLbl.TabIndex = 33;
-            this.AJTConfirmLbl.Text = "Organisation";
+            this.AJTConfirmLbl.Text = "Installing Router";
             // 
             // label91
             // 
@@ -259,7 +331,7 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Size = new System.Drawing.Size(452, 138);
+            this.tabPage3.Size = new System.Drawing.Size(978, 442);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Complete";
             // 
@@ -268,19 +340,38 @@
             this.label99.AutoSize = true;
             this.label99.Font = new System.Drawing.Font("Calibri", 20F);
             this.label99.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.label99.Location = new System.Drawing.Point(66, 53);
+            this.label99.Location = new System.Drawing.Point(329, 205);
             this.label99.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label99.Name = "label99";
             this.label99.Size = new System.Drawing.Size(321, 33);
             this.label99.TabIndex = 1;
             this.label99.Text = "Job Type Successfully Added";
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 19;
+            this.listBox1.Location = new System.Drawing.Point(30, 96);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.listBox1.Size = new System.Drawing.Size(325, 308);
+            this.listBox1.TabIndex = 62;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(26, 72);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 19);
+            this.label1.TabIndex = 61;
+            this.label1.Text = "Added Skills";
+            // 
             // AddJobTypePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(460, 414);
+            this.ClientSize = new System.Drawing.Size(986, 504);
             this.Controls.Add(this.AddJobTypeTab);
             this.Controls.Add(this.TopBarPanel);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -324,5 +415,13 @@
         private System.Windows.Forms.Label label91;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label99;
+        private System.Windows.Forms.ListBox AddedSkillList;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.ListBox SkillList;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

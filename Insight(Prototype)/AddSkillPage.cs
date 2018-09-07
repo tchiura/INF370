@@ -40,9 +40,7 @@ namespace Insight_Prototype_
 
         private void ASCancelBtn_Click(object sender, EventArgs e)
         {
-            Form Home = new HomeScreen();
-            Home.Show();
-            this.Show();
+            this.Close();
         }
 
         private void ASBackBtn_Click(object sender, EventArgs e)
@@ -60,8 +58,8 @@ namespace Insight_Prototype_
             {
                 db.Skills.Add(InsightSkill);
                 db.SaveChanges();
-                AddSkillTab.SelectedIndex = 2;
             }
+            AddSkillTab.SelectedIndex = 2;
         }
     }
 }
