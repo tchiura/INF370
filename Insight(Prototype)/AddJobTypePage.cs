@@ -23,6 +23,7 @@ namespace Insight_Prototype_
         private void button22_Click(object sender, EventArgs e)
         {
             string JT = AJTypeTb.Text;
+
             if(JT == "")
             {
                 MessageBox.Show("Please enter a valid Job Type.");
