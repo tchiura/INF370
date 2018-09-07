@@ -22,6 +22,7 @@ namespace Insight_Prototype_
             AddClientDetailsTab.Appearance = TabAppearance.FlatButtons;
             AddVehiclePanel.Appearance = TabAppearance.FlatButtons;
             //AddVehiclePanel.
+
             //AddClientDetailsTab.c
 
         }
