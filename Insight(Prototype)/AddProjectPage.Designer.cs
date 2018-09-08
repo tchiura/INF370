@@ -28,48 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Userlbl = new System.Windows.Forms.Label();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.phaseDetail = new System.Windows.Forms.RichTextBox();
+            this.phasetypecbx = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.jobDetail = new System.Windows.Forms.RichTextBox();
+            this.jobTypecbx = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.jobEnd = new System.Windows.Forms.DateTimePicker();
+            this.jobStart = new System.Windows.Forms.DateTimePicker();
+            this.jobgp = new System.Windows.Forms.GroupBox();
+            this.phaseEnd = new System.Windows.Forms.DateTimePicker();
             this.TopBarPanel = new System.Windows.Forms.Panel();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.phaseStart = new System.Windows.Forms.DateTimePicker();
             this.button8 = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.phasegb = new System.Windows.Forms.GroupBox();
+            this.phasenum = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.projectDetail = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.endDate = new System.Windows.Forms.DateTimePicker();
+            this.startDate = new System.Windows.Forms.DateTimePicker();
+            this.projectgb = new System.Windows.Forms.GroupBox();
+            this.insightDataSet = new Insight_Prototype_.InsightDataSet();
+            this.projectPhaseTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.projectPhaseTypeTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.ProjectPhaseTypeTableAdapter();
+            this.jobTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.jobTypeTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.JobTypeTableAdapter();
+            this.jobnum = new System.Windows.Forms.NumericUpDown();
+            this.label13 = new System.Windows.Forms.Label();
+            this.jobnumlbl = new System.Windows.Forms.Label();
+            this.phasenumlbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
-            this.groupBox4.SuspendLayout();
+            this.jobgp.SuspendLayout();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.phasegb.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.phasenum)).BeginInit();
+            this.projectgb.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projectPhaseTypeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jobTypeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jobnum)).BeginInit();
             this.SuspendLayout();
             // 
             // Userlbl
@@ -94,22 +108,24 @@
             this.ClosePicBx.TabStop = false;
             this.ClosePicBx.Click += new System.EventHandler(this.ClosePicBx_Click);
             // 
-            // richTextBox1
+            // phaseDetail
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(142, 30);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(245, 143);
-            this.richTextBox1.TabIndex = 56;
-            this.richTextBox1.Text = "";
+            this.phaseDetail.Location = new System.Drawing.Point(142, 30);
+            this.phaseDetail.Name = "phaseDetail";
+            this.phaseDetail.Size = new System.Drawing.Size(245, 143);
+            this.phaseDetail.TabIndex = 56;
+            this.phaseDetail.Text = "";
             // 
-            // comboBox1
+            // phasetypecbx
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(142, 290);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(245, 27);
-            this.comboBox1.TabIndex = 55;
-            this.comboBox1.Text = "Cleaning";
+            this.phasetypecbx.DataSource = this.projectPhaseTypeBindingSource;
+            this.phasetypecbx.DisplayMember = "ProjectPhaseTypeDescription";
+            this.phasetypecbx.FormattingEnabled = true;
+            this.phasetypecbx.Location = new System.Drawing.Point(142, 290);
+            this.phasetypecbx.Name = "phasetypecbx";
+            this.phasetypecbx.Size = new System.Drawing.Size(245, 27);
+            this.phasetypecbx.TabIndex = 55;
+            this.phasetypecbx.ValueMember = "ProjectPhaseTypeID";
             // 
             // label4
             // 
@@ -165,29 +181,32 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.button1.Location = new System.Drawing.Point(1199, 388);
+            this.button1.Location = new System.Drawing.Point(1199, 428);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 30);
             this.button1.TabIndex = 51;
             this.button1.Text = "Next";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // richTextBox2
+            // jobDetail
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(147, 30);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(245, 143);
-            this.richTextBox2.TabIndex = 62;
-            this.richTextBox2.Text = "";
+            this.jobDetail.Location = new System.Drawing.Point(147, 30);
+            this.jobDetail.Name = "jobDetail";
+            this.jobDetail.Size = new System.Drawing.Size(245, 143);
+            this.jobDetail.TabIndex = 62;
+            this.jobDetail.Text = "";
             // 
-            // comboBox3
+            // jobTypecbx
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(147, 290);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(245, 27);
-            this.comboBox3.TabIndex = 61;
-            this.comboBox3.Text = "Cleaning";
+            this.jobTypecbx.DataSource = this.jobTypeBindingSource;
+            this.jobTypecbx.DisplayMember = "JobTypeDescription";
+            this.jobTypecbx.FormattingEnabled = true;
+            this.jobTypecbx.Location = new System.Drawing.Point(147, 290);
+            this.jobTypecbx.Name = "jobTypecbx";
+            this.jobTypecbx.Size = new System.Drawing.Size(245, 27);
+            this.jobTypecbx.TabIndex = 61;
+            this.jobTypecbx.ValueMember = "JobTypeID";
             // 
             // label12
             // 
@@ -225,45 +244,45 @@
             this.label11.TabIndex = 54;
             this.label11.Text = "End Date:";
             // 
-            // dateTimePicker5
+            // jobEnd
             // 
-            this.dateTimePicker5.Location = new System.Drawing.Point(147, 243);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(245, 27);
-            this.dateTimePicker5.TabIndex = 57;
-            this.dateTimePicker5.Value = new System.DateTime(2018, 5, 6, 23, 19, 0, 0);
+            this.jobEnd.Location = new System.Drawing.Point(147, 243);
+            this.jobEnd.Name = "jobEnd";
+            this.jobEnd.Size = new System.Drawing.Size(245, 27);
+            this.jobEnd.TabIndex = 57;
+            this.jobEnd.Value = new System.DateTime(2018, 5, 6, 23, 19, 0, 0);
             // 
-            // dateTimePicker6
+            // jobStart
             // 
-            this.dateTimePicker6.Location = new System.Drawing.Point(147, 199);
-            this.dateTimePicker6.Name = "dateTimePicker6";
-            this.dateTimePicker6.Size = new System.Drawing.Size(245, 27);
-            this.dateTimePicker6.TabIndex = 56;
-            this.dateTimePicker6.Value = new System.DateTime(2018, 5, 6, 23, 19, 0, 0);
+            this.jobStart.Location = new System.Drawing.Point(147, 199);
+            this.jobStart.Name = "jobStart";
+            this.jobStart.Size = new System.Drawing.Size(245, 27);
+            this.jobStart.TabIndex = 56;
+            this.jobStart.Value = new System.DateTime(2018, 5, 6, 23, 19, 0, 0);
             // 
-            // groupBox4
+            // jobgp
             // 
-            this.groupBox4.Controls.Add(this.richTextBox2);
-            this.groupBox4.Controls.Add(this.comboBox3);
-            this.groupBox4.Controls.Add(this.label12);
-            this.groupBox4.Controls.Add(this.label9);
-            this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Controls.Add(this.label11);
-            this.groupBox4.Controls.Add(this.dateTimePicker5);
-            this.groupBox4.Controls.Add(this.dateTimePicker6);
-            this.groupBox4.Location = new System.Drawing.Point(864, 51);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(410, 330);
-            this.groupBox4.TabIndex = 48;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Job Details";
+            this.jobgp.Controls.Add(this.jobDetail);
+            this.jobgp.Controls.Add(this.jobTypecbx);
+            this.jobgp.Controls.Add(this.label12);
+            this.jobgp.Controls.Add(this.label9);
+            this.jobgp.Controls.Add(this.label10);
+            this.jobgp.Controls.Add(this.label11);
+            this.jobgp.Controls.Add(this.jobEnd);
+            this.jobgp.Controls.Add(this.jobStart);
+            this.jobgp.Location = new System.Drawing.Point(864, 51);
+            this.jobgp.Name = "jobgp";
+            this.jobgp.Size = new System.Drawing.Size(410, 371);
+            this.jobgp.TabIndex = 48;
+            this.jobgp.TabStop = false;
+            this.jobgp.Text = "Job Details";
             // 
-            // dateTimePicker3
+            // phaseEnd
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(142, 243);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(245, 27);
-            this.dateTimePicker3.TabIndex = 52;
+            this.phaseEnd.Location = new System.Drawing.Point(142, 243);
+            this.phaseEnd.Name = "phaseEnd";
+            this.phaseEnd.Size = new System.Drawing.Size(245, 27);
+            this.phaseEnd.TabIndex = 52;
             // 
             // TopBarPanel
             // 
@@ -292,12 +311,12 @@
             this.pictureBox14.TabIndex = 2;
             this.pictureBox14.TabStop = false;
             // 
-            // dateTimePicker4
+            // phaseStart
             // 
-            this.dateTimePicker4.Location = new System.Drawing.Point(142, 199);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(245, 27);
-            this.dateTimePicker4.TabIndex = 51;
+            this.phaseStart.Location = new System.Drawing.Point(142, 199);
+            this.phaseStart.Name = "phaseStart";
+            this.phaseStart.Size = new System.Drawing.Size(245, 27);
+            this.phaseStart.TabIndex = 51;
             // 
             // button8
             // 
@@ -306,36 +325,48 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            this.button8.Location = new System.Drawing.Point(1118, 388);
+            this.button8.Location = new System.Drawing.Point(1118, 428);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(75, 30);
             this.button8.TabIndex = 50;
             this.button8.Text = "Back";
             this.button8.UseVisualStyleBackColor = false;
             // 
-            // groupBox3
+            // phasegb
             // 
-            this.groupBox3.Controls.Add(this.richTextBox1);
-            this.groupBox3.Controls.Add(this.comboBox1);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.label1);
-            this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.dateTimePicker3);
-            this.groupBox3.Controls.Add(this.dateTimePicker4);
-            this.groupBox3.Location = new System.Drawing.Point(437, 51);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(410, 330);
-            this.groupBox3.TabIndex = 47;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Phase Details";
+            this.phasegb.Controls.Add(this.jobnum);
+            this.phasegb.Controls.Add(this.label13);
+            this.phasegb.Controls.Add(this.phaseDetail);
+            this.phasegb.Controls.Add(this.phasetypecbx);
+            this.phasegb.Controls.Add(this.label4);
+            this.phasegb.Controls.Add(this.label1);
+            this.phasegb.Controls.Add(this.label2);
+            this.phasegb.Controls.Add(this.label3);
+            this.phasegb.Controls.Add(this.phaseEnd);
+            this.phasegb.Controls.Add(this.phaseStart);
+            this.phasegb.Location = new System.Drawing.Point(437, 51);
+            this.phasegb.Name = "phasegb";
+            this.phasegb.Size = new System.Drawing.Size(410, 371);
+            this.phasegb.TabIndex = 47;
+            this.phasegb.TabStop = false;
+            this.phasegb.Text = "Phase Details";
             // 
-            // numericUpDown1
+            // phasenum
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(148, 283);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(123, 27);
-            this.numericUpDown1.TabIndex = 66;
+            this.phasenum.Location = new System.Drawing.Point(148, 291);
+            this.phasenum.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.phasenum.Name = "phasenum";
+            this.phasenum.Size = new System.Drawing.Size(123, 27);
+            this.phasenum.TabIndex = 66;
+            this.phasenum.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label8
             // 
@@ -346,13 +377,13 @@
             this.label8.TabIndex = 65;
             this.label8.Text = "Number of Phases:";
             // 
-            // richTextBox3
+            // projectDetail
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(148, 30);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(245, 143);
-            this.richTextBox3.TabIndex = 64;
-            this.richTextBox3.Text = "";
+            this.projectDetail.Location = new System.Drawing.Point(148, 30);
+            this.projectDetail.Name = "projectDetail";
+            this.projectDetail.Size = new System.Drawing.Size(245, 143);
+            this.projectDetail.TabIndex = 64;
+            this.projectDetail.Text = "";
             // 
             // label5
             // 
@@ -381,49 +412,118 @@
             this.label7.TabIndex = 58;
             this.label7.Text = "End Date:";
             // 
-            // dateTimePicker1
+            // endDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(148, 243);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(245, 27);
-            this.dateTimePicker1.TabIndex = 61;
+            this.endDate.Location = new System.Drawing.Point(148, 243);
+            this.endDate.Name = "endDate";
+            this.endDate.Size = new System.Drawing.Size(245, 27);
+            this.endDate.TabIndex = 61;
             // 
-            // dateTimePicker2
+            // startDate
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(148, 199);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(245, 27);
-            this.dateTimePicker2.TabIndex = 60;
+            this.startDate.Location = new System.Drawing.Point(148, 199);
+            this.startDate.Name = "startDate";
+            this.startDate.Size = new System.Drawing.Size(245, 27);
+            this.startDate.TabIndex = 60;
             // 
-            // groupBox1
+            // projectgb
             // 
-            this.groupBox1.Controls.Add(this.numericUpDown1);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.richTextBox3);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.dateTimePicker2);
-            this.groupBox1.Location = new System.Drawing.Point(15, 51);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(410, 330);
-            this.groupBox1.TabIndex = 46;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Project Details";
+            this.projectgb.Controls.Add(this.phasenum);
+            this.projectgb.Controls.Add(this.label8);
+            this.projectgb.Controls.Add(this.projectDetail);
+            this.projectgb.Controls.Add(this.label5);
+            this.projectgb.Controls.Add(this.label6);
+            this.projectgb.Controls.Add(this.label7);
+            this.projectgb.Controls.Add(this.endDate);
+            this.projectgb.Controls.Add(this.startDate);
+            this.projectgb.Location = new System.Drawing.Point(15, 51);
+            this.projectgb.Name = "projectgb";
+            this.projectgb.Size = new System.Drawing.Size(410, 371);
+            this.projectgb.TabIndex = 46;
+            this.projectgb.TabStop = false;
+            this.projectgb.Text = "Project Details";
+            // 
+            // insightDataSet
+            // 
+            this.insightDataSet.DataSetName = "InsightDataSet";
+            this.insightDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // projectPhaseTypeBindingSource
+            // 
+            this.projectPhaseTypeBindingSource.DataMember = "ProjectPhaseType";
+            this.projectPhaseTypeBindingSource.DataSource = this.insightDataSet;
+            // 
+            // projectPhaseTypeTableAdapter
+            // 
+            this.projectPhaseTypeTableAdapter.ClearBeforeFill = true;
+            // 
+            // jobTypeBindingSource
+            // 
+            this.jobTypeBindingSource.DataMember = "JobType";
+            this.jobTypeBindingSource.DataSource = this.insightDataSet;
+            // 
+            // jobTypeTableAdapter
+            // 
+            this.jobTypeTableAdapter.ClearBeforeFill = true;
+            // 
+            // jobnum
+            // 
+            this.jobnum.Location = new System.Drawing.Point(142, 338);
+            this.jobnum.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.jobnum.Name = "jobnum";
+            this.jobnum.Size = new System.Drawing.Size(123, 27);
+            this.jobnum.TabIndex = 68;
+            this.jobnum.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(6, 340);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(113, 19);
+            this.label13.TabIndex = 67;
+            this.label13.Text = "Number of Jobs:";
+            // 
+            // jobnumlbl
+            // 
+            this.jobnumlbl.AutoSize = true;
+            this.jobnumlbl.Location = new System.Drawing.Point(1007, 33);
+            this.jobnumlbl.Name = "jobnumlbl";
+            this.jobnumlbl.Size = new System.Drawing.Size(85, 19);
+            this.jobnumlbl.TabIndex = 52;
+            this.jobnumlbl.Text = "Job Number";
+            // 
+            // phasenumlbl
+            // 
+            this.phasenumlbl.AutoSize = true;
+            this.phasenumlbl.Location = new System.Drawing.Point(575, 33);
+            this.phasenumlbl.Name = "phasenumlbl";
+            this.phasenumlbl.Size = new System.Drawing.Size(103, 19);
+            this.phasenumlbl.TabIndex = 53;
+            this.phasenumlbl.Text = "Phase Number";
             // 
             // AddProjectPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1297, 430);
+            this.ClientSize = new System.Drawing.Size(1297, 470);
+            this.Controls.Add(this.phasenumlbl);
+            this.Controls.Add(this.jobnumlbl);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.jobgp);
             this.Controls.Add(this.TopBarPanel);
             this.Controls.Add(this.button8);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.phasegb);
+            this.Controls.Add(this.projectgb);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -433,17 +533,22 @@
             this.Load += new System.EventHandler(this.AddProjectPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).EndInit();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
+            this.jobgp.ResumeLayout(false);
+            this.jobgp.PerformLayout();
             this.TopBarPanel.ResumeLayout(false);
             this.TopBarPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.phasegb.ResumeLayout(false);
+            this.phasegb.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.phasenum)).EndInit();
+            this.projectgb.ResumeLayout(false);
+            this.projectgb.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projectPhaseTypeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jobTypeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jobnum)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -451,37 +556,46 @@
 
         private System.Windows.Forms.Label Userlbl;
         private System.Windows.Forms.PictureBox ClosePicBx;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.RichTextBox phaseDetail;
+        private System.Windows.Forms.ComboBox phasetypecbx;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox MinimisePicBx;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.RichTextBox jobDetail;
+        private System.Windows.Forms.ComboBox jobTypecbx;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker dateTimePicker5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker6;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker jobEnd;
+        private System.Windows.Forms.DateTimePicker jobStart;
+        private System.Windows.Forms.GroupBox jobgp;
+        private System.Windows.Forms.DateTimePicker phaseEnd;
         private System.Windows.Forms.Panel TopBarPanel;
         private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private System.Windows.Forms.DateTimePicker phaseStart;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.GroupBox phasegb;
+        private System.Windows.Forms.NumericUpDown phasenum;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.RichTextBox projectDetail;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DateTimePicker endDate;
+        private System.Windows.Forms.DateTimePicker startDate;
+        private System.Windows.Forms.GroupBox projectgb;
+        private InsightDataSet insightDataSet;
+        private System.Windows.Forms.BindingSource projectPhaseTypeBindingSource;
+        private InsightDataSetTableAdapters.ProjectPhaseTypeTableAdapter projectPhaseTypeTableAdapter;
+        private System.Windows.Forms.BindingSource jobTypeBindingSource;
+        private InsightDataSetTableAdapters.JobTypeTableAdapter jobTypeTableAdapter;
+        private System.Windows.Forms.NumericUpDown jobnum;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label jobnumlbl;
+        private System.Windows.Forms.Label phasenumlbl;
     }
 }

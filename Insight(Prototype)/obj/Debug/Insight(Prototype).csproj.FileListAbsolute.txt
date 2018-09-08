@@ -261,7 +261,6 @@ C:\Users\User\Source\Repos\SharpDynamics\Insight(Prototype)\obj\Debug\Insight_Pr
 C:\Users\User\Source\Repos\SharpDynamics\Insight(Prototype)\obj\Debug\Insight_Prototype_.AssignProductPage.resources
 C:\Users\User\Source\Repos\SharpDynamics\Insight(Prototype)\obj\Debug\Insight_Prototype_.AssignVehiclePage.resources
 C:\Users\User\Source\Repos\SharpDynamics\Insight(Prototype)\obj\Debug\Insight_Prototype_.CancelPurchaseOrderPage.resources
-C:\Users\User\Source\Repos\SharpDynamics\Insight(Prototype)\obj\Debug\Insight_Prototype_.CreatePurchaseOrderPage.resources
 C:\Users\User\Source\Repos\SharpDynamics\Insight(Prototype)\obj\Debug\Insight_Prototype_.DeleteClientTypePage.resources
 C:\Users\User\Source\Repos\SharpDynamics\Insight(Prototype)\obj\Debug\Insight_Prototype_.DeleteClientPage.resources
 C:\Users\User\Source\Repos\SharpDynamics\Insight(Prototype)\obj\Debug\Insight_Prototype_.DeleteEmployeePage.resources

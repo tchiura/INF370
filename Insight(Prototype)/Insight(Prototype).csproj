@@ -199,12 +199,6 @@
     <Compile Include="Country.cs">
       <DependentUpon>InsightModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="CreatePurchaseOrderPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CreatePurchaseOrderPage.Designer.cs">
-      <DependentUpon>CreatePurchaseOrderPage.cs</DependentUpon>
-    </Compile>
     <Compile Include="DeleteClientTypePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -633,9 +627,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClientHomeScreen.resx">
       <DependentUpon>ClientHomeScreen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CreatePurchaseOrderPage.resx">
-      <DependentUpon>CreatePurchaseOrderPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteClientTypePage.resx">
       <DependentUpon>DeleteClientTypePage.cs</DependentUpon>

@@ -75,10 +75,15 @@ namespace Insight_Prototype_
 
         private void AddProjectRequestPanel_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if ((AddProjectRequestPanel.SelectedTab == tabPage18) || (AddProjectRequestPanel.SelectedTab == tabPage19))
+           /* if ((AddProjectRequestPanel.SelectedTab == tabPage18) || (AddProjectRequestPanel.SelectedTab == tabPage19))
             {
                 AddProjectRequestPanel.SelectedTab = tabPage17;
-            }
+            }*/
+        }
+
+        private void citycbx_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

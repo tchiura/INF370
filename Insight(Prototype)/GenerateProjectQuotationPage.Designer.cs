@@ -40,10 +40,8 @@
             this.button78 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvJobType = new System.Windows.Forms.DataGridView();
-            this.JobType = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.jobTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.insightDataSet = new Insight_Prototype_.InsightDataSet();
-            this.Rate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvProduct = new System.Windows.Forms.DataGridView();
             this.ProductType = new System.Windows.Forms.DataGridViewComboBoxColumn();
@@ -65,6 +63,8 @@
             this.jobTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.JobTableAdapter();
             this.fKJobTypePriceJobTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.jobTypePriceTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.JobTypePriceTableAdapter();
+            this.JobType = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Rate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
@@ -219,17 +219,6 @@
             this.dgvJobType.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvJobType_CellValueChanged);
             this.dgvJobType.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dgvJobType_EditingControlShowing);
             // 
-            // JobType
-            // 
-            this.JobType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.JobType.DataSource = this.jobTypeBindingSource;
-            this.JobType.DisplayMember = "JobTypeDescription";
-            this.JobType.HeaderText = "Job Type";
-            this.JobType.Name = "JobType";
-            this.JobType.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.JobType.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.JobType.ValueMember = "JobTypeID";
-            // 
             // jobTypeBindingSource
             // 
             this.jobTypeBindingSource.DataMember = "JobType";
@@ -239,14 +228,6 @@
             // 
             this.insightDataSet.DataSetName = "InsightDataSet";
             this.insightDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // Rate
-            // 
-            this.Rate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Rate.DataPropertyName = "JobTypePriceAmount";
-            this.Rate.HeaderText = "Rate/hr";
-            this.Rate.Name = "Rate";
-            this.Rate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // groupBox1
             // 
@@ -333,6 +314,7 @@
             this.button2.TabIndex = 15;
             this.button2.Text = "Confirm";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -413,6 +395,25 @@
             // jobTypePriceTableAdapter
             // 
             this.jobTypePriceTableAdapter.ClearBeforeFill = true;
+            // 
+            // JobType
+            // 
+            this.JobType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.JobType.DataSource = this.jobTypeBindingSource;
+            this.JobType.DisplayMember = "JobTypeDescription";
+            this.JobType.HeaderText = "Job Type";
+            this.JobType.Name = "JobType";
+            this.JobType.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.JobType.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.JobType.ValueMember = "JobTypeDescription";
+            // 
+            // Rate
+            // 
+            this.Rate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Rate.DataPropertyName = "JobTypePriceAmount";
+            this.Rate.HeaderText = "Rate/hr";
+            this.Rate.Name = "Rate";
+            this.Rate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // GenerateProjectQuotationPage
             // 

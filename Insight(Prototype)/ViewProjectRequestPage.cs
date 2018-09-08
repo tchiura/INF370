@@ -41,5 +41,12 @@ namespace Insight_Prototype_
 
             myConn.Close();
         }
+
+        private void button151_Click(object sender, EventArgs e)
+        {
+            GenerateProjectQuotationPage a = new GenerateProjectQuotationPage();
+            a.ShowDialog();
+            this.Dispose();
+        }
     }
 }

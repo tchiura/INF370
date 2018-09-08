@@ -82,6 +82,7 @@
             this.projectRequestTypeTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.ProjectRequestTypeTableAdapter();
             this.countryTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.CountryTableAdapter();
             this.cityTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.CityTableAdapter();
+            this.fKCityCountryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.AddProjectRequestPanel.SuspendLayout();
             this.tabPage17.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -97,6 +98,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKCityCountryBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // AddProjectRequestPanel
@@ -214,7 +216,7 @@
             this.countrycbx.DataSource = this.countryBindingSource;
             this.countrycbx.DisplayMember = "CountryName";
             this.countrycbx.FormattingEnabled = true;
-            this.countrycbx.Location = new System.Drawing.Point(255, 157);
+            this.countrycbx.Location = new System.Drawing.Point(254, 169);
             this.countrycbx.Name = "countrycbx";
             this.countrycbx.Size = new System.Drawing.Size(245, 27);
             this.countrycbx.TabIndex = 40;
@@ -239,10 +241,10 @@
             // 
             // citycbx
             // 
-            this.citycbx.DataSource = this.cityBindingSource;
+            this.citycbx.DataSource = this.fKCityCountryBindingSource;
             this.citycbx.DisplayMember = "Name";
             this.citycbx.FormattingEnabled = true;
-            this.citycbx.Location = new System.Drawing.Point(255, 200);
+            this.citycbx.Location = new System.Drawing.Point(254, 212);
             this.citycbx.Name = "citycbx";
             this.citycbx.Size = new System.Drawing.Size(245, 27);
             this.citycbx.TabIndex = 39;
@@ -618,6 +620,11 @@
             // 
             this.cityTableAdapter.ClearBeforeFill = true;
             // 
+            // fKCityCountryBindingSource
+            // 
+            this.fKCityCountryBindingSource.DataMember = "FK_City_Country";
+            this.fKCityCountryBindingSource.DataSource = this.countryBindingSource;
+            // 
             // SendProjectRequestPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -650,6 +657,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKCityCountryBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -708,5 +716,6 @@
         private System.Windows.Forms.BindingSource cityBindingSource;
         private InsightDataSetTableAdapters.CityTableAdapter cityTableAdapter;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.BindingSource fKCityCountryBindingSource;
     }
 }

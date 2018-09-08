@@ -31,6 +31,7 @@
             this.ViewProjectRequestPanel = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
             this.button151 = new System.Windows.Forms.Button();
             this.button211 = new System.Windows.Forms.Button();
             this.label165 = new System.Windows.Forms.Label();
@@ -38,9 +39,8 @@
             this.textBox37 = new System.Windows.Forms.TextBox();
             this.dgvProjectRequest = new System.Windows.Forms.DataGridView();
             this.TopBarPanel = new System.Windows.Forms.Panel();
-            this.Userlbl = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.Userlbl = new System.Windows.Forms.Label();
             this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
             this.ViewProjectRequestPanel.SuspendLayout();
@@ -100,6 +100,17 @@
             this.tableLayoutPanel25.Size = new System.Drawing.Size(144, 386);
             this.tableLayoutPanel25.TabIndex = 0;
             // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(3, 324);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(138, 59);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // button151
             // 
             this.button151.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -109,6 +120,7 @@
             this.button151.TabIndex = 0;
             this.button151.Text = "Generate Quotation";
             this.button151.UseVisualStyleBackColor = true;
+            this.button151.Click += new System.EventHandler(this.button151_Click);
             // 
             // button211
             // 
@@ -171,27 +183,6 @@
             this.TopBarPanel.Size = new System.Drawing.Size(1007, 29);
             this.TopBarPanel.TabIndex = 38;
             // 
-            // Userlbl
-            // 
-            this.Userlbl.AutoSize = true;
-            this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.Userlbl.Location = new System.Drawing.Point(3, 2);
-            this.Userlbl.Name = "Userlbl";
-            this.Userlbl.Size = new System.Drawing.Size(91, 23);
-            this.Userlbl.TabIndex = 0;
-            this.Userlbl.Text = "Username";
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(3, 324);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 59);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // pictureBox14
             // 
             this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Right;
@@ -202,6 +193,16 @@
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 2;
             this.pictureBox14.TabStop = false;
+            // 
+            // Userlbl
+            // 
+            this.Userlbl.AutoSize = true;
+            this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.Userlbl.Location = new System.Drawing.Point(3, 2);
+            this.Userlbl.Name = "Userlbl";
+            this.Userlbl.Size = new System.Drawing.Size(91, 23);
+            this.Userlbl.TabIndex = 0;
+            this.Userlbl.Text = "Username";
             // 
             // MinimisePicBx
             // 
