@@ -166,6 +166,7 @@
             this.tabPage2.Size = new System.Drawing.Size(1276, 606);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Select Job";
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // button1
             // 

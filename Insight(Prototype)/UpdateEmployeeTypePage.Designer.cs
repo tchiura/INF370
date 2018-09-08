@@ -33,18 +33,18 @@
             this.Userlbl = new System.Windows.Forms.Label();
             this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
-            this.AddEmployeeTypeDetails = new System.Windows.Forms.TabControl();
+            this.UpdateEmployeeTypeTab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.ETypeLbl = new System.Windows.Forms.Label();
+            this.ETypeTb = new System.Windows.Forms.TextBox();
             this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
+            this.UpdateBtn = new System.Windows.Forms.Button();
             this.label58 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.BackBtn = new System.Windows.Forms.Button();
+            this.ConfirmBtn = new System.Windows.Forms.Button();
+            this.CETypeLbl = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label99 = new System.Windows.Forms.Label();
@@ -52,7 +52,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
-            this.AddEmployeeTypeDetails.SuspendLayout();
+            this.UpdateEmployeeTypeTab.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -117,26 +117,26 @@
             this.ClosePicBx.TabIndex = 0;
             this.ClosePicBx.TabStop = false;
             // 
-            // AddEmployeeTypeDetails
+            // UpdateEmployeeTypeTab
             // 
-            this.AddEmployeeTypeDetails.Controls.Add(this.tabPage1);
-            this.AddEmployeeTypeDetails.Controls.Add(this.tabPage2);
-            this.AddEmployeeTypeDetails.Controls.Add(this.tabPage3);
-            this.AddEmployeeTypeDetails.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddEmployeeTypeDetails.Location = new System.Drawing.Point(0, 29);
-            this.AddEmployeeTypeDetails.Name = "AddEmployeeTypeDetails";
-            this.AddEmployeeTypeDetails.SelectedIndex = 0;
-            this.AddEmployeeTypeDetails.Size = new System.Drawing.Size(460, 171);
-            this.AddEmployeeTypeDetails.TabIndex = 10;
+            this.UpdateEmployeeTypeTab.Controls.Add(this.tabPage1);
+            this.UpdateEmployeeTypeTab.Controls.Add(this.tabPage2);
+            this.UpdateEmployeeTypeTab.Controls.Add(this.tabPage3);
+            this.UpdateEmployeeTypeTab.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UpdateEmployeeTypeTab.Location = new System.Drawing.Point(0, 29);
+            this.UpdateEmployeeTypeTab.Name = "UpdateEmployeeTypeTab";
+            this.UpdateEmployeeTypeTab.SelectedIndex = 0;
+            this.UpdateEmployeeTypeTab.Size = new System.Drawing.Size(460, 171);
+            this.UpdateEmployeeTypeTab.TabIndex = 10;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
             this.tabPage1.Controls.Add(this.linkLabel1);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.textBox13);
+            this.tabPage1.Controls.Add(this.ETypeLbl);
+            this.tabPage1.Controls.Add(this.ETypeTb);
             this.tabPage1.Controls.Add(this.button21);
-            this.tabPage1.Controls.Add(this.button22);
+            this.tabPage1.Controls.Add(this.UpdateBtn);
             this.tabPage1.Controls.Add(this.label58);
             this.tabPage1.ForeColor = System.Drawing.Color.Black;
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -156,24 +156,24 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Edit";
             // 
-            // label1
+            // ETypeLbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(178, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 17);
-            this.label1.TabIndex = 33;
-            this.label1.Text = "Technician";
+            this.ETypeLbl.AutoSize = true;
+            this.ETypeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ETypeLbl.Location = new System.Drawing.Point(178, 27);
+            this.ETypeLbl.Name = "ETypeLbl";
+            this.ETypeLbl.Size = new System.Drawing.Size(77, 17);
+            this.ETypeLbl.TabIndex = 33;
+            this.ETypeLbl.Text = "Technician";
             // 
-            // textBox13
+            // ETypeTb
             // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(181, 24);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(245, 23);
-            this.textBox13.TabIndex = 32;
-            this.textBox13.Visible = false;
+            this.ETypeTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ETypeTb.Location = new System.Drawing.Point(181, 24);
+            this.ETypeTb.Name = "ETypeTb";
+            this.ETypeTb.Size = new System.Drawing.Size(245, 23);
+            this.ETypeTb.TabIndex = 32;
+            this.ETypeTb.Visible = false;
             // 
             // button21
             // 
@@ -186,18 +186,20 @@
             this.button21.TabIndex = 31;
             this.button21.Text = "Cancel";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
-            // button22
+            // UpdateBtn
             // 
-            this.button22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.Location = new System.Drawing.Point(369, 107);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(75, 30);
-            this.button22.TabIndex = 30;
-            this.button22.Text = "Update";
-            this.button22.UseVisualStyleBackColor = true;
+            this.UpdateBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.UpdateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UpdateBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpdateBtn.Location = new System.Drawing.Point(369, 107);
+            this.UpdateBtn.Name = "UpdateBtn";
+            this.UpdateBtn.Size = new System.Drawing.Size(75, 30);
+            this.UpdateBtn.TabIndex = 30;
+            this.UpdateBtn.Text = "Update";
+            this.UpdateBtn.UseVisualStyleBackColor = true;
+            this.UpdateBtn.Click += new System.EventHandler(this.button22_Click);
             // 
             // label58
             // 
@@ -212,9 +214,9 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
-            this.tabPage2.Controls.Add(this.button23);
-            this.tabPage2.Controls.Add(this.button24);
-            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.BackBtn);
+            this.tabPage2.Controls.Add(this.ConfirmBtn);
+            this.tabPage2.Controls.Add(this.CETypeLbl);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.ForeColor = System.Drawing.Color.Black;
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -224,39 +226,41 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Confirmation";
             // 
-            // button23
+            // BackBtn
             // 
-            this.button23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button23.Location = new System.Drawing.Point(290, 109);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(75, 30);
-            this.button23.TabIndex = 37;
-            this.button23.Text = "Back";
-            this.button23.UseVisualStyleBackColor = true;
+            this.BackBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackBtn.Location = new System.Drawing.Point(290, 109);
+            this.BackBtn.Name = "BackBtn";
+            this.BackBtn.Size = new System.Drawing.Size(75, 30);
+            this.BackBtn.TabIndex = 37;
+            this.BackBtn.Text = "Back";
+            this.BackBtn.UseVisualStyleBackColor = true;
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
-            // button24
+            // ConfirmBtn
             // 
-            this.button24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button24.Location = new System.Drawing.Point(371, 109);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(75, 30);
-            this.button24.TabIndex = 36;
-            this.button24.Text = "Confirm";
-            this.button24.UseVisualStyleBackColor = true;
+            this.ConfirmBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ConfirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ConfirmBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConfirmBtn.Location = new System.Drawing.Point(371, 109);
+            this.ConfirmBtn.Name = "ConfirmBtn";
+            this.ConfirmBtn.Size = new System.Drawing.Size(75, 30);
+            this.ConfirmBtn.TabIndex = 36;
+            this.ConfirmBtn.Text = "Confirm";
+            this.ConfirmBtn.UseVisualStyleBackColor = true;
+            this.ConfirmBtn.Click += new System.EventHandler(this.ConfirmBtn_Click);
             // 
-            // label3
+            // CETypeLbl
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(277, 27);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 17);
-            this.label3.TabIndex = 40;
-            this.label3.Text = "Technician";
+            this.CETypeLbl.AutoSize = true;
+            this.CETypeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CETypeLbl.Location = new System.Drawing.Point(277, 27);
+            this.CETypeLbl.Name = "CETypeLbl";
+            this.CETypeLbl.Size = new System.Drawing.Size(77, 17);
+            this.CETypeLbl.TabIndex = 40;
+            this.CETypeLbl.Text = "Technician";
             // 
             // label4
             // 
@@ -296,7 +300,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(460, 200);
-            this.Controls.Add(this.AddEmployeeTypeDetails);
+            this.Controls.Add(this.UpdateEmployeeTypeTab);
             this.Controls.Add(this.TopBarPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UpdateEmployeeTypePage";
@@ -307,7 +311,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).EndInit();
-            this.AddEmployeeTypeDetails.ResumeLayout(false);
+            this.UpdateEmployeeTypeTab.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -325,18 +329,18 @@
         private System.Windows.Forms.Label Userlbl;
         private System.Windows.Forms.PictureBox MinimisePicBx;
         private System.Windows.Forms.PictureBox ClosePicBx;
-        private System.Windows.Forms.TabControl AddEmployeeTypeDetails;
+        private System.Windows.Forms.TabControl UpdateEmployeeTypeTab;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label ETypeLbl;
+        private System.Windows.Forms.TextBox ETypeTb;
         private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button UpdateBtn;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button BackBtn;
+        private System.Windows.Forms.Button ConfirmBtn;
+        private System.Windows.Forms.Label CETypeLbl;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label99;

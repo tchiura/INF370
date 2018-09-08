@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.EmpDGv = new System.Windows.Forms.DataGridView();
             this.EID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ESurname = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -74,9 +75,20 @@
             this.Userlbl = new System.Windows.Forms.Label();
             this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
+            this.JobDGv = new System.Windows.Forms.DataGridView();
+            this.insightDataSet = new Insight_Prototype_.InsightDataSet();
+            this.jobBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.jobTableAdapter = new Insight_Prototype_.InsightDataSetTableAdapters.JobTableAdapter();
+            this.jobIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.jobDescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.jobStartDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.jobEndDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.jobTypeIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.jobStatusIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button4 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmpDGv)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -87,6 +99,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JobDGv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jobBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -103,7 +118,9 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
-            this.tabPage2.Controls.Add(this.dataGridView2);
+            this.tabPage2.Controls.Add(this.button4);
+            this.tabPage2.Controls.Add(this.JobDGv);
+            this.tabPage2.Controls.Add(this.EmpDGv);
             this.tabPage2.Controls.Add(this.button1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
@@ -112,11 +129,13 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Select Employee";
             // 
-            // dataGridView2
+            // EmpDGv
             // 
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.EmpDGv.AllowUserToAddRows = false;
+            this.EmpDGv.AllowUserToDeleteRows = false;
+            this.EmpDGv.BackgroundColor = System.Drawing.Color.White;
+            this.EmpDGv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.EmpDGv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.EID,
             this.EName,
             this.ESurname,
@@ -125,10 +144,12 @@
             this.EDateofBirth,
             this.EGender,
             this.EmployeeType});
-            this.dataGridView2.Location = new System.Drawing.Point(8, 6);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1262, 559);
-            this.dataGridView2.TabIndex = 8;
+            this.EmpDGv.Location = new System.Drawing.Point(8, 6);
+            this.EmpDGv.Name = "EmpDGv";
+            this.EmpDGv.ReadOnly = true;
+            this.EmpDGv.Size = new System.Drawing.Size(600, 560);
+            this.EmpDGv.TabIndex = 8;
+            this.EmpDGv.SelectionChanged += new System.EventHandler(this.EmpDGv_SelectionChanged);
             // 
             // EID
             // 
@@ -181,6 +202,7 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "Next";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tabPage3
             // 
@@ -216,17 +238,19 @@
             this.button3.TabIndex = 9;
             this.button3.Text = "Confirm";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button2.Location = new System.Drawing.Point(9, 568);
+            this.button2.Location = new System.Drawing.Point(979, 568);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(140, 27);
             this.button2.TabIndex = 8;
             this.button2.Text = "Back";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // groupBox2
             // 
@@ -515,6 +539,7 @@
             this.TopBarPanel.Name = "TopBarPanel";
             this.TopBarPanel.Size = new System.Drawing.Size(1284, 29);
             this.TopBarPanel.TabIndex = 10;
+            this.TopBarPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.TopBarPanel_Paint);
             // 
             // pictureBox14
             // 
@@ -559,6 +584,106 @@
             this.ClosePicBx.TabIndex = 0;
             this.ClosePicBx.TabStop = false;
             // 
+            // JobDGv
+            // 
+            this.JobDGv.AllowUserToAddRows = false;
+            this.JobDGv.AllowUserToDeleteRows = false;
+            this.JobDGv.AutoGenerateColumns = false;
+            this.JobDGv.BackgroundColor = System.Drawing.Color.White;
+            this.JobDGv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.JobDGv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.jobIDDataGridViewTextBoxColumn,
+            this.jobDescriptionDataGridViewTextBoxColumn,
+            this.jobStartDateDataGridViewTextBoxColumn,
+            this.jobEndDateDataGridViewTextBoxColumn,
+            this.jobTypeIDDataGridViewTextBoxColumn,
+            this.jobStatusIDDataGridViewTextBoxColumn});
+            this.JobDGv.DataSource = this.jobBindingSource;
+            this.JobDGv.Location = new System.Drawing.Point(668, 6);
+            this.JobDGv.Name = "JobDGv";
+            this.JobDGv.ReadOnly = true;
+            this.JobDGv.Size = new System.Drawing.Size(600, 560);
+            this.JobDGv.TabIndex = 9;
+            this.JobDGv.SelectionChanged += new System.EventHandler(this.JobDGv_SelectionChanged);
+            // 
+            // insightDataSet
+            // 
+            this.insightDataSet.DataSetName = "InsightDataSet";
+            this.insightDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // jobBindingSource
+            // 
+            this.jobBindingSource.DataMember = "Job";
+            this.jobBindingSource.DataSource = this.insightDataSet;
+            // 
+            // jobTableAdapter
+            // 
+            this.jobTableAdapter.ClearBeforeFill = true;
+            // 
+            // jobIDDataGridViewTextBoxColumn
+            // 
+            this.jobIDDataGridViewTextBoxColumn.DataPropertyName = "JobID";
+            this.jobIDDataGridViewTextBoxColumn.HeaderText = "JobID";
+            this.jobIDDataGridViewTextBoxColumn.Name = "jobIDDataGridViewTextBoxColumn";
+            this.jobIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.jobIDDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // jobDescriptionDataGridViewTextBoxColumn
+            // 
+            this.jobDescriptionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.jobDescriptionDataGridViewTextBoxColumn.DataPropertyName = "JobDescription";
+            this.jobDescriptionDataGridViewTextBoxColumn.HeaderText = "JobDescription";
+            this.jobDescriptionDataGridViewTextBoxColumn.Name = "jobDescriptionDataGridViewTextBoxColumn";
+            this.jobDescriptionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // jobStartDateDataGridViewTextBoxColumn
+            // 
+            this.jobStartDateDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.jobStartDateDataGridViewTextBoxColumn.DataPropertyName = "JobStartDate";
+            this.jobStartDateDataGridViewTextBoxColumn.HeaderText = "JobStartDate";
+            this.jobStartDateDataGridViewTextBoxColumn.Name = "jobStartDateDataGridViewTextBoxColumn";
+            this.jobStartDateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.jobStartDateDataGridViewTextBoxColumn.Width = 94;
+            // 
+            // jobEndDateDataGridViewTextBoxColumn
+            // 
+            this.jobEndDateDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.jobEndDateDataGridViewTextBoxColumn.DataPropertyName = "JobEndDate";
+            this.jobEndDateDataGridViewTextBoxColumn.HeaderText = "JobEndDate";
+            this.jobEndDateDataGridViewTextBoxColumn.Name = "jobEndDateDataGridViewTextBoxColumn";
+            this.jobEndDateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.jobEndDateDataGridViewTextBoxColumn.Width = 91;
+            // 
+            // jobTypeIDDataGridViewTextBoxColumn
+            // 
+            this.jobTypeIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.jobTypeIDDataGridViewTextBoxColumn.DataPropertyName = "JobTypeID";
+            this.jobTypeIDDataGridViewTextBoxColumn.HeaderText = "JobTypeID";
+            this.jobTypeIDDataGridViewTextBoxColumn.Name = "jobTypeIDDataGridViewTextBoxColumn";
+            this.jobTypeIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.jobTypeIDDataGridViewTextBoxColumn.Width = 84;
+            // 
+            // jobStatusIDDataGridViewTextBoxColumn
+            // 
+            this.jobStatusIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.jobStatusIDDataGridViewTextBoxColumn.DataPropertyName = "JobStatusID";
+            this.jobStatusIDDataGridViewTextBoxColumn.HeaderText = "JobStatusID";
+            this.jobStatusIDDataGridViewTextBoxColumn.Name = "jobStatusIDDataGridViewTextBoxColumn";
+            this.jobStatusIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.jobStatusIDDataGridViewTextBoxColumn.Width = 90;
+            // 
+            // button4
+            // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            this.button4.Location = new System.Drawing.Point(982, 571);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(140, 27);
+            this.button4.TabIndex = 10;
+            this.button4.Text = "Cancel";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // AssignJobPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -571,9 +696,10 @@
             this.Name = "AssignJobPage";
             this.Text = "AssignJobPage";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.AssignJobPage_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmpDGv)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -588,6 +714,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JobDGv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.insightDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jobBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -596,7 +725,7 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView EmpDGv;
         private System.Windows.Forms.DataGridViewTextBoxColumn EID;
         private System.Windows.Forms.DataGridViewTextBoxColumn EName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ESurname;
@@ -640,5 +769,16 @@
         private System.Windows.Forms.Label Userlbl;
         private System.Windows.Forms.PictureBox MinimisePicBx;
         private System.Windows.Forms.PictureBox ClosePicBx;
+        private System.Windows.Forms.DataGridView JobDGv;
+        private InsightDataSet insightDataSet;
+        private System.Windows.Forms.BindingSource jobBindingSource;
+        private InsightDataSetTableAdapters.JobTableAdapter jobTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn jobIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn jobDescriptionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn jobStartDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn jobEndDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn jobTypeIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn jobStatusIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button4;
     }
 }

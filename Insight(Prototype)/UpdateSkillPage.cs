@@ -13,7 +13,7 @@ namespace Insight_Prototype_
     public partial class UpdateSkillPage : Form
     {
         string USkill = "";
-        int SkillID;
+        int SkillID = 0;
         public UpdateSkillPage()
         {
             InitializeComponent();
@@ -26,8 +26,6 @@ namespace Insight_Prototype_
 
         private void USCancelBtn_Click(object sender, EventArgs e)
         {
-            Form Home = new HomeScreen();
-            Home.Show();
             this.Close();
         }
 
@@ -59,14 +57,17 @@ namespace Insight_Prototype_
 
         private void USConfirmBtn_Click(object sender, EventArgs e)
         {
-            Skill InsightSkill = new Skill();
+            //Skill InsightSkill = new Skill();
 
-            InsightSkill.SkillID = SkillID;
-            InsightSkill.SkillDescription = USkill;
+            //InsightSkill.SkillID = SkillID;
+            //InsightSkill.SkillDescription = USkill;
 
             using(InsightEntities db = new InsightEntities())
             {
-               
+                var S = db.Skills.SingleOrDefault(x => x.SkillID == SkillID);
+                S.SkillDescription = USkill;
+
+                db.SaveChanges();
             }
         }
     }

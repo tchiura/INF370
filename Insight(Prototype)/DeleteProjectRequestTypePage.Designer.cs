@@ -30,11 +30,11 @@
         {
             this.DEqTDeleteBtn = new System.Windows.Forms.Button();
             this.TopBarPanel = new System.Windows.Forms.Panel();
-            this.Userlbl = new System.Windows.Forms.Label();
-            this.DEqTCancelBtn = new System.Windows.Forms.Button();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.Userlbl = new System.Windows.Forms.Label();
             this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
+            this.DEqTCancelBtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.TopBarPanel.SuspendLayout();
@@ -54,6 +54,7 @@
             this.DEqTDeleteBtn.TabIndex = 50;
             this.DEqTDeleteBtn.Text = "Delete";
             this.DEqTDeleteBtn.UseVisualStyleBackColor = true;
+            this.DEqTDeleteBtn.Click += new System.EventHandler(this.DEqTDeleteBtn_Click);
             // 
             // TopBarPanel
             // 
@@ -71,28 +72,6 @@
             this.TopBarPanel.Size = new System.Drawing.Size(460, 30);
             this.TopBarPanel.TabIndex = 47;
             // 
-            // Userlbl
-            // 
-            this.Userlbl.AutoSize = true;
-            this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.Userlbl.Location = new System.Drawing.Point(3, 2);
-            this.Userlbl.Name = "Userlbl";
-            this.Userlbl.Size = new System.Drawing.Size(236, 23);
-            this.Userlbl.TabIndex = 0;
-            this.Userlbl.Text = "Delete Project Request Type";
-            // 
-            // DEqTCancelBtn
-            // 
-            this.DEqTCancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DEqTCancelBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DEqTCancelBtn.Location = new System.Drawing.Point(289, 157);
-            this.DEqTCancelBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.DEqTCancelBtn.Name = "DEqTCancelBtn";
-            this.DEqTCancelBtn.Size = new System.Drawing.Size(75, 30);
-            this.DEqTCancelBtn.TabIndex = 51;
-            this.DEqTCancelBtn.Text = "Cancel";
-            this.DEqTCancelBtn.UseVisualStyleBackColor = true;
-            // 
             // pictureBox14
             // 
             this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Right;
@@ -103,6 +82,16 @@
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 2;
             this.pictureBox14.TabStop = false;
+            // 
+            // Userlbl
+            // 
+            this.Userlbl.AutoSize = true;
+            this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.Userlbl.Location = new System.Drawing.Point(3, 2);
+            this.Userlbl.Name = "Userlbl";
+            this.Userlbl.Size = new System.Drawing.Size(236, 23);
+            this.Userlbl.TabIndex = 0;
+            this.Userlbl.Text = "Delete Project Request Type";
             // 
             // MinimisePicBx
             // 
@@ -125,6 +114,19 @@
             this.ClosePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ClosePicBx.TabIndex = 0;
             this.ClosePicBx.TabStop = false;
+            // 
+            // DEqTCancelBtn
+            // 
+            this.DEqTCancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DEqTCancelBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DEqTCancelBtn.Location = new System.Drawing.Point(289, 157);
+            this.DEqTCancelBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.DEqTCancelBtn.Name = "DEqTCancelBtn";
+            this.DEqTCancelBtn.Size = new System.Drawing.Size(75, 30);
+            this.DEqTCancelBtn.TabIndex = 51;
+            this.DEqTCancelBtn.Text = "Cancel";
+            this.DEqTCancelBtn.UseVisualStyleBackColor = true;
+            this.DEqTCancelBtn.Click += new System.EventHandler(this.DEqTCancelBtn_Click);
             // 
             // label3
             // 
@@ -159,7 +161,7 @@
             this.Controls.Add(this.DEqTCancelBtn);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DeleteProjectRequestTypePage";
             this.Text = "DeleteProjectRequestTypePage";
             this.TopBarPanel.ResumeLayout(false);

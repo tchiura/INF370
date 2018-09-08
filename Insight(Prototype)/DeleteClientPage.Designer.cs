@@ -36,6 +36,9 @@
             this.DeleteClientDetailsPanel = new System.Windows.Forms.Panel();
             this.DDOB = new System.Windows.Forms.DateTimePicker();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.DCAd3Lbl = new System.Windows.Forms.Label();
+            this.DCAd1Lbl = new System.Windows.Forms.Label();
+            this.DCAd2Lbl = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -58,9 +61,6 @@
             this.label20 = new System.Windows.Forms.Label();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
-            this.DCAd1Lbl = new System.Windows.Forms.Label();
-            this.DCAd2Lbl = new System.Windows.Forms.Label();
-            this.DCAd3Lbl = new System.Windows.Forms.Label();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
@@ -180,6 +180,33 @@
             this.groupBox8.TabIndex = 89;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Address";
+            // 
+            // DCAd3Lbl
+            // 
+            this.DCAd3Lbl.AutoSize = true;
+            this.DCAd3Lbl.Location = new System.Drawing.Point(252, 115);
+            this.DCAd3Lbl.Name = "DCAd3Lbl";
+            this.DCAd3Lbl.Size = new System.Drawing.Size(98, 19);
+            this.DCAd3Lbl.TabIndex = 45;
+            this.DCAd3Lbl.Text = "Johannesburg";
+            // 
+            // DCAd1Lbl
+            // 
+            this.DCAd1Lbl.AutoSize = true;
+            this.DCAd1Lbl.Location = new System.Drawing.Point(252, 30);
+            this.DCAd1Lbl.Name = "DCAd1Lbl";
+            this.DCAd1Lbl.Size = new System.Drawing.Size(98, 19);
+            this.DCAd1Lbl.TabIndex = 43;
+            this.DCAd1Lbl.Text = "Johannesburg";
+            // 
+            // DCAd2Lbl
+            // 
+            this.DCAd2Lbl.AutoSize = true;
+            this.DCAd2Lbl.Location = new System.Drawing.Point(252, 73);
+            this.DCAd2Lbl.Name = "DCAd2Lbl";
+            this.DCAd2Lbl.Size = new System.Drawing.Size(87, 19);
+            this.DCAd2Lbl.TabIndex = 42;
+            this.DCAd2Lbl.Text = "South Africa";
             // 
             // label2
             // 
@@ -372,6 +399,7 @@
             this.button14.TabIndex = 57;
             this.button14.Text = "Cancel";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click_1);
             // 
             // button15
             // 
@@ -384,33 +412,7 @@
             this.button15.TabIndex = 56;
             this.button15.Text = "Delete";
             this.button15.UseVisualStyleBackColor = true;
-            // 
-            // DCAd1Lbl
-            // 
-            this.DCAd1Lbl.AutoSize = true;
-            this.DCAd1Lbl.Location = new System.Drawing.Point(252, 30);
-            this.DCAd1Lbl.Name = "DCAd1Lbl";
-            this.DCAd1Lbl.Size = new System.Drawing.Size(98, 19);
-            this.DCAd1Lbl.TabIndex = 43;
-            this.DCAd1Lbl.Text = "Johannesburg";
-            // 
-            // DCAd2Lbl
-            // 
-            this.DCAd2Lbl.AutoSize = true;
-            this.DCAd2Lbl.Location = new System.Drawing.Point(252, 73);
-            this.DCAd2Lbl.Name = "DCAd2Lbl";
-            this.DCAd2Lbl.Size = new System.Drawing.Size(87, 19);
-            this.DCAd2Lbl.TabIndex = 42;
-            this.DCAd2Lbl.Text = "South Africa";
-            // 
-            // DCAd3Lbl
-            // 
-            this.DCAd3Lbl.AutoSize = true;
-            this.DCAd3Lbl.Location = new System.Drawing.Point(252, 115);
-            this.DCAd3Lbl.Name = "DCAd3Lbl";
-            this.DCAd3Lbl.Size = new System.Drawing.Size(98, 19);
-            this.DCAd3Lbl.TabIndex = 45;
-            this.DCAd3Lbl.Text = "Johannesburg";
+            this.button15.Click += new System.EventHandler(this.button15_Click_1);
             // 
             // DeleteClientPage
             // 

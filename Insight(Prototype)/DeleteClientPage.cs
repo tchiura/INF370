@@ -32,5 +32,31 @@ namespace Insight_Prototype_
         {
 
         }
+
+        private void button14_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button15_Click_1(object sender, EventArgs e)
+        {
+
+            MessageBox.Show("Are you sure you want to delete this client?", "Delete", MessageBoxButtons.YesNo);
+            //MessageBoxButtons.YesNo =;
+            using (InsightEntities db = new InsightEntities())
+            {
+                var C = db.Clients.SingleOrDefault(x => x.ClientID == 1);
+
+                if(C != null)
+                {
+                    db.Clients.Remove(C);
+                    db.SaveChanges();
+                }
+                else
+                {
+                    MessageBox.Show("We were not able to delete this client");
+                }
+            }
+        }
     }
 }

@@ -12,6 +12,8 @@ namespace Insight_Prototype_
 {
     public partial class UpdateOrganisationTypePage : Form
     {
+        int OTID = 0;
+        string OType = "";
         public UpdateOrganisationTypePage()
         {
             InitializeComponent();
@@ -36,6 +38,7 @@ namespace Insight_Prototype_
         private void button22_Click(object sender, EventArgs e)
         {
             UpdateOrgTypeTab.SelectedIndex = 1;
+            OType = OrgTypeTb.Text;
         }
 
         private void button23_Click(object sender, EventArgs e)
@@ -46,10 +49,15 @@ namespace Insight_Prototype_
 
         private void button24_Click(object sender, EventArgs e)
         {
-            //Do a where ID is X.get the OrgType and Save it so I can 
-            OrganisationType InsightOrgType = new OrganisationType();
-
-            InsightOrgType.OrganisationTypeDescription = OrgTypeTb.Text;
+            using (InsightEntities db = new InsightEntities())
+            {
+                var OT = db.OrganisationTypes.SingleOrDefault(x => x.OrganisationTypeID == OTID);
+                if(OT != null)
+                {
+                    OT.OrganisationTypeDescription = OType;
+                    db.SaveChanges();
+                }
+            }
 
             UpdateOrgTypeTab.SelectedIndex = 2;
         }

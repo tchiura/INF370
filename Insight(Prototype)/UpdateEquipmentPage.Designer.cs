@@ -34,8 +34,26 @@
             this.button22 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.AEqQuantityLbl = new System.Windows.Forms.Label();
+            this.label235 = new System.Windows.Forms.Label();
+            this.label239 = new System.Windows.Forms.Label();
+            this.label240 = new System.Windows.Forms.Label();
+            this.label226 = new System.Windows.Forms.Label();
+            this.label228 = new System.Windows.Forms.Label();
+            this.AEqDescripLbl = new System.Windows.Forms.Label();
+            this.AEqTypeLbl = new System.Windows.Forms.Label();
+            this.AEqConditionLbl = new System.Windows.Forms.Label();
             this.button23 = new System.Windows.Forms.Button();
+            this.label234 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label233 = new System.Windows.Forms.Label();
+            this.AEqConditionCmb = new System.Windows.Forms.ComboBox();
+            this.AEqQuantityUD = new System.Windows.Forms.NumericUpDown();
+            this.label217 = new System.Windows.Forms.Label();
+            this.label220 = new System.Windows.Forms.Label();
+            this.label222 = new System.Windows.Forms.Label();
+            this.AEqTypeCmb = new System.Windows.Forms.ComboBox();
+            this.AEqDecripTb = new System.Windows.Forms.TextBox();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -45,33 +63,15 @@
             this.Userlbl = new System.Windows.Forms.Label();
             this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
-            this.label233 = new System.Windows.Forms.Label();
-            this.AEqConditionCmb = new System.Windows.Forms.ComboBox();
-            this.AEqQuantityUD = new System.Windows.Forms.NumericUpDown();
-            this.label217 = new System.Windows.Forms.Label();
-            this.label220 = new System.Windows.Forms.Label();
-            this.label222 = new System.Windows.Forms.Label();
-            this.AEqTypeCmb = new System.Windows.Forms.ComboBox();
-            this.AEqDecripTb = new System.Windows.Forms.TextBox();
-            this.AEqQuantityLbl = new System.Windows.Forms.Label();
-            this.label234 = new System.Windows.Forms.Label();
-            this.label235 = new System.Windows.Forms.Label();
-            this.label239 = new System.Windows.Forms.Label();
-            this.label240 = new System.Windows.Forms.Label();
-            this.label226 = new System.Windows.Forms.Label();
-            this.label228 = new System.Windows.Forms.Label();
-            this.AEqDescripLbl = new System.Windows.Forms.Label();
-            this.AEqTypeLbl = new System.Windows.Forms.Label();
-            this.AEqConditionLbl = new System.Windows.Forms.Label();
             this.tabPage3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AEqQuantityUD)).BeginInit();
             this.UpdateEquipmentTab.SuspendLayout();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AEqQuantityUD)).BeginInit();
             this.SuspendLayout();
             // 
             // label99
@@ -108,6 +108,7 @@
             this.button21.TabIndex = 31;
             this.button21.Text = "Cancel";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button22
             // 
@@ -156,6 +157,96 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Confirmation";
             // 
+            // AEqQuantityLbl
+            // 
+            this.AEqQuantityLbl.AutoSize = true;
+            this.AEqQuantityLbl.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AEqQuantityLbl.Location = new System.Drawing.Point(312, 152);
+            this.AEqQuantityLbl.Name = "AEqQuantityLbl";
+            this.AEqQuantityLbl.Size = new System.Drawing.Size(17, 19);
+            this.AEqQuantityLbl.TabIndex = 74;
+            this.AEqQuantityLbl.Text = "5";
+            // 
+            // label235
+            // 
+            this.label235.AutoSize = true;
+            this.label235.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label235.Location = new System.Drawing.Point(40, 67);
+            this.label235.Name = "label235";
+            this.label235.Size = new System.Drawing.Size(43, 19);
+            this.label235.TabIndex = 72;
+            this.label235.Text = "Type:";
+            // 
+            // label239
+            // 
+            this.label239.AutoSize = true;
+            this.label239.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label239.Location = new System.Drawing.Point(40, 152);
+            this.label239.Name = "label239";
+            this.label239.Size = new System.Drawing.Size(69, 19);
+            this.label239.TabIndex = 71;
+            this.label239.Text = "Quantity:";
+            // 
+            // label240
+            // 
+            this.label240.AutoSize = true;
+            this.label240.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label240.Location = new System.Drawing.Point(40, 24);
+            this.label240.Name = "label240";
+            this.label240.Size = new System.Drawing.Size(87, 19);
+            this.label240.TabIndex = 70;
+            this.label240.Text = "Description:";
+            // 
+            // label226
+            // 
+            this.label226.AutoSize = true;
+            this.label226.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label226.Location = new System.Drawing.Point(40, 67);
+            this.label226.Name = "label226";
+            this.label226.Size = new System.Drawing.Size(43, 19);
+            this.label226.TabIndex = 69;
+            this.label226.Text = "Type:";
+            // 
+            // label228
+            // 
+            this.label228.AutoSize = true;
+            this.label228.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label228.Location = new System.Drawing.Point(40, 24);
+            this.label228.Name = "label228";
+            this.label228.Size = new System.Drawing.Size(87, 19);
+            this.label228.TabIndex = 67;
+            this.label228.Text = "Description:";
+            // 
+            // AEqDescripLbl
+            // 
+            this.AEqDescripLbl.AutoSize = true;
+            this.AEqDescripLbl.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AEqDescripLbl.Location = new System.Drawing.Point(312, 24);
+            this.AEqDescripLbl.Name = "AEqDescripLbl";
+            this.AEqDescripLbl.Size = new System.Drawing.Size(100, 19);
+            this.AEqDescripLbl.TabIndex = 66;
+            this.AEqDescripLbl.Text = "ClimbUp 1.5m";
+            // 
+            // AEqTypeLbl
+            // 
+            this.AEqTypeLbl.AutoSize = true;
+            this.AEqTypeLbl.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AEqTypeLbl.Location = new System.Drawing.Point(312, 67);
+            this.AEqTypeLbl.Name = "AEqTypeLbl";
+            this.AEqTypeLbl.Size = new System.Drawing.Size(53, 19);
+            this.AEqTypeLbl.TabIndex = 65;
+            this.AEqTypeLbl.Text = "Ladder";
+            // 
+            // AEqConditionLbl
+            // 
+            this.AEqConditionLbl.AutoSize = true;
+            this.AEqConditionLbl.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AEqConditionLbl.Location = new System.Drawing.Point(312, 110);
+            this.AEqConditionLbl.Name = "AEqConditionLbl";
+            this.AEqConditionLbl.Size = new System.Drawing.Size(38, 19);
+            this.AEqConditionLbl.TabIndex = 64;
+            this.AEqConditionLbl.Text = "New";
+            // 
             // button23
             // 
             this.button23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -167,6 +258,17 @@
             this.button23.TabIndex = 37;
             this.button23.Text = "Back";
             this.button23.UseVisualStyleBackColor = true;
+            // 
+            // label234
+            // 
+            this.label234.AutoSize = true;
+            this.label234.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label234.Location = new System.Drawing.Point(40, 112);
+            this.label234.Name = "label234";
+            this.label234.Size = new System.Drawing.Size(75, 19);
+            this.label234.TabIndex = 73;
+            this.label234.Text = "Condition:";
+            this.label234.Click += new System.EventHandler(this.label234_Click);
             // 
             // tabPage1
             // 
@@ -191,6 +293,85 @@
             this.tabPage1.Size = new System.Drawing.Size(452, 244);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Details";
+            // 
+            // label233
+            // 
+            this.label233.AutoSize = true;
+            this.label233.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label233.Location = new System.Drawing.Point(33, 119);
+            this.label233.Name = "label233";
+            this.label233.Size = new System.Drawing.Size(75, 19);
+            this.label233.TabIndex = 62;
+            this.label233.Text = "Condition:";
+            // 
+            // AEqConditionCmb
+            // 
+            this.AEqConditionCmb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AEqConditionCmb.FormattingEnabled = true;
+            this.AEqConditionCmb.Items.AddRange(new object[] {
+            "New",
+            "Second Hand"});
+            this.AEqConditionCmb.Location = new System.Drawing.Point(183, 116);
+            this.AEqConditionCmb.Name = "AEqConditionCmb";
+            this.AEqConditionCmb.Size = new System.Drawing.Size(245, 27);
+            this.AEqConditionCmb.TabIndex = 63;
+            // 
+            // AEqQuantityUD
+            // 
+            this.AEqQuantityUD.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AEqQuantityUD.Location = new System.Drawing.Point(183, 162);
+            this.AEqQuantityUD.Name = "AEqQuantityUD";
+            this.AEqQuantityUD.Size = new System.Drawing.Size(120, 27);
+            this.AEqQuantityUD.TabIndex = 61;
+            // 
+            // label217
+            // 
+            this.label217.AutoSize = true;
+            this.label217.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label217.Location = new System.Drawing.Point(33, 74);
+            this.label217.Name = "label217";
+            this.label217.Size = new System.Drawing.Size(43, 19);
+            this.label217.TabIndex = 58;
+            this.label217.Text = "Type:";
+            // 
+            // label220
+            // 
+            this.label220.AutoSize = true;
+            this.label220.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label220.Location = new System.Drawing.Point(33, 159);
+            this.label220.Name = "label220";
+            this.label220.Size = new System.Drawing.Size(69, 19);
+            this.label220.TabIndex = 57;
+            this.label220.Text = "Quantity:";
+            // 
+            // label222
+            // 
+            this.label222.AutoSize = true;
+            this.label222.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label222.Location = new System.Drawing.Point(33, 24);
+            this.label222.Name = "label222";
+            this.label222.Size = new System.Drawing.Size(87, 19);
+            this.label222.TabIndex = 56;
+            this.label222.Text = "Description:";
+            // 
+            // AEqTypeCmb
+            // 
+            this.AEqTypeCmb.DisplayMember = "EquipmentTypeDescription";
+            this.AEqTypeCmb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AEqTypeCmb.FormattingEnabled = true;
+            this.AEqTypeCmb.Location = new System.Drawing.Point(183, 71);
+            this.AEqTypeCmb.Name = "AEqTypeCmb";
+            this.AEqTypeCmb.Size = new System.Drawing.Size(245, 27);
+            this.AEqTypeCmb.TabIndex = 59;
+            this.AEqTypeCmb.ValueMember = "EquipmentTypeID";
+            // 
+            // AEqDecripTb
+            // 
+            this.AEqDecripTb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AEqDecripTb.Location = new System.Drawing.Point(183, 21);
+            this.AEqDecripTb.Name = "AEqDecripTb";
+            this.AEqDecripTb.Size = new System.Drawing.Size(245, 27);
+            this.AEqDecripTb.TabIndex = 60;
             // 
             // linkLabel3
             // 
@@ -293,186 +474,6 @@
             this.ClosePicBx.TabIndex = 0;
             this.ClosePicBx.TabStop = false;
             // 
-            // label233
-            // 
-            this.label233.AutoSize = true;
-            this.label233.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label233.Location = new System.Drawing.Point(33, 119);
-            this.label233.Name = "label233";
-            this.label233.Size = new System.Drawing.Size(75, 19);
-            this.label233.TabIndex = 62;
-            this.label233.Text = "Condition:";
-            // 
-            // AEqConditionCmb
-            // 
-            this.AEqConditionCmb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AEqConditionCmb.FormattingEnabled = true;
-            this.AEqConditionCmb.Items.AddRange(new object[] {
-            "New",
-            "Second Hand"});
-            this.AEqConditionCmb.Location = new System.Drawing.Point(183, 116);
-            this.AEqConditionCmb.Name = "AEqConditionCmb";
-            this.AEqConditionCmb.Size = new System.Drawing.Size(245, 27);
-            this.AEqConditionCmb.TabIndex = 63;
-            // 
-            // AEqQuantityUD
-            // 
-            this.AEqQuantityUD.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AEqQuantityUD.Location = new System.Drawing.Point(183, 162);
-            this.AEqQuantityUD.Name = "AEqQuantityUD";
-            this.AEqQuantityUD.Size = new System.Drawing.Size(120, 27);
-            this.AEqQuantityUD.TabIndex = 61;
-            // 
-            // label217
-            // 
-            this.label217.AutoSize = true;
-            this.label217.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label217.Location = new System.Drawing.Point(33, 74);
-            this.label217.Name = "label217";
-            this.label217.Size = new System.Drawing.Size(43, 19);
-            this.label217.TabIndex = 58;
-            this.label217.Text = "Type:";
-            // 
-            // label220
-            // 
-            this.label220.AutoSize = true;
-            this.label220.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label220.Location = new System.Drawing.Point(33, 159);
-            this.label220.Name = "label220";
-            this.label220.Size = new System.Drawing.Size(69, 19);
-            this.label220.TabIndex = 57;
-            this.label220.Text = "Quantity:";
-            // 
-            // label222
-            // 
-            this.label222.AutoSize = true;
-            this.label222.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label222.Location = new System.Drawing.Point(33, 24);
-            this.label222.Name = "label222";
-            this.label222.Size = new System.Drawing.Size(87, 19);
-            this.label222.TabIndex = 56;
-            this.label222.Text = "Description:";
-            // 
-            // AEqTypeCmb
-            // 
-            this.AEqTypeCmb.DisplayMember = "EquipmentTypeDescription";
-            this.AEqTypeCmb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AEqTypeCmb.FormattingEnabled = true;
-            this.AEqTypeCmb.Location = new System.Drawing.Point(183, 71);
-            this.AEqTypeCmb.Name = "AEqTypeCmb";
-            this.AEqTypeCmb.Size = new System.Drawing.Size(245, 27);
-            this.AEqTypeCmb.TabIndex = 59;
-            this.AEqTypeCmb.ValueMember = "EquipmentTypeID";
-            // 
-            // AEqDecripTb
-            // 
-            this.AEqDecripTb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AEqDecripTb.Location = new System.Drawing.Point(183, 21);
-            this.AEqDecripTb.Name = "AEqDecripTb";
-            this.AEqDecripTb.Size = new System.Drawing.Size(245, 27);
-            this.AEqDecripTb.TabIndex = 60;
-            // 
-            // AEqQuantityLbl
-            // 
-            this.AEqQuantityLbl.AutoSize = true;
-            this.AEqQuantityLbl.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AEqQuantityLbl.Location = new System.Drawing.Point(312, 152);
-            this.AEqQuantityLbl.Name = "AEqQuantityLbl";
-            this.AEqQuantityLbl.Size = new System.Drawing.Size(17, 19);
-            this.AEqQuantityLbl.TabIndex = 74;
-            this.AEqQuantityLbl.Text = "5";
-            // 
-            // label234
-            // 
-            this.label234.AutoSize = true;
-            this.label234.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label234.Location = new System.Drawing.Point(40, 112);
-            this.label234.Name = "label234";
-            this.label234.Size = new System.Drawing.Size(75, 19);
-            this.label234.TabIndex = 73;
-            this.label234.Text = "Condition:";
-            this.label234.Click += new System.EventHandler(this.label234_Click);
-            // 
-            // label235
-            // 
-            this.label235.AutoSize = true;
-            this.label235.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label235.Location = new System.Drawing.Point(40, 67);
-            this.label235.Name = "label235";
-            this.label235.Size = new System.Drawing.Size(43, 19);
-            this.label235.TabIndex = 72;
-            this.label235.Text = "Type:";
-            // 
-            // label239
-            // 
-            this.label239.AutoSize = true;
-            this.label239.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label239.Location = new System.Drawing.Point(40, 152);
-            this.label239.Name = "label239";
-            this.label239.Size = new System.Drawing.Size(69, 19);
-            this.label239.TabIndex = 71;
-            this.label239.Text = "Quantity:";
-            // 
-            // label240
-            // 
-            this.label240.AutoSize = true;
-            this.label240.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label240.Location = new System.Drawing.Point(40, 24);
-            this.label240.Name = "label240";
-            this.label240.Size = new System.Drawing.Size(87, 19);
-            this.label240.TabIndex = 70;
-            this.label240.Text = "Description:";
-            // 
-            // label226
-            // 
-            this.label226.AutoSize = true;
-            this.label226.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label226.Location = new System.Drawing.Point(40, 67);
-            this.label226.Name = "label226";
-            this.label226.Size = new System.Drawing.Size(43, 19);
-            this.label226.TabIndex = 69;
-            this.label226.Text = "Type:";
-            // 
-            // label228
-            // 
-            this.label228.AutoSize = true;
-            this.label228.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label228.Location = new System.Drawing.Point(40, 24);
-            this.label228.Name = "label228";
-            this.label228.Size = new System.Drawing.Size(87, 19);
-            this.label228.TabIndex = 67;
-            this.label228.Text = "Description:";
-            // 
-            // AEqDescripLbl
-            // 
-            this.AEqDescripLbl.AutoSize = true;
-            this.AEqDescripLbl.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AEqDescripLbl.Location = new System.Drawing.Point(312, 24);
-            this.AEqDescripLbl.Name = "AEqDescripLbl";
-            this.AEqDescripLbl.Size = new System.Drawing.Size(100, 19);
-            this.AEqDescripLbl.TabIndex = 66;
-            this.AEqDescripLbl.Text = "ClimbUp 1.5m";
-            // 
-            // AEqTypeLbl
-            // 
-            this.AEqTypeLbl.AutoSize = true;
-            this.AEqTypeLbl.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AEqTypeLbl.Location = new System.Drawing.Point(312, 67);
-            this.AEqTypeLbl.Name = "AEqTypeLbl";
-            this.AEqTypeLbl.Size = new System.Drawing.Size(53, 19);
-            this.AEqTypeLbl.TabIndex = 65;
-            this.AEqTypeLbl.Text = "Ladder";
-            // 
-            // AEqConditionLbl
-            // 
-            this.AEqConditionLbl.AutoSize = true;
-            this.AEqConditionLbl.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AEqConditionLbl.Location = new System.Drawing.Point(312, 110);
-            this.AEqConditionLbl.Name = "AEqConditionLbl";
-            this.AEqConditionLbl.Size = new System.Drawing.Size(38, 19);
-            this.AEqConditionLbl.TabIndex = 64;
-            this.AEqConditionLbl.Text = "New";
-            // 
             // UpdateEquipmentPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -491,13 +492,13 @@
             this.tabPage2.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AEqQuantityUD)).EndInit();
             this.UpdateEquipmentTab.ResumeLayout(false);
             this.TopBarPanel.ResumeLayout(false);
             this.TopBarPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimisePicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBx)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AEqQuantityUD)).EndInit();
             this.ResumeLayout(false);
 
         }

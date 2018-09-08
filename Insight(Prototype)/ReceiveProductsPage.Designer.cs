@@ -418,12 +418,13 @@
             this.button21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button21.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.Location = new System.Drawing.Point(8, 607);
+            this.button21.Location = new System.Drawing.Point(1128, 607);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(75, 30);
             this.button21.TabIndex = 31;
             this.button21.Text = "Cancel";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button22
             // 

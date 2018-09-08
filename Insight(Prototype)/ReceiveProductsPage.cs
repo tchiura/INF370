@@ -16,5 +16,10 @@ namespace Insight_Prototype_
         {
             InitializeComponent();
         }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

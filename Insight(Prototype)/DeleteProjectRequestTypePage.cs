@@ -16,5 +16,26 @@ namespace Insight_Prototype_
         {
             InitializeComponent();
         }
+
+        private void DEqTCancelBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void DEqTDeleteBtn_Click(object sender, EventArgs e)
+        {
+
+            using (InsightEntities db = new InsightEntities())
+            {
+                var ProReqType = db.ProjectRequestTypes.SingleOrDefault(x => x.ProjectRequestTypeID == 2);
+
+                if (ProReqType != null)
+                {
+                    db.ProjectRequestTypes.Remove(ProReqType);
+                    db.SaveChanges();
+                }
+
+            }
+        }
     }
 }

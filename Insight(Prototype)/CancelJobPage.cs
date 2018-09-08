@@ -20,6 +20,21 @@ namespace Insight_Prototype_
         private void button15_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Are you sure you want to delete this job?", "Delete", MessageBoxButtons.YesNo);
+            //if(MessageBoxButtons.YesNo == "Yes")
+            {
+                using (InsightEntities db = new InsightEntities())
+                {
+                    var job = db.Jobs.SingleOrDefault(x => x.JobID == 2);
+
+                    db.Jobs.Remove(job);
+                    db.SaveChanges();
+                }
+            }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

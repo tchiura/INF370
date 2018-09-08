@@ -42,6 +42,10 @@ namespace Insight_Prototype_
                     db.Employees.Remove(Emp);
                     db.SaveChanges();
                 }
+                else
+                {
+                    MessageBox.Show("We are unble to delete this employee");
+                }
             }
         }
 

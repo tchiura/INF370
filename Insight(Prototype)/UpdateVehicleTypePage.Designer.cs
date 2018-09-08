@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.TopBarPanel = new System.Windows.Forms.Panel();
-            this.Userlbl = new System.Windows.Forms.Label();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.Userlbl = new System.Windows.Forms.Label();
             this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
             this.UVehicleTypeTab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.TypeLbl = new System.Windows.Forms.Label();
+            this.TypeTb = new System.Windows.Forms.TextBox();
             this.CancelBtn = new System.Windows.Forms.Button();
             this.UpdateBtn = new System.Windows.Forms.Button();
             this.label58 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.BackBtn = new System.Windows.Forms.Button();
             this.ConfirmBtn = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.CTypeLbl = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label99 = new System.Windows.Forms.Label();
@@ -74,16 +74,6 @@
             this.TopBarPanel.Size = new System.Drawing.Size(460, 30);
             this.TopBarPanel.TabIndex = 50;
             // 
-            // Userlbl
-            // 
-            this.Userlbl.AutoSize = true;
-            this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.Userlbl.Location = new System.Drawing.Point(3, 2);
-            this.Userlbl.Name = "Userlbl";
-            this.Userlbl.Size = new System.Drawing.Size(171, 23);
-            this.Userlbl.TabIndex = 0;
-            this.Userlbl.Text = "Update Vehicle Type";
-            // 
             // pictureBox14
             // 
             this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Right;
@@ -94,6 +84,16 @@
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 2;
             this.pictureBox14.TabStop = false;
+            // 
+            // Userlbl
+            // 
+            this.Userlbl.AutoSize = true;
+            this.Userlbl.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.Userlbl.Location = new System.Drawing.Point(3, 2);
+            this.Userlbl.Name = "Userlbl";
+            this.Userlbl.Size = new System.Drawing.Size(171, 23);
+            this.Userlbl.TabIndex = 0;
+            this.Userlbl.Text = "Update Vehicle Type";
             // 
             // MinimisePicBx
             // 
@@ -133,8 +133,8 @@
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
             this.tabPage1.Controls.Add(this.linkLabel1);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.textBox13);
+            this.tabPage1.Controls.Add(this.TypeLbl);
+            this.tabPage1.Controls.Add(this.TypeTb);
             this.tabPage1.Controls.Add(this.CancelBtn);
             this.tabPage1.Controls.Add(this.UpdateBtn);
             this.tabPage1.Controls.Add(this.label58);
@@ -156,24 +156,24 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Edit";
             // 
-            // label1
+            // TypeLbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(189, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 19);
-            this.label1.TabIndex = 33;
-            this.label1.Text = "SUV";
+            this.TypeLbl.AutoSize = true;
+            this.TypeLbl.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TypeLbl.Location = new System.Drawing.Point(189, 27);
+            this.TypeLbl.Name = "TypeLbl";
+            this.TypeLbl.Size = new System.Drawing.Size(35, 19);
+            this.TypeLbl.TabIndex = 33;
+            this.TypeLbl.Text = "SUV";
             // 
-            // textBox13
+            // TypeTb
             // 
-            this.textBox13.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(192, 24);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(245, 27);
-            this.textBox13.TabIndex = 32;
-            this.textBox13.Visible = false;
+            this.TypeTb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TypeTb.Location = new System.Drawing.Point(192, 24);
+            this.TypeTb.Name = "TypeTb";
+            this.TypeTb.Size = new System.Drawing.Size(245, 27);
+            this.TypeTb.TabIndex = 32;
+            this.TypeTb.Visible = false;
             // 
             // CancelBtn
             // 
@@ -186,6 +186,7 @@
             this.CancelBtn.TabIndex = 31;
             this.CancelBtn.Text = "Cancel";
             this.CancelBtn.UseVisualStyleBackColor = true;
+            this.CancelBtn.Click += new System.EventHandler(this.CancelBtn_Click);
             // 
             // UpdateBtn
             // 
@@ -198,6 +199,7 @@
             this.UpdateBtn.TabIndex = 30;
             this.UpdateBtn.Text = "Update";
             this.UpdateBtn.UseVisualStyleBackColor = true;
+            this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
             // 
             // label58
             // 
@@ -214,7 +216,7 @@
             this.tabPage2.BackColor = System.Drawing.Color.White;
             this.tabPage2.Controls.Add(this.BackBtn);
             this.tabPage2.Controls.Add(this.ConfirmBtn);
-            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.CTypeLbl);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.ForeColor = System.Drawing.Color.Black;
             this.tabPage2.Location = new System.Drawing.Point(4, 28);
@@ -235,6 +237,7 @@
             this.BackBtn.TabIndex = 37;
             this.BackBtn.Text = "Back";
             this.BackBtn.UseVisualStyleBackColor = true;
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
             // ConfirmBtn
             // 
@@ -248,15 +251,15 @@
             this.ConfirmBtn.Text = "Confirm";
             this.ConfirmBtn.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // CTypeLbl
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(277, 27);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 19);
-            this.label3.TabIndex = 40;
-            this.label3.Text = "SUV";
+            this.CTypeLbl.AutoSize = true;
+            this.CTypeLbl.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTypeLbl.Location = new System.Drawing.Point(277, 27);
+            this.CTypeLbl.Name = "CTypeLbl";
+            this.CTypeLbl.Size = new System.Drawing.Size(35, 19);
+            this.CTypeLbl.TabIndex = 40;
+            this.CTypeLbl.Text = "SUV";
             // 
             // label4
             // 
@@ -300,7 +303,7 @@
             this.Controls.Add(this.TopBarPanel);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UpdateVehicleTypePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdateVehicleTypePage";
@@ -330,15 +333,15 @@
         private System.Windows.Forms.TabControl UVehicleTypeTab;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label TypeLbl;
+        private System.Windows.Forms.TextBox TypeTb;
         private System.Windows.Forms.Button CancelBtn;
         private System.Windows.Forms.Button UpdateBtn;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button BackBtn;
         private System.Windows.Forms.Button ConfirmBtn;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label CTypeLbl;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label99;

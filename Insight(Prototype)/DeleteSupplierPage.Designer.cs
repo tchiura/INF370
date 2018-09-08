@@ -340,6 +340,7 @@
             this.button14.TabIndex = 57;
             this.button14.Text = "Cancel";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button15
             // 
@@ -352,6 +353,7 @@
             this.button15.TabIndex = 56;
             this.button15.Text = "Delete";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click_1);
             // 
             // DeleteSupplierPage
             // 

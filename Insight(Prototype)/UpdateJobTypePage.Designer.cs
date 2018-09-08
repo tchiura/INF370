@@ -186,6 +186,7 @@
             this.button21.TabIndex = 31;
             this.button21.Text = "Cancel";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button22
             // 

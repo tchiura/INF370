@@ -12,6 +12,8 @@ namespace Insight_Prototype_
 {
     public partial class UpdateEmployeeTypePage : Form
     {
+        string ET = "";
+        int EType = 0;
         public UpdateEmployeeTypePage()
         {
             InitializeComponent();
@@ -35,6 +37,35 @@ namespace Insight_Prototype_
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            ET = ETypeTb.Text;
+            CETypeLbl.Text = ET;
+            UpdateEmployeeTypeTab.SelectedIndex = 1;
+        }
+
+        private void BackBtn_Click(object sender, EventArgs e)
+        {
+            UpdateEmployeeTypeTab.SelectedIndex = 0;
+        }
+
+        private void ConfirmBtn_Click(object sender, EventArgs e)
+        {
+            using (InsightEntities db = new InsightEntities())
+            {
+                var ETObj = db.EmployeeTypes.SingleOrDefault(x => x.EmployeeTypeID == EType);
+
+                ETObj.EmployeeTypeDescription = ET;
+                db.SaveChanges();
+                UpdateEmployeeTypeTab.SelectedIndex = 2;
+            }
         }
     }
 }

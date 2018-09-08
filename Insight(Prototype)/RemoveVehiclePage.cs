@@ -25,7 +25,6 @@ namespace Insight_Prototype_
 
         private void RemoveBtn_Click(object sender, EventArgs e)
         {
-            Vehicle InsightVehicle = new Vehicle();
             using (InsightEntities db = new InsightEntities())
             {
                 var V = db.Vehicles.SingleOrDefault(x => x.VehicleID == VID);

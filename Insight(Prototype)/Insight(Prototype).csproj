@@ -253,6 +253,12 @@
     <Compile Include="DeleteEquipmentTypePage.Designer.cs">
       <DependentUpon>DeleteEquipmentTypePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeleteJobTypePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteJobTypePage.Designer.cs">
+      <DependentUpon>DeleteJobTypePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeleteOrganisationTypePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -624,6 +630,12 @@
     <Compile Include="ViewEmployeeSchedulePage.Designer.cs">
       <DependentUpon>ViewEmployeeSchedulePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewProjectRequestTypePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProjectRequestTypePage.Designer.cs">
+      <DependentUpon>ViewProjectRequestTypePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewQuotationPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -720,6 +732,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteEquipmentTypePage.resx">
       <DependentUpon>DeleteEquipmentTypePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteJobTypePage.resx">
+      <DependentUpon>DeleteJobTypePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteOrganisationTypePage.resx">
       <DependentUpon>DeleteOrganisationTypePage.cs</DependentUpon>
@@ -845,6 +860,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ViewEmployeeSchedulePage.resx">
       <DependentUpon>ViewEmployeeSchedulePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProjectRequestTypePage.resx">
+      <DependentUpon>ViewProjectRequestTypePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewQuotationPage.resx">
       <DependentUpon>ViewQuotationPage.cs</DependentUpon>

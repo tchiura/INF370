@@ -13,11 +13,11 @@ namespace Insight_Prototype_
     public partial class AddJobConfirmationPage : Form
     {
 
-        string JobDescr = "";
-        DateTime StartD;
-        DateTime EndD;
-        string JobType = "";
-        string Stat = "";
+        string JobDescr = "Clean";
+        DateTime StartD = DateTime.Now;
+        DateTime EndD = DateTime.Now;
+        string JobType = "Cleaning";
+        string Stat = "Pending";
         public AddJobConfirmationPage()
         {
             InitializeComponent();

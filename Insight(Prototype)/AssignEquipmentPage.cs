@@ -21,5 +21,10 @@ namespace Insight_Prototype_
         {
 
         }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
