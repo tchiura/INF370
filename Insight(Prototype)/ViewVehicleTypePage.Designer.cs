@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TopBarPanel = new System.Windows.Forms.Panel();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.Userlbl = new System.Windows.Forms.Label();
@@ -206,6 +206,7 @@
             this.DVTypeBtn.TabIndex = 0;
             this.DVTypeBtn.Text = "Delete Vehicle Type";
             this.DVTypeBtn.UseVisualStyleBackColor = true;
+            this.DVTypeBtn.Click += new System.EventHandler(this.DVTypeBtn_Click);
             // 
             // UVTypeBtn
             // 
@@ -237,18 +238,19 @@
             this.vehicleTypeIDDataGridViewTextBoxColumn,
             this.vehicleTypeDescriptionDataGridViewTextBoxColumn});
             this.VehicleTypeDgv.DataSource = this.vehicleTypeBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.VehicleTypeDgv.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.VehicleTypeDgv.DefaultCellStyle = dataGridViewCellStyle1;
             this.VehicleTypeDgv.Location = new System.Drawing.Point(12, 75);
             this.VehicleTypeDgv.Name = "VehicleTypeDgv";
             this.VehicleTypeDgv.Size = new System.Drawing.Size(885, 585);
             this.VehicleTypeDgv.TabIndex = 0;
+            this.VehicleTypeDgv.SelectionChanged += new System.EventHandler(this.VehicleTypeDgv_SelectionChanged);
             // 
             // vehicleTypeIDDataGridViewTextBoxColumn
             // 

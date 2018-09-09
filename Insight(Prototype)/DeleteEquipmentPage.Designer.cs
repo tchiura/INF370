@@ -33,15 +33,12 @@
             this.Userlbl = new System.Windows.Forms.Label();
             this.MinimisePicBx = new System.Windows.Forms.PictureBox();
             this.ClosePicBx = new System.Windows.Forms.PictureBox();
-            this.label234 = new System.Windows.Forms.Label();
             this.label235 = new System.Windows.Forms.Label();
             this.label240 = new System.Windows.Forms.Label();
             this.label226 = new System.Windows.Forms.Label();
-            this.label227 = new System.Windows.Forms.Label();
             this.label228 = new System.Windows.Forms.Label();
             this.DEqDescripLbl = new System.Windows.Forms.Label();
             this.DEqTypeLbl = new System.Windows.Forms.Label();
-            this.DEqConditionLbl = new System.Windows.Forms.Label();
             this.QEqCancelBtn = new System.Windows.Forms.Button();
             this.DEqBtn = new System.Windows.Forms.Button();
             this.TopBarPanel.SuspendLayout();
@@ -63,14 +60,14 @@
             this.TopBarPanel.Location = new System.Drawing.Point(0, 0);
             this.TopBarPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TopBarPanel.Name = "TopBarPanel";
-            this.TopBarPanel.Size = new System.Drawing.Size(490, 30);
+            this.TopBarPanel.Size = new System.Drawing.Size(460, 30);
             this.TopBarPanel.TabIndex = 48;
             // 
             // pictureBox14
             // 
             this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBox14.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
-            this.pictureBox14.Location = new System.Drawing.Point(406, 0);
+            this.pictureBox14.Location = new System.Drawing.Point(376, 0);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(28, 30);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -91,7 +88,7 @@
             // 
             this.MinimisePicBx.Dock = System.Windows.Forms.DockStyle.Right;
             this.MinimisePicBx.Image = global::Insight_Prototype_.Properties.Resources.Minus_100px;
-            this.MinimisePicBx.Location = new System.Drawing.Point(434, 0);
+            this.MinimisePicBx.Location = new System.Drawing.Point(404, 0);
             this.MinimisePicBx.Name = "MinimisePicBx";
             this.MinimisePicBx.Size = new System.Drawing.Size(28, 30);
             this.MinimisePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -102,21 +99,12 @@
             // 
             this.ClosePicBx.Dock = System.Windows.Forms.DockStyle.Right;
             this.ClosePicBx.Image = global::Insight_Prototype_.Properties.Resources.Cancel_100px2;
-            this.ClosePicBx.Location = new System.Drawing.Point(462, 0);
+            this.ClosePicBx.Location = new System.Drawing.Point(432, 0);
             this.ClosePicBx.Name = "ClosePicBx";
             this.ClosePicBx.Size = new System.Drawing.Size(28, 30);
             this.ClosePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ClosePicBx.TabIndex = 0;
             this.ClosePicBx.TabStop = false;
-            // 
-            // label234
-            // 
-            this.label234.AutoSize = true;
-            this.label234.Location = new System.Drawing.Point(34, 142);
-            this.label234.Name = "label234";
-            this.label234.Size = new System.Drawing.Size(75, 19);
-            this.label234.TabIndex = 73;
-            this.label234.Text = "Condition:";
             // 
             // label235
             // 
@@ -145,15 +133,6 @@
             this.label226.TabIndex = 69;
             this.label226.Text = "Type:";
             // 
-            // label227
-            // 
-            this.label227.AutoSize = true;
-            this.label227.Location = new System.Drawing.Point(34, 140);
-            this.label227.Name = "label227";
-            this.label227.Size = new System.Drawing.Size(69, 19);
-            this.label227.TabIndex = 68;
-            this.label227.Text = "Quantity:";
-            // 
             // label228
             // 
             this.label228.AutoSize = true;
@@ -181,21 +160,12 @@
             this.DEqTypeLbl.TabIndex = 65;
             this.DEqTypeLbl.Text = "Ladder";
             // 
-            // DEqConditionLbl
-            // 
-            this.DEqConditionLbl.AutoSize = true;
-            this.DEqConditionLbl.Location = new System.Drawing.Point(306, 140);
-            this.DEqConditionLbl.Name = "DEqConditionLbl";
-            this.DEqConditionLbl.Size = new System.Drawing.Size(38, 19);
-            this.DEqConditionLbl.TabIndex = 64;
-            this.DEqConditionLbl.Text = "New";
-            // 
             // QEqCancelBtn
             // 
             this.QEqCancelBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.QEqCancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.QEqCancelBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QEqCancelBtn.Location = new System.Drawing.Point(322, 195);
+            this.QEqCancelBtn.Location = new System.Drawing.Point(292, 158);
             this.QEqCancelBtn.Name = "QEqCancelBtn";
             this.QEqCancelBtn.Size = new System.Drawing.Size(75, 30);
             this.QEqCancelBtn.TabIndex = 75;
@@ -208,7 +178,7 @@
             this.DEqBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.DEqBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DEqBtn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DEqBtn.Location = new System.Drawing.Point(403, 195);
+            this.DEqBtn.Location = new System.Drawing.Point(373, 158);
             this.DEqBtn.Name = "DEqBtn";
             this.DEqBtn.Size = new System.Drawing.Size(75, 30);
             this.DEqBtn.TabIndex = 74;
@@ -221,18 +191,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(490, 237);
+            this.ClientSize = new System.Drawing.Size(460, 200);
             this.Controls.Add(this.QEqCancelBtn);
             this.Controls.Add(this.DEqBtn);
-            this.Controls.Add(this.label234);
             this.Controls.Add(this.label235);
             this.Controls.Add(this.label240);
             this.Controls.Add(this.label226);
-            this.Controls.Add(this.label227);
             this.Controls.Add(this.label228);
             this.Controls.Add(this.DEqDescripLbl);
             this.Controls.Add(this.DEqTypeLbl);
-            this.Controls.Add(this.DEqConditionLbl);
             this.Controls.Add(this.TopBarPanel);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -258,15 +225,12 @@
         private System.Windows.Forms.Label Userlbl;
         private System.Windows.Forms.PictureBox MinimisePicBx;
         private System.Windows.Forms.PictureBox ClosePicBx;
-        private System.Windows.Forms.Label label234;
         private System.Windows.Forms.Label label235;
         private System.Windows.Forms.Label label240;
         private System.Windows.Forms.Label label226;
-        private System.Windows.Forms.Label label227;
         private System.Windows.Forms.Label label228;
         private System.Windows.Forms.Label DEqDescripLbl;
         private System.Windows.Forms.Label DEqTypeLbl;
-        private System.Windows.Forms.Label DEqConditionLbl;
         private System.Windows.Forms.Button QEqCancelBtn;
         private System.Windows.Forms.Button DEqBtn;
     }

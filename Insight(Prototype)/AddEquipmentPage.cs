@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Insight_Prototype_
 {
     public partial class AddEquipmentPage : Form
     {
+        Globals G = new Globals();
+
+
 
         string EqDescr = "";
         string EqType = "";
@@ -23,6 +27,8 @@ namespace Insight_Prototype_
 
         private void AddEquipmentPage_Load(object sender, EventArgs e)
         {
+
+            SqlConnection H = new SqlConnection(G.myConn);
             // TODO: This line of code loads data into the 'insightDataSet.EquipmentType' table. You can move, or remove it, as needed.
             this.equipmentTypeTableAdapter.Fill(this.insightDataSet.EquipmentType);
 

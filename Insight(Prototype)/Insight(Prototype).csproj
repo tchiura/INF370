@@ -307,6 +307,12 @@
     <Compile Include="DeleteSupplierPage.Designer.cs">
       <DependentUpon>DeleteSupplierPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="RemoveEquipmentPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveEquipmentPage.Designer.cs">
+      <DependentUpon>RemoveEquipmentPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="RemoveVehiclePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -606,6 +612,12 @@
     <Compile Include="Vehicle.cs">
       <DependentUpon>InsightModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="VehicleReportPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleReportPage.Designer.cs">
+      <DependentUpon>VehicleReportPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="VehicleStatu.cs">
       <DependentUpon>InsightModel.tt</DependentUpon>
     </Compile>
@@ -618,11 +630,29 @@
     <Compile Include="ViewClientLoginPage.Designer.cs">
       <DependentUpon>ViewClientLoginPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewClientPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewClientPage.Designer.cs">
+      <DependentUpon>ViewClientPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewClientTypePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewClientTypePage.Designer.cs">
+      <DependentUpon>ViewClientTypePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewEmployeeLoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ViewEmployeeLoginPage.Designer.cs">
       <DependentUpon>ViewEmployeeLoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEmployeePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewEmployeePage.Designer.cs">
+      <DependentUpon>ViewEmployeePage.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewEmployeeSchedulePage.cs">
       <SubType>Form</SubType>
@@ -630,17 +660,89 @@
     <Compile Include="ViewEmployeeSchedulePage.Designer.cs">
       <DependentUpon>ViewEmployeeSchedulePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewEmployeeTypePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewEmployeeTypePage.Designer.cs">
+      <DependentUpon>ViewEmployeeTypePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEquipmentTypePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewEquipmentTypePage.Designer.cs">
+      <DependentUpon>ViewEquipmentTypePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEquipmentPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewEquipmentPage.Designer.cs">
+      <DependentUpon>ViewEquipmentPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewJobPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewJobPage.Designer.cs">
+      <DependentUpon>ViewJobPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewJobTypePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewJobTypePage.Designer.cs">
+      <DependentUpon>ViewJobTypePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProductPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProductPage.Designer.cs">
+      <DependentUpon>ViewProductPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProductTypePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProductTypePage.Designer.cs">
+      <DependentUpon>ViewProductTypePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProjectPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProjectPage.Designer.cs">
+      <DependentUpon>ViewProjectPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewProjectRequestTypePage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ViewProjectRequestTypePage.Designer.cs">
       <DependentUpon>ViewProjectRequestTypePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewPurchaseOrderPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPurchaseOrderPage.Designer.cs">
+      <DependentUpon>ViewPurchaseOrderPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewQuotationPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ViewQuotationPage.Designer.cs">
       <DependentUpon>ViewQuotationPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSkillPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSkillPage.Designer.cs">
+      <DependentUpon>ViewSkillPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSupplierPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSupplierPage.Designer.cs">
+      <DependentUpon>ViewSupplierPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewVehiclePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewVehiclePage.Designer.cs">
+      <DependentUpon>ViewVehiclePage.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewVehicleTypePage.cs">
       <SubType>Form</SubType>
@@ -760,6 +862,9 @@
     <EmbeddedResource Include="DeleteSupplierPage.resx">
       <DependentUpon>DeleteSupplierPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RemoveEquipmentPage.resx">
+      <DependentUpon>RemoveEquipmentPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RemoveVehiclePage.resx">
       <DependentUpon>RemoveVehiclePage.cs</DependentUpon>
     </EmbeddedResource>
@@ -855,17 +960,62 @@
     <EmbeddedResource Include="ViewClientLoginPage.resx">
       <DependentUpon>ViewClientLoginPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ViewClientPage.resx">
+      <DependentUpon>ViewClientPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewClientTypePage.resx">
+      <DependentUpon>ViewClientTypePage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewEmployeeLoginPage.resx">
       <DependentUpon>ViewEmployeeLoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewEmployeePage.resx">
+      <DependentUpon>ViewEmployeePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewEmployeeSchedulePage.resx">
       <DependentUpon>ViewEmployeeSchedulePage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ViewEmployeeTypePage.resx">
+      <DependentUpon>ViewEmployeeTypePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewEquipmentTypePage.resx">
+      <DependentUpon>ViewEquipmentTypePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewEquipmentPage.resx">
+      <DependentUpon>ViewEquipmentPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewJobPage.resx">
+      <DependentUpon>ViewJobPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewJobTypePage.resx">
+      <DependentUpon>ViewJobTypePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProductPage.resx">
+      <DependentUpon>ViewProductPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProductTypePage.resx">
+      <DependentUpon>ViewProductTypePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProjectPage.resx">
+      <DependentUpon>ViewProjectPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewProjectRequestTypePage.resx">
       <DependentUpon>ViewProjectRequestTypePage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ViewPurchaseOrderPAge.resx">
+      <DependentUpon>ViewPurchaseOrderPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewQuotationPage.resx">
       <DependentUpon>ViewQuotationPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSkillPage.resx">
+      <DependentUpon>ViewSkillPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSupplierPage.resx">
+      <DependentUpon>ViewSupplierPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewVehiclePage.resx">
+      <DependentUpon>ViewVehiclePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewVehicleTypePage.resx">
       <DependentUpon>ViewVehicleTypePage.cs</DependentUpon>

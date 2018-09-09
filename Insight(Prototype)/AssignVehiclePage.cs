@@ -23,7 +23,6 @@ namespace Insight_Prototype_
 
         //public string myConn = "Data Source =.; Initial Catalog = Insight; Integrated Security = True";
 
-        SqlConnection conn = new SqlConnection("Data Source =.; Initial Catalog = Insight; Integrated Security = True");
         private void AssignVehiclePage_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'insightDataSet.Job' table. You can move, or remove it, as needed.
@@ -59,7 +58,8 @@ namespace Insight_Prototype_
         {
 
             //MessageBox.Show("V = " + vid + " J = " + jid);
-
+            Globals G = new Globals();
+            SqlConnection conn = new SqlConnection(G.myConn);
             conn.Open();
 
             SqlCommand InsertJobVehicle = new SqlCommand("Insert into JobVehicle(JobID,VehicleID) Values(@JobID,@VehicleID)", conn);

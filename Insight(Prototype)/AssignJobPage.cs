@@ -11,10 +11,11 @@ using System.Data.SqlClient;
 
 namespace Insight_Prototype_
 {
+
     public partial class AssignJobPage : Form
     {
 
-        SqlConnection conn = new SqlConnection("Data Source =.; Initial Catalog = Insight; Integrated Security = True");
+        Globals G = new Globals();
         int jid = 0;
         int eid = 0;
         public AssignJobPage()
@@ -52,7 +53,7 @@ namespace Insight_Prototype_
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            SqlConnection conn = new SqlConnection(G.myConn);
             conn.Open();
 
             SqlCommand InsertJobEmployee = new SqlCommand("Insert into JobEmployee(JobID,EmployeeID) Values(@JobID,@EmployeeID)", conn);

@@ -12,7 +12,7 @@ namespace Insight_Prototype_
 { 
     public partial class AddSupplierPage : Form
     {
-        string CPTitle = "";
+        //string CPTitle = "";
         string CPName = "";
         string CPEmail = "";
         string SupName = "";
@@ -36,7 +36,7 @@ namespace Insight_Prototype_
 
         private void NextBtn_Click(object sender, EventArgs e)
         {
-            CPTitle = TitleCmb.Text;
+            //CPTitle = TitleCmb.Text;
             SupName = SupplierNameTb.Text;
             CPName = CPNameTb.Text;
             CPNumber = NumberTb.Text;
@@ -48,7 +48,7 @@ namespace Insight_Prototype_
             Country = CountryCmb.Text;
             JobD = JobDecrTb.Text;
 
-            if(CPTitle == null | SupName == null | CPName == null)
+            if(SupName == null | CPName == null)
             {
 
             }
@@ -59,7 +59,7 @@ namespace Insight_Prototype_
                 Add3Lbl.Text = AddL3;
                 CityLbl.Text = City;
                 CountryLbl.Text = Country;
-                TitleLbl.Text = CPTitle;
+                //TitleLbl.Text = CPTitle;
                 NameLbl.Text = SupName;
                 CPNameLbl.Text = CPName;
                 NumberLbl.Text = CPNumber;
@@ -74,8 +74,6 @@ namespace Insight_Prototype_
             Supplier InsightSupplier = new Supplier();
             ContactPerson InsightCP = new ContactPerson();
             Address InsightAddress = new Address();
-
-
 
             InsightSupplier.SupplierName = SupName;
             InsightAddress.AddressDescription = AddL1 + " " + AddL2 + " " + AddL3;

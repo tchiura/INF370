@@ -12,6 +12,7 @@ namespace Insight_Prototype_
 {
     public partial class DeleteVehicleTypePage : Form
     {
+        int VID;
         public DeleteVehicleTypePage()
         {
             InitializeComponent();
@@ -33,6 +34,14 @@ namespace Insight_Prototype_
                     db.VehicleTypes.Remove(VType);
                     db.SaveChanges();
                 }
+            }
+        }
+
+        private void DeleteVehicleTypePage_Load(object sender, EventArgs e)
+        {
+            using (InsightEntities db = new InsightEntities())
+            {
+                db.VehicleTypes.SingleOrDefault(x => x.VehicleTypeID == VID);
             }
         }
     }

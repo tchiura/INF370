@@ -35,8 +35,20 @@ namespace Insight_Prototype_
                 var Eq = db.Equipments.SingleOrDefault(x => x.EquipmentID == 2);
                 if(Eq != null)
                 {
-                    db.Equipments.Remove(Eq);
-                    db.SaveChanges();
+                    if(Eq.EquipmentQuantity > 0)
+                    {
+                        MessageBox.Show(this,"Are you sure you want to delete this equipment which still exist in the database","Warning",MessageBoxButtons.YesNo);
+
+                        //if(Yes)
+                        {
+                            db.Equipments.Remove(Eq);
+                            db.SaveChanges();
+                        }
+                        //else
+                        //{
+                        //    //Cannot delete
+                        //}
+                    }
                 }
             }
         }

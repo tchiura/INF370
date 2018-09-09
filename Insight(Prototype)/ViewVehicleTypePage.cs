@@ -12,6 +12,15 @@ namespace Insight_Prototype_
 {
     public partial class ViewVehicleTypePage : Form
     {
+        private int vTypeID;
+        public int VT
+        {
+            get { return vTypeID; }
+            set { vTypeID = value; }
+        }
+
+        public int VTypeID { get => vTypeID; set => vTypeID = value; }
+
         public ViewVehicleTypePage()
         {
             InitializeComponent();
@@ -32,8 +41,23 @@ namespace Insight_Prototype_
         private void UVTypeBtn_Click(object sender, EventArgs e)
         {
             Form UVT = new UpdateVehicleTypePage();
-            this.Hide();
             UVT.ShowDialog();
+        }
+
+        private void DVTypeBtn_Click(object sender, EventArgs e)
+        {
+            Form DVType = new DeleteVehicleTypePage();
+            DVType.ShowDialog();
+        }
+
+        private void VehicleTypeDgv_SelectionChanged(object sender, EventArgs e)
+        {
+            int Ind = VehicleTypeDgv.CurrentCell.RowIndex;
+
+            VTypeID = Convert.ToInt32(VehicleTypeDgv.Rows[Ind].Cells["VehicleTypeID"].Value);
+            //int PRI = EmpDGv.CurrentCell.RowIndex;
+
+            //eid = Convert.ToInt32(EmpDGv.Rows[PRI].Cells["EmployeeID"].Value.ToString());
         }
     }
 }
